@@ -6,7 +6,10 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+permissions:
+  contents: write  # Allows pushing to gh-pages
+  pages: write     # Allows deploying GitHub Pages
+  id-token: write  # Needed for authentication
 env:
   GHE_TOKEN: ${{ secrets.GHE_TOKEN }}
   WORKSPACE_PATH: ${{ github.workspace }}
