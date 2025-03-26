@@ -1,0 +1,44 @@
+name: AIML-ResearchLab/aimldocs
+on:
+  repository_dispatch:
+    types: do-build
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  GHE_TOKEN: ${{ secrets.GHE_TOKEN }}
+  WORKSPACE_PATH: ${{ github.workspace }}
+  REPO: ${{ github.repository }}
+
+jobs:
+  build:
+    name: Build Docs
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python_version: [3.10]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          pip install jinja2==3.0.3 mkdocs mkdocs-material \
+                      mkdocs-git-revision-date-localized-plugin \
+                      mkdocs-git-authors-plugin
+
+      - name: Build Documentation
+        run: mkdocs build --verbose --clean
+
+      - name: Publish Docs
+        if: github.ref == 'refs/heads/master'
+        run: mkdocs gh-deploy --force
