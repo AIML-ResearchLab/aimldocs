@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Pinecone Vector Database - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Pinecone Vector Database";
+        var mkdocs_page_input_path = "AIML/VectorDb/pinecone.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Vector Database</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Pinecone Vector Database</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#1-install-an-sdk">1. Install an SDK</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#install-the-sdk-for-your-preferred-languagepython">Install the SDK for your preferred language(python):</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-get-an-api-key">2. Get an API key</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#your-generated-api-key">Your generated API key:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-generate-vectors">3. Generate vectors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-create-an-index">4. Create an index</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5-upsert-vectors">5. Upsert vectors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6-search-the-index">6. Search the index</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notice-that-the-response-includes-only-sentences-about-the-tech-company-not-the-fruit">Notice that the response includes only sentences about the tech company, not the fruit:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#7-clean-up">7. Clean up</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/crewai.html">crewai</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Vector Database</li>
+      <li class="breadcrumb-item active">Pinecone Vector Database</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="pinecone-vector-database">Pinecone Vector Database<a class="headerlink" href="#pinecone-vector-database" title="Permanent link">#</a></h1>
+<h2 id="1-install-an-sdk">1. Install an SDK<a class="headerlink" href="#1-install-an-sdk" title="Permanent link">#</a></h2>
+<p><a href="https://docs.pinecone.io/reference/pinecone-sdks">Pinecone SDKs</a> provide convenient programmatic access to the <a href="https://docs.pinecone.io/reference/api/introduction">Pinecone APIs</a>.</p>
+<h2 id="install-the-sdk-for-your-preferred-languagepython">Install the SDK for your preferred language(python):<a class="headerlink" href="#install-the-sdk-for-your-preferred-languagepython" title="Permanent link">#</a></h2>
+<pre><code>pip install &quot;pinecone[grpc]&quot;
+
+# To install without gRPC run:
+# pip3 install pinecone
+</code></pre>
+<h2 id="2-get-an-api-key">2. Get an API key<a class="headerlink" href="#2-get-an-api-key" title="Permanent link">#</a></h2>
+<p>You need an API key to make calls to your Pinecone project.</p>
+<p>Create a new API key in the <a href="https://app.pinecone.io/organizations/-/keys">Pinecone console</a>, or use the widget below to generate a key. If you don’t have a Pinecone account, the widget will sign you up for the free <a href="https://www.pinecone.io/pricing/">Starter plan</a>.</p>
+<h2 id="your-generated-api-key">Your generated API key:<a class="headerlink" href="#your-generated-api-key" title="Permanent link">#</a></h2>
+<pre><code>&quot;pcsk_6Ud5Yh_xxxxxxxxxxxx&quot;
+</code></pre>
+<h2 id="3-generate-vectors">3. Generate vectors<a class="headerlink" href="#3-generate-vectors" title="Permanent link">#</a></h2>
+<p>A <a href="https://www.pinecone.io/learn/vector-embeddings/">vector embedding</a> is a numerical representation of data that enables similarity-based search in vector databases like Pinecone. To convert data into this format, you use an embedding model.</p>
+<p>For this quickstart, use the <a href="https://docs.pinecone.io/models/multilingual-e5-large">multilingual-e5-large</a> embedding model hosted by Pinecone to <a href="https://docs.pinecone.io/guides/inference/generate-embeddings">create vector embeddings</a> for sentences related to the word “apple”. Note that some sentences are about the tech company, while others are about the fruit.</p>
+<pre><code># Import the Pinecone library
+from pinecone.grpc import PineconeGRPC as Pinecone
+from pinecone import ServerlessSpec
+import time
+
+# Initialize a Pinecone client with your API key
+pc = Pinecone(api_key=&quot;pcsk_6Ud5Yh_C9wzdiMJxrbuhZAyFL1gAi5Zim2fPZ1pqDmbDKEQQpBLZKmoJw8ZCfG2S56CsVL&quot;)
+
+# Define a sample dataset where each item has a unique ID and piece of text
+data = [
+    {&quot;id&quot;: &quot;vec1&quot;, &quot;text&quot;: &quot;Apple is a popular fruit known for its sweetness and crisp texture.&quot;},
+    {&quot;id&quot;: &quot;vec2&quot;, &quot;text&quot;: &quot;The tech company Apple is known for its innovative products like the iPhone.&quot;},
+    {&quot;id&quot;: &quot;vec3&quot;, &quot;text&quot;: &quot;Many people enjoy eating apples as a healthy snack.&quot;},
+    {&quot;id&quot;: &quot;vec4&quot;, &quot;text&quot;: &quot;Apple Inc. has revolutionized the tech industry with its sleek designs and user-friendly interfaces.&quot;},
+    {&quot;id&quot;: &quot;vec5&quot;, &quot;text&quot;: &quot;An apple a day keeps the doctor away, as the saying goes.&quot;},
+    {&quot;id&quot;: &quot;vec6&quot;, &quot;text&quot;: &quot;Apple Computer Company was founded on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne as a partnership.&quot;}
+]
+
+# Convert the text into numerical vectors that Pinecone can index
+embeddings = pc.inference.embed(
+    model=&quot;multilingual-e5-large&quot;,
+    inputs=[d['text'] for d in data],
+    parameters={&quot;input_type&quot;: &quot;passage&quot;, &quot;truncate&quot;: &quot;END&quot;}
+)
+
+print(embeddings)
+</code></pre>
+<h2 id="4-create-an-index">4. Create an index<a class="headerlink" href="#4-create-an-index" title="Permanent link">#</a></h2>
+<p>In Pinecone, you store data in an <a href="https://docs.pinecone.io/guides/indexes/understanding-indexes">index</a>.</p>
+<p><a href="https://docs.pinecone.io/guides/indexes/create-an-index">Create a serverless index</a> that matches the dimension (1024) and similarity metric (cosine) of the multilingual-e5-large model you used in the previous step, and choose a <a href="https://docs.pinecone.io/guides/indexes/understanding-indexes#cloud-regions">cloud and region</a> for hosting the index:</p>
+<pre><code># Create a serverless index
+index_name = &quot;vectordb-test-index&quot;
+
+if not pc.has_index(index_name):
+    pc.create_index(
+        name=index_name,
+        dimension=1024,
+        metric=&quot;cosine&quot;,
+        spec=ServerlessSpec(
+            cloud='aws', 
+            region='us-east-1'
+        ) 
+    ) 
+
+# Wait for the index to be ready
+while not pc.describe_index(index_name).status['ready']:
+    time.sleep(1)
+</code></pre>
+<h2 id="5-upsert-vectors">5. Upsert vectors<a class="headerlink" href="#5-upsert-vectors" title="Permanent link">#</a></h2>
+<p>Target your index and use the <a href="https://docs.pinecone.io/guides/data/upsert-data">upsert</a> operation to load your vector embeddings into a new namespace. <a href="https://docs.pinecone.io/guides/get-started/key-features#namespaces">Namespaces</a> let you partition records within an index and are essential for <a href="https://docs.pinecone.io/guides/get-started/implement-multitenancy">implementing multitenancy</a> when you need to isolate the data of each customer/user.</p>
+<p><code>In production, target an index by its unique DNS host, not by its name.</code></p>
+<pre><code># Target the index where you'll store the vector embeddings
+index = pc.Index(&quot;vectordb-test-index&quot;)
+
+# Prepare the records for upsert
+# Each contains an 'id', the embedding 'values', and the original text as 'metadata'
+records = []
+for d, e in zip(data, embeddings):
+    records.append({
+        &quot;id&quot;: d['id'],
+        &quot;values&quot;: e['values'],
+        &quot;metadata&quot;: {'text': d['text']}
+    })
+
+# Upsert the records into the index
+index.upsert(
+    vectors=records,
+    namespace=&quot;vectordb-test-namespace&quot;
+)
+</code></pre>
+<p><code>To load large amounts of data, [import from object storage](https://docs.pinecone.io/guides/data/understanding-imports) or [upsert in large batches](https://docs.pinecone.io/guides/data/upsert-data#upsert-records-in-batches).</code></p>
+<p>Pinecone is eventually consistent, so there can be a delay before your upserted records are available to query. Use the <a href="https://docs.pinecone.io/guides/data/data-freshness/check-data-freshness">describe_index_stats</a> operation to check if the current vector count matches the number of vectors you upserted (6):</p>
+<pre><code>time.sleep(10)  # Wait for the upserted vectors to be indexed
+
+print(index.describe_index_stats())
+</code></pre>
+<h2 id="6-search-the-index">6. Search the index<a class="headerlink" href="#6-search-the-index" title="Permanent link">#</a></h2>
+<p>With data in your index, let’s say you now want to search for information about “Apple” the tech company, not “apple” the fruit.</p>
+<p>Use the the multilingual-e5-large model to convert your query into a vector embedding, and then use the <a href="https://docs.pinecone.io/guides/data/query-data">query</a> operation to search for the three vectors in the index that are most semantically similar to the query vector:</p>
+<pre><code># Define your query
+query = &quot;Tell me about the tech company known as Apple.&quot;
+
+# Convert the query into a numerical vector that Pinecone can search with
+query_embedding = pc.inference.embed(
+    model=&quot;multilingual-e5-large&quot;,
+    inputs=[query],
+    parameters={
+        &quot;input_type&quot;: &quot;query&quot;
+    }
+)
+
+# Search the index for the three most similar vectors
+results = index.query(
+    namespace=&quot;vectordb-test-namespace&quot;,
+    vector=query_embedding[0].values,
+    top_k=3,
+    include_values=False,
+    include_metadata=True
+)
+
+print(results)
+</code></pre>
+<h2 id="notice-that-the-response-includes-only-sentences-about-the-tech-company-not-the-fruit">Notice that the response includes only sentences about the tech company, not the fruit:<a class="headerlink" href="#notice-that-the-response-includes-only-sentences-about-the-tech-company-not-the-fruit" title="Permanent link">#</a></h2>
+<h2 id="7-clean-up">7. Clean up<a class="headerlink" href="#7-clean-up" title="Permanent link">#</a></h2>
+<p>When you no longer need the vectordb-test-index, use the <a href="https://docs.pinecone.io/guides/indexes/delete-an-index">delete_index</a> operation to delete it:</p>
+<pre><code>pc.delete_index(index_name)
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="weaviate.html" class="btn btn-neutral float-left" title="Weaviate Vector Database"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../RAG/Retrieval_augmented_generation.html" class="btn btn-neutral float-right" title="Retrieval augmented generation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="weaviate.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../RAG/Retrieval_augmented_generation.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>crewai - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "crewai";
+        var mkdocs_page_input_path = "AIML/AgenticAI/crewai.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >AgenticAI</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">crewai</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">AgenticAI</li>
+      <li class="breadcrumb-item active">crewai</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h1>
+<p>Build AI agent teams that work together to tackle complex tasks</p>
+<h1 id="what-is-crewai">What is CrewAI?<a class="headerlink" href="#what-is-crewai" title="Permanent link">#</a></h1>
+<p>CrewAI is a cutting-edge framework for orchestrating autonomous AI agents.</p>
+<p>CrewAI enables you to create AI teams where each agent has specific roles, tools, and goals, working together to accomplish complex tasks.</p>
+<p>Think of it as assembling your dream team - each member (agent) brings unique skills and expertise, collaborating seamlessly to achieve your objectives.</p>
+<h1 id="how-crewai-works">How CrewAI Works<a class="headerlink" href="#how-crewai-works" title="Permanent link">#</a></h1>
+<pre><code>Just like a company has departments (Sales, Engineering, Marketing) working together under leadership to achieve business goals, CrewAI helps you create an organization of AI agents with specialized roles collaborating to accomplish complex tasks.
+</code></pre>
+<p><img alt="crewai" src="image/crewai-1.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+<th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crew</td>
+<td>The top-level organization</td>
+<td>• Manages AI agent teams <br> • Oversees workflows <br> • Ensures collaboration <br> • Delivers outcomes</td>
+</tr>
+<tr>
+<td>AI Agents</td>
+<td>Specialized team members</td>
+<td>• Have specific roles (researcher, writer) <br> • Use designated tools <br> • Can delegate tasks <br> • Make autonomous decisions</td>
+</tr>
+<tr>
+<td>Process</td>
+<td>Workflow management system</td>
+<td>• Defines collaboration patterns <br> • Controls task assignments <br> • Manages interactions <br> • Ensures efficient execution</td>
+</tr>
+<tr>
+<td>Tasks</td>
+<td>Individual assignments</td>
+<td>• Have clear objectives <br> • Use specific tools <br> • Feed into larger process <br> • Produce actionable results</td>
+</tr>
+</tbody>
+</table>
+<h1 id="how-it-all-works-together">How It All Works Together<a class="headerlink" href="#how-it-all-works-together" title="Permanent link">#</a></h1>
+<ol>
+<li>The <strong>Crew</strong> organizes the overall operation</li>
+<li><strong>AI Agents</strong> work on their specialized tasks</li>
+<li>The <strong>Process</strong> ensures smooth collaboration</li>
+<li><strong>Tasks</strong> get completed to achieve the goal</li>
+</ol>
+<h1 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">#</a></h1>
+<ol>
+<li><strong>Role-Based Agents:</strong> Create specialized agents with defined roles, expertise, and goals - from researchers to analysts to writers</li>
+<li><strong>Flexible Tools:</strong> Equip agents with custom tools and APIs to interact with external services and data sources</li>
+<li><strong>Intelligent Collaboration:</strong> Agents work together, sharing insights and coordinating tasks to achieve complex objectives</li>
+<li><strong>Task Management:</strong> Define sequential or parallel workflows, with agents automatically handling task dependencies</li>
+</ol>
+<h1 id="why-choose-crewai">Why Choose CrewAI?<a class="headerlink" href="#why-choose-crewai" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Autonomous Operation:</strong> Agents make intelligent decisions based on their roles and available tools</li>
+<li><strong>Natural Interaction:</strong> Agents communicate and collaborate like human team members</li>
+<li><strong>Extensible Design:</strong> Easy to add new tools, roles, and capabilities</li>
+<li><strong>Production Ready:</strong> Built for reliability and scalability in real-world applications</li>
+</ul>
+<h1 id="crewai-examples">CrewAI Examples<a class="headerlink" href="#crewai-examples" title="Permanent link">#</a></h1>
+<p>A collection of examples that show how to use CrewAI framework to automate workflows.</p>
+<ol>
+<li><strong>recruitment</strong></li>
+</ol>
+<h1 id="ai-crew-for-recruitment">AI Crew for Recruitment<a class="headerlink" href="#ai-crew-for-recruitment" title="Permanent link">#</a></h1>
+<h1 id="introduction_1">Introduction<a class="headerlink" href="#introduction_1" title="Permanent link">#</a></h1>
+<p>This project demonstrates the use of the CrewAI framework to automate the recruitment process. CrewAI orchestrates autonomous AI agents, enabling them to collaborate and execute complex tasks efficiently.</p>
+<h1 id="crewai-framework">CrewAI Framework<a class="headerlink" href="#crewai-framework" title="Permanent link">#</a></h1>
+<p>CrewAI is designed to facilitate the collaboration of role-playing AI agents. In this example, these agents work together to streamline the recruitment process, ensuring the best fit between candidates and job roles.</p>
+<h1 id="running-the-script">Running the Script<a class="headerlink" href="#running-the-script" title="Permanent link">#</a></h1>
+<pre><code>It uses GPT-4o by default so you should have access to that to run it.
+</code></pre>
+<p><strong>Disclaimer:</strong> This will use gpt-4o unless you change it to use a different model, and by doing so it may incur different costs.</p>
+<ul>
+<li><strong>Configure Environment:</strong> Copy .env.example and set up the environment variables for OpenAI and other tools as needed.</li>
+</ul>
+<p><strong>.env</strong></p>
+<pre><code>OPENAI_API_KEY=Your openai key
+SERPER_API_KEY=Your serper key
+LINKEDIN_COOKIE=Your linkedin cookie
+</code></pre>
+<ul>
+<li><strong>Install Dependencies:</strong> Run poetry lock &amp;&amp; poetry install</li>
+<li><strong>Customize:</strong> Modify src/recruitment/main.py to add custom inputs for your agents and tasks.</li>
+<li><strong>Customize Further:</strong> Check src/recruitment/config/agents.yaml to update your agents and src/recruitment/config/tasks.yaml to update your tasks.</li>
+<li><strong>Custom Tools:</strong> You can find custom tools at recruitment/src/recruitment/tools/</li>
+<li><strong>Execute the Script:</strong> Run poetry run recruitment and input your project details.</li>
+</ul>
+<h1 id="details-explanation">Details &amp; Explanation<a class="headerlink" href="#details-explanation" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Running the Script:</strong> Execute poetry run recruitment. The script will leverage the CrewAI framework to automate recruitment tasks and generate a detailed report.</li>
+<li><strong>Running Training:</strong> Execute poetry run train n where n is the number of training iterations.</li>
+<li><strong>Key Components:</strong><ul>
+<li><code>src/recruitment/main.py:</code> Main script file.</li>
+<li><code>src/recruitment/crew.py:</code> Main crew file where agents and tasks come together, and the main logic is executed.</li>
+<li><code>src/recruitment/config/agents.yaml:</code> Configuration file for defining agents.</li>
+<li><code>src/recruitment/config/tasks.yaml:</code> Configuration file for defining tasks.</li>
+<li><code>src/recruitment/tools:</code> Contains tool classes used by the agents.</li>
+</ul>
+</li>
+</ul>
+<p><strong>config/agents.yaml:</strong></p>
+<pre><code>researcher:
+  role: &gt;
+    Job Candidate Researcher
+  goal: &gt;
+    Find potential candidates for the job
+  backstory: &gt;
+    You are adept at finding the right candidates by exploring various online
+    resources. Your skill in identifying suitable candidates ensures the best
+    match for job positions.
+
+matcher:
+  role: &gt;
+    Candidate Matcher and Scorer
+  goal: &gt;
+    Match the candidates to the best jobs and score them
+  backstory: &gt;
+    You have a knack for matching the right candidates to the right job positions
+    using advanced algorithms and scoring techniques. Your scores help
+    prioritize the best candidates for outreach.
+
+
+communicator:
+  role: &gt;
+    Candidate Outreach Strategist
+  goal: &gt;
+    Develop outreach strategies for the selected candidates
+  backstory: &gt;
+    You are skilled at creating effective outreach strategies and templates to
+    engage candidates. Your communication tactics ensure high response rates
+    from potential candidates.
+
+reporter:
+  role: &gt;
+    Candidate Reporting Specialist
+  goal: &gt;
+    Report the best candidates to the recruiters
+  backstory: &gt;
+    You are proficient at compiling and presenting detailed reports for recruiters.
+    Your reports provide clear insights into the best candidates to pursue.
+</code></pre>
+<p><strong>config/tasks.yaml</strong></p>
+<pre><code>research_candidates_task:
+  description: &gt;
+    Conduct thorough research to find potential candidates for the specified job.
+    Utilize various online resources and databases to gather a comprehensive list of potential candidates.
+    Ensure that the candidates meet the job requirements provided.
+
+    Job Requirements:
+    {job_requirements}
+  expected_output: &gt;
+    A list of 10 potential candidates with their contact information and brief profiles highlighting their suitability.
+
+match_and_score_candidates_task:
+  description: &gt;
+    Evaluate and match the candidates to the best job positions based on their qualifications and suitability.
+    Score each candidate to reflect their alignment with the job requirements, ensuring a fair and transparent assessment process.
+    Don't try to scrape people's linkedin, since you don't have access to it.
+
+    Job Requirements:
+    {job_requirements}
+  expected_output: &gt;
+    A ranked list of candidates with detailed scores and justifications for each job position.
+
+outreach_strategy_task:
+  description: &gt;
+    Develop a comprehensive strategy to reach out to the selected candidates.
+    Create effective outreach methods and templates that can engage the candidates and encourage them to consider the job opportunity.
+
+    Job Requirements:
+    {job_requirements}
+  expected_output: &gt;
+    A detailed list of outreach methods and templates ready for implementation, including communication strategies and engagement tactics.
+
+report_candidates_task:
+  description: &gt;
+    Compile a comprehensive report for recruiters on the best candidates to put forward.
+    Summarize the findings from the previous tasks and provide clear recommendations based on the job requirements.
+  expected_output: &gt;
+    A detailed report with the best candidates to pursue, no need to include the job requirements formatted as markdown without '```', including profiles, scores, and outreach strategies.
+</code></pre>
+<p><strong>tools/client.py</strong></p>
+<pre><code>import os
+import urllib
+from selenium.webdriver.common.by import By
+
+from .driver import Driver
+
+class Client:
+  def __init__(self):
+    url = 'https://linkedin.com/'
+    cookie = {
+      &quot;name&quot;: &quot;li_at&quot;,
+      &quot;value&quot;: os.environ[&quot;LINKEDIN_COOKIE&quot;],
+      &quot;domain&quot;: &quot;.linkedin.com&quot;
+    }
+
+    self.driver = Driver(url, cookie)
+
+  def find_people(self, skills):
+    skills = skills.split(&quot;,&quot;)
+    search = &quot; &quot;.join(skills)
+    encoded_string = urllib.parse.quote(search.lower())
+    url = f&quot;https://www.linkedin.com/search/results/people/?keywords={encoded_string}&quot;
+    self.driver.navigate(url)
+
+    people = self.driver.get_elements(&quot;ul li div div.linked-area&quot;)
+
+    results = []
+    for person in people:
+      try:
+        result = {}
+        result[&quot;name&quot;] = person.find_element(By.CSS_SELECTOR, &quot;span.entity-result__title-line&quot;).text
+        result[&quot;position&quot;] = person.find_element(By.CSS_SELECTOR, &quot;div.entity-result__primary-subtitle&quot;).text
+        result[&quot;location&quot;] = person.find_element(By.CSS_SELECTOR, &quot;div.entity-result__secondary-subtitle&quot;).text
+        result[&quot;profile_link&quot;] = person.find_element(By.CSS_SELECTOR, &quot;a.app-aware-link&quot;).get_attribute(&quot;href&quot;)
+      except Exception as e:
+        print(e)
+        continue
+      results.append(result)
+    return results
+
+  def close(self):
+    self.driver.close()
+</code></pre>
+<p><strong>tools/driver.py</strong></p>
+<pre><code>import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
+
+class Driver:
+    def __init__(self, url, cookie=None):
+        self.driver = self._create_driver(url, cookie)
+
+    def navigate(self, url, wait=3):
+        self.driver.get(url)
+        time.sleep(wait)
+
+    def scroll_to_bottom(self, wait=3):
+        self.driver.execute_script(&quot;window.scrollTo(0, document.body.scrollHeight);&quot;)
+        time.sleep(wait)
+        self.driver.execute_script(&quot;window.scrollTo(0, document.body.scrollHeight);&quot;)
+        time.sleep(wait)
+
+    def get_element(self, selector):
+        return self.driver.find_element(By.CSS_SELECTOR, selector)
+
+    def get_elements(self, selector):
+        return self.driver.find_elements(By.CSS_SELECTOR, selector)
+
+    def fill_text_field(self, selector, text):
+        element = self.get_element(selector)
+        element.clear()
+        element.send_keys(text)
+
+    def click_button(self, selector):
+        element = self.get_element(selector)
+        element.click()
+
+    def _create_driver(self, url, cookie):
+        options = Options()
+        # options.add_argument(&quot;--headless&quot;)
+        driver = webdriver.Firefox(options=options)
+        driver.get(url)
+        if cookie:
+            driver.add_cookie(cookie)
+        return driver
+
+    def close(self):
+        self.driver.close()
+</code></pre>
+<p><strong>tools/linkedin.py</strong></p>
+<pre><code>from crewai_tools import BaseTool
+
+from .client import Client as LinkedinClient
+
+
+class LinkedInTool(BaseTool):
+    name: str = &quot;Retrieve LinkedIn profiles&quot;
+    description: str = (
+        &quot;Retrieve LinkedIn profiles given a list of skills. Comma separated&quot;
+    )
+
+    def _run(self, skills: str) -&gt; str:
+        linkedin_client = LinkedinClient()
+        people = linkedin_client.find_people(skills)
+        people = self._format_publications_to_text(people)
+        linkedin_client.close()
+        return people
+
+    def _format_publications_to_text(self, people):
+        result = [&quot;\n&quot;.join([
+            &quot;Person Profile&quot;,
+            &quot;-------------&quot;,
+            p['name'],
+            p['position'],
+            p['location'],
+            p[&quot;profile_link&quot;],
+        ]) for p in people]
+        result = &quot;\n\n&quot;.join(result)
+
+        return result
+</code></pre>
+<p><strong>crew.py</strong></p>
+<pre><code>from crewai import Agent, Crew, Process, Task
+from crewai.project import CrewBase, agent, crew, task
+from crewai_tools import SerperDevTool, ScrapeWebsiteTool
+from recruitment.tools.linkedin import LinkedInTool
+
+@CrewBase
+class RecruitmentCrew():
+    &quot;&quot;&quot;Recruitment crew&quot;&quot;&quot;
+    agents_config = 'config/agents.yaml'
+    tasks_config = 'config/tasks.yaml'
+
+    @agent
+    def researcher(self) -&gt; Agent:
+        return Agent(
+            config=self.agents_config['researcher'],
+                        tools=[SerperDevTool(), ScrapeWebsiteTool(), LinkedInTool()],
+            allow_delegation=False,
+                        verbose=True
+        )
+
+    @agent
+    def matcher(self) -&gt; Agent:
+        return Agent(
+            config=self.agents_config['matcher'],
+            tools=[SerperDevTool(), ScrapeWebsiteTool()],
+            allow_delegation=False,
+                        verbose=True
+        )
+
+    @agent
+    def communicator(self) -&gt; Agent:
+        return Agent(
+            config=self.agents_config['communicator'],
+            tools=[SerperDevTool(), ScrapeWebsiteTool()],
+            allow_delegation=False,
+                        verbose=True
+        )
+
+    @agent
+    def reporter(self) -&gt; Agent:
+        return Agent(
+            config=self.agents_config['reporter'],
+            allow_delegation=False,
+                        verbose=True
+        )
+
+    @task
+    def research_candidates_task(self) -&gt; Task:
+        return Task(
+            config=self.tasks_config['research_candidates_task'],
+            agent=self.researcher()
+        )
+
+    @task
+    def match_and_score_candidates_task(self) -&gt; Task:
+        return Task(
+            config=self.tasks_config['match_and_score_candidates_task'],
+            agent=self.matcher()
+        )
+
+    @task
+    def outreach_strategy_task(self) -&gt; Task:
+        return Task(
+            config=self.tasks_config['outreach_strategy_task'],
+            agent=self.communicator()
+        )
+
+    @task
+    def report_candidates_task(self) -&gt; Task:
+        return Task(
+            config=self.tasks_config['report_candidates_task'],
+            agent=self.reporter(),
+            context=[self.research_candidates_task(), self.match_and_score_candidates_task(), self.outreach_strategy_task()],
+        )
+
+    @crew
+    def crew(self) -&gt; Crew:
+        &quot;&quot;&quot;Creates the Recruitment crew&quot;&quot;&quot;
+        return Crew(
+            agents=self.agents,
+            tasks=self.tasks,
+            process=Process.sequential,
+            verbose=2,
+        )
+</code></pre>
+<p><strong>main.py</strong></p>
+<pre><code>#!/usr/bin/env python
+import sys
+from recruitment.crew import RecruitmentCrew
+
+
+def run():
+    # Replace with your inputs, it will automatically interpolate any tasks and agents information
+    inputs = {
+        'job_requirements': &quot;&quot;&quot;
+        job_requirement:
+  title: &gt;
+    Ruby on Rails and React Engineer
+  description: &gt;
+    We are seeking a skilled Ruby on Rails and React engineer to join our team.
+    The ideal candidate will have experience in both backend and frontend development,
+    with a passion for building high-quality web applications.
+
+  responsibilities: &gt;
+    - Develop and maintain web applications using Ruby on Rails and React.
+    - Collaborate with teams to define and implement new features.
+    - Write clean, maintainable, and efficient code.
+    - Ensure application performance and responsiveness.
+    - Identify and resolve bottlenecks and bugs.
+
+  requirements: &gt;
+    - Proven experience with Ruby on Rails and React.
+    - Strong understanding of object-oriented programming.
+    - Proficiency with JavaScript, HTML, CSS, and React.
+    - Experience with SQL or NoSQL databases.
+    - Familiarity with code versioning tools, such as Git.
+
+  preferred_qualifications: &gt;
+    - Experience with cloud services (AWS, Google Cloud, or Azure).
+    - Familiarity with Docker and Kubernetes.
+    - Knowledge of GraphQL.
+    - Bachelor's degree in Computer Science or a related field.
+
+  perks_and_benefits: &gt;
+    - Competitive salary and bonuses.
+    - Health, dental, and vision insurance.
+    - Flexible working hours and remote work options.
+    - Professional development opportunities.
+        &quot;&quot;&quot;
+    }
+    RecruitmentCrew().crew().kickoff(inputs=inputs)
+
+def train():
+    &quot;&quot;&quot;
+    Train the crew for a given number of iterations.
+    &quot;&quot;&quot;
+    inputs = {
+        'job_requirements': &quot;&quot;&quot;
+        job_requirement:
+  title: &gt;
+    Ruby on Rails and React Engineer
+  description: &gt;
+    We are seeking a skilled Ruby on Rails and React engineer to join our team.
+    The ideal candidate will have experience in both backend and frontend development,
+    with a passion for building high-quality web applications.
+
+  responsibilities: &gt;
+    - Develop and maintain web applications using Ruby on Rails and React.
+    - Collaborate with teams to define and implement new features.
+    - Write clean, maintainable, and efficient code.
+    - Ensure application performance and responsiveness.
+    - Identify and resolve bottlenecks and bugs.
+
+  requirements: &gt;
+    - Proven experience with Ruby on Rails and React.
+    - Strong understanding of object-oriented programming.
+    - Proficiency with JavaScript, HTML, CSS, and React.
+    - Experience with SQL or NoSQL databases.
+    - Familiarity with code versioning tools, such as Git.
+
+  preferred_qualifications: &gt;
+    - Experience with cloud services (AWS, Google Cloud, or Azure).
+    - Familiarity with Docker and Kubernetes.
+    - Knowledge of GraphQL.
+    - Bachelor's degree in Computer Science or a related field.
+
+  perks_and_benefits: &gt;
+    - Competitive salary and bonuses.
+    - Health, dental, and vision insurance.
+    - Flexible working hours and remote work options.
+    - Professional development opportunities.
+        &quot;&quot;&quot;
+    }
+    try:
+        RecruitmentCrew().crew().train(n_iterations=int(sys.argv[1]), inputs=inputs)
+
+    except Exception as e:
+        raise Exception(f&quot;An error occurred while training the crew: {e}&quot;)
+</code></pre>
+<ol>
+<li><strong>Create your crew:</strong></li>
+</ol>
+<p>Create a new crew project by running the following command in your terminal. This will create a new directory called <code>recruitment</code> with the basic structure for your crew.</p>
+<pre><code>pip install crewai
+</code></pre>
+<pre><code>(agent-ai-venv) ganeshkinkargiri.@M7QJY5-A67EFC4A Agentic-AI % crewai create crew recruitment
+Creating folder recruitment...
+Cache expired or not found. Fetching provider data from the web...
+Downloading  [####################################]  349185/16798
+Select a provider to set up:
+1. openai
+2. anthropic
+3. gemini
+4. nvidia_nim
+5. groq
+6. ollama
+7. watson
+8. bedrock
+9. azure
+10. cerebras
+11. sambanova
+12. other
+q. Quit
+Enter the number of your choice or 'q' to quit: 6     
+Select a model to use for Ollama:
+1. ollama/llama3.1
+2. ollama/mixtral
+q. Quit
+Enter the number of your choice or 'q' to quit: 1
+API keys and model saved to .env file
+Selected model: ollama/llama3.1
+  - Created recruitment/.gitignore
+  - Created recruitment/pyproject.toml
+  - Created recruitment/README.md
+  - Created recruitment/knowledge/user_preference.txt
+  - Created recruitment/src/recruitment/__init__.py
+  - Created recruitment/src/recruitment/main.py
+  - Created recruitment/src/recruitment/crew.py
+  - Created recruitment/src/recruitment/tools/custom_tool.py
+  - Created recruitment/src/recruitment/tools/__init__.py
+  - Created recruitment/src/recruitment/config/agents.yaml
+  - Created recruitment/src/recruitment/config/tasks.yaml
+Crew recruitment created successfully!
+(agent-ai-venv) ganeshkinkargiri.@M7QJY5-A67EFC4A Agentic-AI % 
+</code></pre>
+<ol>
+<li><strong>Navigate to your new crew project:</strong></li>
+</ol>
+<pre><code>cd recruitment
+</code></pre>
+<ul>
+<li>Modify your <code>agents.yaml</code> file</li>
+<li>Modify your <code>tasks.yaml</code> file</li>
+<li>
+<p>Modify your <code>crew.py</code> file</p>
+</li>
+<li>
+<p><strong>Run your crew:</strong></p>
+</li>
+</ul>
+<pre><code>/Users/ganeshkinkargiri./.local/bin/poetry install 
+
+/Users/ganeshkinkargiri./.local/bin/poetry run recruitment . 
+
+streamlit run recruitment/main.py
+
+</code></pre>
+<h1 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">#</a></h1>
+<ol>
+<li>
+<p><strong>SerperDevTool:</strong> ```https://serper.dev/
+The World's Fastest &amp; Cheapest Google Search API</p>
+</li>
+<li>
+<p><strong>ScrapeWebsiteTool:</strong> 
+The ScrapeWebsiteTool is designed to extract and read the content of a specified website.
+A tool designed to extract and read the content of a specified website. It is capable of handling various types of web pages by making HTTP requests and parsing the received HTML content. This tool can be particularly useful for web scraping tasks, data collection, or extracting specific information from websites.</p>
+</li>
+<li>
+<p><strong>AI Mind Tool:</strong>
+The AIMindTool is designed to query data sources in natural language.
+The AIMindTool is a wrapper around AI-Minds provided by MindsDB. It allows you to query data sources in natural language by simply configuring their connection parameters. This tool is useful when you need answers to questions from your data stored in various data sources including PostgreSQL, MySQL, MariaDB, ClickHouse, Snowflake, and Google BigQuery.</p>
+</li>
+</ol>
+<p>Minds are AI systems that work similarly to large language models (LLMs) but go beyond by answering any question from any data.</p>
+<p><strong>Example:</strong></p>
+<pre><code>from crewai_tools import AIMindTool
+
+# Initialize the AIMindTool
+aimind_tool = AIMindTool(
+    datasources=[
+        {
+            &quot;description&quot;: &quot;house sales data&quot;,
+            &quot;engine&quot;: &quot;postgres&quot;,
+            &quot;connection_data&quot;: {
+                &quot;user&quot;: &quot;demo_user&quot;,
+                &quot;password&quot;: &quot;demo_password&quot;,
+                &quot;host&quot;: &quot;samples.mindsdb.com&quot;,
+                &quot;port&quot;: 5432,
+                &quot;database&quot;: &quot;demo&quot;,
+                &quot;schema&quot;: &quot;demo_data&quot;
+            },
+            &quot;tables&quot;: [&quot;house_sales&quot;]
+        }
+    ]
+)
+
+# Run a natural language query
+result = aimind_tool.run(&quot;How many 3 bedroom houses were sold in 2008?&quot;)
+print(result)
+</code></pre>
+<ol>
+<li><strong>Brave Search:</strong>
+The BraveSearchTool is designed to search the internet using the Brave Search API.</li>
+</ol>
+<p>This tool is designed to perform web searches using the Brave Search API. It allows you to search the internet with a specified query and retrieve relevant results. The tool supports customizable result counts and country-specific searches.</p>
+<p><strong>Example:</strong></p>
+<pre><code>from crewai_tools import BraveSearchTool
+
+# Initialize the tool for internet searching capabilities
+tool = BraveSearchTool()
+
+# Execute a search
+results = tool.run(search_query=&quot;CrewAI agent framework&quot;)
+print(results)
+</code></pre>
+<ol>
+<li><strong>Browserbase Web Loader:</strong>
+Browserbase is a developer platform to reliably run, manage, and monitor headless browsers.</li>
+</ol>
+<p><strong>Example:</strong></p>
+<pre><code>from crewai_tools import BrowserbaseLoadTool
+
+# Initialize the tool with the Browserbase API key and Project ID
+tool = BrowserbaseLoadTool()
+</code></pre>
+<ol>
+<li><strong>Code Docs RAG Search:</strong>
+The CodeDocsSearchTool is a powerful RAG (Retrieval-Augmented Generation) tool designed for semantic searches within code documentation.</li>
+</ol>
+<p>The CodeDocsSearchTool is a powerful RAG (Retrieval-Augmented Generation) tool designed for semantic searches within code documentation. It enables users to efficiently find specific information or topics within code documentation. By providing a docs_url during initialization, the tool narrows down the search to that particular documentation site. Alternatively, without a specific docs_url, it searches across a wide array of code documentation known or discovered throughout its execution, making it versatile for various documentation search needs.</p>
+<p><strong>Example:</strong></p>
+<pre><code>from crewai_tools import CodeDocsSearchTool
+
+# To search any code documentation content 
+# if the URL is known or discovered during its execution:
+tool = CodeDocsSearchTool()
+
+# OR
+
+# To specifically focus your search on a given documentation site 
+# by providing its URL:
+tool = CodeDocsSearchTool(docs_url='https://docs.example.com/reference')
+</code></pre>
+<p><strong>Custom model and embeddings:</strong></p>
+<pre><code>tool = CodeDocsSearchTool(
+    config=dict(
+        llm=dict(
+            provider=&quot;ollama&quot;, # or google, openai, anthropic, llama2, ...
+            config=dict(
+                model=&quot;llama2&quot;,
+                # temperature=0.5,
+                # top_p=1,
+                # stream=true,
+            ),
+        ),
+        embedder=dict(
+            provider=&quot;google&quot;, # or openai, ollama, ...
+            config=dict(
+                model=&quot;models/embedding-001&quot;,
+                task_type=&quot;retrieval_document&quot;,
+                # title=&quot;Embeddings&quot;,
+            ),
+        ),
+    )
+)
+</code></pre>
+<ol>
+<li><strong>Code Interpreter:</strong>
+The CodeInterpreterTool is a powerful tool designed for executing Python 3 code within a secure, isolated environment.</li>
+</ol>
+<p>The CodeInterpreterTool enables CrewAI agents to execute Python 3 code that they generate autonomously. The code is run in a secure, isolated Docker container, ensuring safety regardless of the content. This functionality is particularly valuable as it allows agents to create code, execute it, obtain the results, and utilize that information to inform subsequent decisions and actions.</p>
+<p><strong>Example:</strong></p>
+<pre><code>from crewai import Agent, Task, Crew, Process
+from crewai_tools import CodeInterpreterTool
+
+# Initialize the tool
+code_interpreter = CodeInterpreterTool()
+
+# Define an agent that uses the tool
+programmer_agent = Agent(
+    role=&quot;Python Programmer&quot;,
+    goal=&quot;Write and execute Python code to solve problems&quot;,
+    backstory=&quot;An expert Python programmer who can write efficient code to solve complex problems.&quot;,
+    tools=[code_interpreter],
+    verbose=True,
+)
+
+# Example task to generate and execute code
+coding_task = Task(
+    description=&quot;Write a Python function to calculate the Fibonacci sequence up to the 10th number and print the result.&quot;,
+    expected_output=&quot;The Fibonacci sequence up to the 10th number.&quot;,
+    agent=programmer_agent,
+)
+
+# Create and run the crew
+crew = Crew(
+    agents=[programmer_agent],
+    tasks=[coding_task],
+    verbose=True,
+    process=Process.sequential,
+)
+result = crew.kickoff()
+</code></pre>
+<p><strong>You can also enable code execution directly when creating an agent:</strong></p>
+<pre><code>from crewai import Agent
+
+# Create an agent with code execution enabled
+programmer_agent = Agent(
+    role=&quot;Python Programmer&quot;,
+    goal=&quot;Write and execute Python code to solve problems&quot;,
+    backstory=&quot;An expert Python programmer who can write efficient code to solve complex problems.&quot;,
+    allow_code_execution=True,  # This automatically adds the CodeInterpreterTool
+    verbose=True,
+)
+</code></pre>
+<p><strong>Agent Integration Example:</strong>
+Here’s a more detailed example of how to integrate the CodeInterpreterTool with a CrewAI agent:</p>
+<pre><code>from crewai import Agent, Task, Crew
+from crewai_tools import CodeInterpreterTool
+
+# Initialize the tool
+code_interpreter = CodeInterpreterTool()
+
+# Define an agent that uses the tool
+data_analyst = Agent(
+    role=&quot;Data Analyst&quot;,
+    goal=&quot;Analyze data using Python code&quot;,
+    backstory=&quot;&quot;&quot;You are an expert data analyst who specializes in using Python 
+    to analyze and visualize data. You can write efficient code to process 
+    large datasets and extract meaningful insights.&quot;&quot;&quot;,
+    tools=[code_interpreter],
+    verbose=True,
+)
+
+# Create a task for the agent
+analysis_task = Task(
+    description=&quot;&quot;&quot;
+    Write Python code to:
+    1. Generate a random dataset of 100 points with x and y coordinates
+    2. Calculate the correlation coefficient between x and y
+    3. Create a scatter plot of the data
+    4. Print the correlation coefficient and save the plot as 'scatter.png'
+
+    Make sure to handle any necessary imports and print the results.
+    &quot;&quot;&quot;,
+    expected_output=&quot;The correlation coefficient and confirmation that the scatter plot has been saved.&quot;,
+    agent=data_analyst,
+)
+
+# Run the task
+crew = Crew(
+    agents=[data_analyst],
+    tasks=[analysis_task],
+    verbose=True,
+    process=Process.sequential,
+)
+result = crew.kickoff()
+</code></pre>
+<ol>
+<li>
+<p><strong>Composio Tool:</strong>
+Composio provides 250+ production-ready tools for AI agents with flexible authentication management.
+Composio is an integration platform that allows you to connect your AI agents to 250+ tools. Key features include:</p>
+</li>
+<li>
+<p>Enterprise-Grade Authentication: Built-in support for OAuth, API Keys, JWT with automatic token refresh</p>
+</li>
+<li>Full Observability: Detailed tool usage logs, execution timestamps, and more</li>
+</ol>
+<p><strong>Example:</strong></p>
+<pre><code>from composio_crewai import ComposioToolSet, App, Action
+from crewai import Agent, Task, Crew
+
+toolset = ComposioToolSet()
+</code></pre>
+<p><strong>Connect your GitHub account</strong></p>
+<pre><code>request = toolset.initiate_connection(app=App.GITHUB)
+print(f&quot;Open this URL to authenticate: {request.redirectUrl}&quot;)
+</code></pre>
+<p><strong>Get Tools</strong></p>
+<ul>
+<li>Retrieving all the tools from an app (not recommended for production):</li>
+</ul>
+<pre><code>tools = toolset.get_tools(apps=[App.GITHUB])
+</code></pre>
+<ul>
+<li>Filtering tools based on tags:</li>
+</ul>
+<pre><code>tag = &quot;users&quot;
+
+filtered_action_enums = toolset.find_actions_by_tags(
+    App.GITHUB,
+    tags=[tag], 
+)
+
+tools = toolset.get_tools(actions=filtered_action_enums)
+</code></pre>
+<ul>
+<li>Filtering tools based on use case:</li>
+</ul>
+<pre><code>use_case = &quot;Star a repository on GitHub&quot;
+
+filtered_action_enums = toolset.find_actions_by_use_case(
+    App.GITHUB, use_case=use_case, advanced=False
+)
+
+tools = toolset.get_tools(actions=filtered_action_enums)
+</code></pre>
+<p><strong>Using specific tools:</strong></p>
+<p>In this demo, we will use the GITHUB_STAR_A_REPOSITORY_FOR_THE_AUTHENTICATED_USER action from the GitHub app.</p>
+<pre><code>tools = toolset.get_tools(
+    actions=[Action.GITHUB_STAR_A_REPOSITORY_FOR_THE_AUTHENTICATED_USER]
+)
+</code></pre>
+<p><strong>Define agent:</strong></p>
+<pre><code>crewai_agent = Agent(
+    role=&quot;GitHub Agent&quot;,
+    goal=&quot;You take action on GitHub using GitHub APIs&quot;,
+    backstory=&quot;You are AI agent that is responsible for taking actions on GitHub on behalf of users using GitHub APIs&quot;,
+    verbose=True,
+    tools=tools,
+    llm= # pass an llm
+)
+</code></pre>
+<p><strong>Execute task</strong></p>
+<pre><code>task = Task(
+    description=&quot;Star a repo composiohq/composio on GitHub&quot;,
+    agent=crewai_agent,
+    expected_output=&quot;Status of the operation&quot;,
+)
+
+crew = Crew(agents=[crewai_agent], tasks=[task])
+
+crew.kickoff()
+</code></pre>
+<ol>
+<li><strong>CSV RAG Search:</strong>
+The CSVSearchTool is a powerful RAG (Retrieval-Augmented Generation) tool designed for semantic searches within a CSV file’s content.</li>
+</ol>
+<p>​
+This tool is used to perform a RAG (Retrieval-Augmented Generation) search within a CSV file’s content. It allows users to semantically search for queries in the content of a specified CSV file. This feature is particularly useful for extracting information from large CSV datasets where traditional search methods might be inefficient. All tools with “Search” in their name, including CSVSearchTool, are RAG tools designed for searching different sources of data.</p>
+<p><strong>Example:</strong></p>
+<pre><code>from crewai_tools import CSVSearchTool
+
+# Initialize the tool with a specific CSV file. 
+# This setup allows the agent to only search the given CSV file.
+tool = CSVSearchTool(csv='path/to/your/csvfile.csv')
+
+# OR
+
+# Initialize the tool without a specific CSV file. 
+# Agent will need to provide the CSV path at runtime.
+tool = CSVSearchTool()
+</code></pre>
+<p><strong>Custom model and embeddings</strong>
+By default, the tool uses OpenAI for both embeddings and summarization. To customize the model, you can use a config dictionary as follows:</p>
+<pre><code>tool = CSVSearchTool(
+    config=dict(
+        llm=dict(
+            provider=&quot;ollama&quot;, # or google, openai, anthropic, llama2, ...
+            config=dict(
+                model=&quot;llama2&quot;,
+                # temperature=0.5,
+                # top_p=1,
+                # stream=true,
+            ),
+        ),
+        embedder=dict(
+            provider=&quot;google&quot;, # or openai, ollama, ...
+            config=dict(
+                model=&quot;models/embedding-001&quot;,
+                task_type=&quot;retrieval_document&quot;,
+                # title=&quot;Embeddings&quot;,
+            ),
+        ),
+    )
+)
+</code></pre>
+<ol>
+<li><strong>DALL-E Tool:</strong></li>
+</ol>
+<p>The DallETool is a powerful tool designed for generating images from textual descriptions.</p>
+<p>This tool is used to give the Agent the ability to generate images using the DALL-E model. It is a transformer-based model that generates images from textual descriptions. This tool allows the Agent to generate images based on the text input provided by the user.</p>
+<p><strong>Example</strong></p>
+<pre><code>from crewai_tools import DallETool
+
+Agent(
+    ...
+    tools=[DallETool()],
+)
+</code></pre>
+<p>If needed you can also tweak the parameters of the DALL-E model by passing them as arguments to the DallETool class. For example:</p>
+<pre><code>from crewai_tools import DallETool
+
+dalle_tool = DallETool(model=&quot;dall-e-3&quot;,
+                       size=&quot;1024x1024&quot;,
+                       quality=&quot;standard&quot;,
+                       n=1)
+
+Agent(
+    ...
+    tools=[dalle_tool]
+)
+</code></pre>
+<ol>
+<li><strong>Directory RAG Search:</strong></li>
+</ol>
+<p>The DirectorySearchTool is a powerful RAG (Retrieval-Augmented Generation) tool designed for semantic searches within a directory’s content.</p>
+<p>The DirectorySearchTool enables semantic search within the content of specified directories, leveraging the Retrieval-Augmented Generation (RAG) methodology for efficient navigation through files. Designed for flexibility, it allows users to dynamically specify search directories at runtime or set a fixed directory during initial setup.</p>
+<p>​
+<strong>Initialization and Usage</strong>
+Import the DirectorySearchTool from the crewai_tools package to start. You can initialize the tool without specifying a directory, enabling the setting of the search directory at runtime. Alternatively, the tool can be initialized with a predefined directory.</p>
+<pre><code>from crewai_tools import DirectorySearchTool
+
+# For dynamic directory specification at runtime
+tool = DirectorySearchTool()
+
+# For fixed directory searches
+tool = DirectorySearchTool(directory='/path/to/directory')
+</code></pre>
+<p><strong>Custom Model and Embeddings</strong></p>
+<p>The DirectorySearchTool uses OpenAI for embeddings and summarization by default. Customization options for these settings include changing the model provider and configuration, enhancing flexibility for advanced users.</p>
+<pre><code>tool = DirectorySearchTool(
+    config=dict(
+        llm=dict(
+            provider=&quot;ollama&quot;, # Options include ollama, google, anthropic, llama2, and more
+            config=dict(
+                model=&quot;llama2&quot;,
+                # Additional configurations here
+            ),
+        ),
+        embedder=dict(
+            provider=&quot;google&quot;, # or openai, ollama, ...
+            config=dict(
+                model=&quot;models/embedding-001&quot;,
+                task_type=&quot;retrieval_document&quot;,
+                # title=&quot;Embeddings&quot;,
+            ),
+        ),
+    )
+)
+</code></pre>
+<ol>
+<li><strong>Directory Read:</strong>
+The DirectoryReadTool is a powerful utility designed to provide a comprehensive listing of directory contents.</li>
+</ol>
+<p>The DirectoryReadTool is a powerful utility designed to provide a comprehensive listing of directory contents. It can recursively navigate through the specified directory, offering users a detailed enumeration of all files, including those within subdirectories. This tool is crucial for tasks that require a thorough inventory of directory structures or for validating the organization of files within directories.</p>
+<ol>
+<li><strong>DOCX RAG Search:</strong></li>
+</ol>
+<p>The DOCXSearchTool is a RAG tool designed for semantic searching within DOCX documents.</p>
+<p>The DOCXSearchTool is a RAG tool designed for semantic searching within DOCX documents. It enables users to effectively search and extract relevant information from DOCX files using query-based searches. This tool is invaluable for data analysis, information management, and research tasks, streamlining the process of finding specific information within large document collections.</p>
+<ol>
+<li><strong>EXA Search Web Loader:</strong></li>
+</ol>
+<p>The EXASearchTool is designed to perform a semantic search for a specified query from a text’s content across the internet.</p>
+<p>The EXASearchTool is designed to perform a semantic search for a specified query from a text’s content across the internet. It utilizes the exa.ai API to fetch and display the most relevant search results based on the query provided by the user.</p>
+<ol>
+<li><strong>File Read:</strong></li>
+</ol>
+<p>The FileReadTool is designed to read files from the local file system.</p>
+<p>The FileReadTool conceptually represents a suite of functionalities within the crewai_tools package aimed at facilitating file reading and content retrieval. This suite includes tools for processing batch text files, reading runtime configuration files, and importing data for analytics. It supports a variety of text-based file formats such as .txt, .csv, .json, and more. Depending on the file type, the suite offers specialized functionality, such as converting JSON content into a Python dictionary for ease of use.</p>
+<ol>
+<li><strong>File Write:</strong></li>
+</ol>
+<p>The FileWriterTool is designed to write content to files.</p>
+<p>The FileWriterTool is a component of the crewai_tools package, designed to simplify the process of writing content to files with cross-platform compatibility (Windows, Linux, macOS). It is particularly useful in scenarios such as generating reports, saving logs, creating configuration files, and more. This tool handles path differences across operating systems, supports UTF-8 encoding, and automatically creates directories if they don’t exist, making it easier to organize your output reliably across different platforms.</p>
+<ol>
+<li><strong>Firecrawl Crawl Website:</strong></li>
+</ol>
+<p>The FirecrawlCrawlWebsiteTool is designed to crawl and convert websites into clean markdown or structured data.</p>
+<ol>
+<li><strong>Firecrawl Scrape Website:</strong></li>
+</ol>
+<p>The FirecrawlScrapeWebsiteTool is designed to scrape websites and convert them into clean markdown or structured data.</p>
+<p>Firecrawl is a platform for crawling and convert any website into clean markdown or structured data.</p>
+<ol>
+<li><strong>Firecrawl Search:</strong></li>
+</ol>
+<p>The FirecrawlSearchTool is designed to search websites and convert them into clean markdown or structured data.</p>
+<p>Firecrawl is a platform for crawling and convert any website into clean markdown or structured data.</p>
+<ol>
+<li><strong>Github Search:</strong></li>
+</ol>
+<p>The GithubSearchTool is designed to search websites and convert them into clean markdown or structured data.</p>
+<p>The GithubSearchTool is a Retrieval-Augmented Generation (RAG) tool specifically designed for conducting semantic searches within GitHub repositories. Utilizing advanced semantic search capabilities, it sifts through code, pull requests, issues, and repositories, making it an essential tool for developers, researchers, or anyone in need of precise information from GitHub.</p>
+<ol>
+<li><strong>Hyperbrowser Load Tool:</strong></li>
+</ol>
+<p>The HyperbrowserLoadTool enables web scraping and crawling using Hyperbrowser.</p>
+<ol>
+<li><strong>Linkup Search Tool:</strong></li>
+</ol>
+<p>The LinkupSearchTool enables querying the Linkup API for contextual information.</p>
+<p>The LinkupSearchTool provides the ability to query the Linkup API for contextual information and retrieve structured results. This tool is ideal for enriching workflows with up-to-date and reliable information from Linkup, allowing agents to access relevant data during their tasks.</p>
+<ol>
+<li><strong>LlamaIndex Tool:</strong></li>
+</ol>
+<p>The LlamaIndexTool is a wrapper for LlamaIndex tools and query engines.</p>
+<p>The LlamaIndexTool is designed to be a general wrapper around LlamaIndex tools and query engines, enabling you to leverage LlamaIndex resources in terms of RAG/agentic pipelines as tools to plug into CrewAI agents. This tool allows you to seamlessly integrate LlamaIndex’s powerful data processing and retrieval capabilities into your CrewAI workflows.</p>
+<ol>
+<li><strong>Google Serper Search:</strong></li>
+</ol>
+<p>The SerperDevTool is designed to search the internet and return the most relevant results.</p>
+<p>This tool is designed to perform a semantic search for a specified query from a text’s content across the internet. It utilizes the serper.dev API to fetch and display the most relevant search results based on the query provided by the user.</p>
+<ol>
+<li><strong>S3 Reader Tool:</strong></li>
+</ol>
+<p>The S3ReaderTool enables CrewAI agents to read files from Amazon S3 buckets.</p>
+<p>The S3ReaderTool is designed to read files from Amazon S3 buckets. This tool allows CrewAI agents to access and retrieve content stored in S3, making it ideal for workflows that require reading data, configuration files, or any other content stored in AWS S3 storage.</p>
+<ol>
+<li><strong>S3 Writer Tool:</strong></li>
+</ol>
+<p>The S3WriterTool enables CrewAI agents to write content to files in Amazon S3 buckets.</p>
+<p>The S3WriterTool is designed to write content to files in Amazon S3 buckets. This tool allows CrewAI agents to create or update files in S3, making it ideal for workflows that require storing data, saving configuration files, or persisting any other content to AWS S3 storage.</p>
+<ol>
+<li><strong>Scrapegraph Scrape Tool:</strong></li>
+</ol>
+<p>The ScrapegraphScrapeTool leverages Scrapegraph AI’s SmartScraper API to intelligently extract content from websites.</p>
+<p>The ScrapegraphScrapeTool is designed to leverage Scrapegraph AI’s SmartScraper API to intelligently extract content from websites. This tool provides advanced web scraping capabilities with AI-powered content extraction, making it ideal for targeted data collection and content analysis tasks. Unlike traditional web scrapers, it can understand the context and structure of web pages to extract the most relevant information based on natural language prompts.</p>
+<ol>
+<li><strong>Scrape Element From Website Tool:</strong></li>
+</ol>
+<p>The ScrapeElementFromWebsiteTool enables CrewAI agents to extract specific elements from websites using CSS selectors.</p>
+<p>The ScrapeElementFromWebsiteTool is designed to extract specific elements from websites using CSS selectors. This tool allows CrewAI agents to scrape targeted content from web pages, making it useful for data extraction tasks where only specific parts of a webpage are needed.</p>
+<ol>
+<li><strong>JSON RAG Search:</strong></li>
+</ol>
+<p>The JSONSearchTool is designed to search JSON files and return the most relevant results.</p>
+<p>The JSONSearchTool is designed to facilitate efficient and precise searches within JSON file contents. It utilizes a RAG (Retrieve and Generate) search mechanism, allowing users to specify a JSON path for targeted searches within a particular JSON file. This capability significantly improves the accuracy and relevance of search results.</p>
+<ol>
+<li><strong>MDX RAG Search:</strong></li>
+</ol>
+<p>The MDXSearchTool is designed to search MDX files and return the most relevant results.</p>
+<p>The MDX Search Tool is a component of the crewai_tools package aimed at facilitating advanced markdown language extraction. It enables users to effectively search and extract relevant information from MD files using query-based searches. This tool is invaluable for data analysis, information management, and research tasks, streamlining the process of finding specific information within large document collections.</p>
+<ol>
+<li><strong>MySQL RAG Search:</strong></li>
+</ol>
+<p>The MySQLSearchTool is designed to search MySQL databases and return the most relevant results.</p>
+<p>This tool is designed to facilitate semantic searches within MySQL database tables. Leveraging the RAG (Retrieve and Generate) technology, the MySQLSearchTool provides users with an efficient means of querying database table content, specifically tailored for MySQL databases. It simplifies the process of finding relevant data through semantic search queries, making it an invaluable resource for users needing to perform advanced queries on extensive datasets within a MySQL database.</p>
+<ol>
+<li><strong>MultiOn Tool:</strong></li>
+</ol>
+<p>The MultiOnTool empowers CrewAI agents with the capability to navigate and interact with the web through natural language instructions.</p>
+<p>The MultiOnTool is designed to wrap MultiOn’s web browsing capabilities, enabling CrewAI agents to control web browsers using natural language instructions. This tool facilitates seamless web browsing, making it an essential asset for projects requiring dynamic web data interaction and automation of web-based tasks.</p>
+<ol>
+<li><strong>NL2SQL Tool:</strong></li>
+</ol>
+<p>The NL2SQLTool is designed to convert natural language to SQL queries.</p>
+<p>This tool is used to convert natural language to SQL queries. When passsed to the agent it will generate queries and then use them to interact with the database.</p>
+<p>This enables multiple workflows like having an Agent to access the database fetch information based on the goal and then use the information to generate a response, report or any other output. Along with that proivdes the ability for the Agent to update the database based on its goal.</p>
+<p><strong>Attention:</strong> Make sure that the Agent has access to a Read-Replica or that is okay for the Agent to run insert/update queries on the database.</p>
+<ol>
+<li><strong>Patronus Evaluation Tools:</strong></li>
+</ol>
+<p>The Patronus evaluation tools enable CrewAI agents to evaluate and score model inputs and outputs using the Patronus AI platform.</p>
+<p>The Patronus evaluation tools are designed to enable CrewAI agents to evaluate and score model inputs and outputs using the Patronus AI platform. These tools provide different levels of control over the evaluation process, from allowing agents to select the most appropriate evaluator and criteria to using predefined criteria or custom local evaluators.</p>
+<p>There are three main Patronus evaluation tools:</p>
+<ul>
+<li><strong>PatronusEvalTool:</strong> Allows agents to select the most appropriate evaluator and criteria for the evaluation task.</li>
+<li><strong>PatronusPredefinedCriteriaEvalTool:</strong> Uses predefined evaluator and criteria specified by the user.</li>
+<li>
+<p><strong>PatronusLocalEvaluatorTool:</strong> Uses custom function evaluators defined by the user.
+​</p>
+</li>
+<li>
+<p><strong>PDF RAG Search:</strong></p>
+</li>
+</ul>
+<p>The PDFSearchTool is designed to search PDF files and return the most relevant results.</p>
+<p>The PDFSearchTool is a RAG tool designed for semantic searches within PDF content. It allows for inputting a search query and a PDF document, leveraging advanced search techniques to find relevant content efficiently. This capability makes it especially useful for extracting specific information from large PDF files quickly.</p>
+<ol>
+<li><strong>PG RAG Search:</strong></li>
+</ol>
+<p>The PGSearchTool is designed to search PostgreSQL databases and return the most relevant results.</p>
+<p>The PGSearchTool is envisioned as a powerful tool for facilitating semantic searches within PostgreSQL database tables. By leveraging advanced Retrieve and Generate (RAG) technology, it aims to provide an efficient means for querying database table content, specifically tailored for PostgreSQL databases. The tool’s goal is to simplify the process of finding relevant data through semantic search queries, offering a valuable resource for users needing to conduct advanced queries on extensive datasets within a PostgreSQL environment.</p>
+<ol>
+<li><strong>Qdrant Vector Search Tool:</strong></li>
+</ol>
+<p>Semantic search capabilities for CrewAI agents using Qdrant vector database</p>
+<p>The Qdrant Vector Search Tool enables semantic search capabilities in your CrewAI agents by leveraging Qdrant, a vector similarity search engine. This tool allows your agents to search through documents stored in a Qdrant collection using semantic similarity.</p>
+<ol>
+<li><strong>RAG Tool:</strong></li>
+</ol>
+<p>The RagTool is a dynamic knowledge base tool for answering questions using Retrieval-Augmented Generation.</p>
+<p>The RagTool is designed to answer questions by leveraging the power of Retrieval-Augmented Generation (RAG) through EmbedChain. It provides a dynamic knowledge base that can be queried to retrieve relevant information from various data sources. This tool is particularly useful for applications that require access to a vast array of information and need to provide contextually relevant answers.</p>
+<ol>
+<li><strong>Scrape Website:</strong></li>
+</ol>
+<p>The ScrapeWebsiteTool is designed to extract and read the content of a specified website.</p>
+<p>A tool designed to extract and read the content of a specified website. It is capable of handling various types of web pages by making HTTP requests and parsing the received HTML content. This tool can be particularly useful for web scraping tasks, data collection, or extracting specific information from websites.</p>
+<ol>
+<li><strong>Scrapfly Scrape Website Tool:</strong></li>
+</ol>
+<p>The ScrapflyScrapeWebsiteTool leverages Scrapfly’s web scraping API to extract content from websites in various formats.</p>
+<p>The ScrapflyScrapeWebsiteTool is designed to leverage Scrapfly’s web scraping API to extract content from websites. This tool provides advanced web scraping capabilities with headless browser support, proxies, and anti-bot bypass features. It allows for extracting web page data in various formats, including raw HTML, markdown, and plain text, making it ideal for a wide range of web scraping tasks.</p>
+<ol>
+<li><strong>Selenium Scraper:</strong></li>
+</ol>
+<p>The SeleniumScrapingTool is designed to extract and read the content of a specified website using Selenium.</p>
+<p>The SeleniumScrapingTool is crafted for high-efficiency web scraping tasks. It allows for precise extraction of content from web pages by using CSS selectors to target specific elements. Its design caters to a wide range of scraping needs, offering flexibility to work with any provided website URL.</p>
+<ol>
+<li><strong>Snowflake Search Tool:</strong></li>
+</ol>
+<p>The SnowflakeSearchTool enables CrewAI agents to execute SQL queries and perform semantic search on Snowflake data warehouses.</p>
+<p>The SnowflakeSearchTool is designed to connect to Snowflake data warehouses and execute SQL queries with advanced features like connection pooling, retry logic, and asynchronous execution. This tool allows CrewAI agents to interact with Snowflake databases, making it ideal for data analysis, reporting, and business intelligence tasks that require access to enterprise data stored in Snowflake.</p>
+<ol>
+<li><strong>Spider Scraper:</strong></li>
+</ol>
+<p>The SpiderTool is designed to extract and read the content of a specified website using Spider.</p>
+<p>Spider is the fastest open source scraper and crawler that returns LLM-ready data. It converts any website into pure HTML, markdown, metadata or text while enabling you to crawl with custom actions using AI.</p>
+<ol>
+<li><strong>TXT RAG Search:</strong></li>
+</ol>
+<p>The TXTSearchTool is designed to perform a RAG (Retrieval-Augmented Generation) search within the content of a text file.</p>
+<p>This tool is used to perform a RAG (Retrieval-Augmented Generation) search within the content of a text file. It allows for semantic searching of a query within a specified text file’s content, making it an invaluable resource for quickly extracting information or finding specific sections of text based on the query provided.</p>
+<ol>
+<li><strong>Vision Tool:</strong></li>
+</ol>
+<p>The VisionTool is designed to extract text from images.</p>
+<p>This tool is used to extract text from images. When passed to the agent it will extract the text from the image and then use it to generate a response, report or any other output. The URL or the PATH of the image should be passed to the Agent.</p>
+<ol>
+<li><strong>Weaviate Vector Search:</strong></li>
+</ol>
+<p>The WeaviateVectorSearchTool is designed to search a Weaviate vector database for semantically similar documents.</p>
+<p>The WeaviateVectorSearchTool is specifically crafted for conducting semantic searches within documents stored in a Weaviate vector database. This tool allows you to find semantically similar documents to a given query, leveraging the power of vector embeddings for more accurate and contextually relevant search results.</p>
+<ol>
+<li><strong>Website RAG Search:</strong></li>
+</ol>
+<p>The WebsiteSearchTool is designed to perform a RAG (Retrieval-Augmented Generation) search within the content of a website.</p>
+<p>The WebsiteSearchTool is designed as a concept for conducting semantic searches within the content of websites. It aims to leverage advanced machine learning models like Retrieval-Augmented Generation (RAG) to navigate and extract information from specified URLs efficiently. This tool intends to offer flexibility, allowing users to perform searches across any website or focus on specific websites of interest. Please note, the current implementation details of the WebsiteSearchTool are under development, and its functionalities as described may not yet be accessible.</p>
+<p>The XMLSearchTool is a cutting-edge RAG tool engineered for conducting semantic searches within XML files. Ideal for users needing to parse and extract information from XML content efficiently, this tool supports inputting a search query and an optional XML file path. By specifying an XML path, users can target their search more precisely to the content of that file, thereby obtaining more relevant search outcomes.</p>
+<ol>
+<li><strong>YouTube Channel RAG Search:</strong>
+The YoutubeVideoSearchTool is designed to perform a RAG (Retrieval-Augmented Generation) search within the content of a Youtube video.</li>
+</ol>
+<p>This tool is part of the crewai_tools package and is designed to perform semantic searches within Youtube video content, utilizing Retrieval-Augmented Generation (RAG) techniques. It is one of several “Search” tools in the package that leverage RAG for different sources. The YoutubeVideoSearchTool allows for flexibility in searches; users can search across any Youtube video content without specifying a video URL, or they can target their search to a specific Youtube video by providing its URL.</p>
+<h1 id="create-custom-tools">Create Custom Tools<a class="headerlink" href="#create-custom-tools" title="Permanent link">#</a></h1>
+<p>Comprehensive guide on crafting, using, and managing custom tools within the CrewAI framework, including new functionalities and error handling.</p>
+<p><strong>Subclassing BaseTool</strong></p>
+<p>To create a personalized tool, inherit from BaseTool and define the necessary attributes, including the args_schema for input validation, and the _run method.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../NVIDIA/nvidia-cuda.html" class="btn btn-neutral float-left" title="NVIDIA CUDA"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../DeepLearning/Autoencoder.html" class="btn btn-neutral float-right" title="Autoencoder">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../NVIDIA/nvidia-cuda.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../DeepLearning/Autoencoder.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
