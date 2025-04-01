@@ -42,22 +42,22 @@ LangGraph is useful for building **robust, modular, and scalable AI agents**.It 
 Developers choose LangGraph for:
 
 1. **Reliability and controllability:** 
-    ✅ Ensures **structured execution** of agent tasks.
-    ✅ Supports **moderation checks**, human approvals, and context persistence for long-running workflows.
+    - Ensures **structured execution** of agent tasks.
+    - Supports **moderation checks**, human approvals, and context persistence for long-running workflows.
 
 2. **Low-level and extensible:** 
-    ✅ Provides **full control** over agent behavior using **custom nodes and state management**.
-    ✅ Ideal for **multi-agent collaboration**, where each agent has a defined role.
+    - Provides **full control** over agent behavior using **custom nodes and state management**.
+    - Ideal for **multi-agent collaboration**, where each agent has a defined role.
 
 3. **First-Class Streaming Support:**
-    ✅ Supports **token-by-token streaming**, making it great for **real-time insights** into agent decisions.
-    ✅ Allows **intermediate step streaming**, improving **observability and debugging**.
+    - Supports **token-by-token streaming**, making it great for **real-time insights** into agent decisions.
+    - Allows **intermediate step streaming**, improving **observability and debugging**.
 
 # Where is LangGraph Useful?
 
-✅ **Multi-Agent Systems:** When you need **multiple specialized agents** working together.
-✅ **Long-Running Workflows:** If your agents need **context persistence** over time.
-✅ **Interactive Applications:** When **streaming responses** improve user experience.
+- **Multi-Agent Systems:** When you need **multiple specialized agents** working together.
+- **Long-Running Workflows:** If your agents need **context persistence** over time.
+- **Interactive Applications:** When **streaming responses** improve user experience.
 
 LangGraph can be useful for designing complex AI pipelines where different agents handle different tasks while **maintaining control and visibility**. 
 
@@ -65,16 +65,16 @@ LangGraph is already **trusted in production** by major companies for AI-powered
 
 # Real-World Use Cases of LangGraph
 
-✅ **Klarna → Customer Support Bot**
+- **Klarna → Customer Support Bot**
     - Handles **85 million** active users.
     - Manages customer inquiries with **multi-step workflows and automation**.
-✅ **Elastic → Security AI Assistant**
+- **Elastic → Security AI Assistant**
     - Helps with **threat detection and security analysis**.
     - Uses **multi-agent collaboration** for investigating security alerts.
-✅ **Uber → Automated Unit Test Generation**
+- **Uber → Automated Unit Test Generation**
     - Generates and refines **unit tests for developers**.
     - Uses LangGraph for **agent-based coding assistants**.
-✅ **Replit → AI-Powered Code Generation**
+- **Replit → AI-Powered Code Generation**
     - Assists developers in **writing, debugging, and optimizing code**.
     - Uses LangGraph’s **streaming and multi-agent capabilities**.
 
@@ -83,25 +83,27 @@ LangGraph works **standalone** but integrates seamlessly with **LangChain tools*
 
 # Key Integrations for Better LLM Application Development
 
-✅ **LangSmith** (Agent Evaluation & Debugging)
+- **LangSmith (Agent Evaluation & Debugging)**
     - Debugs **poor-performing LLM runs** and optimizes workflows.
     - Evaluates **agent trajectories** to improve decision-making.
     - Provides **observability** in production.
-✅ LangGraph Platform (Scaling & Deployment)
+
+- **LangGraph Platform (Scaling & Deployment)**
     - Deploys **long-running, stateful AI agents** at scale.
     - Allows **agent discovery, reuse, and configuration** across teams.
     - Features **LangGraph Studio** for **visual prototyping** and fast iteration.
 
 # To integrate LangGraph + LangSmith into your AI projects
 
-1️⃣ **Set Up LangGraph with LangSmith for Debugging & Observability**
-    ✅ **Install Dependencies**
-        ✅ First, install LangGraph, LangSmith, and LangChain:
+**Set Up LangGraph with LangSmith for Debugging & Observability**
+- **Install Dependencies**
+    - First, install LangGraph, LangSmith, and LangChain:
+
         ```
         pip install langgraph langsmith langchain
         ```
     
-    ✅ **Set Up LangSmith API Key**
+- **Set Up LangSmith API Key**
         Sign up for LangSmith at smith.langchain.com and get your API key.
         ```
         https://smith.langchain.com/
@@ -109,7 +111,8 @@ LangGraph works **standalone** but integrates seamlessly with **LangChain tools*
         ```
         Then, set it in your environment:
     
-    ✅ **Enable Debugging for Agents**
+- **Enable Debugging for Agents**
+
       ```
         # This code depends on pip install langchain[anthropic]
         from langgraph.prebuilt import create_react_agent
@@ -150,33 +153,30 @@ LangGraph works **standalone** but integrates seamlessly with **LangChain tools*
         print(response)
        ```
 
-       🔹 Now, all agent runs will be logged in LangSmith for debugging.
+- Now, all agent runs will be logged in LangSmith for debugging.
 
-2️⃣ **Visualizing & Debugging Agent Trajectories in LangSmith**
+**Visualizing & Debugging Agent Trajectories in LangSmith**
 
 Once the agent is running, go to LangSmith UI and check:
-✅ Logs of each agent action (inputs, outputs, reasoning).
-✅ Failure points in decision-making.
-✅ Performance metrics to optimize.
+- Logs of each agent action (inputs, outputs, reasoning).
+-  Failure points in decision-making.
+-  Performance metrics to optimize.
 
 ![langsmith](image/langsmith.png)
 
 ![langsmith](image/langsmith-1.png)
 
 
-3️⃣ **Scaling with LangGraph Platform (Long-Running Agents & Deployment)**
-
-    ✅ To make your AI **stateful and scalable**, use **LangGraph Platform:**
+**Scaling with LangGraph Platform (Long-Running Agents & Deployment)**
+- To make your AI **stateful and scalable**, use **LangGraph Platform:**
 
     ```
     pip install langgraph[platform]
     ```
 
-✅ Deploy **long-running agents** with **stateful memory**.
-
-✅ Use **LangGraph Studio** for **drag-and-drop workflow design**.
-
-✅ Share & configure agents **across teams**.
+- Deploy **long-running agents** with **stateful memory**.
+- Use **LangGraph Studio** for **drag-and-drop workflow design**.
+- Share & configure agents **across teams**.
 
 
 
