@@ -153,6 +153,7 @@ LangGraph works **standalone** but integrates seamlessly with **LangChain tools*
        🔹 Now, all agent runs will be logged in LangSmith for debugging.
 
 2️⃣ **Visualizing & Debugging Agent Trajectories in LangSmith**
+
 Once the agent is running, go to LangSmith UI and check:
 ✅ Logs of each agent action (inputs, outputs, reasoning).
 ✅ Failure points in decision-making.
