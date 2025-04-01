@@ -165,6 +165,7 @@ Once the agent is running, go to LangSmith UI and check:
 
 
 3️⃣ **Scaling with LangGraph Platform (Long-Running Agents & Deployment)**
+
     ✅ To make your AI **stateful and scalable**, use **LangGraph Platform:**
 
     ```
@@ -172,7 +173,9 @@ Once the agent is running, go to LangSmith UI and check:
     ```
 
 ✅ Deploy **long-running agents** with **stateful memory**.
+
 ✅ Use **LangGraph Studio** for **drag-and-drop workflow design**.
+
 ✅ Share & configure agents **across teams**.
 
 
