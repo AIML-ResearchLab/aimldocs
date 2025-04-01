@@ -103,8 +103,11 @@ nav:
        - NVIDIA AI Enterprise: AIML/NVIDIA/nvidia-ai-enterprise.md
        - NVIDIA API Documentation: AIML/NVIDIA/nvidia-api-documentation.md
        - NVIDIA CUDA: AIML/NVIDIA/nvidia-cuda.md 
-    - AgenticAI:
-       - crewai: AIML/AgenticAI/crewai.md
+    - AgenticAI Framework:
+       - crewai: 
+         - crewai overview: AIML/AgenticAI/crewai.md
+       - langgraph:
+         - langgraph overview: AIML/AgenticAI/langgraph.md
     - Aws:
        - Autoencoder: AIML/DeepLearning/Autoencoder.md
     - Azure:
