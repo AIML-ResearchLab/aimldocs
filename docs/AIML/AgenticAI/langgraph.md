@@ -97,7 +97,6 @@ LangGraph works **standalone** but integrates seamlessly with **LangChain tools*
 
 **Set Up LangGraph with LangSmith for Debugging & Observability**
 - **Install Dependencies**
-
     - First, install LangGraph, LangSmith, and LangChain:
 
 ```
@@ -159,9 +158,10 @@ Then, set it in your environment:
 **Visualizing & Debugging Agent Trajectories in LangSmith**
 
 Once the agent is running, go to LangSmith UI and check:
+
 - Logs of each agent action (inputs, outputs, reasoning).
--  Failure points in decision-making.
--  Performance metrics to optimize.
+- Failure points in decision-making.
+- Performance metrics to optimize.
 
 ![langsmith](image/langsmith.png)
 
@@ -179,8 +179,4 @@ pip install langgraph[platform]
 - Deploy **long-running agents** with **stateful memory**.
 - Use **LangGraph Studio** for **drag-and-drop workflow design**.
 - Share & configure agents **across teams**.
-
-
-
-
 
