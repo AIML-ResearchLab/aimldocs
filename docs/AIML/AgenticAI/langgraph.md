@@ -97,23 +97,24 @@ LangGraph works **standalone** but integrates seamlessly with **LangChain tools*
 
 **Set Up LangGraph with LangSmith for Debugging & Observability**
 - **Install Dependencies**
+
     - First, install LangGraph, LangSmith, and LangChain:
 
-        ```
+```
         pip install langgraph langsmith langchain
-        ```
+```
     
 - **Set Up LangSmith API Key**
-        Sign up for LangSmith at smith.langchain.com and get your API key.
-        ```
+    Sign up for LangSmith at smith.langchain.com and get your API key.
+```
         https://smith.langchain.com/
         LANGCHAIN_API_KEY="your_actual_api_key"
-        ```
-        Then, set it in your environment:
+```
+Then, set it in your environment:
     
 - **Enable Debugging for Agents**
 
-      ```
+```
         # This code depends on pip install langchain[anthropic]
         from langgraph.prebuilt import create_react_agent
         import os
@@ -151,7 +152,7 @@ LangGraph works **standalone** but integrates seamlessly with **LangChain tools*
         response = agent.invoke({"messages": [{"role": "user", "content": "What is the weather in SF?"}]})
 
         print(response)
-       ```
+```
 
 - Now, all agent runs will be logged in LangSmith for debugging.
 
@@ -168,11 +169,12 @@ Once the agent is running, go to LangSmith UI and check:
 
 
 **Scaling with LangGraph Platform (Long-Running Agents & Deployment)**
+
 - To make your AI **stateful and scalable**, use **LangGraph Platform:**
 
-    ```
-    pip install langgraph[platform]
-    ```
+```
+pip install langgraph[platform]
+```
 
 - Deploy **long-running agents** with **stateful memory**.
 - Use **LangGraph Studio** for **drag-and-drop workflow design**.
