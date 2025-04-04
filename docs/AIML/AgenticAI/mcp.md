@@ -436,6 +436,13 @@ When you click on Hammer, it shows you the available MCP Tools as below.
 
 ![mcp](image/mcp-5.png)
 
+## Alternate run Dev Env
+
+![mcp](image/mcp14.png)
+![mcp](image/mcp15.png)
+![mcp](image/mcp16.png)
+![mcp](image/mcp17.png)
+
 
 [modelcontextprotocol](https://modelcontextprotocol.io/quickstart/server)
 
