@@ -113,22 +113,22 @@ The Model Context Protocol enables powerful capabilities through arbitrary data 
 - Implementors should provide clear UIs for reviewing and authorizing activities
 
 2. **Data Privacy**
-- Hosts must obtain explicit user consent before exposing user data to servers
-- Hosts must not transmit resource data elsewhere without user consent
-- User data should be protected with appropriate access controls
+    - Hosts must obtain explicit user consent before exposing user data to servers
+    - Hosts must not transmit resource data elsewhere without user consent
+    - User data should be protected with appropriate access controls
 
 3. **Tool Safety**
-- Tools represent arbitrary code execution and must be treated with appropriate caution
-- Hosts must obtain explicit user consent before invoking any tool
-- Users should understand what each tool does before authorizing its use
+    - Tools represent arbitrary code execution and must be treated with appropriate caution
+    - Hosts must obtain explicit user consent before invoking any tool
+    - Users should understand what each tool does before authorizing its use
 
 4. **LLM Sampling Controls**
-- Users must explicitly approve any LLM sampling requests
-- Users should control:
-    - Whether sampling occurs at all
-    - The actual prompt that will be sent
-    - What results the server can see
-- The protocol intentionally limits server visibility into prompts
+    - Users must explicitly approve any LLM sampling requests
+    - Users should control:
+        - Whether sampling occurs at all
+        - The actual prompt that will be sent
+        - What results the server can see
+    - The protocol intentionally limits server visibility into prompts
 
 ## Implementation Guidelines
 While MCP itself cannot enforce these security principles at the protocol level, implementors **SHOULD:**
