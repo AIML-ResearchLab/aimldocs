@@ -108,9 +108,9 @@ The Model Context Protocol enables powerful capabilities through arbitrary data 
 ## Key Principles
 
 1. **User Consent and Control**
-- Users must explicitly consent to and understand all data access and operations
-- Users must retain control over what data is shared and what actions are taken
-- Implementors should provide clear UIs for reviewing and authorizing activities
+    - Users must explicitly consent to and understand all data access and operations
+    - Users must retain control over what data is shared and what actions are taken
+    - Implementors should provide clear UIs for reviewing and authorizing activities
 
 2. **Data Privacy**
     - Hosts must obtain explicit user consent before exposing user data to servers
