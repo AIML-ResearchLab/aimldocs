@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Regression Overview - AIML documents</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Regression Overview";
+        var mkdocs_page_input_path = "AIML/Supervised/Regression/Regression-overview.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Supervised</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Regression</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Regression Overview</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDb/vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../VectorDb/milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../VectorDb/milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDb/faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDb/weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDb/pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI Framework</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >crewai</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/crewai.html">crewai overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >langgraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/langgraph.html">langgraph overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Model Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/mcp.html">MCP overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Learning Topics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Learning.html">Learning</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Supervised</li>
+          <li class="breadcrumb-item">Regression</li>
+      <li class="breadcrumb-item active">Regression Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="regression-in-machine-learning">Regression in machine learning<a class="headerlink" href="#regression-in-machine-learning" title="Permanent link">#</a></h1>
+<p>Regression, a statistical approach, dissects the relationship between dependent and independent variables, enabling predictions through various regression models.</p>
+<p>The article delves into regression in machine learning, elucidating models, terminologies, types, and practical applications.</p>
+<h1 id="what-is-regression">What is Regression?<a class="headerlink" href="#what-is-regression" title="Permanent link">#</a></h1>
+<p>Regression is a statistical approach used to analyze the relationship between a dependent variable (target variable) and one or more independent variables (predictor variables). The objective is to determine the most suitable function that characterizes the connection between these variables.</p>
+<p>It seeks to find the best-fitting model, which can be utilized to make predictions or draw conclusions.</p>
+<h2 id="regression-in-machine-learning_1">Regression in Machine Learning<a class="headerlink" href="#regression-in-machine-learning_1" title="Permanent link">#</a></h2>
+<p>It is a supervised machine learning technique, used to predict the value of the dependent variable for new, unseen data. It models the relationship between the input features and the target variable, allowing for the estimation or prediction of numerical values.</p>
+<p>Regression analysis problem works with if output variable is a real or continuous value, such as “salary” or “weight”. Many different models can be used, the simplest is the linear regression. It tries to fit data with the best hyper-plane which goes through the points.</p>
+<p><strong>Terminologies Related to the Regression Analysis in Machine Learning</strong></p>
+<p>Terminologies Related to Regression Analysis:</p>
+<ul>
+<li><strong>Response Variable:</strong> The primary factor to predict or understand in regression, also known as the dependent variable or target variable.</li>
+<li><strong>Predictor Variable:</strong> Factors influencing the response variable, used to predict its values; also called independent variables.</li>
+<li><strong>Outliers:</strong> Observations with significantly low or high values compared to others, potentially impacting results and best avoided.</li>
+<li><strong>Multicollinearity:</strong> High correlation among independent variables, which can complicate the ranking of influential variables.</li>
+<li><strong>Underfitting and Overfitting:</strong> Overfitting occurs when an algorithm performs well on training but poorly on testing, while underfitting indicates poor performance on both datasets.</li>
+</ul>
+<p><strong>Regression Types</strong></p>
+<p>There are two main types of regression:</p>
+<ul>
+<li><strong>Simple Regression</strong><ul>
+<li>Used to predict a continuous dependent variable based on a single independent variable.</li>
+<li>Simple linear regression should be used when there is only a single independent variable.</li>
+</ul>
+</li>
+<li><strong>Multiple Regression</strong><ul>
+<li>Used to predict a continuous dependent variable based on multiple independent variables.</li>
+<li>Multiple linear regression should be used when there are multiple independent variables.</li>
+</ul>
+</li>
+<li><strong>NonLinear Regression</strong><ul>
+<li>Relationship between the dependent variable and independent variable(s) follows a nonlinear pattern.</li>
+<li>Provides flexibility in modeling a wide range of functional forms.</li>
+</ul>
+</li>
+</ul>
+<h2 id="regression-algorithms">Regression Algorithms<a class="headerlink" href="#regression-algorithms" title="Permanent link">#</a></h2>
+<p>There are many different types of regression algorithms, but some of the most common include:</p>
+<ul>
+<li><strong>Linear Regression</strong><ul>
+<li>Linear regression is one of the simplest and most widely used statistical models. This assumes that there is a linear relationship between the independent and dependent variables. This means that the change in the dependent variable is proportional to the change in the independent variables.</li>
+</ul>
+</li>
+<li><strong>Polynomial Regression</strong><ul>
+<li>Polynomial regression is used to model nonlinear relationships between the dependent variable and the independent variables. It adds polynomial terms to the linear regression model to capture more complex relationships.</li>
+</ul>
+</li>
+<li><strong>Support Vector Regression (SVR)</strong><ul>
+<li>Support vector regression (SVR) is a type of regression algorithm that is based on the support vector machine (SVM) algorithm. SVM is a type of algorithm that is used for classification tasks, but it can also be used for regression tasks. SVR works by finding a hyperplane that minimizes the sum of the squared residuals between the predicted and actual values.</li>
+</ul>
+</li>
+<li><strong>Decision Tree Regression</strong><ul>
+<li>Decision tree regression is a type of regression algorithm that builds a decision tree to predict the target value. A decision tree is a tree-like structure that consists of nodes and branches. Each node represents a decision, and each branch represents the outcome of that decision. The goal of decision tree regression is to build a tree that can accurately predict the target value for new data points.</li>
+</ul>
+</li>
+<li><strong>Random Forest Regression</strong><ul>
+<li>Random forest regression is an ensemble method that combines multiple decision trees to predict the target value. Ensemble methods are a type of machine learning algorithm that combines multiple models to improve the performance of the overall model. Random forest regression works by building a large number of decision trees, each of which is trained on a different subset of the training data. The final prediction is made by averaging the predictions of all of the trees.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Regularized Linear Regression Techniques</strong></p>
+<ul>
+<li><strong>Ridge Regression</strong><ul>
+<li>Ridge regression is a type of linear regression that is used to prevent overfitting. Overfitting occurs when the model learns the training data too well and is unable to generalize to new data.</li>
+</ul>
+</li>
+<li><strong>Lasso regression</strong><ul>
+<li>Lasso regression is another type of linear regression that is used to prevent overfitting. It does this by adding a penalty term to the loss function that forces the model to use some weights and to set others to zero.</li>
+</ul>
+</li>
+</ul>
+<h2 id="characteristics-of-regression">Characteristics of Regression<a class="headerlink" href="#characteristics-of-regression" title="Permanent link">#</a></h2>
+<p>Here are the characteristics of the regression:</p>
+<ul>
+<li><strong>Continuous Target Variable:</strong> Regression deals with predicting continuous target variables that represent numerical values. Examples include predicting house prices, forecasting sales figures, or estimating patient recovery times.</li>
+<li><strong>Error Measurement:</strong> Regression models are evaluated based on their ability to minimize the error between the predicted and actual values of the target variable. Common error metrics include mean absolute error (MAE), mean squared error (MSE), and root mean squared error (RMSE).</li>
+<li><strong>Model Complexity:</strong> Regression models range from simple linear models to more complex nonlinear models. The choice of model complexity depends on the complexity of the relationship between the input features and the target variable.</li>
+<li><strong>Overfitting and Underfitting:</strong> Regression models are susceptible to overfitting and underfitting.</li>
+<li><strong>Interpretability:</strong> The interpretability of regression models varies depending on the algorithm used. Simple linear models are highly interpretable, while more complex models may be more difficult to interpret.</li>
+</ul>
+<p><strong>Examples</strong></p>
+<p><strong>Which of the following is a regression task?</strong></p>
+<ul>
+<li>Predicting age of a person</li>
+<li>Predicting nationality of a person</li>
+<li>Predicting whether stock price of a company will increase tomorrow</li>
+<li>Predicting whether a document is related to sighting of UFOs?</li>
+</ul>
+<p><strong>Solution :</strong> Predicting age of a person (because it is a real value, predicting nationality is categorical, whether stock price will increase is discrete-yes/no answer, predicting whether a document is related to UFO is again discrete- a yes/no answer).</p>
+<h2 id="regression-model-machine-learning">Regression Model Machine Learning<a class="headerlink" href="#regression-model-machine-learning" title="Permanent link">#</a></h2>
+<p>Let’s take an example of linear regression. We have a <a href="https://vincentarelbundock.github.io/Rdatasets/csv/Ecdat/Housing.csv">Housing data set</a> and we want to predict the price of the house. Following is the python code for it.</p>
+<pre><code># Python code to illustrate 
+# regression using data set 
+import matplotlib 
+matplotlib.use('GTKAgg') 
+
+import matplotlib.pyplot as plt 
+import numpy as np 
+from sklearn import datasets, linear_model 
+import pandas as pd 
+
+# Load CSV and columns 
+df = pd.read_csv(&quot;Housing.csv&quot;) 
+
+Y = df['price'] 
+X = df['lotsize'] 
+
+X=X.values.reshape(len(X),1) 
+Y=Y.values.reshape(len(Y),1) 
+
+# Split the data into training/testing sets 
+X_train = X[:-250] 
+X_test = X[-250:] 
+
+# Split the targets into training/testing sets 
+Y_train = Y[:-250] 
+Y_test = Y[-250:] 
+
+# Plot outputs 
+plt.scatter(X_test, Y_test, color='black') 
+plt.title('Test Data') 
+plt.xlabel('Size') 
+plt.ylabel('Price') 
+plt.xticks(()) 
+plt.yticks(()) 
+
+
+# Create linear regression object 
+regr = linear_model.LinearRegression() 
+
+# Train the model using the training sets 
+regr.fit(X_train, Y_train) 
+
+# Plot outputs 
+plt.plot(X_test, regr.predict(X_test), color='red',linewidth=3) 
+plt.show() 
+</code></pre>
+<p><img alt="regression" src="../img/regression1.png" /></p>
+<p>Here in this graph, we plot the test data. The red line indicates the best fit line for predicting the price.</p>
+<p>To make an individual prediction using the linear regression model: </p>
+<p><img alt="regression" src="../img/regression2.png" /></p>
+<h2 id="regression-evaluation-metrics">Regression Evaluation Metrics<a class="headerlink" href="#regression-evaluation-metrics" title="Permanent link">#</a></h2>
+<p>Here are some most popular evaluation metrics for regression:</p>
+<ul>
+<li><strong>Mean Absolute Error (MAE):</strong> The average absolute difference between the predicted and actual values of the target variable.</li>
+<li><strong>Mean Squared Error (MSE):</strong> The average squared difference between the predicted and actual values of the target variable.</li>
+<li><strong>Root Mean Squared Error (RMSE):</strong> The square root of the mean squared error.</li>
+<li><strong>Huber Loss:</strong> A hybrid loss function that transitions from MAE to MSE for larger errors, providing balance between robustness and MSE’s sensitivity to outliers.</li>
+<li>Root Mean Square Logarithmic Error</li>
+<li><strong>R2 – Score:</strong> Higher values indicate better fit, ranging from 0 to 1.</li>
+</ul>
+<h2 id="applications-of-regression">Applications of Regression<a class="headerlink" href="#applications-of-regression" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Predicting prices:</strong> For example, a regression model could be used to predict the price of a house based on its size, location, and other features.</li>
+<li><strong>Forecasting trends:</strong> For example, a regression model could be used to forecast the sales of a product based on historical sales data and economic indicators.</li>
+<li><strong>Identifying risk factors:</strong> For example, a regression model could be used to identify risk factors for heart disease based on patient data.</li>
+<li><strong>Making decisions:</strong> For example, a regression model could be used to recommend which investment to buy based on market data.</li>
+</ul>
+<p><strong>What is regression and classification?</strong></p>
+<pre><code>Regression are used to predict continuous values, while classification categorizes data. Both are supervised learning tasks in machine learning.
+</code></pre>
+<p><strong>What is simple regression in machine learning?</strong></p>
+<pre><code>Simple regression predicts a dependent variable based on one independent variable, forming a linear relationship.
+</code></pre>
+<p><strong>What are the different regression algorithm?</strong></p>
+<pre><code>Regression algorithms include linear regression, polynomial regression, support vector regression, and decision tree regression.
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Supervised-overview.html" class="btn btn-neutral float-left" title="Supervised Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="Linear-Regression.html" class="btn btn-neutral float-right" title="Linear Regression">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Supervised-overview.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="Linear-Regression.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
