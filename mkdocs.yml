@@ -116,6 +116,8 @@ nav:
        - Autoencoder: AIML/DeepLearning/Autoencoder.md
     - Google:
        - Autoencoder: AIML/DeepLearning/Autoencoder.md
+    - Learning Topics:
+       - Learning: AIML/DeepLearning/Learning.md
 
 #theme: readthedocs
 theme:
