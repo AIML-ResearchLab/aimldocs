@@ -436,7 +436,8 @@ When you click on Hammer, it shows you the available MCP Tools as below.
 
 ![mcp](image/mcp-5.png)
 
-## Alternate run Dev Env
+
+## Alternatively, you can test it with the MCP Inspector:
 
 ![mcp](image/mcp14.png)
 ![mcp](image/mcp15.png)
@@ -444,12 +445,12 @@ When you click on Hammer, it shows you the available MCP Tools as below.
 ![mcp](image/mcp17.png)
 
 
-[modelcontextprotocol](https://modelcontextprotocol.io/quickstart/server)
+
 
 
 In the context of agentic AI, MCP, or Model Context Protocol, is an open standard that facilitates seamless communication and data exchange between AI agents and external systems, enabling them to access and utilize data and tools efficiently.
 
-![mcp](image/mcp6.png)
+
 ![mcp](image/mcp7.png)
 ![mcp](image/mcp8.png)
 ![mcp](image/mcp9.png)
@@ -482,5 +483,6 @@ Claude 3.5 Sonnet is adept at quickly building MCP server implementations, makin
 5. [MCP-3](https://aiagentslist.com/blog/what-is-an-mcp-server)
 6. [MCP-github](https://github.com/modelcontextprotocol)
 7. [MCP-4](https://modelcontextprotocol.io/introduction)
+8. [modelcontextprotocol](https://modelcontextprotocol.io/quickstart/server)
 
 
