@@ -108,6 +108,8 @@ nav:
          - crewai overview: AIML/AgenticAI/crewai.md
        - langgraph:
          - langgraph overview: AIML/AgenticAI/langgraph.md
+       - Model Context Protocol (MCP):
+         -  MCP overview: AIML/AgenticAI/mcp.md
     - Aws:
        - Autoencoder: AIML/DeepLearning/Autoencoder.md
     - Azure:
