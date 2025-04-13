@@ -11,7 +11,7 @@ nav:
     - Overview: AIML/aiml-overview.md
     - Python: AIML/Python.md
     - NumPy: AIML/NumPy.md
-    - Pandas: AIML/AI10_Assignment_Ganesh_Kinkar_Giri.ipynb
+    - Pandas: AIML/Pandas.ipynb
     - SciPy: AIML/SciPy.md
     - Normal Distribution: AIML/NormalDistribution.md
     - Binomial Distribution: AIML/BinomialDistribution.md
