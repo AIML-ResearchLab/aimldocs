@@ -1915,15 +1915,3 @@ np.linalg.eig(), np.linalg.svd()
 - **Gradient descent implementation**
 
 - **Custom ML algorithms (k-NN, k-means, PCA)**
-
-
-
-
-
-
-
-
-
-
-
-

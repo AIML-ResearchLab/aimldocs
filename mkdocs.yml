@@ -11,8 +11,17 @@ nav:
     - Overview: AIML/aiml-overview.md
     - Python: AIML/Python.md
     - NumPy: AIML/NumPy.md
-    - Pandas: AIML/Pandas.md
+    - Pandas: AIML/AI10_Assignment_Ganesh_Kinkar_Giri.ipynb
     - SciPy: AIML/SciPy.md
+    - Normal Distribution: AIML/NormalDistribution.md
+    - Binomial Distribution: AIML/BinomialDistribution.md
+    - Poisson Distribution: AIML/PoissonDistribution.md
+    - Uniform Distribution: AIML/UniformDistribution.md
+    - Logistic Distribution: AIML/LogisticDistribution.md
+    - Multinomial Distribution: AIML/MultinomialDistribution.md
+    - Exponential Distribution: AIML/ExponentialDistribution.md
+    - Categorical Distribution: AIML/CategoricalDistribution.md
+    - Bernoulli Distribution: AIML/BernoulliDistribution.md
     - Data Visualization:
       - Matplotlib: AIML/Matplotlib.md
       - Seaborn: AIML/Seaborn.md
@@ -142,12 +151,15 @@ theme:
 
 extra_css: [css/extra.css]
 markdown_extensions:
-    - toc:
+   - admonition
+   - codehilite
+   - toc:
         toc_depth: 3
         permalink: "#"
-    - tables        
+   - tables        
 use_directory_urls: false
 plugins:
     - search
     - git-revision-date-localized
     - git-authors
+    - mkdocs-jupyter

@@ -37,7 +37,8 @@ jobs:
         run: |
           pip install jinja2==3.0.3 mkdocs mkdocs-material \
                       mkdocs-git-revision-date-localized-plugin \
-                      mkdocs-git-authors-plugin
+                      mkdocs-git-authors-plugin \
+                      mkdocs mkdocs-jupyter
 
       - name: Build Documentation
         run: mkdocs build --verbose --clean
