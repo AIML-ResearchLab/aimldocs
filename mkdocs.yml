@@ -9,6 +9,16 @@ nav:
   - Home: index.md
   - AIML: 
     - Overview: AIML/aiml-overview.md
+    - Python: AIML/Python.md
+    - NumPy: AIML/NumPy.md
+    - Pandas: AIML/Pandas.md
+    - SciPy: AIML/SciPy.md
+    - Data Visualization:
+      - Matplotlib: AIML/Matplotlib.md
+      - Seaborn: AIML/Seaborn.md
+    - Machine Learning & AI:
+      - TensorFlow: AIML/TensorFlow.md
+      - PyTorch: AIML/PyTorch.md
     - Supervised: 
       - Supervised Overview: AIML/Supervised/Supervised-overview.md
       - Regression:
