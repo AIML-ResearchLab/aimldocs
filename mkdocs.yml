@@ -22,10 +22,13 @@ nav:
     - Exponential Distribution: AIML/ExponentialDistribution.md
     - Categorical Distribution: AIML/CategoricalDistribution.md
     - Bernoulli Distribution: AIML/BernoulliDistribution.md
+    - Statistics: AIML/Statistics.md
     - Data Visualization:
       - Matplotlib: AIML/Matplotlib.md
       - Seaborn: AIML/Seaborn.md
     - Machine Learning & AI:
+      - Feature Engineering: AIML/FeatureEngineering.md
+      - Test: AIML/Test.ipynb
       - TensorFlow: AIML/TensorFlow.md
       - PyTorch: AIML/PyTorch.md
     - Supervised: 
