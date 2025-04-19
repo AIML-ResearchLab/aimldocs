@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Normal Distribution - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Normal Distribution";
+        var mkdocs_page_input_path = "AIML/NormalDistribution.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="NumPy.html">NumPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Pandas.html">Pandas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="SciPy.html">SciPy</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Normal Distribution</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="BinomialDistribution.html">Binomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="PoissonDistribution.html">Poisson Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="UniformDistribution.html">Uniform Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="LogisticDistribution.html">Logistic Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="MultinomialDistribution.html">Multinomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="ExponentialDistribution.html">Exponential Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="CategoricalDistribution.html">Categorical Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="BernoulliDistribution.html">Bernoulli Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Statistics.html">Statistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Visualization</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Matplotlib.html">Matplotlib</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Seaborn.html">Seaborn</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning & AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="FeatureEngineering.html">Feature Engineering</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Test.html">Test</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="TensorFlow.html">TensorFlow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="PyTorch.html">PyTorch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="VectorDb/vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="VectorDb/milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="VectorDb/milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="VectorDb/faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="VectorDb/weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="VectorDb/pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI Framework</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >crewai</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="AgenticAI/crewai.html">crewai overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >langgraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="AgenticAI/langgraph.html">langgraph overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Model Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="AgenticAI/mcp.html">MCP overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="aws/vpc.html">VPC</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Learning Topics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Learning.html">Learning</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+      <li class="breadcrumb-item active">Normal Distribution</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="normal-gaussian-distribution">Normal (Gaussian) Distribution<a class="headerlink" href="#normal-gaussian-distribution" title="Permanent link">#</a></h1>
+<h1 id="normal-distribution">Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permanent link">#</a></h1>
+<p>The Normal Distribution is one of the most important distributions.</p>
+<p>It is also called the Gaussian Distribution after the German mathematician Carl Friedrich Gauss.</p>
+<p>The <strong>Normal Distribution</strong> is a <strong>bell-shaped curve</strong> that shows how values are distributed:</p>
+<p>Use the <strong>random.normal()</strong> method to get a Normal Data Distribution.</p>
+<ul>
+<li>Most values are <strong>around the mean</strong></li>
+<li>Fewer values are at the <strong>extremes</strong></li>
+</ul>
+<p>It's the most commonly used distribution in statistics and machine learning.</p>
+<h3 id="real-world-examples">📊 Real-World Examples<a class="headerlink" href="#real-world-examples" title="Permanent link">#</a></h3>
+<ul>
+<li>Heights of people</li>
+<li>Test scores</li>
+<li>Blood pressure readings</li>
+<li>Measurement errors</li>
+</ul>
+<p>These all often follow a normal distribution.</p>
+<h3 id="mathematical-definition">🔢 Mathematical Definition<a class="headerlink" href="#mathematical-definition" title="Permanent link">#</a></h3>
+<p>The probability density function (PDF) of a normal distribution:</p>
+<p><img alt="numpy" src="img/image2.png" /></p>
+<p>Where:
+- μ = mean (center of the distribution)
+- σ = standard deviation (spread or width of the bell)
+- e = Euler’s number (≈ 2.718)</p>
+<h3 id="key-properties">📌 Key Properties<a class="headerlink" href="#key-properties" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code>Property                        Meaning
+Symmetric                       Centered at the mean
+Bell-shaped                     Smooth curve, peak at mean
+Mean = Median = Mode            All are the same in a perfect normal dist
+Defined by two params           Mean (μ), Std. Dev. (σ)
+Area under curve = 1            Total probability is 100%
+</code></pre></div>
+
+<h3 id="empirical-rule-68-95-997">📏 Empirical Rule (68-95-99.7)<a class="headerlink" href="#empirical-rule-68-95-997" title="Permanent link">#</a></h3>
+<p>The Empirical Rule tells us how data is spread around the mean (center) when the data is normally distributed.</p>
+<p>Here’s what it means:</p>
+<h3 id="68-of-data-lies-within-1-standard-deviation">✅ 68% of data lies within ±1 standard deviation (σ)<a class="headerlink" href="#68-of-data-lies-within-1-standard-deviation" title="Permanent link">#</a></h3>
+<ul>
+<li>Range: from <strong>-1 to +1</strong></li>
+<li>Example: If test scores are normally distributed with mean = 70 and std dev = 10.<ul>
+<li>then 68% of students scored between 60 and 80</li>
+</ul>
+</li>
+</ul>
+<h3 id="95-of-data-lies-within-2-standard-deviations">✅ 95% of data lies within ±2 standard deviations (σ)<a class="headerlink" href="#95-of-data-lies-within-2-standard-deviations" title="Permanent link">#</a></h3>
+<ul>
+<li>Range: from <strong>-2 to +2</strong></li>
+<li>So almost all data is within this range</li>
+</ul>
+<h3 id="997-of-data-lies-within-3-standard-deviations">✅ 99.7% of data lies within ±3 standard deviations (σ)<a class="headerlink" href="#997-of-data-lies-within-3-standard-deviations" title="Permanent link">#</a></h3>
+<ul>
+<li>Range: from <strong>-3 to +3</strong></li>
+<li>Nearly all the data lives here</li>
+</ul>
+<h3 id="visualization-idea">📈 Visualization Idea<a class="headerlink" href="#visualization-idea" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code>     -3σ      -2σ      -1σ      0       +1σ     +2σ     +3σ
+      |--------|--------|-------|--------|-------|--------|
+      |   0.15%|  2.35% | 13.5% | 34%    |13.5%  | 2.35%  | 0.15% |
+</code></pre></div>
+
+<p>Add it all up:</p>
+<ul>
+<li><strong>34% + 34% = 68% within ±1σ</strong></li>
+<li><strong>13.5% + 34% + 34% + 13.5% = 95% within ±2σ</strong></li>
+<li><strong>Almost everything = 99.7% within ±3σ</strong></li>
+</ul>
+<p>The Bell Curve is Symmetrical
+So, if 68% of the data lies within ±1σ, that means:</p>
+<ul>
+<li>34% is on the <strong>left side</strong> of the mean (between -1σ and 0)</li>
+<li>34% is on the <strong>right</strong> side (between 0 and +1σ)</li>
+</ul>
+<h3 id="full-breakdown-of-standard-normal-distribution">📊 Full Breakdown of Standard Normal Distribution<a class="headerlink" href="#full-breakdown-of-standard-normal-distribution" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code>Range       % of Total Data                 Notes
+μ ± 1σ      68%                             From -1σ to +1σ (34% left, 34% right)
+μ ± 2σ      95%                             From -2σ to +2σ → includes 68% + more
+μ ± 3σ      99.7%                           Almost all data (everything within -3 to +3σ)
+</code></pre></div>
+
+<h3 id="but-what-about-whats-outside-those-ranges">🧮 But what about what's outside those ranges?<a class="headerlink" href="#but-what-about-whats-outside-those-ranges" title="Permanent link">#</a></h3>
+<p>Here’s the exact breakdown of the tails:</p>
+<div class="codehilite"><pre><span></span><code>     &lt; -3σ       -2σ to -3σ    -1σ to -2σ    -1σ to 0    0 to +1σ   +1σ to +2σ   +2σ to +3σ    &gt; +3σ
+     0.15%        2.35%         13.5%         34%         34%        13.5%        2.35%         0.15%
+</code></pre></div>
+
+<ul>
+<li><strong>2.35%</strong> of the data lies between <strong>-2σ and -3σ</strong>, and another <strong>2.35%</strong> between <strong>+2σ and +3σ</strong></li>
+<li><strong>0.15%</strong> lies beyond <strong>-3σ</strong> and another <strong>0.15%</strong> beyond <strong>+3σ</strong></li>
+</ul>
+<h3 id="quick-visual">🧠 Quick Visual<a class="headerlink" href="#quick-visual" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="w">       </span><span class="o">|&lt;--</span><span class="mf">0.15</span><span class="o">--|&lt;--</span><span class="mf">2.35</span><span class="o">--|&lt;--</span><span class="mf">13.5</span><span class="o">--|&lt;--</span><span class="mi">34</span><span class="o">--|--</span><span class="mi">34</span><span class="o">--&gt;|--</span><span class="mf">13.5</span><span class="o">--&gt;|--</span><span class="mf">2.35</span><span class="o">--&gt;|--</span><span class="mf">0.15</span><span class="o">--&gt;|</span>
+<span class="w">       </span><span class="o">-</span><span class="mi">3</span><span class="err">σ</span><span class="w">       </span><span class="o">-</span><span class="mi">2</span><span class="err">σ</span><span class="w">       </span><span class="o">-</span><span class="mi">1</span><span class="err">σ</span><span class="w">       </span><span class="mi">0</span><span class="w">       </span><span class="o">+</span><span class="mi">1</span><span class="err">σ</span><span class="w">      </span><span class="o">+</span><span class="mi">2</span><span class="err">σ</span><span class="w">       </span><span class="o">+</span><span class="mi">3</span><span class="err">σ</span>
+</code></pre></div>
+
+<ul>
+<li>The <strong>total area under the curve</strong> is 100%</li>
+<li><strong>99.7%</strong> is within <strong>±3σ</strong></li>
+<li>The remaining <strong>0.3%</strong> (<strong>0.15%</strong> on each end) is extreme outlier data</li>
+</ul>
+<p><strong>Note:</strong> These values are extremely rare — and in machine learning or statistics, they may be considered <strong>anomalies</strong> or <strong>noise</strong>.</p>
+<p><img alt="numpy" src="img/image4.png" /></p>
+<p>Here’s the visual breakdown of the normal distribution with each region clearly marked:</p>
+<ul>
+<li>The center green areas (±1σ) represent <strong>68%</strong></li>
+<li>The yellow areas between ±1σ to ±2σ add up to <strong>27%</strong> (13.5% each side)</li>
+<li>The orange areas between ±2σ to ±3σ contribute <strong>4.7%</strong> (2.35% each side)</li>
+<li>The red tails beyond ±3σ are the extreme <strong>0.3%</strong> (0.15% on each end)</li>
+</ul>
+<p>It has three parameters:</p>
+<h1 id="example-students-test-scores">🎓 Example: Students' Test Scores<a class="headerlink" href="#example-students-test-scores" title="Permanent link">#</a></h1>
+<p>Imagine a standardized math test is given to 10,000 students.</p>
+<p><strong>The scores are:</strong>
+- <strong>Normally distributed</strong>
+- <strong>Mean (μ)</strong> = 70
+- <strong>Standard Deviation (σ)</strong> = 10</p>
+<h3 id="what-this-means">🧠 What this means:<a class="headerlink" href="#what-this-means" title="Permanent link">#</a></h3>
+<ul>
+<li>Most students score around <strong>70</strong></li>
+<li>Some score higher, some lower, in a symmetric bell shape</li>
+</ul>
+<h3 id="lets-apply-the-empirical-rule">📊 Let’s apply the Empirical Rule:<a class="headerlink" href="#lets-apply-the-empirical-rule" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code>Score Range         Std Dev Range           % of Students               Count out of 10,000
+60 to 80            μ ± 1σ                  68%                         6,800 students
+50 to 90            μ ± 2σ                  95%                         9,500 students
+40 to 100           μ ± 3σ                  99.7%                       9,970 students
+&lt; 40 or &gt; 100       Outside ±3σ             0.3%                        ~30 students
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>Score Range         Between Which σ             % of Students           Real Count (out of 10,000)
+&lt; 40                Less than -3σ               0.15%                   15 students
+40–50               -3σ to -2σ                  2.35%                   235 students
+50–60               -2σ to -1σ                  13.5%                   1,350 students
+60–70               -1σ to 0σ                   34%                     3,400 students
+70–80               0σ to +1σ                   34%                     3,400 students
+80–90               +1σ to +2σ                  13.5%                   1,350 students
+90–100              +2σ to +3σ                  2.35%                   235 students
+&gt; 100               More than +3σ               0.15%                   15 students
+</code></pre></div>
+
+<ul>
+<li>
+<p><strong>loc</strong> - (Mean) where the peak of the bell exists.</p>
+</li>
+<li>
+<p><strong>scale</strong> - (Standard Deviation) how flat the graph distribution should be.</p>
+</li>
+<li>
+<p><strong>size</strong> - The shape of the returned array.</p>
+</li>
+</ul>
+<p>Example
+Generate a random normal distribution of size 2x3:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="kp">size</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">Output</span><span class="p">:</span>
+<span class="p">[[</span> <span class="mf">1.08425956</span>  <span class="mf">0.21924346</span> <span class="o">-</span><span class="mf">0.87622924</span><span class="p">]</span>
+ <span class="p">[</span><span class="o">-</span><span class="mf">1.84470937</span> <span class="o">-</span><span class="mf">0.02399501</span> <span class="o">-</span><span class="mf">1.62717006</span><span class="p">]]</span>
+</code></pre></div>
+
+<p>Example
+Generate a random normal distribution of size 2x3 with mean at 1 and standard deviation of 2:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="kp">size</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">Output</span><span class="p">:</span>
+<span class="p">[[</span><span class="o">-</span><span class="mf">1.1917958</span>   <span class="mf">1.32752796</span>  <span class="mf">1.04626068</span><span class="p">]</span>
+ <span class="p">[</span><span class="o">-</span><span class="mf">1.74596895</span>  <span class="mf">1.31380769</span>  <span class="mf">1.01775866</span><span class="p">]]</span>
+</code></pre></div>
+
+<h2 id="visualization-of-normal-distribution">Visualization of Normal Distribution<a class="headerlink" href="#visualization-of-normal-distribution" title="Permanent link">#</a></h2>
+<p>Example</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="kp">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">),</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;kde&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Output:
+<img alt="numpy" src="img/image1.png" /></p>
+<p><strong>Note:</strong> The curve of a Normal Distribution is also known as the Bell Curve because of the bell-shaped curve.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="SciPy.html" class="btn btn-neutral float-left" title="SciPy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="BinomialDistribution.html" class="btn btn-neutral float-right" title="Binomial Distribution">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="SciPy.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="BinomialDistribution.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

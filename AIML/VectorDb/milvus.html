@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Milvus Db Details - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Milvus Db Details";
+        var mkdocs_page_input_path = "AIML/VectorDb/milvus.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Python.html">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NumPy.html">NumPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pandas.html">Pandas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SciPy.html">SciPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NormalDistribution.html">Normal Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BinomialDistribution.html">Binomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PoissonDistribution.html">Poisson Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UniformDistribution.html">Uniform Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LogisticDistribution.html">Logistic Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MultinomialDistribution.html">Multinomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ExponentialDistribution.html">Exponential Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CategoricalDistribution.html">Categorical Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BernoulliDistribution.html">Bernoulli Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Statistics.html">Statistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Visualization</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Seaborn.html">Seaborn</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning & AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FeatureEngineering.html">Feature Engineering</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Test.html">Test</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TensorFlow.html">TensorFlow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PyTorch.html">PyTorch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Vector Database</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Milvus</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Milvus Db Details</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI Framework</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >crewai</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/crewai.html">crewai overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >langgraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/langgraph.html">langgraph overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Model Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/mcp.html">MCP overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/vpc.html">VPC</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Learning Topics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Learning.html">Learning</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Vector Database</li>
+          <li class="breadcrumb-item">Milvus</li>
+      <li class="breadcrumb-item active">Milvus Db Details</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="what-is-milvus">What is Milvus?<a class="headerlink" href="#what-is-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li>Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of environments, from a laptop to large-scale distributed systems. It is available as both open-source software and a cloud service.</li>
+<li>Milvus is an open-source project under LF AI &amp; Data Foundation distributed under the Apache 2.0 license.</li>
+<li>Core contributors include professionals from Zilliz, ARM, NVIDIA, AMD, Intel, Meta, IBM, Salesforce, Alibaba, and Microsoft.</li>
+</ul>
+<h1 id="unstructured-data-embeddings-and-milvus">Unstructured Data, Embeddings, and Milvus<a class="headerlink" href="#unstructured-data-embeddings-and-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li>Unstructured data, such as text, images, and audio, varies in format and carries rich underlying semantics, making it challenging to analyze.</li>
+<li>To manage this complexity, embeddings are used to convert unstructured data into numerical vectors that capture its essential characteristics.</li>
+<li>These vectors are then stored in a vector database, enabling fast and scalable searches and analytics.</li>
+<li>Milvus offers robust data modeling capabilities, enabling you to organize your unstructured or multi-modal data into structured collections.</li>
+<li>It supports a wide range of data types for different attribute modeling, including common numerical and character types, various vector types, arrays, sets, and JSON, saving you from the effort of maintaining multiple database systems.</li>
+</ul>
+<p><img alt="Milvus" src="image/Milvus1.png" /></p>
+<p>Milvus offers three deployment modes, covering a wide range of data scales—from local prototyping in Jupyter Notebooks to massive Kubernetes clusters managing tens of billions of vectors:</p>
+<h2 id="milvus-lite">Milvus Lite<a class="headerlink" href="#milvus-lite" title="Permanent link">#</a></h2>
+<ul>
+<li>Milvus Lite is a Python library that can be easily integrated into your applications. As a lightweight version of Milvus, it’s ideal for quick prototyping in Jupyter Notebooks or running on edge devices with limited resources.</li>
+</ul>
+<h2 id="milvus-standalone">Milvus Standalone<a class="headerlink" href="#milvus-standalone" title="Permanent link">#</a></h2>
+<ul>
+<li>Milvus Standalone is a single-machine server deployment, with all components bundled into a single Docker image for convenient deployment.</li>
+</ul>
+<h2 id="milvus-distributed">Milvus Distributed<a class="headerlink" href="#milvus-distributed" title="Permanent link">#</a></h2>
+<ul>
+<li>
+<p>Milvus Distributed can be deployed on Kubernetes clusters, featuring a cloud-native architecture designed for billion-scale or even larger scenarios.</p>
+</li>
+<li>
+<p><strong>Milvus Lite</strong> is recommended for smaller datasets, up to a few million vectors.</p>
+</li>
+<li><strong>Milvus Standalone</strong> is suitable for medium-sized datasets, scaling up to 100 million vectors.</li>
+<li><strong>Milvus Distributed</strong> is designed for large-scale deployments, capable of handling datasets from 100 million up to tens of billions of vectors.</li>
+</ul>
+<p><img alt="Milvus" src="image/Milvus0.png" /></p>
+<h1 id="indexes-supported-in-milvus">Indexes supported in Milvus<a class="headerlink" href="#indexes-supported-in-milvus" title="Permanent link">#</a></h1>
+<p>Milvus supports various index types, which are categorized by the type of vector embeddings they handle:
+<strong>floating-point embeddings</strong> (also known as floating point vectors or dense vectors), <strong>binary embeddings</strong> (also known as binary vectors), and <strong>sparse embeddings</strong>  (also known as sparse vectors).</p>
+<h1 id="floating-point-embeddings">Floating-point embeddings<a class="headerlink" href="#floating-point-embeddings" title="Permanent link">#</a></h1>
+<h2 id="indexes-for-floating-point-embeddings">Indexes for floating-point embeddings<a class="headerlink" href="#indexes-for-floating-point-embeddings" title="Permanent link">#</a></h2>
+<p>For 128-dimensional floating-point embeddings (vectors), the storage they take up is 128 * the size of float = 512 bytes. And the distance metrics used for float-point embeddings are Euclidean distance <strong>(L2)</strong> and Inner product <strong>(IP)</strong>.</p>
+<p>These types of indexes include for CPU-based ANN searches.:</p>
+<ul>
+<li><strong>FLAT</strong></li>
+<li><strong>IVF_FLAT</strong></li>
+<li><strong>IVF_PQ</strong></li>
+<li><strong>IVF_SQ8</strong></li>
+<li><strong>HNSW</strong></li>
+<li><strong>HNSW_SQ</strong></li>
+<li><strong>HNSW_PQ</strong></li>
+<li><strong>HNSW_PRQ</strong></li>
+<li><strong>SCANN</strong></li>
+</ul>
+<h2 id="indexes-for-binary-embeddings">Indexes for binary embeddings<a class="headerlink" href="#indexes-for-binary-embeddings" title="Permanent link">#</a></h2>
+<p>For 128-dimensional binary embeddings, the storage they take up is 128 / 8 = 16 bytes. And the distance metrics used for binary embeddings are <strong>JACCARD</strong> and <strong>HAMMING</strong>.</p>
+<p>This type of indexes include <strong>BIN_FLAT</strong> and <strong>BIN_IVF_FLAT</strong>.</p>
+<h2 id="indexes-for-sparse-embeddings">Indexes for sparse embeddings<a class="headerlink" href="#indexes-for-sparse-embeddings" title="Permanent link">#</a></h2>
+<p>Indexes for sparse embeddings support the <strong>IP</strong> and <strong>BM25</strong> (for full-text search) metrics only.</p>
+<p>Index type supported for sparse embeddings: <strong>SPARSE_INVERTED_INDEX</strong>.</p>
+<h1 id="gpu-index">GPU Index<a class="headerlink" href="#gpu-index" title="Permanent link">#</a></h1>
+<p>Milvus supports various GPU index types to accelerate search performance and efficiency, especially in high-throughput, and high-recall scenarios. </p>
+<ul>
+<li><strong>GPU_CAGRA</strong></li>
+<li><strong>GPU_IVF_FLAT</strong></li>
+<li><strong>GPU_IVF_PQ</strong></li>
+<li><strong>GPU_BRUTE_FORCE</strong></li>
+</ul>
+<h1 id="scalar-index">Scalar Index<a class="headerlink" href="#scalar-index" title="Permanent link">#</a></h1>
+<p>Milvus supports filtered searches combining both scalar and vector fields. To enhance the efficiency of searches involving scalar fields, Milvus introduced scalar field indexing starting from version 2.1.0. </p>
+<h2 id="scalar-field-indexing-algorithms">Scalar field indexing algorithms<a class="headerlink" href="#scalar-field-indexing-algorithms" title="Permanent link">#</a></h2>
+<p>Milvus aims to achieve low memory usage, high filtering efficiency, and short loading time with its scalar field indexing algorithms.  These algorithms are categorized into two main types: <strong>auto indexing</strong> and <strong>inverted indexing</strong>.</p>
+<h2 id="auto-indexing">Auto indexing<a class="headerlink" href="#auto-indexing" title="Permanent link">#</a></h2>
+<p>Milvus provides the AUTOINDEX option to free you from having to manually choose an index type. When calling the create_index method, if the index_type is not specified, Milvus automatically selects the most suitable index type based on the data type.</p>
+<p>The following table lists the data types that Milvus supports and their corresponding auto indexing algorithms.</p>
+<p><img alt="Milvus" src="image/Milvus01.png" /></p>
+<h2 id="inverted-indexing">Inverted indexing<a class="headerlink" href="#inverted-indexing" title="Permanent link">#</a></h2>
+<p>Inverted indexing offers a flexible way to create an index for a scalar field by manually specifying index parameters. This method works well for various scenarios, including point queries, pattern match queries, full-text searches, JSON searches, Boolean searches, and even prefix match queries.</p>
+<p>An inverted index has two main components: a term dictionary and an inverted list. The term dictionary includes all tokenized words sorted alphabetically, while the inverted list contains the list of documents where each word appears. This setup makes point queries and range queries much faster and more efficient than brute-force searches.</p>
+<p><img alt="Milvus" src="image/Milvus02.png" /></p>
+<h1 id="metric-types">Metric Types<a class="headerlink" href="#metric-types" title="Permanent link">#</a></h1>
+<p>Similarity metrics are used to measure similarities among vectors. Choosing an appropriate distance metric helps improve classification and clustering performance significantly.</p>
+<p>Currently, Milvus supports these types of similarity Metrics: Euclidean distance <strong>(L2)</strong>, Inner Product <strong>(IP)</strong>, Cosine Similarity <strong>(COSINE), JACCARD, HAMMING, and BM25</strong> (specifically designed for full text search on sparse vectors).</p>
+<p><img alt="Milvus" src="image/Milvus03.png" /></p>
+<p><img alt="Milvus" src="image/Milvus04.png" /></p>
+<h2 id="euclidean-distance-l2">Euclidean distance (L2)<a class="headerlink" href="#euclidean-distance-l2" title="Permanent link">#</a></h2>
+<p>Essentially, Euclidean distance measures the length of a segment that connects 2 points.</p>
+<p><strong>NOTE:</strong> Milvus only calculates the value before applying the square root when Euclidean distance is chosen as the distance metric.</p>
+<h2 id="inner-product-ip">Inner product (IP)<a class="headerlink" href="#inner-product-ip" title="Permanent link">#</a></h2>
+<p>IP is more useful if you need to compare non-normalized data or when you care about magnitude and angle.</p>
+<p><strong>NOTE:</strong> If you use IP to calculate similarities between embeddings, you must normalize your embeddings. After normalization, the inner product equals cosine similarity.</p>
+<h2 id="cosine-similarity">Cosine similarity<a class="headerlink" href="#cosine-similarity" title="Permanent link">#</a></h2>
+<p>Cosine similarity uses the cosine of the angle between two sets of vectors to measure how similar they are. You can think of the two sets of vectors as line segments starting from the same point, such as [0,0,…], but pointing in different directions.</p>
+<p>The cosine similarity is always in the interval [-1, 1]. For example, two proportional vectors have a cosine similarity of 1, two orthogonal vectors have a similarity of 0, and two opposite vectors have a similarity of -1. The larger the cosine, the smaller the angle between the two vectors, indicating that these two vectors are more similar to each other.</p>
+<h2 id="jaccard-distance">JACCARD distance<a class="headerlink" href="#jaccard-distance" title="Permanent link">#</a></h2>
+<p>JACCARD similarity coefficient measures the similarity between two sample sets and is defined as the cardinality of the intersection of the defined sets divided by the cardinality of the union of them. It can only be applied to finite sample sets.</p>
+<h2 id="hamming-distance">HAMMING distance<a class="headerlink" href="#hamming-distance" title="Permanent link">#</a></h2>
+<p>HAMMING distance measures binary data strings. The distance between two strings of equal length is the number of bit positions at which the bits are different.</p>
+<p>For example, suppose there are two strings, 1101 1001 and 1001 1101.</p>
+<p>11011001 ⊕ 10011101 = 01000100. Since, this contains two 1s, the HAMMING distance, d (11011001, 10011101) = 2.</p>
+<h2 id="bm25-similarity">BM25 similarity<a class="headerlink" href="#bm25-similarity" title="Permanent link">#</a></h2>
+<p>BM25 is a widely used text relevance measurement method, specifically designed for full text search. It combines the following three key factors:</p>
+<ul>
+<li>
+<p><strong>Term Frequency (TF):</strong> Measures how frequently a term appears in a document. While higher frequencies often indicate greater importance, BM25 uses the saturation parameter k1 to prevent overly frequent terms from dominating the relevance score.</p>
+</li>
+<li>
+<p><strong>Inverse Document Frequency (IDF):</strong> Reflects the importance of a term across the entire corpus. Terms appearing in fewer documents receive a higher IDF value, indicating greater contribution to relevance.</p>
+</li>
+<li>
+<p><strong>Document Length Normalization:</strong> Longer documents tend to score higher due to containing more terms. BM25 mitigates this bias by normalizing document lengths, with parameter b controlling the strength of this normalization.</p>
+</li>
+</ul>
+<h1 id="consistency-level">Consistency Level<a class="headerlink" href="#consistency-level" title="Permanent link">#</a></h1>
+<p>As a distributed vector database, Milvus offers multiple levels of consistency to ensure that each node or replica can access the same data during read and write operations. Currently, the supported levels of consistency include <strong>Strong, Bounded, Eventually,</strong> and <strong>Session,</strong> with <strong>Bounded</strong> being the default level of consistency used.</p>
+<p><img alt="Milvus" src="image/Milvus05.png" /></p>
+<h2 id="milvus-provides-four-types-of-consistency-levels-with-different-guaranteets">Milvus provides four types of consistency levels with different GuaranteeTs.<a class="headerlink" href="#milvus-provides-four-types-of-consistency-levels-with-different-guaranteets" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Strong:</strong> The latest timestamp is used as the GuaranteeTs, and QueryNodes have to wait until the ServiceTime meets the GuaranteeTs before executing Search requests.</li>
+<li><strong>Eventual:</strong> The GuaranteeTs is set to an extremely small value, such as 1, to avoid consistency checks so that QueryNodes can immediately execute Search requests upon all batch data.</li>
+<li><strong>Bounded Staleness:</strong> The GuranteeTs is set to a time point earlier than the latest timestamp to make QueryNodes to perform searches with a tolerance of certain data loss.</li>
+<li><strong>Session:</strong> The latest time point at which the client inserts data is used as the GuaranteeTs so that QueryNodes can perform searches upon all the data inserted by the client.</li>
+</ul>
+<p>Milvus uses Bounded Staleness as the default consistency level. If the GuaranteeTs is left unspecified, the latest ServiceTime is used as the GuaranteeTs.</p>
+<h2 id="set-consistency-level">Set Consistency Level<a class="headerlink" href="#set-consistency-level" title="Permanent link">#</a></h2>
+<p><img alt="Milvus" src="image/Milvus06.png" /></p>
+<h1 id="in-memory-replica">In-Memory Replica<a class="headerlink" href="#in-memory-replica" title="Permanent link">#</a></h1>
+<p>In-memory replica (replication) mechanism in Milvus that enables multiple segment replications in the working memory to improve performance and availability.</p>
+<p>With in-memory replicas, Milvus can load the same segment on multiple query nodes. If one query node has failed or is busy with a current search request when another arrives, the system can send new requests to an idle query node that has a replication of the same segment.</p>
+<p><img alt="Milvus" src="image/Milvus07.png" /></p>
+<ol>
+<li>
+<p><strong>Performance</strong>
+In-memory replicas allow you to leverage extra CPU and memory resources. It is very useful if you have a relatively small dataset but want to increase read throughput with extra hardware resources. Overall QPS (query per second) and throughput can be significantly improved.</p>
+</li>
+<li>
+<p><strong>Availability</strong>
+In-memory replicas help Milvus recover faster if a query node crashes. When a query node fails, the segment does not have to be reloaded on another query node. Instead, the search request can be resent to a new query node immediately without having to reload the data again. With multiple segment replicas maintained simultaneously, the system is more resilient in the face of a failover.</p>
+</li>
+</ol>
+<p><strong>Key Concepts</strong>
+In-memory replicas are organized as replica groups. Each replica group contains shard replicas. Each shard replica has a streaming replica and a historical replica that correspond to the growing and sealed segments in the shard (i.e. DML channel).</p>
+<p><img alt="Milvus" src="image/Milvus08.png" /></p>
+<h1 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">#</a></h1>
+<ol>
+<li><strong>AutoID:</strong> AutoID is an attribute of the primary field that determines whether to enable AutoIncrement for the primary field. The value of AutoID is defined based on a timestamp. </li>
+<li><strong>Auto Index:</strong> Milvus automatically decides the most appropriate index type and params for a specific field based on empirical data. This is ideal for situations when you do not need to control the specific index params.</li>
+<li><strong>Attu:</strong> Attu is an all-in-one administration tool for Milvus that significantly reduces the complexity and cost of managing the system.</li>
+<li><strong>Birdwatcher:</strong> Birdwatcher is a debugging tool for Milvus that connects to etcd, allowing you to monitor the status of the Milvus server and make adjustments in real-time. It also supports etcd file backups, aiding developers in troubleshooting.</li>
+<li><strong>Bulk Writer:</strong> Bulk Writer is a data processing tool provided by Milvus SDKs (e.g. PyMilvus, Java SDK) , designed to convert raw datasets into a format compatible with Milvus for efficient importing.</li>
+<li><strong>Bulk Insert:</strong> Bulk Insert is an API that enhances writing performance by allowing multiple files to be imported in a single request, optimizing operations with large datasets.</li>
+<li><strong>Cardinal:</strong> Cardinal, developed by Zilliz Cloud, is a cutter-edge vector search algorithm that delivers unparalleled search quality and performance. With its innovative design and extensive optimizations, Cardinal outperforms Knowhere by several times to an order of magnitude while adaptively handling diverse production scenarios, such as varying K sizes, high filtering, different data distributions, and so on.</li>
+<li><strong>Channel:</strong> Milvus utilizes two types of channels, PChannel and VChannel. Each PChannel corresponds to a topic for log storage, while each VChannel corresponds to a shard in a collection.</li>
+<li><strong>Collection:</strong> In Milvus, a collection is equivalent to a table in a relational database management system (RDBMS). Collections are major logical objects used to store and manage entities. For more information, refer to Manage Collections.</li>
+<li><strong>Dependency:</strong> A dependency is a program that another program relies on to work. Milvus’ dependencies include etcd (stores meta data), MinIO or S3 (object storage), and Pulsar (manages snapshot logs). For more information, refer to Manage Dependencies.</li>
+<li><strong>Dynamic schema:</strong> Dynamic schema allows you to insert entities with new fields into a collection without modifying the existing schema. This means that you can insert data without knowing the full schema of a collection and can include fields that are not yet defined. You can enable this schema-free capability by enableing the dynamic field when creating a collection. </li>
+<li><strong>Embeddings:</strong> Milvus offers built-in embedding functions that work with popular embedding providers. Before creating a collection in Milvus, you can use these functions to generate embeddings for your datasets, streamlining the process of preparing data and vector searches.</li>
+<li><strong>Entity:</strong> An entity consists of a group of fields that represent real-world objects. Each entity in Milvus is represented by a unique primary key.</li>
+<li><strong>Field:</strong> A field in a Milvus collection is equivalent to a column of table in a RDBMS. Fields can be either scalar fields for structured data (e.g., numbers, strings), or vector fields for embedding vectors.</li>
+<li><strong>Filter:</strong> Milvus supports scalar filtering by searching with predicates, allowing you to define filter conditions within queries and searches to refine results.</li>
+<li><strong>Filtered search:</strong> Filtered search applies scalar filters to vector searches, allowing you to refine the search results based on specific criteria. </li>
+<li><strong>Hybrid search:</strong> Hybrid Search is an API for hybrid search since Milvus 2.4.0. You can search multiple vector fields and fusion them. </li>
+<li><strong>Index:</strong> A vector index is a reorganized data structure derived from raw data that can greatly accelerate the process of vector similarity search. Milvus supports a wide range of index types for both vector fields and scalar fields.</li>
+<li><strong>Kafka-Milvus Connector:</strong> Kafka-Milvus Connector refers to a Kafka sink connector for Milvus. It allows you to stream vector data from Kafka to Milvus.</li>
+<li><strong>Knowhere:</strong> Knowhere is the core vector execution engine of Milvus which incorporates several vector similarity search libraries including Faiss, Hnswlib, and Annoy. Knowhere is also designed to support heterogeneous computing. It controls on which hardware (CPU or GPU) to execute index building and search requests. This is how Knowhere gets its name - knowing where to execute the operations.</li>
+<li><strong>Partitionr:</strong> A partition is a division of a collection. Milvus supports dividing collection data into multiple parts on physical storage. This process is called partitioning, and each partition can contain multiple segments. </li>
+<li><strong>Metric type:</strong> Similarity metric types are used to measure similarities between vectors. Currently, Milvus supports Euclidean distance (L2), Inner product (IP), Cosine similarity (COSINE), and binary metric types. You can choose the most appropriate metric type based on your scenario.</li>
+</ol>
+<h1 id="embedding">Embedding<a class="headerlink" href="#embedding" title="Permanent link">#</a></h1>
+<p>Embedding is a machine learning concept for mapping data into a high-dimensional space, where data of similar semantic are placed close together. Typically being a Deep Neural Network from BERT or other Transformer families, the embedding model can effectively represent the semantics of text, images, and other data types with a series of numbers known as vectors.</p>
+<p><strong>There are two main categories of embeddings, each producing a different type of vector:</strong></p>
+<ul>
+<li>
+<p><strong>Dense embedding:</strong> Most embedding models represent information as a floating point vector of hundreds to thousands of dimensions. The output is called “dense” vectors as most dimensions have non-zero values. For instance, the popular open-source embedding model BAAI/bge-base-en-v1.5 outputs vectors of 768 floating point numbers (768-dimension float vector).</p>
+</li>
+<li>
+<p><strong>Sparse embedding:</strong> In contrast, the output vectors of sparse embeddings has most dimensions being zero, namely “sparse” vectors. These vectors often have much higher dimensions (tens of thousands or more) which is determined by the size of the token vocabulary. Sparse vectors can be generated by Deep Neural Networks or statistical analysis of text corpora. Due to their interpretability and observed better out-of-domain generalization capabilities, sparse embeddings are increasingly adopted by developers as a complement to dense embeddings.</p>
+</li>
+</ul>
+<p>Milvus is a vector database designed for vector data management, storage, and retrieval. By integrating mainstream embedding and reranking models, you can easily transform original text into searchable vectors or rerank the results using powerful models to achieve more accurate results for RAG. This integration simplifies text transformation and eliminates the need for additional embedding or reranking components, thereby streamlining RAG development and validation.</p>
+<p><strong>To create embeddings in action, refer to Using PyMilvus’s Model To Generate Text Embeddings.</strong></p>
+<p><img alt="Milvus" src="image/Milvus09.png" /></p>
+<h2 id="openaiembeddingfunction">OpenAIEmbeddingFunction<a class="headerlink" href="#openaiembeddingfunction" title="Permanent link">#</a></h2>
+<p>OpenAIEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using OpenAI models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.dense.OpenAIEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor</strong>
+Constructs an OpenAIEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">OpenAIEmbeddingFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;text-embedding-ada-002&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="nl">api_key</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">base_url</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">dimensions</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">int</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="o">**</span><span class="n">kwargs</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Example:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="n">model</span>
+
+<span class="n">openai_ef</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">dense</span><span class="o">.</span><span class="n">OpenAIEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s1">&#39;text-embedding-3-large&#39;</span><span class="p">,</span> <span class="c1"># Specify the model name</span>
+    <span class="n">dimensions</span><span class="o">=</span><span class="mi">512</span> <span class="c1"># Set the embedding dimensionality according to MRL feature.</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="sentencetransformerembeddingfunction">SentenceTransformerEmbeddingFunction<a class="headerlink" href="#sentencetransformerembeddingfunction" title="Permanent link">#</a></h2>
+<p>SentenceTransformerEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using Sentence Transformer models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.dense.SentenceTransformerEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor</strong>
+Constructs a SentenceTransformerEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code>SentenceTransformerEmbeddingFunction(
+    model_name: str = &quot;all-MiniLM-L6-v2&quot;,
+    batch_size: int = 32,
+    query_instruction: str = &quot;&quot;,
+    doc_instruction: str = &quot;&quot;,
+    device: str = &quot;cpu&quot;,
+    normalize_embeddings: bool = True,
+    **kwargs
+)
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="n">model</span>
+
+<span class="n">sentence_transformer_ef</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">dense</span><span class="o">.</span><span class="n">SentenceTransformerEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">,</span> <span class="c1"># Specify the model name</span>
+    <span class="n">device</span><span class="o">=</span><span class="s1">&#39;cpu&#39;</span> <span class="c1"># Specify the device to use, e.g., &#39;cpu&#39; or &#39;cuda:0&#39;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="spladeembeddingfunction">SpladeEmbeddingFunction<a class="headerlink" href="#spladeembeddingfunction" title="Permanent link">#</a></h2>
+<p>SpladeEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using SPLADE models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.sparse.SpladeEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a SpladeEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">SpladeEmbeddingFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;naver/splade-cocondenser-ensembledistil&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">batch_size</span><span class="p">:</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">query_instruction</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">doc_instruction</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">device</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;cpu&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">k_tokens_query</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">int</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">k_tokens_document</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">int</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="n">model</span>
+
+<span class="n">splade_ef</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">SpladeEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;naver/splade-cocondenser-selfdistil&quot;</span><span class="p">,</span> 
+    <span class="n">device</span><span class="o">=</span><span class="s2">&quot;cpu&quot;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="bgem3embeddingfunction">BGEM3EmbeddingFunction<a class="headerlink" href="#bgem3embeddingfunction" title="Permanent link">#</a></h2>
+<p>BGEM3EmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using the BGE M3 model to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.hybrid.BGEM3EmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a BGEM3EmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code>BGEM3EmbeddingFunction(
+    model_name: str = &quot;BAAI/bge-m3&quot;,
+    batch_size: int = 16,
+    device: str = &quot;&quot;,
+    normalize_embeddings: bool = True,
+    use_fp16: bool = True,
+    return_dense: bool = True,
+    return_sparse: bool = True,
+    return_colbert_vecs: bool = False,
+    **kwargs,
+)
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="n">model</span>
+
+<span class="n">bge_m3_ef</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">hybrid</span><span class="o">.</span><span class="n">BGEM3EmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s1">&#39;BAAI/bge-m3&#39;</span><span class="p">,</span> <span class="c1"># Specify t`he model name</span>
+    <span class="n">device</span><span class="o">=</span><span class="s1">&#39;cpu&#39;</span><span class="p">,</span> <span class="c1"># Specify the device to use, e.g., &#39;cpu&#39; or &#39;cuda:0&#39;</span>
+    <span class="n">use_fp16</span><span class="o">=</span><span class="kc">False</span> <span class="c1"># Whether to use fp16. `False` for `device=&#39;cpu&#39;`.</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="voyageembeddingfunction">VoyageEmbeddingFunction<a class="headerlink" href="#voyageembeddingfunction" title="Permanent link">#</a></h2>
+<p>VoyageEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using Voyage models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.dense.VoyageEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs an VoyageEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">VoyageEmbeddingFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;voyage-2&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">api_key</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="o">**</span><span class="n">kwargs</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.dense</span><span class="w"> </span><span class="kn">import</span> <span class="n">VoyageEmbeddingFunction</span>
+
+<span class="n">voyage_ef</span> <span class="o">=</span> <span class="n">VoyageEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;voyage-lite-02-instruct&quot;</span><span class="p">,</span> <span class="c1"># Defaults to `voyage-2`</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;YOUR_API_KEY&#39;</span> <span class="c1"># Replace with your own Voyage API key</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="jinaembeddingfunction">JinaEmbeddingFunction<a class="headerlink" href="#jinaembeddingfunction" title="Permanent link">#</a></h2>
+<p>JinaEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using Jina AI embedding models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.dense.JinaEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a JinaEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">JinaEmbeddingFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;jina-embeddings-v2-base-en&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">api_key</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="o">**</span><span class="n">kwargs</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.dense</span><span class="w"> </span><span class="kn">import</span> <span class="n">JinaEmbeddingFunction</span>
+
+<span class="n">jina_ef</span> <span class="o">=</span> <span class="n">JinaEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;jina-embeddings-v2-base-en&quot;</span><span class="p">,</span> <span class="c1"># Defaults to `jina-embeddings-v2-base-en`</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;YOUR_JINAAI_API_KEY&quot;</span> <span class="c1"># Provide your Jina AI API key</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="cohereembeddingfunction">CohereEmbeddingFunction<a class="headerlink" href="#cohereembeddingfunction" title="Permanent link">#</a></h2>
+<p>CohereEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using Cohere embedding models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.dense.CohereEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a CohereEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">CohereEmbeddingFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;embed-english-light-v3.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">api_key</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">input_type</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;search_document&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">embedding_types</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">List[str</span><span class="o">]</span><span class="err">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="k">truncate</span><span class="err">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="o">**</span><span class="n">kwargs</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.dense</span><span class="w"> </span><span class="kn">import</span> <span class="n">CohereEmbeddingFunction</span>
+
+<span class="n">cohere_ef</span> <span class="o">=</span> <span class="n">CohereEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;embed-english-light-v3.0&quot;</span><span class="p">,</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;YOUR_COHERE_API_KEY&quot;</span><span class="p">,</span>
+    <span class="n">input_type</span><span class="o">=</span><span class="s2">&quot;search_document&quot;</span><span class="p">,</span>
+    <span class="n">embedding_types</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;float&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="instructorembeddingfunction">InstructorEmbeddingFunction<a class="headerlink" href="#instructorembeddingfunction" title="Permanent link">#</a></h2>
+<p>InstructorEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using the Instructor embedding model to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.dense.InstructorEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a MistralAIEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code>InstructorEmbeddingFunction(
+    model_name: str = &quot;hkunlp/instructor-xl&quot;,
+    batch_size: int = 32,
+    query_instruction: str = &quot;Represent the question for retrieval:&quot;,
+    doc_instruction: str = &quot;Represent the document for retrieval:&quot;,
+    device: str = &quot;cpu&quot;,
+    normalize_embeddings: bool = True,
+    **kwargs
+)
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.dense</span><span class="w"> </span><span class="kn">import</span> <span class="n">InstructorEmbeddingFunction</span>
+
+<span class="n">ef</span> <span class="o">=</span> <span class="n">InstructorEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;hkunlp/instructor-xl&quot;</span><span class="p">,</span> <span class="c1"># Defaults to `hkunlp/instructor-xl`</span>
+    <span class="n">query_instruction</span><span class="o">=</span><span class="s2">&quot;Represent the question for retrieval:&quot;</span><span class="p">,</span>
+    <span class="n">doc_instruction</span><span class="o">=</span><span class="s2">&quot;Represent the document for retrieval:&quot;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="mistralaiembeddingfunction">MistralAIEmbeddingFunction<a class="headerlink" href="#mistralaiembeddingfunction" title="Permanent link">#</a></h2>
+<p>MistralAIEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using Mistral AI embedding models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.dense.MistralAIEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a MistralAIEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code>MistralAIEmbeddingFunction(
+    api_key: str,
+    model_name: str = &quot;mistral-embed&quot;,
+    **kwargs
+)
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.dense</span><span class="w"> </span><span class="kn">import</span> <span class="n">MistralAIEmbeddingFunction</span>
+
+<span class="n">ef</span> <span class="o">=</span> <span class="n">MistralAIEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;mistral-embed&quot;</span><span class="p">,</span> <span class="c1"># Defaults to `mistral-embed`</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;MISTRAL_API_KEY&quot;</span> <span class="c1"># Provide your Mistral AI API key</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="nomicembeddingfunction">NomicEmbeddingFunction<a class="headerlink" href="#nomicembeddingfunction" title="Permanent link">#</a></h2>
+<p>NomicEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using Nomic embedding models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.dense.NomicEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a NomicEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="nx">NomicEmbeddingFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nx">model_name</span><span class="p">:</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;nomic-embed-text-v1.5&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">task_type</span><span class="p">:</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;search_document&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">dimensions</span><span class="p">:</span><span class="w"> </span><span class="nx">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">768</span><span class="p">,</span>
+<span class="w">    </span><span class="o">**</span><span class="nx">kwargs</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.dense</span><span class="w"> </span><span class="kn">import</span> <span class="n">NomicEmbeddingFunction</span>
+
+<span class="n">ef</span> <span class="o">=</span> <span class="n">NomicEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;nomic-embed-text-v1.5&quot;</span><span class="p">,</span> <span class="c1"># Defaults to `mistral-embed`</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="mgteembeddingfunction">MGTEEmbeddingFunction<a class="headerlink" href="#mgteembeddingfunction" title="Permanent link">#</a></h2>
+<p>MGTEEmbeddingFunction is a class in pymilvus that handles encoding text into embeddings using MGTE embedding models to support embedding retrieval in Milvus.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.hybrid.MGTEEmbeddingFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a MGTEEmbeddingFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">MGTEEmbeddingFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;Alibaba-NLP/gte-multilingual-base&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">batch_size</span><span class="p">:</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">device</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">normalize_embeddings</span><span class="p">:</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">True</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">dimensions</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">int</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">use_fp16</span><span class="p">:</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">return_dense</span><span class="p">:</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">True</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">return_sparse</span><span class="p">:</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">True</span><span class="p">,</span>
+<span class="w">    </span><span class="o">**</span><span class="n">kwargs</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.hybrid</span><span class="w"> </span><span class="kn">import</span> <span class="n">MGTEEmbeddingFunction</span>
+
+<span class="n">ef</span> <span class="o">=</span> <span class="n">MGTEEmbeddingFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;Alibaba-NLP/gte-multilingual-base&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="example-1-use-default-embedding-function-to-generate-dense-vectors">Example 1: Use default embedding function to generate dense vectors<a class="headerlink" href="#example-1-use-default-embedding-function-to-generate-dense-vectors" title="Permanent link">#</a></h2>
+<p>To use embedding functions with Milvus, first install the PyMilvus client library with the model subpackage that wraps all the utilities for embedding generation.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="ss">&quot;pymilvus[model]&quot;</span>
+</code></pre></div>
+
+<p>The <strong>model</strong> subpackage supports various embedding models, from OpenAI, Sentence Transformers, BGE M3, to SPLADE pretrained models. For simpilicity, this example uses the <strong>DefaultEmbeddingFunction</strong> which is <strong>all-MiniLM-L6-v2</strong> sentence transformer model, the model is about 70MB and it will be downloaded during first use:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="n">model</span>
+
+<span class="n">ef</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">DefaultEmbeddingFunction</span><span class="p">()</span>
+
+<span class="n">docs</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Artificial intelligence was founded as an academic discipline in 1956.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Alan Turing was the first person to conduct substantial research in AI.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Born in Maida Vale, London, Turing was raised in southern England.&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">embeddings</span> <span class="o">=</span> <span class="n">ef</span><span class="o">.</span><span class="n">encode_documents</span><span class="p">(</span><span class="n">docs</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Embeddings:&quot;</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dim:&quot;</span><span class="p">,</span> <span class="n">ef</span><span class="o">.</span><span class="n">dim</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>The expected output is similar to the following:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nx">Embeddings</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="nx">array</span><span class="p">([</span><span class="o">-</span><span class="m m-Double">3.09392996</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">1.80662833</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">1.34775648</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">2.77156215</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span>
+<span class="w">       </span><span class="o">-</span><span class="m m-Double">4.86349640</span><span class="nx">e</span><span class="o">-</span><span class="mi">03</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">3.12581174</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">3.55921760</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">5.76934684</span><span class="nx">e</span><span class="o">-</span><span class="mi">03</span><span class="p">,</span>
+<span class="w">        </span><span class="m m-Double">2.80773244</span><span class="nx">e</span><span class="o">-</span><span class="mi">03</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">1.35783911</span><span class="nx">e</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">3.59678417</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">6.17732145</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span>
+<span class="o">...</span>
+<span class="w">       </span><span class="o">-</span><span class="m m-Double">4.61330153</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">4.85207550</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">3.13997865</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">7.82178566</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span>
+<span class="w">       </span><span class="o">-</span><span class="m m-Double">4.75336798</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">5.21207601</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w">  </span><span class="m m-Double">9.04406682</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">5.36676683</span><span class="nx">e</span><span class="o">-</span><span class="mi">02</span><span class="p">],</span>
+<span class="w">      </span><span class="nx">dtype</span><span class="p">=</span><span class="nx">float32</span><span class="p">)]</span>
+<span class="nx">Dim</span><span class="p">:</span><span class="w"> </span><span class="mi">384</span><span class="w"> </span><span class="p">(</span><span class="mi">384</span><span class="p">,)</span>
+</code></pre></div>
+
+<h2 id="example-2-generate-dense-and-sparse-vectors-in-one-call-with-bge-m3-model">Example 2: Generate dense and sparse vectors in one call with BGE M3 model<a class="headerlink" href="#example-2-generate-dense-and-sparse-vectors-in-one-call-with-bge-m3-model" title="Permanent link">#</a></h2>
+<p>In this example, we use BGE M3 hybrid model to embed text into both dense and sparse vectors and use them to retrieve relevant documents. The overall steps are as follows:</p>
+<ol>
+<li>Embed the text as dense and sparse vectors using BGE-M3 model;</li>
+<li>Set up a Milvus collection to store the dense and sparse vectors;</li>
+<li>Insert the data to Milvus;</li>
+<li>Search and inspect the result.</li>
+</ol>
+<p>First, we need to install the necessary dependencies.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.hybrid</span><span class="w"> </span><span class="kn">import</span> <span class="n">BGEM3EmbeddingFunction</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">utility</span><span class="p">,</span>
+    <span class="n">FieldSchema</span><span class="p">,</span> <span class="n">CollectionSchema</span><span class="p">,</span> <span class="n">DataType</span><span class="p">,</span>
+    <span class="n">Collection</span><span class="p">,</span> <span class="n">AnnSearchRequest</span><span class="p">,</span> <span class="n">RRFRanker</span><span class="p">,</span> <span class="n">connections</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Use BGE M3 to encode docs and queries for embedding retrieval.</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="n">docs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>
+<span class="n">    &quot;Artificial intelligence was founded as an academic discipline in 1956.&quot;,</span>
+<span class="n">    &quot;Alan Turing was the first person to conduct substantial research in AI.&quot;,</span>
+<span class="n">    &quot;Born in Maida Vale, London, Turing was raised in southern England.&quot;,</span>
+<span class="o">]</span>
+<span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;Who started AI research?&quot;</span>
+
+
+<span class="n">bge_m3_ef</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BGEM3EmbeddingFunction</span><span class="p">(</span><span class="n">use_fp16</span><span class="o">=</span><span class="k">False</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">=</span><span class="ss">&quot;cpu&quot;</span><span class="p">)</span>
+
+<span class="n">docs_embeddings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bge_m3_ef</span><span class="p">(</span><span class="n">docs</span><span class="p">)</span>
+<span class="n">query_embeddings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bge_m3_ef</span><span class="p">(</span><span class="o">[</span><span class="n">query</span><span class="o">]</span><span class="p">)</span>
+</code></pre></div>
+
+<h1 id="rerankers">Rerankers<a class="headerlink" href="#rerankers" title="Permanent link">#</a></h1>
+<p>In the realm of information retrieval and generative AI, a reranker is an essential tool that optimizes the order of results from initial searches. Rerankers differ from traditional embedding models by taking a query and document as input and directly returning a similarity score instead of embeddings. This score indicates the relevance between the input query and document.</p>
+<p>Rerankers are often employed after the first stage retrieval, typically done via vector Approximate Nearest Neighbor (ANN) techniques. While ANN searches are efficient at fetching a broad set of potentially relevant results, they might not always prioritize results in terms of actual semantic closeness to the query. Here, rerankers is used to optimize the results order using deeper contextual analyses, often leveraging advanced machine learning models like BERT or other Transformer-based models. By doing this, rerankers can dramatically enhance the accuracy and relevance of the final results presented to the user.</p>
+<p><img alt="Milvus" src="image/Milvus10.png" /></p>
+<h2 id="bgererankfunction">BGERerankFunction<a class="headerlink" href="#bgererankfunction" title="Permanent link">#</a></h2>
+<p>BGERerankFunction is a class in milvus_model that takes a query and document as input and directly returns a similarity score instead of embeddings. This functionality uses the underlying BGE reranking model.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.reranker.BGERerankFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a BGERerankFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">BGERerankFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;BAAI/bge-reranker-v2-m3&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">use_fp16</span><span class="p">:</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">True</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">batch_size</span><span class="p">:</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span>
+<span class="w">    </span><span class="k">normalize</span><span class="err">:</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">True</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">device</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.reranker</span><span class="w"> </span><span class="kn">import</span> <span class="n">BGERerankFunction</span>
+
+<span class="n">bge_rf</span> <span class="o">=</span> <span class="n">BGERerankFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;BAAI/bge-reranker-v2-m3&quot;</span><span class="p">,</span>  <span class="c1"># Specify the model name. Defaults to `BAAI/bge-reranker-v2-m3`.</span>
+    <span class="n">device</span><span class="o">=</span><span class="s2">&quot;cpu&quot;</span> <span class="c1"># Specify the device to use, e.g., &#39;cpu&#39; or &#39;cuda:0&#39;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="crossencoderrerankfunction">CrossEncoderRerankFunction<a class="headerlink" href="#crossencoderrerankfunction" title="Permanent link">#</a></h2>
+<p>CrossEncoderRerankFunction is a class in milvus_model that takes a query and document as input and directly returns a similarity score instead of embeddings. This functionality uses the underlying Cross-Encoder reranking model.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.reranker.CrossEncoderRerankFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a CrossEncoderRerankFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code>CrossEncoderRerankFunction(
+    model_name: str = &quot;&quot;,
+    device: str = &quot;&quot;,
+    batch_size: int = 32,
+    activation_fct: Any = None,
+    **kwargs,
+)
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.reranker</span><span class="w"> </span><span class="kn">import</span> <span class="n">CrossEncoderRerankFunction</span>
+
+<span class="n">ce_rf</span> <span class="o">=</span> <span class="n">CrossEncoderRerankFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;cross-encoder/ms-marco-MiniLM-L-6-v2&quot;</span><span class="p">,</span>  <span class="c1"># Specify the model name. Defaults to an emtpy string.</span>
+    <span class="n">device</span><span class="o">=</span><span class="s2">&quot;cpu&quot;</span> <span class="c1"># Specify the device to use, e.g., &#39;cpu&#39; or &#39;cuda:0&#39;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="voyagererankfunction">VoyageRerankFunction<a class="headerlink" href="#voyagererankfunction" title="Permanent link">#</a></h2>
+<p>VoyageRerankFunction is a class in milvus_model that takes a query and document as input and directly returns a similarity score instead of embeddings. This functionality uses the underlying Voyage reranking model.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.reranker.VoyageRerankFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a VoyageRerankFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">VoyageRerankFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;rerank-lite-1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">api_key</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.reranker</span><span class="w"> </span><span class="kn">import</span> <span class="n">VoyageRerankFunction</span>
+
+<span class="n">voyage_rf</span> <span class="o">=</span> <span class="n">VoyageRerankFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;rerank-lite-1&quot;</span><span class="p">,</span>  <span class="c1"># Specify the model name. Defaults to `rerank-lite-1`.</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="n">VOYAGE_API_KEY</span> <span class="c1"># Replace with your Voyage API key</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="coherererankfunction">CohereRerankFunction<a class="headerlink" href="#coherererankfunction" title="Permanent link">#</a></h2>
+<p>CohereRerankFunction is a class in milvus_model that takes a query and document as input and directly returns a similarity score instead of embeddings. This functionality uses the underlying Cohere reranking model.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.reranker.CohereRerankFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a CohereRerankFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">CohereRerankFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;rerank-english-v2.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">api_key</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.reranker</span><span class="w"> </span><span class="kn">import</span> <span class="n">CohereRerankFunction</span>
+
+<span class="n">cohere_rf</span> <span class="o">=</span> <span class="n">CohereRerankFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;rerank-english-v3.0&quot;</span><span class="p">,</span>  <span class="c1"># Specify the model name. Defaults to `rerank-english-v2.0`.</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="n">COHERE_API_KEY</span> <span class="c1"># Replace with your Cohere API key</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="jinarerankfunction">JinaRerankFunction<a class="headerlink" href="#jinarerankfunction" title="Permanent link">#</a></h2>
+<p>JinaRerankFunction is a class in milvus_model that takes a query and document as input and directly returns a similarity score instead of embeddings. This functionality uses the underlying Jina AI reranking model.</p>
+<div class="codehilite"><pre><span></span><code>pymilvus.model.reranker.JinaRerankFunction
+</code></pre></div>
+
+<p><strong>Constructor:</strong>
+Constructs a JinaRerankFunction for common use cases.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">JinaRerankFunction</span><span class="p">(</span>
+<span class="w">    </span><span class="nl">model_name</span><span class="p">:</span><span class="w"> </span><span class="nf">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;jina-reranker-v2-base-multilingual&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">api_key</span><span class="p">:</span><span class="w"> </span><span class="n">Optional</span><span class="o">[</span><span class="n">str</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">None</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Examples:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.reranker</span><span class="w"> </span><span class="kn">import</span> <span class="n">JinaRerankFunction</span>
+
+<span class="n">jina_rf</span> <span class="o">=</span> <span class="n">JinaRerankFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;jina-reranker-v2-base-multilingual&quot;</span><span class="p">,</span> <span class="c1"># Defaults to `jina-reranker-v2-base-multilingual`</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;YOUR_JINAAI_API_KEY&quot;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>NOTE:</strong>
+- Before using open-source rerankers, make sure to download and install all required dependencies and models.
+- For API-based rerankers, get an API key from the provider and set it in the appropriate environment variables or arguments.</p>
+<h2 id="example-1-use-bge-rerank-function-to-rerank-documents-according-to-a-query">Example 1: Use BGE rerank function to rerank documents according to a query<a class="headerlink" href="#example-1-use-bge-rerank-function-to-rerank-documents-according-to-a-query" title="Permanent link">#</a></h2>
+<p>In this example, we demonstrate how to rerank search results using the BGE reranker based on a specific query.</p>
+<p>To use a reranker with PyMilvus model library, start by installing the PyMilvus model library along with the model subpackage that contains all necessary reranking utilities:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">pymilvus</span><span class="o">[</span><span class="n">model</span><span class="o">]</span>
+</code></pre></div>
+
+<p>To use the BGE reranker, first import the <strong>BGERerankFunction</strong> class:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.reranker</span><span class="w"> </span><span class="kn">import</span> <span class="n">BGERerankFunction</span>
+</code></pre></div>
+
+<p>Then, create a <strong>BGERerankFunction</strong> instance for reranking:</p>
+<div class="codehilite"><pre><span></span><code>bge_rf = BGERerankFunction(
+    model_name=&quot;BAAI/bge-reranker-v2-m3&quot;,  # Specify the model name. Defaults to <span class="sb">`BAAI/bge-reranker-v2-m3`</span>.
+    device=&quot;cpu&quot; # Specify the device to use, e.g., &#39;cpu&#39; or &#39;cuda:0&#39;
+)
+</code></pre></div>
+
+<p>To rerank documents based on a query, use the following code:</p>
+<div class="codehilite"><pre><span></span><code>query = &quot;What event in 1956 marked the official birth of artificial intelligence as a discipline?&quot;
+
+documents = [
+    &quot;In 1950, Alan Turing published his seminal paper, &#39;Computing Machinery and Intelligence,&#39; proposing the Turing Test as a criterion of intelligence, a foundational concept in the philosophy and development of artificial intelligence.&quot;,
+    &quot;The Dartmouth Conference in 1956 is considered the birthplace of artificial intelligence as a field; here, John McCarthy and others coined the term &#39;artificial intelligence&#39; and laid out its basic goals.&quot;,
+    &quot;In 1951, British mathematician and computer scientist Alan Turing also developed the first program designed to play chess, demonstrating an early example of AI in game strategy.&quot;,
+    &quot;The invention of the Logic Theorist by Allen Newell, Herbert A. Simon, and Cliff Shaw in 1955 marked the creation of the first true AI program, which was capable of solving logic problems, akin to proving mathematical theorems.&quot;
+]
+
+bge_rf(query, documents)
+</code></pre></div>
+
+<p>The expected output is similar to the following:</p>
+<div class="codehilite"><pre><span></span><code>[RerankResult(text=&quot;The Dartmouth Conference in 1956 is considered the birthplace of artificial intelligence as a field; here, John McCarthy and others coined the term &#39;artificial intelligence&#39; and laid out its basic goals.&quot;, score=0.9911615761470803, index=1),
+ RerankResult(text=&quot;In 1950, Alan Turing published his seminal paper, &#39;Computing Machinery and Intelligence,&#39; proposing the Turing Test as a criterion of intelligence, a foundational concept in the philosophy and development of artificial intelligence.&quot;, score=0.0326971950177779, index=0),
+ RerankResult(text=&#39;The invention of the Logic Theorist by Allen Newell, Herbert A. Simon, and Cliff Shaw in 1955 marked the creation of the first true AI program, which was capable of solving logic problems, akin to proving mathematical theorems.&#39;, score=0.006514905766152258, index=3),
+ RerankResult(text=&#39;In 1951, British mathematician and computer scientist Alan Turing also developed the first program designed to play chess, demonstrating an early example of AI in game strategy.&#39;, score=0.0042116724917325935, index=2)]
+</code></pre></div>
+
+<h2 id="example-2-use-a-reranker-to-enhance-relevance-of-search-results">Example 2: Use a reranker to enhance relevance of search results<a class="headerlink" href="#example-2-use-a-reranker-to-enhance-relevance-of-search-results" title="Permanent link">#</a></h2>
+<p>In this guide, we’ll explore how to utilize the search() method in PyMilvus for conducting similarity searches, and how to enhance the relevance of the search results using a reranker. Our demonstration will use the following dataset:</p>
+<div class="codehilite"><pre><span></span><code>entities = [
+    {&#39;doc_id&#39;: 0, &#39;doc_vector&#39;: [-0.0372721,0.0101959,...,-0.114994], &#39;doc_text&#39;: &quot;In 1950, Alan Turing published his seminal paper, &#39;Computing Machinery and Intelligence,&#39; proposing the Turing Test as a criterion of intelligence, a foundational concept in the philosophy and development of artificial intelligence.&quot;}, 
+    {&#39;doc_id&#39;: 1, &#39;doc_vector&#39;: [-0.00308882,-0.0219905,...,-0.00795811], &#39;doc_text&#39;: &quot;The Dartmouth Conference in 1956 is considered the birthplace of artificial intelligence as a field; here, John McCarthy and others coined the term &#39;artificial intelligence&#39; and laid out its basic goals.&quot;}, 
+    {&#39;doc_id&#39;: 2, &#39;doc_vector&#39;: [0.00945078,0.00397605,...,-0.0286199], &#39;doc_text&#39;: &#39;In 1951, British mathematician and computer scientist Alan Turing also developed the first program designed to play chess, demonstrating an early example of AI in game strategy.&#39;}, 
+    {&#39;doc_id&#39;: 3, &#39;doc_vector&#39;: [-0.0391119,-0.00880096,...,-0.0109257], &#39;doc_text&#39;: &#39;The invention of the Logic Theorist by Allen Newell, Herbert A. Simon, and Cliff Shaw in 1955 marked the creation of the first true AI program, which was capable of solving logic problems, akin to proving mathematical theorems.&#39;}
+]
+</code></pre></div>
+
+<p><strong>Dataset components:</strong>
+- <strong>doc_id:</strong> Unique identifier for each document.
+- <strong>doc_vector:</strong> Vector embeddings representing the document.
+- <strong>doc_text:</strong> Text content of the document.</p>
+<p><strong>Preparations:</strong>
+Before initiating a similarity search, you need to establish a connection with Milvus, create a collection, and prepare and insert data into that collection. The following code snippet illustrates these preliminary steps.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="n">MilvusClient</span><span class="p">,</span> <span class="n">DataType</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">MilvusClient</span><span class="p">(</span>
+    <span class="n">uri</span><span class="o">=</span><span class="s2">&quot;http://10.102.6.214:19530&quot;</span> <span class="c1"># replace with your own Milvus server address</span>
+<span class="p">)</span>
+
+<span class="n">client</span><span class="o">.</span><span class="n">drop_collection</span><span class="p">(</span><span class="s1">&#39;test_collection&#39;</span><span class="p">)</span>
+
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_schema</span><span class="p">(</span><span class="n">auto_id</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">enabel_dynamic_field</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;doc_id&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">INT64</span><span class="p">,</span> <span class="n">is_primary</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;document id&quot;</span><span class="p">)</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;doc_vector&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">FLOAT_VECTOR</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">384</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;document vector&quot;</span><span class="p">)</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;doc_text&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">VARCHAR</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">65535</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;document text&quot;</span><span class="p">)</span>
+
+
+<span class="n">index_params</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">prepare_index_params</span><span class="p">()</span>
+
+<span class="n">index_params</span><span class="o">.</span><span class="n">add_index</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;doc_vector&quot;</span><span class="p">,</span> <span class="n">index_type</span><span class="o">=</span><span class="s2">&quot;IVF_FLAT&quot;</span><span class="p">,</span> <span class="n">metric_type</span><span class="o">=</span><span class="s2">&quot;IP&quot;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;nlist&quot;</span><span class="p">:</span> <span class="mi">128</span><span class="p">})</span>
+
+
+<span class="n">client</span><span class="o">.</span><span class="n">create_collection</span><span class="p">(</span><span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;test_collection&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">,</span> <span class="n">index_params</span><span class="o">=</span><span class="n">index_params</span><span class="p">)</span>
+
+
+<span class="n">client</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;test_collection&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">entities</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Conduct a similarity search</strong></p>
+<p>After data insertion, perform similarity searches using the search method.</p>
+<div class="codehilite"><pre><span></span><code>res = client.search(
+    collection_name=&quot;test_collection&quot;,
+    data=[[-0.045217834, 0.035171617, ..., -0.025117004]], # replace with your query vector
+    limit=3,
+    output_fields=[&quot;doc_id&quot;, &quot;doc_text&quot;]
+)
+
+for i in res[0]:
+    print(f&#39;distance: {i[&quot;distance&quot;]}&#39;)
+    print(f&#39;doc_text: {i[&quot;entity&quot;][&quot;doc_text&quot;]}&#39;)
+</code></pre></div>
+
+<p>The expected output is similar to the following:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">distance</span><span class="o">:</span><span class="w"> </span><span class="mf">0.7235960960388184</span>
+<span class="n">doc_text</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">Dartmouth</span><span class="w"> </span><span class="n">Conference</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">1956</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">considered</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">birthplace</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">artificial</span><span class="w"> </span><span class="n">intelligence</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">field</span><span class="o">;</span><span class="w"> </span><span class="n">here</span><span class="o">,</span><span class="w"> </span><span class="n">John</span><span class="w"> </span><span class="n">McCarthy</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">others</span><span class="w"> </span><span class="n">coined</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">term</span><span class="w"> </span><span class="s1">&#39;artificial intelligence&#39;</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">laid</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="n">its</span><span class="w"> </span><span class="n">basic</span><span class="w"> </span><span class="n">goals</span><span class="o">.</span>
+<span class="n">distance</span><span class="o">:</span><span class="w"> </span><span class="mf">0.6269873976707458</span>
+<span class="n">doc_text</span><span class="o">:</span><span class="w"> </span><span class="n">In</span><span class="w"> </span><span class="mi">1950</span><span class="o">,</span><span class="w"> </span><span class="n">Alan</span><span class="w"> </span><span class="n">Turing</span><span class="w"> </span><span class="n">published</span><span class="w"> </span><span class="n">his</span><span class="w"> </span><span class="n">seminal</span><span class="w"> </span><span class="n">paper</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;Computing Machinery and Intelligence,&#39;</span><span class="w"> </span><span class="n">proposing</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Turing</span><span class="w"> </span><span class="n">Test</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">criterion</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">intelligence</span><span class="o">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">foundational</span><span class="w"> </span><span class="n">concept</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">philosophy</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">development</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">artificial</span><span class="w"> </span><span class="n">intelligence</span><span class="o">.</span>
+<span class="n">distance</span><span class="o">:</span><span class="w"> </span><span class="mf">0.5340118408203125</span>
+<span class="n">doc_text</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">invention</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Logic</span><span class="w"> </span><span class="n">Theorist</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">Allen</span><span class="w"> </span><span class="n">Newell</span><span class="o">,</span><span class="w"> </span><span class="n">Herbert</span><span class="w"> </span><span class="n">A</span><span class="o">.</span><span class="w"> </span><span class="n">Simon</span><span class="o">,</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">Cliff</span><span class="w"> </span><span class="n">Shaw</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">1955</span><span class="w"> </span><span class="n">marked</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">creation</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="n">AI</span><span class="w"> </span><span class="n">program</span><span class="o">,</span><span class="w"> </span><span class="n">which</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">capable</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">solving</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="n">problems</span><span class="o">,</span><span class="w"> </span><span class="n">akin</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">proving</span><span class="w"> </span><span class="n">mathematical</span><span class="w"> </span><span class="n">theorems</span><span class="o">.</span>
+</code></pre></div>
+
+<p><strong>Use a reranker to enhance search results</strong></p>
+<p>Then, improve the relevance of your search results with a reranking step. In this example, we use <strong>CrossEncoderRerankFunction</strong> built in PyMilvus to rerank the results for improved accuracy.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.model.reranker</span><span class="w"> </span><span class="kn">import</span> <span class="n">CrossEncoderRerankFunction</span>
+
+<span class="n">ce_rf</span> <span class="o">=</span> <span class="n">CrossEncoderRerankFunction</span><span class="p">(</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;cross-encoder/ms-marco-MiniLM-L-6-v2&quot;</span><span class="p">,</span>  <span class="c1"># Specify the model name.</span>
+    <span class="n">device</span><span class="o">=</span><span class="s2">&quot;cpu&quot;</span> <span class="c1"># Specify the device to use, e.g., &#39;cpu&#39; or &#39;cuda:0&#39;</span>
+<span class="p">)</span>
+
+<span class="n">reranked_results</span> <span class="o">=</span> <span class="n">ce_rf</span><span class="p">(</span>
+    <span class="n">query</span><span class="o">=</span><span class="s1">&#39;What event in 1956 marked the official birth of artificial intelligence as a discipline?&#39;</span><span class="p">,</span>
+    <span class="n">documents</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;In 1950, Alan Turing published his seminal paper, &#39;Computing Machinery and Intelligence,&#39; proposing the Turing Test as a criterion of intelligence, a foundational concept in the philosophy and development of artificial intelligence.&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Dartmouth Conference in 1956 is considered the birthplace of artificial intelligence as a field; here, John McCarthy and others coined the term &#39;artificial intelligence&#39; and laid out its basic goals.&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;In 1951, British mathematician and computer scientist Alan Turing also developed the first program designed to play chess, demonstrating an early example of AI in game strategy.&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The invention of the Logic Theorist by Allen Newell, Herbert A. Simon, and Cliff Shaw in 1955 marked the creation of the first true AI program, which was capable of solving logic problems, akin to proving mathematical theorems.&quot;</span>
+    <span class="p">],</span>
+    <span class="n">top_k</span><span class="o">=</span><span class="mi">3</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">reranked_results</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;score: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">score</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;doc_text: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>The expected output is similar to the following:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">score</span><span class="o">:</span><span class="w"> </span><span class="mf">6.250532627105713</span>
+<span class="n">doc_text</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">Dartmouth</span><span class="w"> </span><span class="n">Conference</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">1956</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">considered</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">birthplace</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">artificial</span><span class="w"> </span><span class="n">intelligence</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">field</span><span class="o">;</span><span class="w"> </span><span class="n">here</span><span class="o">,</span><span class="w"> </span><span class="n">John</span><span class="w"> </span><span class="n">McCarthy</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">others</span><span class="w"> </span><span class="n">coined</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">term</span><span class="w"> </span><span class="s1">&#39;artificial intelligence&#39;</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">laid</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="n">its</span><span class="w"> </span><span class="n">basic</span><span class="w"> </span><span class="n">goals</span><span class="o">.</span>
+<span class="n">score</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="mf">2.9546022415161133</span>
+<span class="n">doc_text</span><span class="o">:</span><span class="w"> </span><span class="n">In</span><span class="w"> </span><span class="mi">1950</span><span class="o">,</span><span class="w"> </span><span class="n">Alan</span><span class="w"> </span><span class="n">Turing</span><span class="w"> </span><span class="n">published</span><span class="w"> </span><span class="n">his</span><span class="w"> </span><span class="n">seminal</span><span class="w"> </span><span class="n">paper</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;Computing Machinery and Intelligence,&#39;</span><span class="w"> </span><span class="n">proposing</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Turing</span><span class="w"> </span><span class="n">Test</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">criterion</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">intelligence</span><span class="o">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">foundational</span><span class="w"> </span><span class="n">concept</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">philosophy</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">development</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">artificial</span><span class="w"> </span><span class="n">intelligence</span><span class="o">.</span>
+<span class="n">score</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="mf">4.771512031555176</span>
+<span class="n">doc_text</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">invention</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Logic</span><span class="w"> </span><span class="n">Theorist</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">Allen</span><span class="w"> </span><span class="n">Newell</span><span class="o">,</span><span class="w"> </span><span class="n">Herbert</span><span class="w"> </span><span class="n">A</span><span class="o">.</span><span class="w"> </span><span class="n">Simon</span><span class="o">,</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">Cliff</span><span class="w"> </span><span class="n">Shaw</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">1955</span><span class="w"> </span><span class="n">marked</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">creation</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="n">AI</span><span class="w"> </span><span class="n">program</span><span class="o">,</span><span class="w"> </span><span class="n">which</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">capable</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">solving</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="n">problems</span><span class="o">,</span><span class="w"> </span><span class="n">akin</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">proving</span><span class="w"> </span><span class="n">mathematical</span><span class="w"> </span><span class="n">theorems</span><span class="o">.</span>
+</code></pre></div>
+
+<h1 id="types-of-searches-supported-by-milvus">Types of Searches Supported by Milvus<a class="headerlink" href="#types-of-searches-supported-by-milvus" title="Permanent link">#</a></h1>
+<p>Milvus supports various types of search functions to meet the demands of different use cases:</p>
+<ol>
+<li><strong>ANN Search:</strong> Finds the top K vectors closest to your query vector.</li>
+<li><strong>Filtering Search:</strong> Performs ANN search under specified filtering conditions.</li>
+<li><strong>Range Search:</strong> Finds vectors within a specified radius from your query vector.</li>
+<li><strong>Hybrid Search:</strong> Conducts ANN search based on multiple vector fields.</li>
+<li><strong>Full Text Search:</strong> Full text search based on BM25.</li>
+<li><strong>Reranking:</strong> Adjusts the order of search results based on additional criteria or a secondary algorithm, refining the initial ANN search results.</li>
+<li><strong>Fetch:</strong> Retrieves data by their primary keys.</li>
+<li><strong>Query:</strong> Retrieves data using specific expressions.</li>
+<li><strong>Filtering:</strong> </li>
+<li><strong>Full Text Search:</strong></li>
+<li><strong>Text Match:</strong></li>
+<li><strong>Search Iterator:</strong></li>
+<li><strong>Use Partition Key:</strong></li>
+<li><strong>Reranking:</strong></li>
+</ol>
+<h2 id="comprehensive-feature-set">Comprehensive Feature Set<a class="headerlink" href="#comprehensive-feature-set" title="Permanent link">#</a></h2>
+<h2 id="api-and-sdk">API and SDK<a class="headerlink" href="#api-and-sdk" title="Permanent link">#</a></h2>
+<ul>
+<li>RESTful API</li>
+<li>PyMilvus (Python SDK) </li>
+<li>Go SDK</li>
+<li>Java SDK</li>
+<li>Node.js (JavaScript)</li>
+<li>C#</li>
+</ul>
+<h1 id="1-build-rag-with-milvus">1. Build RAG with Milvus<a class="headerlink" href="#1-build-rag-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> RAG</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/build-rag-with-milvus.md">Build RAG with Milvus</a></p>
+<p><a href="https://github.com/milvus-io/bootcamp/tree/master/bootcamp/tutorials/quickstart/apps/rag_search_with_milvus">Deploy</a></p>
+<h1 id="2-advanced-rag">2. Advanced RAG<a class="headerlink" href="#2-advanced-rag" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> RAG</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/how_to_enhance_your_rag.md">Advanced RAG</a></p>
+<h1 id="3-full-text-search-with-milvus">3. Full Text Search with Milvus<a class="headerlink" href="#3-full-text-search-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Quickstart</li>
+<li><strong>Related Milvus Features:</strong> Full-Text Search</li>
+</ul>
+<p><a href="https://milvus.io/docs/full_text_search_with_milvus.md">Full Text Search with Milvus</a></p>
+<h1 id="4-hybrid-search-with-milvus">4. Hybrid Search with Milvus<a class="headerlink" href="#4-hybrid-search-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Hybrid Search</li>
+<li><strong>Related Milvus Features:</strong> hybrid search, multi vector, dense embedding, sparse embedding</li>
+</ul>
+<p><a href="https://milvus.io/docs/hybrid_search_with_milvus.md">Hybrid Search with Milvus</a></p>
+<h1 id="5-image-search-with-milvus">5. Image Search with Milvus<a class="headerlink" href="#5-image-search-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Semantic Search</li>
+<li><strong>Related Milvus Features:</strong> vector search, dynamic field</li>
+</ul>
+<p><a href="https://milvus.io/docs/image_similarity_search.md">Image Search with Milvus</a></p>
+<h1 id="6-multimodal-rag-with-milvus">6. Multimodal RAG with Milvus<a class="headerlink" href="#6-multimodal-rag-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> RAG</li>
+<li><strong>Related Milvus Features:</strong> vector search, dynamic field</li>
+</ul>
+<p><a href="https://milvus.io/docs/graph_rag_with_milvus.md">Graph RAG with Milvus</a></p>
+<p><a href="https://github.com/milvus-io/bootcamp/tree/master/bootcamp/tutorials/quickstart/apps/multimodal_rag_with_milvus">Deploy</a></p>
+<h1 id="7multimodal-search-using-multi-vectors">7.Multimodal Search using Multi Vectors<a class="headerlink" href="#7multimodal-search-using-multi-vectors" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Semantic Search</li>
+<li><strong>Related Milvus Features:</strong> multi vector, hybrid search</li>
+</ul>
+<p><a href="https://milvus.io/docs/graph_rag_with_milvus.md">Graph RAG with Milvus</a></p>
+<p><a href="https://github.com/milvus-io/bootcamp/tree/master/bootcamp/tutorials/quickstart/apps/multimodal_rag_with_milvus">Deploy</a></p>
+<h1 id="8graph-rag-with-milvus">8.Graph RAG with Milvus<a class="headerlink" href="#8graph-rag-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> RAG</li>
+<li><strong>Related Milvus Features:</strong> graph search</li>
+</ul>
+<p><a href="https://milvus.io/docs/graph_rag_with_milvus.md">Graph RAG with Milvus</a></p>
+<h1 id="9contextual-retrieval-with-milvus">9.Contextual Retrieval with Milvus<a class="headerlink" href="#9contextual-retrieval-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Quickstart</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/contextual_retrieval_with_milvus.md">Contextual Retrieval with Milvus</a></p>
+<h1 id="10hdbscan-clustering-with-milvus">10.HDBSCAN Clustering with Milvus<a class="headerlink" href="#10hdbscan-clustering-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Quickstart</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/hdbscan_clustering_with_milvus.md">HDBSCAN Clustering with Milvus</a></p>
+<h1 id="11use-colpali-for-multi-modal-retrieval-with-milvus">11.Use ColPali for Multi-Modal Retrieval with Milvus<a class="headerlink" href="#11use-colpali-for-multi-modal-retrieval-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Quickstart</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/use_ColPali_with_milvus.md">Use ColPali for Multi-Modal Retrieval with Milvus</a></p>
+<h1 id="12vector-visualization">12.Vector Visualization<a class="headerlink" href="#12vector-visualization" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Quickstart</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/vector_visualization.md">Vector Visualization</a></p>
+<h1 id="13movie-recommendation-with-milvus">13.Movie Recommendation with Milvus<a class="headerlink" href="#13movie-recommendation-with-milvus" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Recommendation System</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/movie_recommendation_with_milvus.md">Movie Recommendation with Milvus</a></p>
+<h1 id="14funnel-search-with-matryoshka-embeddings">14.Funnel Search with Matryoshka Embeddings<a class="headerlink" href="#14funnel-search-with-matryoshka-embeddings" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Quickstart</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/funnel_search_with_matryoshka.md">Funnel Search with Matryoshka Embeddings</a></p>
+<h1 id="15question-answering-system">15.Question Answering System<a class="headerlink" href="#15question-answering-system" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Question Answering</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/question_answering_system.md">Question Answering System</a></p>
+<h1 id="16recommender-system">16.Recommender System<a class="headerlink" href="#16recommender-system" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Recommendation System</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/recommendation_system.md">Recommender System</a></p>
+<h1 id="17video-similarity-search">17.Video Similarity Search<a class="headerlink" href="#17video-similarity-search" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Semantic Search</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/video_similarity_search.md">Video Similarity Search</a></p>
+<h1 id="18audio-similarity-search">18.Audio Similarity Search<a class="headerlink" href="#18audio-similarity-search" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Semantic Search</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/audio_similarity_search.md">Audio Similarity Search</a></p>
+<h1 id="19dna-classification">19.DNA Classification<a class="headerlink" href="#19dna-classification" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Classification</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/dna_sequence_classification.md">DNA Classification</a></p>
+<h1 id="20text-search-engine">20.Text Search Engine<a class="headerlink" href="#20text-search-engine" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Semantic Search</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/text_search_engine.md">Text Search Engine</a></p>
+<h1 id="21search-image-by-text">21.Search Image by Text<a class="headerlink" href="#21search-image-by-text" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Semantic Search</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/text_image_search.md">Search Image by Text</a></p>
+<h1 id="22image-deduplication">22.Image Deduplication<a class="headerlink" href="#22image-deduplication" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Deduplication</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/image_deduplication_system.md">Image Deduplication</a></p>
+<h1 id="23quickstart-with-attu">23.Quickstart with Attu<a class="headerlink" href="#23quickstart-with-attu" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> Quickstart</li>
+<li><strong>Related Milvus Features:</strong> vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/quickstart_with_attu.md">Quickstart with Attu</a></p>
+<h1 id="24use-asyncmilvusclient-with-asyncio">24.Use AsyncMilvusClient with asyncio<a class="headerlink" href="#24use-asyncmilvusclient-with-asyncio" title="Permanent link">#</a></h1>
+<ul>
+<li><strong>Use Case:</strong> AsyncIO</li>
+<li><strong>Related Milvus Features:</strong> AsyncIO, vector search</li>
+</ul>
+<p><a href="https://milvus.io/docs/use-async-milvus-client-with-asyncio.md">Use AsyncMilvusClient with asyncio</a></p>
+<h1 id="data-import">Data Import<a class="headerlink" href="#data-import" title="Permanent link">#</a></h1>
+<h2 id="prepare-source-data">Prepare Source Data<a class="headerlink" href="#prepare-source-data" title="Permanent link">#</a></h2>
+<p><strong>Before you start:</strong>
+The target collection requires mapping the source data to its schema.The diagram below shows how acceptable source data is mapped to the schema of a target collection.</p>
+<p><img alt="Milvus" src="image/Milvus11.png" /></p>
+<p>You should carefully examine your data and design the schema of the target collection accordingly.</p>
+<p>Taking the JSON data in the above diagram as an example, there are two entities in the rows list, each row having six fields. The collection schema selectively includes four: <strong>id, vector, scalar_1,</strong> and <strong>scalar_2</strong>.</p>
+<p>There are two more things to consider when designing the schema:</p>
+<ul>
+<li>
+<p><strong>Whether to enable AutoID:</strong>The id field serves as the primary field of the collection. To make the primary field automatically increment, you can enable AutoID in the schema. In this case, you should exclude the id field from each row in the source data.</p>
+</li>
+<li>
+<p><strong>Whether to enable dynamic fields:</strong>The target collection can also store fields not included in its pre-defined schema if the schema enables dynamic fields. The $meta field is a reserved JSON field to hold dynamic fields and their values in key-value pairs. In the above diagram, the fields dynamic_field_1 and dynamic_field_2 and the values will be saved as key-value pairs in the $meta field.</p>
+</li>
+</ul>
+<p>The following code shows how to set up the schema for the collection illustrated in the above diagram.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="n">MilvusClient</span><span class="p">,</span> <span class="n">DataType</span>
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">MilvusClient</span><span class="o">.</span><span class="n">create_schema</span><span class="p">(</span>
+    <span class="n">auto_id</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">enable_dynamic_field</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">DIM</span> <span class="o">=</span> <span class="mi">512</span>
+
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">INT64</span><span class="p">,</span> <span class="n">is_primary</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;bool&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">BOOL</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;int8&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">INT8</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;int16&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">INT16</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;int32&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">INT32</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;int64&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">INT64</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;float&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">FLOAT</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;double&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">DOUBLE</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;varchar&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">VARCHAR</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">512</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;json&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">JSON</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;array_str&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">ARRAY</span><span class="p">,</span> <span class="n">max_capacity</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">element_type</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">VARCHAR</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;array_int&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">ARRAY</span><span class="p">,</span> <span class="n">max_capacity</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">element_type</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">INT64</span><span class="p">)</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;float_vector&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">FLOAT_VECTOR</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="n">DIM</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;binary_vector&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">BINARY_VECTOR</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="n">DIM</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;float16_vector&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">FLOAT16_VECTOR</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="n">DIM</span><span class="p">),</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">add_field</span><span class="p">(</span><span class="n">field_name</span><span class="o">=</span><span class="s2">&quot;sparse_vector&quot;</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">DataType</span><span class="o">.</span><span class="n">SPARSE_FLOAT_VECTOR</span><span class="p">)</span>
+
+<span class="n">schema</span><span class="o">.</span><span class="n">verify</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="set-up-bulkwriter">Set up BulkWriter<a class="headerlink" href="#set-up-bulkwriter" title="Permanent link">#</a></h2>
+<p>BulkWriter is a tool designed to convert raw datasets into a format suitable for importing via the RESTful Import API. It offers two types of writers:</p>
+<ul>
+<li><strong>LocalBulkWriter:</strong> Reads the designated dataset and transforms it into an easy-to-use format.</li>
+<li><strong>RemoteBulkWriter:</strong> Performs the same task as the LocalBulkWriter but additionally transfers the converted data files to a specified remote object storage bucket.</li>
+</ul>
+<p><strong>RemoteBulkWriter</strong> differs from <strong>LocalBulkWriter</strong> in that <strong>RemoteBulkWriter</strong> transfers the converted data files to a target object storage bucket.</p>
+<h2 id="set-up-localbulkwriter">Set up LocalBulkWriter<a class="headerlink" href="#set-up-localbulkwriter" title="Permanent link">#</a></h2>
+<p>A <strong>LocalBulkWriter</strong> appends rows from the source dataset and commits them to a local file of the specified format.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.bulk_writer</span><span class="w"> </span><span class="kn">import</span> <span class="n">LocalBulkWriter</span><span class="p">,</span> <span class="n">BulkFileType</span>
+
+<span class="n">writer</span> <span class="o">=</span> <span class="n">LocalBulkWriter</span><span class="p">(</span>
+    <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">,</span>
+    <span class="n">local_path</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span>
+    <span class="n">segment_size</span><span class="o">=</span><span class="mi">512</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">,</span> <span class="c1"># Default value</span>
+    <span class="n">file_type</span><span class="o">=</span><span class="n">BulkFileType</span><span class="o">.</span><span class="n">PARQUET</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p>When creating a LocalBulkWriter, you should:</p>
+<ul>
+<li>Reference the created schema in <strong>schema</strong>.</li>
+<li>Set <strong>local_path</strong> to the output directory.</li>
+<li>Set <strong>file_type</strong> to the output file type.</li>
+<li>If your dataset contains a large number of records, you are advised to segment your data by setting <strong>segment_size</strong> to a proper value.</li>
+</ul>
+<h2 id="set-up-remotebulkwriter">Set up RemoteBulkWriter<a class="headerlink" href="#set-up-remotebulkwriter" title="Permanent link">#</a></h2>
+<p>Instead of committing appended data to a local file, a <strong>RemoteBulkWriter</strong> commits them to a remote bucket. Therefore, you should set up a <strong>ConnectParam</strong> object before creating a <strong>RemoteBulkWriter</strong>.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.bulk_writer</span><span class="w"> </span><span class="kn">import</span> <span class="n">RemoteBulkWriter</span>
+
+<span class="n">ACCESS_KEY</span><span class="o">=</span><span class="s2">&quot;minioadmin&quot;</span>
+<span class="n">SECRET_KEY</span><span class="o">=</span><span class="s2">&quot;minioadmin&quot;</span>
+<span class="n">BUCKET_NAME</span><span class="o">=</span><span class="s2">&quot;a-bucket&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">RemoteBulkWriter</span><span class="o">.</span><span class="n">S3ConnectParam</span><span class="p">(</span>
+    <span class="n">endpoint</span><span class="o">=</span><span class="s2">&quot;localhost:9000&quot;</span><span class="p">,</span> <span class="c1"># the default MinIO service started along with Milvus</span>
+    <span class="n">access_key</span><span class="o">=</span><span class="n">ACCESS_KEY</span><span class="p">,</span>
+    <span class="n">secret_key</span><span class="o">=</span><span class="n">SECRET_KEY</span><span class="p">,</span>
+    <span class="n">bucket_name</span><span class="o">=</span><span class="n">BUCKET_NAME</span><span class="p">,</span>
+    <span class="n">secure</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.bulk_writer</span><span class="w"> </span><span class="kn">import</span> <span class="n">BulkFileType</span>
+
+<span class="n">writer</span> <span class="o">=</span> <span class="n">RemoteBulkWriter</span><span class="p">(</span>
+    <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">,</span>
+    <span class="n">remote_path</span><span class="o">=</span><span class="s2">&quot;/&quot;</span><span class="p">,</span>
+    <span class="n">connect_param</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>
+    <span class="n">file_type</span><span class="o">=</span><span class="n">BulkFileType</span><span class="o">.</span><span class="n">PARQUET</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;bulk writer created.&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Once the connection parameters are ready, you can reference it in the RemoteBulkWriter as follows:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.bulk_writer</span><span class="w"> </span><span class="kn">import</span> <span class="n">BulkFileType</span>
+
+<span class="n">writer</span> <span class="o">=</span> <span class="n">RemoteBulkWriter</span><span class="p">(</span>
+    <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">,</span>
+    <span class="n">remote_path</span><span class="o">=</span><span class="s2">&quot;/&quot;</span><span class="p">,</span>
+    <span class="n">connect_param</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>
+    <span class="n">file_type</span><span class="o">=</span><span class="n">BulkFileType</span><span class="o">.</span><span class="n">PARQUET</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p>The parameters for creating a RemoteBulkWriter are barely the same as those for a LocalBulkWriter, except connect_param.</p>
+<h2 id="start-writing">Start writing<a class="headerlink" href="#start-writing" title="Permanent link">#</a></h2>
+<p>A BulkWriter has two methods: <strong>append_row()</strong> adds a row from a source dataset, and <strong>commit()</strong> commits added rows to a local file or a remote bucket.</p>
+<p>For demonstration purposes, the following code appends randomly generated data.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span><span class="o">,</span><span class="w"> </span><span class="nn">string</span><span class="o">,</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_random_str</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">letters</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_uppercase</span>
+    <span class="n">digits</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span>
+
+    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">letters</span> <span class="o">+</span> <span class="n">digits</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">length</span><span class="p">))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">gen_binary_vector</span><span class="p">(</span><span class="n">to_numpy_arr</span><span class="p">):</span>
+    <span class="n">raw_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="kp">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">DIM</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="n">to_numpy_arr</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">packbits</span><span class="p">(</span><span class="n">raw_vector</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">raw_vector</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">gen_float_vector</span><span class="p">(</span><span class="n">to_numpy_arr</span><span class="p">):</span>
+    <span class="n">raw_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">DIM</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="n">to_numpy_arr</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="n">raw_vector</span><span class="p">,</span> <span class="kp">dtype</span><span class="o">=</span><span class="s2">&quot;float32&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">raw_vector</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">gen_fp16_vector</span><span class="p">(</span><span class="n">to_numpy_arr</span><span class="p">):</span>
+    <span class="n">raw_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">DIM</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="n">to_numpy_arr</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="n">raw_vector</span><span class="p">,</span> <span class="kp">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">raw_vector</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">gen_sparse_vector</span><span class="p">(</span><span class="n">pair_dict</span><span class="p">:</span> <span class="nb">bool</span><span class="p">):</span>
+    <span class="n">raw_vector</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">dim</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="kp">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">pair_dict</span><span class="p">:</span>
+        <span class="n">raw_vector</span><span class="p">[</span><span class="s2">&quot;indices&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dim</span><span class="p">)]</span>
+        <span class="n">raw_vector</span><span class="p">[</span><span class="s2">&quot;values&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dim</span><span class="p">)]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dim</span><span class="p">):</span>
+            <span class="n">raw_vector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">raw_vector</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">append_row</span><span class="p">({</span>
+        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">(</span><span class="n">i</span><span class="p">),</span>
+        <span class="s2">&quot;bool&quot;</span><span class="p">:</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;int8&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">(</span><span class="n">i</span><span class="o">%</span><span class="mi">128</span><span class="p">),</span>
+        <span class="s2">&quot;int16&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">(</span><span class="n">i</span><span class="o">%</span><span class="mi">1000</span><span class="p">),</span>
+        <span class="s2">&quot;int32&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">(</span><span class="n">i</span><span class="o">%</span><span class="mi">100000</span><span class="p">),</span>
+        <span class="s2">&quot;int64&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">(</span><span class="n">i</span><span class="p">),</span>
+        <span class="s2">&quot;float&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span>
+        <span class="s2">&quot;double&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">7</span><span class="p">),</span>
+        <span class="s2">&quot;varchar&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;varchar_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;json&quot;</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="kp">dumps</span><span class="p">({</span><span class="s2">&quot;dummy&quot;</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;ok&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;name_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}),</span>
+        <span class="s2">&quot;array_str&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;str_</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span> <span class="n">np</span><span class="o">.</span><span class="kp">dtype</span><span class="p">(</span><span class="s2">&quot;str&quot;</span><span class="p">)),</span>
+        <span class="s2">&quot;array_int&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)],</span> <span class="n">np</span><span class="o">.</span><span class="kp">dtype</span><span class="p">(</span><span class="s2">&quot;int64&quot;</span><span class="p">)),</span>
+        <span class="s2">&quot;float_vector&quot;</span><span class="p">:</span> <span class="n">gen_float_vector</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+        <span class="s2">&quot;binary_vector&quot;</span><span class="p">:</span> <span class="n">gen_binary_vector</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+        <span class="s2">&quot;float16_vector&quot;</span><span class="p">:</span> <span class="n">gen_fp16_vector</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+        <span class="c1"># &quot;bfloat16_vector&quot;: gen_bf16_vector(True),</span>
+        <span class="s2">&quot;sparse_vector&quot;</span><span class="p">:</span> <span class="n">gen_sparse_vector</span><span class="p">(</span><span class="kc">True</span><span class="p">),</span>
+        <span class="sa">f</span><span class="s2">&quot;dynamic_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span>
+    <span class="p">})</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">1000</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">writer</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;committed&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">writer</span><span class="o">.</span><span class="n">batch_files</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="verify-the-results">Verify the results<a class="headerlink" href="#verify-the-results" title="Permanent link">#</a></h2>
+<p>To check the results, you can get the actual output path by printing the <strong>batch_files</strong> property of the writer.</p>
+<div class="codehilite"><pre><span></span><code>print(writer.batch_files)
+</code></pre></div>
+
+<p>BulkWriter generates a UUID, creates a sub-folder using the UUID in the provided output directory, and places all generated files in the sub-folder.</p>
+<h1 id="import-data">Import data<a class="headerlink" href="#import-data" title="Permanent link">#</a></h1>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">#</a></h2>
+<ul>
+<li>You have already prepared your data and placed it into the Milvus bucket.If not, you should use RemoteBulkWriter to prepare your data first, and ensure that the prepared data has already been transferred to the Milvus bucket on the MinIO instance started along with your Milvus instance. </li>
+</ul>
+<h2 id="import-data_1">Import data<a class="headerlink" href="#import-data_1" title="Permanent link">#</a></h2>
+<p>To import the prepared data, you have to create an import job as follows:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.bulk_writer</span><span class="w"> </span><span class="kn">import</span> <span class="n">bulk_import</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;http://127.0.0.1:19530&quot;</span>
+
+<span class="n">resp</span> <span class="o">=</span> <span class="n">bulk_import</span><span class="p">(</span>
+    <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+    <span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;quick_setup&quot;</span><span class="p">,</span>
+    <span class="n">files</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/1.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/2.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/3.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/4.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/5.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/6.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/7.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/8.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/9.parquet&#39;</span><span class="p">],</span>
+           <span class="p">[</span><span class="s1">&#39;a1e18323-a658-4d1b-95a7-9907a4391bcf/10.parquet&#39;</span><span class="p">]],</span>
+<span class="p">)</span>
+
+<span class="n">job_id</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="s1">&#39;jobId&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">job_id</span><span class="p">)</span>
+</code></pre></div>
+
+<p>The request body contains two fields:</p>
+<ul>
+<li><strong>collectionName:</strong> The name of the target collection.</li>
+<li><strong>files:</strong> A list of lists of file paths relative to the root path of the Milvus bucket on the MioIO instance started along with your Milvus instance. Possible sub-lists are as follows:</li>
+</ul>
+<p><strong>JSON files</strong></p>
+<p>If the prepared file is in JSON format, each sub-list should contain the path to a single prepared JSON file.</p>
+<div class="codehilite"><pre><span></span><code>[
+    &quot;/d1782fa1-6b65-4ff3-b05a-43a436342445/1.json&quot;
+],
+</code></pre></div>
+
+<p><strong>Parquet files</strong>
+If the prepared file is in Parquet format, each sub-list should contain the path to a single prepared parquet file.</p>
+<div class="codehilite"><pre><span></span><code>[
+    &quot;/a6fb2d1c-7b1b-427c-a8a3-178944e3b66d/1.parquet&quot;
+]
+</code></pre></div>
+
+<p>The possible return is as follows:</p>
+<div class="codehilite"><pre><span></span><code>{
+    &quot;code&quot;: 200,
+    &quot;data&quot;: {
+        &quot;jobId&quot;: &quot;448707763884413158&quot;
+    }
+}
+</code></pre></div>
+
+<h2 id="check-import-progress">Check import progress<a class="headerlink" href="#check-import-progress" title="Permanent link">#</a></h2>
+<p>Once you get an import job ID, you can check the import progress as follows:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.bulk_writer</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_import_progress</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;http://127.0.0.1:19530&quot;</span>
+
+<span class="n">resp</span> <span class="o">=</span> <span class="n">get_import_progress</span><span class="p">(</span>
+    <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+    <span class="n">job_id</span><span class="o">=</span><span class="s2">&quot;453265736269038336&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+</code></pre></div>
+
+<p>The possible response is as follows:</p>
+<div class="codehilite"><pre><span></span><code>{
+    &quot;code&quot;: 200,
+    &quot;data&quot;: {
+        &quot;collectionName&quot;: &quot;quick_setup&quot;,
+        &quot;completeTime&quot;: &quot;2024-05-18T02:57:13Z&quot;,
+        &quot;details&quot;: [
+            {
+                &quot;completeTime&quot;: &quot;2024-05-18T02:57:11Z&quot;,
+                &quot;fileName&quot;: &quot;id:449839014328146740 paths:\&quot;/8ca44f28-47f7-40ba-9604-98918afe26d1/1.parquet\&quot; &quot;,
+                &quot;fileSize&quot;: 31567874,
+                &quot;importedRows&quot;: 100000,
+                &quot;progress&quot;: 100,
+                &quot;state&quot;: &quot;Completed&quot;,
+                &quot;totalRows&quot;: 100000
+            },
+            {
+                &quot;completeTime&quot;: &quot;2024-05-18T02:57:11Z&quot;,
+                &quot;fileName&quot;: &quot;id:449839014328146741 paths:\&quot;/8ca44f28-47f7-40ba-9604-98918afe26d1/2.parquet\&quot; &quot;,
+                &quot;fileSize&quot;: 31517224,
+                &quot;importedRows&quot;: 100000,
+                &quot;progress&quot;: 100,
+                &quot;state&quot;: &quot;Completed&quot;,
+                &quot;totalRows&quot;: 200000            
+            }
+        ],
+        &quot;fileSize&quot;: 63085098,
+        &quot;importedRows&quot;: 200000,
+        &quot;jobId&quot;: &quot;449839014328146739&quot;,
+        &quot;progress&quot;: 100,
+        &quot;state&quot;: &quot;Completed&quot;,
+        &quot;totalRows&quot;: 200000
+    }
+}
+</code></pre></div>
+
+<h2 id="list-import-jobs">List Import Jobs<a class="headerlink" href="#list-import-jobs" title="Permanent link">#</a></h2>
+<p>You can list all import jobs relative to a specific collection as follows:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus.bulk_writer</span><span class="w"> </span><span class="kn">import</span> <span class="n">list_import_jobs</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;http://127.0.0.1:19530&quot;</span>
+
+<span class="n">resp</span> <span class="o">=</span> <span class="n">list_import_jobs</span><span class="p">(</span>
+    <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+    <span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;quick_setup&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+</code></pre></div>
+
+<p>The possible values are as follows:</p>
+<div class="codehilite"><pre><span></span><code>{
+    &quot;code&quot;: 200,
+    &quot;data&quot;: {
+        &quot;records&quot;: [
+            {
+                &quot;collectionName&quot;: &quot;quick_setup&quot;,
+                &quot;jobId&quot;: &quot;448761313698322011&quot;,
+                &quot;progress&quot;: 50,
+                &quot;state&quot;: &quot;Importing&quot;
+            }
+        ]
+    }
+}
+</code></pre></div>
+
+<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">#</a></h2>
+<ul>
+<li>Each import file size should not exceed <strong>16 GB</strong>.</li>
+<li>The maximum number of import requests is limited to <strong>1024</strong>.</li>
+<li>The maximum number of file per import request should not exceed <strong>1024</strong>.</li>
+<li>Only one partition name can be specified in an import request. If no partition name is specified, the data will be inserted into the default partition. Additionally, you cannot set a partition name in the import request if you have set the Partition Key in the target collection.</li>
+</ul>
+<h2 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">#</a></h2>
+<p>Before importing data, ensure that you have acknowledged the constaints in terms of the following Milvus behaviors:</p>
+<ul>
+<li>Constraints regarding the Load behavior:<ul>
+<li>If a collection has already been loaded before an import, you can use the refresh_load function to load the newly imported data after the import is complete.</li>
+</ul>
+</li>
+<li>Constraints regarding the query &amp; search behaviors:<ul>
+<li>Before the import job status is Completed, the newly import data is guaranteed to be invisible to queries and searches.</li>
+<li>Once the job status is Completed,
+        - If the collection is not loaded, you can use the load function to load the newly imported data.
+        - If the collection is already loaded, you can call load(is_refresh=True) to load the imported data.</li>
+</ul>
+</li>
+<li>Constraints regarding the delete behavior:<ul>
+<li>Before the import job status is Completed, deletion is not guaranteed and may or may not succeed.</li>
+<li>Deletion after the job status is Completed is guaranted to succeed.</li>
+</ul>
+</li>
+</ul>
+<h2 id="recommendations">Recommendations<a class="headerlink" href="#recommendations" title="Permanent link">#</a></h2>
+<p>We highly recommend utilizing the multi-file import feature, which allows you to upload several files in a single request. This method not only simplifies the import process but also significantly boosts import performance. Meanwhile, by consolidating your uploads, you can reduce the time spent on data management and make your workflow more efficient.</p>
+<h1 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">#</a></h1>
+<ol>
+<li>Attu (Milvus GUI)</li>
+<li>Milvus Backup</li>
+<li>Birdwatcher</li>
+<li>Milvus-CDC</li>
+<li><a href="https://milvus.io/tools/sizing">Milvus Sizing Tool</a></li>
+<li>VTS (short for Vector Transport Service)</li>
+</ol>
+<p><img alt="Milvus" src="image/Milvus12.png" /></p>
+<h1 id="integrations-overview">Integrations Overview<a class="headerlink" href="#integrations-overview" title="Permanent link">#</a></h1>
+<table>
+<thead>
+<tr>
+<th>Tutorial</th>
+<th>Use Case</th>
+<th>Partners or Stacks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAG with Milvus and LlamaIndex</td>
+<td>RAG</td>
+<td>Milvus, LlamaIndex</td>
+</tr>
+<tr>
+<td>RAG with Milvus and LangChain</td>
+<td>RAG</td>
+<td>Milvus, LangChain</td>
+</tr>
+<tr>
+<td>Milvus Hybrid Search Retriever in LangChain</td>
+<td>Hybrid Search</td>
+<td>Milvus, LangChain</td>
+</tr>
+<tr>
+<td>Semantic Search with Milvus and OpenAI</td>
+<td>Semantic Search</td>
+<td>Milvus, OpenAI</td>
+</tr>
+<tr>
+<td>Question Answering Using Milvus and Cohere</td>
+<td>Semantic Search</td>
+<td>Milvus, Cohere</td>
+</tr>
+<tr>
+<td>Question Answering using Milvus and HuggingFace</td>
+<td>Question Answering</td>
+<td>Milvus, HuggingFace</td>
+</tr>
+<tr>
+<td>Image Search using Milvus and Pytorch</td>
+<td>Semantic Search</td>
+<td>Milvus, Pytorch</td>
+</tr>
+<tr>
+<td>Movie Search using Milvus and SentenceTransformers</td>
+<td>Semantic Search</td>
+<td>Milvus, SentenceTransformers</td>
+</tr>
+<tr>
+<td>Use Milvus as a Vector Store in LangChain</td>
+<td>Semantic Search</td>
+<td>Milvus, LangChain</td>
+</tr>
+<tr>
+<td>Using Full-Text Search with LangChain and Milvus</td>
+<td>Full-Text Search</td>
+<td>Milvus, LangChain</td>
+</tr>
+<tr>
+<td>RAG with Milvus and Haystack</td>
+<td>RAG</td>
+<td>Milvus, Haystack</td>
+</tr>
+<tr>
+<td>Conduct Vision Searches with Milvus and FiftyOne</td>
+<td>Semantic Search</td>
+<td>Milvus, FiftyOne</td>
+</tr>
+<tr>
+<td>Semantic Search with Milvus and VoyageAI</td>
+<td>Semantic Search</td>
+<td>Milvus, VoyageAI</td>
+</tr>
+<tr>
+<td>RAG with Milvus and BentoML</td>
+<td>RAG</td>
+<td>Milvus, BentoML</td>
+</tr>
+<tr>
+<td>RAG with Milvus and DSPy</td>
+<td>RAG</td>
+<td>Milvus, DSPy</td>
+</tr>
+<tr>
+<td>Semantic Search with Milvus and Jina</td>
+<td>Semantic Search</td>
+<td>Milvus, Jina</td>
+</tr>
+<tr>
+<td>Milvus on Snowpark Container Services</td>
+<td>Data Connection</td>
+<td>Milvus, Snowpark</td>
+</tr>
+<tr>
+<td>Rule-based Retrieval with Milvus and WhyHow</td>
+<td>Question Answering</td>
+<td>Milvus, WhyHow</td>
+</tr>
+<tr>
+<td>Milvus in Langfuse</td>
+<td>Observability</td>
+<td>Milvus, Langfuse</td>
+</tr>
+<tr>
+<td>RAG Evaluation with Ragas and Milvus</td>
+<td>Evaluation</td>
+<td>Milvus, Ragas</td>
+</tr>
+<tr>
+<td>Chatbot Agent with Milvus and MemGPT</td>
+<td>Agent</td>
+<td>Milvus, MemGPT</td>
+</tr>
+<tr>
+<td>How to deploy FastGPT with Milvus</td>
+<td>RAG</td>
+<td>Milvus, FastGPT</td>
+</tr>
+<tr>
+<td>Write SQL with Vanna and Milvus</td>
+<td>RAG</td>
+<td>Milvus, Vanna</td>
+</tr>
+<tr>
+<td>RAG with Milvus and Camel</td>
+<td>RAG</td>
+<td>Milvus, Camel</td>
+</tr>
+<tr>
+<td>Airbyte &amp; Milvus: Open-Source Data Movement Infrastructure</td>
+<td>Data Connection</td>
+<td>Milvus, Airbyte</td>
+</tr>
+<tr>
+<td>Advanced Video Search: Leveraging Twelve Labs and Milvus</td>
+<td>Semantic Search</td>
+<td>Milvus, Twelve Labs</td>
+</tr>
+<tr>
+<td>Building RAG with Milvus, vLLM, and Llama 3.1</td>
+<td>RAG</td>
+<td>Milvus, vLLM, LlamaIndex</td>
+</tr>
+<tr>
+<td>Multi-agent Systems with Mistral AI, Milvus and LlamaIndex</td>
+<td>Agent</td>
+<td>Milvus, Mistral AI, LlamaIndex</td>
+</tr>
+<tr>
+<td>Connect Kafka with Milvus</td>
+<td>Data Sources</td>
+<td>Milvus, Kafka</td>
+</tr>
+<tr>
+<td>Kotaemon RAG with Milvus</td>
+<td>RAG</td>
+<td>Milvus, Kotaemon</td>
+</tr>
+<tr>
+<td>Crawling Websites with Apify and Saving Data to Milvus</td>
+<td>Data Sources</td>
+<td>Milvus, Apify</td>
+</tr>
+<tr>
+<td>Evaluation with DeepEval</td>
+<td>Evaluation &amp; Observability</td>
+<td>Milvus, DeepEval</td>
+</tr>
+<tr>
+<td>Evaluation with Arize Phoenix</td>
+<td>Evaluation &amp; Observability</td>
+<td>Milvus, Arize Phoenix</td>
+</tr>
+<tr>
+<td>Deploying Dify with Milvus</td>
+<td>Orchestration</td>
+<td>Milvus, Dify</td>
+</tr>
+<tr>
+<td>Building a RAG System Using Langflow with Milvus</td>
+<td>Orchestration</td>
+<td>Milvus, Langflow</td>
+</tr>
+<tr>
+<td>Build RAG on Arm Architecture</td>
+<td>RAG</td>
+<td>Milvus, Arm</td>
+</tr>
+<tr>
+<td>Build RAG with Milvus and Fireworks AI</td>
+<td>LLMs</td>
+<td>Milvus, Fireworks AI</td>
+</tr>
+<tr>
+<td>Build RAG with Milvus and Lepton AI</td>
+<td>LLMs</td>
+<td>Milvus, Lepton AI</td>
+</tr>
+<tr>
+<td>Build RAG with Milvus and SiliconFlow</td>
+<td>LLMs</td>
+<td>Milvus, SiliconFlow</td>
+</tr>
+<tr>
+<td>Build a RAG with Milvus and Unstructured</td>
+<td>Data Sources</td>
+<td>Milvus, Unstructured</td>
+</tr>
+<tr>
+<td>Build RAG with Milvus + PII Masker</td>
+<td>Data Sources</td>
+<td>Milvus, PII Masker</td>
+</tr>
+<tr>
+<td>Use Milvus in PrivateGPT</td>
+<td>Orchestration</td>
+<td>Vector Search</td>
+</tr>
+<tr>
+<td>Getting Started with Mem0 and Milvus</td>
+<td>Agents</td>
+<td>Mem0, Milvus</td>
+</tr>
+<tr>
+<td>Knowledge Table with Milvus</td>
+<td>Knowledge Engineering</td>
+<td>Knowledge Table, Milvus</td>
+</tr>
+<tr>
+<td>Use Milvus in DocsGPT</td>
+<td>Orchestration</td>
+<td>DocsGPT, Milvus</td>
+</tr>
+<tr>
+<td>Use Milvus with SambaNova</td>
+<td>Orchestration</td>
+<td>Milvus, SambaNova</td>
+</tr>
+<tr>
+<td>Build RAG with Milvus and Cognee</td>
+<td>Knowledge Engineering</td>
+<td>Milvus, Cognee</td>
+</tr>
+<tr>
+<td>Build RAG with Milvus and Gemini</td>
+<td>LLMs</td>
+<td>Milvus, Gemini</td>
+</tr>
+<tr>
+<td>Build RAG with Milvus and Ollama</td>
+<td>LLMs</td>
+<td>Milvus, Ollama</td>
+</tr>
+<tr>
+<td>Getting Started with Dynamiq and Milvus</td>
+<td>Orchestration</td>
+<td>Milvus, Dynamiq</td>
+</tr>
+<tr>
+<td>Build RAG with Milvus and DeepSeek</td>
+<td>LLMs</td>
+<td>Milvus, DeepSeek</td>
+</tr>
+<tr>
+<td>Integrate Milvus with Phidata</td>
+<td>Agents</td>
+<td>Milvus, Phidata</td>
+</tr>
+<tr>
+<td>Building RAG with Milvus and Crawl4AI</td>
+<td>Data Sources</td>
+<td>Milvus, Crawl4AI</td>
+</tr>
+<tr>
+<td>Building RAG with Milvus and Firecrawl</td>
+<td>Data Sources</td>
+<td>Milvus, Firecrawl</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://milvus.io/docs/integrations_overview.md">Integrations link</a></p>
+<h1 id="milvus-limits">Milvus Limits<a class="headerlink" href="#milvus-limits" title="Permanent link">#</a></h1>
+<p>Milvus is committed to providing the best vector databases to power AI applications and vector similarity search. However, the team is continuously working to bring in more features and the best utilities to enhance user experience. This page lists out some known limitations that the users may encounter when using Milvus.</p>
+<p><a href="https://milvus.io/docs/limitations.md">Limitation link</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="milvus_setup.html" class="btn btn-neutral float-left" title="Milvus & Attu Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="faiss.html" class="btn btn-neutral float-right" title="FAISS Vector Database">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="milvus_setup.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="faiss.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
