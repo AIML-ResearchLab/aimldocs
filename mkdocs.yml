@@ -133,7 +133,7 @@ nav:
        - Model Context Protocol (MCP):
          -  MCP overview: AIML/AgenticAI/mcp.md
     - Aws:
-       - Autoencoder: AIML/DeepLearning/Autoencoder.md
+       - VPC: AIML/aws/vpc.md
     - Azure:
        - Autoencoder: AIML/DeepLearning/Autoencoder.md
     - Google:
