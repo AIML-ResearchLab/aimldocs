@@ -134,6 +134,7 @@ nav:
          -  MCP overview: AIML/AgenticAI/mcp.md
     - Aws:
        - VPC: AIML/aws/vpc.md
+       - NVIDIA ON AWS: AIML/aws/nvidia.md
     - Azure:
        - Autoencoder: AIML/DeepLearning/Autoencoder.md
     - Google:
