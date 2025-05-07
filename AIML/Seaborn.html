@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Seaborn - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Seaborn";
+        var mkdocs_page_input_path = "AIML/Seaborn.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Python.html">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="NumPy.html">NumPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Pandas.html">Pandas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="SciPy.html">SciPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="NormalDistribution.html">Normal Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="BinomialDistribution.html">Binomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="PoissonDistribution.html">Poisson Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="UniformDistribution.html">Uniform Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="LogisticDistribution.html">Logistic Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="MultinomialDistribution.html">Multinomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="ExponentialDistribution.html">Exponential Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="CategoricalDistribution.html">Categorical Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="BernoulliDistribution.html">Bernoulli Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Statistics.html">Statistics</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Data Visualization</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="Matplotlib.html">Matplotlib</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Seaborn</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning & AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="FeatureEngineering.html">Feature Engineering</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Test.html">Test</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="TensorFlow.html">TensorFlow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="PyTorch.html">PyTorch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="VectorDb/vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="VectorDb/milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="VectorDb/milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="VectorDb/faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="VectorDb/weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="VectorDb/pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI Framework</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >crewai</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="AgenticAI/crewai.html">crewai overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >langgraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="AgenticAI/langgraph.html">langgraph overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Model Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="AgenticAI/mcp.html">MCP overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="aws/vpc.html">VPC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="aws/nvidia.html">NVIDIA ON AWS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Learning Topics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="DeepLearning/Learning.html">Learning</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Data Visualization</li>
+      <li class="breadcrumb-item active">Seaborn</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="an-introduction-to-seaborn">An introduction to seaborn<a class="headerlink" href="#an-introduction-to-seaborn" title="Permanent link">#</a></h1>
+<p>Seaborn is a library for making statistical graphics in Python. It builds on top of matplotlib and integrates closely with pandas data structures.</p>
+<p>Seaborn helps you explore and understand your data. Its plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots. Its dataset-oriented, declarative API lets you focus on what the different elements of your plots mean, rather than on the details of how to draw them.</p>
+<p>Here’s an example of what seaborn can do:</p>
+<div class="codehilite"><pre><span></span><code> <span class="n">Import</span> <span class="n">seaborn</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="c1"># Apply the default theme</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">()</span>
+
+<span class="c1"># Load an example dataset</span>
+<span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create a visualization</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">relplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;tip&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span>
+    <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;smoker&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;smoker&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s2">&quot;size&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="SB" src="img/image24.png" /></p>
+<h1 id="visualize-distributions-with-seaborn">Visualize Distributions With Seaborn<a class="headerlink" href="#visualize-distributions-with-seaborn" title="Permanent link">#</a></h1>
+<p>Seaborn is a library that uses Matplotlib underneath to plot graphs. It will be used to visualize random distributions.</p>
+<h2 id="displots">Displots<a class="headerlink" href="#displots" title="Permanent link">#</a></h2>
+<p>Displot stands for distribution plot, it takes as input an array and plots a curve corresponding to the distribution of points in the array.</p>
+<p><strong>Import Matplotlib</strong>
+Import the pyplot object of the Matplotlib module in your code using the following statement:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</code></pre></div>
+
+<p><strong>Import Seaborn</strong>
+Import the Seaborn module in your code using the following statement:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</code></pre></div>
+
+<h2 id="plotting-a-displot">Plotting a Displot<a class="headerlink" href="#plotting-a-displot" title="Permanent link">#</a></h2>
+<p>ExampleGet</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="SB" src="img/image22.png" /></p>
+<h2 id="plotting-a-displot-without-the-histogram">Plotting a Displot Without the Histogram<a class="headerlink" href="#plotting-a-displot-without-the-histogram" title="Permanent link">#</a></h2>
+<p>Example</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;kde&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="SB" src="img/image23.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="Matplotlib.html" class="btn btn-neutral float-left" title="Matplotlib"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="FeatureEngineering.html" class="btn btn-neutral float-right" title="Feature Engineering">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="Matplotlib.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="FeatureEngineering.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

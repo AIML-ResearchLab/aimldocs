@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Retrieval augmented generation - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Retrieval augmented generation";
+        var mkdocs_page_input_path = "AIML/RAG/Retrieval_augmented_generation.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Python.html">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NumPy.html">NumPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pandas.html">Pandas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SciPy.html">SciPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NormalDistribution.html">Normal Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BinomialDistribution.html">Binomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PoissonDistribution.html">Poisson Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UniformDistribution.html">Uniform Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LogisticDistribution.html">Logistic Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MultinomialDistribution.html">Multinomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ExponentialDistribution.html">Exponential Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CategoricalDistribution.html">Categorical Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BernoulliDistribution.html">Bernoulli Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Statistics.html">Statistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Visualization</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Seaborn.html">Seaborn</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning & AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FeatureEngineering.html">Feature Engineering</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Test.html">Test</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TensorFlow.html">TensorFlow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PyTorch.html">PyTorch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Retrieval augmented generation(RAG)</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Retrieval augmented generation</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI Framework</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >crewai</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/crewai.html">crewai overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >langgraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/langgraph.html">langgraph overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Model Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/mcp.html">MCP overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/vpc.html">VPC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/nvidia.html">NVIDIA ON AWS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Learning Topics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Learning.html">Learning</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Retrieval augmented generation(RAG)</li>
+      <li class="breadcrumb-item active">Retrieval augmented generation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="retrieval-augmented-generation-rag"><strong>Retrieval Augmented Generation (RAG)</strong><a class="headerlink" href="#retrieval-augmented-generation-rag" title="Permanent link">#</a></h1>
+<p>But we have another approach where we can augment the knowledge of LLMs and retrieve information from custom content.It is called Retrieval Augmented Generation (RAG).</p>
+<p>Utility tools like ChatPDF have been popular Generative AI tools. The PDF document is connected as an external data source and we can interact with it as we are assisted by an LLM.</p>
+<p>What we do in RAG is inserting additional data into the context (prompt) of a model at inference time. That helps the LLM get more precise and relevant content for our queries when compared to zero-shot prompting.</p>
+<p>Another way of looking at it is in the context of a doctor and patient. A doctor’s diagnosis can be significantly more precise and accurate when they have access to the patient’s test results and charts, as opposed to relying solely on symptomatic observations.</p>
+<p><img alt="RAG" src="image/image12.png" /></p>
+<p><img alt="RAG" src="image/image14.png" />
+<img alt="RAG" src="image/image15.png" /></p>
+<p><strong>The workflow of the RAG based LLM application will be as follows:</strong></p>
+<ol>
+<li>Receive query from the user.</li>
+<li>Convert it to an embedded query vector preserving the semantics, using an embedding model.</li>
+<li>Retrieve the top-k relevant content from the vector database by computing similarity between the query embedding and the content embedding in the database.</li>
+<li>Pass the retrieved content and query as a prompt to an LLM.</li>
+<li>The LLM gives the required response.</li>
+</ol>
+<p><img alt="RAG" src="image/image13.png" /></p>
+<ol>
+<li>
+<p>Download Ollama(Macos)
+   https://ollama.com/download
+   https://github.com/ollama/ollama</p>
+</li>
+<li>
+<p>Unzip the zip file</p>
+</li>
+<li>Move to Application </li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="p">(</span><span class="n">base</span><span class="p">)</span><span class="w"> </span><span class="nl">gggggggg</span><span class="p">:</span><span class="o">~</span><span class="w"> </span><span class="n">ganesh</span><span class="err">$</span><span class="w"> </span><span class="n">ollama</span>
+<span class="k">Usage</span><span class="err">:</span>
+<span class="w">  </span><span class="n">ollama</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span>
+<span class="w">  </span><span class="n">ollama</span><span class="w"> </span><span class="o">[</span><span class="n">command</span><span class="o">]</span>
+
+<span class="n">Available</span><span class="w"> </span><span class="nl">Commands</span><span class="p">:</span>
+<span class="w">  </span><span class="n">serve</span><span class="w">       </span><span class="k">Start</span><span class="w"> </span><span class="n">ollama</span>
+<span class="w">  </span><span class="k">create</span><span class="w">      </span><span class="k">Create</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">Modelfile</span>
+<span class="w">  </span><span class="n">show</span><span class="w">        </span><span class="n">Show</span><span class="w"> </span><span class="n">information</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">model</span>
+<span class="w">  </span><span class="n">run</span><span class="w">         </span><span class="n">Run</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">model</span>
+<span class="w">  </span><span class="n">stop</span><span class="w">        </span><span class="n">Stop</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">model</span>
+<span class="w">  </span><span class="n">pull</span><span class="w">        </span><span class="n">Pull</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">registry</span>
+<span class="w">  </span><span class="n">push</span><span class="w">        </span><span class="n">Push</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">registry</span>
+<span class="w">  </span><span class="n">list</span><span class="w">        </span><span class="n">List</span><span class="w"> </span><span class="n">models</span>
+<span class="w">  </span><span class="n">ps</span><span class="w">          </span><span class="n">List</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">models</span>
+<span class="w">  </span><span class="n">cp</span><span class="w">          </span><span class="n">Copy</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">model</span>
+<span class="w">  </span><span class="n">rm</span><span class="w">          </span><span class="n">Remove</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">model</span>
+<span class="w">  </span><span class="n">help</span><span class="w">        </span><span class="n">Help</span><span class="w"> </span><span class="n">about</span><span class="w"> </span><span class="ow">any</span><span class="w"> </span><span class="n">command</span>
+
+<span class="nl">Flags</span><span class="p">:</span>
+<span class="w">  </span><span class="o">-</span><span class="n">h</span><span class="p">,</span><span class="w"> </span><span class="c1">--help      help for ollama</span>
+<span class="w">  </span><span class="o">-</span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="c1">--version   Show version information</span>
+
+<span class="k">Use</span><span class="w"> </span><span class="ss">&quot;ollama [command] --help&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">more</span><span class="w"> </span><span class="n">information</span><span class="w"> </span><span class="n">about</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">command</span><span class="p">.</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span><span class="w"> </span><span class="nl">ggggggggg</span><span class="p">:</span><span class="o">~</span><span class="w"> </span><span class="n">ganesh</span><span class="err">$</span><span class="w"> </span>
+</code></pre></div>
+
+<ol>
+<li>Run the llama2</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="ss">(</span><span class="nv">base</span><span class="ss">)</span><span class="w"> </span><span class="nv">gggggg</span>:<span class="o">~</span><span class="w"> </span><span class="nv">ganesh</span>$<span class="w"> </span><span class="nv">ollama</span><span class="w"> </span><span class="nv">run</span><span class="w"> </span><span class="nv">llama2</span>
+<span class="nv">pulling</span><span class="w"> </span><span class="nv">manifest</span><span class="w"> </span>
+<span class="nv">pulling</span><span class="w"> </span><span class="mi">8934</span><span class="nv">d96d3f08</span>...<span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span>▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏<span class="w"> </span><span class="mi">3</span>.<span class="mi">8</span><span class="w"> </span><span class="nv">GB</span><span class="w">                         </span>
+<span class="nv">pulling</span><span class="w"> </span><span class="mi">8</span><span class="nv">c17c2ebb0ea</span>...<span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span>▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏<span class="w"> </span><span class="mi">7</span>.<span class="mi">0</span><span class="w"> </span><span class="nv">KB</span><span class="w">                         </span>
+<span class="nv">pulling</span><span class="w"> </span><span class="mi">7</span><span class="nv">c23fb36d801</span>...<span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span>▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏<span class="w"> </span><span class="mi">4</span>.<span class="mi">8</span><span class="w"> </span><span class="nv">KB</span><span class="w">                         </span>
+<span class="nv">pulling</span><span class="w"> </span><span class="mi">2</span><span class="nv">e0493f67d0c</span>...<span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span>▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏<span class="w">   </span><span class="mi">59</span><span class="w"> </span><span class="nv">B</span><span class="w">                         </span>
+<span class="nv">pulling</span><span class="w"> </span><span class="nv">fa304d675061</span>...<span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span>▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏<span class="w">   </span><span class="mi">91</span><span class="w"> </span><span class="nv">B</span><span class="w">                         </span>
+<span class="nv">pulling</span><span class="w"> </span><span class="mi">42</span><span class="nv">ba7f8a01dd</span>...<span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span>▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏<span class="w">  </span><span class="mi">557</span><span class="w"> </span><span class="nv">B</span><span class="w">                         </span>
+<span class="nv">verifying</span><span class="w"> </span><span class="nv">sha256</span><span class="w"> </span><span class="nv">digest</span><span class="w"> </span>
+<span class="nv">writing</span><span class="w"> </span><span class="nv">manifest</span><span class="w"> </span>
+<span class="nv">success</span><span class="w"> </span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="k">Send</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">message</span><span class="w"> </span><span class="ss">(</span><span class="o">/</span>?<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">help</span><span class="ss">)</span>
+</code></pre></div>
+
+<h1 id="rag-pipeline-with-vector-database">RAG Pipeline with Vector DataBase<a class="headerlink" href="#rag-pipeline-with-vector-database" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code><span class="c1">## Data Ingetion</span>
+<span class="c1">#pip install pypdf</span>
+<span class="c1">#pip install langchain_community</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">TextLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">PyPDFLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">WebBaseLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">CSVLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain.schema</span><span class="w"> </span><span class="kn">import</span> <span class="n">Document</span>
+<span class="c1">#from bs4 import SoupStrainer</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">bs4</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">load_dotenv</span><span class="p">()</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;OPENAPI_API_KEY&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;OPENAPI_API_KEY&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">Text</span><span class="w"> </span><span class="n">reader</span>
+<span class="n">loader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TextLoader</span><span class="p">(</span><span class="s1">&#39;Speech.txt&#39;</span><span class="p">)</span>
+<span class="n">docs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">docs</span><span class="o">:</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="n">doc</span><span class="p">.</span><span class="n">page_content</span><span class="p">)</span><span class="w">  </span><span class="c1"># or any other attribute like `metadata`</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="c1">#Web based loader</span>
+<span class="c1">#Load, chunk and Index the content of HTML page</span>
+
+<span class="n">loader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WebBaseLoader</span><span class="p">(</span><span class="n">web_paths</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;https://lilianweng.github.io/posts/2023-06-23-agent/&quot;</span><span class="p">,),</span>\
+<span class="w">                                   </span><span class="n">bs_kwargs</span><span class="o">=</span><span class="n">dict</span><span class="p">(</span><span class="n">parse_only</span><span class="o">=</span><span class="n">bs4</span><span class="o">.</span><span class="n">SoupStrainer</span><span class="p">(</span><span class="w"> </span>\
+<span class="w">                                   </span><span class="n">class_</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;post-title&quot;</span><span class="p">,</span><span class="s2">&quot;post-content&quot;</span><span class="p">,</span><span class="s2">&quot;post-header&quot;</span><span class="p">)</span>
+<span class="w">                                 </span><span class="p">)))</span>
+
+<span class="n">docs</span><span class="o">=</span><span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">docs</span><span class="o">:</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="n">doc</span><span class="p">.</span><span class="n">page_content</span><span class="p">)</span><span class="w">  </span><span class="c1"># or any other attribute like `metadata`</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># PDF Reader</span>
+<span class="n">loader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyPDFLoader</span><span class="p">(</span><span class="s1">&#39;docs/Ganesh_Kinkar_Giri_DevSecOps.pdf&#39;</span><span class="p">)</span>
+<span class="n">docs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">docs</span><span class="o">:</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="n">doc</span><span class="p">.</span><span class="n">page_content</span><span class="p">)</span><span class="w">  </span><span class="c1"># or any other attribute like `metadata`</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="c1">#CSV Loader</span>
+<span class="n">loader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CSVLoader</span><span class="p">(</span><span class="s2">&quot;issue.csv&quot;</span><span class="p">)</span>
+<span class="n">docs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">docs</span><span class="o">:</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="n">doc</span><span class="p">.</span><span class="n">page_content</span><span class="p">)</span><span class="w">  </span><span class="c1"># or any other attribute like `metadata`</span>
+</code></pre></div>
+
+<h1 id="chunk-split-the-text-data">Chunk &amp; Split the text data<a class="headerlink" href="#chunk-split-the-text-data" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code>text_splitter = RecursiveCharacterTextSplitter(chunk_size=200,chunk_overlap=50)
+chunk_documents = text_splitter.split_documents(docs)
+chunk_documents
+</code></pre></div>
+
+<h1 id="vector-embedding-and-vector-store">Vector Embedding and Vector Store<a class="headerlink" href="#vector-embedding-and-vector-store" title="Permanent link">#</a></h1>
+<h2 id="either-you-can-use-embeddings-model-openai-or-ollama">Either you can use Embeddings model OpenAI or ollama<a class="headerlink" href="#either-you-can-use-embeddings-model-openai-or-ollama" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIEmbeddings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.embeddings</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIEmbeddings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.embeddings</span><span class="w"> </span><span class="kn">import</span> <span class="n">OllamaEmbeddings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.vectorstores</span><span class="w"> </span><span class="kn">import</span> <span class="n">FAISS</span>
+
+<span class="n">db</span><span class="o">=</span><span class="n">FAISS</span><span class="o">.</span><span class="n">from_documents</span><span class="p">(</span><span class="n">chunk_documents</span><span class="p">,</span><span class="n">OllamaEmbeddings</span><span class="p">())</span>
+<span class="n">db</span>
+</code></pre></div>
+
+<h1 id="query">Query<a class="headerlink" href="#query" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code>query = &quot;unable to connect VM/ VM not accessible&quot;
+retrive_result = db.similarity_search(query)
+print(retrive_result[0].page_content)
+</code></pre></div>
+
+<h1 id="retirever-and-chain-with-langchain">Retirever and Chain with Langchain<a class="headerlink" href="#retirever-and-chain-with-langchain" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code><span class="c1">## Data Ingetion</span>
+<span class="c1">#pip install pypdf</span>
+<span class="c1">#pip install langchain_community</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">TextLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">PyPDFLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">WebBaseLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">CSVLoader</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain.schema</span><span class="w"> </span><span class="kn">import</span> <span class="n">Document</span>
+<span class="c1">#from bs4 import SoupStrainer</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">bs4</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">load_dotenv</span><span class="p">()</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;OPENAPI_API_KEY&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;OPENAPI_API_KEY&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="c1">#Text Loader</span>
+<span class="n">loader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TextLoader</span><span class="p">(</span><span class="s2">&quot;issue.txt&quot;</span><span class="p">)</span>
+<span class="n">docs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="n">docs</span>
+</code></pre></div>
+
+<h1 id="chunk-split-the-text-data_1">Chunk &amp; Split the text data<a class="headerlink" href="#chunk-split-the-text-data_1" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code>text_splitter = RecursiveCharacterTextSplitter(chunk_size=200,chunk_overlap=50)
+chunk_documents = text_splitter.split_documents(docs)
+chunk_documents
+</code></pre></div>
+
+<h1 id="vector-embedding-and-vector-store_1">Vector Embedding and Vector Store<a class="headerlink" href="#vector-embedding-and-vector-store_1" title="Permanent link">#</a></h1>
+<h2 id="either-you-can-use-embeddings-model-openai-or-ollama_1">Either you can use Embeddings model OpenAI or ollama<a class="headerlink" href="#either-you-can-use-embeddings-model-openai-or-ollama_1" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIEmbeddings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.embeddings</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIEmbeddings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.embeddings</span><span class="w"> </span><span class="kn">import</span> <span class="n">OllamaEmbeddings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.vectorstores</span><span class="w"> </span><span class="kn">import</span> <span class="n">FAISS</span>
+
+<span class="n">db</span><span class="o">=</span><span class="n">FAISS</span><span class="o">.</span><span class="n">from_documents</span><span class="p">(</span><span class="n">chunk_documents</span><span class="p">,</span><span class="n">OllamaEmbeddings</span><span class="p">())</span>
+<span class="n">db</span>
+</code></pre></div>
+
+<h1 id="design-chatprompt-template">Design ChatPrompt Template<a class="headerlink" href="#design-chatprompt-template" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.prompts</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatPromptTemplate</span>
+<span class="n">prompt</span><span class="o">=</span><span class="n">ChatPromptTemplate</span><span class="o">.</span><span class="n">from_template</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Answer the following question based only on the provided context.</span>
+<span class="s2">Think step by step before providing a detailed answer.</span>
+<span class="s2">&lt;context&gt;</span>
+<span class="si">{context}</span><span class="s2">                                                                                                                        </span>
+<span class="s2">&lt;/context&gt;</span>
+
+<span class="s2">Question: </span><span class="si">{input}</span><span class="s2">                                                                                </span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h1 id="to-integrate-with-llm-here-will-use-opensource-llmollama-model-llama2">To integrate with LLM - here will use opensource LLM(Ollama) model llama2<a class="headerlink" href="#to-integrate-with-llm-here-will-use-opensource-llmollama-model-llama2" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.llms</span><span class="w"> </span><span class="kn">import</span> <span class="n">Ollama</span>
+
+<span class="n">llm</span><span class="o">=</span><span class="n">Ollama</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama2&quot;</span><span class="p">)</span>
+<span class="n">llm</span>
+</code></pre></div>
+
+<h2 id="chain">Chain<a class="headerlink" href="#chain" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.chains.combine_documents</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_stuff_documents_chain</span>
+<span class="n">document_chain</span> <span class="o">=</span> <span class="n">create_stuff_documents_chain</span><span class="p">(</span><span class="n">llm</span><span class="p">,</span> <span class="n">prompt</span><span class="p">)</span>
+<span class="n">document_chain</span>
+</code></pre></div>
+
+<h2 id="retrievers">Retrievers<a class="headerlink" href="#retrievers" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>retrievers = db.as_retriever()
+retrievers
+</code></pre></div>
+
+<h2 id="retrievers-chain">Retrievers chain<a class="headerlink" href="#retrievers-chain" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.chains</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_retrieval_chain</span>
+<span class="n">retrieval_chain</span> <span class="o">=</span> <span class="n">create_retrieval_chain</span><span class="p">(</span><span class="n">retrievers</span><span class="p">,</span> <span class="n">document_chain</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">textwrap</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">retrieval_chain</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;input&quot;</span><span class="p">:</span><span class="s2">&quot;Low disk space&quot;</span><span class="p">})</span>
+<span class="n">formatted_answer</span> <span class="o">=</span> <span class="n">textwrap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;answer&#39;</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="c1">#wrapped_text = &quot;\n\n&quot;.join(textwrap.fill(paragraph, width=80) for paragraph in formatted_answer.split(&quot;\n\n&quot;))</span>
+<span class="c1">#print(wrapped_text)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">formatted_answer</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="ans">Ans:<a class="headerlink" href="#ans" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">Based</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">provided</span><span class="w"> </span><span class="k">context</span><span class="p">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">answer</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">question</span><span class="w"> </span><span class="s2">&quot;Low disk space&quot;</span><span class="w"> </span><span class="k">is</span><span class="o">:</span>
+<span class="k">To</span><span class="w"> </span><span class="n">resolve</span><span class="w"> </span><span class="n">low</span><span class="w"> </span><span class="k">disk</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="n">issues</span><span class="p">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">team</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="k">first</span><span class="w"> </span><span class="k">check</span><span class="w"> </span><span class="n">which</span><span class="w"> </span><span class="n">application</span>
+<span class="k">is</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">most</span><span class="w"> </span><span class="k">disk</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="n n-Quoted">`df -h`</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">terminal</span><span class="p">.</span>
+<span class="n">This</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">display</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">list</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">all</span><span class="w"> </span><span class="n">mounted</span><span class="w"> </span><span class="k">file</span><span class="w"> </span><span class="n">systems</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">their</span><span class="w"> </span><span class="k">usage</span><span class="w"> </span><span class="k">in</span>
+<span class="n">percentage</span><span class="p">.</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">most</span><span class="w"> </span><span class="k">disk</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">be</span>
+<span class="k">identified</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">team</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">take</span><span class="w"> </span><span class="n">steps</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">free</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">that</span>
+<span class="n">application</span><span class="p">.</span><span class="w">  </span><span class="k">One</span><span class="w"> </span><span class="n">possible</span><span class="w"> </span><span class="n">solution</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">increase</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">SKU</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span>
+<span class="n">application</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="n n-Quoted">`sudoedit /etc/systemd/multi-</span>
+<span class="n n-Quoted">user/sockets.d/skusize`</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">updating</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">value</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n n-Quoted">`SKU_SIZE`</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">larger</span><span class="w"> </span><span class="k">value</span><span class="p">.</span>
+<span class="n">This</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">allow</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="n">more</span><span class="w"> </span><span class="k">disk</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="k">without</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="k">of</span>
+<span class="n">space</span><span class="p">.</span><span class="w">  </span><span class="n">Another</span><span class="w"> </span><span class="n">solution</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">clean</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="k">any</span><span class="w"> </span><span class="n">unnecessary</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">are</span>
+<span class="n">taking</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">system</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="n n-Quoted">`gzip -d &lt;filename&gt;`</span><span class="w"> </span><span class="k">to</span>
+<span class="n">decompress</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">removing</span><span class="w"> </span><span class="n">them</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="n n-Quoted">`rm &lt;filename&gt;`</span><span class="p">.</span><span class="w"> </span><span class="n">This</span>
+<span class="n">will</span><span class="w"> </span><span class="n">free</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">disk</span><span class="w"> </span><span class="k">without</span><span class="w"> </span><span class="n">affecting</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">application</span><span class="s1">&#39;s</span>
+<span class="s1">functionality.  The team should also consider optimizing the application&#39;</span><span class="n">s</span><span class="w"> </span><span class="k">code</span>
+<span class="k">to</span><span class="w"> </span><span class="n">reduce</span><span class="w"> </span><span class="n">its</span><span class="w"> </span><span class="n">dependencies</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="k">disk</span><span class="w"> </span><span class="n">space</span><span class="p">,</span><span class="w"> </span><span class="n">such</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">caching</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">other</span>
+<span class="k">memory</span><span class="o">-</span><span class="n">based</span><span class="w"> </span><span class="k">storage</span><span class="w"> </span><span class="n">solutions</span><span class="p">.</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">may</span><span class="w"> </span><span class="n">involve</span><span class="w"> </span><span class="n">working</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">application</span><span class="s1">&#39;s</span>
+<span class="s1">developers to make changes to the application&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">architecture</span><span class="p">.</span><span class="w">  </span><span class="n">Finally</span><span class="p">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">team</span>
+<span class="n">can</span><span class="w"> </span><span class="k">check</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">there</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="k">any</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="n">applications</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">excessive</span><span class="w"> </span><span class="n">amounts</span>
+<span class="k">of</span><span class="w"> </span><span class="k">disk</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">take</span><span class="w"> </span><span class="n">steps</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">free</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">space</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">those</span><span class="w"> </span><span class="n">applications</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">well</span><span class="p">.</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../VectorDb/pinecone.html" class="btn btn-neutral float-left" title="Pinecone Vector Database"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../MachineLearningPipeline/mlworkflow.html" class="btn btn-neutral float-right" title="ML workflow">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../VectorDb/pinecone.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../MachineLearningPipeline/mlworkflow.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

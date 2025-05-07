@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Llama-3.2-1B fine tune with custom data - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Llama-3.2-1B fine tune with custom data";
+        var mkdocs_page_input_path = "AIML/FinetuneModel/llama_3_finetune.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Python.html">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NumPy.html">NumPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pandas.html">Pandas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SciPy.html">SciPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NormalDistribution.html">Normal Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BinomialDistribution.html">Binomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PoissonDistribution.html">Poisson Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UniformDistribution.html">Uniform Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LogisticDistribution.html">Logistic Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MultinomialDistribution.html">Multinomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ExponentialDistribution.html">Exponential Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CategoricalDistribution.html">Categorical Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BernoulliDistribution.html">Bernoulli Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Statistics.html">Statistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Visualization</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Seaborn.html">Seaborn</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning & AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FeatureEngineering.html">Feature Engineering</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Test.html">Test</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TensorFlow.html">TensorFlow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PyTorch.html">PyTorch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Model Finetune</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Llama-3.2-1B fine tune with custom data</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prepare-your-dataset">Prepare Your Dataset</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI Framework</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >crewai</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/crewai.html">crewai overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >langgraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/langgraph.html">langgraph overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Model Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/mcp.html">MCP overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/vpc.html">VPC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/nvidia.html">NVIDIA ON AWS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Learning Topics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Learning.html">Learning</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Model Finetune</li>
+      <li class="breadcrumb-item active">Llama-3.2-1B fine tune with custom data</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="fine-tuning-a-llama-model">Fine-tuning a LLaMA model<a class="headerlink" href="#fine-tuning-a-llama-model" title="Permanent link">#</a></h1>
+<p>Fine-tuning a LLaMA model with a custom dataset involves several steps. Here’s a comprehensive guide tailored for your setup:</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
+<ol>
+<li><strong>System Requirements:</strong></li>
+<li>Sufficient GPU memory for training. For LLaMA 3.2 models (70B), multiple GPUs with high VRAM (e.g., A100s) are recommended.</li>
+<li>
+<p>Ensure your Mac system is connected to a machine with suitable GPUs (or use cloud-based resources like AWS, GCP, or Azure).</p>
+</li>
+<li>
+<p><strong>Installed Software:</strong></p>
+</li>
+<li>Python environment (Anaconda installed).</li>
+<li>Required libraries: transformers, datasets, bitsandbytes, torch, peft (for LoRA-based fine-tuning), and others.</li>
+<li>Proper setup for LLaMA model files. Confirm the downloaded model path is correct.</li>
+</ol>
+<h2 id="prepare-your-dataset">Prepare Your Dataset<a class="headerlink" href="#prepare-your-dataset" title="Permanent link">#</a></h2>
+<ul>
+<li>
+<p><strong>Format:</strong> The dataset should ideally be in JSON or text format. Common formats include:</p>
+</li>
+<li>
+<p><strong>Supervised Fine-tuning:</strong> { "instruction": "What is X?", "response": "X is Y." }</p>
+</li>
+<li><strong>Unsupervised Fine-tuning:</strong> Plain text data (tokenized).</li>
+</ul>
+<h1 id="loging-huggingface">Loging huggingface<a class="headerlink" href="#loging-huggingface" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">huggingface_hub</span><span class="w"> </span><span class="kn">import</span> <span class="n">notebook_login</span>
+
+<span class="n">notebook_login</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="convert-custom-data-to-proper-format-data">Convert custom data to proper format data.<a class="headerlink" href="#convert-custom-data-to-proper-format-data" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+
+<span class="c1"># Load the JSON data</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Supply-chain-logisitcs-problem.json&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+<span class="c1"># Define the template for instruction-response</span>
+<span class="n">formatted_data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="n">instruction</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Provide details about Order ID </span><span class="si">{</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;Order ID&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span>
+    <span class="n">formatted_data</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">&quot;instruction&quot;</span><span class="p">:</span> <span class="n">instruction</span><span class="p">,</span> <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">response</span><span class="p">})</span>
+
+<span class="c1"># Save the formatted data to a JSONL file</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;formatted_data.json&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">formatted_data</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="logging-into-wandbai">Logging into wandb.ai.<a class="headerlink" href="#logging-into-wandbai" title="Permanent link">#</a></h2>
+<ul>
+<li>Learn how to deploy a W&amp;B server locally: https://wandb.me/wandb-server</li>
+<li>You can find your API key in your browser here: https://wandb.ai/authorize</li>
+</ul>
+<h2 id="start-training-the-custom-data">Start training the custom data<a class="headerlink" href="#start-training-the-custom-data" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">load_dataset</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">peft</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoraConfig</span><span class="p">,</span> <span class="n">get_peft_model</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">AutoModelForCausalLM</span><span class="p">,</span> <span class="n">AutoTokenizer</span><span class="p">,</span> <span class="n">TrainingArguments</span><span class="p">,</span> <span class="n">Trainer</span>
+
+<span class="c1"># Step 1: Load dataset</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">,</span> <span class="n">data_files</span><span class="o">=</span><span class="s2">&quot;formatted_data.json&quot;</span><span class="p">)[</span><span class="s2">&quot;train&quot;</span><span class="p">]</span>  <span class="c1"># Access the &#39;train&#39; split</span>
+
+<span class="c1"># Step 3: Load base model and tokenizer</span>
+<span class="n">model_name</span> <span class="o">=</span> <span class="s2">&quot;meta-llama/Llama-3.2-1B&quot;</span>  <span class="c1"># Replace with your LLaMA model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">AutoModelForCausalLM</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="n">model_name</span><span class="p">,</span> <span class="n">load_in_8bit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">device_map</span><span class="o">=</span><span class="s2">&quot;auto&quot;</span><span class="p">)</span>
+<span class="n">tokenizer</span> <span class="o">=</span> <span class="n">AutoTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+
+<span class="c1"># Ensure padding token is set</span>
+<span class="k">if</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">pad_token</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">eos_token</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># If there&#39;s no eos_token, add a pad token manually</span>
+        <span class="n">tokenizer</span><span class="o">.</span><span class="n">add_special_tokens</span><span class="p">({</span><span class="s1">&#39;pad_token&#39;</span><span class="p">:</span> <span class="s1">&#39;[PAD]&#39;</span><span class="p">})</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># If eos_token exists, use it as pad_token</span>
+        <span class="n">tokenizer</span><span class="o">.</span><span class="n">pad_token</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">eos_token</span>
+
+<span class="c1"># We also need to resize the embedding layer of the model to accommodate the new token.</span>
+<span class="n">model</span><span class="o">.</span><span class="n">resize_token_embeddings</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tokenizer</span><span class="p">))</span>
+
+<span class="c1"># Step 4: Preprocess the dataset for tokenization</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">preprocess_data</span><span class="p">(</span><span class="n">example</span><span class="p">):</span>
+    <span class="c1"># Corrected the key to access the instruction text</span>
+    <span class="n">inputs</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">example</span><span class="p">[</span><span class="s2">&quot;instruction&quot;</span><span class="p">],</span> <span class="n">truncation</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;max_length&quot;</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">example</span><span class="p">[</span><span class="s2">&quot;response&quot;</span><span class="p">],</span> <span class="n">truncation</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;max_length&quot;</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
+    <span class="n">inputs</span><span class="p">[</span><span class="s2">&quot;labels&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">inputs</span>
+
+<span class="c1"># Now we map the dataset, using the dataset loaded from the json file</span>
+<span class="n">formatted_dataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">preprocess_data</span><span class="p">)</span>
+
+
+
+<span class="c1"># Step 6: Setup LoRA configuration</span>
+<span class="n">lora_config</span> <span class="o">=</span> <span class="n">LoraConfig</span><span class="p">(</span>
+    <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;CAUSAL_LM&quot;</span><span class="p">,</span>
+    <span class="n">r</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+    <span class="n">lora_alpha</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+    <span class="n">target_modules</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;q_proj&quot;</span><span class="p">,</span> <span class="s2">&quot;v_proj&quot;</span><span class="p">],</span>
+    <span class="n">lora_dropout</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">get_peft_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">lora_config</span><span class="p">)</span>
+
+<span class="c1"># Step 7: Define training arguments</span>
+<span class="n">training_args</span> <span class="o">=</span> <span class="n">TrainingArguments</span><span class="p">(</span>
+    <span class="n">output_dir</span><span class="o">=</span><span class="s2">&quot;./fine_tuned_llama&quot;</span><span class="p">,</span>
+    <span class="n">per_device_train_batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">gradient_accumulation_steps</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+    <span class="n">num_train_epochs</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">learning_rate</span><span class="o">=</span><span class="mf">2e-4</span><span class="p">,</span>
+    <span class="n">logging_dir</span><span class="o">=</span><span class="s2">&quot;./logs&quot;</span><span class="p">,</span>
+    <span class="n">save_steps</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+    <span class="n">fp16</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Step 8: Fine-tune the model</span>
+<span class="n">trainer</span> <span class="o">=</span> <span class="n">Trainer</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+    <span class="n">args</span><span class="o">=</span><span class="n">training_args</span><span class="p">,</span>
+    <span class="n">train_dataset</span><span class="o">=</span><span class="n">formatted_dataset</span><span class="p">,</span>
+    <span class="n">tokenizer</span><span class="o">=</span><span class="n">tokenizer</span><span class="p">,</span>  <span class="c1"># Ensure tokenizer is passed for dynamic padding</span>
+<span class="p">)</span>
+<span class="n">trainer</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="llama-finetune" src="img/llama-finetune1.png" /></p>
+<p><img alt="llama-finetune" src="img/llama-finetune2.png" /></p>
+<p><img alt="llama-finetune" src="img/llama-finetune3.png" /></p>
+<p><img alt="llama-finetune" src="img/llama-finetune4.png" /></p>
+<h2 id="download-the-folder">Download the folder<a class="headerlink" href="#download-the-folder" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+
+<span class="c1"># Replace &#39;fine_tuned_llama&#39; with the folder name you want to download</span>
+<span class="n">shutil</span><span class="o">.</span><span class="n">make_archive</span><span class="p">(</span><span class="s1">&#39;fine_tuned_llama&#39;</span><span class="p">,</span> <span class="s1">&#39;zip&#39;</span><span class="p">,</span> <span class="s1">&#39;fine_tuned_llama&#39;</span><span class="p">)</span>
+
+<span class="c1"># Download the zipped file</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">files</span>
+<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;fine_tuned_llama.zip&#39;</span><span class="p">)</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../DeepLearning/LSTM.html" class="btn btn-neutral float-left" title="LSTM"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../VectorDb/vector_database.html" class="btn btn-neutral float-right" title="Vector Database Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../DeepLearning/LSTM.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../VectorDb/vector_database.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
