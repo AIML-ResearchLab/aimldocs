@@ -135,6 +135,12 @@ nav:
     - Aws:
        - VPC: AIML/aws/vpc.md
        - NVIDIA ON AWS: AIML/aws/nvidia.md
+       - ALB ON EKS : AIML/aws/alb.md
+       - HTTS Access: AIML/aws/https.md
+       - NVIDIA GPU Slicing: AIML/aws/Configure-GPU-time-slicing.md
+       - NVIDIA Milvus: AIML/aws/Deploying-Milvus-Vectorstore-Helm-Chart.md
+       - NVIDIA Nemo: AIML/aws/Deploying-NVIDIA Nemo-Retriever-Embedding-Microservice.md
+       - NVIDIA NIM: AIML/aws/Deploying-NVIDIA-NIM-Microservices.md
     - Azure:
        - Autoencoder: AIML/DeepLearning/Autoencoder.md
     - Google:
