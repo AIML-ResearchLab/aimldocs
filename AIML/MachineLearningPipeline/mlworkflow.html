@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ML workflow - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ML workflow";
+        var mkdocs_page_input_path = "AIML/MachineLearningPipeline/mlworkflow.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Python.html">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NumPy.html">NumPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pandas.html">Pandas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SciPy.html">SciPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NormalDistribution.html">Normal Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BinomialDistribution.html">Binomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PoissonDistribution.html">Poisson Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UniformDistribution.html">Uniform Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LogisticDistribution.html">Logistic Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MultinomialDistribution.html">Multinomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ExponentialDistribution.html">Exponential Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CategoricalDistribution.html">Categorical Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BernoulliDistribution.html">Bernoulli Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Statistics.html">Statistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Visualization</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Seaborn.html">Seaborn</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning & AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FeatureEngineering.html">Feature Engineering</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Test.html">Test</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TensorFlow.html">TensorFlow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PyTorch.html">PyTorch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune & Pre train model</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../FinetuneModel/Deepseek-r1-ollama.html">Deepseek-r1-ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Machine Learning Pipeline</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">ML workflow</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#machine-learning-lifecycle">Machine Learning Lifecycle</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-problem-definition">Step 1: Problem Definition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-data-collection">Step 2: Data Collection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-data-cleaning-and-preprocessing">Step 3: Data Cleaning and Preprocessing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-4-exploratory-data-analysis-eda">Step 4: Exploratory Data Analysis (EDA)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-5-feature-engineering-and-selection">Step 5: Feature Engineering and Selection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-6-model-selection">Step 6: Model Selection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-7-model-training">Step 7: Model Training</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-8-model-evaluation-and-tuning">Step 8: Model Evaluation and Tuning</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-9-model-deployment">Step 9: Model Deployment</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI Framework</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >crewai</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/crewai.html">crewai overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >langgraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/langgraph.html">langgraph overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Model Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/mcp.html">MCP overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Aws</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/vpc.html">VPC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/nvidia.html">NVIDIA ON AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/alb.html">ALB ON EKS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/milvus-attu.html">ALB ON EKS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/https.html">HTTS Access</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/Configure-GPU-time-slicing.html">NVIDIA GPU Slicing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/Deploying-Milvus-Vectorstore-Helm-Chart.html">NVIDIA Milvus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/Deploying-NVIDIA%20Nemo-Retriever-Embedding-Microservice.html">NVIDIA Nemo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws/Deploying-NVIDIA-NIM-Microservices.html">NVIDIA NIM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Learning Topics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Learning.html">Learning</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Machine Learning Pipeline</li>
+      <li class="breadcrumb-item active">ML workflow</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ml-workflow">ML workflow<a class="headerlink" href="#ml-workflow" title="Permanent link">#</a></h1>
+<h2 id="machine-learning-lifecycle">Machine Learning Lifecycle<a class="headerlink" href="#machine-learning-lifecycle" title="Permanent link">#</a></h2>
+<p>The machine learning lifecycle is a process that guides the development and deployment of machine learning models in a structured way. It consists of various steps.</p>
+<p>Each step plays a crucial role in ensuring the success and effectiveness of the machine learning solution. By following the machine learning lifecycle, organizations can solve complex problems systematically, leverage data-driven insights, and create scalable and sustainable machine learning solutions that deliver tangible value. The steps to be followed in the machine learning lifecycle are:</p>
+<ol>
+<li><strong>Problem Definition</strong></li>
+<li><strong>Data Collection</strong></li>
+<li><strong>Data Cleaning and Preprocessing</strong></li>
+<li><strong>Exploratory Data Analysis (EDA)</strong></li>
+<li><strong>Feature Engineering and Selection</strong></li>
+<li><strong>Model Selection</strong></li>
+<li><strong>Model Training</strong></li>
+<li><strong>Model Evaluation and Tuning</strong></li>
+<li><strong>Model Deployment</strong></li>
+<li><strong>Model Monitoring and Maintenance</strong></li>
+</ol>
+<p><img alt="alt text" src="img/ml1.png" /></p>
+<h2 id="step-1-problem-definition">Step 1: Problem Definition<a class="headerlink" href="#step-1-problem-definition" title="Permanent link">#</a></h2>
+<p>Embarking on the machine learning journey involves a well-defined lifecycle, starting with the crucial step of problem definition. In this initial phase, stakeholders collaborate to identify the business problem at hand and frame it in a way that sets the stage for the entire process.</p>
+<p>By framing the problem in a comprehensive manner, the team establishes a foundation for the entire machine learning lifecycle. Crucial elements, such as project objectives, desired outcomes, and the scope of the task, are carefully delineated during this stage.</p>
+<p>Here are the basic features of problem definition:</p>
+<ul>
+<li><strong>Collaboration:</strong> Work together with stakeholders to understand and define the business problem.</li>
+<li><strong>Clarity:</strong> Clearly articulate the objectives, desired outcomes, and scope of the task.</li>
+<li><strong>Foundation:</strong> Establish a solid foundation for the machine learning process by framing the problem comprehensively.</li>
+</ul>
+<h2 id="step-2-data-collection">Step 2: Data Collection<a class="headerlink" href="#step-2-data-collection" title="Permanent link">#</a></h2>
+<p>Following the precision of problem definition, the machine learning lifecycle progresses to the pivotal stage of data collection. This phase involves the systematic gathering of datasets that will serve as the raw material for model development. The quality and diversity of the data collected directly impact the robustness and generalizability of the machine learning model.</p>
+<p>During data collection, practitioners must consider the relevance of the data to the defined problem, ensuring that the selected datasets encompass the necessary features and characteristics. Additionally, factors such as data volume, quality, and ethical considerations play a crucial role in shaping the foundation for subsequent phases of the machine learning lifecycle. A meticulous and well-organized approach to data collection lays the groundwork for effective model training, evaluation, and deployment, ensuring that the resulting model is both accurate and applicable to real-world scenarios.</p>
+<p>Here are the basic features of Data Collection:</p>
+<ul>
+<li><strong>Relevance:</strong> Collect data that is relevant to the defined problem and includes necessary features.</li>
+<li><strong>Quality:</strong> Ensure data quality by considering factors like accuracy, completeness, and ethical considerations.</li>
+<li><strong>Quantity:</strong> Gather sufficient data volume to train a robust machine learning model.</li>
+<li><strong>Diversity:</strong> Include diverse datasets to capture a broad range of scenarios and patterns.</li>
+</ul>
+<h2 id="step-3-data-cleaning-and-preprocessing">Step 3: Data Cleaning and Preprocessing<a class="headerlink" href="#step-3-data-cleaning-and-preprocessing" title="Permanent link">#</a></h2>
+<p>With datasets in hand, the machine learning journey advances to the critical stages of data cleaning and preprocessing. Raw data, is often messy and unstructured. Data cleaning involves addressing issues such as missing values, outliers, and inconsistencies that could compromise the accuracy and reliability of the machine learning model.</p>
+<p>Preprocessing takes this a step further by standardizing formats, scaling values, and encoding categorical variables, creating a consistent and well-organized dataset. The objective is to refine the raw data into a format that facilitates meaningful analysis during subsequent phases of the machine learning lifecycle. By investing time and effort in data cleaning and preprocessing, practitioners lay the foundation for robust model development, ensuring that the model is trained on high-quality, reliable data.</p>
+<p>Here are the basic features of Data Cleaning and Preprocessing:</p>
+<ul>
+<li><strong>Data Cleaning:</strong> Address issues such as missing values, outliers, and inconsistencies in the data.</li>
+<li><strong>Data Preprocessing:</strong> Standardize formats, scale values, and encode categorical variables for consistency.</li>
+<li><strong>Data Quality:</strong> Ensure that the data is well-organized and prepared for meaningful analysis.</li>
+<li><strong>Data Integrity:</strong> Maintain the integrity of the dataset by cleaning and preprocessing it effectively.</li>
+</ul>
+<h2 id="step-4-exploratory-data-analysis-eda">Step 4: Exploratory Data Analysis (EDA)<a class="headerlink" href="#step-4-exploratory-data-analysis-eda" title="Permanent link">#</a></h2>
+<p>Now, focus turns to understanding the underlying patterns and characteristics of the collected data. Exploratory Data Analysis (EDA) emerges as a pivotal phase, where practitioners leverage various statistical and visual tools to gain insights into the dataset's structure.</p>
+<p>During EDA, patterns, trends, and potential challenges are unearthed, providing valuable context for subsequent decisions in the machine learning process. Visualizations, summary statistics, and correlation analyses offer a comprehensive view of the data, guiding practitioners toward informed choices in feature engineering, model selection, and other critical aspects. EDA acts as a compass, directing the machine learning journey by revealing the intricacies of the data and informing the development of effective and accurate predictive models.</p>
+<p>Here are the basic features of Exploratory Data Analysis:</p>
+<ul>
+<li><strong>Exploration:</strong> Use statistical and visual tools to explore the structure and patterns in the data.</li>
+<li><strong>Patterns and Trends:</strong> Identify underlying patterns, trends, and potential challenges within the dataset.</li>
+<li><strong>Insights:</strong> Gain valuable insights to inform decisions in later stages of the machine learning process.</li>
+<li><strong>Decision Making:</strong> Use exploratory data analysis to make informed decisions about feature engineering and model selection.</li>
+</ul>
+<h2 id="step-5-feature-engineering-and-selection">Step 5: Feature Engineering and Selection<a class="headerlink" href="#step-5-feature-engineering-and-selection" title="Permanent link">#</a></h2>
+<p>Feature engineering takes center stage as a transformative process that elevates raw data into meaningful predictors. Simultaneously, feature selection refines this pool of variables, identifying the most relevant ones to enhance model efficiency and effectiveness.</p>
+<p>Feature engineering involves creating new features or transforming existing ones to better capture patterns and relationships within the data. This creative process requires domain expertise and a deep understanding of the problem at hand, ensuring that the engineered features contribute meaningfully to the predictive power of the model. On the other hand, feature selection focuses on identifying the subset of features that most significantly impact the model's performance. This dual approach seeks to strike a delicate balance, optimizing the feature set for predictive accuracy while minimizing computational complexity.</p>
+<ul>
+<li><strong>Feature Engineering:</strong> Create new features or transform existing ones to better capture patterns and relationships.</li>
+<li><strong>Feature Selection:</strong> Identify the subset of features that most significantly impact the model's performance.</li>
+<li><strong>Domain Expertise:</strong> Leverage domain knowledge to engineer features that contribute meaningfully to predictive power.</li>
+<li><strong>Optimization:</strong> Balance feature set for predictive accuracy while minimizing computational complexity.</li>
+</ul>
+<h2 id="step-6-model-selection">Step 6: Model Selection<a class="headerlink" href="#step-6-model-selection" title="Permanent link">#</a></h2>
+<p>Navigating the machine learning lifecycle requires the judicious selection of a model that aligns with the defined problem and the characteristics of the dataset. Model selection is a pivotal decision that determines the algorithmic framework guiding the predictive capabilities of the machine learning solution. The choice depends on the nature of the data, the complexity of the problem, and the desired outcomes.</p>
+<p>Here are the basic features of Model Selection:</p>
+<ul>
+<li><strong>Alignment:</strong> Select a model that aligns with the defined problem and characteristics of the dataset.</li>
+<li><strong>Complexity:</strong> Consider the complexity of the problem and the nature of the data when choosing a model.</li>
+<li><strong>Decision Factors:</strong> Evaluate factors like performance, interpretability, and scalability when selecting a model.</li>
+<li><strong>Experimentation:</strong> Experiment with different models to find the best fit for the problem at hand.</li>
+</ul>
+<h2 id="step-7-model-training">Step 7: Model Training<a class="headerlink" href="#step-7-model-training" title="Permanent link">#</a></h2>
+<p>With the selected model in place, the machine learning lifecycle advances to the transformative phase of model training. This process involves exposing the model to historical data, allowing it to learn patterns, relationships, and dependencies within the dataset.</p>
+<p>Model training is an iterative and dynamic journey, where the algorithm adjusts its parameters to minimize errors and enhance predictive accuracy. During this phase, the model fine-tunes its understanding of the data, optimizing its ability to make meaningful predictions. Rigorous validation processes ensure that the trained model generalizes well to new, unseen data, establishing a foundation for reliable predictions in real-world scenarios.</p>
+<p>Here are the basic features of Model Training:</p>
+<ul>
+<li><strong>Training Data:</strong> Expose the model to historical data to learn patterns, relationships, and dependencies.</li>
+<li><strong>Iterative Process:</strong> Train the model iteratively, adjusting parameters to minimize errors and enhance accuracy.</li>
+<li><strong>Optimization:</strong> Fine-tune the model's understanding of the data to optimize predictive capabilities.</li>
+<li><strong>Validation:</strong> Rigorously validate the trained model to ensure generalization to new, unseen data.</li>
+</ul>
+<h2 id="step-8-model-evaluation-and-tuning">Step 8: Model Evaluation and Tuning<a class="headerlink" href="#step-8-model-evaluation-and-tuning" title="Permanent link">#</a></h2>
+<p>Model evaluation involves rigorous testing against validation datasets, employing metrics such as accuracy, precision, recall, and F1 score to gauge its effectiveness.</p>
+<p>Evaluation is a critical checkpoint, providing insights into the model's strengths and weaknesses. If the model falls short of desired performance levels, practitioners initiate model tuning—a process that involves adjusting hyperparameters to enhance predictive accuracy. This iterative cycle of evaluation and tuning is crucial for achieving the desired level of model robustness and reliability.</p>
+<p>Here are the basic features of Model Evaluation and Tuning:</p>
+<ul>
+<li><strong>Evaluation Metrics:</strong> Use metrics like accuracy, precision, recall, and F1 score to evaluate model performance.</li>
+<li><strong>Strengths and Weaknesses:</strong> Identify the strengths and weaknesses of the model through rigorous testing.</li>
+<li><strong>Iterative Improvement:</strong> Initiate model tuning to adjust hyperparameters and enhance predictive accuracy.</li>
+<li><strong>Model Robustness:</strong> Iterate through evaluation and tuning cycles to achieve desired levels of model robustness and reliability.</li>
+</ul>
+<h2 id="step-9-model-deployment">Step 9: Model Deployment<a class="headerlink" href="#step-9-model-deployment" title="Permanent link">#</a></h2>
+<p>Upon successful evaluation, the machine learning model transitions from development to real-world application through the deployment phase. Model deployment involves integrating the predictive solution into existing systems or processes, allowing stakeholders to leverage its insights for informed decision-making.</p>
+<p>Model deployment marks the culmination of the machine learning lifecycle, transforming theoretical insights into practical solutions that drive tangible value for organizations.</p>
+<p>Here are the basic features of Model Deployment:</p>
+<ul>
+<li><strong>Integration:</strong> Integrate the trained model into existing systems or processes for real-world application.</li>
+<li><strong>Decision Making:</strong> Use the model's predictions to inform decision-making and drive tangible value for organizations.</li>
+<li><strong>Practical Solutions:</strong> Deploy the model to transform theoretical insights into practical solutions that address business needs.</li>
+<li><strong>Continuous Improvement:</strong> Monitor model performance and make adjustments as necessary to maintain effectiveness over time.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../RAG/Retrieval_augmented_generation.html" class="btn btn-neutral float-left" title="Retrieval augmented generation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="datacleaning.html" class="btn btn-neutral float-right" title="Data Cleaning">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../RAG/Retrieval_augmented_generation.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="datacleaning.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

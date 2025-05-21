@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ALB ON EKS - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ALB ON EKS";
+        var mkdocs_page_input_path = "AIML/aws/milvus-attu.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../aiml-overview.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Python.html">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NumPy.html">NumPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pandas.html">Pandas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SciPy.html">SciPy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NormalDistribution.html">Normal Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BinomialDistribution.html">Binomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PoissonDistribution.html">Poisson Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UniformDistribution.html">Uniform Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LogisticDistribution.html">Logistic Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MultinomialDistribution.html">Multinomial Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ExponentialDistribution.html">Exponential Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CategoricalDistribution.html">Categorical Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BernoulliDistribution.html">Bernoulli Distribution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Statistics.html">Statistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Visualization</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Seaborn.html">Seaborn</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning & AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FeatureEngineering.html">Feature Engineering</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Test.html">Test</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TensorFlow.html">TensorFlow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PyTorch.html">PyTorch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Supervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Supervised/Supervised-overview.html">Supervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Regression</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Regression-overview.html">Regression Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Linear-Regression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Decision-Tree.html">Decision Trees</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Support-Vector-Machines.html">Support Vector Machines (SVM)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/k-Nearest-Neighbors.html">k-Nearest Neighbors (k-NN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Random-Forest.html">Random Forest (Bagging Algorithm)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Regression/Boosting-Algorithms.html">Boosting Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Classification</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Supervised/Classification/Classification-overview.html">Classification Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Logistic-Regression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/svm.html">Support Vector Machines having kernel = linear</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/Single-layer-Perceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Linear/SGD.html">Stochastic Gradient Descent (SGD) Classifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classifiers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/K-Nearest-Neighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Kernel-SVM.html">Kernel SVM</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Naive-Bayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Decision-Tree-Classification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Ensemble-learning-classifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Random-Forests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Bagging-Classifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Voting-Classifier.html">Voting Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/ExtraTrees-Classifier.html">ExtraTrees Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Supervised/Classification/Non-linear/Neural-Networks.html">Multi-layer Artificial Neural Networks</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time series forecasting methods</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/ARIMA.md">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Unsupervised/SARIMA.md">SARIMA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unsupervised</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/Unsupervised-overview.html">Unsupervised Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Clustering</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Clustering-overview.html">Clustering Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/K-means-Clustering.html">K-means Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Hierarchical-Clustering.html">Hierarchical Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Density-Based-Clustering.html">Density-Based Clustering (DBSCAN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Mean-Shift-Clustering.html">Mean-Shift Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/Clustering/Spectral-Clustering.html">Spectral Clustering</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Association Rule Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Apriori-Algorithm.html">Apriori Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.html">FP-Growth Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Eclat-Algorithm.html">Eclat Algorithm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.html">Efficient Tree-based Algorithms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Dimensionality Reduction</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Principal-Component-Analysis.html">Principal Component Analysis (PCA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.html">Linear Discriminant Analysis (LDA)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.html">Non-negative Matrix Factorization (NMF)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.html">Locally Linear Embedding (LLE)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Unsupervised/DimensionalityReduction/Isomap.html">Isomap</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Unsupervised/SOM.html">Self-Organizing Map (SOM)</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-overview.html">Deep Learning Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/DeepLearning-algorithms.html">Deep Learning Algorithms</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Keras.html">Keras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Tensorflow.html">Tensorflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Pytorch.html">Pytorch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/LSTM.html">LSTM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Model Finetune & Pre train model</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FinetuneModel/llama_3_finetune.html">Llama-3.2-1B fine tune with custom data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../FinetuneModel/Deepseek-r1-ollama.html">Deepseek-r1-ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/vector_database.html">Vector Database Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Milvus</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus_setup.html">Milvus & Attu Setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../VectorDb/milvus.html">Milvus Db Details</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/faiss.html">FAISS Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/weaviate.html">Weaviate Vector Database</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDb/pinecone.html">Pinecone Vector Database</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval augmented generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/Retrieval_augmented_generation.html">Retrieval augmented generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning Pipeline</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/mlworkflow.html">ML workflow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datacleaning.html">Data Cleaning</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/featurescaling.html">Feature Scaling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearningPipeline/datapreprocessingpython.html">Data Preprocessing in Python</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >NVIDIA</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-overview.html">NVIDIA Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >NVIDIA NGC Catalog</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-collections.html">Collections</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-containers.html">Containers</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-helm-charts.html">Helm Charts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-models.html">Models</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../NVIDIA/nvidia-ngc-catalog-resources.html">Resources</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-tensort.html">NVIDIA TensorRT</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nim.html">NVIDIA NIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-nemo.html">NVIDIA NeMo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-omniverse.html">NVIDIA Omniverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-ai-enterprise.html">NVIDIA AI Enterprise</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-api-documentation.html">NVIDIA API Documentation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NVIDIA/nvidia-cuda.html">NVIDIA CUDA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AgenticAI Framework</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >crewai</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/crewai.html">crewai overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >langgraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/langgraph.html">langgraph overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Model Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/mcp.html">MCP overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Aws</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="vpc.html">VPC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="nvidia.html">NVIDIA ON AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="alb.html">ALB ON EKS</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">ALB ON EKS</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#create-a-namespace">Create a Namespace</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#add-milvus-helm-repo">Add Milvus Helm Repo</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#milvus-nlb-valuesyaml">milvus-nlb-values.yaml</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#install-milvus-standalone-via-helm">Install Milvus Standalone via Helm</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="https.html">HTTS Access</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Configure-GPU-time-slicing.html">NVIDIA GPU Slicing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Deploying-Milvus-Vectorstore-Helm-Chart.html">NVIDIA Milvus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Deploying-NVIDIA%20Nemo-Retriever-Embedding-Microservice.html">NVIDIA Nemo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="Deploying-NVIDIA-NIM-Microservices.html">NVIDIA NIM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Azure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Google</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Autoencoder.html">Autoencoder</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Learning Topics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Learning.html">Learning</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Aws</li>
+      <li class="breadcrumb-item active">ALB ON EKS</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="setup-milvus-standalone-in-eks-with-alb-ingress">Setup Milvus Standalone in EKS with ALB Ingress<a class="headerlink" href="#setup-milvus-standalone-in-eks-with-alb-ingress" title="Permanent link">#</a></h1>
+<h2 id="create-a-namespace">Create a Namespace<a class="headerlink" href="#create-a-namespace" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>kubectl create namespace milvus
+</code></pre></div>
+
+<h2 id="add-milvus-helm-repo">Add Milvus Helm Repo<a class="headerlink" href="#add-milvus-helm-repo" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>helm repo add milvus https://milvus-io.github.io/milvus-helm/
+helm repo update
+</code></pre></div>
+
+<h2 id="milvus-nlb-valuesyaml">milvus-nlb-values.yaml<a class="headerlink" href="#milvus-nlb-valuesyaml" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">milvus</span><span class="o">-</span><span class="n">nlb</span><span class="o">-</span><span class="n">values</span><span class="o">.</span><span class="n">yaml</span><span class="w"> </span>
+
+<span class="n">cluster</span><span class="p">:</span>
+<span class="w">  </span><span class="n">enabled</span><span class="p">:</span><span class="w"> </span><span class="bp">false</span>
+
+<span class="n">etcd</span><span class="p">:</span>
+<span class="w">  </span><span class="n">replicaCount</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+
+<span class="n">minio</span><span class="p">:</span>
+<span class="w">  </span><span class="n">mode</span><span class="p">:</span><span class="w"> </span><span class="n">standalone</span>
+
+<span class="n">pulsarv3</span><span class="p">:</span>
+<span class="w">  </span><span class="n">enabled</span><span class="p">:</span><span class="w"> </span><span class="bp">false</span>
+
+<span class="n">service</span><span class="p">:</span>
+<span class="w">  </span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="n">LoadBalancer</span>
+<span class="w">  </span><span class="n">port</span><span class="p">:</span><span class="w"> </span><span class="mi">19530</span>
+<span class="w">  </span><span class="n">annotations</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="n">service</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">aws</span><span class="o">-</span><span class="nb">load</span><span class="o">-</span><span class="n">balancer</span><span class="o">-</span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="n">external</span>
+<span class="w">    </span><span class="n">service</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">aws</span><span class="o">-</span><span class="nb">load</span><span class="o">-</span><span class="n">balancer</span><span class="o">-</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="n">milvus</span><span class="o">-</span><span class="n">service</span>
+<span class="w">    </span><span class="n">service</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">aws</span><span class="o">-</span><span class="nb">load</span><span class="o">-</span><span class="n">balancer</span><span class="o">-</span><span class="n">scheme</span><span class="p">:</span><span class="w"> </span><span class="n">internet</span><span class="o">-</span><span class="n">facing</span>
+<span class="w">    </span><span class="n">service</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">aws</span><span class="o">-</span><span class="nb">load</span><span class="o">-</span><span class="n">balancer</span><span class="o">-</span><span class="n">nlb</span><span class="o">-</span><span class="n">target</span><span class="o">-</span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="n">ip</span>
+</code></pre></div>
+
+<h2 id="install-milvus-standalone-via-helm">Install Milvus Standalone via Helm<a class="headerlink" href="#install-milvus-standalone-via-helm" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>helm install milvus-release milvus/milvus \
+  --namespace milvus \
+  --create-namespace \
+  -f milvus-nlb-values.yaml
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>kubectl -n milvus get pod,svc,ingress                                    
+
+NAME                                            READY   STATUS    RESTARTS   AGE
+pod/attu-5675f77748-c292g                       1/1     Running   0          4h40m
+pod/milvus-release-etcd-0                       1/1     Running   0          12m
+pod/milvus-release-minio-dc4957c7c-zd7lq        1/1     Running   0          12m
+pod/milvus-release-standalone-c4c56cccf-bv9vx   1/1     Running   0          12m
+
+NAME                                   TYPE           CLUSTER-IP       EXTERNAL-IP                                                    PORT(S)                          AGE
+service/attu                           ClusterIP      172.20.234.81    &lt;none&gt;                                                         80/TCP                           4h40m
+service/milvus-release                 LoadBalancer   172.20.122.195   milvus-service-xxxxxxxxx.elb.ap-south-1.amazonaws.com   19530:32620/TCP,9091:30682/TCP   12m
+service/milvus-release-etcd            ClusterIP      172.20.190.137   &lt;none&gt;                                                         2379/TCP,2380/TCP                12m
+service/milvus-release-etcd-headless   ClusterIP      None             &lt;none&gt;                                                         2379/TCP,2380/TCP                12m
+service/milvus-release-minio           ClusterIP      172.20.139.189   &lt;none&gt;                                                         9000/TCP                         12m
+
+NAME                                    CLASS   HOSTS                          ADDRESS                                                                 PORTS     AGE
+ingress.networking.k8s.io/milvus-attu   alb     attu.visionaryai.aimledu.com   k8s-milvus-milvusat-xxxxxx.ap-south-1.elb.amazonaws.com   80, 443   3h33m
+</code></pre></div>
+
+<h1 id="test">Test<a class="headerlink" href="#test" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code>nc -vz milvus-service-xxxxxx.elb.ap-south-1.amazonaws.com 19530
+Connection to milvus-service-xxxx.elb.ap-south-1.amazonaws.com port 19530 [tcp/*] succeeded!
+</code></pre></div>
+
+<h1 id="test-python">Test python<a class="headerlink" href="#test-python" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pymilvus</span><span class="w"> </span><span class="kn">import</span> <span class="n">connections</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">connections</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+        <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;default&quot;</span><span class="p">,</span>
+        <span class="n">host</span><span class="o">=</span><span class="s2">&quot;milvus-service-b31a319c36663f78.elb.ap-south-1.amazonaws.com&quot;</span><span class="p">,</span>
+        <span class="n">port</span><span class="o">=</span><span class="s2">&quot;19530&quot;</span>
+    <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Connected to Milvus!&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ Failed to connect to Milvus: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>python testmilvus.py                                                     
+
+✅ Connected to Milvus!
+</code></pre></div>
+
+<h2 id="install-attu">Install attu<a class="headerlink" href="#install-attu" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>attu-deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: attu
+  namespace: milvus
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: attu
+  template:
+    metadata:
+      labels:
+        app: attu
+    spec:
+      containers:
+        <span class="k">-</span> name: attu
+          image: zilliz/attu:v2.5
+          ports:
+            <span class="k">-</span> containerPort: 3000
+          env:
+            <span class="k">-</span> name: MILVUS_URL
+              value: http://milvus-release.milvus.svc.cluster.local:19530
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="nx">attu</span><span class="o">-</span><span class="nx">service</span><span class="p">.</span><span class="nx">yaml</span>
+
+<span class="nx">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="nx">v1</span>
+<span class="nx">kind</span><span class="p">:</span><span class="w"> </span><span class="nx">Service</span>
+<span class="nx">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nx">name</span><span class="p">:</span><span class="w"> </span><span class="nx">attu</span>
+<span class="w">  </span><span class="kn">namespace</span><span class="p">:</span><span class="w"> </span><span class="nx">milvus</span>
+<span class="nx">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="k">type</span><span class="p">:</span><span class="w"> </span><span class="nx">ClusterIP</span>
+<span class="w">  </span><span class="nx">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nx">app</span><span class="p">:</span><span class="w"> </span><span class="nx">attu</span>
+<span class="w">  </span><span class="nx">ports</span><span class="p">:</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nx">port</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span>
+<span class="w">      </span><span class="nx">targetPort</span><span class="p">:</span><span class="w"> </span><span class="mi">3000</span>
+<span class="w">      </span><span class="nx">protocol</span><span class="p">:</span><span class="w"> </span><span class="nx">TCP</span>
+</code></pre></div>
+
+<h2 id="install-ingress">Install Ingress<a class="headerlink" href="#install-ingress" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">attu</span><span class="o">-</span><span class="n">ingress</span><span class="o">.</span><span class="n">yaml</span>
+
+<span class="n">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="n">networking</span><span class="o">.</span><span class="n">k8s</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">v1</span>
+<span class="n">kind</span><span class="p">:</span><span class="w"> </span><span class="n">Ingress</span>
+<span class="n">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="n">milvus</span><span class="o">-</span><span class="n">attu</span>
+<span class="w">  </span><span class="n">annotations</span><span class="p">:</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">scheme</span><span class="p">:</span><span class="w"> </span><span class="n">internet</span><span class="o">-</span><span class="n">facing</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">target</span><span class="o">-</span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="n">ip</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">listen</span><span class="o">-</span><span class="n">ports</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;[{&quot;HTTPS&quot;:443}]&#39;</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">certificate</span><span class="o">-</span><span class="n">arn</span><span class="p">:</span><span class="w"> </span><span class="n">arn</span><span class="p">:</span><span class="n">aws</span><span class="p">:</span><span class="n">acm</span><span class="p">:</span><span class="n">ap</span><span class="o">-</span><span class="n">south</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="mi">777203855866</span><span class="p">:</span><span class="n">certificate</span><span class="o">/</span><span class="n">b78</span><span class="o">-</span><span class="mi">98</span><span class="n">d0b00706ff</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">redirect</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;443&#39;</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">healthcheck</span><span class="o">-</span><span class="n">path</span><span class="p">:</span><span class="w"> </span><span class="o">/</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="nb">load</span><span class="o">-</span><span class="n">balancer</span><span class="o">-</span><span class="n">attributes</span><span class="p">:</span><span class="w"> </span><span class="n">idle_timeout</span><span class="o">.</span><span class="n">timeout_seconds</span><span class="o">=</span><span class="mi">900</span>
+<span class="n">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="n">ingressClassName</span><span class="p">:</span><span class="w"> </span><span class="n">alb</span>
+<span class="w">  </span><span class="n">tls</span><span class="p">:</span>
+<span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="n">hosts</span><span class="p">:</span>
+<span class="w">       </span><span class="o">-</span><span class="w"> </span><span class="n">attu</span><span class="o">.</span><span class="n">visionaryai</span><span class="o">.</span><span class="n">aimledu</span><span class="o">.</span><span class="n">com</span>
+<span class="w">  </span><span class="n">rules</span><span class="p">:</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">host</span><span class="p">:</span><span class="w"> </span><span class="n">attu</span><span class="o">.</span><span class="n">visionaryai</span><span class="o">.</span><span class="n">aimledu</span><span class="o">.</span><span class="n">com</span>
+<span class="w">      </span><span class="n">http</span><span class="p">:</span>
+<span class="w">        </span><span class="n">paths</span><span class="p">:</span>
+<span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">path</span><span class="p">:</span><span class="w"> </span><span class="o">/</span>
+<span class="w">            </span><span class="n">pathType</span><span class="p">:</span><span class="w"> </span><span class="n">Prefix</span>
+<span class="w">            </span><span class="n">backend</span><span class="p">:</span>
+<span class="w">              </span><span class="n">service</span><span class="p">:</span>
+<span class="w">                </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="n">attu</span>
+<span class="w">                </span><span class="n">port</span><span class="p">:</span>
+<span class="w">                  </span><span class="n">number</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>kubectl apply -f attu-deployment.yaml -n milvus
+kubectl apply -f attu-service.yaml -n milvus
+kubectl apply -f attu-ingress.yaml -n milvus
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>kubectl -n milvus get pod,svc,ingress
+NAME                                            READY   STATUS    RESTARTS   AGE
+pod/attu-5675f77748-c292g                       1/1     Running   0          115m
+pod/milvus-release-etcd-0                       1/1     Running   0          139m
+pod/milvus-release-minio-dc4957c7c-q5dks        1/1     Running   0          139m
+pod/milvus-release-standalone-c4c56cccf-bflrx   1/1     Running   0          139m
+
+NAME                                   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)              AGE
+service/attu                           ClusterIP   172.20.234.81    &lt;none&gt;        80/TCP               115m
+service/milvus-release                 ClusterIP   172.20.53.181    &lt;none&gt;        19530/TCP,9091/TCP   139m
+service/milvus-release-etcd            ClusterIP   172.20.39.67     &lt;none&gt;        2379/TCP,2380/TCP    139m
+service/milvus-release-etcd-headless   ClusterIP   None             &lt;none&gt;        2379/TCP,2380/TCP    139m
+service/milvus-release-minio           ClusterIP   172.20.129.162   &lt;none&gt;        9000/TCP             139m
+
+NAME                                    CLASS   HOSTS                          ADDRESS                                                                 PORTS     AGE
+ingress.networking.k8s.io/milvus-attu   alb     attu.xxxxxxx.xxxxx.com   k8s-milvus-milvusat--727822688.ap-south-1.elb.amazonaws.com   80, 443   48m
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>nslookup attu.xxx.xxxxx 8.8.8.8
+
+curl -k --resolve attu.xxx.xxxx.com:443:3.7.237.185 https://attu.xxxi.xxxx.com
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>/etc/hosts
+
+3.7.237.185 attu.xxxx.axxxx.com
+</code></pre></div>
+
+<p><img alt="attu" src="image/attu-1.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="alb.html" class="btn btn-neutral float-left" title="ALB ON EKS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="https.html" class="btn btn-neutral float-right" title="HTTS Access">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="alb.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="https.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
