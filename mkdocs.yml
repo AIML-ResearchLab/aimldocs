@@ -136,6 +136,7 @@ nav:
        - VPC: AIML/aws/vpc.md
        - NVIDIA ON AWS: AIML/aws/nvidia.md
        - ALB ON EKS : AIML/aws/alb.md
+       - ALB ON EKS : AIML/aws/milvus-attu.md
        - HTTS Access: AIML/aws/https.md
        - NVIDIA GPU Slicing: AIML/aws/Configure-GPU-time-slicing.md
        - NVIDIA Milvus: AIML/aws/Deploying-Milvus-Vectorstore-Helm-Chart.md
