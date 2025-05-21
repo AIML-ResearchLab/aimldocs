@@ -13,16 +13,90 @@ helm repo add milvus https://milvus-io.github.io/milvus-helm/
 helm repo update
 ```
 
+## milvus-nlb-values.yaml 
+
+```
+milvus-nlb-values.yaml 
+
+cluster:
+  enabled: false
+
+etcd:
+  replicaCount: 1
+
+minio:
+  mode: standalone
+
+pulsarv3:
+  enabled: false
+
+service:
+  type: LoadBalancer
+  port: 19530
+  annotations: 
+    service.beta.kubernetes.io/aws-load-balancer-type: external
+    service.beta.kubernetes.io/aws-load-balancer-name: milvus-service
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+    service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: ip
+
+```
 
 ## Install Milvus Standalone via Helm
 
 ```
 helm install milvus-release milvus/milvus \
   --namespace milvus \
-  --set cluster.enabled=false \
-  --set etcd.replicaCount=1 \
-  --set minio.mode=standalone \
-  --set pulsarv3.enabled=false
+  --create-namespace \
+  -f milvus-nlb-values.yaml
+```
+
+```
+kubectl -n milvus get pod,svc,ingress                                    
+
+NAME                                            READY   STATUS    RESTARTS   AGE
+pod/attu-5675f77748-c292g                       1/1     Running   0          4h40m
+pod/milvus-release-etcd-0                       1/1     Running   0          12m
+pod/milvus-release-minio-dc4957c7c-zd7lq        1/1     Running   0          12m
+pod/milvus-release-standalone-c4c56cccf-bv9vx   1/1     Running   0          12m
+
+NAME                                   TYPE           CLUSTER-IP       EXTERNAL-IP                                                    PORT(S)                          AGE
+service/attu                           ClusterIP      172.20.234.81    <none>                                                         80/TCP                           4h40m
+service/milvus-release                 LoadBalancer   172.20.122.195   milvus-service-xxxxxxxxx.elb.ap-south-1.amazonaws.com   19530:32620/TCP,9091:30682/TCP   12m
+service/milvus-release-etcd            ClusterIP      172.20.190.137   <none>                                                         2379/TCP,2380/TCP                12m
+service/milvus-release-etcd-headless   ClusterIP      None             <none>                                                         2379/TCP,2380/TCP                12m
+service/milvus-release-minio           ClusterIP      172.20.139.189   <none>                                                         9000/TCP                         12m
+
+NAME                                    CLASS   HOSTS                          ADDRESS                                                                 PORTS     AGE
+ingress.networking.k8s.io/milvus-attu   alb     attu.visionaryai.aimledu.com   k8s-milvus-milvusat-xxxxxx.ap-south-1.elb.amazonaws.com   80, 443   3h33m
+```
+
+# Test
+
+```
+nc -vz milvus-service-xxxxxx.elb.ap-south-1.amazonaws.com 19530
+Connection to milvus-service-xxxx.elb.ap-south-1.amazonaws.com port 19530 [tcp/*] succeeded!
+```
+
+# Test python
+
+```
+from pymilvus import connections
+
+try:
+    connections.connect(
+        alias="default",
+        host="milvus-service-b31a319c36663f78.elb.ap-south-1.amazonaws.com",
+        port="19530"
+    )
+    print("✅ Connected to Milvus!")
+except Exception as e:
+    print(f"❌ Failed to connect to Milvus: {e}")
+```
+
+```
+python testmilvus.py                                                     
+
+✅ Connected to Milvus!
 ```
 
 ## Install attu
