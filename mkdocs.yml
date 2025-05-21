@@ -93,8 +93,9 @@ nav:
        - Tensorflow: AIML/DeepLearning/Tensorflow.md
        - Pytorch: AIML/DeepLearning/Pytorch.md
        - LSTM: AIML/DeepLearning/LSTM.md
-    - Model Finetune:
+    - Model Finetune & Pre train model:
        - Llama-3.2-1B fine tune with custom data: AIML/FinetuneModel/llama_3_finetune.md
+       - Deepseek-r1-ollama: AIML/FinetuneModel/Deepseek-r1-ollama.md
     - Vector Database:
        - Vector Database Overview: AIML/VectorDb/vector_database.md
        - Milvus: 
