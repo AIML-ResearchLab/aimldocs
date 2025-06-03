@@ -19,3 +19,63 @@
 | **Compliance & Audit Logging**     | Not provided                             | Yes                                      | Yes                                      | Automated compliance checks           |
 | **Model Inference Monitoring**     | Not provided                             | Yes                                      | Real-time monitoring                     | Integrated with Watson AIOps          |
 | **LLM / GenAI Observability**      | Not provided                             | Yes                                      | Yes                                      | Supported via Watson AIOps            |
+
+
+
+
+
+
+
+
+
+
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                              Banking Application                              │
+└───────────────┬───────────────────────────────────────────────────┬───────────┘
+                │                                                   │
+                │ (1) OTP Request                                  │ (6) OTP Validation
+                │                                                   │
+┌───────────────▼───────────────────────────────────┐ ┌─────────────▼─────────────┐
+│               AWS API Gateway                      │ │                           │
+│ (Rate Limiting, Auth via Cognito)                 │ │  Bank Core Banking System │
+└───────────────┬───────────────────────────────────┘ └───────────────────────────┘
+                │
+                │ (2) Async OTP Processing
+                │
+┌───────────────▼───────────────────────────────────┐
+│               Amazon SQS (Queue)                  │
+│ (Decouples OTP requests for scalability)          │
+└───────────────┬───────────────────────────────────┘
+                │
+                │ (3) Lambda Triggers
+                │
+┌───────────────▼───────────────────────────────────┐
+│               AWS Lambda (OTP Processor)          │
+│ - Generates OTP                                   │
+│ - Stores in DynamoDB (TTL=5 mins)                 │
+│ - Invokes AWS Bedrock for routing decision        │
+└───────────────┬───────────────────────────────────┘
+                │
+                │ (4) Agentic AI Decision (AWS Bedrock)
+                │
+┌───────────────▼───────────────────────────────────┐
+│               AWS Bedrock (AI Agent)               │
+│ - Analyzes real-time channel performance           │
+│ - Predicts fastest OTP delivery route              │
+│ - Returns decision (SMS/Email/Push)                │
+└───────────────┬───────────────────────────────────┘
+                │
+                │ (5) Multi-Channel OTP Delivery
+                │
+┌───────────────┼───────────────────────────────────┐
+│  ┌────────────▼────────────┐  ┌─────────────────┐  │
+│  │       Amazon SNS        │  │    Amazon SES   │  │
+│  │ (SMS Delivery)          │  │ (Email Delivery)│  │
+│  └─────────────────────────┘  └────────┬────────┘  │
+│                                        │           │
+│  ┌─────────────────────────┐           │           │
+│  │    AWS Pinpoint         │ ◄─────────┘           │
+│  │ (Mobile Push Notifications)                     │
+│  └─────────────────────────┘                     │
+└───────────────────────────────────────────────────┘
