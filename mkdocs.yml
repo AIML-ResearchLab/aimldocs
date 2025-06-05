@@ -7,148 +7,40 @@ theme:
     name: material
 nav:
   - Home: index.md
-  - AIML: 
-    - Overview: AIML/aiml-overview.md
-    - Python: AIML/Python.md
-    - NumPy: AIML/NumPy.md
-    - Pandas: AIML/Pandas.ipynb
-    - SciPy: AIML/SciPy.md
-    - Normal Distribution: AIML/NormalDistribution.md
-    - Binomial Distribution: AIML/BinomialDistribution.md
-    - Poisson Distribution: AIML/PoissonDistribution.md
-    - Uniform Distribution: AIML/UniformDistribution.md
-    - Logistic Distribution: AIML/LogisticDistribution.md
-    - Multinomial Distribution: AIML/MultinomialDistribution.md
-    - Exponential Distribution: AIML/ExponentialDistribution.md
-    - Categorical Distribution: AIML/CategoricalDistribution.md
-    - Bernoulli Distribution: AIML/BernoulliDistribution.md
-    - Statistics: AIML/Statistics.md
-    - Data Visualization:
-      - Matplotlib: AIML/Matplotlib.md
-      - Seaborn: AIML/Seaborn.md
-    - Machine Learning & AI:
-      - Feature Engineering: AIML/FeatureEngineering.md
-      - Test: AIML/Test.ipynb
-      - TensorFlow: AIML/TensorFlow.md
-      - PyTorch: AIML/PyTorch.md
-    - Supervised: 
-      - Supervised Overview: AIML/Supervised/Supervised-overview.md
-      - Regression:
-        - Regression Overview: AIML/Supervised/Regression/Regression-overview.md
-        - Linear Regression: AIML/Supervised/Regression/Linear-Regression.md
-        - Logistic Regression: AIML/Supervised/Regression/Logistic-Regression.md
-        - Decision Trees: AIML/Supervised/Regression/Decision-Tree.md
-        - Support Vector Machines (SVM): AIML/Supervised/Regression/Support-Vector-Machines.md
-        - k-Nearest Neighbors (k-NN): AIML/Supervised/Regression/k-Nearest-Neighbors.md
-        - Naive Bayes: AIML/Supervised/Regression/Naive-Bayes.md
-        - Random Forest (Bagging Algorithm): AIML/Supervised/Regression/Random-Forest.md
-        - Boosting Algorithms: AIML/Supervised/Regression/Boosting-Algorithms.md
-      - Classification:
-        - Classification Overview: AIML/Supervised/Classification/Classification-overview.md
-        - Linear Classifiers:
-          - Logistic Regression: AIML/Supervised/Classification/Linear/Logistic-Regression.md
-          - Support Vector Machines having kernel = linear: AIML/Supervised/Classification/Linear/svm.md
-          - Single-layer Perceptron: AIML/Supervised/Classification/Linear/Single-layer-Perceptron.md
-          - Stochastic Gradient Descent (SGD) Classifier: AIML/Supervised/Classification/Linear/SGD.md
-        - Non-linear Classifiers:
-          - K-Nearest Neighbours: AIML/Supervised/Classification/Non-linear/K-Nearest-Neighbours.md
-          - Kernel SVM: AIML/Supervised/Classification/Non-linear/Kernel-SVM.md
-          - Naive Bayes: AIML/Supervised/Classification/Non-linear/Naive-Bayes.md
-          - Decision Tree Classification: AIML/Supervised/Classification/Non-linear/Decision-Tree-Classification.md
-          - Ensemble learning classifiers: AIML/Supervised/Classification/Non-linear/Ensemble-learning-classifiers.md
-          - Random Forests: AIML/Supervised/Classification/Non-linear/Random-Forests.md
-          - AdaBoost: AIML/Supervised/Classification/Non-linear/AdaBoost.md
-          - Bagging Classifier: AIML/Supervised/Classification/Non-linear/Bagging-Classifier.md
-          - Voting Classifier: AIML/Supervised/Classification/Non-linear/Voting-Classifier.md
-          - ExtraTrees Classifier: AIML/Supervised/Classification/Non-linear/ExtraTrees-Classifier.md
-          - Multi-layer Artificial Neural Networks: AIML/Supervised/Classification/Non-linear/Neural-Networks.md
-      - Time series forecasting methods:
-          - ARIMA: AIML/Unsupervised/ARIMA.md
-          - SARIMA: AIML/Unsupervised/SARIMA.md
-    - Unsupervised:
-       - Unsupervised Overview: AIML/Unsupervised/Unsupervised-overview.md
-       - Clustering:
-          - Clustering Overview: AIML/Unsupervised/Clustering/Clustering-overview.md
-          - K-means Clustering: AIML/Unsupervised/Clustering/K-means-Clustering.md
-          - Hierarchical Clustering: AIML/Unsupervised/Clustering/Hierarchical-Clustering.md
-          - Density-Based Clustering (DBSCAN): AIML/Unsupervised/Clustering/Density-Based-Clustering.md
-          - Mean-Shift Clustering: AIML/Unsupervised/Clustering/Mean-Shift-Clustering.md
-          - Spectral Clustering: AIML/Unsupervised/Clustering/Spectral-Clustering.md
-       - Association Rule Learning:
-          - Apriori Algorithm: AIML/Unsupervised/AssociationRuleLearning/Apriori-Algorithm.md
-          - FP-Growth Algorithm: AIML/Unsupervised/AssociationRuleLearning/FP-Growth-Algorithm.md
-          - Eclat Algorithm: AIML/Unsupervised/AssociationRuleLearning/Eclat-Algorithm.md
-          - Efficient Tree-based Algorithms: AIML/Unsupervised/AssociationRuleLearning/Efficient-Tree-based-Algorithms.md
-       - Dimensionality Reduction:
-          - Principal Component Analysis (PCA): AIML/Unsupervised/DimensionalityReduction/Principal-Component-Analysis.md
-          - Linear Discriminant Analysis (LDA): AIML/Unsupervised/DimensionalityReduction/Linear-Discriminant-Analysis.md
-          - Non-negative Matrix Factorization (NMF): AIML/Unsupervised/DimensionalityReduction/Non-negative-Matrix-Factorization.md
-          - Locally Linear Embedding (LLE): AIML/Unsupervised/DimensionalityReduction/Locally-Linear-Embedding.md
-          - Isomap: AIML/Unsupervised/DimensionalityReduction/Isomap.md
-       - Self-Organizing Map (SOM): AIML/Unsupervised/SOM.md
-    - Deep Learning:
-       - Deep Learning Overview: AIML/DeepLearning/DeepLearning-overview.md
-       - Deep Learning Algorithms: AIML/DeepLearning/DeepLearning-algorithms.md
-       - Keras: AIML/DeepLearning/Keras.md
-       - Tensorflow: AIML/DeepLearning/Tensorflow.md
-       - Pytorch: AIML/DeepLearning/Pytorch.md
-       - LSTM: AIML/DeepLearning/LSTM.md
-    - Model Finetune & Pre train model:
-       - Llama-3.2-1B fine tune with custom data: AIML/FinetuneModel/llama_3_finetune.md
-       - Deepseek-r1-ollama: AIML/FinetuneModel/Deepseek-r1-ollama.md
-    - Vector Database:
-       - Vector Database Overview: AIML/VectorDb/vector_database.md
-       - Milvus: 
-         - Milvus & Attu Setup: AIML/VectorDb/milvus_setup.md
-         - Milvus Db Details: AIML/VectorDb/milvus.md
-       - FAISS Vector Database: AIML/VectorDb/faiss.md
-       - Weaviate Vector Database: AIML/VectorDb/weaviate.md
-       - Pinecone Vector Database: AIML/VectorDb/pinecone.md
-    - Retrieval augmented generation(RAG):      
-       - Retrieval augmented generation: AIML/RAG/Retrieval_augmented_generation.md
-    - Machine Learning Pipeline:
-       - ML workflow: AIML/MachineLearningPipeline/mlworkflow.md
-       - Data Cleaning: AIML/MachineLearningPipeline/datacleaning.md
-       - Feature Scaling: AIML/MachineLearningPipeline/featurescaling.md
-       - Data Preprocessing in Python: AIML/MachineLearningPipeline/datapreprocessingpython.md
-    - NVIDIA:
-       - NVIDIA Overview: AIML/NVIDIA/nvidia-overview.md
-       - NVIDIA NGC Catalog: 
-         - Collections: AIML/NVIDIA/nvidia-ngc-catalog-collections.md
-         - Containers: AIML/NVIDIA/nvidia-ngc-catalog-containers.md
-         - Helm Charts: AIML/NVIDIA/nvidia-ngc-catalog-helm-charts.md
-         - Models: AIML/NVIDIA/nvidia-ngc-catalog-models.md
-         - Resources: AIML/NVIDIA/nvidia-ngc-catalog-resources.md
-       - NVIDIA TensorRT: AIML/NVIDIA/nvidia-tensort.md
-       - NVIDIA NIM: AIML/NVIDIA/nvidia-nim.md
-       - NVIDIA NeMo: AIML/NVIDIA/nvidia-nemo.md
-       - NVIDIA Omniverse: AIML/NVIDIA/nvidia-omniverse.md
-       - NVIDIA AI Enterprise: AIML/NVIDIA/nvidia-ai-enterprise.md
-       - NVIDIA API Documentation: AIML/NVIDIA/nvidia-api-documentation.md
-       - NVIDIA CUDA: AIML/NVIDIA/nvidia-cuda.md 
-    - AgenticAI Framework:
-       - crewai: 
-         - crewai overview: AIML/AgenticAI/crewai.md
-       - langgraph:
-         - langgraph overview: AIML/AgenticAI/langgraph.md
-       - Model Context Protocol (MCP):
-         -  MCP overview: AIML/AgenticAI/mcp.md
-    - Aws:
-       - VPC: AIML/aws/vpc.md
-       - NVIDIA ON AWS: AIML/aws/nvidia.md
-       - ALB ON EKS : AIML/aws/alb.md
-       - ALB ON EKS : AIML/aws/milvus-attu.md
-       - HTTS Access: AIML/aws/https.md
-       - NVIDIA GPU Slicing: AIML/aws/Configure-GPU-time-slicing.md
-       - NVIDIA Milvus: AIML/aws/Deploying-Milvus-Vectorstore-Helm-Chart.md
-       - NVIDIA Nemo: AIML/aws/Deploying-NVIDIA Nemo-Retriever-Embedding-Microservice.md
-       - NVIDIA NIM: AIML/aws/Deploying-NVIDIA-NIM-Microservices.md
-    - Azure:
-       - Autoencoder: AIML/DeepLearning/Autoencoder.md
-    - Google:
-       - Autoencoder: AIML/DeepLearning/Autoencoder.md
-    - Learning Topics:
-       - Learning: AIML/DeepLearning/Learning.md
+  - AIML:
+    - Programing:
+      - PYTHON: Programing/python.md
+    - Statistic:
+      - Metrics Evaluation: Statistic/metrics-evaluation.md
+    - Data manipulation and analysis:
+      - PANDAS: Data-manipulation-and-analysis/data-manipulation-analysis.md
+    - Data Processing:
+      - Basic SQL: Data-processing/sql.md
+      - Using SQL for Data Science: Data-processing/sql-datascience.md
+      - Unstructured Data: Data-processing/unstructured-data.md
+      - Exploratory Data Analysis(EDA): Data-processing/exploratory-data-analysis.md
+      - Building ML Models on Text Data: Data-processing/building-ml-models-on-text-data.md
+    - Databases:
+      - PostgreSQL: Databases/PostgreSQL.md
+      - MySQL: Databases/MySQL.md
+      - MongoDB: Databases/MongoDB.md
+    - Natural Language Processing(NLP): 
+      - NLP: NLP/nlp.md
+    - Natural Language Understanding(NLU):
+      - NLP: NLU/nlu.md
+    - Natural Language Generation(NLG):
+      - NLP: NLG/nlg.md
+    - Retrieval-Augmented Generation(RAG):
+      - RAG: RAG/rag.md
+    - AI agents:
+      - AI agents: AIagents/aiagents.md
+    - Agentic AI:
+      - crewai: AgenticAI/crewai.md
+      - LangGraph: AgenticAI/LangGraph.md
+      - AutoGen: AgenticAI/AutoGen.md
+      - AWS: AgenticAI/aws.md
+      - AZURE: AgenticAI/azure.md
+      - GCP: AgenticAI/gcp.md
 
 #theme: readthedocs
 theme:
@@ -174,4 +66,4 @@ plugins:
     - search
     - git-revision-date-localized
     - git-authors
-    - mkdocs-jupyter
+    #- mkdocs-jupyter
