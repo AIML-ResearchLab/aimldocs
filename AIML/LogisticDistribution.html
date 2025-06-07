@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>📐 What is the Logistic Distribution? - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\ud83d\udcd0 What is the Logistic Distribution?";
+        var mkdocs_page_input_path = "AIML/LogisticDistribution.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/metrics-evaluation.html">Metrics Evaluation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">📐 What is the Logistic Distribution?</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="what-is-the-logistic-distribution">📐 What is the Logistic Distribution?<a class="headerlink" href="#what-is-the-logistic-distribution" title="Permanent link">#</a></h1>
+<p>The Logistic Distribution is a continuous probability distribution used for modeling growth and for classification problems.</p>
+<p>Its <strong>shape is similar to the normal distribution</strong> — symmetric, bell-shaped — but with <strong>heavier tails.</strong></p>
+<p><img alt="LD" src="img/image17.png" /></p>
+<h1 id="real-world-use-cases">✅ Real-World Use Cases<a class="headerlink" href="#real-world-use-cases" title="Permanent link">#</a></h1>
+<ol>
+<li>Logistic Regression (Binary Classification)<ul>
+<li>🎯 Models the probability that an output belongs to class 1 (vs class 0).</li>
+<li>Uses the sigmoid function (i.e., logistic CDF) to squash any real-valued input to a value between 0 and 1.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Example: Predicting whether an email is spam or not spam based on features like subject, sender, keywords, etc.</strong></p>
+<ol>
+<li>
+<p>Neural Networks</p>
+<ul>
+<li>🔁 Activation function like sigmoid uses the logistic distribution shape.</li>
+<li>🧠 Used to map any value into a bounded range [0, 1].</li>
+</ul>
+</li>
+<li>
+<p>Growth Models</p>
+<ul>
+<li>📈 Population or disease spread modeling (e.g., COVID-19 curves).</li>
+<li>Logistic distribution is used when the rate of growth is proportional to both current value and remaining capacity.</li>
+</ul>
+</li>
+<li>
+<p>Marketing &amp; Adoption Rates</p>
+<ul>
+<li>📊 Used in diffusion of innovation — how quickly people adopt new tech (like smartphones, electric cars).</li>
+<li>Shows slow start → rapid growth → saturation.</li>
+</ul>
+</li>
+</ol>
+<p>Example</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">logistic</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">pdf</span> <span class="o">=</span> <span class="n">logistic</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">cdf</span> <span class="o">=</span> <span class="n">logistic</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">pdf</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PDF&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Logistic Distribution - PDF&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">cdf</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;CDF (Sigmoid)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Logistic Distribution - CDF&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="LD" src="img/image18.png" /></p>
+<h1 id="logistic-vs-normal-distribution">🔄 Logistic vs Normal Distribution<a class="headerlink" href="#logistic-vs-normal-distribution" title="Permanent link">#</a></h1>
+<div class="codehilite"><pre><span></span><code><span class="n">Feature</span><span class="w">                     </span><span class="n">Normal</span><span class="w">                                  </span><span class="n">Logistic</span>
+<span class="n">PDF</span><span class="w"> </span><span class="n">shape</span><span class="w">                   </span><span class="n">Bell</span><span class="o">-</span><span class="n">shaped</span><span class="w">                             </span><span class="n">Bell</span><span class="o">-</span><span class="n">shaped</span>
+<span class="n">Tails</span><span class="w">                       </span><span class="n">Light</span><span class="w">                                   </span><span class="n">Heavier</span>
+<span class="n">CDF</span><span class="w">                         </span><span class="n">Error</span><span class="w"> </span><span class="k">function</span><span class="w">                          </span><span class="n">Sigmoid</span><span class="w"> </span><span class="k">function</span>
+<span class="n">ML</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="k">case</span><span class="w">                 </span><span class="n">Less</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">classification</span><span class="w">                  </span><span class="n">Logistic</span><span class="w"> </span><span class="n">regression</span><span class="p">,</span><span class="w"> </span><span class="n">sigmoid</span>
+</code></pre></div>
+
+<h1 id="difference-between-logistic-and-normal-distribution">Difference Between Logistic and Normal Distribution<a class="headerlink" href="#difference-between-logistic-and-normal-distribution" title="Permanent link">#</a></h1>
+<table>
+<thead>
+<tr>
+<th><strong>Feature</strong></th>
+<th><strong>Normal Distribution</strong></th>
+<th><strong>Logistic Distribution</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shape</strong></td>
+<td>Bell-shaped, symmetric</td>
+<td>Bell-shaped, symmetric</td>
+</tr>
+<tr>
+<td><strong>Tails</strong></td>
+<td>Lighter tails</td>
+<td>Heavier tails</td>
+</tr>
+<tr>
+<td><strong>Peak</strong></td>
+<td>Sharper peak</td>
+<td>Flatter peak</td>
+</tr>
+<tr>
+<td><strong>PDF (Probability Function)</strong></td>
+<td>Involves exponential and π</td>
+<td>Involves exponential only</td>
+</tr>
+<tr>
+<td><strong>CDF</strong></td>
+<td>Error function</td>
+<td>Sigmoid function</td>
+</tr>
+<tr>
+<td><strong>Common in</strong></td>
+<td>Natural phenomena, regression, hypothesis testing</td>
+<td>Classification, logistic regression, neural nets</td>
+</tr>
+<tr>
+<td><strong>Use in ML</strong></td>
+<td>Assumes continuous output</td>
+<td>Used when output is a probability (0–1)</td>
+</tr>
+<tr>
+<td><strong>Analytical Simplicity</strong></td>
+<td>Harder to compute CDF</td>
+<td>Easier and faster (sigmoid)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="real-world-use-in-aiml">🧠 Real-World Use in AI/ML<a class="headerlink" href="#real-world-use-in-aiml" title="Permanent link">#</a></h1>
+<table>
+<thead>
+<tr>
+<th><strong>Scenario</strong></th>
+<th><strong>Best Fit Distribution</strong></th>
+<th><strong>Why?</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Predicting exam scores, height</td>
+<td>Normal</td>
+<td>Real-world values cluster around a mean</td>
+</tr>
+<tr>
+<td>Classifying emails (spam/not)</td>
+<td>Logistic</td>
+<td>Probabilistic output between 0 and 1</td>
+</tr>
+<tr>
+<td>Modeling neural network activations</td>
+<td>Logistic</td>
+<td>Sigmoid is derived from logistic CDF</td>
+</tr>
+<tr>
+<td>Forecasting disease spread</td>
+<td>Logistic</td>
+<td>Used in logistic growth curves</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

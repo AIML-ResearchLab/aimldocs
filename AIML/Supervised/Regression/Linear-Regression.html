@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Linear Regression - AIML documents</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Linear Regression";
+        var mkdocs_page_input_path = "AIML/Supervised/Regression/Linear-Regression.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/metrics-evaluation.html">Metrics Evaluation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Linear Regression</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="linear-regression">Linear Regression<a class="headerlink" href="#linear-regression" title="Permanent link">#</a></h1>
+<ul>
+<li>Introduction to Linear Regression</li>
+<li>Gradient Descent in Linear Regression</li>
+<li>Linear regression (Python Implementation from scratch)</li>
+<li>Linear regression implementation using sklearn</li>
+<li>Rainfall prediction - Project</li>
+<li>Boston Housing Kaggle Challenge - Project</li>
+<li>Ridge Regression</li>
+<li>Lasso regression</li>
+<li>Elastic net Regression</li>
+<li>Implementation of Lasso, Ridge and Elastic Net</li>
+</ul>
+<h1 id="1introduction-to-linear-regression">1.Introduction to Linear Regression<a class="headerlink" href="#1introduction-to-linear-regression" title="Permanent link">#</a></h1>
+<h2 id="what-is-linear-regression">What is Linear Regression?<a class="headerlink" href="#what-is-linear-regression" title="Permanent link">#</a></h2>
+<p>Linear regression is a type of supervised machine learning algorithm that computes the linear relationship between the dependent variable and one or more independent features by fitting a linear equation to observed data.</p>
+<p>When there is only one independent feature, it is known as Simple Linear Regression, and when there are more than one feature, it is known as Multiple Linear Regression.</p>
+<p>Similarly, when there is only one dependent variable, it is considered Univariate Linear Regression, while when there are more than one dependent variables, it is known as Multivariate Regression.</p>
+<h2 id="why-linear-regression-is-important">Why Linear Regression is Important?<a class="headerlink" href="#why-linear-regression-is-important" title="Permanent link">#</a></h2>
+<p>The interpretability of linear regression is a notable strength. The model’s equation provides clear coefficients that elucidate the impact of each independent variable on the dependent variable, facilitating a deeper understanding of the underlying dynamics. Its simplicity is a virtue, as linear regression is transparent, easy to implement, and serves as a foundational concept for more complex algorithms.</p>
+<p>Linear regression is not merely a predictive tool; it forms the basis for various advanced models. Techniques like regularization and support vector machines draw inspiration from linear regression, expanding its utility. Additionally, linear regression is a cornerstone in assumption testing, enabling researchers to validate key assumptions about the data.</p>
+<h2 id="types-of-linear-regression">Types of Linear Regression<a class="headerlink" href="#types-of-linear-regression" title="Permanent link">#</a></h2>
+<p>There are two main types of linear regression:</p>
+<p><strong>Simple Linear Regression</strong>
+This is the simplest form of linear regression, and it involves only one independent variable and one dependent variable. The equation for simple linear regression is:</p>
+<p><img alt="Regression" src="../img/Regression3.png" /></p>
+<p>where:</p>
+<ul>
+<li>Y is the dependent variable</li>
+<li>X is the independent variable</li>
+<li>β0 is the intercept</li>
+<li>β1 is the slope</li>
+</ul>
+<p><strong>Multiple Linear Regression</strong></p>
+<p>This involves more than one independent variable and one dependent variable. The equation for multiple linear regression is:</p>
+<p><img alt="Regression" src="../img/Regression4.png" /></p>
+<p><strong>where:</strong></p>
+<ul>
+<li>Y is the dependent variable</li>
+<li>X1, X2, …, Xn are the independent variables</li>
+<li>β0 is the intercept</li>
+<li>β1, β2, …, βn are the slopes</li>
+</ul>
+<p><strong>The goal of the algorithm is to find the best Fit Line equation that can predict the values based on the independent variables.</strong></p>
+<p>In regression set of records are present with X and Y values and these values are used to learn a function so if you want to predict Y from an unknown X this learned function can be used. In regression we have to find the value of Y, So, a function is required that predicts continuous Y in the case of regression given X as independent features.</p>
+<h2 id="what-is-the-best-fit-line">What is the best Fit Line?<a class="headerlink" href="#what-is-the-best-fit-line" title="Permanent link">#</a></h2>
+<p>Our primary objective while using linear regression is to locate the best-fit line, which implies that the error between the predicted and actual values should be kept to a minimum. There will be the least error in the best-fit line.</p>
+<p>The best Fit Line equation provides a straight line that represents the relationship between the dependent and independent variables. The slope of the line indicates how much the dependent variable changes for a unit change in the independent variable(s).</p>
+<p><img alt="Regression" src="../img/Regression5.png" /></p>
+<p>Here Y is called a dependent or target variable and X is called an independent variable also known as the predictor of Y. There are many types of functions or modules that can be used for regression. A linear function is the simplest type of function. Here, X may be a single feature or multiple features representing the problem.</p>
+<p>Linear regression performs the task to predict a dependent variable value (y) based on a given independent variable (x)). Hence, the name is Linear Regression. In the figure above, X (input) is the work experience and Y (output) is the salary of a person. The regression line is the best-fit line for our model. </p>
+<p>We utilize the cost function to compute the best values in order to get the best fit line since different values for weights or the coefficient of lines result in different regression lines.</p>
+<p><strong>Hypothesis function in Linear Regression</strong></p>
+<p>As we have assumed earlier that our independent feature is the experience i.e X and the respective salary Y is the dependent variable. Let’s assume there is a linear relationship between X and Y then the salary can be predicted using:</p>
+<p><img alt="Regression" src="../img/Regression6.png" /></p>
+<p>Once we find the best θ1 and θ2 values, we get the best-fit line. So when we are finally using our model for prediction, it will predict the value of y for the input value of x. </p>
+<h2 id="how-to-update-1-and-2-values-to-get-the-best-fit-line">How to update θ1 and θ2 values to get the best-fit line?<a class="headerlink" href="#how-to-update-1-and-2-values-to-get-the-best-fit-line" title="Permanent link">#</a></h2>
+<p><img alt="Regression" src="../img/Regression7.png" /></p>
+<p><img alt="Regression" src="../img/Regression8.png" /></p>
+<h2 id="gradient-descent-for-linear-regression">Gradient Descent for Linear Regression<a class="headerlink" href="#gradient-descent-for-linear-regression" title="Permanent link">#</a></h2>
+<p>A linear regression model can be trained using the optimization algorithm gradient descent by iteratively modifying the model’s parameters to reduce the mean squared error (MSE) of the model on a training dataset. To update θ1 and θ2 values in order to reduce the Cost function (minimizing RMSE value) and achieve the best-fit line the model uses Gradient Descent. The idea is to start with random θ1 and θ2 values and then iteratively update the values, reaching minimum cost. </p>
+<p>A gradient is nothing but a derivative that defines the effects on outputs of the function with a little bit of variation in inputs.</p>
+<p><img alt="Regression" src="../img/Regression9.png" /></p>
+<p><img alt="Regression" src="../img/Regression10.png" />
+​
+Finding the coefficients of a linear equation that best fits the training data is the objective of linear regression. By moving in the direction of the Mean Squared Error negative gradient with respect to the coefficients, the coefficients can be changed. And the respective intercept and coefficient of X will be if α  is the learning rate.    </p>
+<p><img alt="Regression" src="../img/Regression11.png" /></p>
+<h2 id="assumptions-of-simple-linear-regression">Assumptions of Simple Linear Regression<a class="headerlink" href="#assumptions-of-simple-linear-regression" title="Permanent link">#</a></h2>
+<p>Linear regression is a powerful tool for understanding and predicting the behavior of a variable, however, it needs to meet a few conditions in order to be accurate and dependable solutions. </p>
+<ol>
+<li><strong>Linearity:</strong> The independent and dependent variables have a linear relationship with one another. This implies that changes in the dependent variable follow those in the independent variable(s) in a linear fashion. This means that there should be a straight line that can be drawn through the data points. If the relationship is not linear, then linear regression will not be an accurate model.</li>
+</ol>
+<p><img alt="Regression" src="../img/Regression12.png" /></p>
+<ol>
+<li>
+<p><strong>Independence:</strong> The observations in the dataset are independent of each other. This means that the value of the dependent variable for one observation does not depend on the value of the dependent variable for another observation. If the observations are not independent, then linear regression will not be an accurate model.</p>
+</li>
+<li>
+<p><strong>Homoscedasticity:</strong> Across all levels of the independent variable(s), the variance of the errors is constant. This indicates that the amount of the independent variable(s) has no impact on the variance of the errors. If the variance of the residuals is not constant, then linear regression will not be an accurate model.</p>
+</li>
+</ol>
+<p><img alt="Regression" src="../img/Regression13.png" /></p>
+<ol>
+<li><strong>Normality:</strong> The residuals should be normally distributed. This means that the residuals should follow a bell-shaped curve. If the residuals are not normally distributed, then linear regression will not be an accurate model.</li>
+</ol>
+<h2 id="assumptions-of-multiple-linear-regression">Assumptions of Multiple Linear Regression<a class="headerlink" href="#assumptions-of-multiple-linear-regression" title="Permanent link">#</a></h2>
+<p>For Multiple Linear Regression, all four of the assumptions from Simple Linear Regression apply. In addition to this, below are few more:</p>
+<ol>
+<li><strong>No multicollinearity:</strong> There is no high correlation between the independent variables. This indicates that there is little or no correlation between the independent variables. Multicollinearity occurs when two or more independent variables are highly correlated with each other, which can make it difficult to determine the individual effect of each variable on the dependent variable. If there is multicollinearity, then multiple linear regression will not be an accurate model.</li>
+<li><strong>Additivity:</strong> The model assumes that the effect of changes in a predictor variable on the response variable is consistent regardless of the values of the other variables. This assumption implies that there is no interaction between variables in their effects on the dependent variable.</li>
+<li><strong>Feature Selection:</strong> In multiple linear regression, it is essential to carefully select the independent variables that will be included in the model. Including irrelevant or redundant variables may lead to overfitting and complicate the interpretation of the model.</li>
+<li><strong>Overfitting:</strong> Overfitting occurs when the model fits the training data too closely, capturing noise or random fluctuations that do not represent the true underlying relationship between variables. This can lead to poor generalization performance on new, unseen data.</li>
+</ol>
+<h2 id="multicollinearity">Multicollinearity<a class="headerlink" href="#multicollinearity" title="Permanent link">#</a></h2>
+<p>Multicollinearity is a statistical phenomenon that occurs when two or more independent variables in a multiple regression model are highly correlated, making it difficult to assess the individual effects of each variable on the dependent variable.</p>
+<p><strong>Detecting Multicollinearity includes two techniques:</strong>
+- <strong>Correlation Matrix:</strong> Examining the correlation matrix among the independent variables is a common way to detect multicollinearity. High correlations (close to 1 or -1) indicate potential multicollinearity.
+- <strong>VIF (Variance Inflation Factor):</strong> VIF is a measure that quantifies how much the variance of an estimated regression coefficient increases if your predictors are correlated. A high VIF (typically above 10) suggests multicollinearity.</p>
+<h2 id="evaluation-metrics-for-linear-regression">Evaluation Metrics for Linear Regression<a class="headerlink" href="#evaluation-metrics-for-linear-regression" title="Permanent link">#</a></h2>
+<p>A variety of evaluation measures can be used to determine the strength of any linear regression model. These assessment metrics often give an indication of how well the model is producing the observed outputs.</p>
+<p>The most common measurements are:</p>
+<p><strong>Mean Square Error (MSE)</strong></p>
+<p>Mean Squared Error (MSE) is an evaluation metric that calculates the average of the squared differences between the actual and predicted values for all the data points. The difference is squared to ensure that negative and positive differences don’t cancel each other out.</p>
+<p><img alt="Regression" src="../img/Regression14.png" /></p>
+<p>MSE is a way to quantify the accuracy of a model’s predictions. MSE is sensitive to outliers as large errors contribute significantly to the overall score.</p>
+<p><strong>Mean Absolute Error (MAE)</strong></p>
+<p>Mean Absolute Error is an evaluation metric used to calculate the accuracy of a regression model. MAE measures the average absolute difference between the predicted values and actual values.</p>
+<p>Mathematically, MAE is expressed as:</p>
+<p><img alt="Regression" src="../img/Regression15.png" /></p>
+<p>Lower MAE value indicates better model performance. It is not sensitive to the outliers as we consider absolute differences.</p>
+<p><strong>Root Mean Squared Error (RMSE)</strong></p>
+<p>The square root of the residuals’ variance is the Root Mean Squared Error. It describes how well the observed data points match the expected values, or the model’s absolute fit to the data.</p>
+<p><img alt="Regression" src="../img/Regression16.png" /></p>
+<p><strong>Coefficient of Determination (R-squared)</strong></p>
+<p><img alt="Regression" src="../img/Regression17.png" /></p>
+<p><strong>Adjusted R-Squared Error</strong></p>
+<p><img alt="Regression" src="../img/Regression18.png" /></p>
+<h2 id="python-implementation-of-linear-regression">Python Implementation of Linear Regression<a class="headerlink" href="#python-implementation-of-linear-regression" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.axes</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ax</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.animation</span><span class="w"> </span><span class="kn">import</span> <span class="n">FuncAnimation</span>
+</code></pre></div>
+
+<p><strong>Load the dataset and separate input and Target variables</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://media.geeksforgeeks.org/wp-content/uploads/20240320114716/data_for_lr.csv&#39;</span>
+<span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">data</span>
+
+<span class="c1"># Drop the missing values</span>
+<span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># training dataset and labels</span>
+<span class="n">train_input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">500</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="n">train_output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">500</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># valid dataset and labels</span>
+<span class="n">test_input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">500</span><span class="p">:</span><span class="mi">700</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">199</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="n">test_output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">500</span><span class="p">:</span><span class="mi">700</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">199</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Build the Linear Regression Model and Plot the regression line</strong></p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>In forward propagation, Linear regression function Y=mx+c is applied by initially assigning random value of parameter (m &amp; c).</li>
+<li>The we have written the function to finding the cost function i.e the mean </li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="n">class</span><span class="w"> </span><span class="nl">LinearRegression:</span><span class="w"> </span>
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">)</span><span class="o">:</span><span class="w"> </span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">forward_propagation</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">train_input</span><span class="p">)</span><span class="o">:</span><span class="w"> </span>
+<span class="w">        </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;m&#39;</span><span class="p">]</span><span class="w"> </span>
+<span class="w">        </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;c&#39;</span><span class="p">]</span><span class="w"> </span>
+<span class="w">        </span><span class="n">predictions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">train_input</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">c</span><span class="w"> </span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">predictions</span><span class="w"> </span>
+
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">cost_function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">predictions</span><span class="p">,</span><span class="w"> </span><span class="n">train_output</span><span class="p">)</span><span class="o">:</span><span class="w"> </span>
+<span class="w">        </span><span class="n">cost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">((</span><span class="n">train_output</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">predictions</span><span class="p">)</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mh">2</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">cost</span><span class="w"> </span>
+
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">backward_propagation</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">train_input</span><span class="p">,</span><span class="w"> </span><span class="n">train_output</span><span class="p">,</span><span class="w"> </span><span class="n">predictions</span><span class="p">)</span><span class="o">:</span><span class="w"> </span>
+<span class="w">        </span><span class="n">derivatives</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span>
+<span class="w">        </span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">predictions</span><span class="o">-</span><span class="n">train_output</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="p">#</span><span class="w"> </span><span class="n">dm</span><span class="o">=</span><span class="w"> </span><span class="mh">2</span><span class="o">/</span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">mean</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="p">(</span><span class="n">predictions</span><span class="o">-</span><span class="n">actual</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">input</span><span class="w"> </span>
+<span class="w">        </span><span class="n">dm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">train_input</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="p">))</span><span class="w"> </span>
+<span class="w">        </span><span class="p">#</span><span class="w"> </span><span class="n">dc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">2</span><span class="o">/</span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">mean</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="p">(</span><span class="n">predictions</span><span class="o">-</span><span class="n">actual</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">dc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">derivatives</span><span class="p">[&#39;</span><span class="n">dm</span><span class="p">&#39;]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dm</span><span class="w"> </span>
+<span class="w">        </span><span class="n">derivatives</span><span class="p">[&#39;</span><span class="n">dc</span><span class="p">&#39;]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dc</span><span class="w"> </span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">derivatives</span><span class="w"> </span>
+
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">update_parameters</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">derivatives</span><span class="p">,</span><span class="w"> </span><span class="n">learning_rate</span><span class="p">)</span><span class="o">:</span><span class="w"> </span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;m&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;m&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">learning_rate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">derivatives</span><span class="p">[&#39;</span><span class="n">dm</span><span class="p">&#39;]</span><span class="w"> </span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;c&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;c&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">learning_rate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">derivatives</span><span class="p">[&#39;</span><span class="n">dc</span><span class="p">&#39;]</span><span class="w"> </span>
+
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">train</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">train_input</span><span class="p">,</span><span class="w"> </span><span class="n">train_output</span><span class="p">,</span><span class="w"> </span><span class="n">learning_rate</span><span class="p">,</span><span class="w"> </span><span class="n">iters</span><span class="p">)</span><span class="o">:</span><span class="w"> </span>
+<span class="w">        </span><span class="p">#</span><span class="w"> </span><span class="n">Initialize</span><span class="w"> </span><span class="n">random</span><span class="w"> </span><span class="n">parameters</span><span class="w"> </span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;m&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="mh">0</span><span class="p">,</span><span class="w"> </span><span class="mh">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">-</span><span class="mh">1</span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;c&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="mh">0</span><span class="p">,</span><span class="w"> </span><span class="mh">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">-</span><span class="mh">1</span>
+
+<span class="w">        </span><span class="p">#</span><span class="w"> </span><span class="n">Initialize</span><span class="w"> </span><span class="n">loss</span><span class="w"> </span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span>
+
+<span class="w">        </span><span class="p">#</span><span class="w"> </span><span class="n">Initialize</span><span class="w"> </span><span class="n">figure</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">axis</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">animation</span><span class="w"> </span>
+<span class="w">        </span><span class="n">fig</span><span class="p">,</span><span class="w"> </span><span class="n">ax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">plt</span><span class="p">.</span><span class="n">subplots</span><span class="p">()</span><span class="w"> </span>
+<span class="w">        </span><span class="n">x_vals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">min</span><span class="p">(</span><span class="n">train_input</span><span class="p">),</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">train_input</span><span class="p">),</span><span class="w"> </span><span class="mh">100</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ax</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;m&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x_vals</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;c&#39;</span><span class="p">],</span><span class="w"> </span><span class="n">color</span><span class="o">=</span><span class="p">&#39;</span><span class="n">red</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">label</span><span class="o">=</span><span class="p">&#39;</span><span class="n">Regression</span><span class="w"> </span><span class="n">Line</span><span class="p">&#39;)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">ax</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">train_input</span><span class="p">,</span><span class="w"> </span><span class="n">train_output</span><span class="p">,</span><span class="w"> </span><span class="n">marker</span><span class="o">=</span><span class="sc">&#39;o&#39;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                </span><span class="n">color</span><span class="o">=</span><span class="p">&#39;</span><span class="n">green</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">label</span><span class="o">=</span><span class="p">&#39;</span><span class="n">Training</span><span class="w"> </span><span class="n">Data</span><span class="p">&#39;)</span><span class="w"> </span>
+
+<span class="w">        </span><span class="p">#</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">y</span><span class="o">-</span><span class="n">axis</span><span class="w"> </span><span class="n">limits</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">exclude</span><span class="w"> </span><span class="n">negative</span><span class="w"> </span><span class="n">values</span><span class="w"> </span>
+<span class="w">        </span><span class="n">ax</span><span class="p">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mh">0</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">train_output</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">1</span><span class="p">)</span><span class="w"> </span>
+
+<span class="w">        </span><span class="n">def</span><span class="w"> </span><span class="n">update</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span><span class="o">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">#</span><span class="w"> </span><span class="n">Forward</span><span class="w"> </span><span class="n">propagation</span><span class="w"> </span>
+<span class="w">            </span><span class="n">predictions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">forward_propagation</span><span class="p">(</span><span class="n">train_input</span><span class="p">)</span><span class="w"> </span>
+
+<span class="w">            </span><span class="p">#</span><span class="w"> </span><span class="n">Cost</span><span class="w"> </span><span class="k">function</span><span class="w"> </span>
+<span class="w">            </span><span class="n">cost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">cost_function</span><span class="p">(</span><span class="n">predictions</span><span class="p">,</span><span class="w"> </span><span class="n">train_output</span><span class="p">)</span><span class="w"> </span>
+
+<span class="w">            </span><span class="p">#</span><span class="w"> </span><span class="n">Back</span><span class="w"> </span><span class="n">propagation</span><span class="w"> </span>
+<span class="w">            </span><span class="n">derivatives</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">backward_propagation</span><span class="p">(</span><span class="w"> </span>
+<span class="w">                </span><span class="n">train_input</span><span class="p">,</span><span class="w"> </span><span class="n">train_output</span><span class="p">,</span><span class="w"> </span><span class="n">predictions</span><span class="p">)</span><span class="w"> </span>
+
+<span class="w">            </span><span class="p">#</span><span class="w"> </span><span class="n">Update</span><span class="w"> </span><span class="n">parameters</span><span class="w"> </span>
+<span class="w">            </span><span class="n">self</span><span class="p">.</span><span class="n">update_parameters</span><span class="p">(</span><span class="n">derivatives</span><span class="p">,</span><span class="w"> </span><span class="n">learning_rate</span><span class="p">)</span><span class="w"> </span>
+
+<span class="w">            </span><span class="p">#</span><span class="w"> </span><span class="n">Update</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">regression</span><span class="w"> </span><span class="n">line</span><span class="w"> </span>
+<span class="w">            </span><span class="n">line</span><span class="p">.</span><span class="n">set_ydata</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;m&#39;</span><span class="p">]</span><span class="w"> </span>
+<span class="w">                        </span><span class="o">*</span><span class="w"> </span><span class="n">x_vals</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">[</span><span class="sc">&#39;c&#39;</span><span class="p">])</span><span class="w"> </span>
+
+<span class="w">            </span><span class="p">#</span><span class="w"> </span><span class="n">Append</span><span class="w"> </span><span class="n">loss</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">print</span><span class="w"> </span>
+<span class="w">            </span><span class="n">self</span><span class="p">.</span><span class="n">loss</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="w"> </span>
+<span class="w">            </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Iteration = {}, Loss = {}&quot;</span><span class="p">.</span><span class="n">format</span><span class="p">(</span><span class="n">frame</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">1</span><span class="p">,</span><span class="w"> </span><span class="n">cost</span><span class="p">))</span><span class="w"> </span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="p">#</span><span class="w"> </span><span class="n">Create</span><span class="w"> </span><span class="n">animation</span><span class="w"> </span>
+<span class="w">        </span><span class="n">ani</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span><span class="w"> </span><span class="n">update</span><span class="p">,</span><span class="w"> </span><span class="n">frames</span><span class="o">=</span><span class="n">iters</span><span class="p">,</span><span class="w"> </span><span class="n">interval</span><span class="o">=</span><span class="mh">200</span><span class="p">,</span><span class="w"> </span><span class="n">blit</span><span class="o">=</span><span class="n">True</span><span class="p">)</span><span class="w"> </span>
+
+<span class="w">        </span><span class="p">#</span><span class="w"> </span><span class="n">Save</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">animation</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">video</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">g</span><span class="p">.,</span><span class="w"> </span><span class="n">MP4</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">ani</span><span class="p">.</span><span class="n">save</span><span class="p">(&#39;</span><span class="n">linear_regression_A</span><span class="p">.</span><span class="n">gif</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">writer</span><span class="o">=</span><span class="p">&#39;</span><span class="n">ffmpeg</span><span class="p">&#39;)</span><span class="w"> </span>
+
+<span class="w">        </span><span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(&#39;</span><span class="n">Input</span><span class="p">&#39;)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(&#39;</span><span class="n">Output</span><span class="p">&#39;)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(&#39;</span><span class="n">Linear</span><span class="w"> </span><span class="n">Regression</span><span class="p">&#39;)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span><span class="w"> </span>
+<span class="w">        </span><span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span><span class="w"> </span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">parameters</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">loss</span><span class="w"> </span>
+</code></pre></div>
+
+<p><strong>Trained the model and Final Prediction</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="p">#</span><span class="n">Example</span><span class="w"> </span><span class="n">usage</span>
+<span class="n">linear_reg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">parameters</span><span class="p">,</span><span class="w"> </span><span class="n">loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">linear_reg</span><span class="p">.</span><span class="n">train</span><span class="p">(</span><span class="n">train_input</span><span class="p">,</span><span class="w"> </span><span class="n">train_output</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0001</span><span class="p">,</span><span class="w"> </span><span class="mh">20</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="Regression" src="../img/Regression19.png" /></p>
+<p><img alt="Regression" src="../img/Regression20.png" /></p>
+<p><strong>Linear Regression Line</strong></p>
+<p>The linear regression line provides valuable insights into the relationship between the two variables. It represents the best-fitting line that captures the overall trend of how a dependent variable (Y) changes in response to variations in an independent variable (X).</p>
+<ul>
+<li><strong>Positive Linear Regression Line:</strong> A positive linear regression line indicates a direct relationship between the independent variable (X) and the dependent variable (Y). This means that as the value of X increases, the value of Y also increases. The slope of a positive linear regression line is positive, meaning that the line slants upward from left to right.</li>
+<li><strong>Negative Linear Regression Line:</strong> A negative linear regression line indicates an inverse relationship between the independent variable (X) and the dependent variable (Y). This means that as the value of X increases, the value of Y decreases. The slope of a negative linear regression line is negative, meaning that the line slants downward from left to right.</li>
+</ul>
+<h2 id="regularization-techniques-for-linear-models">Regularization Techniques for Linear Models<a class="headerlink" href="#regularization-techniques-for-linear-models" title="Permanent link">#</a></h2>
+<p><img alt="Regression" src="../img/Regression21.png" />
+<img alt="Regression" src="../img/Regression22.png" />
+<img alt="Regression" src="../img/Regression23.png" /></p>
+<h2 id="advantages-disadvantages-of-linear-regression">Advantages &amp; Disadvantages of Linear Regression<a class="headerlink" href="#advantages-disadvantages-of-linear-regression" title="Permanent link">#</a></h2>
+<p><strong>Advantages of Linear Regression</strong></p>
+<ul>
+<li>Linear regression is a relatively simple algorithm, making it easy to understand and implement. The coefficients of the linear regression model can be interpreted as the change in the dependent variable for a one-unit change in the independent variable, providing insights into the relationships between variables.</li>
+<li>Linear regression is computationally efficient and can handle large datasets effectively. It can be trained quickly on large datasets, making it suitable for real-time applications.</li>
+<li>Linear regression is relatively robust to outliers compared to other machine learning algorithms. Outliers may have a smaller impact on the overall model performance.</li>
+<li>Linear regression often serves as a good baseline model for comparison with more complex machine learning algorithms.</li>
+<li>Linear regression is a well-established algorithm with a rich history and is widely available in various machine learning libraries and software packages.</li>
+</ul>
+<p><strong>Disadvantages of Linear Regression</strong></p>
+<ul>
+<li>Linear regression assumes a linear relationship between the dependent and independent variables. If the relationship is not linear, the model may not perform well.</li>
+<li>Linear regression is sensitive to multicollinearity, which occurs when there is a high correlation between independent variables. Multicollinearity can inflate the variance of the coefficients and lead to unstable model predictions.</li>
+<li>Linear regression assumes that the features are already in a suitable form for the model. Feature engineering may be required to transform features into a format that can be effectively used by the model.</li>
+<li>Linear regression is susceptible to both overfitting and underfitting. Overfitting occurs when the model learns the training data too well and fails to generalize to unseen data. Underfitting occurs when the model is too simple to capture the underlying relationships in the data.</li>
+<li>Linear regression provides limited explanatory power for complex relationships between variables. More advanced machine learning techniques may be necessary for deeper insights.</li>
+</ul>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>Linear regression is a fundamental machine learning algorithm that has been widely used for many years due to its simplicity, interpretability, and efficiency. It is a valuable tool for understanding relationships between variables and making predictions in a variety of applications.</p>
+<p>However, it is important to be aware of its limitations, such as its assumption of linearity and sensitivity to multicollinearity. When these limitations are carefully considered, linear regression can be a powerful tool for data analysis and prediction.</p>
+<h1 id="2gradient-descent-in-linear-regression">2.Gradient Descent in Linear Regression<a class="headerlink" href="#2gradient-descent-in-linear-regression" title="Permanent link">#</a></h1>
+<h2 id="what-is-gradient-descent">What is Gradient Descent?<a class="headerlink" href="#what-is-gradient-descent" title="Permanent link">#</a></h2>
+<p>Gradient Descent is an iterative optimization algorithm that tries to find the optimum value (Minimum/Maximum) of an objective function. It is one of the most used optimization techniques in machine learning projects for updating the parameters of a model in order to minimize a cost function.  </p>
+<p>The main aim of gradient descent is to find the best parameters of a model which gives the highest accuracy on training as well as testing datasets. In gradient descent, The gradient is a vector that points in the direction of the steepest increase of the function at a specific point. Moving in the opposite direction of the gradient allows the algorithm to gradually descend towards lower values of the function, and eventually reaching to the minimum of the function.</p>
+<p><strong>Steps Required in Gradient Descent Algorithm</strong></p>
+<ul>
+<li><strong>Step 1</strong> we first initialize the parameters of the model randomly</li>
+<li><strong>Step 2</strong> Compute the gradient of the cost function with respect to each parameter. It involves making partial differentiation of cost function with respect to the parameters.</li>
+<li><strong>Step 3</strong> Update the parameters of the model by taking steps in the opposite direction of the model. Here we choose a hyperparameter learning rate which is denoted by alpha. It helps in deciding the step size of the gradient.</li>
+<li><strong>Step 4</strong> Repeat steps 2 and 3 iteratively to get the best parameter for the defined model </li>
+</ul>
+<p><strong>Pseudocode for Gradient Descent</strong></p>
+<p><img alt="Regression" src="../img/Regression24.png" /></p>
+<p>To apply this gradient descent on data using any programming language we have to make four new functions using which we can update our parameter and apply it to data to make a prediction. We will see each function one by one and understand it </p>
+<ol>
+<li><strong>gradient_descent –</strong> In the gradient descent function we will make the prediction on a dataset and compute the difference between the predicted and actual target value and accordingly we will update the parameter and hence it will return the updated parameter.</li>
+<li><strong>compute_predictions –</strong> In this function, we will compute the prediction using the parameters at each iteration.</li>
+<li><strong>compute_gradient –</strong> In this function we will compute the error which is the difference between the actual and predicted target value and then compute the gradient using this error and training data.</li>
+<li><strong>update_parameters –</strong> In this separate function we will update the parameter using learning rate and gradient that we got from the compute_gradient function. </li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="k">function</span><span class="w"> </span><span class="nf">gradient_descent</span><span class="p">(</span>X, y, learning_rate, num_iterations<span class="p">):</span>
+<span class="w">    </span><span class="n">Initialize</span><span class="w"> </span><span class="n">parameters</span><span class="w">  </span><span class="p">=</span><span class="w"> </span>θ
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">iter</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">):</span>
+<span class="w">        </span><span class="n">predictions</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">compute_predictions</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span>θ<span class="p">)</span>
+<span class="w">        </span><span class="nb">gradient</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">compute_gradient</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">predictions</span><span class="p">)</span>
+<span class="w">        </span><span class="n">update_parameters</span><span class="p">(</span>θ<span class="p">,</span><span class="w"> </span><span class="nb">gradient</span><span class="p">,</span><span class="w"> </span><span class="n">learning_rate</span><span class="p">)</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>θ
+
+<span class="k">function</span><span class="w"> </span><span class="nf">compute_predictions</span><span class="p">(</span>X, θ<span class="p">):</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">X</span><span class="o">*</span>θ
+
+<span class="k">function</span><span class="w"> </span><span class="nf">compute_gradient</span><span class="p">(</span>X, y, predictions<span class="p">):</span>
+<span class="w">    </span><span class="nb">error</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">predictions</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">y</span>
+<span class="w">    </span><span class="nb">gradient</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Xᵀ</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">error</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">m</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">gradient</span>
+
+<span class="k">function</span><span class="w"> </span><span class="nf">update_parameters</span><span class="p">(</span>θ, gradient, learning_rate<span class="p">):</span>
+<span class="w">    </span>θ<span class="w"> </span><span class="p">=</span><span class="w"> </span>θ<span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">learning_rate</span><span class="w"> </span>⨉<span class="w"> </span><span class="nb">gradient</span>
+</code></pre></div>
+
+<p><strong>Mathematics Behind Gradient Descent</strong></p>
+<p>In the Machine Learning Regression problem, our model targets to get the best-fit regression line to predict the value y based on the given input value (x). While training the model, the model calculates the cost function like Root Mean Squared error between the predicted value (pred) and true value (y). Our model targets to minimize this cost function. 
+To minimize this cost function, the model needs to have the best value of θ1 and θ2(for Univariate linear regression problem). Initially model selects θ1 and θ2 values randomly and then iteratively update these value in order to minimize the cost function until it reaches the minimum. By the time model achieves the minimum cost function, it will have the best θ1 and θ2 values. Using these updated values of θ1 and θ2 in the hypothesis equation of linear equation, our model will predict the output value y.  </p>
+<p><strong>How do θ1 and θ2 values get updated?</strong></p>
+<p><img alt="Regression" src="../img/Regression25.png" /></p>
+<p><strong>How Does Gradient Descent Work</strong></p>
+<p>Gradient descent works by moving downward toward the pits or valleys in the graph to find the minimum value. This is achieved by taking the derivative of the cost function, as illustrated in the figure below. During each iteration, gradient descent step-downs the cost function in the direction of the steepest descent. By adjusting the parameters in this direction, it seeks to reach the minimum of the cost function and find the best-fit values for the parameters. The size of each step is determined by parameter α known as Learning Rate. 
+In the Gradient Descent algorithm, one can infer two points : </p>
+<p>If slope is +ve : θj = θj – (+ve value). Hence the value of θj decreases.</p>
+<p><img alt="Regression" src="../img/Regression26.png" /></p>
+<p><strong>How To Choose Learning Rate</strong></p>
+<p>The choice of correct learning rate is very important as it ensures that Gradient Descent converges in a reasonable time. : </p>
+<ul>
+<li>If we choose <strong>α to be very large,</strong> Gradient Descent can overshoot the minimum. It may fail to converge or even diverge. </li>
+</ul>
+<p><img alt="Regression" src="../img/Regression27.png" /></p>
+<h2 id="python-implementation-of-gradient-descent">Python Implementation of Gradient Descent<a class="headerlink" href="#python-implementation-of-gradient-descent" title="Permanent link">#</a></h2>
+<p>At first, we will import all the necessary Python libraries that we will need for mathematical computation and plotting like numpy for mathematical operations and matplotlib for plotting. Then we will define a class Linear_Regression that represents the linear regression model.</p>
+<p>We will make a update_coeffs method inside the class to update the coefficients (parameters) of the linear regression model using gradient descent. To calculate the error between the predicted output and the actual output we will make a predict method that will make predictions using the current model coefficients. </p>
+<p>For updating and calculating the gradient of the error we will make compute_cost which will apply gradient descent on (mean squared error) between the predicted values and the actual values.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Implementation of gradient descent in linear regression</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Linear_Regression</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">X</span> <span class="o">=</span> <span class="n">X</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Y</span> <span class="o">=</span> <span class="n">Y</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">update_coeffs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">learning_rate</span><span class="p">):</span>
+        <span class="n">Y_pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">predict</span><span class="p">()</span>
+        <span class="n">Y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Y</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">learning_rate</span> <span class="o">*</span> <span class="p">((</span><span class="mi">1</span><span class="o">/</span><span class="n">m</span><span class="p">)</span> <span class="o">*</span>
+                                                  <span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">(</span><span class="n">Y_pred</span> <span class="o">-</span> <span class="n">Y</span><span class="p">)))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">learning_rate</span> <span class="o">*</span> <span class="p">((</span><span class="mi">1</span><span class="o">/</span><span class="n">m</span><span class="p">)</span> <span class="o">*</span>
+                                                  <span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">((</span><span class="n">Y_pred</span> <span class="o">-</span> <span class="n">Y</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">X</span><span class="p">)))</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="p">[]):</span>
+        <span class="n">Y_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([])</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">X</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">X</span><span class="p">:</span>
+            <span class="n">Y_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">append</span><span class="p">(</span><span class="n">Y_pred</span><span class="p">,</span> <span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">x</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">Y_pred</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_current_accuracy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">):</span>
+        <span class="n">p</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">Y_pred</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Y</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Y_pred</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="o">-</span><span class="nb">sum</span><span class="p">(</span>
+            <span class="p">[</span>
+                <span class="nb">abs</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">e</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="n">e</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">e</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="p">)</span><span class="o">/</span><span class="n">n</span>
+    <span class="c1"># def predict(self, b, yi):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">compute_cost</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Y</span><span class="p">)</span>
+        <span class="n">J</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">(</span><span class="n">Y_pred</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">Y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">J</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">plot_best_fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">,</span> <span class="n">fig</span><span class="p">):</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)])</span>
+    <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)])</span>
+
+    <span class="n">regressor</span> <span class="o">=</span> <span class="n">Linear_Regression</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+
+    <span class="n">iterations</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">steps</span> <span class="o">=</span> <span class="mi">100</span>
+    <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="n">costs</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># original best-fit line</span>
+    <span class="n">Y_pred</span> <span class="o">=</span> <span class="n">regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">()</span>
+    <span class="n">regressor</span><span class="o">.</span><span class="n">plot_best_fit</span><span class="p">(</span><span class="n">Y_pred</span><span class="p">,</span> <span class="s1">&#39;Initial Best Fit Line&#39;</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">Y_pred</span> <span class="o">=</span> <span class="n">regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">()</span>
+        <span class="n">cost</span> <span class="o">=</span> <span class="n">regressor</span><span class="o">.</span><span class="n">compute_cost</span><span class="p">(</span><span class="n">Y_pred</span><span class="p">)</span>
+        <span class="n">costs</span><span class="o">.</span><span class="kp">append</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span>
+        <span class="n">regressor</span><span class="o">.</span><span class="n">update_coeffs</span><span class="p">(</span><span class="n">learning_rate</span><span class="p">)</span>
+
+        <span class="n">iterations</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">iterations</span> <span class="o">%</span> <span class="n">steps</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">iterations</span><span class="p">,</span> <span class="s2">&quot;epochs elapsed&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current accuracy is :&quot;</span><span class="p">,</span>
+                  <span class="n">regressor</span><span class="o">.</span><span class="n">get_current_accuracy</span><span class="p">(</span><span class="n">Y_pred</span><span class="p">))</span>
+
+            <span class="n">stop</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you want to stop (y/*)??&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">stop</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+                <span class="k">break</span>
+
+    <span class="c1"># final best-fit line</span>
+    <span class="n">regressor</span><span class="o">.</span><span class="n">plot_best_fit</span><span class="p">(</span><span class="n">Y_pred</span><span class="p">,</span> <span class="s1">&#39;Final Best Fit Line&#39;</span><span class="p">)</span>
+
+    <span class="c1"># plot to verify cost function decreases</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="s1">&#39;Verification&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">iterations</span><span class="p">),</span> <span class="n">costs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="c1"># if user wants to predict using the regressor:</span>
+    <span class="n">regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)])</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mf">100</span><span class="w"> </span><span class="n">epochs</span><span class="w"> </span><span class="n">elapsed</span>
+<span class="n">Current</span><span class="w"> </span><span class="n">accuracy</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mf">0.9836456109008862</span>
+</code></pre></div>
+
+<p><img alt="Regression" src="../img/Regression28.png" /></p>
+<p><img alt="Regression" src="../img/Regression29.png" /></p>
+<h2 id="advantages-of-gradient-descent">Advantages Of Gradient Descent<a class="headerlink" href="#advantages-of-gradient-descent" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Flexibility:</strong> Gradient Descent can be used with various cost functions and can handle non-linear regression problems.</li>
+<li><strong>Scalability:</strong> Gradient Descent is scalable to large datasets since it updates the parameters for each training example one at a time.</li>
+<li><strong>Convergence:</strong> Gradient Descent can converge to the global minimum of the cost function, provided that the learning rate is set appropriately.</li>
+</ul>
+<h2 id="disadvantages-of-gradient-descent">Disadvantages Of Gradient Descent<a class="headerlink" href="#disadvantages-of-gradient-descent" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Sensitivity to Learning Rate:</strong> The choice of learning rate can be critical in Gradient Descent since using a high learning rate can cause the algorithm to overshoot the minimum, while a low learning rate can make the algorithm converge slowly.</li>
+<li><strong>Slow Convergence:</strong> Gradient Descent may require more iterations to converge to the minimum since it updates the parameters for each training example one at a time.</li>
+<li><strong>Local Minima:</strong> Gradient Descent can get stuck in local minima if the cost function has multiple local minima.</li>
+<li><strong>Noisy updates:</strong> The updates in Gradient Descent are noisy and have a high variance, which can make the optimization process less stable and lead to oscillations around the minimum.</li>
+</ul>
+<p>Overall, Gradient Descent is a useful optimization algorithm for linear regression, but it has some limitations and requires careful tuning of the learning rate to ensure convergence.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Deploying Milvus Vectorstore Helm Chart - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Deploying Milvus Vectorstore Helm Chart";
+        var mkdocs_page_input_path = "AIML/aws/Deploying-Milvus-Vectorstore-Helm-Chart.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/metrics-evaluation.html">Metrics Evaluation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Deploying Milvus Vectorstore Helm Chart</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="deploying-milvus-vectorstore-helm-chart">Deploying Milvus Vectorstore Helm Chart<a class="headerlink" href="#deploying-milvus-vectorstore-helm-chart" title="Permanent link">#</a></h2>
+<ol>
+<li>Create a new nanespace for vectorstore</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>kubectl create namespace vectorstore
+</code></pre></div>
+
+<ol>
+<li>Add the milvus repository</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>helm repo add milvus https://zilliztech.github.io/milvus-helm/
+</code></pre></div>
+
+<ol>
+<li>Update the helm repository</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>helm repo update
+</code></pre></div>
+
+<ol>
+<li>Create a file named custom_value.yaml with below content to utilize GPU's</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="n">standalone</span><span class="o">:</span>
+<span class="w">  </span><span class="n">resources</span><span class="o">:</span>
+<span class="w">    </span><span class="n">requests</span><span class="o">:</span>
+<span class="w">      </span><span class="n">nvidia</span><span class="o">.</span><span class="na">com</span><span class="o">/</span><span class="n">gpu</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span>
+<span class="w">    </span><span class="n">limits</span><span class="o">:</span>
+<span class="w">      </span><span class="n">nvidia</span><span class="o">.</span><span class="na">com</span><span class="o">/</span><span class="n">gpu</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span>
+</code></pre></div>
+
+<ol>
+<li>Install the helm chart and point to the above created file using -f argument as shown below.</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>helm install milvus milvus/milvus --set cluster.enabled=false --set etcd.replicaCount=1 --set minio.mode=standalone --set pulsar.enabled=false -f custom_value.yaml -n vectorstore
+
+
+NAME: milvus
+LAST DEPLOYED: Wed May  7 13:00:44 2025
+NAMESPACE: vectorstore
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+</code></pre></div>
+
+<ol>
+<li>Check status of the pods</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>kubectl get pods -n vectorstore
+NAME                                 READY   STATUS      RESTARTS   AGE
+milvus-etcd-0                        1/1     Running     0          117s
+milvus-minio-cd798dd6f-zszjv         1/1     Running     0          117s
+milvus-pulsarv3-bookie-0             1/1     Running     0          117s
+milvus-pulsarv3-bookie-1             1/1     Running     0          117s
+milvus-pulsarv3-bookie-2             1/1     Running     0          116s
+milvus-pulsarv3-bookie-init-6q6ts    0/1     Completed   0          117s
+milvus-pulsarv3-broker-0             1/1     Running     0          117s
+milvus-pulsarv3-broker-1             1/1     Running     0          117s
+milvus-pulsarv3-proxy-0              0/1     Running     0          117s
+milvus-pulsarv3-proxy-1              0/1     Running     0          117s
+milvus-pulsarv3-pulsar-init-66kcq    0/1     Completed   0          117s
+milvus-pulsarv3-recovery-0           1/1     Running     0          117s
+milvus-pulsarv3-zookeeper-0          1/1     Running     0          117s
+milvus-pulsarv3-zookeeper-1          1/1     Running     0          116s
+milvus-pulsarv3-zookeeper-2          1/1     Running     0          116s
+milvus-standalone-7bf84684d4-bt9tv   0/1     Running     0          117s
+</code></pre></div>
+
+<h2 id="configuring-examples">Configuring Examples<a class="headerlink" href="#configuring-examples" title="Permanent link">#</a></h2>
+<p>You can configure various parameters such as prompts and vectorstore using environment variables. Modify the environment variables in the env section of the query service in the values.yaml file of the respective examples.</p>
+<p><strong>Configuring Prompts</strong></p>
+<div class="codehilite"><pre><span></span><code>---
+depth: 2
+local: true
+backlinks: none
+---
+</code></pre></div>
+
+<p>Each example utilizes a <code>prompt.yaml</code> file that defines prompts for different contexts. These prompts guide the RAG model in generating appropriate responses. You can tailor these prompts to fit your specific needs and achieve desired responses from the models.</p>
+<h2 id="accessing-prompts">Accessing Prompts<a class="headerlink" href="#accessing-prompts" title="Permanent link">#</a></h2>
+<p>The prompts are loaded as a Python dictionary within the application. To access this dictionary, you can use the <code>get_prompts()</code> function provided by the <code>utils</code> module. This function retrieves the complete dictionary of prompts.</p>
+<p>Consider we have following <code>prompt.yaml</code> file which is under <code>files</code> directory for all the helm charts</p>
+<p>You can access it's chat_template using following code in you chain server</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">RAG.src.chain_server.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_prompts</span>
+
+<span class="n">prompts</span> <span class="o">=</span> <span class="n">get_prompts</span><span class="p">()</span>
+
+<span class="n">chat_template</span> <span class="o">=</span> <span class="n">prompts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;chat_template&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li>Once you have updated the prompt you can update the deployment for any of the examples by using the command below.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>helm upgrade &lt;rag-example-name&gt; &lt;rag-example-helm-chart-path&gt; -n &lt;rag-example-namespace&gt; --set imagePullSecret.password=$NGC_CLI_API_KEY
+</code></pre></div>
+
+<h2 id="configuring-vectorstore">Configuring VectorStore<a class="headerlink" href="#configuring-vectorstore" title="Permanent link">#</a></h2>
+<p>The vector store can be modified from environment variables. You can update:</p>
+<ol>
+<li>
+<p><code>APP_VECTORSTORE_NAME:</code> This is the vector store name. Currently, we support milvus and pgvector Note: This only specifies the vector store name. The vector store container needs to be started separately.</p>
+</li>
+<li>
+<p><code>APP_VECTORSTORE_URL:</code> The host machine URL where the vector store is running.</p>
+</li>
+</ol>
+<h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">#</a></h2>
+<p>Learn more about how to use NVIDIA NIM microservices for RAG through our Deep Learning Institute. Access the course here.</p>
+<h2 id="security-considerations">Security considerations<a class="headerlink" href="#security-considerations" title="Permanent link">#</a></h2>
+<p>The RAG applications are shared as reference architectures and are provided “as is”. The security of them in production environments is the responsibility of the end users deploying it. When deploying in a production environment, please have security experts review any potential risks and threats (including direct and indirect prompt injection); define the trust boundaries, secure the communication channels, integrate AuthN &amp; AuthZ with appropriate access controls, keep the deployment including the containers up to date, ensure the containers are secure and free of vulnerabilities.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

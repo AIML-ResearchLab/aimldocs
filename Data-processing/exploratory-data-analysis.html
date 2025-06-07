@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Exploratory Data Analysis(EDA) - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Exploratory Data Analysis(EDA)";
+        var mkdocs_page_input_path = "Data-processing/exploratory-data-analysis.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/metrics-evaluation.html">Metrics Evaluation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Data Processing</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Exploratory Data Analysis(EDA)</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="" href="building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Data Processing</li>
+      <li class="breadcrumb-item active">Exploratory Data Analysis(EDA)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="exploratory-data-analysis-eda-tools-used-in-machine-learning">Exploratory Data Analysis (EDA) tools used in Machine Learning<a class="headerlink" href="#exploratory-data-analysis-eda-tools-used-in-machine-learning" title="Permanent link">#</a></h2>
+<h2 id="popular-eda-tools-and-libraries">🧰 Popular EDA Tools and Libraries<a class="headerlink" href="#popular-eda-tools-and-libraries" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool / Library</th>
+<th>Description</th>
+<th>Language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pandas Profiling</strong></td>
+<td>Auto-generates a detailed EDA report from a pandas DataFrame.</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><strong>Sweetviz</strong></td>
+<td>Generates beautiful, high-density visualizations and comparisons between datasets.</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><strong>D-Tale</strong></td>
+<td>Combines pandas with a Flask web server for visual data exploration in a browser.</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><strong>AutoViz</strong></td>
+<td>Automatically visualizes any dataset with just one line of code.</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><strong>EDA (Dataprep)</strong></td>
+<td>Simple, interactive EDA with summary statistics, correlations, and missing value analysis.</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><strong>Lux</strong></td>
+<td>Augments pandas DataFrames with visual recommendations.</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><strong>Tidyverse (ggplot2)</strong></td>
+<td>A collection of R packages including tools for data wrangling and visualization.</td>
+<td>R</td>
+</tr>
+<tr>
+<td><strong>DataExplorer</strong></td>
+<td>A powerful EDA package for automated report generation in R.</td>
+<td>R</td>
+</tr>
+<tr>
+<td><strong>Orange</strong></td>
+<td>A visual programming tool for EDA and ML without coding.</td>
+<td>GUI-based</td>
+</tr>
+<tr>
+<td><strong>Tableau / Power BI</strong></td>
+<td>Business intelligence tools that allow drag-and-drop EDA and visual analytics.</td>
+<td>GUI-based</td>
+</tr>
+<tr>
+<td><strong>Qlik Sense</strong></td>
+<td>Interactive data visualization and EDA in enterprise environments.</td>
+<td>GUI-based</td>
+</tr>
+<tr>
+<td><strong>Kibana</strong></td>
+<td>For time-series and log-based data exploration in Elasticsearch.</td>
+<td>Web-based</td>
+</tr>
+</tbody>
+</table>
+<h2 id="popular-python-libraries-used-in-manual-eda">🔍 Popular Python Libraries Used in Manual EDA<a class="headerlink" href="#popular-python-libraries-used-in-manual-eda" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pandas</strong></td>
+<td>Data manipulation and descriptive stats</td>
+</tr>
+<tr>
+<td><strong>matplotlib</strong></td>
+<td>Basic plotting</td>
+</tr>
+<tr>
+<td><strong>seaborn</strong></td>
+<td>Advanced statistical visualization</td>
+</tr>
+<tr>
+<td><strong>plotly</strong></td>
+<td>Interactive and dynamic visualizations</td>
+</tr>
+<tr>
+<td><strong>missingno</strong></td>
+<td>Missing value visualization</td>
+</tr>
+<tr>
+<td><strong>scipy / statsmodels</strong></td>
+<td>Statistical summaries, tests</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pandas-profiling">Pandas Profiling<a class="headerlink" href="#pandas-profiling" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="sx">!pip install ydata-profiling</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">ydata_profiling</span><span class="w"> </span><span class="kn">import</span> <span class="n">ProfileReport</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_iris</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ydata_profiling</span><span class="w"> </span><span class="kn">import</span> <span class="n">ProfileReport</span>
+
+<span class="c1"># Load the Iris dataset</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">target</span>
+
+<span class="c1"># Generate the profile report</span>
+<span class="n">profile</span> <span class="o">=</span> <span class="n">ProfileReport</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Iris Dataset Profile Report&quot;</span><span class="p">,</span> <span class="n">explorative</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Save the report as an HTML file</span>
+<span class="n">profile</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&quot;iris_profile_report.html&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><a href="iris_profile_report.html">Click here to view the Iris Profile Report</a></p>
+<h2 id="autoviz">autoviz<a class="headerlink" href="#autoviz" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="sx">!pip install autoviz</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">autoviz.AutoViz_Class</span><span class="w"> </span><span class="kn">import</span> <span class="n">AutoViz_Class</span>
+<span class="n">av</span> <span class="o">=</span> <span class="n">AutoViz_Class</span><span class="p">()</span>
+
+<span class="n">report</span> <span class="o">=</span> <span class="n">av</span><span class="o">.</span><span class="n">AutoViz</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">dfte</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">depVar</span><span class="o">=</span><span class="s2">&quot;target&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="autoviz" src="image/autoviz.png" /></p>
+<h2 id="sweetviz">sweetviz<a class="headerlink" href="#sweetviz" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="sx">!pip install sweetviz</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="sx">!pip install numpy==1.24.4</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_iris</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sweetviz</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sv</span>
+
+<span class="c1"># Load the Iris datasetdata</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">target</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span>Generate a report
+report = sv.analyze(df)
+report.show_html(&#39;iris_report.html&#39;)
+</code></pre></div>
+
+<p><a href="iris_report.html">Click here to view the Iris sweetviz Report</a></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="n">train_df</span><span class="p">,</span> <span class="n">test_df</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Compare two Datasets</span>
+
+<span class="n">compare_report</span> <span class="o">=</span> <span class="n">sv</span><span class="o">.</span><span class="n">compare</span><span class="p">([</span><span class="n">train_df</span><span class="p">,</span> <span class="s2">&quot;Training Data&quot;</span><span class="p">],</span> <span class="p">[</span><span class="n">test_df</span><span class="p">,</span> <span class="s2">&quot;Test Data&quot;</span><span class="p">])</span>
+<span class="n">compare_report</span><span class="o">.</span><span class="n">show_html</span><span class="p">(</span><span class="s1">&#39;compare_report.html&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><a href="compare_report.html">Click here to view the Iris sweetviz Report</a></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="n">titanic_df</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;titanic&#39;</span><span class="p">)</span>
+
+<span class="n">report</span> <span class="o">=</span> <span class="n">sv</span><span class="o">.</span><span class="n">analyze</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">,</span> <span class="n">target_feat</span><span class="o">=</span><span class="s1">&#39;survived&#39;</span><span class="p">)</span>
+<span class="n">report</span><span class="o">.</span><span class="n">show_html</span><span class="p">(</span><span class="s1">&#39;titanic_report.html&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><a href="titanic_report.html">Click here to view the Iris sweetviz titanic Report</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="unstructured-data.html" class="btn btn-neutral float-left" title="Unstructured Data"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Databases/PostgreSQL.html" class="btn btn-neutral float-right" title="PostgreSQL">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="unstructured-data.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Databases/PostgreSQL.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

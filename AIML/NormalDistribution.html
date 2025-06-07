@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Normal (Gaussian) Distribution - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Normal (Gaussian) Distribution";
+        var mkdocs_page_input_path = "AIML/NormalDistribution.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/metrics-evaluation.html">Metrics Evaluation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Normal (Gaussian) Distribution</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="normal-gaussian-distribution">Normal (Gaussian) Distribution<a class="headerlink" href="#normal-gaussian-distribution" title="Permanent link">#</a></h1>
+<h1 id="normal-distribution">Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permanent link">#</a></h1>
+<p>The Normal Distribution is one of the most important distributions.</p>
+<p>It is also called the Gaussian Distribution after the German mathematician Carl Friedrich Gauss.</p>
+<p>The <strong>Normal Distribution</strong> is a <strong>bell-shaped curve</strong> that shows how values are distributed:</p>
+<p>Use the <strong>random.normal()</strong> method to get a Normal Data Distribution.</p>
+<ul>
+<li>Most values are <strong>around the mean</strong></li>
+<li>Fewer values are at the <strong>extremes</strong></li>
+</ul>
+<p>It's the most commonly used distribution in statistics and machine learning.</p>
+<h3 id="real-world-examples">📊 Real-World Examples<a class="headerlink" href="#real-world-examples" title="Permanent link">#</a></h3>
+<ul>
+<li>Heights of people</li>
+<li>Test scores</li>
+<li>Blood pressure readings</li>
+<li>Measurement errors</li>
+</ul>
+<p>These all often follow a normal distribution.</p>
+<h3 id="mathematical-definition">🔢 Mathematical Definition<a class="headerlink" href="#mathematical-definition" title="Permanent link">#</a></h3>
+<p>The probability density function (PDF) of a normal distribution:</p>
+<p><img alt="numpy" src="img/image2.png" /></p>
+<p>Where:
+- μ = mean (center of the distribution)
+- σ = standard deviation (spread or width of the bell)
+- e = Euler’s number (≈ 2.718)</p>
+<h3 id="key-properties">📌 Key Properties<a class="headerlink" href="#key-properties" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code>Property                        Meaning
+Symmetric                       Centered at the mean
+Bell-shaped                     Smooth curve, peak at mean
+Mean = Median = Mode            All are the same in a perfect normal dist
+Defined by two params           Mean (μ), Std. Dev. (σ)
+Area under curve = 1            Total probability is 100%
+</code></pre></div>
+
+<h3 id="empirical-rule-68-95-997">📏 Empirical Rule (68-95-99.7)<a class="headerlink" href="#empirical-rule-68-95-997" title="Permanent link">#</a></h3>
+<p>The Empirical Rule tells us how data is spread around the mean (center) when the data is normally distributed.</p>
+<p>Here’s what it means:</p>
+<h3 id="68-of-data-lies-within-1-standard-deviation">✅ 68% of data lies within ±1 standard deviation (σ)<a class="headerlink" href="#68-of-data-lies-within-1-standard-deviation" title="Permanent link">#</a></h3>
+<ul>
+<li>Range: from <strong>-1 to +1</strong></li>
+<li>Example: If test scores are normally distributed with mean = 70 and std dev = 10.<ul>
+<li>then 68% of students scored between 60 and 80</li>
+</ul>
+</li>
+</ul>
+<h3 id="95-of-data-lies-within-2-standard-deviations">✅ 95% of data lies within ±2 standard deviations (σ)<a class="headerlink" href="#95-of-data-lies-within-2-standard-deviations" title="Permanent link">#</a></h3>
+<ul>
+<li>Range: from <strong>-2 to +2</strong></li>
+<li>So almost all data is within this range</li>
+</ul>
+<h3 id="997-of-data-lies-within-3-standard-deviations">✅ 99.7% of data lies within ±3 standard deviations (σ)<a class="headerlink" href="#997-of-data-lies-within-3-standard-deviations" title="Permanent link">#</a></h3>
+<ul>
+<li>Range: from <strong>-3 to +3</strong></li>
+<li>Nearly all the data lives here</li>
+</ul>
+<h3 id="visualization-idea">📈 Visualization Idea<a class="headerlink" href="#visualization-idea" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code>     -3σ      -2σ      -1σ      0       +1σ     +2σ     +3σ
+      |--------|--------|-------|--------|-------|--------|
+      |   0.15%|  2.35% | 13.5% | 34%    |13.5%  | 2.35%  | 0.15% |
+</code></pre></div>
+
+<p>Add it all up:</p>
+<ul>
+<li><strong>34% + 34% = 68% within ±1σ</strong></li>
+<li><strong>13.5% + 34% + 34% + 13.5% = 95% within ±2σ</strong></li>
+<li><strong>Almost everything = 99.7% within ±3σ</strong></li>
+</ul>
+<p>The Bell Curve is Symmetrical
+So, if 68% of the data lies within ±1σ, that means:</p>
+<ul>
+<li>34% is on the <strong>left side</strong> of the mean (between -1σ and 0)</li>
+<li>34% is on the <strong>right</strong> side (between 0 and +1σ)</li>
+</ul>
+<h3 id="full-breakdown-of-standard-normal-distribution">📊 Full Breakdown of Standard Normal Distribution<a class="headerlink" href="#full-breakdown-of-standard-normal-distribution" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code>Range       % of Total Data                 Notes
+μ ± 1σ      68%                             From -1σ to +1σ (34% left, 34% right)
+μ ± 2σ      95%                             From -2σ to +2σ → includes 68% + more
+μ ± 3σ      99.7%                           Almost all data (everything within -3 to +3σ)
+</code></pre></div>
+
+<h3 id="but-what-about-whats-outside-those-ranges">🧮 But what about what's outside those ranges?<a class="headerlink" href="#but-what-about-whats-outside-those-ranges" title="Permanent link">#</a></h3>
+<p>Here’s the exact breakdown of the tails:</p>
+<div class="codehilite"><pre><span></span><code>     &lt; -3σ       -2σ to -3σ    -1σ to -2σ    -1σ to 0    0 to +1σ   +1σ to +2σ   +2σ to +3σ    &gt; +3σ
+     0.15%        2.35%         13.5%         34%         34%        13.5%        2.35%         0.15%
+</code></pre></div>
+
+<ul>
+<li><strong>2.35%</strong> of the data lies between <strong>-2σ and -3σ</strong>, and another <strong>2.35%</strong> between <strong>+2σ and +3σ</strong></li>
+<li><strong>0.15%</strong> lies beyond <strong>-3σ</strong> and another <strong>0.15%</strong> beyond <strong>+3σ</strong></li>
+</ul>
+<h3 id="quick-visual">🧠 Quick Visual<a class="headerlink" href="#quick-visual" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="w">       </span><span class="o">|&lt;--</span><span class="mf">0.15</span><span class="o">--|&lt;--</span><span class="mf">2.35</span><span class="o">--|&lt;--</span><span class="mf">13.5</span><span class="o">--|&lt;--</span><span class="mi">34</span><span class="o">--|--</span><span class="mi">34</span><span class="o">--&gt;|--</span><span class="mf">13.5</span><span class="o">--&gt;|--</span><span class="mf">2.35</span><span class="o">--&gt;|--</span><span class="mf">0.15</span><span class="o">--&gt;|</span>
+<span class="w">       </span><span class="o">-</span><span class="mi">3</span><span class="err">σ</span><span class="w">       </span><span class="o">-</span><span class="mi">2</span><span class="err">σ</span><span class="w">       </span><span class="o">-</span><span class="mi">1</span><span class="err">σ</span><span class="w">       </span><span class="mi">0</span><span class="w">       </span><span class="o">+</span><span class="mi">1</span><span class="err">σ</span><span class="w">      </span><span class="o">+</span><span class="mi">2</span><span class="err">σ</span><span class="w">       </span><span class="o">+</span><span class="mi">3</span><span class="err">σ</span>
+</code></pre></div>
+
+<ul>
+<li>The <strong>total area under the curve</strong> is 100%</li>
+<li><strong>99.7%</strong> is within <strong>±3σ</strong></li>
+<li>The remaining <strong>0.3%</strong> (<strong>0.15%</strong> on each end) is extreme outlier data</li>
+</ul>
+<p><strong>Note:</strong> These values are extremely rare — and in machine learning or statistics, they may be considered <strong>anomalies</strong> or <strong>noise</strong>.</p>
+<p><img alt="numpy" src="img/image4.png" /></p>
+<p>Here’s the visual breakdown of the normal distribution with each region clearly marked:</p>
+<ul>
+<li>The center green areas (±1σ) represent <strong>68%</strong></li>
+<li>The yellow areas between ±1σ to ±2σ add up to <strong>27%</strong> (13.5% each side)</li>
+<li>The orange areas between ±2σ to ±3σ contribute <strong>4.7%</strong> (2.35% each side)</li>
+<li>The red tails beyond ±3σ are the extreme <strong>0.3%</strong> (0.15% on each end)</li>
+</ul>
+<p>It has three parameters:</p>
+<h1 id="example-students-test-scores">🎓 Example: Students' Test Scores<a class="headerlink" href="#example-students-test-scores" title="Permanent link">#</a></h1>
+<p>Imagine a standardized math test is given to 10,000 students.</p>
+<p><strong>The scores are:</strong>
+- <strong>Normally distributed</strong>
+- <strong>Mean (μ)</strong> = 70
+- <strong>Standard Deviation (σ)</strong> = 10</p>
+<h3 id="what-this-means">🧠 What this means:<a class="headerlink" href="#what-this-means" title="Permanent link">#</a></h3>
+<ul>
+<li>Most students score around <strong>70</strong></li>
+<li>Some score higher, some lower, in a symmetric bell shape</li>
+</ul>
+<h3 id="lets-apply-the-empirical-rule">📊 Let’s apply the Empirical Rule:<a class="headerlink" href="#lets-apply-the-empirical-rule" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code>Score Range         Std Dev Range           % of Students               Count out of 10,000
+60 to 80            μ ± 1σ                  68%                         6,800 students
+50 to 90            μ ± 2σ                  95%                         9,500 students
+40 to 100           μ ± 3σ                  99.7%                       9,970 students
+&lt; 40 or &gt; 100       Outside ±3σ             0.3%                        ~30 students
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>Score Range         Between Which σ             % of Students           Real Count (out of 10,000)
+&lt; 40                Less than -3σ               0.15%                   15 students
+40–50               -3σ to -2σ                  2.35%                   235 students
+50–60               -2σ to -1σ                  13.5%                   1,350 students
+60–70               -1σ to 0σ                   34%                     3,400 students
+70–80               0σ to +1σ                   34%                     3,400 students
+80–90               +1σ to +2σ                  13.5%                   1,350 students
+90–100              +2σ to +3σ                  2.35%                   235 students
+&gt; 100               More than +3σ               0.15%                   15 students
+</code></pre></div>
+
+<ul>
+<li>
+<p><strong>loc</strong> - (Mean) where the peak of the bell exists.</p>
+</li>
+<li>
+<p><strong>scale</strong> - (Standard Deviation) how flat the graph distribution should be.</p>
+</li>
+<li>
+<p><strong>size</strong> - The shape of the returned array.</p>
+</li>
+</ul>
+<p>Example
+Generate a random normal distribution of size 2x3:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="kp">size</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">Output</span><span class="p">:</span>
+<span class="p">[[</span> <span class="mf">1.08425956</span>  <span class="mf">0.21924346</span> <span class="o">-</span><span class="mf">0.87622924</span><span class="p">]</span>
+ <span class="p">[</span><span class="o">-</span><span class="mf">1.84470937</span> <span class="o">-</span><span class="mf">0.02399501</span> <span class="o">-</span><span class="mf">1.62717006</span><span class="p">]]</span>
+</code></pre></div>
+
+<p>Example
+Generate a random normal distribution of size 2x3 with mean at 1 and standard deviation of 2:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="kp">size</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">Output</span><span class="p">:</span>
+<span class="p">[[</span><span class="o">-</span><span class="mf">1.1917958</span>   <span class="mf">1.32752796</span>  <span class="mf">1.04626068</span><span class="p">]</span>
+ <span class="p">[</span><span class="o">-</span><span class="mf">1.74596895</span>  <span class="mf">1.31380769</span>  <span class="mf">1.01775866</span><span class="p">]]</span>
+</code></pre></div>
+
+<h2 id="visualization-of-normal-distribution">Visualization of Normal Distribution<a class="headerlink" href="#visualization-of-normal-distribution" title="Permanent link">#</a></h2>
+<p>Example</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="kp">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">),</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;kde&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Output:
+<img alt="numpy" src="img/image1.png" /></p>
+<p><strong>Note:</strong> The curve of a Normal Distribution is also known as the Bell Curve because of the bell-shaped curve.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
