@@ -462,6 +462,8 @@ paths:
 **Code:**
 
 ```
+# Version-1
+
 import boto3
 import re
 import json
@@ -585,6 +587,99 @@ def lambda_handler(event, context):
         }
 ```
 
+```
+# Version-2
+
+import boto3
+import re
+import json
+from datetime import datetime, timedelta
+
+logs_client = boto3.client('logs')
+
+def extract_email(message):
+    # Basic regex for email extraction; adjust based on your logs
+    match = re.search(r'[\w\.-]+@[\w\.-]+', message)
+    return match.group(0) if match else None
+
+def lambda_handler(event, context):
+    log_group_name = event.get("log_group_name", "/eks/otp-webapp")
+    end_time = int(datetime.utcnow().timestamp() * 1000)
+    start_time = int((datetime.utcnow() - timedelta(hours=10)).timestamp() * 1000)
+
+    search_keywords = [
+        "Attempting to send OTP",
+        "OTP email sent in",
+        "Failed to send OTP"
+    ]
+
+    result_logs = []
+
+    try:
+        paginator = logs_client.get_paginator('filter_log_events')
+        page_iterator = paginator.paginate(
+            logGroupName=log_group_name,
+            startTime=start_time,
+            endTime=end_time
+        )
+
+        for page in page_iterator:
+            for event_item in page.get('events', []):
+                message = event_item['message']
+                if any(keyword in message for keyword in search_keywords):
+                    timestamp = datetime.utcfromtimestamp(event_item['timestamp'] / 1000).strftime('%Y-%m-%d %H:%M:%S')
+                    email_id = extract_email(message)
+
+                    result_logs.append({
+                        "timestamp": timestamp,
+                        "message": message,
+                        "email_id": email_id
+                    })
+
+        response_body = {"application/json": {"body": json.dumps(result_logs)}}
+
+        action_response = {
+            "actionGroup": event["actionGroup"],
+            "apiPath": event["apiPath"],
+            "httpMethod": event["httpMethod"],
+            "httpStatusCode": 200,
+            "responseBody": response_body,
+        }
+
+        return {
+            "messageVersion": "1.0",
+            "response": action_response,
+            "sessionAttributes": event.get("sessionAttributes", {}),
+            "promptSessionAttributes": event.get("promptSessionAttributes", {}),
+        }
+
+    except Exception as e:
+        error_response_body = {
+            "application/json": {
+                "body": json.dumps({
+                    "error": "Lambda Error",
+                    "message": str(e)
+                })
+            }
+        }
+
+        action_response = {
+            "actionGroup": event.get("actionGroup", "Unknown"),
+            "apiPath": event.get("apiPath", "/unknown"),
+            "httpMethod": event.get("httpMethod", "GET"),
+            "httpStatusCode": 500,
+            "responseBody": error_response_body,
+        }
+
+        return {
+            "messageVersion": "1.0",
+            "response": action_response,
+            "sessionAttributes": event.get("sessionAttributes", {}),
+            "promptSessionAttributes": event.get("promptSessionAttributes", {}),
+        }
+```
+
+
 **Test:**
 Event JSON
 
@@ -660,7 +755,8 @@ CloudWatch Logs
 				"logs:DescribeLogStreams"
 			],
 			"Resource": [
-				"arn:aws:logs:us-east-1:777203855866:log-group:/eks/otp-webapp:*"
+				"arn:aws:logs:us-east-1:777203855866:log-group:/eks/otp-webapp:*",
+				"arn:aws:logs:us-east-1:777203855866:log-group:sns/us-east-1/777203855866/otp_delay_poc:*"
 			]
 		}
 	]
@@ -1093,3 +1189,473 @@ The OTP delivery metrics show a WARNING status with a maximum delivery time of 3
 --- End of Agent Response ---
 ```
 
+## How to setup AWS SNS to send SMS to Mobile
+
+- Amazon SNS - Topics - Create topic
+
+![SNS](./image/sns1.png)
+
+![SNS](./image/sns2.png)
+
+- Amazon SNS - Topics - otp_delay_poc - Create subscription
+
+![SNS](./image/sns3.png)
+
+- Delivery status logging - AWS Lambda
+- IAM roles - Create new service role (IAM role for successful deliveries & IAM role for failed deliveries)
+
+![SNS](./image/sns4.png)
+
+![SNS](./image/sns5.png)
+
+- Amazon SNS - Subscriptions - Create subscription
+
+![SNS](./image/sns6.png)
+
+- **Protocol** : AWS Lambda
+- **Endpoint**: Lambda function created ex:(sns-logger-function)
+                arn:aws:lambda:us-east-1:777203855866:function:sns-logger-function
+
+- Lambda - Functions - sns-logger-function
+
+```
+import json
+import logging
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+def lambda_handler(event, context):
+    logger.info("📩 SNS Message Received")
+
+    try:
+        logger.info("✅ Event Details:")
+        logger.info(json.dumps(event))
+
+        # You can further parse the message if needed:
+        for record in event.get('Records', []):
+            sns = record.get('Sns', {})
+            message_id = sns.get('MessageId', 'N/A')
+            subject = sns.get('Subject', 'No Subject')
+            message = sns.get('Message', 'No Message')
+            timestamp = sns.get('Timestamp', 'No Timestamp')
+
+            logger.info(f"🟢 MessageId: {message_id}")
+            logger.info(f"📌 Subject: {subject}")
+            logger.info(f"📝 Message: {message}")
+            logger.info(f"⏱ Timestamp: {timestamp}")
+
+        return {
+            "statusCode": 200,
+            "body": json.dumps("SNS message processed successfully.")
+        }
+
+    except Exception as e:
+        logger.error("❌ Error processing SNS message")
+        logger.error(str(e))
+        return {
+            "statusCode": 500,
+            "body": json.dumps("Error processing SNS message.")
+        }
+```
+
+## OTP Service APP
+
+```
+import streamlit as st
+import smtplib
+import random
+import os
+import boto3
+import logging
+from email.message import EmailMessage
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
+SNS_TOPIC_ARN = os.getenv("SNS_TOPIC_ARN")
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
+
+# Streamlit session state for OTPs
+if "otp_store" not in st.session_state:
+    st.session_state.otp_store = {}
+
+# Generate a 6-digit OTP
+def generate_otp():
+    otp = str(random.randint(100000, 999999))
+    logger.info(f"Generated OTP: {otp}")
+    return otp
+
+# Send OTP via Email
+def send_otp_email(receiver_email, otp):
+    msg = EmailMessage()
+    msg["Subject"] = "Your OTP Code"
+    msg["From"] = EMAIL_ADDRESS
+    msg["To"] = receiver_email
+    msg.set_content(f"Your OTP is: {otp}")
+
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+            smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+            smtp.send_message(msg)
+        logger.info(f"OTP sent to email: {receiver_email}")
+        return True, "✅ OTP sent to email"
+    except Exception as e:
+        logger.error(f"Email Error: {e}")
+        return False, f"❌ Email Error: {e}"
+
+# Send OTP via SNS Topic (Transactional SMS)
+def send_otp_sms(phone_number, otp):
+    sns = boto3.client("sns", region_name=AWS_REGION)
+    message = f"Your OTP is: {otp}"
+
+    try:
+        response = sns.publish(
+            TopicArn=SNS_TOPIC_ARN,
+            Message=message,
+            MessageAttributes={
+                "AWS.SNS.SMS.SMSType": {
+                    "DataType": "String",
+                    "StringValue": "Transactional"
+                },
+                "AWS.SNS.SMS.SenderID": {
+                    "DataType": "String",
+                    "StringValue": "OTPSystem"  # Optional custom sender ID
+                }
+            }
+        )
+        logger.info(f"OTP sent via SNS topic to: {phone_number} | MessageId: {response['MessageId']}")
+        return True, "✅ OTP sent via SNS topic"
+    except Exception as e:
+        logger.error(f"SMS Error: {e}")
+        return False, f"❌ SMS Error: {e}"
+
+# UI
+st.title("🔐 OTP Verification System")
+action = st.sidebar.radio("Select Action", ["Request OTP", "Verify OTP"])
+
+if action == "Request OTP":
+    st.subheader("Send OTP")
+    method = st.radio("Send via:", ["Email", "Mobile (SMS)"])
+
+    if method == "Email":
+        email = st.text_input("Enter your email")
+        if st.button("Send OTP"):
+            if not email:
+                st.warning("Please enter your email.")
+            else:
+                otp = generate_otp()
+                success, message = send_otp_email(email, otp)
+                if success:
+                    st.session_state.otp_store[email] = otp
+                    st.success(message)
+                else:
+                    st.error(message)
+
+    elif method == "Mobile (SMS)":
+        phone = st.text_input("Enter your phone number (e.g., +91xxxxxxxxxx)")
+        if st.button("Send OTP"):
+            if not phone.startswith("+"):
+                st.warning("Phone number must be in E.164 format (e.g., +91xxxxxxxxxx)")
+            else:
+                otp = generate_otp()
+                success, message = send_otp_sms(phone, otp)
+                if success:
+                    st.session_state.otp_store[phone] = otp
+                    st.success(message)
+                else:
+                    st.error(message)
+
+elif action == "Verify OTP":
+    st.subheader("Verify OTP")
+    identifier = st.text_input("Enter your email or phone number")
+    user_otp = st.text_input("Enter the OTP you received")
+
+    if st.button("Verify"):
+        actual_otp = st.session_state.otp_store.get(identifier)
+        if actual_otp and user_otp == actual_otp:
+            logger.info(f"OTP verified successfully for {identifier}")
+            st.success("✅ OTP verified successfully!")
+            del st.session_state.otp_store[identifier]
+        else:
+            logger.warning(f"OTP verification failed for {identifier}")
+            st.error("❌ Incorrect or expired OTP.")
+```
+
+```.env``
+
+```
+EMAIL_ADDRESS=k.xxxxx@gmail.com
+EMAIL_PASSWORD="xxxx xxxx fxaq sndv"
+SNS_TOPIC_ARN=arn:aws:sns:us-east-1:xxxxxxxx:otp_delay
+AWS_REGION=us-east-1
+```
+
+![OTPAPP](./image/otpapp1.png)
+
+## SNS Logs into CloudWatch 
+
+- CloudWatch - Log groups - sns/us-east-1/777203855866/otp_delay_poc - All events
+
+![CloudWatch](./image/SNS-CloudWatch1.png)
+
+
+
+## Integrate Agent response  to MS Team Channels
+
+## ✅ Step-by-step Integration:
+
+## ✅ 1. Create an Incoming Webhook in Microsoft Teams
+
+1. Open Microsoft Teams.
+
+![msteams](./image/msteams1.png)
+
+2. Navigate to the channel you want to send the message to.
+
+![msteams](./image/msteams2.png)
+
+**Note:** While create the channel chose the team(ex: Project C...)
+
+![msteams](./image/msteams3.png)
+
+**Manage channel**
+![msteams](./image/msteams4.png)
+
+3. Click the the channel name → Connectors.
+
+![msteams](./image/msteams5.png)
+
+4. Find Incoming Webhook → Add.
+
+![msteams](./image/msteams6.png)
+
+5. Give it a name (e.g., OTP Agent Notifier) and optionally upload an image.
+
+![msteams](./image/msteams7.png)
+
+6. Click Create.
+
+7. Copy the URL below to save it to the clipboard, then select Save. You'll need this URL when you go to the service that you want to send data to your group.
+
+![msteams](./image/msteams8.png)
+
+
+![msteams](./image/msteams9.png)
+
+**Code**
+
+```
+import boto3
+import traceback
+import json
+import requests
+
+# AWS Bedrock Agent configuration
+agent_id = "MZJDM5Z9N3"
+agent_alias_id = "Z0H27XOOEZ"
+region = "us-east-1"
+session_id = "local-test-session-001"
+user_input = (
+    "Get all email IDs with OTP seconds in descending order, and show step-by-step time gaps "
+    "between OTP events seconds in descending order. Provide the detailed report for OTP delay. "
+    "Based on the output decide which route should the application use to send OTP: email or sms."
+)
+
+# Microsoft Teams Webhook URL (replace with your actual one)
+teams_webhook_url = "https://xxxx.webhook.office.com/webhookb2/76d009fb-a13f-428e-ae1a-50bd4c94a9e5@f260df36-bc43-424c-8f44-c85226657b01/IncomingWebhook/fd682ceb41c543fe87a7a39f992b5bd6/d97cf923-2ac2-4ce1-9a30-6ec18d4c219f/V29nMFKXKJJYWEp0OyAOvep1Bbh8cPqup2oF87OUGZHjE1"
+
+client = boto3.client("bedrock-agent-runtime", region_name=region)
+
+def send_to_teams(message: str):
+    try:
+        payload = {
+            "text": f"📩 *Bedrock OTP Delay Report:*\n\n{message}"
+        }
+        response = requests.post(teams_webhook_url, json=payload)
+        if response.status_code == 200:
+            print("✅ Message sent to Microsoft Teams successfully.")
+        else:
+            print(f"❌ Failed to send message to Teams: {response.status_code}, {response.text}")
+    except Exception as e:
+        print("❌ Exception while sending to Teams:", e)
+
+def invoke_agent():
+    try:
+        response_stream = client.invoke_agent(
+            agentId=agent_id,
+            agentAliasId=agent_alias_id,
+            sessionId=session_id,
+            inputText=user_input
+        )
+
+        print("Agent Response:")
+        full_response = ""
+
+        for event in response_stream['completion']:
+            if "chunk" in event:
+                chunk = event["chunk"]["bytes"]
+                content = chunk.decode("utf-8")
+                print(content, end="")
+                full_response += content
+
+        print("\n--- End of Agent Response ---")
+
+        # Send the complete response to Microsoft Teams
+        send_to_teams(full_response.strip())
+
+    except Exception as e:
+        print("❌ Error invoking agent:")
+        traceback.print_exc()
+
+if __name__ == "__main__":
+    invoke_agent()
+```
+
+## How to Execute the Bedrock Agent using Lambda function.
+
+**1. Create a clean directory**
+
+```
+mkdir lambda_function
+cd lambda_function
+```
+
+**2. Add your code**
+
+Save your Python script as ```lambda_function.py```
+
+```lambda_function.py```
+```requirements.txt```
+
+**3. Install ```requirements.txt``` locally into the same directory**
+
+```pip install requests -t .```
+
+This installs ```requests/```, ```urllib3/```, etc., in the current directory — same place as ```lambda_function.py```.
+
+**4. Zip it correctly**
+
+You must zip the contents from inside the folder — ```not the folder itself```.
+
+```zip -r lambda_function.zip .```
+
+## 📦 Final ZIP should look like:
+
+```
+lambda_function.zip
+├── lambda_function.py
+├── requests/
+├── urllib3/
+└── ... (dependencies)
+```
+
+```lambda_function.py```
+```
+import boto3
+import traceback
+import json
+import requests
+
+# AWS Bedrock Agent configuration
+agent_id = "MZJDM5Z9N3"
+agent_alias_id = "Z0H27XOOEZ"
+region = "us-east-1"
+session_id = "local-test-session-001"
+
+# Microsoft Teams Webhook URL (replace with your actual one)
+teams_webhook_url = "https://xxxxxx.webhook.office.com/webhookb2/76d009fb-a13f-428e-ae1a-50bd4c94a9e5@f260df36-bc43-424c-8f44-c85226657b01/IncomingWebhook/fd682ceb41c543fe87a7a39f992b5bd6/d97cf923-2ac2-4ce1-9a30-6ec18d4c219f/V29nMFKXKJJYWEp0OyAOvep1Bbh8cPqup2oF87OUGZHjE1"  # ← redacted for security
+
+client = boto3.client("bedrock-agent-runtime", region_name=region)
+
+def send_to_teams(message: str):
+    try:
+        payload = {
+            "text": f"📩 *Bedrock OTP Delay Report:*\n\n{message}"
+        }
+        response = requests.post(teams_webhook_url, json=payload)
+        if response.status_code == 200:
+            print("✅ Message sent to Microsoft Teams successfully.")
+        else:
+            print(f"❌ Failed to send message to Teams: {response.status_code}, {response.text}")
+    except Exception as e:
+        print("❌ Exception while sending to Teams:", e)
+
+def invoke_agent(user_input: str):
+    try:
+        response_stream = client.invoke_agent(
+            agentId=agent_id,
+            agentAliasId=agent_alias_id,
+            sessionId=session_id,
+            inputText=user_input
+        )
+
+        print("Agent Response:")
+        full_response = ""
+
+        for event in response_stream['completion']:
+            if "chunk" in event:
+                chunk = event["chunk"]["bytes"]
+                content = chunk.decode("utf-8")
+                print(content, end="")
+                full_response += content
+
+        print("\n--- End of Agent Response ---")
+
+        # Send the complete response to Microsoft Teams
+        send_to_teams(full_response.strip())
+
+        return {
+            'statusCode': 200,
+            'body': full_response
+        }
+
+    except Exception as e:
+        print("❌ Error invoking agent:")
+        traceback.print_exc()
+        return {
+            'statusCode': 500,
+            'body': str(e)
+        }
+
+def lambda_handler(event, context):
+    # Get the user_input from the event (or fallback to default)
+    user_input = event.get("inputText", "Default user input to Bedrock agent")
+    return invoke_agent(user_input)
+
+```
+
+
+**5. Create a Lambda function**
+
+```Lambda -> Functions -> communication_otp_details_fun```
+
+![lambdafun](./image/lambdafun1.png)
+
+**6. Upload the ```lambda_function.zip```**
+
+![lambdafun](./image/lambdafun2.png)
+
+**7. Add trigger with ```EventBridge (CloudWatch Events)```**
+
+![EventBridge](./image/EventBridge1.png)
+
+- Lambda -> Add triggers -> Trigger configuration
+
+![EventBridge](./image/EventBridge2.png)
+
+![EventBridge](./image/EventBridge3.png)
+
+- Amazon EventBridge -> Rules -> schedule-bedrock-otp-job
+
+![EventBridge](./image/EventBridge4.png)
+
+![EventBridge](./image/EventBridge5.png)
+
+![EventBridge](./image/EventBridge6.png)
