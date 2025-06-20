@@ -1659,3 +1659,19 @@ def lambda_handler(event, context):
 ![EventBridge](./image/EventBridge5.png)
 
 ![EventBridge](./image/EventBridge6.png)
+
+## Amazon Bedrock
+
+We use [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) to orchestrate Agentic AI with foundation model support from providers like Anthropic, Amazon, Meta, and others.
+
+## AWS Documentation
+
+We use AWS Documentation [AWS Documentation](https://docs.aws.amazon.com/)
+
+## Amazon SageMaker Documentation
+
+We use AWS ageMaker Documentation [sagemaker](https://docs.aws.amazon.com/sagemaker/)
+
+## Amazon SageMaker API Reference
+We use AWS ageMaker API Documentation [SageMaker API Reference](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html)
+
