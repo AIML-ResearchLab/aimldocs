@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Data Cleaning - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Data Cleaning";
+        var mkdocs_page_input_path = "AIML/MachineLearningPipeline/datacleaning.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/metrics-evaluation.html">Metrics Evaluation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Data Cleaning</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="data-cleaning">Data Cleaning<a class="headerlink" href="#data-cleaning" title="Permanent link">#</a></h1>
+<h2 id="what-is-data-cleaning">What is Data Cleaning?<a class="headerlink" href="#what-is-data-cleaning" title="Permanent link">#</a></h2>
+<p>Data cleaning is a crucial step in the machine learning (ML) pipeline, as it involves identifying and removing any missing, duplicate, or irrelevant data. The goal of data cleaning is to ensure that the data is accurate, consistent, and free of errors, as incorrect or inconsistent data can negatively impact the performance of the ML model.</p>
+<p>Professional data scientists usually invest a very large portion of their time in this step because of the belief that <strong>“Better data beats fancier algorithms”</strong>.</p>
+<p>Data cleaning, also known as data cleansing or data preprocessing, is a crucial step in the data science pipeline that involves identifying and correcting or removing errors, inconsistencies, and inaccuracies in the data to improve its quality and usability. Data cleaning is essential because raw data is often noisy, incomplete, and inconsistent, which can negatively impact the accuracy and reliability of the insights derived from it.</p>
+<h2 id="steps-to-perform-data-cleanliness">Steps to Perform Data Cleanliness<a class="headerlink" href="#steps-to-perform-data-cleanliness" title="Permanent link">#</a></h2>
+<p>Performing data cleaning involves a systematic process to identify and rectify errors, inconsistencies, and inaccuracies in a dataset. The following are essential steps to perform data cleaning.</p>
+<p><img alt="dataclean" src="img/dataclean1.png" /></p>
+<ul>
+<li><strong>Removal of Unwanted Observations:</strong> Identify and eliminate irrelevant or redundant observations from the dataset. The step involves scrutinizing data entries for duplicate records, irrelevant information, or data points that do not contribute meaningfully to the analysis. Removing unwanted observations streamlines the dataset, reducing noise and improving the overall quality.</li>
+<li><strong>Fixing Structure errors:</strong> Address structural issues in the dataset, such as inconsistencies in data formats, naming conventions, or variable types. Standardize formats, correct naming discrepancies, and ensure uniformity in data representation. Fixing structure errors enhances data consistency and facilitates accurate analysis and interpretation.</li>
+<li><strong>Managing Unwanted outliers:</strong> Identify and manage outliers, which are data points significantly deviating from the norm. Depending on the context, decide whether to remove outliers or transform them to minimize their impact on analysis. Managing outliers is crucial for obtaining more accurate and reliable insights from the data.</li>
+<li><strong>Handling Missing Data:</strong> Devise strategies to handle missing data effectively. This may involve imputing missing values based on statistical methods, removing records with missing values, or employing advanced imputation techniques. Handling missing data ensures a more complete dataset, preventing biases and maintaining the integrity of analyses.</li>
+</ul>
+<h2 id="how-to-perform-data-cleanliness">How to Perform Data Cleanliness<a class="headerlink" href="#how-to-perform-data-cleanliness" title="Permanent link">#</a></h2>
+<p>Performing data cleansing involves a systematic approach to enhance the quality and reliability of a dataset. The process begins with a thorough understanding of the data, inspecting its structure and identifying issues such as missing values, duplicates, and outliers. Addressing missing data involves strategic decisions on imputation or removal, while duplicates are systematically eliminated to reduce redundancy. Managing outliers ensures that extreme values do not unduly influence analysis. Structural errors are corrected to standardize formats and variable types, promoting consistency.</p>
+<p>Throughout the process, documentation of changes is crucial for transparency and reproducibility. Iterative validation and testing confirm the effectiveness of the data cleansing steps, ultimately resulting in a refined dataset ready for meaningful analysis and insights.</p>
+<h2 id="python-implementation-for-database-cleaning">Python Implementation for Database Cleaning<a class="headerlink" href="#python-implementation-for-database-cleaning" title="Permanent link">#</a></h2>
+<p>Let’s understand each step for Database Cleaning, using titanic dataset. Below are the necessary steps:</p>
+<ul>
+<li>Import the necessary libraries</li>
+<li>Load the dataset</li>
+<li>Check the data information using df.info()</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Load the dataset</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;titanic.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean2.png" /></p>
+<h2 id="data-inspection-and-exploration">Data Inspection and Exploration<a class="headerlink" href="#data-inspection-and-exploration" title="Permanent link">#</a></h2>
+<p>Let’s first understand the data by inspecting its structure and identifying missing values, outliers, and inconsistencies and check the duplicate rows with below python code:</p>
+<div class="codehilite"><pre><span></span><code>df.duplicated()
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean3.png" /></p>
+<h2 id="check-the-data-information-using-dfinfo">Check the data information using df.info()<a class="headerlink" href="#check-the-data-information-using-dfinfo" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>df.info()
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean4.png" /></p>
+<p>From the above data info, we can see that Age and Cabin have an <strong>unequal number of counts</strong>. And some of the columns are categorical and have data type objects and some are integer and float values.</p>
+<h2 id="check-the-categorical-and-numerical-columns">Check the Categorical and Numerical Columns.<a class="headerlink" href="#check-the-categorical-and-numerical-columns" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="n">Categorical</span><span class="w"> </span><span class="n">columns</span>
+<span class="n">cat_col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="n">col for col in df.columns if df[col</span><span class="o">]</span><span class="p">.</span><span class="n">dtype</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;object&#39;</span><span class="err">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Categorical columns :&#39;</span><span class="p">,</span><span class="n">cat_col</span><span class="p">)</span>
+<span class="err">#</span><span class="w"> </span><span class="n">Numerical</span><span class="w"> </span><span class="n">columns</span>
+<span class="n">num_col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="n">col for col in df.columns if df[col</span><span class="o">]</span><span class="p">.</span><span class="n">dtype</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s1">&#39;object&#39;</span><span class="err">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Numerical columns :&#39;</span><span class="p">,</span><span class="n">num_col</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean5.png" /></p>
+<h2 id="check-the-total-number-of-unique-values-in-the-categorical-columns">Check the total number of Unique Values in the Categorical Columns<a class="headerlink" href="#check-the-total-number-of-unique-values-in-the-categorical-columns" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">df</span><span class="o">[</span><span class="n">cat_col</span><span class="o">]</span><span class="p">.</span><span class="n">nunique</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean6.png" /></p>
+<h2 id="removal-of-all-above-unwanted-observations">Removal of all Above Unwanted Observations<a class="headerlink" href="#removal-of-all-above-unwanted-observations" title="Permanent link">#</a></h2>
+<p>This includes deleting duplicate/ redundant or irrelevant values from your dataset. Duplicate observations most frequently arise during data collection and Irrelevant observations are those that don’t actually fit the specific problem that you’re trying to solve.</p>
+<ul>
+<li>Redundant observations alter the efficiency to a great extent as the data repeats and may add towards the correct side or towards the incorrect side, thereby producing unfaithful results.</li>
+<li>Irrelevant observations are any type of data that is of no use to us and can be removed directly.</li>
+</ul>
+<p><strong>Now we have to make a decision according to the subject of analysis, which factor is important for our discussion.</strong></p>
+<p>As we know our machines don’t understand the text data. So, we have to either drop or convert the categorical column values into numerical types. Here we are dropping the Name columns because the Name will be always unique and it hasn’t a great influence on target variables. For the ticket, Let’s first print the 50 unique tickets.</p>
+<div class="codehilite"><pre><span></span><code>df[&#39;Ticket&#39;].unique()[:50]
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean7.png" /></p>
+<p>From the above tickets, we can observe that it is made of two like first values ‘A/5 21171’ is joint from of ‘A/5’ and  ‘21171’ this may influence our target variables. It will the case of <strong>Feature Engineering</strong>. where we derived new features from a column or a group of columns. In the current case, we are dropping the “Name” and “Ticket” columns.</p>
+<h2 id="drop-name-and-ticket-columns">Drop Name and Ticket Columns<a class="headerlink" href="#drop-name-and-ticket-columns" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>df1 = df.drop(columns=[&#39;Name&#39;,&#39;Ticket&#39;])
+df1.shape
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean8.png" /></p>
+<h2 id="handling-missing-data">Handling Missing Data<a class="headerlink" href="#handling-missing-data" title="Permanent link">#</a></h2>
+<p>Missing data is a common issue in real-world datasets, and it can occur due to various reasons such as human errors, system failures, or data collection issues. Various techniques can be used to handle missing data, such as imputation, deletion, or substitution.</p>
+<p>Let’s check the % missing values columns-wise for each row using df.isnull() it checks whether the values are null or not and gives returns boolean values. and .sum() will sum the total number of null values rows and we divide it by the total number of rows present in the dataset then we multiply to get values in % i.e per 100 values how much values are null.</p>
+<div class="codehilite"><pre><span></span><code>round((df1.isnull().sum()/df1.shape[0])*100,2)
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean9.png" /></p>
+<p>We cannot just ignore or remove the missing observation. They must be handled carefully as they can be an indication of something important. </p>
+<p><strong>The two most common ways to deal with missing data are:</strong></p>
+<ul>
+<li><strong>Dropping Observations with missing values.</strong><ul>
+<li>The fact that the value was missing may be informative in itself.</li>
+<li>Plus, in the real world, you often need to make predictions on new data even if some of the features are missing!</li>
+</ul>
+</li>
+</ul>
+<p>As we can see from the above result that Cabin has 77% null values and Age has 19.87% and Embarked has 0.22% of null values.</p>
+<p>So, it’s not a good idea to fill 77% of null values. So, we will drop the Cabin column. Embarked column has only 0.22% of null values so, we drop the null values rows of Embarked column.</p>
+<div class="codehilite"><pre><span></span><code>df2 = df1.drop(columns=&#39;Cabin&#39;)
+df2.dropna(subset=[&#39;Embarked&#39;], axis=0, inplace=True)
+df2.shape
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean10.png" /></p>
+<ul>
+<li><strong>Imputing the missing values from past observations.</strong><ul>
+<li>Again, “missingness” is almost always informative in itself, and you should tell your algorithm if a value was missing.</li>
+<li>Even if you build a model to impute your values, you’re not adding any real information. You’re just reinforcing the patterns already provided by other features.</li>
+</ul>
+</li>
+</ul>
+<p>We can use <strong>Mean imputation</strong> or <strong>Median imputations</strong> for the case.</p>
+<p>**Note: **</p>
+<ul>
+<li>Mean imputation is suitable when the data is normally distributed and has no extreme outliers.</li>
+<li>Median imputation is preferable when the data contains outliers or is skewed.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code># Mean imputation
+df3 = df2.fillna(df2.Age.mean())
+# Let&#39;s check the null values again
+df3.isnull().sum()
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean11.png" /></p>
+<h2 id="handling-outliers">Handling Outliers<a class="headerlink" href="#handling-outliers" title="Permanent link">#</a></h2>
+<p>Outliers are extreme values that deviate significantly from the majority of the data. They can negatively impact the analysis and model performance. Techniques such as clustering, interpolation, or transformation can be used to handle outliers.</p>
+<p>To check the outliers, We generally use a box plot. A box plot, also referred to as a box-and-whisker plot, is a graphical representation of a dataset’s distribution. It shows a variable’s median, quartiles, and potential outliers. The line inside the box denotes the median, while the box itself denotes the interquartile range (IQR). The whiskers extend to the most extreme non-outlier values within 1.5 times the IQR. Individual points beyond the whiskers are considered potential outliers. A box plot offers an easy-to-understand overview of the range of the data and makes it possible to identify outliers or skewness in the distribution.</p>
+<p><strong>Let’s plot the box plot for Age column data.</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">],</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Variable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Age&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Box Plot&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean12.png" /></p>
+<p>As we can see from the above Box and whisker plot, Our age dataset has outliers values. The values less than 5 and more than 55 are outliers.</p>
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> calculate summary statistics
+mean = df3[&#39;Age&#39;].mean()
+std  = df3[&#39;Age&#39;].std()
+
+<span class="gh">#</span> Calculate the lower and upper bounds
+lower_bound = mean - std*2
+upper_bound = mean + std*2
+
+print(&#39;Lower Bound :&#39;,lower_bound)
+print(&#39;Upper Bound :&#39;,upper_bound)
+
+<span class="gh">#</span> Drop the outliers
+df4 = df3[(df3[&#39;Age&#39;] &gt;= lower_bound) 
+                &amp; (df3[&#39;Age&#39;] &lt;= upper_bound)]
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean13.png" /></p>
+<p>Similarly, we can remove the outliers of the remaining columns.</p>
+<h2 id="data-transformation">Data Transformation<a class="headerlink" href="#data-transformation" title="Permanent link">#</a></h2>
+<p>Data transformation involves converting the data from one form to another to make it more suitable for analysis. Techniques such as normalization, scaling, or encoding can be used to transform the data.</p>
+<p><strong>Data validation and verification</strong></p>
+<p>Data validation and verification involve ensuring that the data is accurate and consistent by comparing it with external sources or expert knowledge. </p>
+<p>For the machine learning prediction, First, we separate independent and target features. Here we will consider only <strong>‘Sex’ ‘Age’ ‘SibSp’, ‘Parch’ ‘Fare’ ‘Embarked’</strong> only as the independent features and <strong>Survived</strong> as target variables. Because PassengerId will not affect the survival rate.</p>
+<div class="codehilite"><pre><span></span><code>X = df3[[&#39;Pclass&#39;,&#39;Sex&#39;,&#39;Age&#39;, &#39;SibSp&#39;,&#39;Parch&#39;,&#39;Fare&#39;,&#39;Embarked&#39;]]
+Y = df3[&#39;Survived&#39;]
+</code></pre></div>
+
+<p><strong>Data formatting</strong>
+Data formatting involves converting the data into a standard format or structure that can be easily processed by the algorithms or models used for analysis. Here we will discuss commonly used data formatting techniques i.e. Scaling and Normalization.</p>
+<p><strong>Scaling</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="nv">Scaling</span><span class="w"> </span><span class="nv">involves</span><span class="w"> </span><span class="nv">transforming</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">values</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">features</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">specific</span><span class="w"> </span><span class="nv">range</span>.<span class="w"> </span><span class="nv">It</span><span class="w"> </span><span class="nv">maintains</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">shape</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">original</span><span class="w"> </span><span class="nv">distribution</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nv">changing</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">scale</span>.
+<span class="o">-</span><span class="w"> </span><span class="nv">Particularly</span><span class="w"> </span><span class="nv">useful</span><span class="w"> </span><span class="nv">when</span><span class="w"> </span><span class="nv">features</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">different</span><span class="w"> </span><span class="nv">scales</span>,<span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">certain</span><span class="w"> </span><span class="nv">algorithms</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">sensitive</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">magnitude</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">features</span>.
+<span class="o">-</span><span class="w"> </span><span class="nv">Common</span><span class="w"> </span><span class="nv">scaling</span><span class="w"> </span><span class="nv">methods</span><span class="w"> </span><span class="k">include</span><span class="w"> </span><span class="nv">Min</span><span class="o">-</span><span class="nv">Max</span><span class="w"> </span><span class="nv">scaling</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">Standardization</span><span class="w"> </span><span class="ss">(</span><span class="nv">Z</span><span class="o">-</span><span class="nv">score</span><span class="w"> </span><span class="nv">scaling</span><span class="ss">)</span>.
+</code></pre></div>
+
+<p><strong>Min-Max Scaling:</strong> Min-Max scaling rescales the values to a specified range, typically between 0 and 1. It preserves the original distribution and ensures that the minimum value maps to 0 and the maximum value maps to 1.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">MinMaxScaler</span>
+
+<span class="c1"># initialising the MinMaxScaler</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># Numerical columns</span>
+<span class="n">num_col_</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">X</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">!=</span> <span class="s1">&#39;object&#39;</span><span class="p">]</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">X</span>
+<span class="c1"># learning the statistical parameters for each of the data and transforming</span>
+<span class="n">x1</span><span class="p">[</span><span class="n">num_col_</span><span class="p">]</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="n">num_col_</span><span class="p">])</span>
+<span class="n">x1</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="dataclean" src="img/dataclean14.png" /></p>
+<p><strong>Standardization (Z-score scaling):</strong> Standardization transforms the values to have a mean of 0 and a standard deviation of 1. It centers the data around the mean and scales it based on the standard deviation. Standardization makes the data more suitable for algorithms that assume a Gaussian distribution or require features to have zero mean and unit variance.</p>
+<p><img alt="dataclean" src="img/dataclean15.png" /></p>
+<p>Where,</p>
+<div class="codehilite"><pre><span></span><code>- X = Data
+- μ = Mean value of X
+- σ = Standard deviation of X
+</code></pre></div>
+
+<h2 id="data-cleansing-tools">Data Cleansing Tools<a class="headerlink" href="#data-cleansing-tools" title="Permanent link">#</a></h2>
+<p>Some data cleansing tools:</p>
+<ul>
+<li>OpenRefine</li>
+<li>Trifacta Wrangler </li>
+<li>TIBCO Clarity</li>
+<li>Cloudingo</li>
+<li>IBM Infosphere Quality Stage</li>
+</ul>
+<p><strong>Advantages of Data Cleaning in Machine Learning:</strong></p>
+<ul>
+<li><strong>Improved model performance:</strong> Removal of errors, inconsistencies, and irrelevant data, helps the model to better learn from the data.</li>
+<li><strong>Increased accuracy:</strong> Helps ensure that the data is accurate, consistent, and free of errors.</li>
+<li><strong>Better representation of the data:</strong> Data cleaning allows the data to be transformed into a format that better represents the underlying relationships and patterns in the data.</li>
+<li><strong>Improved data quality:</strong> Improve the quality of the data, making it more reliable and accurate.</li>
+<li><strong>Improved data security:</strong> Helps to identify and remove sensitive or confidential information that could compromise data security.</li>
+</ul>
+<p><strong>Disadvantages of Data Cleaning in Machine Learning:</strong></p>
+<ul>
+<li><strong>Time-consuming:</strong> Time-Consuming task, especially for large and complex datasets.</li>
+<li><strong>Error-prone:</strong> Data cleaning can be error-prone, as it involves transforming and cleaning the data, which can result in the loss of important information or the introduction of new errors.</li>
+<li><strong>Cost and resource-intensive:</strong> Resource-intensive process that requires significant time, effort, and expertise. It can also require the use of specialized software tools, which can add to the cost and complexity of data cleaning.</li>
+<li><strong>Overfitting:</strong> Data cleaning can inadvertently contribute to overfitting by removing too much data.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

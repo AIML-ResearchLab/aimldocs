@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Create AWS ELB with Self-Signed SSL Cert - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Create AWS ELB with Self-Signed SSL Cert";
+        var mkdocs_page_input_path = "AIML/aws/https.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/metrics-evaluation.html">Metrics Evaluation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Create AWS ELB with Self-Signed SSL Cert</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="create-aws-elb-with-self-signed-ssl-cert">Create AWS ELB with Self-Signed SSL Cert<a class="headerlink" href="#create-aws-elb-with-self-signed-ssl-cert" title="Permanent link">#</a></h1>
+<h1 id="self-signing-ssl-cert">Self-signing SSL Cert<a class="headerlink" href="#self-signing-ssl-cert" title="Permanent link">#</a></h1>
+<ol>
+<li>Generate self-sign certificate using this command:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt
+</code></pre></div>
+
+<ol>
+<li>Verify the key and certificate generated</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>openssl rsa -in privateKey.key -check
+openssl x509 -in certificate.crt -text -noout
+</code></pre></div>
+
+<ol>
+<li>Convert the key and cert into .pem encoded file</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>openssl rsa -in privateKey.key -text &gt; private.pem
+openssl x509 -inform PEM -in certificate.crt &gt; public.pem
+</code></pre></div>
+
+<p><img alt="elb" src="image/https-1.png" /></p>
+<p><img alt="elb" src="image/https-2.png" /></p>
+<p><img alt="elb" src="image/https-3.png" /></p>
+<p><img alt="elb" src="image/https-4.png" /></p>
+<p><img alt="elb" src="image/https-5.png" /></p>
+<p><img alt="elb" src="image/https-6.png" /></p>
+<p><img alt="elb" src="image/https-7.png" /></p>
+<ul>
+<li>Certificate private key (privateKey.key content)</li>
+<li>Certificate body (certificate.crt content)</li>
+</ul>
+<p><img alt="elb" src="image/https-8.png" /></p>
+<p><img alt="elb" src="image/https-9.png" /></p>
+<h2 id="certificate-arn">certificate-arn<a class="headerlink" href="#certificate-arn" title="Permanent link">#</a></h2>
+<p><img alt="elb" src="image/https-10.png" /></p>
+<h2 id="nginx-ingressyaml">nginx-ingress.yaml<a class="headerlink" href="#nginx-ingressyaml" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">apiVersion</span><span class="o">:</span><span class="w"> </span><span class="n">networking</span><span class="o">.</span><span class="na">k8s</span><span class="o">.</span><span class="na">io</span><span class="o">/</span><span class="n">v1</span>
+<span class="n">kind</span><span class="o">:</span><span class="w"> </span><span class="n">Ingress</span>
+<span class="n">metadata</span><span class="o">:</span>
+<span class="w">  </span><span class="n">name</span><span class="o">:</span><span class="w"> </span><span class="n">aiml</span><span class="o">-</span><span class="n">app</span>
+<span class="w">  </span><span class="n">annotations</span><span class="o">:</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="na">ingress</span><span class="o">.</span><span class="na">kubernetes</span><span class="o">.</span><span class="na">io</span><span class="o">/</span><span class="n">scheme</span><span class="o">:</span><span class="w"> </span><span class="n">internet</span><span class="o">-</span><span class="n">facing</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="na">ingress</span><span class="o">.</span><span class="na">kubernetes</span><span class="o">.</span><span class="na">io</span><span class="o">/</span><span class="n">target</span><span class="o">-</span><span class="n">type</span><span class="o">:</span><span class="w"> </span><span class="n">ip</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="na">ingress</span><span class="o">.</span><span class="na">kubernetes</span><span class="o">.</span><span class="na">io</span><span class="o">/</span><span class="n">listen</span><span class="o">-</span><span class="n">ports</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;[{&quot;HTTPS&quot;:443}]&#39;</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="na">ingress</span><span class="o">.</span><span class="na">kubernetes</span><span class="o">.</span><span class="na">io</span><span class="sr">/certificate-arn: arn:aws:acm:ap-south-1:7772:certificate/</span><span class="mi">62057</span><span class="n">bc8</span><span class="o">-</span><span class="mi">17</span><span class="n">f9</span><span class="o">-</span><span class="mi">438</span><span class="n">a</span><span class="o">-</span><span class="mi">94</span><span class="n">a6</span><span class="o">-</span><span class="mi">30</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="na">ingress</span><span class="o">.</span><span class="na">kubernetes</span><span class="o">.</span><span class="na">io</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">redirect</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;443&#39;</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="na">ingress</span><span class="o">.</span><span class="na">kubernetes</span><span class="o">.</span><span class="na">io</span><span class="sr">/healthcheck-path: /</span>
+<span class="n">spec</span><span class="o">:</span>
+<span class="w">  </span><span class="n">ingressClassName</span><span class="o">:</span><span class="w"> </span><span class="n">alb</span>
+<span class="w">  </span><span class="n">tls</span><span class="o">:</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">hosts</span><span class="o">:</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="n">cognizeai</span><span class="o">.</span><span class="na">net</span>
+<span class="w">      </span><span class="n">secretName</span><span class="o">:</span><span class="w"> </span><span class="n">tls</span><span class="o">-</span><span class="n">secret</span><span class="w">  </span><span class="err">#</span><span class="w"> </span><span class="n">optional</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">using</span><span class="w"> </span><span class="n">ACM</span><span class="w"> </span><span class="n">certificate</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">ALB</span>
+<span class="w">  </span><span class="n">rules</span><span class="o">:</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">host</span><span class="o">:</span><span class="w"> </span><span class="n">cognizeai</span><span class="o">.</span><span class="na">net</span>
+<span class="w">      </span><span class="n">http</span><span class="o">:</span>
+<span class="w">        </span><span class="n">paths</span><span class="o">:</span>
+<span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">path</span><span class="o">:</span><span class="w"> </span><span class="o">/</span>
+<span class="w">            </span><span class="n">pathType</span><span class="o">:</span><span class="w"> </span><span class="n">Prefix</span>
+<span class="w">            </span><span class="n">backend</span><span class="o">:</span>
+<span class="w">              </span><span class="n">service</span><span class="o">:</span>
+<span class="w">                </span><span class="n">name</span><span class="o">:</span><span class="w"> </span><span class="n">simcard</span><span class="o">-</span><span class="n">shelf</span><span class="o">-</span><span class="n">space</span><span class="o">-</span><span class="n">service</span>
+<span class="w">                </span><span class="n">port</span><span class="o">:</span>
+<span class="w">                  </span><span class="n">number</span><span class="o">:</span><span class="w"> </span><span class="mi">5004</span>
+<span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">path</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">bms</span>
+<span class="w">            </span><span class="n">pathType</span><span class="o">:</span><span class="w"> </span><span class="n">Prefix</span>
+<span class="w">            </span><span class="n">backend</span><span class="o">:</span>
+<span class="w">              </span><span class="n">service</span><span class="o">:</span>
+<span class="w">                </span><span class="n">name</span><span class="o">:</span><span class="w"> </span><span class="n">battery</span><span class="o">-</span><span class="n">management</span><span class="o">-</span><span class="n">system</span><span class="o">-</span><span class="n">service</span>
+<span class="w">                </span><span class="n">port</span><span class="o">:</span>
+<span class="w">                  </span><span class="n">number</span><span class="o">:</span><span class="w"> </span><span class="mi">9290</span>
+<span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">path</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">semiconductor</span>
+<span class="w">            </span><span class="n">pathType</span><span class="o">:</span><span class="w"> </span><span class="n">Prefix</span>
+<span class="w">            </span><span class="n">backend</span><span class="o">:</span>
+<span class="w">              </span><span class="n">service</span><span class="o">:</span>
+<span class="w">                </span><span class="n">name</span><span class="o">:</span><span class="w"> </span><span class="n">semiconductor</span><span class="o">-</span><span class="n">failure</span><span class="o">-</span><span class="n">detection</span><span class="o">-</span><span class="n">service</span>
+<span class="w">                </span><span class="n">port</span><span class="o">:</span>
+<span class="w">                  </span><span class="n">number</span><span class="o">:</span><span class="w"> </span><span class="mi">5000</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>kubectl apply -f nginx-ingress.yaml -n aiml-app
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>NAME                                 CLASS   HOSTS           ADDRESS                                                                 PORTS     AGE
+ingress.networking.k8s.io/aiml-app   alb     cognizeai.net   k8s-p-aimlapp-8821222.ap-south-1.elb.amazonaws.com   80, 443   24m
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>nslookup k8s-aimlapp-aimlapp-b370-6288.ap-south-1.elb.amazonaws.com 
+
+Server:     49.205.72.130
+Address:    49.205.72.130#53
+
+Non-authoritative answer:
+Name:   k8s-aimlapp-aimlapp-b370e0-6288.ap-south-1.elb.amazonaws.com
+Address: 35.154.82.208
+Name:   k8s-aimlapp-aimlapp-b370e0-6288.ap-south-1.elb.amazonaws.com
+Address: 65.0.223.248
+Name:   k8s-aimlapp-aimlapp-b370e0-6288.ap-south-1.elb.amazonaws.com
+Address: 35.154.117.203
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>vi /etc/hosts
+
+65.0.223.248 cognizeai.net
+</code></pre></div>
+
+<p><img alt="elb" src="image/https-11.png" /></p>
+<h2 id="route-53-dashboard">Route 53 Dashboard<a class="headerlink" href="#route-53-dashboard" title="Permanent link">#</a></h2>
+<p><img alt="elb" src="image/https-12.png" /></p>
+<p><img alt="elb" src="image/https-13.png" /></p>
+<p><img alt="elb" src="image/https-14.png" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
