@@ -11,7 +11,8 @@ nav:
     - Programing:
       - PYTHON: Programing/python.md
     - Statistic:
-      - Metrics Evaluation: Statistic/metrics-evaluation.md
+      - Metrics Evaluation: Statistic/metrics.md
+      - Statistic Details: Statistic/statistic-details.md
     - Data manipulation and analysis:
       - PANDAS: Data-manipulation-and-analysis/data-manipulation-analysis.md
     - Data Processing:
@@ -35,6 +36,7 @@ nav:
     - AI agents:
       - AI agents: AIagents/aiagents.md
     - Agentic AI:
+      - general: AgenticAI/general.md
       - crewai: AgenticAI/crewai.md
       - LangGraph: AgenticAI/LangGraph.md
       - AutoGen: AgenticAI/AutoGen.md

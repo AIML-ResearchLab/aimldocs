@@ -1112,5 +1112,4 @@ research_task:
   expected_output: "A report on AI trends."
 ```
 
-**Improved Version:**
 
