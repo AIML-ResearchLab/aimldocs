@@ -1,5 +1,8 @@
 ## 1. Foundations of Statistical Machine Learning:
 
+![alt text](./image/AI-Statistic.png)
+
+
 **Statistics and Machine Learning:**
 Statistics provides the tools for understanding data (descriptive statistics, probability distributions), while machine learning provides the algorithms for building predictive models.
 
@@ -85,9 +88,13 @@ Descriptive statistics summarize and describe the features of a dataset, providi
 ![alt text](./image/Statistics29.png)
 
 **Measures of Dispersion**
+
 - **Range:** The difference between the maximum and minimum values.
+
 - **Variance:** The average squared deviation from the mean, representing data spread.
+
 - **Standard Deviation:** The square root of variance, indicating data spread relative to the mean.
+
 - **Interquartile Range:** The range between the first and third quartiles, measuring data spread around the median.
 
 
@@ -115,12 +122,17 @@ Descriptive statistics summarize and describe the features of a dataset, providi
 Probability theory forms the backbone of statistical inference, aiding in quantifying uncertainty and making predictions based on data.
 
 **Basic Concepts**
+
 - **Random Variables:** Variables with random outcomes.
+
 - **Probability Distributions:** Describe the likelihood of different outcomes.
 
 ## Common Probability Distributions
+
 - **Binomial Distribution:** Represents the number of successes in a fixed number of trials.
+
 - **Poisson Distribution:** Describes the number of events occurring within a fixed interval.
+
 - **Normal Distribution:** Characterizes continuous data symmetrically distributed around the mean.
 
 ## Law of Large Numbers:
@@ -134,18 +146,27 @@ Indicates that the distribution of sample means approximates a normal distributi
 Inferential statistics involve making predictions or inferences about a population based on a sample of data.
 
 ## Population and Sample
+
 - **Population:** The entire group being studied.
+
 - **Sample:** A subset of the population used for analysis.
 
 ## Estimation
+
 - **Point Estimation:** Provides a single value estimate of a population parameter.
+
 - **Interval Estimation:** Offers a range of values (confidence interval) within which the parameter likely lies.
+
 - **Confidence Intervals:** Indicate the reliability of an estimate.
 
 ## Hypothesis Testing
+
 - **Null and Alternative Hypotheses:** The null hypothesis assumes no effect or relationship, while the alternative suggests otherwise.
+
 - **Type I and Type II Errors:** Type I error is rejecting a true null hypothesis, while Type II is failing to reject a false null hypothesis.
+
 - **p-Values:** Measure the probability of obtaining the observed results under the null hypothesis.
+
 - **t-Tests and z-Tests:** Compare means to assess statistical significance.
 
 ## ANOVA (Analysis of Variance):
@@ -158,14 +179,21 @@ Assess the association between categorical variables.
 Understanding relationships between variables is critical in machine learning.
 
 **Correlation:**
+
 - **Pearson Correlation Coefficient:** Measures linear relationship strength between two variables.
+
 - **Spearman Rank Correlation:** Assesses the strength and direction of the monotonic relationship between variables.
 
 **Regression Analysis**
+
 - **Simple Linear Regression:** Models the relationship between two variables.
+
 - **Multiple Linear Regression:** Extends to multiple predictors.
+
 - **Assumptions of Linear Regression:** Linearity, independence, homoscedasticity, normality.
+
 - **Interpretation of Regression Coefficients:** Explains predictor influence on the response variable.
+
 - **Model Evaluation Metrics:** R-squared, Adjusted R-squared, RMSE.
 
 
@@ -782,6 +810,96 @@ plt.show()
 ```
 
 
+- **Correlation (Pearson, Spearman)**
+- **Non-parametric tests overview**
+- **PCA & Factor Analysis**
+- **Cluster & Association Analysis**
+- **Time Series Analysis**
 
 
+## Multivariate Analysis, PCA, Clustering & Time Series
+
+## Correlation: Measuring Relationships Between Two Things
+
+![alt text](./image/Statistics39.png)
+
+## Visualizing Correlation
+
+![alt text](./image/Statistics40.png)
+
+## Visualizing Pearson vs. Spearman Correlation (Example)
+
+![alt text](./image/Statistics40.png)
+
+## What is Non Parametric Test
+
+![alt text](./image/Statistics41.png)
+
+![alt text](./image/Statistics42.png)
+
+## Principal Component Analysis(PCA)
+
+![alt text](./image/Statistics43.png)
+
+## Why is PCA needed?
+
+![alt text](./image/Statistics44.png)
+
+## Interpreting PCA
+
+![alt text](./image/Statistics45.png)
+
+## PCA in a nutshell with python code
+
+![alt text](./image/Statistics46.png)
+
+**Iris Dataset**
+https://archive.ics.uci.edu/dataset/53/iris
+
+## Factor Analysis and Cluster Analysis
+
+![alt text](./image/Statistics47.png)
+
+## Clustering Algorithms Example
+
+![alt text](./image/Statistics48.png)
+
+## Association Analysis
+
+![alt text](./image/Statistics49.png)
+
+## Time Series Basics 
+
+![alt text](./image/Statistics50.png)
+
+
+## Assignment Title: 
+Hypothesis Testing: Parametric vs Non-Parametric Analysis Based on Data Distribution
+
+## Assignment Objectives:
+By completing this assignment, you will be able to:
+- Understand when to use parametric vs non-parametric tests
+- Perform distribution checks (normality tests, plots)
+- Formulate and test null and alternative hypotheses
+- Use at least one parametric and one non-parametric test appropriately
+- Interpret results clearly with visuals and reasoning
+
+## Dataset:
+
+[Employee Attrition Dataset – Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+
+**Dataset Features (Selected)**
+
+- Age (numeric)
+- MonthlyIncome (numeric)
+- JobSatisfaction (1–4)
+- Attrition (Yes/No)
+- JobRole (Sales Executive, Research Scientist, etc.)
+
+## Problem Statement:
+You are an HR data analyst at a large firm. The leadership wants to understand whether:
+- Monthly income and age differ between employees who left vs stayed
+- Job satisfaction differs across job roles
+
+Use **statistical hypothesis testing** to answer the following:
 

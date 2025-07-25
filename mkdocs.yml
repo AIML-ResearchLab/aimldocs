@@ -11,7 +11,99 @@ nav:
     - Programing:
       - PYTHON: Programing/python.md
     - Statistic:
+      - Descriptive Statistics:
+        - Measures of Central Tendency:
+          - Mean: Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.md
+          - Median: Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.md
+          - Mode: Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.md
+        - Measures of Position (Relative Standing):
+          - Percentiles: Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.md
+          - Quartiles: Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.md
+          - Deciles: Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.md
+          - Z-Score: Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.md
+        - Shape of the Distribution:
+          - Skewness: Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.md
+          - Kurtosis: Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.md
+        - Visualization Tools:
+          - Histogram: Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.md
+          - Bar Chart: Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.md
+          - Pie Chart: Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.md
+          - Box Plot: Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.md
+          - Line Plot: Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.md
+          - Dot Plot: Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.md
+        - Measures of Dispersion (Variability):
+          - Range: Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.md
+          - Variance: Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.md
+          - Standard Deviation: Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.md
+          - Interquartile Range(IQR): Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.md
+          - Cofficient of Variation: Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.md
+      - Inferential Statistics:
+        - Population and Sample:
+          - Population: Statistic/InferentialStatistics/Population-and-Sample/Population.md
+          - Sample: Statistic/InferentialStatistics/Population-and-Sample/Sample.md
+          - Sampling Methods: Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.md
+        - Estimation:
+          - Point Estimation: Statistic/InferentialStatistics/Estimation/PointEstimation.md
+          - Interval Estimation: Statistic/InferentialStatistics/Estimation/IntervalEstimation.md
+          - Margin of Error: Statistic/InferentialStatistics/Estimation/MarginError.md
+        - Regression and Correlation Analysis:
+          - Linear Regression: Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.md
+          - Logistic Regression: Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.md
+          - Multiple Regression: Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.md
+          - Correlation Coefficients: Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.md
+        - Hypothesis Testing:
+          - Null Hypothesis (H₀): Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.md
+          - Alternative Hypothesis (H₁): Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.md
+          - Test Statistic: Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.md
+          - p-value: Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.md
+          - Significance Level (α): Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.md
+          - Type I Error (α): Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.md
+          - Type II Error (β): Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.md
+          - Power of the Test: Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.md
+        - Parametric Tests:
+          - t-test: Statistic/InferentialStatistics/Parametric-Tests/t-test.md
+          - z-test: Statistic/InferentialStatistics/Parametric-Tests/z-test.md
+          - ANOVA: Statistic/InferentialStatistics/Parametric-Tests/ANOVA.md
+          - F-test: Statistic/InferentialStatistics/Parametric-Tests/F-test.md
+        - Non-Parametric Tests:
+          - Mann-Whitney U: Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.md
+          - Kruskal-Wallis: Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.md
+          - Wilcoxon: Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.md
+          - Chi-square: Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.md
+        - Resampling Methods:
+          - Bootstrapping: Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.md
+          - Jackknife: Statistic/InferentialStatistics/Resampling-Methods/Jackknife.md
+        - Analysis of Variance (ANOVA):
+          - One-way ANOVA: Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.md
+          - Two-way ANOVA: Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.md
+          - Post-hoc Tests: Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.md
+        - Probability Theory:
+          - Probability Distributions: Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.md
+          - Central Limit Theorem: Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.md
+          - Bayesian Inference: Statistic/InferentialStatistics/Probability-Theory/BayesianInference.md
+      - Time Series:
+        - Trend: Statistic/TimeSeries/Trend.md
+        - Seasonality: Statistic/TimeSeries/Seasonality.md
+        - Cyclic: Statistic/TimeSeries/Cyclic.md
+        - Irregular/Noise: Statistic/TimeSeries/Noise.md
+        - Stationarity: Statistic/TimeSeries/Stationarity.md
+        - Non-stationary: Statistic/TimeSeries/Non-stationary.md
+        - Autocorrelation: Statistic/TimeSeries/Autocorrelation.md
+        - Lag: Statistic/TimeSeries/Lag.md
+        - Moving Averages: Statistic/TimeSeries/MovingAverages.md
+        - Holt-Winters Method: Statistic/TimeSeries/Holt-Winters.md
+        - Additive: Statistic/TimeSeries/Additive.md
+        - Multiplicative: Statistic/TimeSeries/Multiplicative.md
+        - AR (Auto Regression): Statistic/TimeSeries/AR.md
+        - ARIMA: Statistic/TimeSeries/ARIMA.md
+        - Arimax: Statistic/TimeSeries/Arimax.md
+        - Sarimax: Statistic/TimeSeries/Sarimax.md
+        - Smoothing: Statistic/TimeSeries/Smoothing.md
+        - Automated Forecasting: Statistic/TimeSeries/AutomatedForecasting.md
+        - Automated Time Series: Statistic/TimeSeries/AutomatedTimeSeries.md
+        - Uni, Bi and Multivariate: Statistic/TimeSeries/Multivariate.md
       - Metrics Evaluation: Statistic/metrics.md
+      - Time Series Old: Statistic/timeseries.md
       - Statistic Details: Statistic/statistic-details.md
     - Data manipulation and analysis:
       - PANDAS: Data-manipulation-and-analysis/data-manipulation-analysis.md
