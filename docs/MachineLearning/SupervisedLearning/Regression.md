@@ -13,31 +13,31 @@ Regression analysis problem works with if output variable is a real or continuou
 
 Regression can be classified into different types based on the number of predictor variables and the nature of the relationship between variables:
 
-1. **Simple Linear Regression:**
+<h3 style="color:blue;">1. Simple Linear Regression</h3>
 
 **Linear regression** is one of the simplest and most widely used statistical models. This assumes that there is a linear relationship between the independent and dependent variables. This means that the change in the dependent variable is proportional to the change in the independent variables. For example predicting the price of a house based on its size.
 
-2. **Multiple Linear Regression:**
+<h3 style="color:blue;">2. Multiple Linear Regression</h3>
 
 **Multiple linear regression** extends simple linear regression by using multiple independent variables to predict target variable. For example predicting the price of a house based on multiple features such as size, location, number of rooms, etc.
 
-3. **Polynomial Regression**
+<h3 style="color:blue;">3. Polynomial Regression</h3>
 
 Polynomial regression is used to model with non-linear relationships between the dependent variable and the independent variables. It adds polynomial terms to the linear regression model to capture more complex relationships. For example when we want to predict a non-linear trend like population growth over time we use polynomial regression.
 
-4. **Ridge & Lasso Regression**
+<h3 style="color:blue;">4. Ridge & Lasso Regression</h3>
 
 Ridge & lasso regression are regularized versions of linear regression that help avoid overfitting by penalizing large coefficients. When there’s a risk of overfitting due to too many features we use these type of regression algorithms.
 
-5. **Support Vector Regression (SVR)**
+<h3 style="color:blue;">5. Support Vector Regression (SVR)</h3>
 
 SVR is a type of regression algorithm that is based on the Support Vector Machine (SVM) algorithm. SVM is a type of algorithm that is used for classification tasks but it can also be used for regression tasks. SVR works by finding a hyperplane that minimizes the sum of the squared residuals between the predicted and actual values.
 
-6. **Decision Tree Regression**
+<h3 style="color:blue;">6. Decision Tree Regression</h3>
 
 Decision tree Uses a tree-like structure to make decisions where each branch of tree represents a decision and leaves represent outcomes. For example predicting customer behavior based on features like age, income, etc there we use decison tree regression.
 
-7. **Random Forest Regression**
+<h3 style="color:blue;">7. Random Forest Regression</h3>
 
 Random Forest is a ensemble method that builds multiple decision trees and each tree is trained on a different subset of the training data. The final prediction is made by averaging the predictions of all of the trees. For example customer churn or sales data using this.
 
