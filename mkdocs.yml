@@ -117,6 +117,18 @@ nav:
       - PostgreSQL: Databases/PostgreSQL.md
       - MySQL: Databases/MySQL.md
       - MongoDB: Databases/MongoDB.md
+    - Machine Learning:
+      - Overview: MachineLearning/Overview.md
+      - Supervised Learning: 
+        - Regression: MachineLearning/SupervisedLearning/Regression.md
+        - Classification: MachineLearning/SupervisedLearning/Classification.md
+      - Unsupervised Learning: 
+        - Clustering: MachineLearning/UnsupervisedLearning/Clustering.md
+        - Principal Component Analysis(PCA): MachineLearning/UnsupervisedLearning/Pca.md
+      - Reinforcement Learning: 
+        - Overview: MachineLearning/ReinforcementLearning/ReinforcementLearning.md
+    - Deep Learning:
+      - Overview: DeepLearning/Overview.md
     - Natural Language Processing(NLP): 
       - NLP: NLP/nlp.md
     - Natural Language Understanding(NLU):
