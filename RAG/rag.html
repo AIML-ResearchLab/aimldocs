@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>RAG - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "RAG";
+        var mkdocs_page_input_path = "RAG/rag.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Retrieval-Augmented Generation(RAG)</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">RAG</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Retrieval-Augmented Generation(RAG)</li>
+      <li class="breadcrumb-item active">RAG</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="what-is-text-chunking-in-rag">🔹 What is Text Chunking in RAG?<a class="headerlink" href="#what-is-text-chunking-in-rag" title="Permanent link">#</a></h2>
+<p>In Retrieval-Augmented Generation (RAG), text chunking is a foundational step that significantly impacts the performance of retrieval and generation. Choosing the right chunking strategy depends on your domain, model size, use case (e.g., question answering, summarization), and latency requirements.</p>
+<p>Text chunking is the process of breaking large documents into smaller pieces (chunks) before embedding and storing them in a vector database for retrieval.</p>
+<h2 id="common-chunking-strategies-modes">🔹 Common Chunking Strategies (Modes)<a class="headerlink" href="#common-chunking-strategies-modes" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Mode</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Use Case</strong></th>
+<th><strong>Model Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fixed-size chunks</strong></td>
+<td>Split text by fixed number of tokens (e.g., 512 tokens)</td>
+<td>General-purpose, fast and simple</td>
+<td>No model needed; tokenizers like <code>tiktoken</code>, <code>sentencepiece</code>, or <code>nltk</code></td>
+</tr>
+<tr>
+<td><strong>Sliding window</strong></td>
+<td>Overlapping chunks (e.g., 512 tokens with 100-token overlap)</td>
+<td>Ensures context continuity</td>
+<td>Simple algorithmic logic with tokenizer support</td>
+</tr>
+<tr>
+<td><strong>Sentence-based</strong></td>
+<td>Break by sentence boundaries</td>
+<td>Preserves semantic boundaries</td>
+<td><code>nltk.sent_tokenize</code>, <code>spacy</code>, <code>textsplit</code></td>
+</tr>
+<tr>
+<td><strong>Paragraph-based</strong></td>
+<td>Keep full paragraphs as chunks</td>
+<td>Ideal for long-form documents</td>
+<td>Regex or NLP libraries like <code>nltk</code>, <code>spacy</code></td>
+</tr>
+<tr>
+<td><strong>Semantic chunking</strong></td>
+<td>Split by topics or natural breakpoints using ML models</td>
+<td>Best for maintaining topic coherence</td>
+<td><code>BERTopic</code>, <code>SBERT</code>, <code>KeyBERT</code>, LLMs with attention-based segmentation</td>
+</tr>
+<tr>
+<td><strong>Markdown/Heading-based</strong></td>
+<td>Use headings/subheadings in documents to split</td>
+<td>For structured docs like manuals, PDFs</td>
+<td>Regex, <code>BeautifulSoup</code>, <code>Markdown</code>, PDF parsers (e.g., <code>pdfplumber</code>, <code>PyMuPDF</code>)</td>
+</tr>
+<tr>
+<td><strong>Recursive Character Split</strong></td>
+<td>Hierarchical chunking (LangChain-style) from large &gt; small (section &gt; para &gt; line)</td>
+<td>Works well in structured + unstructured docs</td>
+<td><code>LangChain</code>’s <code>RecursiveCharacterTextSplitter</code>, regex</td>
+</tr>
+<tr>
+<td><strong>Query-Aware Chunking</strong></td>
+<td>Splits and prioritizes chunks based on relevance to a query</td>
+<td>RAG pipelines, QA systems</td>
+<td><code>BM25</code>, <code>FAISS</code>, <code>Chroma</code>, <code>OpenAI Embeddings</code>, <code>ColBERT</code>, <code>RetrieverMixin</code></td>
+</tr>
+<tr>
+<td><strong>Token-Density-Based</strong></td>
+<td>Chunks based on token density, complexity, or information richness</td>
+<td>Summarization, content prioritization</td>
+<td>Token counters, <code>OpenAI Tokenizer</code>, statistical methods</td>
+</tr>
+<tr>
+<td><strong>Entity-Based Chunking</strong></td>
+<td>Splits text by named entities (e.g., person, organization)</td>
+<td>Information extraction, knowledge graphs</td>
+<td><code>spacy</code>, <code>flair</code>, <code>transformers</code> NER models</td>
+</tr>
+<tr>
+<td><strong>Event-Based Chunking</strong></td>
+<td>Breaks text by narrative events or transitions</td>
+<td>Story summarization, news timeline generation</td>
+<td><code>EventBERT</code>, <code>GPT-4</code>, <code>NarrativeQA</code>, <code>BART</code> fine-tuned on events</td>
+</tr>
+<tr>
+<td><strong>Dialogue/Turn-Based</strong></td>
+<td>Splits by speaker turns in conversations</td>
+<td>Chatbot training, transcript analysis</td>
+<td><code>Whisper</code>, <code>assemblyAI</code>, or transcript parsers + speaker diarization tools</td>
+</tr>
+<tr>
+<td><strong>Table/Structure-Aware</strong></td>
+<td>Handles structured data like tables and lists differently</td>
+<td>PDFs, spreadsheets, forms</td>
+<td><code>Pandas</code>, <code>tabula-py</code>, <code>Camelot</code>, <code>layoutLM</code>, <code>PDFPlumber</code>, <code>Unstructured.io</code></td>
+</tr>
+<tr>
+<td><strong>Page-Based Chunking</strong></td>
+<td>Chunks created per page or visual layout (often OCR-based)</td>
+<td>Invoices, scanned documents, academic papers</td>
+<td><code>Tesseract OCR</code>, <code>PyMuPDF</code>, <code>pdf2image</code>, <code>layoutLM</code>, <code>Donut</code></td>
+</tr>
+<tr>
+<td><strong>Visual/Layout-Aware</strong></td>
+<td>Uses layout cues like headers, font, or boxes to define chunks</td>
+<td>Magazines, academic PDFs, websites</td>
+<td><code>layoutLMv3</code>, <code>Donut</code>, <code>PubLayNet</code>, <code>DocFormer</code>, <code>Unstructured.io</code></td>
+</tr>
+<tr>
+<td><strong>Code/Function-Based</strong></td>
+<td>Chunks by logical programming units like functions or classes</td>
+<td>Code summarization, documentation, Copilot tools</td>
+<td><code>tree-sitter</code>, <code>jedi</code>, <code>CodeBERT</code>, <code>PolyCoder</code>, <code>StarCoder</code>, <code>GPT-4-Code</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="best-practices-for-chunking-in-rag">🔹 Best Practices for Chunking in RAG<a class="headerlink" href="#best-practices-for-chunking-in-rag" title="Permanent link">#</a></h2>
+<p><strong>Optimal Chunk Size:</strong></p>
+<ul>
+<li><strong>300–500 tokens</strong> is often optimal (balances semantic completeness and context window limits).</li>
+<li><strong>Too small:</strong> loses context; Too large: hurts retrieval relevance.</li>
+</ul>
+<p><strong>Use Overlap:</strong></p>
+<ul>
+<li>Add <strong>10–20% token overlap</strong> (e.g., 100 tokens) to maintain context across chunk boundaries.</li>
+</ul>
+<p><strong>Embed with CLS or Average Pooling:</strong></p>
+<ul>
+<li>Use models like <code>sentence-transformers, all-MiniLM, bge-base, text-embedding-ada-002</code>, etc., which are tuned for sentence-level semantics.</li>
+</ul>
+<p><strong>Preprocessing:</strong></p>
+<ul>
+<li>Clean HTML, remove noise, normalize whitespace.</li>
+<li>Keep metadata like title, section headings, page number, etc.</li>
+</ul>
+<h2 id="models-for-chunking-semantic-splitting">🔹 Models for Chunking / Semantic Splitting<a class="headerlink" href="#models-for-chunking-semantic-splitting" title="Permanent link">#</a></h2>
+<p>These help in semantic-aware chunking:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Model/Library</strong></th>
+<th><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SpaCy</strong></td>
+<td>Sentence segmentation</td>
+</tr>
+<tr>
+<td><strong>NLTK</strong></td>
+<td>Token/sentence splitting</td>
+</tr>
+<tr>
+<td><strong>TextSplit</strong></td>
+<td>Token-aware splitting</td>
+</tr>
+<tr>
+<td><strong>LangChain RecursiveTextSplitter</strong></td>
+<td>Recursive chunking by structure</td>
+</tr>
+<tr>
+<td><strong>SemanticTextSplitter</strong> (OpenAI)</td>
+<td>Uses embeddings to break at semantic boundaries</td>
+</tr>
+<tr>
+<td><strong>Unstructured.io</strong></td>
+<td>Parsing PDFs, emails, HTMLs semantically</td>
+</tr>
+</tbody>
+</table>
+<h2 id="best-chunking-strategy-by-rag-type">🔹 Best Chunking Strategy by RAG Type<a class="headerlink" href="#best-chunking-strategy-by-rag-type" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Use Case</strong></th>
+<th><strong>Best Chunking Mode</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q\&amp;A over documents</td>
+<td>Sentence-based + sliding window + overlap</td>
+</tr>
+<tr>
+<td>Legal/medical docs</td>
+<td>Paragraph + heading-based + semantic splitting</td>
+</tr>
+<tr>
+<td>Technical manuals</td>
+<td>Markdown/headings + semantic splitting</td>
+</tr>
+<tr>
+<td>Long PDFs</td>
+<td>RecursiveTextSplitter + metadata + overlap</td>
+</tr>
+<tr>
+<td>Chatbot (multi-turn)</td>
+<td>Short sentence + sliding window for continuity</td>
+</tr>
+<tr>
+<td>Enterprise search</td>
+<td>Paragraph-based with metadata indexing</td>
+</tr>
+</tbody>
+</table>
+<h2 id="popular-embedding-chunking-stack-in-rag-pipelines">🔹 Popular Embedding + Chunking Stack in RAG Pipelines<a class="headerlink" href="#popular-embedding-chunking-stack-in-rag-pipelines" title="Permanent link">#</a></h2>
+<p><strong>LangChain:</strong>
+  - <code>RecursiveCharacterTextSplitter, MarkdownHeaderTextSplitter, TokenTextSplitter</code></p>
+<p><strong>Haystack:</strong>
+  - <code>PreProcessor(split_by="sentence", split_length=10, overlap=3)</code></p>
+<p><strong>LlamaIndex:</strong>
+  - <code>SentenceSplitter, SemanticSplitterNodeParser</code></p>
+<h2 id="toolsmodels-summary">🔹 Tools/Models Summary<a class="headerlink" href="#toolsmodels-summary" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool / Lib</th>
+<th>Use For Chunking?</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LangChain</code></td>
+<td>✅</td>
+<td>Multiple chunking classes available</td>
+</tr>
+<tr>
+<td><code>Haystack</code></td>
+<td>✅</td>
+<td>Flexible chunking + preprocessing</td>
+</tr>
+<tr>
+<td><code>LlamaIndex</code></td>
+<td>✅</td>
+<td>Node-based semantic chunking</td>
+</tr>
+<tr>
+<td><code>SpaCy</code>, <code>NLTK</code></td>
+<td>✅</td>
+<td>Sentence/word segmentation</td>
+</tr>
+<tr>
+<td><code>unstructured.io</code></td>
+<td>✅</td>
+<td>Parsing HTML, PDFs, etc.</td>
+</tr>
+<tr>
+<td><code>textsplit</code></td>
+<td>✅</td>
+<td>Heuristics-based chunking</td>
+</tr>
+</tbody>
+</table>
+<h2 id="recommendation-for-best-rag-chunking-general-purpose">✅ Recommendation for Best RAG Chunking (General Purpose)<a class="headerlink" href="#recommendation-for-best-rag-chunking-general-purpose" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Chunk Size:</strong> 350–500 tokens</li>
+<li><strong>Overlap:</strong> 50–100 tokens</li>
+<li><strong>Method:</strong> Recursive/semantic chunking with fallback to sentence-level</li>
+<li><strong>Tools:</strong> LangChain RecursiveTextSplitter or LlamaIndex SemanticSplitterNodeParser</li>
+</ul>
+<h2 id="1-langchain-recursivetextsplitter">✅ 1. LangChain – RecursiveTextSplitter<a class="headerlink" href="#1-langchain-recursivetextsplitter" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
+
+<span class="n">text_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
+    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+    <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">length_function</span><span class="o">=</span><span class="nb">len</span><span class="p">,</span>
+    <span class="n">separators</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">texts</span> <span class="o">=</span> <span class="n">text_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">your_document_text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total chunks: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="best-for-unstructured-text-articles-reports-raw-documents">➡️ Best for: unstructured text (articles, reports, raw documents)<a class="headerlink" href="#best-for-unstructured-text-articles-reports-raw-documents" title="Permanent link">#</a></h2>
+<h2 id="2-langchain-markdownheadertextsplitter">✅ 2. LangChain – MarkdownHeaderTextSplitter<a class="headerlink" href="#2-langchain-markdownheadertextsplitter" title="Permanent link">#</a></h2>
+<p>For structured markdown documents:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">MarkdownHeaderTextSplitter</span>
+
+<span class="n">markdown_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;# Title</span><span class="se">\n</span><span class="s2">Some intro.</span><span class="se">\n</span><span class="s2">## Section 1</span><span class="se">\n</span><span class="s2">Details here.</span><span class="se">\n</span><span class="s2">## Section 2</span><span class="se">\n</span><span class="s2">More details.&quot;&quot;&quot;</span>
+<span class="n">splitter</span> <span class="o">=</span> <span class="n">MarkdownHeaderTextSplitter</span><span class="p">(</span><span class="n">headers_to_split_on</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="s2">&quot;Title&quot;</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;##&quot;</span><span class="p">,</span> <span class="s2">&quot;Section&quot;</span><span class="p">)])</span>
+<span class="n">docs</span> <span class="o">=</span> <span class="n">splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">markdown_text</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">docs</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>  <span class="c1"># includes Title, Section</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">page_content</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="best-for-docs-with-clear-heading-structure-eg-technical-manuals-markdown">➡️ Best for: docs with clear heading structure (e.g., technical manuals, markdown)<a class="headerlink" href="#best-for-docs-with-clear-heading-structure-eg-technical-manuals-markdown" title="Permanent link">#</a></h2>
+<h2 id="3-llamaindex-semanticsplitternodeparser">✅ 3. LlamaIndex – SemanticSplitterNodeParser<a class="headerlink" href="#3-llamaindex-semanticsplitternodeparser" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">llama_index.node_parser</span><span class="w"> </span><span class="kn">import</span> <span class="n">SemanticSplitterNodeParser</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">llama_index.embeddings.openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIEmbedding</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">llama_index.llms</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">llama_index</span><span class="w"> </span><span class="kn">import</span> <span class="n">Document</span>
+
+<span class="c1"># Load your document</span>
+<span class="n">documents</span> <span class="o">=</span> <span class="p">[</span><span class="n">Document</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">your_document_text</span><span class="p">)]</span>
+
+<span class="c1"># Semantic-aware splitting</span>
+<span class="n">parser</span> <span class="o">=</span> <span class="n">SemanticSplitterNodeParser</span><span class="p">(</span>
+    <span class="n">embed_model</span><span class="o">=</span><span class="n">OpenAIEmbedding</span><span class="p">(),</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">OpenAI</span><span class="p">(),</span>
+    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">512</span>
+<span class="p">)</span>
+
+<span class="n">nodes</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">get_nodes_from_documents</span><span class="p">(</span><span class="n">documents</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="best-for-semantic-coherence-topic-wise-llm-assisted-splitting">➡️ Best for: semantic coherence (topic-wise), LLM-assisted splitting<a class="headerlink" href="#best-for-semantic-coherence-topic-wise-llm-assisted-splitting" title="Permanent link">#</a></h2>
+<h2 id="4-haystack-preprocessor">✅ 4. Haystack – PreProcessor<a class="headerlink" href="#4-haystack-preprocessor" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">haystack.nodes</span><span class="w"> </span><span class="kn">import</span> <span class="n">PreProcessor</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">haystack.document_stores</span><span class="w"> </span><span class="kn">import</span> <span class="n">InMemoryDocumentStore</span>
+
+<span class="n">document_store</span> <span class="o">=</span> <span class="n">InMemoryDocumentStore</span><span class="p">()</span>
+
+<span class="n">preprocessor</span> <span class="o">=</span> <span class="n">PreProcessor</span><span class="p">(</span>
+    <span class="n">clean_empty_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">clean_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">split_by</span><span class="o">=</span><span class="s2">&quot;sentence&quot;</span><span class="p">,</span>
+    <span class="n">split_length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">split_overlap</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">split_respect_sentence_boundary</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="c1"># Load your raw text into a dict format</span>
+<span class="n">raw_docs</span> <span class="o">=</span> <span class="p">[{</span><span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">your_document_text</span><span class="p">}]</span>
+<span class="n">processed_docs</span> <span class="o">=</span> <span class="n">preprocessor</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">raw_docs</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total processed chunks: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">processed_docs</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="best-for-sentence-level-rag-qa-over-documents">➡️ Best for: sentence-level RAG, Q&amp;A over documents<a class="headerlink" href="#best-for-sentence-level-rag-qa-over-documents" title="Permanent link">#</a></h2>
+<h2 id="bonus-unstructured-for-parsing-raw-files">✅ Bonus: unstructured for parsing raw files<a class="headerlink" href="#bonus-unstructured-for-parsing-raw-files" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">unstructured.partition.auto</span><span class="w"> </span><span class="kn">import</span> <span class="n">partition</span>
+
+<span class="n">elements</span> <span class="o">=</span> <span class="n">partition</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;sample.pdf&quot;</span><span class="p">)</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">el</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">elements</span> <span class="k">if</span> <span class="n">el</span><span class="o">.</span><span class="n">text</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">])</span>
+</code></pre></div>
+
+<h2 id="use-this-before-chunking-especially-for-pdfs-html-docx-etc">➡️ Use this before chunking, especially for PDFs, HTML, DOCX, etc.<a class="headerlink" href="#use-this-before-chunking-especially-for-pdfs-html-docx-etc" title="Permanent link">#</a></h2>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../NLG/nlg.html" class="btn btn-neutral float-left" title="NLP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../AIagents/aiagents.html" class="btn btn-neutral float-right" title="AI agents">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../NLG/nlg.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../AIagents/aiagents.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>K means Clustering – Introduction - AIML documents</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "K means Clustering \u2013 Introduction";
+        var mkdocs_page_input_path = "AIML/Unsupervised/Clustering/K-means-Clustering.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../DeepLearning/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLP/nlp.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Understanding(NLU)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLU/nlu.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Generation(NLG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLG/nlg.html">NLP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/gcp.html">GCP</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">K means Clustering – Introduction</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="k-means-clustering-introduction">K means Clustering – Introduction<a class="headerlink" href="#k-means-clustering-introduction" title="Permanent link">#</a></h1>
+<p>K-Means Clustering is an Unsupervised Machine Learning algorithm, which groups the unlabeled dataset into different clusters. </p>
+<h2 id="what-is-k-means-clustering">What is K-means Clustering?<a class="headerlink" href="#what-is-k-means-clustering" title="Permanent link">#</a></h2>
+<p>Unsupervised Machine Learning is the process of teaching a computer to use unlabeled, unclassified data and enabling the algorithm to operate on that data without supervision. Without any previous data training, the machine’s job in this case is to organize unsorted data according to parallels, patterns, and variations. </p>
+<p>K means clustering, assigns data points to one of the K clusters depending on their distance from the center of the clusters. It starts by randomly assigning the clusters centroid in the space. Then each data point assign to one of the cluster based on its distance from centroid of the cluster. After assigning each point to one of the cluster, new cluster centroids are assigned. This process runs iteratively until it finds good cluster. In the analysis we assume that number of cluster is given in advanced and we have to put points in one of the group.</p>
+<p>In some cases, K is not clearly defined, and we have to think about the optimal number of K. K Means clustering performs best data is well separated. When data points overlapped this clustering is not suitable. K Means is faster as compare to other clustering technique. It provides strong coupling between the data points. K Means cluster do not provide clear information regarding the quality of clusters. Different initial assignment of cluster centroid may lead to different clusters. Also, K Means algorithm is sensitive to noise. It may have stuck in local minima.</p>
+<h2 id="what-is-the-objective-of-k-means-clustering">What is the objective of k-means clustering?<a class="headerlink" href="#what-is-the-objective-of-k-means-clustering" title="Permanent link">#</a></h2>
+<p>The goal of clustering is to divide the population or set of data points into a number of groups so that the data points within each group are more comparable to one another and different from the data points within the other groups. It is essentially a grouping of things based on how similar and different they are to one another. </p>
+<h2 id="how-k-means-clustering-works">How k-means clustering works?<a class="headerlink" href="#how-k-means-clustering-works" title="Permanent link">#</a></h2>
+<p>We are given a data set of items, with certain features, and values for these features (like a vector). The task is to categorize those items into groups. To achieve this, we will use the K-means algorithm, an unsupervised learning algorithm. ‘K’ in the name of the algorithm represents the number of groups/clusters we want to classify our items into.</p>
+<p>(It will help if you think of items as points in an n-dimensional space). The algorithm will categorize the items into k groups or clusters of similarity. To calculate that similarity, we will use the Euclidean distance as a measurement.</p>
+<p>The algorithm works as follows:  </p>
+<ol>
+<li>First, we randomly initialize k points, called means or cluster centroids.</li>
+<li>We categorize each item to its closest mean, and we update the mean’s coordinates, which are the averages of the items categorized in that cluster so far.</li>
+<li>We repeat the process for a given number of iterations and at the end, we have our clusters.</li>
+</ol>
+<p>The “points” mentioned above are called means because they are the mean values of the items categorized in them. To initialize these means, we have a lot of options. An intuitive method is to initialize the means at random items in the data set. Another method is to initialize the means at random values between the boundaries of the data set (if for a feature x, the items have values in [0,3], we will initialize the means with values for x at [0,3]).</p>
+<p>The above algorithm in pseudocode is as follows:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Initialize</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">means</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="nf">random</span><span class="w"> </span><span class="n">values</span>
+<span class="o">--&gt;</span><span class="w"> </span><span class="n">For</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="kr">of</span><span class="w"> </span><span class="n">iterations</span><span class="o">:</span>
+
+<span class="w">    </span><span class="o">--&gt;</span><span class="w"> </span><span class="nf">Iterate</span><span class="w"> </span><span class="n">through</span><span class="w"> </span><span class="n">items</span><span class="o">:</span>
+
+<span class="w">        </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">Find</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">mean</span><span class="w"> </span><span class="n">closest</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">calculating</span><span class="w"> </span>
+<span class="w">        </span><span class="n">the</span><span class="w"> </span><span class="n">euclidean</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="kr">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">each</span><span class="w"> </span><span class="kr">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">means</span>
+
+<span class="w">        </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">Assign</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">mean</span>
+
+<span class="w">        </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">Update</span><span class="w"> </span><span class="n">mean</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">shifting</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">average</span><span class="w"> </span><span class="kr">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">cluster</span>
+</code></pre></div>
+
+<h2 id="implementation-of-k-means-clustering-in-python">Implementation of K-Means Clustering in Python<a class="headerlink" href="#implementation-of-k-means-clustering-in-python" title="Permanent link">#</a></h2>
+<p><strong>Example 1:</strong></p>
+<p><strong>Import the necessary Libraries</strong></p>
+<p>We are importing Numpy for statistical computations, Matplotlib to plot the graph, and make_blobs from sklearn.datasets.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_blobs</span>
+</code></pre></div>
+
+<p><strong>Create the custom dataset with make_blobs and plot it</strong></p>
+<div class="codehilite"><pre><span></span><code>X,y = make_blobs(n_samples = 500,n_features = 2,centers = 3,random_state = 23)
+
+fig = plt.figure(0)
+plt.grid(True)
+plt.scatter(X[:,0],X[:,1])
+plt.show()
+</code></pre></div>
+
+<p><img alt="kmeans" src="../img/kmeans1.png" /></p>
+<p><strong>Initialize the random centroids</strong></p>
+<p>The code initializes three clusters for K-means clustering. It sets a random seed and generates random cluster centers within a specified range, and creates an empty list of points for each cluster.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+
+<span class="n">clusters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{}</span>
+<span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+
+<span class="k">for</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="err">:</span>
+<span class="w">    </span><span class="n">center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">random</span><span class="p">((</span><span class="n">X</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">1</span><span class="o">]</span><span class="p">,))</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
+<span class="w">    </span><span class="n">cluster</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span>
+<span class="w">        </span><span class="s1">&#39;center&#39;</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="n">center</span><span class="p">,</span>
+<span class="w">        </span><span class="s1">&#39;points&#39;</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="err">[]</span>
+<span class="w">    </span><span class="err">}</span>
+
+<span class="w">    </span><span class="n">clusters</span><span class="o">[</span><span class="n">idx</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cluster</span>
+
+<span class="n">clusters</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="err">{</span><span class="mi">0</span><span class="err">:</span><span class="w"> </span><span class="err">{</span><span class="s1">&#39;center&#39;</span><span class="err">:</span><span class="w"> </span><span class="k">array</span><span class="p">(</span><span class="o">[</span><span class="n">0.06919154, 1.78785042</span><span class="o">]</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;points&#39;</span><span class="err">:</span><span class="w"> </span><span class="err">[]}</span><span class="p">,</span>
+<span class="w"> </span><span class="mi">1</span><span class="err">:</span><span class="w"> </span><span class="err">{</span><span class="s1">&#39;center&#39;</span><span class="err">:</span><span class="w"> </span><span class="k">array</span><span class="p">(</span><span class="o">[</span><span class="n"> 1.06183904, -0.87041662</span><span class="o">]</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;points&#39;</span><span class="err">:</span><span class="w"> </span><span class="err">[]}</span><span class="p">,</span>
+<span class="w"> </span><span class="mi">2</span><span class="err">:</span><span class="w"> </span><span class="err">{</span><span class="s1">&#39;center&#39;</span><span class="err">:</span><span class="w"> </span><span class="k">array</span><span class="p">(</span><span class="o">[</span><span class="n">-1.11581855,  0.74488834</span><span class="o">]</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;points&#39;</span><span class="err">:</span><span class="w"> </span><span class="err">[]}}</span>
+<span class="w"> </span><span class="err">```</span>
+
+<span class="w"> </span><span class="o">**</span><span class="n">Plot</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">random</span><span class="w"> </span><span class="k">initialize</span><span class="w"> </span><span class="n">center</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="n">points</span><span class="o">**</span>
+
+<span class="w"> </span><span class="err">```</span>
+<span class="w"> </span><span class="n">plt</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="o">[</span><span class="n">:,0</span><span class="o">]</span><span class="p">,</span><span class="n">X</span><span class="o">[</span><span class="n">:,1</span><span class="o">]</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
+<span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nl">clusters</span><span class="p">:</span>
+<span class="w">    </span><span class="n">center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clusters</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">&#39;center&#39;</span><span class="o">]</span>
+<span class="w">    </span><span class="n">plt</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">center</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">,</span><span class="n">center</span><span class="o">[</span><span class="n">1</span><span class="o">]</span><span class="p">,</span><span class="n">marker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;*&#39;</span><span class="p">,</span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="kmeans" src="../img/kmeans2.png" /></p>
+<p>The plot displays a scatter plot of data points (X[:,0], X[:,1]) with grid lines. It also marks the initial cluster centers (red stars) generated for K-means clustering.</p>
+<p><strong>Define Euclidean distance</strong></p>
+<div class="codehilite"><pre><span></span><code>def distance(p1,p2):
+    return np.sqrt(np.sum((p1-p2)**2))
+</code></pre></div>
+
+<p><strong>Create the function to Assign and Update the cluster center</strong></p>
+<p>The E-step assigns data points to the nearest cluster center, and the M-step updates cluster centers based on the mean of assigned points in K-means clustering.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">#Implementing</span><span class="w"> </span><span class="n">E</span><span class="w"> </span><span class="n">step</span><span class="w"> </span>
+<span class="n">def</span><span class="w"> </span><span class="n">assign_clusters</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">clusters</span><span class="p">)</span><span class="err">:</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">X</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">)</span><span class="err">:</span>
+<span class="w">        </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
+
+<span class="w">        </span><span class="n">curr_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">X</span><span class="o">[</span><span class="n">idx</span><span class="o">]</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="err">:</span>
+<span class="w">            </span><span class="n">dis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">distance</span><span class="p">(</span><span class="n">curr_x</span><span class="p">,</span><span class="n">clusters</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">&#39;center&#39;</span><span class="o">]</span><span class="p">)</span>
+<span class="w">            </span><span class="n">dist</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">dis</span><span class="p">)</span>
+<span class="w">        </span><span class="n">curr_cluster</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span>
+<span class="w">        </span><span class="n">clusters</span><span class="o">[</span><span class="n">curr_cluster</span><span class="o">][</span><span class="n">&#39;points&#39;</span><span class="o">]</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">curr_x</span><span class="p">)</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">clusters</span>
+
+<span class="n">#Implementing</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">M</span><span class="o">-</span><span class="n">Step</span>
+<span class="n">def</span><span class="w"> </span><span class="n">update_clusters</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">clusters</span><span class="p">)</span><span class="err">:</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="err">:</span>
+<span class="w">        </span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="k">array</span><span class="p">(</span><span class="n">clusters</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">&#39;points&#39;</span><span class="o">]</span><span class="p">)</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">points</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="err">:</span>
+<span class="w">            </span><span class="n">new_center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">points</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="w"> </span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="w">            </span><span class="n">clusters</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">&#39;center&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">new_center</span>
+
+<span class="w">            </span><span class="n">clusters</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">&#39;points&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">clusters</span>
+</code></pre></div>
+
+<p><strong>Step 7: Create the function to Predict the cluster for the datapoints</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="n">def</span><span class="w"> </span><span class="n">pred_cluster</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">clusters</span><span class="p">)</span><span class="err">:</span>
+<span class="w">    </span><span class="n">pred</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">X</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">)</span><span class="err">:</span>
+<span class="w">        </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="err">:</span>
+<span class="w">            </span><span class="n">dist</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">distance</span><span class="p">(</span><span class="n">X</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">,</span><span class="n">clusters</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">&#39;center&#39;</span><span class="o">]</span><span class="p">))</span>
+<span class="w">        </span><span class="n">pred</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">dist</span><span class="p">))</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">pred</span><span class="w">   </span>
+</code></pre></div>
+
+<p><strong>Assign, Update, and predict the cluster center</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="n">clusters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">assign_clusters</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">clusters</span><span class="p">)</span>
+<span class="n">clusters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">update_clusters</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">clusters</span><span class="p">)</span>
+<span class="n">pred</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pred_cluster</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">clusters</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Plot the data points with their predicted cluster center</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="n">plt</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="o">[</span><span class="n">:,0</span><span class="o">]</span><span class="p">,</span><span class="n">X</span><span class="o">[</span><span class="n">:,1</span><span class="o">]</span><span class="p">,</span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pred</span><span class="p">)</span>
+<span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nl">clusters</span><span class="p">:</span>
+<span class="w">    </span><span class="n">center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clusters</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">&#39;center&#39;</span><span class="o">]</span>
+<span class="w">    </span><span class="n">plt</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">center</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">,</span><span class="n">center</span><span class="o">[</span><span class="n">1</span><span class="o">]</span><span class="p">,</span><span class="n">marker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;^&#39;</span><span class="p">,</span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="kmeans" src="../img/kmeans3.png" /></p>
+<p><strong>Example 2</strong></p>
+<p><strong>Import the necessary libraries</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.cm</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">cm</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_iris</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">KMeans</span>
+</code></pre></div>
+
+<p><strong>Load the Dataset</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">load_iris</span><span class="p">(</span><span class="n">return_X_y</span><span class="o">=</span><span class="n">True</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Elbow Method</strong>
+Finding the ideal number of groups to divide the data into is a basic stage in any unsupervised algorithm. One of the most common techniques for figuring out this ideal value of k is the elbow approach.</p>
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span>Find optimum number of cluster
+sse = [] #SUM OF SQUARED ERROR
+for k in range(1,11):
+    km = KMeans(n_clusters=k, random_state=2)
+    km.fit(X)
+    sse.append(km.inertia_)
+</code></pre></div>
+
+<p><strong>Plot the Elbow graph to find the optimum number of cluster</strong></p>
+<div class="codehilite"><pre><span></span><code>sns.set_style(&quot;whitegrid&quot;)
+g=sns.lineplot(x=range(1,11), y=sse)
+
+g.set(xlabel =&quot;Number of cluster (k)&quot;, 
+      ylabel = &quot;Sum Squared Error&quot;, 
+      title =&#39;Elbow Method&#39;)
+
+plt.show()
+</code></pre></div>
+
+<p><img alt="kmeans" src="../img/kmeans4.png" /></p>
+<p>From the above graph, we can observe that at k=2 and k=3 elbow-like situation. So, we are considering K=3</p>
+<p><strong>Build the Kmeans clustering model</strong></p>
+<div class="codehilite"><pre><span></span><code>kmeans = KMeans(n_clusters = 3, random_state = 2)
+kmeans.fit(X)
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>KMeans
+KMeans(n_clusters=3, random_state=2)
+</code></pre></div>
+
+<p><strong>Find the cluster center</strong></p>
+<div class="codehilite"><pre><span></span><code>kmeans.cluster_centers_
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>array([[5.006     , 3.428     , 1.462     , 0.246     ],
+       [5.9016129 , 2.7483871 , 4.39354839, 1.43387097],
+       [6.85      , 3.07368421, 5.74210526, 2.07105263]])
+</code></pre></div>
+
+<p><strong>Predict the cluster group:</strong></p>
+<div class="codehilite"><pre><span></span><code>pred = kmeans.fit_predict(X)
+pred
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nx">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">       </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">       </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">       </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">       </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">       </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">       </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="nx">dtype</span><span class="p">=</span><span class="nx">int32</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Plot the cluster center with data points</strong></p>
+<div class="codehilite"><pre><span></span><code>plt.figure(figsize=(12,5))
+plt.subplot(1,2,1)
+plt.scatter(X[:,0],X[:,1],c = pred, cmap=cm.Accent)
+plt.grid(True)
+for center in kmeans.cluster_centers_:
+    center = center[:2]
+    plt.scatter(center[0],center[1],marker = &#39;^&#39;,c = &#39;red&#39;)
+plt.xlabel(&quot;petal length (cm)&quot;)
+plt.ylabel(&quot;petal width (cm)&quot;)
+
+plt.subplot(1,2,2)   
+plt.scatter(X[:,2],X[:,3],c = pred, cmap=cm.Accent)
+plt.grid(True)
+for center in kmeans.cluster_centers_:
+    center = center[2:4]
+    plt.scatter(center[0],center[1],marker = &#39;^&#39;,c = &#39;red&#39;)
+plt.xlabel(&quot;sepal length (cm)&quot;)
+plt.ylabel(&quot;sepal width (cm)&quot;)
+plt.show()
+</code></pre></div>
+
+<p><img alt="kmeans" src="../img/kmeans5.png" /></p>
+<p>The subplot on the left display petal length vs. petal width with data points colored by clusters, and red markers indicate K-means cluster centers. The subplot on the right show sepal length vs. sepal width similarly.</p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>In conclusion, K-means clustering is a powerful unsupervised machine learning algorithm for grouping unlabeled datasets. Its objective is to divide data into clusters, making similar data points part of the same group. The algorithm initializes cluster centroids and iteratively assigns data points to the nearest centroid, updating centroids based on the mean of points in each cluster.</p>
+<h2 id="what-is-k-means-clustering-for-data-analysis">What is k-means clustering for data analysis?<a class="headerlink" href="#what-is-k-means-clustering-for-data-analysis" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">K</span><span class="o">-</span><span class="n">means</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">partitioning</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">divides</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">dataset</span><span class="w"> </span><span class="n">into</span><span class="w"> </span><span class="err">‘</span><span class="n">k</span><span class="err">’</span><span class="w"> </span><span class="n">distinct</span><span class="p">,</span><span class="w"> </span><span class="n">non</span><span class="o">-</span><span class="n">overlapping</span><span class="w"> </span><span class="n">subsets</span><span class="w"> </span><span class="p">(</span><span class="n">clusters</span><span class="p">)</span><span class="w"> </span><span class="n">based</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">similarity</span><span class="p">,</span><span class="w"> </span><span class="n">aiming</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">minimize</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">variance</span><span class="w"> </span><span class="n">within</span><span class="w"> </span><span class="n">each</span><span class="w"> </span><span class="n">cluster</span><span class="o">.</span>
+</code></pre></div>
+
+<h2 id="what-is-an-example-of-k-means-in-real-life">What is an example of k-means in real life?<a class="headerlink" href="#what-is-an-example-of-k-means-in-real-life" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nv">Customer</span><span class="w"> </span><span class="nv">segmentation</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">marketing</span>,<span class="w"> </span><span class="nv">where</span><span class="w"> </span><span class="nv">k</span><span class="o">-</span><span class="nv">means</span><span class="w"> </span><span class="nv">groups</span><span class="w"> </span><span class="nv">customers</span><span class="w"> </span><span class="nv">based</span><span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="nv">purchasing</span><span class="w"> </span><span class="nv">behavior</span>,<span class="w"> </span><span class="nv">allowing</span><span class="w"> </span><span class="nv">businesses</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">tailor</span><span class="w"> </span><span class="nv">marketing</span><span class="w"> </span><span class="nv">strategies</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">different</span><span class="w"> </span><span class="nv">segments</span>.
+</code></pre></div>
+
+<h2 id="what-type-of-data-is-k-means-clustering-model">What type of data is k-means clustering model?<a class="headerlink" href="#what-type-of-data-is-k-means-clustering-model" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">K</span><span class="o">-</span><span class="n">means</span><span class="w"> </span><span class="n">works</span><span class="w"> </span><span class="n">well</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">numerical</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">where</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">concept</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="n">between</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">points</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">meaningful</span><span class="o">.</span><span class="w"> </span><span class="n">It</span><span class="err">’</span><span class="n">s</span><span class="w"> </span><span class="n">commonly</span><span class="w"> </span><span class="n">applied</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">continuous</span><span class="w"> </span><span class="n">variables</span><span class="o">.</span>
+</code></pre></div>
+
+<h2 id="is-k-means-used-for-prediction">Is K-means used for prediction?<a class="headerlink" href="#is-k-means-used-for-prediction" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">K</span><span class="o">-</span><span class="n">means</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">primarily</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">clustering</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">grouping</span><span class="w"> </span><span class="n">similar</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">points</span><span class="p">.</span><span class="w"> </span><span class="n">It</span><span class="w"> </span><span class="n">does</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="n">predict</span><span class="w"> </span><span class="n">labels</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">data</span><span class="p">;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">assigns</span><span class="w"> </span><span class="n">them</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">existing</span><span class="w"> </span><span class="n">clusters</span><span class="w"> </span><span class="n">based</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">similarity</span><span class="p">.</span>
+</code></pre></div>
+
+<h2 id="what-is-the-objective-of-k-means-clustering_1">What is the objective of k-means clustering?<a class="headerlink" href="#what-is-the-objective-of-k-means-clustering_1" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">The</span><span class="w"> </span><span class="n">objective</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">partition</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">into</span><span class="w"> </span><span class="err">‘</span><span class="n">k</span><span class="err">’</span><span class="w"> </span><span class="n">clusters</span><span class="p">,</span><span class="w"> </span><span class="n">minimizing</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">intra</span><span class="o">-</span><span class="n">cluster</span><span class="w"> </span><span class="n">variance</span><span class="o">.</span><span class="w"> </span><span class="n">It</span><span class="w"> </span><span class="n">seeks</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">form</span><span class="w"> </span><span class="n">groups</span><span class="w"> </span><span class="n">where</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">points</span><span class="w"> </span><span class="n">within</span><span class="w"> </span><span class="n">each</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">more</span><span class="w"> </span><span class="n">similar</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">each</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="n">than</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">those</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="n">clusters</span><span class="o">.</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
