@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Clustering in Machine Learning - AIML documents</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clustering in Machine Learning";
+        var mkdocs_page_input_path = "AIML/Unsupervised/Clustering/Clustering-overview.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/CrossValidation.html">Cross Validation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/HyperparameterTuning.html">Hyperparameter Tuning</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/TuningDecisionThreshold.html">Tuning decision threshold</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/RegressionModels/SimpleLinearRegression.html">Simple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/RegressionModels/MultipleLinearRegression.html">Multiple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/RegressionModels/PolynomialRegression.html">Polynomial Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/RegressionModels/RidgeLassoRegression.html">Ridge & Lasso Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/RegressionModels/SupportVectorRegression.html">Support Vector Regression (SVR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/RegressionModels/DecisionTreeRegression.html">Decision Tree Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.html">Random Forest Regression</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/LinearClassificationModels/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/LinearClassificationModels/SupportVectorMachines.html">Support Vector Machines</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/LinearClassificationModels/SinglelayerPerceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/LinearClassificationModels/StochasticGradientDescent.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/DecisionTreeClassification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KNearestNeighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/NaiveBayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/RandomForests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/BaggingClassifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/Ensemblelearningclassifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KernelSVM.html">Kernel SVM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/UnsupervisedLearning/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Linear Algebra</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../LinearAlgebra/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../DeepLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../DeepLearning/Vanishing.html">Vanishing and Exploding Gradients Problems</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Components of Neural Networks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/LayersNeuralNetworks.html">Layers in Neural Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/WeightsBiases.html">Weights and Biases</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/ForwardPropagation.html">Forward Propagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/ActivationFunctions.html">Activation Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/LossFunctions.html">Loss Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/Backpropagation.html">Backpropagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/LearningRate.html">Learning Rate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Optimization Algorithm</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/GradientDescent.html">Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/SGD.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/Adam.html">Adam (Adaptive Moment Estimation)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/BatchNormalization.html">Batch Normalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/Mini-batch-GD.html">Mini-batch Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/Momentum-based-GO.html">Momentum-based Gradient Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/AdagradOptimizer.html">Adagrad Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.html">RMSProp Optimizer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Models</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/FNN.html">Feedforward Neural Network (FNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Recurrent Neural Network (RNN)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../DeepLearning/Models/RNN.html">Recurrent Neural Network (RNN)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../DeepLearning/Models/LSTM.html">LSTM (Long Short-Term Memory)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../DeepLearning/Models/GRU.html">GRU (Gated Recurrent Unit)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/CNN.html">Convolutional Neural Network (CNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/RBFN.html">Radial Basis Function Network (RBFN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/ComputerVision.html">Computer Vision</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/GANs.html">Generative Adversarial Networks (GANs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/Transformer.html">Transformer Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/Autoencoders.html">Autoencoders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/SOM.html">Self-Organizing Maps (SOM)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLP/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLP/nlpdetails.html">NLP Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Agent Development Kit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/GCP/adk.html">ADK</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/GCP/Agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/GCP/Tools.html">Tools</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/GCP/a2a.html">Tools</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >MCPModel Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../MCP/mcp.html">MCP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Models Details information</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Models/Ollama.html">Ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Note Book</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Notebook/allnotebook.html">All Notebook</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Clustering in Machine Learning</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clustering-in-machine-learning">Clustering in Machine Learning<a class="headerlink" href="#clustering-in-machine-learning" title="Permanent link">#</a></h1>
+<p>In real world, not every data we work upon has a target variable. This kind of data cannot be analyzed using supervised learning algorithms. We need the help of unsupervised algorithms. One of the most popular type of analysis under unsupervised learning is Cluster analysis. When the goal is to group similar data points in a dataset, then we use cluster analysis. In practical situations, we can use cluster analysis for customer segmentation for targeted advertisements, or in medical imaging to find unknown or new infected areas and many more use cases.</p>
+<h2 id="what-is-clustering">What is Clustering ?<a class="headerlink" href="#what-is-clustering" title="Permanent link">#</a></h2>
+<p>The task of grouping data points based on their similarity with each other is called Clustering or Cluster Analysis. This method is defined under the branch of Unsupervised Learning, which aims at gaining insights from unlabelled data points, that is, unlike supervised learning we don’t have a target variable.</p>
+<p>Clustering aims at forming groups of homogeneous data points from a heterogeneous dataset. It evaluates the similarity based on a metric like Euclidean distance, Cosine similarity, Manhattan distance, etc. and then group the points with highest similarity score together.</p>
+<p>For Example, In the graph given below, we can clearly see that there are 3 circular clusters forming on the basis of distance.</p>
+<p><img alt="Clustering" src="../img/Clustering1.png" /></p>
+<p>Now it is not necessary that the clusters formed must be circular in shape. The shape of clusters can be arbitrary. There are many algortihms that work well with detecting arbitrary shaped clusters. </p>
+<p>For example, In the below given graph we can see that the clusters formed are not circular in shape.</p>
+<p><img alt="Clustering" src="../img/Clustering2.png" /></p>
+<h2 id="types-of-clustering">Types of Clustering<a class="headerlink" href="#types-of-clustering" title="Permanent link">#</a></h2>
+<p>Broadly speaking, there are 2 types of clustering that can be performed to group similar data points:</p>
+<ul>
+<li><strong>Hard Clustering:</strong> In this type of clustering, each data point belongs to a cluster completely or not. For example, Let’s say there are 4 data point and we have to cluster them into 2 clusters. So each data point will either belong to cluster 1 or cluster 2.</li>
+</ul>
+<p><img alt="Clustering" src="../img/Clustering3.png" /></p>
+<ul>
+<li><strong>Soft Clustering:</strong> In this type of clustering, instead of assigning each data point into a separate cluster, a probability or likelihood of that point being that cluster is evaluated. For example, Let’s say there are 4 data point and we have to cluster them into 2 clusters. So we will be evaluating a probability of a data point belonging to both clusters. This probability is calculated for all data points.</li>
+</ul>
+<p><img alt="Clustering" src="../img/Clustering4.png" /></p>
+<h2 id="uses-of-clustering">Uses of Clustering<a class="headerlink" href="#uses-of-clustering" title="Permanent link">#</a></h2>
+<p>Now before we begin with types of clustering algorithms, we will go through the use cases of Clustering algorithms. Clustering algorithms are majorly used for:</p>
+<ul>
+<li><strong>Market Segmentation –</strong> Businesses use clustering to group their customers and use targeted advertisements to attract more audience.</li>
+<li><strong>Market Basket Analysis –</strong> Shop owners analyze their sales and figure out which items are majorly bought together by the customers. For example, In USA, according to a study diapers and beers were usually bought together by fathers.</li>
+<li><strong>Social Network Analysis –</strong> Social media sites use your data to understand your browsing behaviour and provide you with targeted friend recommendations or content recommendations.</li>
+<li><strong>Medical Imaging –</strong> Doctors use Clustering to find out diseased areas in diagnostic images like X-rays.</li>
+<li><strong>Anomaly Detection –</strong> To find outliers in a stream of real-time dataset or forecasting fraudulent transactions we can use clustering to identify them.</li>
+<li><strong>Simplify working with large datasets –</strong> Each cluster is given a cluster ID after clustering is complete. Now, you may reduce a feature set’s whole feature set into its cluster ID. Clustering is effective when it can represent a complicated case with a straightforward cluster ID. Using the same principle, clustering data can make complex datasets simpler.</li>
+</ul>
+<p>There are many more use cases for clustering but there are some of the major and common use cases of clustering. Moving forward we will be discussing Clustering Algorithms that will help you perform the above tasks.</p>
+<h2 id="types-of-clustering-algorithms">Types of Clustering Algorithms<a class="headerlink" href="#types-of-clustering-algorithms" title="Permanent link">#</a></h2>
+<p>At the surface level, clustering helps in the analysis of unstructured data. Graphing, the shortest distance, and the density of the data points are a few of the elements that influence cluster formation. Clustering is the process of determining how related the objects are based on a metric called the similarity measure. Similarity metrics are easier to locate in smaller sets of features. It gets harder to create similarity measures as the number of features increases. Depending on the type of clustering algorithm being utilized in data mining, several techniques are employed to group the data from the datasets. In this part, the clustering techniques are described. Various types of clustering algorithms are:</p>
+<ol>
+<li><strong>Centroid-based Clustering</strong> (Partitioning methods)</li>
+<li><strong>Density-based Clustering</strong> (Model-based methods)</li>
+<li><strong>Connectivity-based Clustering</strong> (Hierarchical clustering)</li>
+<li><strong>Distribution-based Clustering</strong></li>
+</ol>
+<h2 id="1-centroid-based-clustering-partitioning-methods">1. Centroid-based Clustering (Partitioning methods)<a class="headerlink" href="#1-centroid-based-clustering-partitioning-methods" title="Permanent link">#</a></h2>
+<p>Partitioning methods are the most easiest clustering algorithms. They group data points on the basis of their closeness. Generally, the similarity measure chosen for these algorithms are Euclidian distance, Manhattan Distance or Minkowski Distance. The datasets are separated into a predetermined number of clusters, and each cluster is referenced by a vector of values. When compared to the vector value, the input data variable shows no difference and joins the cluster. </p>
+<p>The primary drawback for these algorithms is the requirement that we establish the number of clusters, “k,” either intuitively or scientifically (using the Elbow Method) before any clustering machine learning system starts allocating the data points. Despite this, it is still the most popular type of clustering. K-means and K-medoids clustering are some examples of this type clustering.</p>
+<h2 id="2-density-based-clustering-model-based-methods">2. Density-based Clustering (Model-based methods)<a class="headerlink" href="#2-density-based-clustering-model-based-methods" title="Permanent link">#</a></h2>
+<p>Density-based clustering, a model-based method, finds groups based on the density of data points. Contrary to centroid-based clustering, which requires that the number of clusters be predefined and is sensitive to initialization, density-based clustering determines the number of clusters automatically and is less susceptible to beginning positions. They are great at handling clusters of different sizes and forms, making them ideally suited for datasets with irregularly shaped or overlapping clusters. These methods manage both dense and sparse data regions by focusing on local density and can distinguish clusters with a variety of morphologies. </p>
+<p>In contrast, centroid-based grouping, like k-means, has trouble finding arbitrary shaped clusters. Due to its preset number of cluster requirements and extreme sensitivity to the initial positioning of centroids, the outcomes can vary. Furthermore, the tendency of centroid-based approaches to produce spherical or convex clusters restricts their capacity to handle complicated or irregularly shaped clusters. In conclusion, density-based clustering overcomes the drawbacks of centroid-based techniques by autonomously choosing cluster sizes, being resilient to initialization, and successfully capturing clusters of various sizes and forms. The most popular density-based clustering algorithm is DBSCAN.</p>
+<h2 id="3-connectivity-based-clustering-hierarchical-clustering">3. Connectivity-based Clustering (Hierarchical clustering)<a class="headerlink" href="#3-connectivity-based-clustering-hierarchical-clustering" title="Permanent link">#</a></h2>
+<p>A method for assembling related data points into hierarchical clusters is called hierarchical clustering. Each data point is initially taken into account as a separate cluster, which is subsequently combined with the clusters that are the most similar to form one large cluster that contains all of the data points.</p>
+<p>Think about how you may arrange a collection of items based on how similar they are. Each object begins as its own cluster at the base of the tree when using hierarchical clustering, which creates a dendrogram, a tree-like structure. The closest pairings of clusters are then combined into larger clusters after the algorithm examines how similar the objects are to one another. When every object is in one cluster at the top of the tree, the merging process has finished. Exploring various granularity levels is one of the fun things about hierarchical clustering. To obtain a given number of clusters, you can select to cut the dendrogram at a particular height. The more similar two objects are within a cluster, the closer they are. It’s comparable to classifying items according to their family trees, where the nearest relatives are clustered together and the wider branches signify more general connections. There are 2 approaches for Hierarchical clustering:</p>
+<ul>
+<li><strong>Divisive Clustering:</strong> It follows a top-down approach, here we consider all data points to be part one big cluster and then this cluster is divide into smaller groups.</li>
+<li><strong>Agglomerative Clustering:</strong> It follows a bottom-up approach, here we consider all data points to be part of individual clusters and then these clusters are clubbed together to make one big cluster with all data points. </li>
+</ul>
+<h2 id="4-distribution-based-clustering">4. Distribution-based Clustering<a class="headerlink" href="#4-distribution-based-clustering" title="Permanent link">#</a></h2>
+<p>Using distribution-based clustering, data points are generated and organized according to their propensity to fall into the same probability distribution (such as a Gaussian, binomial, or other) within the data. The data elements are grouped using a probability-based distribution that is based on statistical distributions. Included are data objects that have a higher likelihood of being in the cluster. A data point is less likely to be included in a cluster the further it is from the cluster’s central point, which exists in every cluster.</p>
+<p>A notable drawback of density and boundary-based approaches is the need to specify the clusters a priori for some algorithms, and primarily the definition of the cluster form for the bulk of algorithms. There must be at least one tuning or hyper-parameter selected, and while doing so should be simple, getting it wrong could have unanticipated repercussions. Distribution-based clustering has a definite advantage over proximity and centroid-based clustering approaches in terms of flexibility, accuracy, and cluster structure. The key issue is that, in order to avoid overfitting, many clustering methods only work with simulated or manufactured data, or when the bulk of the data points certainly belong to a preset distribution. The most popular distribution-based clustering algorithm is Gaussian Mixture Model.</p>
+<h1 id="applications-of-clustering-in-different-fields">Applications of Clustering in different fields:<a class="headerlink" href="#applications-of-clustering-in-different-fields" title="Permanent link">#</a></h1>
+<ol>
+<li><strong>Marketing:</strong> It can be used to characterize &amp; discover customer segments for marketing purposes.</li>
+<li><strong>Biology:</strong> It can be used for classification among different species of plants and animals.</li>
+<li><strong>Libraries:</strong> It is used in clustering different books on the basis of topics and information.</li>
+<li><strong>Insurance:</strong> It is used to acknowledge the customers, their policies and identifying the frauds.</li>
+<li><strong>City Planning:</strong> It is used to make groups of houses and to study their values based on their geographical locations and other factors present. </li>
+<li><strong>Earthquake studies:</strong> By learning the earthquake-affected areas we can determine the dangerous zones. </li>
+<li><strong>Image Processing:</strong> Clustering can be used to group similar images together, classify images based on content, and identify patterns in image data.</li>
+<li><strong>Genetics:</strong> Clustering is used to group genes that have similar expression patterns and identify gene networks that work together in biological processes.</li>
+<li><strong>Finance:</strong> Clustering is used to identify market segments based on customer behavior, identify patterns in stock market data, and analyze risk in investment portfolios.</li>
+<li><strong>Customer Service:</strong> Clustering is used to group customer inquiries and complaints into categories, identify common issues, and develop targeted solutions.</li>
+<li><strong>Manufacturing:</strong> Clustering is used to group similar products together, optimize production processes, and identify defects in manufacturing processes.</li>
+<li><strong>Medical diagnosis:</strong> Clustering is used to group patients with similar symptoms or diseases, which helps in making accurate diagnoses and identifying effective treatments.</li>
+<li><strong>Fraud detection:</strong> Clustering is used to identify suspicious patterns or anomalies in financial transactions, which can help in detecting fraud or other financial crimes.</li>
+<li><strong>Traffic analysis:</strong> Clustering is used to group similar patterns of traffic data, such as peak hours, routes, and speeds, which can help in improving transportation planning and infrastructure.</li>
+<li><strong>Social network analysis:</strong> Clustering is used to identify communities or groups within social networks, which can help in understanding social behavior, influence, and trends.</li>
+<li><strong>Cybersecurity:</strong> Clustering is used to group similar patterns of network traffic or system behavior, which can help in detecting and preventing cyberattacks.</li>
+<li><strong>Climate analysis:</strong> Clustering is used to group similar patterns of climate data, such as temperature, precipitation, and wind, which can help in understanding climate change and its impact on the environment.</li>
+<li><strong>Sports analysis:</strong> Clustering is used to group similar patterns of player or team performance data, which can help in analyzing player or team strengths and weaknesses and making strategic decisions.</li>
+<li><strong>Crime analysis:</strong> Clustering is used to group similar patterns of crime data, such as location, time, and type, which can help in identifying crime hotspots, predicting future crime trends, and improving crime prevention strategies.</li>
+</ol>
+<p><strong>The top 10 clustering algorithms are:</strong></p>
+<ol>
+<li>K-means Clustering</li>
+<li>Hierarchical Clustering</li>
+<li>DBSCAN (Density-Based Spatial Clustering of Applications with Noise)</li>
+<li>Gaussian Mixture Models (GMM)</li>
+<li>Agglomerative Clustering</li>
+<li>Spectral Clustering</li>
+<li>Mean Shift Clustering</li>
+<li>Affinity Propagation</li>
+<li>OPTICS (Ordering Points To Identify the Clustering Structure)</li>
+<li>Birch (Balanced Iterative Reducing and Clustering using Hierarchies)</li>
+</ol>
+<h2 id="what-is-the-difference-between-clustering-and-classification">What is the difference between clustering and classification?<a class="headerlink" href="#what-is-the-difference-between-clustering-and-classification" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">The</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="n">difference</span><span class="w"> </span><span class="n">between</span><span class="w"> </span><span class="n">clustering</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">classification</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">that</span><span class="p">,</span><span class="w"> </span><span class="n">classification</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">supervised</span><span class="w"> </span><span class="n">learning</span><span class="w"> </span><span class="n">algorithm</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">clustering</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">unsupervised</span><span class="w"> </span><span class="n">learning</span><span class="w"> </span><span class="n">algorithm</span><span class="o">.</span><span class="w"> </span><span class="n">That</span><span class="w"> </span><span class="k">is</span><span class="p">,</span><span class="w"> </span><span class="n">we</span><span class="w"> </span><span class="n">apply</span><span class="w"> </span><span class="n">clustering</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">those</span><span class="w"> </span><span class="n">datasets</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">without</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="n">variable</span><span class="o">.</span><span class="w"> </span>
+</code></pre></div>
+
+<h2 id="what-are-the-advantages-of-clustering-analysis">What are the advantages of clustering analysis?<a class="headerlink" href="#what-are-the-advantages-of-clustering-analysis" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">Data</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">organised</span><span class="w"> </span><span class="n">into</span><span class="w"> </span><span class="n">meaningful</span><span class="w"> </span><span class="n">groups</span><span class="w"> </span><span class="n">using</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">strong</span><span class="w"> </span><span class="n">analytical</span><span class="w"> </span><span class="k">tool</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">cluster</span><span class="w"> </span><span class="n">analysis</span><span class="o">.</span><span class="w"> </span><span class="n">You</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">pinpoint</span><span class="w"> </span><span class="n">segments</span><span class="p">,</span><span class="w"> </span><span class="n">find</span><span class="w"> </span><span class="n">hidden</span><span class="w"> </span><span class="n">patterns</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">improve</span><span class="w"> </span><span class="n">decisions</span><span class="o">.</span>
+</code></pre></div>
+
+<h2 id="which-is-the-fastest-clustering-method">Which is the fastest clustering method?<a class="headerlink" href="#which-is-the-fastest-clustering-method" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nx">K</span><span class="o">-</span><span class="nx">means</span><span class="w"> </span><span class="nx">clustering</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="nx">often</span><span class="w"> </span><span class="nx">considered</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">fastest</span><span class="w"> </span><span class="nx">clustering</span><span class="w"> </span><span class="nx">method</span><span class="w"> </span><span class="nx">due</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">its</span><span class="w"> </span><span class="nx">simplicity</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="nx">computational</span><span class="w"> </span><span class="nx">efficiency</span><span class="p">.</span><span class="w"> </span><span class="nx">It</span><span class="w"> </span><span class="nx">iteratively</span><span class="w"> </span><span class="nx">assigns</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="nx">points</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">nearest</span><span class="w"> </span><span class="nx">cluster</span><span class="w"> </span><span class="nx">centroid</span><span class="p">,</span><span class="w"> </span><span class="nx">making</span><span class="w"> </span><span class="nx">it</span><span class="w"> </span><span class="nx">suitable</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">large</span><span class="w"> </span><span class="nx">datasets</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">low</span><span class="w"> </span><span class="nx">dimensionality</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">moderate</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">clusters</span><span class="p">.</span>
+</code></pre></div>
+
+<h2 id="what-are-the-limitations-of-clustering">What are the limitations of clustering?<a class="headerlink" href="#what-are-the-limitations-of-clustering" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nx">Limitations</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">clustering</span><span class="w"> </span><span class="nx">include</span><span class="w"> </span><span class="nx">sensitivity</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">initial</span><span class="w"> </span><span class="nx">conditions</span><span class="p">,</span><span class="w"> </span><span class="nx">dependence</span><span class="w"> </span><span class="nx">on</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="kd">choice</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">parameters</span><span class="p">,</span><span class="w"> </span><span class="nx">difficulty</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">determining</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">optimal</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">clusters</span><span class="p">,</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="nx">challenges</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">handling</span><span class="w"> </span><span class="nx">high</span><span class="o">-</span><span class="nx">dimensional</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="nx">noisy</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span>
+</code></pre></div>
+
+<h2 id="what-does-the-quality-of-result-of-clustering-depend-on">What does the quality of result of clustering depend on?<a class="headerlink" href="#what-does-the-quality-of-result-of-clustering-depend-on" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nx">The</span><span class="w"> </span><span class="nx">quality</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">clustering</span><span class="w"> </span><span class="nx">results</span><span class="w"> </span><span class="nx">depends</span><span class="w"> </span><span class="nx">on</span><span class="w"> </span><span class="nx">factors</span><span class="w"> </span><span class="nx">such</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="kd">choice</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">algorithm</span><span class="p">,</span><span class="w"> </span><span class="nx">distance</span><span class="w"> </span><span class="nx">metric</span><span class="p">,</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">clusters</span><span class="p">,</span><span class="w"> </span><span class="nx">initialization</span><span class="w"> </span><span class="nx">method</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="nx">preprocessing</span><span class="w"> </span><span class="nx">techniques</span><span class="p">,</span><span class="w"> </span><span class="nx">cluster</span><span class="w"> </span><span class="nx">evaluation</span><span class="w"> </span><span class="nx">metrics</span><span class="p">,</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="nx">domain</span><span class="w"> </span><span class="nx">knowledge</span><span class="p">.</span><span class="w"> </span><span class="nx">These</span><span class="w"> </span><span class="nx">elements</span><span class="w"> </span><span class="nx">collectively</span><span class="w"> </span><span class="nx">influence</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">effectiveness</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="nx">accuracy</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">clustering</span><span class="w"> </span><span class="nx">outcome</span><span class="p">.</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
