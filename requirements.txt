@@ -1,0 +1,24 @@
+mkdocs-material
+mkdocs-git-revision-date-localized-plugin
+mkdocs-git-authors-plugin
+mkdocs-jupyter
+
+# Core MkDocs
+mkdocs>=1.6.0
+
+# Themes
+mkdocs-material>=9.5.0
+mkdocs-rtd-dropdown>=1.0.2
+
+# Plugins
+mkdocs-git-revision-date-localized-plugin>=1.2.0
+mkdocs-git-authors-plugin>=0.7.0
+mkdocs-search>=1.0.0
+
+# Markdown extensions
+Pygments>=2.17.0
+Markdown>=3.6
+
+# Optional (if you uncomment mkdocs-jupyter in config)
+mkdocs-jupyter>=0.24.6
+

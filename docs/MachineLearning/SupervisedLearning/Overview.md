@@ -163,3 +163,79 @@ Supervised learning is a powerful branch of machine learning that revolves aroun
 
 Understanding the types of supervised learning algorithms and the dimensions of supervised machine learning is essential for choosing the appropriate algorithm to solve specific problems. As we continue to explore the different types of supervised learning and refine these supervised learning techniques, the impact of supervised learning in machine learning will only grow, playing a critical role in advancing AI-driven solutions.
 
+
+**Supervised machine learning algorithms in table:**
+
+<table border="1" style="border-collapse: collapse; text-align: left;">
+<tr style="background-color:#f2f2f2;">
+<th>Algorithm</th>
+<th>Regression / Classification</th>
+<th>Purpose</th>
+<th>Method</th>
+<th>Use Cases</th>
+</tr>
+
+<tr style="background-color:#e6f7ff;">
+<td><b>Linear Regression</b></td>
+<td>Regression</td>
+<td>Predict continuous output values</td>
+<td>Linear equation minimizing sum of squares of residuals</td>
+<td>Predicting continuous values (e.g., house prices, sales forecasting)</td>
+</tr>
+
+<tr style="background-color:#fff2e6;">
+<td><b>Logistic Regression</b></td>
+<td>Classification</td>
+<td>Predict binary output variable</td>
+<td>Logistic function transforming linear relationship</td>
+<td>Binary classification tasks (e.g., spam detection, disease prediction)</td>
+</tr>
+
+<tr style="background-color:#f9f9f9;">
+<td><b>Decision Trees</b></td>
+<td>Both</td>
+<td>Model decisions and outcomes</td>
+<td>Tree-like structure with decisions and outcomes</td>
+<td>Classification and regression tasks</td>
+</tr>
+
+<tr style="background-color:#e6ffe6;">
+<td><b>Random Forests</b></td>
+<td>Both</td>
+<td>Improve classification and regression accuracy</td>
+<td>Combining multiple decision trees</td>
+<td>Reducing overfitting, improving prediction accuracy</td>
+</tr>
+
+<tr style="background-color:#e6f7ff;">
+<td><b>SVM</b></td>
+<td>Both</td>
+<td>Create hyperplane for classification or predict continuous values</td>
+<td>Maximizing margin between classes or predicting continuous values</td>
+<td>Classification and regression tasks (e.g., image recognition, stock prediction)</td>
+</tr>
+
+<tr style="background-color:#fff2e6;">
+<td><b>KNN</b></td>
+<td>Both</td>
+<td>Predict class or value based on k closest neighbors</td>
+<td>Finding k closest neighbors and predicting based on majority or average</td>
+<td>Classification and regression tasks; sensitive to noisy data</td>
+</tr>
+
+<tr style="background-color:#f9f9f9;">
+<td><b>Gradient Boosting</b></td>
+<td>Both</td>
+<td>Combine weak learners to create strong model</td>
+<td>Iteratively correcting errors with new models</td>
+<td>Classification and regression tasks to improve prediction accuracy</td>
+</tr>
+
+<tr style="background-color:#e6ffe6;">
+<td><b>Naive Bayes</b></td>
+<td>Classification</td>
+<td>Predict class based on feature independence assumption</td>
+<td>Bayes' theorem with feature independence assumption</td>
+<td>Text classification, spam filtering, sentiment analysis, medical diagnosis</td>
+</tr>
+</table>

@@ -119,34 +119,102 @@ nav:
       - MongoDB: Databases/MongoDB.md
     - Machine Learning:
       - Overview: MachineLearning/Overview.md
-      - Supervised Learning: 
+      - Supervised Learning:
+        - Overview: MachineLearning/SupervisedLearning/Overview.md
         - Regression: MachineLearning/SupervisedLearning/Regression.md
         - Classification: MachineLearning/SupervisedLearning/Classification.md
-      - Unsupervised Learning: 
+        - Cross Validation: MachineLearning/SupervisedLearning/CrossValidation.md
+        - Hyperparameter Tuning: MachineLearning/SupervisedLearning/HyperparameterTuning.md
+        - Tuning decision threshold: MachineLearning/SupervisedLearning/TuningDecisionThreshold.md
+        - Regression Models:
+          - Simple Linear Regression: MachineLearning/SupervisedLearning/RegressionModels/SimpleLinearRegression.md
+          - Multiple Linear Regression: MachineLearning/SupervisedLearning/RegressionModels/MultipleLinearRegression.md
+          - Polynomial Regression: MachineLearning/SupervisedLearning/RegressionModels/PolynomialRegression.md
+          - Ridge & Lasso Regression: MachineLearning/SupervisedLearning/RegressionModels/RidgeLassoRegression.md
+          - Support Vector Regression (SVR): MachineLearning/SupervisedLearning/RegressionModels/SupportVectorRegression.md
+          - Decision Tree Regression: MachineLearning/SupervisedLearning/RegressionModels/DecisionTreeRegression.md
+          - Random Forest Regression: MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.md
+        - Linear Classification Models:
+          - Logistic Regression: MachineLearning/SupervisedLearning/LinearClassificationModels/LogisticRegression.md
+          - Support Vector Machines: MachineLearning/SupervisedLearning/LinearClassificationModels/SupportVectorMachines.md
+          - Single-layer Perceptron: MachineLearning/SupervisedLearning/LinearClassificationModels/SinglelayerPerceptron.md
+          - Stochastic Gradient Descent (SGD): MachineLearning/SupervisedLearning/LinearClassificationModels/StochasticGradientDescent.md
+        - Non-linear Classification Models:
+          - Decision Tree Classification: MachineLearning/SupervisedLearning/NonlinearClassificationModels/DecisionTreeClassification.md
+          - K-Nearest Neighbours: MachineLearning/SupervisedLearning/NonlinearClassificationModels/KNearestNeighbours.md
+          - Naive Bayes: MachineLearning/SupervisedLearning/NonlinearClassificationModels/NaiveBayes.md
+          - Random Forests: MachineLearning/SupervisedLearning/NonlinearClassificationModels/RandomForests.md
+          - AdaBoost: MachineLearning/SupervisedLearning/NonlinearClassificationModels/AdaBoost.md
+          - Bagging Classifier: MachineLearning/SupervisedLearning/NonlinearClassificationModels/BaggingClassifier.md
+          - Ensemble learning classifiers: MachineLearning/SupervisedLearning/NonlinearClassificationModels/Ensemblelearningclassifiers.md
+          - Kernel SVM: MachineLearning/SupervisedLearning/NonlinearClassificationModels/KernelSVM.md
+      - Unsupervised Learning:
+        - Overview: MachineLearning/UnsupervisedLearning/overview.md
         - Clustering: MachineLearning/UnsupervisedLearning/Clustering.md
         - Principal Component Analysis(PCA): MachineLearning/UnsupervisedLearning/Pca.md
       - Reinforcement Learning: 
         - Overview: MachineLearning/ReinforcementLearning/ReinforcementLearning.md
+    - Linear Algebra:
+      - Overview: LinearAlgebra/Overview.md
     - Deep Learning:
       - Overview: DeepLearning/Overview.md
+      - Vanishing and Exploding Gradients Problems: DeepLearning/Vanishing.md
+      - Components of Neural Networks:
+        - Layers in Neural Networks: DeepLearning/Components/LayersNeuralNetworks.md
+        - Weights and Biases: DeepLearning/Components/WeightsBiases.md
+        - Forward Propagation: DeepLearning/Components/ForwardPropagation.md
+        - Activation Functions: DeepLearning/Components/ActivationFunctions.md
+        - Loss Functions: DeepLearning/Components/LossFunctions.md
+        - Backpropagation: DeepLearning/Components/Backpropagation.md
+        - Learning Rate: DeepLearning/Components/LearningRate.md
+      - Optimization Algorithm:
+        - Gradient Descent: DeepLearning/OptimizationAlgorithm/GradientDescent.md
+        - Stochastic Gradient Descent (SGD): DeepLearning/OptimizationAlgorithm/SGD.md
+        - Adam (Adaptive Moment Estimation): DeepLearning/OptimizationAlgorithm/Adam.md
+        - Batch Normalization: DeepLearning/OptimizationAlgorithm/BatchNormalization.md
+        - Mini-batch Gradient Descent: DeepLearning/OptimizationAlgorithm/Mini-batch-GD.md
+        - Momentum-based Gradient Optimizer: DeepLearning/OptimizationAlgorithm/Momentum-based-GO.md
+        - Adagrad Optimizer: DeepLearning/OptimizationAlgorithm/AdagradOptimizer.md
+        - RMSProp Optimizer: DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.md
+      - Models:
+        - Feedforward Neural Network (FNN): DeepLearning/Models/FNN.md
+        - Recurrent Neural Network (RNN):
+          - Recurrent Neural Network (RNN): DeepLearning/Models/RNN.md 
+          - LSTM (Long Short-Term Memory): DeepLearning/Models/LSTM.md
+          - GRU (Gated Recurrent Unit): DeepLearning/Models/GRU.md
+        - Convolutional Neural Network (CNN): DeepLearning/Models/CNN.md
+        - Radial Basis Function Network (RBFN): DeepLearning/Models/RBFN.md
+        - Computer Vision: DeepLearning/Models/ComputerVision.md
+        - Generative Adversarial Networks (GANs): DeepLearning/Models/GANs.md
+        - Transformer Networks: DeepLearning/Models/Transformer.md
+        - Autoencoders: DeepLearning/Models/Autoencoders.md
+        - Self-Organizing Maps (SOM): DeepLearning/Models/SOM.md
     - Natural Language Processing(NLP): 
-      - NLP: NLP/nlp.md
-    - Natural Language Understanding(NLU):
-      - NLP: NLU/nlu.md
-    - Natural Language Generation(NLG):
-      - NLP: NLG/nlg.md
+      - Overview: NLP/overview.md
+      - NLP Details: NLP/nlpdetails.md
     - Retrieval-Augmented Generation(RAG):
       - RAG: RAG/rag.md
     - AI agents:
       - AI agents: AIagents/aiagents.md
     - Agentic AI:
       - general: AgenticAI/general.md
+      - Overview: AgenticAI/overview.md
       - crewai: AgenticAI/crewai.md
       - LangGraph: AgenticAI/LangGraph.md
       - AutoGen: AgenticAI/AutoGen.md
       - AWS: AgenticAI/aws.md
       - AZURE: AgenticAI/azure.md
-      - GCP: AgenticAI/gcp.md
+      - Agent Development Kit:
+        - ADK : AgenticAI/GCP/adk.md
+        - Agents: AgenticAI/GCP/Agents.md
+        - Tools: AgenticAI/GCP/Tools.md
+        - Tools: AgenticAI/GCP/a2a.md
+    - MCPModel Context Protocol (MCP):
+      - MCP: MCP/mcp.md
+    - Models Details information:
+      - Ollama: Models/Ollama.md
+    - Note Book:
+      - All Notebook: Notebook/allnotebook.md
 
 #theme: readthedocs
 theme:
