@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Ollama - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Ollama";
+        var mkdocs_page_input_path = "Models/Ollama.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/CrossValidation.html">Cross Validation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/HyperparameterTuning.html">Hyperparameter Tuning</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/TuningDecisionThreshold.html">Tuning decision threshold</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/SimpleLinearRegression.html">Simple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/MultipleLinearRegression.html">Multiple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/PolynomialRegression.html">Polynomial Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/RidgeLassoRegression.html">Ridge & Lasso Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/SupportVectorRegression.html">Support Vector Regression (SVR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/DecisionTreeRegression.html">Decision Tree Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.html">Random Forest Regression</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/SupportVectorMachines.html">Support Vector Machines</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/SinglelayerPerceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/StochasticGradientDescent.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/DecisionTreeClassification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KNearestNeighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/NaiveBayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/RandomForests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/BaggingClassifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/Ensemblelearningclassifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KernelSVM.html">Kernel SVM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Linear Algebra</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../LinearAlgebra/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Vanishing.html">Vanishing and Exploding Gradients Problems</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Components of Neural Networks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LayersNeuralNetworks.html">Layers in Neural Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/WeightsBiases.html">Weights and Biases</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/ForwardPropagation.html">Forward Propagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/ActivationFunctions.html">Activation Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LossFunctions.html">Loss Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/Backpropagation.html">Backpropagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LearningRate.html">Learning Rate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Optimization Algorithm</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/GradientDescent.html">Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/SGD.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Adam.html">Adam (Adaptive Moment Estimation)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/BatchNormalization.html">Batch Normalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Mini-batch-GD.html">Mini-batch Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Momentum-based-GO.html">Momentum-based Gradient Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/AdagradOptimizer.html">Adagrad Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.html">RMSProp Optimizer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Models</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/FNN.html">Feedforward Neural Network (FNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Recurrent Neural Network (RNN)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/RNN.html">Recurrent Neural Network (RNN)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/LSTM.html">LSTM (Long Short-Term Memory)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/GRU.html">GRU (Gated Recurrent Unit)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/CNN.html">Convolutional Neural Network (CNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/RBFN.html">Radial Basis Function Network (RBFN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/ComputerVision.html">Computer Vision</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/GANs.html">Generative Adversarial Networks (GANs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/Transformer.html">Transformer Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/Autoencoders.html">Autoencoders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/SOM.html">Self-Organizing Maps (SOM)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/nlpdetails.html">NLP Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Agent Development Kit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/adk.html">ADK</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/Agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/Tools.html">Tools</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/a2a.html">Tools</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >MCPModel Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MCP/mcp.html">MCP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Models Details information</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Note Book</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Notebook/allnotebook.html">All Notebook</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Models Details information</li>
+      <li class="breadcrumb-item active">Ollama</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 style="color:red;">✅ Ollama</h2>
+
+<h3 style="color:blue;">📌 What is Ollama?</h3>
+
+<p><strong>Ollama</strong> is a tool and platform that makes it easy to <strong>run and interact with large language models (LLMs) locally on your computer,</strong> especially models like <code>LLaMA</code>, <code>Mistral</code>, <code>Gemma</code>, and others — <strong>without needing cloud infrastructure or APIs like OpenAI's</strong>.</p>
+<h3 style="color:blue;">🔧 What Does Ollama Do?</h3>
+
+<ul>
+<li>
+<p><strong>Runs LLMs locally:</strong> No internet connection or cloud server needed after downloading a model.</p>
+</li>
+<li>
+<p><strong>Supports popular open-source models:</strong> Includes LLaMA 2/3, Mistral, Gemma, Code LLaMA, and others.</p>
+</li>
+<li>
+<p><strong>Simple CLI tool:</strong> You can start chatting with a model using the command line.</p>
+</li>
+<li>
+<p><strong>Integrates with apps:</strong> Ollama can serve models through an HTTP API, enabling developers to build local AI applications (e.g., with LangChain, CrewAI, etc.).</p>
+</li>
+</ul>
+<h3 style="color:blue;">✅ Key Features</h3>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Local model execution</strong></td>
+<td>Uses your own CPU/GPU to run models</td>
+</tr>
+<tr>
+<td><strong>Model management</strong></td>
+<td>Download, update, and remove models easily</td>
+</tr>
+<tr>
+<td><strong>Privacy-first</strong></td>
+<td>No data is sent to external servers unless you choose to</td>
+</tr>
+<tr>
+<td><strong>Cross-platform</strong></td>
+<td>Works on macOS, Windows, and Linux</td>
+</tr>
+<tr>
+<td><strong>Built-in server</strong></td>
+<td>Starts a local server (<code>localhost:11434</code>) to access models via API</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧠 Example Usage (Terminal)</h3>
+
+<div class="codehilite"><pre><span></span><code>ollama run llama3
+</code></pre></div>
+
+<h3 style="color:blue;">🧠 Example Usage with a prompt</h3>
+
+<div class="codehilite"><pre><span></span><code>ollama run mistral:7b-instruct
+&gt; What&#39;s the capital of France?
+</code></pre></div>
+
+<h3 style="color:blue;">✅ 1. LLaMA Family</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>llama2</code></td>
+<td>Meta's LLaMA 2, general-purpose LLM (7B, 13B, 70B)</td>
+</tr>
+<tr>
+<td><code>llama3</code></td>
+<td>Meta's latest, better quality and reasoning (8B, 70B)</td>
+</tr>
+<tr>
+<td><code>llama3:8b</code></td>
+<td>Smaller, fast and efficient</td>
+</tr>
+<tr>
+<td><code>llama3:70b</code></td>
+<td>Very powerful, large model</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 2. Mistral Models</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mistral</code></td>
+<td>Open-weight, performant 7B model</td>
+</tr>
+<tr>
+<td><code>mixtral</code></td>
+<td>Mixture-of-experts (MoE) version (12.9B active params)</td>
+</tr>
+<tr>
+<td><code>mixtral:8x7b</code></td>
+<td>Specific variant of Mixtral</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 3. Gemma</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gemma</code></td>
+<td>Google's open model, Gemma (2B, 7B)</td>
+</tr>
+<tr>
+<td><code>gemma:2b</code></td>
+<td>Lightweight and fast</td>
+</tr>
+<tr>
+<td><code>gemma:7b</code></td>
+<td>More powerful</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 4. Phi</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>phi</code></td>
+<td>Microsoft's small, high-quality model</td>
+</tr>
+<tr>
+<td><code>phi:2</code></td>
+<td>Updated Phi-2 model</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 5. Code LLMs</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>codellama</code></td>
+<td>Meta's LLaMA variant for code tasks</td>
+</tr>
+<tr>
+<td><code>codellama:7b</code></td>
+<td>LLaMA 2 based code model (7B)</td>
+</tr>
+<tr>
+<td><code>codellama:13b</code></td>
+<td>Larger version (13B)</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 6. Neural Chat</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>neural-chat</code></td>
+<td>Fine-tuned for conversational tasks</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 7. OpenChat</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>openchat</code></td>
+<td>Fine-tuned model with great instruction following</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 8. Dolphin</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dolphin-mixtral</code></td>
+<td>Fine-tuned Mixtral model, very chat-friendly</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 9. LLaVA (Multimodal)</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>llava</code></td>
+<td>Vision + language model, image + text input</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 10. Solar</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>solar</code></td>
+<td>Compact model with high performance</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 11. Starling</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>starling</code></td>
+<td>Reward model fine-tuned for alignment</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 12. TinyLLaMA</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tinyllama</code></td>
+<td>Super lightweight version (1.1B)</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ 13. Yi</h3>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>yi</code></td>
+<td>Open Chinese-English bilingual model</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🔍 To List All Models from CLI:</h3>
+
+<div class="codehilite"><pre><span></span><code>ollama list
+</code></pre></div>
+
+<h3 style="color:blue;">📥 To Pull a Model:</h3>
+
+<div class="codehilite"><pre><span></span><code>ollama pull llama3
+</code></pre></div>
+
+<h3 style="color:blue;">🧠 To Run a Model:</h3>
+
+<div class="codehilite"><pre><span></span><code>ollama run llama3
+</code></pre></div>
+
+<h3 style="color:blue;">🖥️ Hardware Requirements by Model Size</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Model Size</strong></th>
+<th><strong>Recommended RAM</strong></th>
+<th><strong>Recommended VRAM (GPU)</strong></th>
+<th><strong>CPU</strong></th>
+<th><strong>Disk Space</strong></th>
+<th><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiny (1B–3B)</td>
+<td>≥ 8 GB</td>
+<td>Optional (2–4 GB VRAM)</td>
+<td>4-core x86 CPU</td>
+<td>\~10 GB</td>
+<td>Runs on CPU, slow on older machines</td>
+</tr>
+<tr>
+<td>Small (7B)</td>
+<td>≥ 16 GB</td>
+<td>≥ 4–6 GB VRAM</td>
+<td>6-core, modern CPU</td>
+<td>\~15–20 GB</td>
+<td>Most popular size, runs well on modern systems</td>
+</tr>
+<tr>
+<td>Medium (13B)</td>
+<td>≥ 24 GB</td>
+<td>≥ 8 GB VRAM</td>
+<td>8-core or better</td>
+<td>\~25–30 GB</td>
+<td>Slower on CPU; GPU recommended</td>
+</tr>
+<tr>
+<td>Large (30B)</td>
+<td>≥ 32 GB</td>
+<td>≥ 16 GB VRAM</td>
+<td>8-core+, AVX512 support helpful</td>
+<td>≥ 50 GB</td>
+<td>GPU required for real-time chat</td>
+</tr>
+<tr>
+<td>Very Large (65B–70B)</td>
+<td>≥ 64 GB</td>
+<td>≥ 32 GB VRAM (e.g. RTX 4090)</td>
+<td>High-end workstation/server CPU</td>
+<td>≥ 70–100 GB</td>
+<td>For advanced users; long startup time on CPU</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧰 Software Requirements</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Requirement</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Operating System</strong></td>
+<td>macOS (Intel/Apple Silicon), Linux, Windows (via WSL2 or native GUI on Win 11)</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Installation</strong></td>
+<td>Via CLI (`curl <a href="https://ollama.com/install.sh">https://ollama.com/install.sh</a></td>
+<td>sh`) or Windows GUI</td>
+</tr>
+<tr>
+<td><strong>CUDA (GPU)</strong></td>
+<td>NVIDIA GPU support for acceleration (CUDA &gt;= 11.7)</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Optional GPU Config</strong></td>
+<td><code>OLLAMA_FLASH_ATTENTION=1</code> to enable flash attention for faster decoding</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Supported Architectures</strong></td>
+<td>x86-64, Apple M1/M2/M3 (ARM64 supported for macOS)</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Environment</strong></td>
+<td>Works with Docker, CLI, or as a backend for LangChain, Python, etc.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">📦 Model & Storage Considerations</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Model Name</strong></th>
+<th><strong>Typical Size (Quantized)</strong></th>
+<th><strong>Model Types</strong></th>
+<th><strong>Use Case</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tinyllama</code></td>
+<td>\~1–2 GB</td>
+<td>Chat/General</td>
+<td>Very fast, low resource</td>
+</tr>
+<tr>
+<td><code>phi</code>, <code>neural-chat</code></td>
+<td>\~2–3 GB</td>
+<td>Chat, Conversational</td>
+<td>Efficient for local use</td>
+</tr>
+<tr>
+<td><code>llama2:7b</code></td>
+<td>\~4–5 GB</td>
+<td>General-purpose</td>
+<td>Best balance of size &amp; performance</td>
+</tr>
+<tr>
+<td><code>mistral</code>, <code>gemma:7b</code></td>
+<td>\~4–6 GB</td>
+<td>Chat, RAG, QA</td>
+<td>Faster and newer alternatives</td>
+</tr>
+<tr>
+<td><code>codellama:13b</code></td>
+<td>\~7–8 GB</td>
+<td>Code generation</td>
+<td>GPU highly recommended</td>
+</tr>
+<tr>
+<td><code>llama3:70b</code></td>
+<td>\~40–45 GB</td>
+<td>Top-tier reasoning and RAG</td>
+<td>Only suitable for high-end systems</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">⚙️ Performance Benchmarks (Approx.)</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Model</strong></th>
+<th><strong>Cold Load Time (CPU)</strong></th>
+<th><strong>Cold Load Time (GPU)</strong></th>
+<th><strong>Token Generation Speed</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>llama2:7b</code></td>
+<td>15–25 sec</td>
+<td>3–5 sec</td>
+<td>\~5–15 tokens/sec (CPU), \~40–70 (GPU)</td>
+</tr>
+<tr>
+<td><code>mistral</code></td>
+<td>10–20 sec</td>
+<td>2–4 sec</td>
+<td>Fast, efficient</td>
+</tr>
+<tr>
+<td><code>llama3:70b</code></td>
+<td>60–90 sec</td>
+<td>5–10 sec (RTX 4090)</td>
+<td>Very fast, but huge size</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧠 CodeLlama Models Overview</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Model Name</strong></th>
+<th><strong>Parameters</strong></th>
+<th><strong>Quantized Size</strong></th>
+<th><strong>Use Case</strong></th>
+<th><strong>Model Type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>codellama</code></td>
+<td>7B</td>
+<td>\~4–6 GB</td>
+<td>General code generation</td>
+<td>LLaMA 2 base + code fine-tuned</td>
+</tr>
+<tr>
+<td><code>codellama:7b</code></td>
+<td>7B</td>
+<td>\~4–6 GB</td>
+<td>Efficient for local code completion</td>
+<td>Standard</td>
+</tr>
+<tr>
+<td><code>codellama:13b</code></td>
+<td>13B</td>
+<td>\~7–9 GB</td>
+<td>More context, better accuracy</td>
+<td>Larger version</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🖥️ Hardware Requirements</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Model</strong></th>
+<th><strong>RAM (Recommended)</strong></th>
+<th><strong>GPU VRAM (Recommended)</strong></th>
+<th><strong>CPU (Min)</strong></th>
+<th><strong>Disk Space</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>codellama</code></td>
+<td>≥ 16 GB</td>
+<td>Optional, ≥ 4 GB</td>
+<td>4–6 core x86</td>
+<td>\~6 GB</td>
+</tr>
+<tr>
+<td><code>codellama:7b</code></td>
+<td>≥ 16 GB</td>
+<td>≥ 6 GB</td>
+<td>6-core modern CPU</td>
+<td>\~8 GB</td>
+</tr>
+<tr>
+<td><code>codellama:13b</code></td>
+<td>≥ 24 GB</td>
+<td>≥ 8–12 GB</td>
+<td>8-core+ recommended</td>
+<td>\~12 GB</td>
+</tr>
+</tbody>
+</table>
+<p><strong>📝 Note:</strong> GPU is highly recommended for codellama:13b, especially for low-latency completions.</p>
+<h3 style="color:blue;">⚙️ Software Requirements</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>macOS, Linux, Windows (WSL2 or GUI for Win11)</td>
+</tr>
+<tr>
+<td>GPU Support</td>
+<td>NVIDIA CUDA 11.7+ (if using GPU acceleration)</td>
+</tr>
+<tr>
+<td>Ollama CLI/GUI</td>
+<td><code>ollama pull codellama:7b</code> or <code>:13b</code></td>
+</tr>
+<tr>
+<td>Usage</td>
+<td>CLI or API (<code>ollama run codellama:7b</code>)</td>
+</tr>
+<tr>
+<td>Integration Ready</td>
+<td>Works with LangChain, VS Code extensions, etc.</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧪 Performance Comparison (Approx.)</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><code>codellama:7b</code></th>
+<th><code>codellama:13b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Load Time (CPU)</td>
+<td>\~10–20 sec</td>
+<td>\~30–45 sec</td>
+</tr>
+<tr>
+<td>Load Time (GPU)</td>
+<td>\~2–5 sec (6GB+)</td>
+<td>\~6–10 sec (12GB+)</td>
+</tr>
+<tr>
+<td>Tokens/sec (CPU)</td>
+<td>\~8–15</td>
+<td>\~4–8</td>
+</tr>
+<tr>
+<td>Tokens/sec (GPU)</td>
+<td>\~50–80</td>
+<td>\~40–60</td>
+</tr>
+<tr>
+<td>Max Context (default)</td>
+<td>4K tokens (configurable)</td>
+<td>4K–8K depending on tuning</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧑‍💻 Ideal Use Cases</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Model</strong></th>
+<th><strong>Recommended For</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>codellama</code></td>
+<td>Lightweight coding tasks, embedded in apps</td>
+</tr>
+<tr>
+<td><code>codellama:7b</code></td>
+<td>Local code assistants, pair programming, code explanations</td>
+</tr>
+<tr>
+<td><code>codellama:13b</code></td>
+<td>Advanced coding help, long function generation, full project structure output</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧠 Understanding Model Sizes</h3>
+
+<p>The terms <strong>7B</strong> and <strong>13B</strong> refer to the number of parameters in the model — a critical aspect that affects performance, resource requirements, and capability.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Model Name</strong></th>
+<th><strong>Parameter Count</strong></th>
+<th><strong>Meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1B</code></td>
+<td>1 Billion</td>
+<td>Very lightweight, fast, but limited capability</td>
+</tr>
+<tr>
+<td><code>3B</code></td>
+<td>3 Billion</td>
+<td>Small model for basic tasks</td>
+</tr>
+<tr>
+<td><code>7B</code></td>
+<td>7 Billion</td>
+<td>Good balance of speed and performance</td>
+</tr>
+<tr>
+<td><code>13B</code></td>
+<td>13 Billion</td>
+<td>Higher accuracy and reasoning; needs more resources</td>
+</tr>
+<tr>
+<td><code>30B</code></td>
+<td>30 Billion</td>
+<td>Very high capability; slow on CPU</td>
+</tr>
+<tr>
+<td><code>70B</code></td>
+<td>70 Billion</td>
+<td>State-of-the-art performance; needs high-end GPU or server</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">⚖️ 7B vs 13B – Tradeoffs</h3>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th><strong>7B Model</strong></th>
+<th><strong>13B Model</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Model Size (quantized)</strong></td>
+<td>\~4–6 GB</td>
+<td>\~7–9 GB</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>Fast and responsive</td>
+<td>Slower but smarter</td>
+</tr>
+<tr>
+<td><strong>Memory Usage (RAM)</strong></td>
+<td>16 GB minimum</td>
+<td>24–32 GB recommended</td>
+</tr>
+<tr>
+<td><strong>GPU (VRAM)</strong></td>
+<td>≥ 6 GB recommended</td>
+<td>≥ 10–12 GB preferred</td>
+</tr>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td>Good for most tasks</td>
+<td>Better understanding and generation</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>Up to 4K tokens</td>
+<td>Up to 8K tokens (configurable)</td>
+</tr>
+<tr>
+<td><strong>Best For</strong></td>
+<td>Lightweight apps, fast chat/code</td>
+<td>Complex coding, long-form generation</td>
+</tr>
+<tr>
+<td><strong>Startup Time</strong></td>
+<td>2–5 sec (GPU), 10–20 sec (CPU)</td>
+<td>5–10 sec (GPU), 30–45 sec (CPU)</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧑‍💻 Example Ollama Models by Size</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Model</strong></th>
+<th><strong>Size</strong></th>
+<th><strong>Use Case</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tinyllama</code></td>
+<td>1.1B</td>
+<td>Very fast, low-memory devices</td>
+</tr>
+<tr>
+<td><code>phi</code>, <code>neural-chat</code></td>
+<td>2–3B</td>
+<td>General chat, embedded systems</td>
+</tr>
+<tr>
+<td><code>llama2:7b</code></td>
+<td>7B</td>
+<td>Fast, general-purpose LLM</td>
+</tr>
+<tr>
+<td><code>codellama:7b</code></td>
+<td>7B</td>
+<td>Efficient code assistant</td>
+</tr>
+<tr>
+<td><code>codellama:13b</code></td>
+<td>13B</td>
+<td>Advanced code generation &amp; understanding</td>
+</tr>
+<tr>
+<td><code>llama3:70b</code></td>
+<td>70B</td>
+<td>SOTA performance, massive reasoning</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">✅ When to Choose What</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>If you want...</strong></th>
+<th><strong>Choose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fast response, low resource usage</td>
+<td><code>7B</code></td>
+</tr>
+<tr>
+<td>More accurate coding and reasoning</td>
+<td><code>13B</code></td>
+</tr>
+<tr>
+<td>Max accuracy and deep knowledge</td>
+<td><code>30B</code> or <code>70B</code></td>
+</tr>
+<tr>
+<td>Ultra-lightweight chatbot</td>
+<td><code>phi</code> or <code>tinyllama</code></td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">⚖️ CodeLlama: 7B vs 13B for Code Tasks</h3>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th><code>codellama:7b</code></th>
+<th><code>codellama:13b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Parameter Count</strong></td>
+<td>7 Billion</td>
+<td>13 Billion</td>
+</tr>
+<tr>
+<td><strong>Model Size (Quantized)</strong></td>
+<td>\~4–6 GB</td>
+<td>\~7–9 GB</td>
+</tr>
+<tr>
+<td><strong>RAM Required (Minimum)</strong></td>
+<td>16 GB (bare minimum)</td>
+<td>24–32 GB recommended</td>
+</tr>
+<tr>
+<td><strong>GPU VRAM (Recommended)</strong></td>
+<td>≥ 6 GB (good performance)</td>
+<td>≥ 10–12 GB (critical for usable performance)</td>
+</tr>
+<tr>
+<td><strong>CPU-only Load Time</strong></td>
+<td>10–20 seconds</td>
+<td>30–45 seconds</td>
+</tr>
+<tr>
+<td><strong>GPU Load Time</strong></td>
+<td>2–5 seconds</td>
+<td>6–10 seconds</td>
+</tr>
+<tr>
+<td><strong>Token Generation Speed (CPU)</strong></td>
+<td>\~10–20 tokens/sec</td>
+<td>\~5–8 tokens/sec</td>
+</tr>
+<tr>
+<td><strong>Token Generation Speed (GPU)</strong></td>
+<td>\~40–80 tokens/sec</td>
+<td>\~30–60 tokens/sec</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>\~4K tokens</td>
+<td>\~4K–8K tokens</td>
+</tr>
+<tr>
+<td><strong>Code Generation Quality</strong></td>
+<td>✅ Fast, decent completions</td>
+<td>✅✅ More accurate, better long completions</td>
+</tr>
+<tr>
+<td><strong>Handles Complex Prompts</strong></td>
+<td>Basic–Intermediate</td>
+<td>Intermediate–Advanced</td>
+</tr>
+<tr>
+<td><strong>Multilingual Code Support</strong></td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Fine-tuned For</strong></td>
+<td>Python, JavaScript, C++, TypeScript, etc.</td>
+<td>Same, with better long-form understanding</td>
+</tr>
+<tr>
+<td><strong>Use Cases</strong></td>
+<td>Code snippets, function completions</td>
+<td>Long functions, class design, full solutions</td>
+</tr>
+<tr>
+<td><strong>Real-world Example</strong></td>
+<td>Autocompletes a Python function</td>
+<td>Writes full Flask backend with endpoints</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧠 Which One Should You Choose?</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Your Setup</strong></th>
+<th><strong>Recommended Model</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU-only, 16 GB RAM or low VRAM GPU (≤ 6 GB)</td>
+<td>✅ <code>codellama:7b</code></td>
+</tr>
+<tr>
+<td>Decent GPU (e.g., RTX 3060+, ≥10 GB VRAM), 32 GB RAM</td>
+<td>✅✅ <code>codellama:13b</code></td>
+</tr>
+<tr>
+<td>High-end GPU (e.g., RTX 4090), 64+ GB RAM</td>
+<td>🚀 <code>codellama:13b</code> or larger</td>
+</tr>
+<tr>
+<td>Want faster generation, small project completions</td>
+<td>✅ <code>7b</code></td>
+</tr>
+<tr>
+<td>Need higher accuracy, deeper code reasoning</td>
+<td>✅✅ <code>13b</code></td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">🧠 Let's compare codellama:7b vs codellama:13b on a real-world coding task.</h3>
+
+<h3 style="color:blue;">👨‍💻 Prompt</h3>
+
+<div class="codehilite"><pre><span></span><code>&quot;Write a Python Flask REST API with two endpoints: /health returning {&#39;status&#39;: &#39;ok&#39;} and /predict that accepts JSON input { &#39;age&#39;: 30, &#39;income&#39;: 50000 } and returns a dummy prediction { &#39;approved&#39;: true }.&quot;
+</code></pre></div>
+
+<h3 style="color:blue;">⚙️ CodeLlama:7B — Sample Output</h3>
+
+<p>(Faster response, but less structured and minimal error handling)</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/health&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;GET&#39;</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">health</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="s1">&#39;ok&#39;</span><span class="p">})</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/predict&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">():</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">)</span>
+    <span class="n">income</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;income&#39;</span><span class="p">)</span>
+    <span class="c1"># dummy logic</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">25</span> <span class="ow">and</span> <span class="n">income</span> <span class="o">&gt;</span> <span class="mi">40000</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;approved&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;approved&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>✅ Strengths:</strong> Quick, to the point</p>
+<p><strong>⚠️ Limitations:</strong> No input validation, no error handling, no docstrings.</p>
+<h3 style="color:blue;">🔍 CodeLlama:13B — Sample Output</h3>
+
+<p>(Slower response, but more robust and detailed)</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/health&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;GET&#39;</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">health_check</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="s1">&#39;ok&#39;</span><span class="p">}),</span> <span class="mi">200</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/predict&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">(</span><span class="n">force</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="c1"># Validate input</span>
+        <span class="k">if</span> <span class="s1">&#39;age&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span> <span class="ow">or</span> <span class="s1">&#39;income&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="s1">&#39;Missing age or income&#39;</span><span class="p">}),</span> <span class="mi">400</span>
+
+        <span class="n">age</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span>
+        <span class="n">income</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;income&#39;</span><span class="p">]</span>
+
+        <span class="c1"># Dummy prediction logic</span>
+        <span class="n">approved</span> <span class="o">=</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">25</span> <span class="ow">and</span> <span class="n">income</span> <span class="o">&gt;=</span> <span class="mi">40000</span>
+        <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s1">&#39;approved&#39;</span><span class="p">:</span> <span class="n">approved</span><span class="p">}),</span> <span class="mi">200</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}),</span> <span class="mi">500</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>✅✅ Strengths:</strong> Adds validation, error handling, and cleaner structure</p>
+<p><strong>💡 Extras:</strong> Can also add Swagger, Pydantic, or type hints if prompted</p>
+<h3 style="color:blue;">⚔️ Comparison Summary</h3>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th><code>codellama:7b</code></th>
+<th><code>codellama:13b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Response Time</strong></td>
+<td>⚡ Fast</td>
+<td>🕒 Slower</td>
+</tr>
+<tr>
+<td><strong>Code Quality</strong></td>
+<td>🟨 Basic logic</td>
+<td>✅ Robust &amp; production-grade</td>
+</tr>
+<tr>
+<td><strong>Validation</strong></td>
+<td>❌ None</td>
+<td>✅ Basic validation added</td>
+</tr>
+<tr>
+<td><strong>Error Handling</strong></td>
+<td>❌ None</td>
+<td>✅ Includes <code>try-except</code> block</td>
+</tr>
+<tr>
+<td><strong>Best For</strong></td>
+<td>Quick prototyping</td>
+<td>Realistic codebases or full-stack scaffolds</td>
+</tr>
+</tbody>
+</table>
+<h3 style="color:blue;">1. Another Prompt Comparison (Docker)</h3>
+
+<p><strong>Prompt:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nv">Write</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">Dockerfile</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">Python</span><span class="w"> </span><span class="nv">Flask</span><span class="w"> </span><span class="nv">app</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="nv">two</span><span class="w"> </span><span class="nv">endpoints</span>:<span class="w"> </span><span class="o">/</span><span class="nv">health</span><span class="w"> </span><span class="nv">returning</span><span class="w"> </span>{<span class="s1">&#39;status&#39;</span>:<span class="w"> </span><span class="s1">&#39;ok&#39;</span>}<span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="o">/</span><span class="nv">predict</span><span class="w"> </span><span class="nv">accepting</span><span class="w"> </span><span class="nv">JSON</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">returning</span><span class="w"> </span><span class="nv">dummy</span><span class="w"> </span><span class="nv">prediction</span><span class="w"> </span>{<span class="s1">&#39;approved&#39;</span>:<span class="w"> </span><span class="nv">true</span>}.<span class="err">&quot;</span>
+</code></pre></div>
+
+<h3 style="color:blue;">CodeLlama:7B — Sample Output</h3>
+
+<div class="codehilite"><pre><span></span><code>FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+EXPOSE 5000
+
+CMD [&quot;python&quot;, &quot;app.py&quot;]
+</code></pre></div>
+
+<p><strong>Flask app</strong> (<code>app.py</code>) code may be very basic, probably missing error handling or requirements details.</p>
+<p><strong>Strengths:</strong> Quick and straightforward</p>
+<p><strong>Limitations:</strong> Lacks automation or context-specific optimizations</p>
+<h3 style="color:blue;">CodeLlama:13B — Sample Output</h3>
+
+<div class="codehilite"><pre><span></span><code># Use an official lightweight Python runtime
+FROM python:3.10-alpine
+
+# Set work directory
+WORKDIR /usr/src/app
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy project files
+COPY . .
+
+# Expose necessary port
+EXPOSE 5000
+
+# Start Flask server
+CMD [&quot;gunicorn&quot;, &quot;--bind&quot;, &quot;0.0.0.0:5000&quot;, &quot;app:app&quot;]
+</code></pre></div>
+
+<p><strong>Flask app</strong> (<code>app.py</code>) likely includes validation, error handling, and production readiness.</p>
+<p><strong>Strengths:</strong> More production-ready, efficient, and secure.</p>
+<h3 style="color:blue;">2. Automatically Compare Outputs with Python</h3>
+
+<p>You can compare generated code from two models using Python, using tools like <code>difflib</code>. Here's a small example:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">difflib</span>
+
+<span class="n">code_7b</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;...&quot;&quot;&quot;</span>  <span class="c1"># insert 7B generated code</span>
+<span class="n">code_13b</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;...&quot;&quot;&quot;</span>  <span class="c1"># insert 13B generated code</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">difflib</span><span class="o">.</span><span class="n">unified_diff</span><span class="p">(</span><span class="n">code_7b</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="n">keepends</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+                                  <span class="n">code_13b</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="n">keepends</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+                                  <span class="n">fromfile</span><span class="o">=</span><span class="s1">&#39;7B&#39;</span><span class="p">,</span> <span class="n">tofile</span><span class="o">=</span><span class="s1">&#39;13B&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../MCP/mcp.html" class="btn btn-neutral float-left" title="MCP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Notebook/allnotebook.html" class="btn btn-neutral float-right" title="All Notebook">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../MCP/mcp.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Notebook/allnotebook.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Basic SQL - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Basic SQL";
+        var mkdocs_page_input_path = "Data-processing/sql.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Data Processing</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Basic SQL</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/CrossValidation.html">Cross Validation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/HyperparameterTuning.html">Hyperparameter Tuning</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/TuningDecisionThreshold.html">Tuning decision threshold</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/SimpleLinearRegression.html">Simple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/MultipleLinearRegression.html">Multiple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/PolynomialRegression.html">Polynomial Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/RidgeLassoRegression.html">Ridge & Lasso Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/SupportVectorRegression.html">Support Vector Regression (SVR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/DecisionTreeRegression.html">Decision Tree Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.html">Random Forest Regression</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/SupportVectorMachines.html">Support Vector Machines</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/SinglelayerPerceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/StochasticGradientDescent.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/DecisionTreeClassification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KNearestNeighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/NaiveBayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/RandomForests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/BaggingClassifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/Ensemblelearningclassifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KernelSVM.html">Kernel SVM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Linear Algebra</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../LinearAlgebra/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Vanishing.html">Vanishing and Exploding Gradients Problems</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Components of Neural Networks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LayersNeuralNetworks.html">Layers in Neural Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/WeightsBiases.html">Weights and Biases</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/ForwardPropagation.html">Forward Propagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/ActivationFunctions.html">Activation Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LossFunctions.html">Loss Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/Backpropagation.html">Backpropagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LearningRate.html">Learning Rate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Optimization Algorithm</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/GradientDescent.html">Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/SGD.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Adam.html">Adam (Adaptive Moment Estimation)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/BatchNormalization.html">Batch Normalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Mini-batch-GD.html">Mini-batch Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Momentum-based-GO.html">Momentum-based Gradient Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/AdagradOptimizer.html">Adagrad Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.html">RMSProp Optimizer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Models</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/FNN.html">Feedforward Neural Network (FNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Recurrent Neural Network (RNN)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/RNN.html">Recurrent Neural Network (RNN)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/LSTM.html">LSTM (Long Short-Term Memory)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/GRU.html">GRU (Gated Recurrent Unit)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/CNN.html">Convolutional Neural Network (CNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/RBFN.html">Radial Basis Function Network (RBFN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/ComputerVision.html">Computer Vision</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/GANs.html">Generative Adversarial Networks (GANs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/Transformer.html">Transformer Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/Autoencoders.html">Autoencoders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/SOM.html">Self-Organizing Maps (SOM)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/nlpdetails.html">NLP Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/LangGraph.html">LangGraph</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/azure.html">AZURE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Agent Development Kit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/adk.html">ADK</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/Agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/Tools.html">Tools</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/a2a.html">Tools</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >MCPModel Context Protocol (MCP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MCP/mcp.html">MCP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Models Details information</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Models/Ollama.html">Ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Note Book</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Notebook/allnotebook.html">All Notebook</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Data Processing</li>
+      <li class="breadcrumb-item active">Basic SQL</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="introduction-to-sql">Introduction to SQL<a class="headerlink" href="#introduction-to-sql" title="Permanent link">#</a></h2>
+<h2 id="what-is-sql">What is SQL?<a class="headerlink" href="#what-is-sql" title="Permanent link">#</a></h2>
+<p>SQL, or Structured Query Language, is a language designed to allow both technical and non-technical users to query, manipulate, and transform data from a relational database. And due to its simplicity, SQL databases provide safe and scalable storage for millions of websites and mobile applications.</p>
+<p>There are many popular SQL databases including SQLite, MySQL, Postgres, Oracle and Microsoft SQL Server. All of them support the common SQL language standard, which is what this site will be teaching, but each implementation can differ in the additional features and storage types it supports.</p>
+<h2 style="color:blue;">SQL Lesson 1: SELECT queries</h2>
+
+<p>To retrieve data from a SQL database, we need to write SELECT statements.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">#</a></h2>
+<p>We will be using a database with data about some of Pixar's classic movies for most of our exercises. This first exercise will only involve the Movies table, and the default query below currently shows all the properties of each movie. </p>
+<h2 id="table-movies">Table: movies<a class="headerlink" href="#table-movies" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>title</th>
+<th>director</th>
+<th>year</th>
+<th>length_minutes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Toy Story</td>
+<td>John Lasseter</td>
+<td>1995</td>
+<td>81</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A Bug's Life</td>
+<td>John Lasseter</td>
+<td>1998</td>
+<td>95</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Toy Story 2</td>
+<td>John Lasseter</td>
+<td>1999</td>
+<td>93</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Monsters, Inc.</td>
+<td>Pete Docter</td>
+<td>2001</td>
+<td>92</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Finding Nemo</td>
+<td>Andrew Stanton</td>
+<td>2003</td>
+<td>107</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Incredibles</td>
+<td>Brad Bird</td>
+<td>2004</td>
+<td>116</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Cars</td>
+<td>John Lasseter</td>
+<td>2006</td>
+<td>117</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Ratatouille</td>
+<td>Brad Bird</td>
+<td>2007</td>
+<td>115</td>
+</tr>
+<tr>
+<td>9</td>
+<td>WALL-E</td>
+<td>Andrew Stanton</td>
+<td>2008</td>
+<td>104</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Up</td>
+<td>Pete Docter</td>
+<td>2009</td>
+<td>101</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Toy Story 3</td>
+<td>Lee Unkrich</td>
+<td>2010</td>
+<td>103</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Cars 2</td>
+<td>John Lasseter</td>
+<td>2011</td>
+<td>120</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Brave</td>
+<td>Brenda Chapman</td>
+<td>2012</td>
+<td>102</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Monsters University</td>
+<td>Dan Scanlon</td>
+<td>2013</td>
+<td>110</td>
+</tr>
+</tbody>
+</table>
+<div style="color:green;">
+1. Find the title of each film
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title FROM movies;
+</code></pre></div>
+
+
+
+2. Find the director of each film
+
+
+<div class="codehilite"><pre><span></span><code>SELECT director FROM movies;
+</code></pre></div>
+
+
+
+3. Find the title and director of each film
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title,director FROM movies;
+</code></pre></div>
+
+
+
+4. Find the title and year of each film
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title,year FROM movies;
+</code></pre></div>
+
+
+
+5. Find all the information about each film
+
+
+<div class="codehilite"><pre><span></span><code>SELECT * FROM movies;
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 2: Queries with constraints</h2>
+
+<p>Now we know how to select for specific columns of data from a table, but if you had a table with a hundred million rows of data, reading through all the rows would be inefficient and perhaps even impossible.</p>
+<p>In order to filter certain results from being returned, we need to use a WHERE clause in the query. The clause is applied to each row of data by checking specific column values to determine whether it should be included in the results or not.</p>
+<p><strong>Select query with constraints</strong></p>
+<div class="codehilite"><pre><span></span><code>SELECT column, another_column, …
+FROM mytable
+WHERE condition
+    AND/OR another_condition
+    AND/OR …;
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Condition</th>
+<th>SQL Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=, !=, &lt;, &lt;=, &gt;, &gt;=</td>
+<td>Standard numerical operators</td>
+<td>col_name != 4</td>
+</tr>
+<tr>
+<td>BETWEEN … AND …</td>
+<td>Number is within range of two values</td>
+<td>col_name BETWEEN 1.5 AND 10.5</td>
+</tr>
+<tr>
+<td>NOT BETWEEN … AND …</td>
+<td>Number is not within range of two values</td>
+<td>col_name NOT BETWEEN 1 AND 10</td>
+</tr>
+<tr>
+<td>IN (…)</td>
+<td>Number exists in a list</td>
+<td>col_name IN (2, 4, 6)</td>
+</tr>
+<tr>
+<td>NOT IN (…)</td>
+<td>Number does not exist in a list</td>
+<td>col_name NOT IN (1, 3, 5)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise_1">Exercise<a class="headerlink" href="#exercise_1" title="Permanent link">#</a></h2>
+<div style="color:green;">
+1. Find the movie with a row id of 6
+
+
+<div class="codehilite"><pre><span></span><code>SELECT * FROM movies where id=6
+</code></pre></div>
+
+
+
+2. Find the movies released in the years between 2000 and 2010
+
+
+<div class="codehilite"><pre><span></span><code>SELECT * FROM movies where year between 2000 and 2010;
+</code></pre></div>
+
+
+
+3. Find the movies not released in the years between 2000 and 2010
+
+
+<div class="codehilite"><pre><span></span><code>SELECT * FROM movies where year not between 2000 and 2010;
+</code></pre></div>
+
+
+
+4. Find the first 5 Pixar movies and their release year
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title,Year FROM movies where id&lt;=5;
+</code></pre></div>
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 3: Queries with constraints</h2>
+
+<p>When writing WHERE clauses with columns containing text data, SQL supports a number of useful operators to do things like case-insensitive string comparison and wildcard pattern matching. We show a few common text-data specific operators below:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Condition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>Case sensitive exact string comparison (single equals)</td>
+<td>col_name = "abc"</td>
+</tr>
+<tr>
+<td>!= or &lt;&gt;</td>
+<td>Case sensitive exact string inequality comparison</td>
+<td>col_name != "abcd"</td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>Case insensitive exact string comparison</td>
+<td>col_name LIKE "ABC"</td>
+</tr>
+<tr>
+<td>NOT LIKE</td>
+<td>Case insensitive exact string inequality comparison</td>
+<td>col_name NOT LIKE "ABCD"</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Matches any sequence of characters (used with LIKE/NOT LIKE)</td>
+<td>col_name LIKE "%AT%" <br>(matches "AT", "ATTIC", "CAT", "BATS")</td>
+</tr>
+<tr>
+<td>_</td>
+<td>Matches a single character (used with LIKE/NOT LIKE)</td>
+<td>col_name LIKE "AN_" <br>(matches "AND", not "AN")</td>
+</tr>
+<tr>
+<td>IN (…)</td>
+<td>String exists in a list</td>
+<td>col_name IN ("A", "B", "C")</td>
+</tr>
+<tr>
+<td>NOT IN (…)</td>
+<td>String does not exist in a list</td>
+<td>col_name NOT IN ("D", "E", "F")</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise_2">Exercise<a class="headerlink" href="#exercise_2" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Find all the Toy Story movies
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title FROM movies where title like &#39;Toy Story%&#39;
+</code></pre></div>
+
+
+
+2. Find all the movies directed by John Lasseter
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title FROM movies where director like &#39;John Lasseter%&#39;
+</code></pre></div>
+
+
+
+3. Find all the movies (and director) not directed by John Lasseter
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title,director FROM movies where director not like &#39;John Lasseter%&#39;
+</code></pre></div>
+
+
+
+4. Find all the WALL-* movies
+
+
+<div class="codehilite"><pre><span></span><code>SELECT * FROM movies where title like &#39;WALL-%&#39;
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 4: Filtering and sorting Query results</h2>
+
+<p>Even though the data in a database may be unique, the results of any particular query may not be – take our Movies table for example, many different movies can be released the same year. In such cases, SQL provides a convenient way to discard rows that have a duplicate column value by using the <strong>DISTINCT</strong> keyword.</p>
+<p>Since the <strong>DISTINCT</strong> keyword will blindly remove duplicate rows, we will learn in a future lesson how to discard duplicates based on specific columns using grouping and the <strong>GROUP BY</strong> clause.</p>
+<h2 id="ordering-results">Ordering results<a class="headerlink" href="#ordering-results" title="Permanent link">#</a></h2>
+<p>To help with this, SQL provides a way to sort your results by a given column in ascending or descending order using the <strong>ORDER BY</strong> clause.</p>
+<p>When an ORDER BY clause is specified, each row is sorted alpha-numerically based on the specified column's value.</p>
+<div class="codehilite"><pre><span></span><code>SELECT column, another_column, …
+FROM mytable
+WHERE condition(s)
+ORDER BY column ASC/DESC;
+</code></pre></div>
+
+<h2 id="limiting-results-to-a-subset">Limiting results to a subset<a class="headerlink" href="#limiting-results-to-a-subset" title="Permanent link">#</a></h2>
+<p>Another clause which is commonly used with the <strong>ORDER BY</strong> clause are the <strong>LIMIT</strong> and <strong>OFFSET</strong> clauses, which are a useful optimization to indicate to the database the subset of the results you care about.
+The <strong>LIMIT</strong> will reduce the number of rows to return, and the optional <strong>OFFSET</strong> will specify where to begin counting the number rows from.</p>
+<div class="codehilite"><pre><span></span><code>SELECT column, another_column, …
+FROM mytable
+WHERE condition(s)
+ORDER BY column ASC/DESC
+LIMIT num_limit OFFSET num_offset;
+</code></pre></div>
+
+<h2 id="exercise_3">Exercise<a class="headerlink" href="#exercise_3" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. List all directors of Pixar movies (alphabetically), without duplicates
+
+
+<div class="codehilite"><pre><span></span><code>SELECT DISTINCT(director) FROM movies ORDER BY director
+</code></pre></div>
+
+
+
+2. List the last four Pixar movies released (ordered from most recent to least)
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title,year FROM movies ORDER BY year desc  LIMIT 4
+</code></pre></div>
+
+
+
+3. List the first five Pixar movies sorted alphabetically
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title FROM movies ORDER BY title  LIMIT 5
+</code></pre></div>
+
+
+
+4. List the next five Pixar movies sorted alphabetically
+
+
+<div class="codehilite"><pre><span></span><code>SELECT * FROM movies ORDER BY title  LIMIT 5 OFFSET 5
+</code></pre></div>
+
+
+</div>
+
+<h2 style="color:blue;">SQL Review: Simple SELECT Queries</h2>
+
+<h2 id="table-north_american_cities">Table: north_american_cities<a class="headerlink" href="#table-north_american_cities" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>City</th>
+<th>Country</th>
+<th>Population</th>
+<th>Latitude</th>
+<th>Longitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guadalajara</td>
+<td>Mexico</td>
+<td>1,500,800</td>
+<td>20.659699</td>
+<td>-103.349609</td>
+</tr>
+<tr>
+<td>Toronto</td>
+<td>Canada</td>
+<td>2,795,060</td>
+<td>43.653226</td>
+<td>-79.383184</td>
+</tr>
+<tr>
+<td>Houston</td>
+<td>United States</td>
+<td>2,195,914</td>
+<td>29.760427</td>
+<td>-95.369803</td>
+</tr>
+<tr>
+<td>New York</td>
+<td>United States</td>
+<td>8,405,837</td>
+<td>40.712784</td>
+<td>-74.005941</td>
+</tr>
+<tr>
+<td>Philadelphia</td>
+<td>United States</td>
+<td>1,553,165</td>
+<td>39.952584</td>
+<td>-75.165222</td>
+</tr>
+<tr>
+<td>Havana</td>
+<td>Cuba</td>
+<td>2,106,146</td>
+<td>23.054070</td>
+<td>-82.345189</td>
+</tr>
+<tr>
+<td>Mexico City</td>
+<td>Mexico</td>
+<td>8,555,500</td>
+<td>19.432608</td>
+<td>-99.133208</td>
+</tr>
+<tr>
+<td>Phoenix</td>
+<td>United States</td>
+<td>1,513,367</td>
+<td>33.448377</td>
+<td>-112.074037</td>
+</tr>
+<tr>
+<td>Los Angeles</td>
+<td>United States</td>
+<td>3,884,307</td>
+<td>34.052234</td>
+<td>-118.243685</td>
+</tr>
+<tr>
+<td>Ecatepec de Morelos</td>
+<td>Mexico</td>
+<td>1,742,000</td>
+<td>19.601841</td>
+<td>-99.050674</td>
+</tr>
+<tr>
+<td>Montreal</td>
+<td>Canada</td>
+<td>1,717,767</td>
+<td>45.501689</td>
+<td>-73.567256</td>
+</tr>
+<tr>
+<td>Chicago</td>
+<td>United States</td>
+<td>2,718,782</td>
+<td>41.878114</td>
+<td>-87.629798</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise_4">Exercise<a class="headerlink" href="#exercise_4" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. List all the Canadian cities and their populations
+
+
+<div class="codehilite"><pre><span></span><code>SELECT city,population FROM north_american_cities 
+where country = &#39;Canada&#39;;
+</code></pre></div>
+
+
+
+2. Order all the cities in the United States by their latitude from north to south
+
+
+<div class="codehilite"><pre><span></span><code>SELECT city, latitude 
+FROM north_american_cities 
+WHERE country = &#39;United States&#39; 
+ORDER BY latitude DESC;
+</code></pre></div>
+
+
+
+3. List all the cities west of Chicago, ordered from west to east
+
+
+<div class="codehilite"><pre><span></span><code>SELECT city, longitude
+FROM north_american_cities
+WHERE longitude &lt; -87.629798
+ORDER BY longitude ASC;
+</code></pre></div>
+
+
+
+4. List the two largest cities in Mexico (by population)
+
+
+<div class="codehilite"><pre><span></span><code>SELECT city, population
+FROM north_american_cities
+WHERE country = &#39;Mexico&#39;
+ORDER BY population DESC
+LIMIT 2;
+</code></pre></div>
+
+
+
+5. List the third and fourth largest cities (by population) in the United States and their population
+
+
+<div class="codehilite"><pre><span></span><code>SELECT city, population
+FROM north_american_cities
+WHERE country = &#39;United States&#39;
+ORDER BY population DESC
+LIMIT 2 OFFSET 2;
+</code></pre></div>
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 6: Multi-table queries with JOINs</h2>
+
+<h2 id="database-normalization">Database normalization<a class="headerlink" href="#database-normalization" title="Permanent link">#</a></h2>
+<p>Database normalization is useful because it minimizes duplicate data in any single table, and allows for data in the database to grow independently of each other (ie. Types of car engines can grow independent of each type of car). As a trade-off, queries get slightly more complex since they have to be able to find data from different parts of the database, and performance issues can arise when working with many large tables.</p>
+<p>In order to answer questions about an entity that has data spanning multiple tables in a normalized database, we need to learn how to write a query that can combine all that data and pull out exactly the information we need.</p>
+<h2 id="multi-table-queries-with-joins">Multi-table queries with JOINs<a class="headerlink" href="#multi-table-queries-with-joins" title="Permanent link">#</a></h2>
+<p>Tables that share information about a single entity need to have a primary key that identifies that entity uniquely across the database. One common primary key type is an auto-incrementing integer (because they are space efficient), but it can also be a string, hashed value, so long as it is unique.</p>
+<p>Using the JOIN clause in a query, we can combine row data across two separate tables using this unique key. The first of the joins that we will introduce is the INNER JOIN.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">column</span><span class="p">,</span><span class="w"> </span><span class="n">another_table_column</span><span class="p">,</span><span class="w"> </span><span class="n">…</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">mytable</span>
+<span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">another_table</span><span class="w"> </span>
+<span class="w">    </span><span class="k">ON</span><span class="w"> </span><span class="n">mytable</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="n">another_table</span><span class="p">.</span><span class="n">id</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">column</span><span class="p">,</span><span class="w"> </span><span class="n">…</span><span class="w"> </span><span class="k">ASC</span><span class="o">/</span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="n">num_limit</span><span class="w"> </span><span class="k">OFFSET</span><span class="w"> </span><span class="n">num_offset</span><span class="p">;</span>
+</code></pre></div>
+
+<p>The <strong>INNER JOIN</strong> is a process that matches rows from the first table and the second table which have the same key (as defined by the ON constraint) to create a result row with the combined columns from both tables. </p>
+<h2 id="table-movies-read-only">Table: movies (Read-only)<a class="headerlink" href="#table-movies-read-only" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>title</th>
+<th>director</th>
+<th>year</th>
+<th>length_minutes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Toy Story</td>
+<td>John Lasseter</td>
+<td>1995</td>
+<td>81</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A Bug's Life</td>
+<td>John Lasseter</td>
+<td>1998</td>
+<td>95</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Toy Story 2</td>
+<td>John Lasseter</td>
+<td>1999</td>
+<td>93</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Monsters, Inc.</td>
+<td>Pete Docter</td>
+<td>2001</td>
+<td>92</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Finding Nemo</td>
+<td>Andrew Stanton</td>
+<td>2003</td>
+<td>107</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Incredibles</td>
+<td>Brad Bird</td>
+<td>2004</td>
+<td>116</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Cars</td>
+<td>John Lasseter</td>
+<td>2006</td>
+<td>117</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Ratatouille</td>
+<td>Brad Bird</td>
+<td>2007</td>
+<td>115</td>
+</tr>
+<tr>
+<td>9</td>
+<td>WALL-E</td>
+<td>Andrew Stanton</td>
+<td>2008</td>
+<td>104</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Up</td>
+<td>Pete Docter</td>
+<td>2009</td>
+<td>101</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Toy Story 3</td>
+<td>Lee Unkrich</td>
+<td>2010</td>
+<td>103</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Cars 2</td>
+<td>John Lasseter</td>
+<td>2011</td>
+<td>120</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Brave</td>
+<td>Brenda Chapman</td>
+<td>2012</td>
+<td>102</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Monsters University</td>
+<td>Dan Scanlon</td>
+<td>2013</td>
+<td>110</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-boxoffice-read-only">Table: boxoffice (Read-only)<a class="headerlink" href="#table-boxoffice-read-only" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>movie_id</th>
+<th>rating</th>
+<th>domestic_sales</th>
+<th>international_sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>8.2</td>
+<td>380843261</td>
+<td>555900000</td>
+</tr>
+<tr>
+<td>14</td>
+<td>7.4</td>
+<td>268492764</td>
+<td>475066843</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8.0</td>
+<td>206445654</td>
+<td>417277164</td>
+</tr>
+<tr>
+<td>12</td>
+<td>6.4</td>
+<td>191452396</td>
+<td>368400000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7.9</td>
+<td>245852179</td>
+<td>239163000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>8.0</td>
+<td>261441092</td>
+<td>370001000</td>
+</tr>
+<tr>
+<td>9</td>
+<td>8.5</td>
+<td>223808164</td>
+<td>297503696</td>
+</tr>
+<tr>
+<td>11</td>
+<td>8.4</td>
+<td>415004880</td>
+<td>648167031</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8.3</td>
+<td>191796233</td>
+<td>170162503</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7.2</td>
+<td>244082982</td>
+<td>217900167</td>
+</tr>
+<tr>
+<td>10</td>
+<td>8.3</td>
+<td>293004164</td>
+<td>438338580</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8.1</td>
+<td>289916256</td>
+<td>272900000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>7.2</td>
+<td>162798565</td>
+<td>200600000</td>
+</tr>
+<tr>
+<td>13</td>
+<td>7.2</td>
+<td>237283207</td>
+<td>301700000</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise_5">Exercise<a class="headerlink" href="#exercise_5" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Find the domestic and international sales for each movie
+
+
+<div class="codehilite"><pre><span></span><code>SELECT 
+    movies.title,
+    boxoffice.domestic_sales,
+    boxoffice.international_sales
+FROM 
+    movies
+JOIN 
+    boxoffice
+ON 
+    movies.id = boxoffice.movie_id;
+</code></pre></div>
+
+
+
+2. Show the sales numbers for each movie that did better internationally rather than domestically
+
+
+<div class="codehilite"><pre><span></span><code>SELECT 
+    movies.title,
+    boxoffice.domestic_sales,
+    boxoffice.international_sales
+FROM 
+    movies
+JOIN 
+    boxoffice
+ON 
+    movies.id = boxoffice.movie_id
+WHERE 
+    boxoffice.international_sales &gt; boxoffice.domestic_sales;
+</code></pre></div>
+
+
+
+3. List all the movies by their ratings in descending order
+
+
+<div class="codehilite"><pre><span></span><code>SELECT 
+    movies.title,
+    boxoffice.rating
+FROM 
+    movies
+JOIN 
+    boxoffice
+ON 
+    movies.id = boxoffice.movie_id
+ORDER BY 
+    boxoffice.rating DESC;
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 7: OUTER JOINs</h2>
+
+<p>Depending on how you want to analyze the data, the INNER JOIN we used last lesson might not be sufficient because the resulting table only contains data that belongs in both of the tables.</p>
+<p>If the two tables have asymmetric data, which can easily happen when data is entered in different stages, then we would have to use a LEFT JOIN, RIGHT JOIN or FULL JOIN instead to ensure that the data you need is not left out of the results.</p>
+<h2 id="select-query-with-leftrightfull-joins-on-multiple-tables">Select query with LEFT/RIGHT/FULL JOINs on multiple tables<a class="headerlink" href="#select-query-with-leftrightfull-joins-on-multiple-tables" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>SELECT column, another_column, …
+FROM mytable
+INNER/LEFT/RIGHT/FULL JOIN another_table 
+    ON mytable.id = another_table.matching_id
+WHERE condition(s)
+ORDER BY column, … ASC/DESC
+LIMIT num_limit OFFSET num_offset;
+</code></pre></div>
+
+<p>Like the INNER JOIN these three new joins have to specify which column to join the data on.
+- When joining table A to table B, a LEFT JOIN simply includes rows from A regardless of whether a matching row is found in B.
+- The RIGHT JOIN is the same, but reversed, keeping rows in B regardless of whether a match is found in A.
+- Finally, a FULL JOIN simply means that rows from both tables are kept, regardless of whether a matching row exists in the other table.</p>
+<h2 id="table-buildings-read-only">Table: buildings (Read-only)<a class="headerlink" href="#table-buildings-read-only" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>building_name</th>
+<th>capacity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1e</td>
+<td>24</td>
+</tr>
+<tr>
+<td>1w</td>
+<td>32</td>
+</tr>
+<tr>
+<td>2e</td>
+<td>16</td>
+</tr>
+<tr>
+<td>2w</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-employees-read-only">Table: employees (Read-only)<a class="headerlink" href="#table-employees-read-only" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>role</th>
+<th>name</th>
+<th>building</th>
+<th>years_employed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Becky A.</td>
+<td>1e</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Dan B.</td>
+<td>1e</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Sharon F.</td>
+<td>1e</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Dan M.</td>
+<td>1e</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Malcom S.</td>
+<td>1e</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Tylar S.</td>
+<td>2w</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Sherman D.</td>
+<td>2w</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Jakob J.</td>
+<td>2w</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Lillia A.</td>
+<td>2w</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Brandon J.</td>
+<td>2w</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Scott K.</td>
+<td>1e</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Shirlee M.</td>
+<td>1e</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Daria O.</td>
+<td>2w</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise_6">Exercise<a class="headerlink" href="#exercise_6" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Find the list of all buildings that have employees
+
+
+<div class="codehilite"><pre><span></span><code>SELECT DISTINCT building FROM employees;
+</code></pre></div>
+
+
+
+2. Find the list of all buildings and their capacity
+
+
+<div class="codehilite"><pre><span></span><code>SELECT * FROM buildings;
+</code></pre></div>
+
+
+
+3. List all buildings and the distinct employee roles in each building (including empty buildings)
+
+
+<div class="codehilite"><pre><span></span><code>SELECT b.building_name, e.role
+FROM buildings b
+LEFT JOIN employees e ON b.building_name = e.building
+GROUP BY b.building_name, e.role
+ORDER BY b.building_name, e.role;
+</code></pre></div>
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 8: A short note on NULLs</h2>
+
+<p>It's always good to reduce the possibility of NULL values in databases because they require special attention when constructing queries, constraints (certain functions behave differently with null values) and when processing the results.</p>
+<p>An alternative to NULL values in your database is to have data-type appropriate default values, like 0 for numerical data, empty strings for text data, etc. But if your database needs to store incomplete data, then NULL values can be appropriate if the default values will skew later analysis (for example, when taking averages of numerical data).</p>
+<p>Sometimes, it's also not possible to avoid NULL values, as we saw in the last lesson when outer-joining two tables with asymmetric data. In these cases, you can test a column for NULL values in a WHERE clause by using either the IS NULL or IS NOT NULL constraint.</p>
+<h2 id="select-query-with-constraints-on-null-values">Select query with constraints on NULL values<a class="headerlink" href="#select-query-with-constraints-on-null-values" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>SELECT column, another_column, …
+FROM mytable
+WHERE column IS/IS NOT NULL
+AND/OR another_condition
+AND/OR …;
+</code></pre></div>
+
+<h2 id="exercise_7">Exercise<a class="headerlink" href="#exercise_7" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Find the name and role of all employees who have not been assigned to a building
+
+
+<div class="codehilite"><pre><span></span><code>SELECT name, role
+FROM employees
+WHERE building IS NULL OR building = &#39;&#39;;
+</code></pre></div>
+
+
+
+2. Find the names of the buildings that hold no employees
+
+
+<div class="codehilite"><pre><span></span><code>SELECT b.building_name
+FROM buildings b
+LEFT JOIN employees e ON b.building_name = e.building
+WHERE e.building IS NULL;
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 9: Queries with expressions</h2>
+
+<p>In addition to querying and referencing raw column data with SQL, you can also use expressions to write more complex logic on column values in a query. These expressions can use mathematical and string functions along with basic arithmetic to transform values when the query is executed, as shown in this physics example.</p>
+<h2 id="example-query-with-expressions">Example query with expressions<a class="headerlink" href="#example-query-with-expressions" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>SELECT particle_speed / 2.0 AS half_particle_speed
+FROM physics_data
+WHERE ABS(particle_position) * 10.0 &gt; 500;
+</code></pre></div>
+
+<p>Each database has its own supported set of mathematical, string, and date functions that can be used in a query, which you can find in their own respective docs.</p>
+<p>The use of expressions can save time and extra post-processing of the result data, but can also make the query harder to read, so we recommend that when expressions are used in the SELECT part of the query, that they are also given a descriptive alias using the AS keyword.</p>
+<h2 id="select-query-with-expression-aliases">Select query with expression aliases<a class="headerlink" href="#select-query-with-expression-aliases" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>SELECT col_expression AS expr_description, …
+FROM mytable;
+</code></pre></div>
+
+<p>In addition to expressions, regular columns and even tables can also have aliases to make them easier to reference in the output and as a part of simplifying more complex queries.</p>
+<h2 id="example-query-with-both-column-and-table-name-aliases">Example query with both column and table name aliases<a class="headerlink" href="#example-query-with-both-column-and-table-name-aliases" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>SELECT column AS better_column_name, …
+FROM a_long_widgets_table_name AS mywidgets
+INNER JOIN widget_sales
+  ON mywidgets.id = widget_sales.widget_id;
+</code></pre></div>
+
+<h2 id="exercise_8">Exercise<a class="headerlink" href="#exercise_8" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. List all movies and their combined sales in millions of dollars
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title, (domestic_sales + international_sales) / 1000000 AS gross_sales_millions
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+</code></pre></div>
+
+
+
+2. List all movies and their ratings in percent
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title, rating * 10 AS rating_percent
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+</code></pre></div>
+
+
+
+3. List all movies that were released on even number years
+
+
+<div class="codehilite"><pre><span></span><code>SELECT title, year
+FROM movies
+WHERE year % 2 = 0;
+</code></pre></div>
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 10: Queries with aggregates</h2>
+
+<p>In addition to the simple expressions that we introduced last lesson, SQL also supports the use of aggregate expressions (or functions) that allow you to summarize information about a group of rows of data. With the Pixar database that you've been using, aggregate functions can be used to answer questions like, "How many movies has Pixar produced?", or "What is the highest grossing Pixar film each year?".</p>
+<h2 id="select-query-with-aggregate-functions-over-all-rows">Select query with aggregate functions over all rows<a class="headerlink" href="#select-query-with-aggregate-functions-over-all-rows" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">SELECT</span><span class="w"> </span><span class="n">AGG_FUNC</span><span class="p">(</span><span class="n">column_or_expression</span><span class="p">)</span><span class="w"> </span><span class="n">AS</span><span class="w"> </span><span class="n">aggregate_description</span><span class="p">,</span><span class="w"> </span><span class="err">…</span>
+<span class="n">FROM</span><span class="w"> </span><span class="n">mytable</span>
+<span class="n">WHERE</span><span class="w"> </span><span class="n">constraint_expression</span><span class="p">;</span>
+</code></pre></div>
+
+<p>Without a specified grouping, each aggregate function is going to run on the whole set of result rows and return a single value. And like normal expressions, giving your aggregate functions an alias ensures that the results will be easier to read and process.</p>
+<h2 id="common-aggregate-functions">Common aggregate functions<a class="headerlink" href="#common-aggregate-functions" title="Permanent link">#</a></h2>
+<p>Here are some common aggregate functions that we are going to use in our examples:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUNT(*), COUNT(column)</td>
+<td>Counts the number of rows in the group if no column is specified; otherwise counts non-NULL values in the specified column.</td>
+</tr>
+<tr>
+<td>MIN(column)</td>
+<td>Finds the smallest numerical value in the specified column for all rows in the group.</td>
+</tr>
+<tr>
+<td>MAX(column)</td>
+<td>Finds the largest numerical value in the specified column for all rows in the group.</td>
+</tr>
+<tr>
+<td>AVG(column)</td>
+<td>Finds the average numerical value in the specified column for all rows in the group.</td>
+</tr>
+<tr>
+<td>SUM(column)</td>
+<td>Finds the sum of all numerical values in the specified column for the rows in the group.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="grouped-aggregate-functions">Grouped aggregate functions<a class="headerlink" href="#grouped-aggregate-functions" title="Permanent link">#</a></h2>
+<p>In addition to aggregating across all the rows, you can instead apply the aggregate functions to individual groups of data within that group (ie. box office sales for Comedies vs Action movies).
+This would then create as many results as there are unique groups defined as by the <strong>GROUP BY</strong> clause.</p>
+<h2 id="select-query-with-aggregate-functions-over-groups">Select query with aggregate functions over groups<a class="headerlink" href="#select-query-with-aggregate-functions-over-groups" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">SELECT</span><span class="w"> </span><span class="n">AGG_FUNC</span><span class="p">(</span><span class="n">column_or_expression</span><span class="p">)</span><span class="w"> </span><span class="n">AS</span><span class="w"> </span><span class="n">aggregate_description</span><span class="p">,</span><span class="w"> </span><span class="err">…</span>
+<span class="n">FROM</span><span class="w"> </span><span class="n">mytable</span>
+<span class="n">WHERE</span><span class="w"> </span><span class="n">constraint_expression</span>
+<span class="n">GROUP</span><span class="w"> </span><span class="n">BY</span><span class="w"> </span><span class="n">column</span><span class="p">;</span>
+</code></pre></div>
+
+<p>The <strong>GROUP BY</strong> clause works by grouping rows that have the same value in the column specified.</p>
+<h2 id="select-query-with-having-constraint">Select query with HAVING constraint<a class="headerlink" href="#select-query-with-having-constraint" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">SELECT</span><span class="w"> </span><span class="n">group_by_column</span><span class="p">,</span><span class="w"> </span><span class="n">AGG_FUNC</span><span class="p">(</span><span class="n">column_expression</span><span class="p">)</span><span class="w"> </span><span class="n">AS</span><span class="w"> </span><span class="n">aggregate_result_alias</span><span class="p">,</span><span class="w"> </span><span class="err">…</span>
+<span class="n">FROM</span><span class="w"> </span><span class="n">mytable</span>
+<span class="n">WHERE</span><span class="w"> </span><span class="n">condition</span>
+<span class="n">GROUP</span><span class="w"> </span><span class="n">BY</span><span class="w"> </span><span class="n">column</span>
+<span class="n">HAVING</span><span class="w"> </span><span class="n">group_condition</span><span class="p">;</span>
+</code></pre></div>
+
+<p>The HAVING clause constraints are written the same way as the WHERE clause constraints, and are applied to the grouped rows. With our examples, this might not seem like a particularly useful construct, but if you imagine data with millions of rows with different properties, being able to apply additional constraints is often necessary to quickly make sense of the data.</p>
+<h2 id="table-employees">Table: employees<a class="headerlink" href="#table-employees" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>role</th>
+<th>name</th>
+<th>building</th>
+<th>years_employed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Becky A.</td>
+<td>1e</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Dan B.</td>
+<td>1e</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Sharon F.</td>
+<td>1e</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Dan M.</td>
+<td>1e</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Malcom S.</td>
+<td>1e</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Tylar S.</td>
+<td>2w</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Sherman D.</td>
+<td>2w</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Jakob J.</td>
+<td>2w</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Lillia A.</td>
+<td>2w</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>Brandon J.</td>
+<td>2w</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Scott K.</td>
+<td>1e</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Shirlee M.</td>
+<td>1e</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Daria O.</td>
+<td>2w</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise_9">Exercise<a class="headerlink" href="#exercise_9" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Find the longest time that an employee has been at the studio
+
+
+<div class="codehilite"><pre><span></span><code>SELECT MAX(years_employed) AS longest_time
+FROM employees;
+</code></pre></div>
+
+
+
+2. For each role, find the average number of years employed by employees in that role
+
+
+<div class="codehilite"><pre><span></span><code>SELECT role, AVG(years_employed) as Average_years_employed
+FROM employees
+GROUP BY role;
+</code></pre></div>
+
+
+
+3. Find the total number of employee years worked in each building
+
+
+<div class="codehilite"><pre><span></span><code>SELECT building, SUM(years_employed) as Total_years_employed
+FROM employees
+GROUP BY building;
+</code></pre></div>
+
+
+
+4. Find the number of Artists in the studio (without a HAVING clause) 
+
+
+<div class="codehilite"><pre><span></span><code>SELECT role, COUNT(*) as Number_of_artists
+FROM employees
+WHERE role = &quot;Artist&quot;;
+</code></pre></div>
+
+
+
+5. Find the number of Employees of each role in the studio
+
+
+<div class="codehilite"><pre><span></span><code>SELECT role, COUNT(*)
+FROM employees
+GROUP BY role;
+</code></pre></div>
+
+
+
+6. Find the total number of years employed by all Engineers
+
+
+<div class="codehilite"><pre><span></span><code>SELECT role, SUM(years_employed)
+FROM employees
+GROUP BY role
+HAVING role = &quot;Engineer&quot;;
+</code></pre></div>
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 11: Order of execution of a Query</h2>
+
+<p>Now that we have an idea of all the parts of a query, we can now talk about how they all fit together in the context of a complete query.</p>
+<h2 id="complete-select-query">Complete SELECT query<a class="headerlink" href="#complete-select-query" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">SELECT</span><span class="w"> </span><span class="n">DISTINCT</span><span class="w"> </span><span class="n">column</span><span class="p">,</span><span class="w"> </span><span class="n">AGG_FUNC</span><span class="p">(</span><span class="n">column_or_expression</span><span class="p">),</span><span class="w"> </span><span class="err">…</span>
+<span class="n">FROM</span><span class="w"> </span><span class="n">mytable</span>
+<span class="w">    </span><span class="n">JOIN</span><span class="w"> </span><span class="n">another_table</span>
+<span class="w">      </span><span class="n">ON</span><span class="w"> </span><span class="n">mytable</span><span class="o">.</span><span class="n">column</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">another_table</span><span class="o">.</span><span class="n">column</span>
+<span class="w">    </span><span class="n">WHERE</span><span class="w"> </span><span class="n">constraint_expression</span>
+<span class="w">    </span><span class="n">GROUP</span><span class="w"> </span><span class="n">BY</span><span class="w"> </span><span class="n">column</span>
+<span class="w">    </span><span class="n">HAVING</span><span class="w"> </span><span class="n">constraint_expression</span>
+<span class="w">    </span><span class="n">ORDER</span><span class="w"> </span><span class="n">BY</span><span class="w"> </span><span class="n">column</span><span class="w"> </span><span class="n">ASC</span><span class="o">/</span><span class="n">DESC</span>
+<span class="w">    </span><span class="n">LIMIT</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="n">OFFSET</span><span class="w"> </span><span class="n">COUNT</span><span class="p">;</span>
+</code></pre></div>
+
+<h2 id="query-order-of-execution">Query order of execution<a class="headerlink" href="#query-order-of-execution" title="Permanent link">#</a></h2>
+<ol>
+<li><code>`FROM and JOINs</code></li>
+<li><code>WHERE</code></li>
+<li><code>GROUP BY</code></li>
+<li><code>HAVING</code></li>
+<li><code>SELECT</code></li>
+<li><code>DISTINCT</code></li>
+<li><code>ORDER BY</code></li>
+<li><code>LIMIT / OFFSET</code></li>
+</ol>
+<h2 id="table-movies-read-only_1">Table: movies (Read-only)<a class="headerlink" href="#table-movies-read-only_1" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>title</th>
+<th>director</th>
+<th>year</th>
+<th>length_minutes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Toy Story</td>
+<td>John Lasseter</td>
+<td>1995</td>
+<td>81</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A Bug's Life</td>
+<td>John Lasseter</td>
+<td>1998</td>
+<td>95</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Toy Story 2</td>
+<td>John Lasseter</td>
+<td>1999</td>
+<td>93</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Monsters, Inc.</td>
+<td>Pete Docter</td>
+<td>2001</td>
+<td>92</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Finding Nemo</td>
+<td>Andrew Stanton</td>
+<td>2003</td>
+<td>107</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Incredibles</td>
+<td>Brad Bird</td>
+<td>2004</td>
+<td>116</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Cars</td>
+<td>John Lasseter</td>
+<td>2006</td>
+<td>117</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Ratatouille</td>
+<td>Brad Bird</td>
+<td>2007</td>
+<td>115</td>
+</tr>
+<tr>
+<td>9</td>
+<td>WALL-E</td>
+<td>Andrew Stanton</td>
+<td>2008</td>
+<td>104</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Up</td>
+<td>Pete Docter</td>
+<td>2009</td>
+<td>101</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Toy Story 3</td>
+<td>Lee Unkrich</td>
+<td>2010</td>
+<td>103</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Cars 2</td>
+<td>John Lasseter</td>
+<td>2011</td>
+<td>120</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Brave</td>
+<td>Brenda Chapman</td>
+<td>2012</td>
+<td>102</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Monsters University</td>
+<td>Dan Scanlon</td>
+<td>2013</td>
+<td>110</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-boxoffice-read-only_1">Table: boxoffice (Read-only)<a class="headerlink" href="#table-boxoffice-read-only_1" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>movie_id</th>
+<th>rating</th>
+<th>domestic_sales</th>
+<th>international_sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>8.2</td>
+<td>380,843,261</td>
+<td>555,900,000</td>
+</tr>
+<tr>
+<td>14</td>
+<td>7.4</td>
+<td>268,492,764</td>
+<td>475,066,843</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8.0</td>
+<td>206,445,654</td>
+<td>417,277,164</td>
+</tr>
+<tr>
+<td>12</td>
+<td>6.4</td>
+<td>191,452,396</td>
+<td>368,400,000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7.9</td>
+<td>245,852,179</td>
+<td>239,163,000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>8.0</td>
+<td>261,441,092</td>
+<td>370,001,000</td>
+</tr>
+<tr>
+<td>9</td>
+<td>8.5</td>
+<td>223,808,164</td>
+<td>297,503,696</td>
+</tr>
+<tr>
+<td>11</td>
+<td>8.4</td>
+<td>415,004,880</td>
+<td>648,167,031</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8.3</td>
+<td>191,796,233</td>
+<td>170,162,503</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7.2</td>
+<td>244,082,982</td>
+<td>217,900,167</td>
+</tr>
+<tr>
+<td>10</td>
+<td>8.3</td>
+<td>293,004,164</td>
+<td>438,338,580</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8.1</td>
+<td>289,916,256</td>
+<td>272,900,000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>7.2</td>
+<td>162,798,565</td>
+<td>200,600,000</td>
+</tr>
+<tr>
+<td>13</td>
+<td>7.2</td>
+<td>237,283,207</td>
+<td>301,700,000</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise_10">Exercise<a class="headerlink" href="#exercise_10" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Find the number of movies each director has directed
+
+
+<div class="codehilite"><pre><span></span><code>SELECT director, COUNT(id) as Num_movies_directed
+FROM movies
+GROUP BY director;
+</code></pre></div>
+
+
+
+2. Find the total domestic and international sales that can be attributed to each director
+
+
+<div class="codehilite"><pre><span></span><code>SELECT director, SUM(domestic_sales + international_sales) as Cumulative_sales_from_all_movies
+FROM movies
+    INNER JOIN boxoffice
+        ON movies.id = boxoffice.movie_id
+GROUP BY director;
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 12: Creating tables</h2>
+
+<p>When you have new entities and relationships to store in your database, you can create a new database table using the <strong>CREATE TABLE</strong> statement.</p>
+<h2 id="create-table-statement-w-optional-table-constraint-and-default-value">Create table statement w/ optional table constraint and default value<a class="headerlink" href="#create-table-statement-w-optional-table-constraint-and-default-value" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>CREATE TABLE IF NOT EXISTS mytable (
+    column DataType TableConstraint DEFAULT default_value,
+    another_column DataType TableConstraint DEFAULT default_value,
+    …
+);
+</code></pre></div>
+
+<h2 id="table-data-types">Table data types<a class="headerlink" href="#table-data-types" title="Permanent link">#</a></h2>
+<p>Different databases support different data types, but the common types support numeric, string, and other miscellaneous things like dates, booleans, or even binary data. Here are some examples that you might use in real code.</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTEGER, BOOLEAN</td>
+<td>Store whole integer values like counts or ages. Boolean may be represented as 0 or 1.</td>
+</tr>
+<tr>
+<td>FLOAT, DOUBLE, REAL</td>
+<td>Store precise numerical data with fractional values; different types indicate different floating point precisions.</td>
+</tr>
+<tr>
+<td>CHARACTER(num_chars)</td>
+<td>Fixed-length text data type that stores a specific number of characters; may truncate longer values.</td>
+</tr>
+<tr>
+<td>VARCHAR(num_chars)</td>
+<td>Variable-length text data type with a max character limit; more efficient for large tables than fixed-length types.</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td>Stores strings and text of varying length, typically without a specified max length.</td>
+</tr>
+<tr>
+<td>DATE, DATETIME</td>
+<td>Store date and time stamps; useful for time series and event data, but can be complex with timezones.</td>
+</tr>
+<tr>
+<td>BLOB</td>
+<td>Stores binary large objects (binary data); opaque to database, requiring proper metadata for retrieval.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-constraints">Table constraints<a class="headerlink" href="#table-constraints" title="Permanent link">#</a></h2>
+<p>We aren't going to dive too deep into table constraints in this lesson, but each column can have additional table constraints on it which limit what values can be inserted into that column. This is not a comprehensive list, but will show a few common constraints that you might find useful.</p>
+<table>
+<thead>
+<tr>
+<th>Constraint</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRIMARY KEY</td>
+<td>Values in this column are unique and identify a single row in the table.</td>
+</tr>
+<tr>
+<td>AUTOINCREMENT</td>
+<td>Automatically fills and increments integer values with each row insertion (not supported in all databases).</td>
+</tr>
+<tr>
+<td>UNIQUE</td>
+<td>Values in this column must be unique, but unlike PRIMARY KEY, it does not necessarily identify a row.</td>
+</tr>
+<tr>
+<td>NOT NULL</td>
+<td>Values inserted in this column cannot be NULL.</td>
+</tr>
+<tr>
+<td>CHECK (expression)</td>
+<td>Validates values based on a condition/expression, e.g., ensuring positive values or specific formats.</td>
+</tr>
+<tr>
+<td>FOREIGN KEY</td>
+<td>Ensures that each value in this column corresponds to a valid value in another table’s column, enforcing referential integrity.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="movies-table-schema">Movies table schema<a class="headerlink" href="#movies-table-schema" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>CREATE TABLE movies (
+    id INTEGER PRIMARY KEY,
+    title TEXT,
+    director TEXT,
+    year INTEGER, 
+    length_minutes INTEGER
+);
+</code></pre></div>
+
+<h2 id="exercise_11">Exercise<a class="headerlink" href="#exercise_11" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Create a new table named Database with the following columns:
+   – Name A string (text) describing the name of the database
+   – Version A number (floating point) of the latest version of this database
+   – Download_count An integer count of the number of times this database was downloaded
+   - This table has no constraints.
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">CREATE</span><span class="w"> </span><span class="n">TABLE</span><span class="w"> </span><span class="n">Database</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">Name</span><span class="w"> </span><span class="n">TEXT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">Version</span><span class="w"> </span><span class="n">FLOAT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">Download_count</span><span class="w"> </span><span class="n">INTEGER</span>
+<span class="p">);</span>
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 13: Inserting rows</h2>
+
+<p>What is a Schema?
+We previously described a table in a database as a two-dimensional set of rows and columns, with the columns being the properties and the rows being instances of the entity in the table. In SQL, the database schema is what describes the structure of each table, and the datatypes that each column of the table can contain.</p>
+<h2 id="inserting-new-data">Inserting new data<a class="headerlink" href="#inserting-new-data" title="Permanent link">#</a></h2>
+<p>When inserting data into a database, we need to use an <strong>INSERT</strong> statement, which declares which table to write into, the columns of data that we are filling, and one or more rows of data to insert. In general, each row of data you insert should contain values for every corresponding column in the table. You can insert multiple rows at a time by just listing them sequentially.</p>
+<h2 id="insert-statement-with-values-for-all-columns">Insert statement with values for all columns<a class="headerlink" href="#insert-statement-with-values-for-all-columns" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>INSERT INTO mytable
+VALUES (value_or_expr, another_value_or_expr, …),
+       (value_or_expr_2, another_value_or_expr_2, …),
+       …;
+</code></pre></div>
+
+<h2 id="exercise_12">Exercise<a class="headerlink" href="#exercise_12" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
+
+
+<div class="codehilite"><pre><span></span><code>INSERT INTO movies VALUES (4, &quot;Toy Story 4&quot;, &quot;El Directore&quot;, 2015, 90);
+</code></pre></div>
+
+
+
+2. Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+
+
+<div class="codehilite"><pre><span></span><code>INSERT INTO boxoffice VALUES (4, 8.7, 340000000, 270000000);
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 13: Updating rows</h2>
+
+<p>In addition to adding new data, a common task is to update existing data, which can be done using an <strong>UPDATE</strong> statement. Similar to the <strong>INSERT</strong> statement, you have to specify exactly which table, columns, and rows to update. In addition, the data you are updating has to match the data type of the columns in the table schema.</p>
+<h2 id="update-statement-with-values">Update statement with values<a class="headerlink" href="#update-statement-with-values" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>UPDATE mytable
+SET column = value_or_expr, 
+    other_column = another_value_or_expr, 
+    …
+WHERE condition;
+</code></pre></div>
+
+<h2 id="exercise_13">Exercise<a class="headerlink" href="#exercise_13" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
+
+
+<div class="codehilite"><pre><span></span><code>UPDATE movies
+SET director = &quot;John Lasseter&quot;
+WHERE id = 2;
+</code></pre></div>
+
+
+
+2. The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+
+
+<div class="codehilite"><pre><span></span><code>UPDATE movies
+SET year = 1999
+WHERE id = 3;
+</code></pre></div>
+
+
+
+3. Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+
+
+<div class="codehilite"><pre><span></span><code>UPDATE movies
+SET title = &quot;Toy Story 3&quot;, director = &quot;Lee Unkrich&quot;
+WHERE id = 11;
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 14: Deleting rows</h2>
+
+<p>When you need to delete data from a table in the database, you can use a <strong>DELETE</strong> statement, which describes the table to act on, and the rows of the table to delete through the <strong>WHERE</strong> clause.</p>
+<h2 id="delete-statement-with-condition">Delete statement with condition<a class="headerlink" href="#delete-statement-with-condition" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>DELETE FROM mytable
+WHERE condition;
+</code></pre></div>
+
+<p>If you decide to leave out the WHERE constraint, then all rows are removed, which is a quick and easy way to clear out a table completely (if intentional).</p>
+<h2 id="taking-extra-care">Taking extra care<a class="headerlink" href="#taking-extra-care" title="Permanent link">#</a></h2>
+<p>Like the UPDATE statement from last lesson, it's recommended that you run the constraint in a SELECT query first to ensure that you are removing the right rows. Without a proper backup or test database, it is downright easy to irrevocably remove data, so always read your DELETE statements twice and execute once.</p>
+<h2 id="exercise_14">Exercise<a class="headerlink" href="#exercise_14" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. This database is getting too big, lets remove all movies that were released before 2005.
+
+
+<div class="codehilite"><pre><span></span><code>DELETE FROM movies
+where year &lt; 2005;
+</code></pre></div>
+
+
+
+2. Andrew Stanton has also left the studio, so please remove all movies directed by him.
+
+
+<div class="codehilite"><pre><span></span><code>DELETE FROM movies
+where director = &quot;Andrew Stanton&quot;;
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 15: Altering tables</h2>
+
+<p>As your data changes over time, SQL provides a way for you to update your corresponding tables and database schemas by using the <strong>ALTER TABLE</strong> statement to add, remove, or modify columns and table constraints.</p>
+<h2 id="adding-columns">Adding columns<a class="headerlink" href="#adding-columns" title="Permanent link">#</a></h2>
+<p>The syntax for adding a new column is similar to the syntax when creating new rows in the <strong>CREATE TABLE</strong> statement. You need to specify the data type of the column along with any potential table constraints and default values to be applied to both existing and new rows. In some databases like MySQL, you can even specify where to insert the new column using the <strong>FIRST</strong> or <strong>AFTER</strong> clauses, though this is not a standard feature.</p>
+<h2 id="altering-table-to-add-new-columns">Altering table to add new column(s)<a class="headerlink" href="#altering-table-to-add-new-columns" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>ALTER TABLE mytable
+ADD column DataType OptionalTableConstraint 
+    DEFAULT default_value;
+</code></pre></div>
+
+<h2 id="removing-columns">Removing columns<a class="headerlink" href="#removing-columns" title="Permanent link">#</a></h2>
+<p>Dropping columns is as easy as specifying the column to drop, however, some databases (including SQLite) don't support this feature. Instead you may have to create a new table and migrate the data over.</p>
+<h2 id="altering-table-to-remove-columns">Altering table to remove column(s)<a class="headerlink" href="#altering-table-to-remove-columns" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>ALTER TABLE mytable
+DROP column_to_be_deleted;
+</code></pre></div>
+
+<h2 id="renaming-the-table">Renaming the table<a class="headerlink" href="#renaming-the-table" title="Permanent link">#</a></h2>
+<p>If you need to rename the table itself, you can also do that using the <strong>RENAME</strong> TO clause of the statement.</p>
+<h2 id="altering-table-name">Altering table name<a class="headerlink" href="#altering-table-name" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>ALTER TABLE mytable
+RENAME TO new_table_name;
+</code></pre></div>
+
+<h2 id="exercise_15">Exercise<a class="headerlink" href="#exercise_15" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in.
+
+
+<div class="codehilite"><pre><span></span><code>ALTER TABLE Movies
+  ADD COLUMN Aspect_ratio FLOAT DEFAULT 2.39;
+</code></pre></div>
+
+
+
+2. Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English.
+
+
+<div class="codehilite"><pre><span></span><code>ALTER TABLE Movies
+  ADD COLUMN Language TEXT DEFAULT &quot;English&quot;;
+</code></pre></div>
+
+
+
+</div>
+
+<h2 style="color:blue;">SQL Lesson 16: Dropping tables</h2>
+
+<p>In some rare cases, you may want to remove an entire table including all of its data and metadata, and to do so, you can use the DROP TABLE statement, which differs from the DELETE statement in that it also removes the table schema from the database entirely.</p>
+<h2 id="drop-table-statement">Drop table statement<a class="headerlink" href="#drop-table-statement" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nv">DROP</span><span class="w"> </span><span class="nv">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="nv">EXISTS</span><span class="w"> </span><span class="nv">mytable</span><span class="c1">;</span>
+</code></pre></div>
+
+<p>Like the CREATE TABLE statement, the database may throw an error if the specified table does not exist, and to suppress that error, you can use the IF EXISTS clause.</p>
+<p>In addition, if you have another table that is dependent on columns in table you are removing (for example, with a FOREIGN KEY dependency) then you will have to either update all dependent tables first to remove the dependent rows or to remove those tables entirely.</p>
+<h2 id="exercise_16">Exercise<a class="headerlink" href="#exercise_16" title="Permanent link">#</a></h2>
+<div style="color:green;">
+
+1. We've sadly reached the end of our lessons, lets clean up by removing the Movies table
+
+
+<div class="codehilite"><pre><span></span><code>DROP TABLE Movies;
+</code></pre></div>
+
+
+
+2. And drop the BoxOffice table as well
+
+
+<div class="codehilite"><pre><span></span><code>DROP TABLE BoxOffice;
+</code></pre></div>
+
+
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Data-manipulation-and-analysis/data-manipulation-analysis.html" class="btn btn-neutral float-left" title="PANDAS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="sql-datascience.html" class="btn btn-neutral float-right" title="Using SQL for Data Science">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Data-manipulation-and-analysis/data-manipulation-analysis.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="sql-datascience.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
