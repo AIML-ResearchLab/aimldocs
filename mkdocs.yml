@@ -192,29 +192,95 @@ nav:
     - Natural Language Processing(NLP): 
       - Overview: NLP/overview.md
       - NLP Details: NLP/nlpdetails.md
+    - Computer Vision:
+      - Overview: Computer-Vision/Overview.md
+      - Traditional CV (Before deep learning):
+        - Edge detection: Computer-Vision/Edge-detection.md
+        - Feature extraction: Computer-Vision/Feature-extraction.md
+        - Image filtering: Computer-Vision/Image-filtering.md
+        - Template matching: Computer-Vision/Template-matching.md
+        - Optical flow: Computer-Vision/Optical-flow.md
+        - Histogram analysis: Computer-Vision/Histogram-analysis.md
+        - Rule-based vision systems: Computer-Vision/Rule-based-vision-systems.md
+      - Modern CV (Deep learning–based):
+        - CNNs: Computer-Vision/CNNs.md
+        - Vision Transformers (ViT): Computer-Vision/ViT.md
+        - YOLO: Computer-Vision/YOLO.md
+        - Faster R-CNN: Computer-Vision/Faster-R-CNN.md
+        - Mask R-CNN: Computer-Vision/Mask-R-CNN.md
+        - Diffusion models (for vision generation): Computer-Vision/Diffusion-models.md
+      - Common Computer Vision tasks:
+        - Image classification: Computer-Vision/Image-classification.md
+        - Object detection: Computer-Vision/Object-detection.md
+        - Face recognition: Computer-Vision/Face-recognition.md
+        - OCR (text from images): Computer-Vision/OCR.md
+        - Medical imaging analysis: Computer-Vision/Medical-imaging-analysis.md
+        - Autonomous driving vision: Computer-Vision/Autonomous-driving-vision.md
+        - Video analytics: Computer-Vision/Video-analytics.md
+        - Industrial inspection: Computer-Vision/Industrial-inspection.md
+      - OpenCV: OpenCV/OpenCV.md
     - Retrieval-Augmented Generation(RAG):
       - RAG: RAG/rag.md
     - AI agents:
       - AI agents: AIagents/aiagents.md
     - Agentic AI:
+      - Framework: AgenticAI/framework.md
+      - Design Patterns: AgenticAI/design-patterns.md
       - general: AgenticAI/general.md
       - Overview: AgenticAI/overview.md
       - crewai: AgenticAI/crewai.md
-      - LangGraph: AgenticAI/LangGraph.md
+      - LangGraph: 
+        - Overview: AgenticAI/LangGraph/LangGraph.md
+        - LangGraph Graph API: AgenticAI/LangGraph/LangGraphDetails.md
+        - Subgraphs: AgenticAI/LangGraph/Subgraphs.md
+        - Interrupts: AgenticAI/LangGraph/Interrupts.md
+        - Time travel: AgenticAI/LangGraph/time-travel.md
+        - LangGraph runtime: AgenticAI/LangGraph/LangGraph-runtime.md
+        - Durable execution: AgenticAI/LangGraph/Durable-execution.md
+        - Install:  AgenticAI/LangGraph/Install.md
+        - Graph API: AgenticAI/LangGraph/graph-api.md
+        - Functional API: AgenticAI/LangGraph/functional-api.md
+        - Run local server: AgenticAI/LangGraph/local-server.md
+        - Workflows: AgenticAI/LangGraph/workflows.md
+        - Agents: AgenticAI/LangGraph/agents.md
+        - Persistence: AgenticAI/LangGraph/persistence.md
+        - Memory: AgenticAI/LangGraph/memory.md
+        - Streaming: AgenticAI/LangGraph/streaming.md
+        - Interrupts: AgenticAI/LangGraph/interrupts.md
+        - Graph: AgenticAI/LangGraph/graph.md
+        - Node: AgenticAI/LangGraph/node.md
+        - Edge: AgenticAI/LangGraph/edge.md
       - AutoGen: AgenticAI/AutoGen.md
       - AWS: AgenticAI/aws.md
-      - AZURE: AgenticAI/azure.md
+      - AZURE: 
+        - Overview: AgenticAI/AZURE/azure.md
+        - Azure OpenAI Foundry models: AgenticAI/AZURE/azure-openai-foundry-modelsure.md
       - Agent Development Kit:
         - ADK : AgenticAI/GCP/adk.md
         - Agents: AgenticAI/GCP/Agents.md
         - Tools: AgenticAI/GCP/Tools.md
         - Tools: AgenticAI/GCP/a2a.md
-    - MCPModel Context Protocol (MCP):
+    - Agent to Agent(A2A):
+      - A2A: A2A/a2a.md
+    - Temporal:
+      - Overview: Temporal/temporal-overview.md
+      - Setup: Temporal/setup.md
+      - Core application: Temporal/core-application.md
+      - Temporal Client: Temporal/Temporal-client.md
+    - MCPModel Context Protocol(MCP):
       - MCP: MCP/mcp.md
+    - Vector Databases:
+      - PgVector: VectorDatabases/PgVector.md
+      - OpenSearch: VectorDatabases/OpenSearch.md
+    - Graph Databases:
+      - neo4j setup: GraphDatabases/neo4j-setup.md
+      - neo4j Cypher: GraphDatabases/neo4j-cypher.md
     - Models Details information:
       - Ollama: Models/Ollama.md
     - Note Book:
       - All Notebook: Notebook/allnotebook.md
+    - Pypi Library:
+      - Pypi Library Details: Pypi/Pypi-lib-details.md
 
 #theme: readthedocs
 theme:
