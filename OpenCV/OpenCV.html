@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>OpenCV - AIML documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "OpenCV";
+        var mkdocs_page_input_path = "OpenCV/OpenCV.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/CrossValidation.html">Cross Validation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/HyperparameterTuning.html">Hyperparameter Tuning</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/SupervisedLearning/TuningDecisionThreshold.html">Tuning decision threshold</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/SimpleLinearRegression.html">Simple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/MultipleLinearRegression.html">Multiple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/PolynomialRegression.html">Polynomial Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/RidgeLassoRegression.html">Ridge & Lasso Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/SupportVectorRegression.html">Support Vector Regression (SVR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/DecisionTreeRegression.html">Decision Tree Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.html">Random Forest Regression</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/SupportVectorMachines.html">Support Vector Machines</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/SinglelayerPerceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/LinearClassificationModels/StochasticGradientDescent.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/DecisionTreeClassification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KNearestNeighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/NaiveBayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/RandomForests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/BaggingClassifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/Ensemblelearningclassifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KernelSVM.html">Kernel SVM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Linear Algebra</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../LinearAlgebra/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DeepLearning/Vanishing.html">Vanishing and Exploding Gradients Problems</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Components of Neural Networks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LayersNeuralNetworks.html">Layers in Neural Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/WeightsBiases.html">Weights and Biases</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/ForwardPropagation.html">Forward Propagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/ActivationFunctions.html">Activation Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LossFunctions.html">Loss Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/Backpropagation.html">Backpropagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Components/LearningRate.html">Learning Rate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Optimization Algorithm</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/GradientDescent.html">Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/SGD.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Adam.html">Adam (Adaptive Moment Estimation)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/BatchNormalization.html">Batch Normalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Mini-batch-GD.html">Mini-batch Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/Momentum-based-GO.html">Momentum-based Gradient Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/AdagradOptimizer.html">Adagrad Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.html">RMSProp Optimizer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Models</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/FNN.html">Feedforward Neural Network (FNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Recurrent Neural Network (RNN)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/RNN.html">Recurrent Neural Network (RNN)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/LSTM.html">LSTM (Long Short-Term Memory)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../DeepLearning/Models/GRU.html">GRU (Gated Recurrent Unit)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/CNN.html">Convolutional Neural Network (CNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/RBFN.html">Radial Basis Function Network (RBFN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/ComputerVision.html">Computer Vision</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/GANs.html">Generative Adversarial Networks (GANs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/Transformer.html">Transformer Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/Autoencoders.html">Autoencoders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../DeepLearning/Models/SOM.html">Self-Organizing Maps (SOM)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../NLP/nlpdetails.html">NLP Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Computer Vision</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Computer-Vision/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Traditional CV (Before deep learning)</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Edge-detection.md">Edge detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Feature-extraction.md">Feature extraction</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Image-filtering.md">Image filtering</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Template-matching.md">Template matching</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Optical-flow.md">Optical flow</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Histogram-analysis.md">Histogram analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Rule-based-vision-systems.md">Rule-based vision systems</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Modern CV (Deep learning–based)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Computer-Vision/CNNs.html">CNNs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/ViT.md">Vision Transformers (ViT)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/YOLO.md">YOLO</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Faster-R-CNN.md">Faster R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Mask-R-CNN.md">Mask R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Diffusion-models.md">Diffusion models (for vision generation)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Common Computer Vision tasks</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Image-classification.md">Image classification</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Object-detection.md">Object detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Face-recognition.md">Face recognition</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/OCR.md">OCR (text from images)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Medical-imaging-analysis.md">Medical imaging analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Autonomous-driving-vision.md">Autonomous driving vision</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Video-analytics.md">Video analytics</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../Computer-Vision/Industrial-inspection.md">Industrial inspection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">OpenCV</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#why-opencv">Why OpenCV?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#important-concepts-of-opencv">Important concepts of OpenCV</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reading-an-image">Reading an Image</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#extracting-the-rgb-values-of-a-pixel">Extracting the RGB Values of a Pixel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#extracting-the-region-of-interest-roi">Extracting the Region of Interest (ROI)</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/framework.html">Framework</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/design-patterns.html">Design Patterns</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >LangGraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/LangGraph.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/LangGraphDetails.html">LangGraph Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/Subgraphs.html">Subgraphs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../AgenticAI/LangGraph/Interrupts.md">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/time-travel.html">Time travel</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/LangGraph-runtime.html">LangGraph runtime</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/Durable-execution.html">Durable execution</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/Install.html">Install</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/graph-api.html">Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/functional-api.html">Functional API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/local-server.html">Run local server</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/workflows.html">Workflows</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/persistence.html">Persistence</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/memory.html">Memory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/streaming.html">Streaming</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/interrupts.html">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/graph.html">Graph</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/node.html">Node</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/LangGraph/edge.html">Edge</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >AZURE</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/AZURE/azure.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/AZURE/azure-openai-foundry-modelsure.html">Azure OpenAI Foundry models</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Agent Development Kit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/adk.html">ADK</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/Agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/Tools.html">Tools</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AgenticAI/GCP/a2a.html">Tools</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agent to Agent(A2A)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../A2A/a2a.html">A2A</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Temporal</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Temporal/temporal-overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Temporal/setup.html">Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Temporal/core-application.html">Core application</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Temporal/Temporal-client.html">Temporal Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >MCPModel Context Protocol(MCP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../MCP/mcp.html">MCP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDatabases/PgVector.html">PgVector</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VectorDatabases/OpenSearch.html">OpenSearch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Graph Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../GraphDatabases/neo4j-setup.html">neo4j setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GraphDatabases/neo4j-cypher.html">neo4j Cypher</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Models Details information</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Models/Ollama.html">Ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Note Book</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Notebook/allnotebook.html">All Notebook</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Pypi Library</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Pypi/Pypi-lib-details.html">Pypi Library Details</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Computer Vision</li>
+      <li class="breadcrumb-item active">OpenCV</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="opencv-open-source-computer-vision-library">OpenCV (Open Source Computer Vision Library)<a class="headerlink" href="#opencv-open-source-computer-vision-library" title="Permanent link">#</a></h1>
+<p>OpenCV (Open Source Computer Vision Library) is an open-source computer vision and machine learning library. It allows us to process images and videos, detect objects, faces and even handwriting.</p>
+<h2 id="why-opencv">Why OpenCV?<a class="headerlink" href="#why-opencv" title="Permanent link">#</a></h2>
+<ol>
+<li>
+<p><strong>Comprehensive Image Processing:</strong> OpenCV has a range of functions to manipulate and analyze images helps in making it ideal for various applications.</p>
+</li>
+<li>
+<p><strong>Real-Time Video Processing:</strong> It supports video capture and real-time video processing.</p>
+</li>
+<li>
+<p><strong>Cross-Platform:</strong> Works on multiple platforms like Windows, Linux, macOS and Android.</p>
+</li>
+<li>
+<p><strong>Open-Source:</strong> It is free to use and has a large community support.</p>
+</li>
+<li>
+<p><strong>Integration with Deep Learning:</strong> It integrates with popular deep learning libraries like TensorFlow and PyTorch.</p>
+</li>
+</ol>
+<p>OpenCV is one of the most popular computer vision libraries.</p>
+<h2 id="important-concepts-of-opencv">Important concepts of OpenCV<a class="headerlink" href="#important-concepts-of-opencv" title="Permanent link">#</a></h2>
+<ol>
+<li>Reading an image</li>
+<li>Extracting the RGB values of a pixel</li>
+<li>Extracting the Region of Interest (ROI)</li>
+<li>Resizing the Image</li>
+<li>Rotating the Image</li>
+<li>Drawing a Rectangle</li>
+<li>Displaying text</li>
+</ol>
+<p><strong>Install the OpenCV library using the following command:</strong></p>
+<p><code>pip install opencv-python</code></p>
+<h2 id="reading-an-image">Reading an Image<a class="headerlink" href="#reading-an-image" title="Permanent link">#</a></h2>
+<p>First of all, we will import <code>cv2</code> module and then read the input image using cv2’s <code>imread()</code> method. Then extract the <code>height</code> and <code>width</code> of the image.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Importing the OpenCV library</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+
+<span class="c1"># Reading the image using imread() function</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;/content/road.jpg&#39;</span><span class="p">)</span>
+
+<span class="c1"># Extracting the height and width of an image</span>
+<span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># Image shape</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Image shape: </span><span class="si">{</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Displaying the height and width</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Height = </span><span class="si">{}</span><span class="s2">, Width = </span><span class="si">{}</span><span class="s2">, Channels = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span>
+
+<span class="c1"># pixel values</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Image pixel details: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">image</span><span class="p">))</span>
+</code></pre></div>
+
+<h2 id="extracting-the-rgb-values-of-a-pixel">Extracting the <code>RGB</code> Values of a <code>Pixel</code><a class="headerlink" href="#extracting-the-rgb-values-of-a-pixel" title="Permanent link">#</a></h2>
+<p>Now we will focus on extracting the <code>RGB values</code> of an <code>individual pixel</code>. <code>OpenCV arranges the channels in BGR order</code>. So the <code>0th</code> <code>value</code> will correspond to the <code>Blue pixel</code> and <code>not the Red</code>.</p>
+<div class="codehilite"><pre><span></span><code>#<span class="w"> </span><span class="nv">Extracting</span><span class="w"> </span><span class="nv">RGB</span><span class="w"> </span><span class="nv">values</span>.
+#<span class="w"> </span><span class="nv">Here</span><span class="w"> </span><span class="nv">we</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="nv">randomly</span><span class="w"> </span><span class="nv">chosen</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">pixel</span>
+#<span class="w"> </span><span class="nv">by</span><span class="w"> </span><span class="nv">passing</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="mi">100</span>,<span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">height</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">width</span>.
+
+<span class="ss">(</span><span class="nv">B</span>,<span class="w"> </span><span class="nv">G</span>,<span class="w"> </span><span class="nv">R</span><span class="ss">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">image</span>[<span class="mi">100</span>,<span class="w"> </span><span class="mi">100</span>]
+
+#<span class="w"> </span><span class="nv">Displaying</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">pixel</span><span class="w"> </span><span class="nv">values</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;R = {}, G = {}, B = {}&quot;</span>.<span class="nv">format</span><span class="ss">(</span><span class="nv">R</span>,<span class="w"> </span><span class="nv">G</span>,<span class="w"> </span><span class="nv">B</span><span class="ss">))</span>
+
+#<span class="w"> </span><span class="nv">We</span><span class="w"> </span><span class="nv">can</span><span class="w"> </span><span class="nv">also</span><span class="w"> </span><span class="nv">pass</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">channel</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">extract</span>
+#<span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">specific</span><span class="w"> </span><span class="nv">channel</span>
+<span class="nv">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">image</span>[<span class="mi">100</span>,<span class="w"> </span><span class="mi">100</span>,<span class="w"> </span><span class="mi">0</span>]
+<span class="nv">G</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">image</span>[<span class="mi">100</span>,<span class="w"> </span><span class="mi">100</span>,<span class="w"> </span><span class="mi">1</span>]
+<span class="nv">R</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">image</span>[<span class="mi">100</span>,<span class="w"> </span><span class="mi">100</span>,<span class="w"> </span><span class="mi">2</span>]
+
+<span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;B = {}&quot;</span>.<span class="nv">format</span><span class="ss">(</span><span class="nv">B</span><span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;G = {}&quot;</span>.<span class="nv">format</span><span class="ss">(</span><span class="nv">G</span><span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;R = {}&quot;</span>.<span class="nv">format</span><span class="ss">(</span><span class="nv">R</span><span class="ss">))</span>
+</code></pre></div>
+
+<h2 id="extracting-the-region-of-interest-roi">Extracting the <code>Region of Interest (ROI)</code><a class="headerlink" href="#extracting-the-region-of-interest-roi" title="Permanent link">#</a></h2>
+<p>Sometimes we want to extract a particular part or region of an image. This can be done by slicing the pixels of the image.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># We will calculate the region of interest</span>
+<span class="c1"># by slicing the pixels of the image</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">google.colab.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">cv2_imshow</span>
+
+<span class="n">roi</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="mi">100</span> <span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">200</span> <span class="p">:</span> <span class="mi">700</span><span class="p">]</span>
+<span class="n">cv2_imshow</span><span class="p">(</span><span class="n">roi</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+
+<h1 id="opencv-cv2-complete-functional-overview">📦 OpenCV (cv2) – Complete Functional Overview<a class="headerlink" href="#opencv-cv2-complete-functional-overview" title="Permanent link">#</a></h1>
+<h2 id="1-image-video-io">1️⃣ Image &amp; Video I/O<a class="headerlink" href="#1-image-video-io" title="Permanent link">#</a></h2>
+<p>Used to read, write, display images/videos.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.imread()</code></td>
+<td>Read image</td>
+</tr>
+<tr>
+<td><code>cv2.imwrite()</code></td>
+<td>Save image</td>
+</tr>
+<tr>
+<td><code>cv2.imshow()</code></td>
+<td>Show image</td>
+</tr>
+<tr>
+<td><code>cv2.waitKey()</code></td>
+<td>Keyboard wait</td>
+</tr>
+<tr>
+<td><code>cv2.destroyAllWindows()</code></td>
+<td>Close windows</td>
+</tr>
+<tr>
+<td><code>cv2.VideoCapture()</code></td>
+<td>Read video / webcam</td>
+</tr>
+<tr>
+<td><code>cv2.VideoWriter()</code></td>
+<td>Save video</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-image-properties-pixel-operations">2️⃣ Image Properties &amp; Pixel Operations<a class="headerlink" href="#2-image-properties-pixel-operations" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>image.shape</code></td>
+<td>Image dimensions</td>
+</tr>
+<tr>
+<td><code>image.dtype</code></td>
+<td>Data type</td>
+</tr>
+<tr>
+<td><code>image.size</code></td>
+<td>Total pixels</td>
+</tr>
+<tr>
+<td><code>cv2.split()</code></td>
+<td>Split channels</td>
+</tr>
+<tr>
+<td><code>cv2.merge()</code></td>
+<td>Merge channels</td>
+</tr>
+<tr>
+<td><code>cv2.copyMakeBorder()</code></td>
+<td>Add padding</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-color-space-conversions">3️⃣ Color Space Conversions<a class="headerlink" href="#3-color-space-conversions" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Conversion</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BGR → Gray</td>
+<td><code>cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</code></td>
+</tr>
+<tr>
+<td>BGR → RGB</td>
+<td><code>cv2.COLOR_BGR2RGB</code></td>
+</tr>
+<tr>
+<td>BGR → HSV</td>
+<td><code>cv2.COLOR_BGR2HSV</code></td>
+</tr>
+<tr>
+<td>BGR → LAB</td>
+<td><code>cv2.COLOR_BGR2LAB</code></td>
+</tr>
+<tr>
+<td>Gray → BGR</td>
+<td><code>cv2.COLOR_GRAY2BGR</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-image-resizing-cropping-geometry">4️⃣ Image Resizing, Cropping &amp; Geometry<a class="headerlink" href="#4-image-resizing-cropping-geometry" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.resize()</code></td>
+<td>Resize image</td>
+</tr>
+<tr>
+<td><code>cv2.getRotationMatrix2D()</code></td>
+<td>Rotation matrix</td>
+</tr>
+<tr>
+<td><code>cv2.warpAffine()</code></td>
+<td>Rotate / translate</td>
+</tr>
+<tr>
+<td><code>cv2.warpPerspective()</code></td>
+<td>Perspective transform</td>
+</tr>
+<tr>
+<td><code>cv2.flip()</code></td>
+<td>Flip image</td>
+</tr>
+<tr>
+<td>ROI slicing</td>
+<td><code>img[y1:y2, x1:x2]</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-image-filtering-smoothing">5️⃣ Image Filtering &amp; Smoothing<a class="headerlink" href="#5-image-filtering-smoothing" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.blur()</code></td>
+<td>Average blur</td>
+</tr>
+<tr>
+<td><code>cv2.GaussianBlur()</code></td>
+<td>Gaussian blur</td>
+</tr>
+<tr>
+<td><code>cv2.medianBlur()</code></td>
+<td>Median filter</td>
+</tr>
+<tr>
+<td><code>cv2.bilateralFilter()</code></td>
+<td>Edge-preserving blur</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-thresholding-binarization">6️⃣ Thresholding &amp; Binarization<a class="headerlink" href="#6-thresholding-binarization" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.threshold()</code></td>
+<td>Global threshold</td>
+</tr>
+<tr>
+<td><code>cv2.adaptiveThreshold()</code></td>
+<td>Adaptive threshold</td>
+</tr>
+<tr>
+<td><code>cv2.THRESH_BINARY</code></td>
+<td>Binary</td>
+</tr>
+<tr>
+<td><code>cv2.THRESH_OTSU</code></td>
+<td>Otsu’s method</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-edge-detection">7️⃣ Edge Detection<a class="headerlink" href="#7-edge-detection" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.Canny()</code></td>
+<td>Edge detection</td>
+</tr>
+<tr>
+<td><code>cv2.Sobel()</code></td>
+<td>Gradient edges</td>
+</tr>
+<tr>
+<td><code>cv2.Laplacian()</code></td>
+<td>Second-order edges</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-morphological-operations">8️⃣ Morphological Operations<a class="headerlink" href="#8-morphological-operations" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.erode()</code></td>
+<td>Shrink objects</td>
+</tr>
+<tr>
+<td><code>cv2.dilate()</code></td>
+<td>Expand objects</td>
+</tr>
+<tr>
+<td><code>cv2.morphologyEx()</code></td>
+<td>Advanced ops</td>
+</tr>
+<tr>
+<td><code>cv2.MORPH_OPEN</code></td>
+<td>Remove noise</td>
+</tr>
+<tr>
+<td><code>cv2.MORPH_CLOSE</code></td>
+<td>Fill holes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-contours-shape-analysis">9️⃣ Contours &amp; Shape Analysis<a class="headerlink" href="#9-contours-shape-analysis" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.findContours()</code></td>
+<td>Detect contours</td>
+</tr>
+<tr>
+<td><code>cv2.drawContours()</code></td>
+<td>Draw contours</td>
+</tr>
+<tr>
+<td><code>cv2.contourArea()</code></td>
+<td>Area</td>
+</tr>
+<tr>
+<td><code>cv2.arcLength()</code></td>
+<td>Perimeter</td>
+</tr>
+<tr>
+<td><code>cv2.boundingRect()</code></td>
+<td>Bounding box</td>
+</tr>
+<tr>
+<td><code>cv2.minAreaRect()</code></td>
+<td>Rotated box</td>
+</tr>
+<tr>
+<td><code>cv2.approxPolyDP()</code></td>
+<td>Polygon approx</td>
+</tr>
+</tbody>
+</table>
+<h2 id="feature-detection-matching">🔟 Feature Detection &amp; Matching<a class="headerlink" href="#feature-detection-matching" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Harris Corner</td>
+<td><code>cv2.cornerHarris()</code></td>
+</tr>
+<tr>
+<td>ORB</td>
+<td><code>cv2.ORB_create()</code></td>
+</tr>
+<tr>
+<td>SIFT</td>
+<td><code>cv2.SIFT_create()</code></td>
+</tr>
+<tr>
+<td>FAST</td>
+<td><code>cv2.FastFeatureDetector_create()</code></td>
+</tr>
+<tr>
+<td>BF Matcher</td>
+<td><code>cv2.BFMatcher()</code></td>
+</tr>
+<tr>
+<td>FLANN</td>
+<td><code>cv2.FlannBasedMatcher()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="11-object-detection-classical-cv">1️⃣1️⃣ Object Detection (Classical CV)<a class="headerlink" href="#11-object-detection-classical-cv" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Haar Cascade</td>
+<td><code>cv2.CascadeClassifier()</code></td>
+</tr>
+<tr>
+<td>HOG Detector</td>
+<td><code>cv2.HOGDescriptor()</code></td>
+</tr>
+<tr>
+<td>Template Matching</td>
+<td><code>cv2.matchTemplate()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-background-subtraction-motion">1️⃣2️⃣ Background Subtraction &amp; Motion<a class="headerlink" href="#12-background-subtraction-motion" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.absdiff()</code></td>
+<td>Frame difference</td>
+</tr>
+<tr>
+<td><code>cv2.createBackgroundSubtractorMOG2()</code></td>
+<td>Motion detection</td>
+</tr>
+<tr>
+<td><code>cv2.calcOpticalFlowFarneback()</code></td>
+<td>Optical flow</td>
+</tr>
+</tbody>
+</table>
+<h2 id="13-drawing-functions">1️⃣3️⃣ Drawing Functions<a class="headerlink" href="#13-drawing-functions" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.line()</code></td>
+<td>Draw line</td>
+</tr>
+<tr>
+<td><code>cv2.rectangle()</code></td>
+<td>Draw rectangle</td>
+</tr>
+<tr>
+<td><code>cv2.circle()</code></td>
+<td>Draw circle</td>
+</tr>
+<tr>
+<td><code>cv2.putText()</code></td>
+<td>Write text</td>
+</tr>
+<tr>
+<td><code>cv2.polylines()</code></td>
+<td>Draw polygons</td>
+</tr>
+</tbody>
+</table>
+<h2 id="14-histogram-image-statistics">1️⃣4️⃣ Histogram &amp; Image Statistics<a class="headerlink" href="#14-histogram-image-statistics" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.calcHist()</code></td>
+<td>Histogram</td>
+</tr>
+<tr>
+<td><code>cv2.equalizeHist()</code></td>
+<td>Contrast</td>
+</tr>
+<tr>
+<td><code>cv2.normalize()</code></td>
+<td>Normalize data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="15-camera-calibration-geometry">1️⃣5️⃣ Camera Calibration &amp; Geometry<a class="headerlink" href="#15-camera-calibration-geometry" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.findChessboardCorners()</code></td>
+<td>Calibration</td>
+</tr>
+<tr>
+<td><code>cv2.calibrateCamera()</code></td>
+<td>Camera params</td>
+</tr>
+<tr>
+<td><code>cv2.undistort()</code></td>
+<td>Remove distortion</td>
+</tr>
+</tbody>
+</table>
+<h2 id="16-deep-learning-dnn-module">1️⃣6️⃣ Deep Learning (DNN Module)<a class="headerlink" href="#16-deep-learning-dnn-module" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.dnn.readNet()</code></td>
+<td>Load model</td>
+</tr>
+<tr>
+<td><code>cv2.dnn.readNetFromONNX()</code></td>
+<td>ONNX</td>
+</tr>
+<tr>
+<td><code>cv2.dnn.blobFromImage()</code></td>
+<td>Preprocess</td>
+</tr>
+<tr>
+<td><code>net.forward()</code></td>
+<td>Inference</td>
+</tr>
+</tbody>
+</table>
+<h2 id="17-video-analysis-utilities">1️⃣7️⃣ Video Analysis Utilities<a class="headerlink" href="#17-video-analysis-utilities" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cv2.createTrackbar()</code></td>
+<td>UI control</td>
+</tr>
+<tr>
+<td><code>cv2.getTickCount()</code></td>
+<td>FPS</td>
+</tr>
+<tr>
+<td><code>cv2.getTickFrequency()</code></td>
+<td>Timing</td>
+</tr>
+</tbody>
+</table>
+<h2 id="most-used-functions-real-projects">MOST USED FUNCTIONS (REAL PROJECTS)<a class="headerlink" href="#most-used-functions-real-projects" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>cv2.imread
+cv2.resize
+cv2.cvtColor
+cv2.GaussianBlur
+cv2.Canny
+cv2.findContours
+cv2.boundingRect
+cv2.putText
+cv2.VideoCapture
+cv2.dnn.readNet
+</code></pre></div>
+
+<h1 id="image-processing-and-enhancement">Image Processing and Enhancement<a class="headerlink" href="#image-processing-and-enhancement" title="Permanent link">#</a></h1>
+<h2 id="blurring-an-image">Blurring an Image<a class="headerlink" href="#blurring-an-image" title="Permanent link">#</a></h2>
+<p>Image blurring is a technique used in image processing to reduce sharpness and detail making an image appear smoother.</p>
+<p>This is done by applying filters also called low-pass filters that reduce high-frequency noise and smooth finer details. Blurring is used for tasks like noise reduction, edge smoothing or creating artistic effects.</p>
+<p>It works by averaging the pixel values around each pixel, softening the image in the process. It’s useful in scenarios where minimizing noise or reducing sharpness is necessary such as in preparing images for computer vision models or applying a soft, artistic effect.</p>
+<h2 id="types-of-blurring">Types of Blurring<a class="headerlink" href="#types-of-blurring" title="Permanent link">#</a></h2>
+<p>We can apply various blurring techniques based on the desired effect.</p>
+<p><strong>1. Gaussian Blurring</strong></p>
+<p>Gaussian blur works by applying a Gaussian function to an image, resulting in a smooth blur. It’s useful for noise reduction and detail reduction in images. It is used as a preprocessing step for machine learning and deep learning models.</p>
+<p><code>cv2.COLOR_BGR2RGB</code></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">image_path</span> <span class="o">=</span> <span class="s1">&#39;/content/cats_dogs.jpg&#39;</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+<span class="n">resized_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">(</span><span class="mi">1900</span><span class="p">,</span> <span class="mi">800</span><span class="p">))</span>
+<span class="n">resized_image_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">resized_image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">resized_image_rgb</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Original Image&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><code>cv2.GaussianBlur</code>
+<code>cv2.cvtColor(Gaussian, cv2.COLOR_BGR2RGB)</code></p>
+<div class="codehilite"><pre><span></span><code>Gaussian = cv2.GaussianBlur(resized_image, (15, 15), 0)  
+Gaussian_rgb = cv2.cvtColor(Gaussian, cv2.COLOR_BGR2RGB)  
+plt.imshow(Gaussian_rgb)
+plt.title(&#39;Gaussian Blurred Image&#39;)
+plt.axis(&#39;off&#39;)
+plt.show()
+</code></pre></div>
+
+<p><strong>2. Median Blur</strong></p>
+<p>Median blur is a non-linear filter which means it doesn't average the pixel values. Instead, it replaces each pixel with the median value of its neighboring pixels. This technique is useful for removing salt-and-pepper noise (random black and white pixels) while keeping the edges intact.</p>
+<p><code>cv2.medianBlur</code>
+<code>cv2.cvtColor(median, cv2.COLOR_BGR2RGB)</code></p>
+<div class="codehilite"><pre><span></span><code>median = cv2.medianBlur(resized_image, 11)  
+median_rgb = cv2.cvtColor(median, cv2.COLOR_BGR2RGB)  
+
+plt.imshow(median_rgb)
+plt.title(&#39;Median Blurred Image&#39;)
+plt.axis(&#39;off&#39;)
+plt.show()
+</code></pre></div>
+
+<h2 id="3-bilateral-blur">3. Bilateral Blur<a class="headerlink" href="#3-bilateral-blur" title="Permanent link">#</a></h2>
+<p>The bilateral filter is a more advanced technique that smooths the image while preserving edges. It calculates a weighted average based on both the spatial distance and the pixel intensity. This means that it will blur areas with similar colors and preserve sharp edges, making it useful for noise reduction without sacrificing important details.</p>
+<p><code>cv2.bilateralFilter</code>
+<code>cv2.cvtColor(bilateral, cv2.COLOR_BGR2RGB)</code></p>
+<div class="codehilite"><pre><span></span><code>bilateral = cv2.bilateralFilter(resized_image, 15, 150, 150)  
+bilateral_rgb = cv2.cvtColor(bilateral, cv2.COLOR_BGR2RGB)  
+
+plt.imshow(bilateral_rgb)
+plt.title(&#39;Bilateral Blurred Image&#39;)
+plt.axis(&#39;off&#39;)
+plt.show()
+</code></pre></div>
+
+<h2 id="challenges-of-image-blurring">Challenges of Image Blurring<a class="headerlink" href="#challenges-of-image-blurring" title="Permanent link">#</a></h2>
+<ol>
+<li>
+<p><strong>Loss of Detail:</strong> While blurring can be useful, it may also blur important details in an image, reducing its overall clarity and making analysis difficult in certain contexts.</p>
+</li>
+<li>
+<p><strong>Over-blurring:</strong> Overuse of blurring techniques can lead to overly soft or unrealistic images, losing sharpness and making it harder to identify key elements.</p>
+</li>
+<li>
+<p><strong>Computational Cost:</strong> Advanced blurring methods such as bilateral filtering, may require significant computational resources, especially for large images or real-time applications.</p>
+</li>
+</ol>
+<h1 id="grayscaling-of-images-using-opencv">Grayscaling of Images using OpenCV<a class="headerlink" href="#grayscaling-of-images-using-opencv" title="Permanent link">#</a></h1>
+<p>Grayscaling is the process of converting an image from other color spaces e.g. RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.</p>
+<p><strong>Importance of grayscaling</strong></p>
+<ul>
+<li>
+<p><strong>Fewer dimensions:</strong> RGB images have three channels, while grayscale images have only one.</p>
+</li>
+<li>
+<p><strong>Simpler models:</strong> Less input data reduces complexity and speeds up training.</p>
+</li>
+<li>
+<p><strong>Algorithm-ready:</strong> Some methods, such as Canny edge detection, work only on grayscale images.</p>
+</li>
+</ul>
+<p>Let's learn the different image processing methods to convert a colored image into a grayscale image.</p>
+<p><strong>Method 1: Using the <code>cv2.cvtColor()</code> function</strong></p>
+<p><code>cv2.COLOR_BGR2GRAY</code>
+<code>cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)</code>
+<code>cv2.imshow('Grayscale', gray_image)</code></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;tomatoes.jpg&#39;</span><span class="p">)</span>
+
+<span class="n">gray_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s1">&#39;Grayscale&#39;</span><span class="p">,</span> <span class="n">gray_image</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  
+<span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>
+<p><strong>cv2.imread():</strong> Reads the image file (OpenCV loads color images as BGR by default).</p>
+</li>
+<li>
+<p><strong>cv2.cvtColor():</strong> Converts color spaces; <code>cv2.COLOR_BGR2GRAY</code> produces a single-channel grayscale image.</p>
+</li>
+<li>
+<p><strong>cv2.imshow():</strong> Opens a window to display the image.</p>
+</li>
+</ul>
+<p><strong>Method 2: Using the cv2.imread() function with flag=zero</strong></p>
+<p>In this method, we can directly load an image in grayscale mode by passing the flag 0 to cv2.imread(). This saves us from having to convert the image separately after loading.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;tomatoes.jpg&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s1">&#39;Grayscale Image&#39;</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>
+<p><strong>cv2.imread(path, 0):</strong> Reads the image directly in grayscale (single-channel).</p>
+</li>
+<li>
+<p><strong>cv2.imshow():</strong> Displays the single-channel image.</p>
+</li>
+<li>
+<p><strong>cv2.waitKey() / cv2.destroyAllWindows():</strong> Controls display lifetime.</p>
+</li>
+</ul>
+<p><strong>Method 3.1 Weighted Method (Recommended)</strong></p>
+<p>This method uses standard luminance weights (0.2989R + 0.5870G + 0.1140B) to account for human visual sensitivity—more to green, less to red, least to blue. It produces a more realistic and visually accurate grayscale image.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+
+<span class="n">img_weighted</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;tomatoes.jpg&#39;</span><span class="p">)</span>
+<span class="n">rows</span><span class="p">,</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">img_weighted</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cols</span><span class="p">):</span>
+        <span class="n">gray</span> <span class="o">=</span> <span class="mf">0.2989</span> <span class="o">*</span> <span class="n">img_weighted</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.5870</span> <span class="o">*</span> <span class="n">img_weighted</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.1140</span> <span class="o">*</span> <span class="n">img_weighted</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">img_weighted</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">gray</span><span class="p">,</span> <span class="n">gray</span><span class="p">,</span> <span class="n">gray</span><span class="p">]</span>
+
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s1">&#39;Grayscale Image (Weighted)&#39;</span><span class="p">,</span> <span class="n">img_weighted</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>
+<p><strong>rows, cols = img_weighted.shape[:2]:</strong> extracts image height (rows) and width (cols) from the shape.</p>
+</li>
+<li>
+<p>**Nested for loops are used to iterate over every pixel in the image.</p>
+</li>
+<li>
+<p>Weighted formula: Gray = 0.2989<em>R + 0.5870</em>G + 0.1140*B (indices: R=[2], G=[1], B=[0] in OpenCV).</p>
+</li>
+<li>
+<p>Assigning [gray, gray, gray] preserves a 3-channel image for display.</p>
+</li>
+<li>
+<p>This produces visually more accurate grayscale than simple averaging, but is still slower than OpenCV’s native conversions.</p>
+</li>
+</ul>
+<h2 id="method-32-using-the-pixel-manipulation-average-method">Method 3.2: Using the pixel manipulation (Average method)<a class="headerlink" href="#method-32-using-the-pixel-manipulation-average-method" title="Permanent link">#</a></h2>
+<p>This method converts an image to grayscale by averaging the contributions of color channels (RGB). It’s a simple approach but not very accurate because it treats all colors equally, ignoring how the human eye perceives brightness.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Documents</span><span class="se">\\</span><span class="s1">full_path</span><span class="se">\\</span><span class="s1">tomatoes.jpg&#39;</span><span class="p">)</span>
+<span class="n">rows</span><span class="p">,</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cols</span><span class="p">):</span>
+        <span class="n">gray</span> <span class="o">=</span> <span class="p">(</span><span class="n">img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">/</span> <span class="mi">3</span>
+        <span class="n">img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">gray</span><span class="p">,</span> <span class="n">gray</span><span class="p">,</span> <span class="n">gray</span><span class="p">]</span>
+
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s1">&#39;Grayscale Image (Average)&#39;</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="image-processing-in-python">Image Processing in Python<a class="headerlink" href="#image-processing-in-python" title="Permanent link">#</a></h2>
+<p><strong>1. Image Resizing</strong></p>
+<p>Image Resizing refers to the process of changing the dimensions of an image. This can involve either enlarging or reducing the size of an image while preserving its content. Resizing is often used in image processing to make images fit specific dimensions for display on different devices or for further analysis. The cv2.resize() function is used for this task. Here:</p>
+<ul>
+<li><code>cv2.resize():</code> Resizes the image to new dimensions.</li>
+<li><code>cv2.INTER_CUBIC:</code> Provides high-quality enlargement.</li>
+<li><code>cv2.INTER_AREA:</code> Works best for downscaling.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;Ganeshji.webp&#39;</span><span class="p">)</span>
+<span class="n">image_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">scale_factor_1</span> <span class="o">=</span> <span class="mf">3.0</span>  
+<span class="n">scale_factor_2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">3.0</span>
+<span class="n">height</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">image_rgb</span><span class="o">.</span><span class="kp">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">new_height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">height</span> <span class="o">*</span> <span class="n">scale_factor_1</span><span class="p">)</span>
+<span class="n">new_width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">width</span> <span class="o">*</span> <span class="n">scale_factor_1</span><span class="p">)</span>
+
+<span class="n">zoomed_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="kp">resize</span><span class="p">(</span><span class="n">src</span> <span class="o">=</span><span class="n">image_rgb</span><span class="p">,</span> 
+                          <span class="n">dsize</span><span class="o">=</span><span class="p">(</span><span class="n">new_width</span><span class="p">,</span> <span class="n">new_height</span><span class="p">),</span> 
+                          <span class="n">interpolation</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">INTER_CUBIC</span><span class="p">)</span>
+
+<span class="n">new_height1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">height</span> <span class="o">*</span> <span class="n">scale_factor_2</span><span class="p">)</span>
+<span class="n">new_width1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">width</span> <span class="o">*</span> <span class="n">scale_factor_2</span><span class="p">)</span>
+<span class="n">scaled_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="kp">resize</span><span class="p">(</span><span class="n">src</span><span class="o">=</span> <span class="n">image_rgb</span><span class="p">,</span> 
+                          <span class="n">dsize</span> <span class="o">=</span><span class="p">(</span><span class="n">new_width1</span><span class="p">,</span> <span class="n">new_height1</span><span class="p">),</span> 
+                          <span class="n">interpolation</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">INTER_AREA</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Original Image Shape:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">image_rgb</span><span class="o">.</span><span class="kp">shape</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">zoomed_image</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Zoomed Image Shape:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">zoomed_image</span><span class="o">.</span><span class="kp">shape</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">scaled_image</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Scaled Image Shape:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">scaled_image</span><span class="o">.</span><span class="kp">shape</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>2. Image Rotation</strong>
+Images can be rotated to any degree clockwise or anticlockwise using image rotation. We just need to define rotation matrix listing rotation point, degree of rotation and the scaling factor. Here:</p>
+<ul>
+<li><code>cv2.getRotationMatrix2D() :</code> generates the transformation matrix.</li>
+<li><code>cv2.warpAffine() :</code> applies the rotation.</li>
+<li>A <code>positive angle</code> rotates the image clockwise; a <code>negative angle</code> rotates it counterclockwise.</li>
+<li>The <code>scale factor</code> adjusts the image size.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;Ganeshji.webp&#39;</span><span class="p">)</span>
+<span class="n">image_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="n">image_rgb</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">image_rgb</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">rotation_matrix</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">getRotationMatrix2D</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">angle</span><span class="p">,</span> <span class="n">scale</span><span class="p">)</span>
+<span class="n">rotated_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">,</span> <span class="n">rotation_matrix</span><span class="p">,</span> <span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Original Image&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">rotated_image</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Image Rotation&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>3. Image Translation</strong>
+Image Translation is the process of moving an image from one position to another within a specified frame of reference. This shift can occur along the x-axis (horizontal movement) and y-axis (vertical movement) without altering the content or orientation of the image. Here:</p>
+<ul>
+<li><code>cv2.warpAffine()</code> shifts the image based on translation values.</li>
+<li><code>tx</code>, <code>ty</code> define the movement along the x and y axes.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;Ganeshji.webp&#39;</span><span class="p">)</span>
+<span class="n">image_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">image_rgb</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">image_rgb</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">tx</span><span class="p">,</span> <span class="n">ty</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">70</span>
+<span class="n">translation_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tx</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ty</span><span class="p">]],</span> <span class="kp">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">translated_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">,</span> <span class="n">translation_matrix</span><span class="p">,</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Original Image&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">translated_image</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Image Translation&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([]),</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>4. Image Shearing</strong></p>
+<p>Image Shearing is a geometric transformation that distorts or skews an image along one or both axes. This operation slants the image creating a shear effect without changing its area or shape. Shearing can be applied to make the image appear as if it’s being stretched or compressed in a particular direction. Here:</p>
+<ul>
+<li><code>shear_x</code>, <code>shear_y</code> control the degree of skewing.</li>
+<li><code>cv2.warpAffine()</code> applies the transformation.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;Ganeshji.webp&#39;</span><span class="p">)</span>
+<span class="n">image_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">image_rgb</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">image_rgb</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">shearX</span><span class="p">,</span> <span class="n">shearY</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.15</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">transformation_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="n">shearX</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">shearY</span><span class="p">]],</span> <span class="kp">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">sheared_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">,</span> <span class="n">transformation_matrix</span><span class="p">,</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Original Image&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">sheared_image</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Sheared Image&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([]),</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>5. Image Normalization</strong>
+Image Normalization scales pixel values to a specific range to enhance image processing tasks. Here:</p>
+<ul>
+<li><code>cv2.normalize():</code> Normalizes pixel values.</li>
+<li><code>cv2.NORM_MINMAX:</code> Scales values between 0 and 1.</li>
+<li><code>cv2.merge():</code> Combines separately normalized RGB channels.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;Ganeshji.webp&#39;</span><span class="p">)</span>
+<span class="n">image_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">b</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="kp">split</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">)</span>
+
+<span class="n">b_normalized</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="kp">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">),</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">NORM_MINMAX</span><span class="p">)</span>
+<span class="n">g_normalized</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="kp">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">),</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">NORM_MINMAX</span><span class="p">)</span>
+<span class="n">r_normalized</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="kp">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">),</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">NORM_MINMAX</span><span class="p">)</span>
+
+<span class="n">normalized_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">merge</span><span class="p">((</span><span class="n">b_normalized</span><span class="p">,</span> <span class="n">g_normalized</span><span class="p">,</span> <span class="n">r_normalized</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">normalized_image</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">normalized_image</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([]),</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([]),</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Normalized Image&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>6. Edge detection of Image</strong>
+Edge detection is used to find sharp edges withing image to find different objects and boundaries within a image. Canny Edge Detection is a popular edge detection method. Here:</p>
+<ul>
+<li><code>cv2.GaussianBlur():</code> Removes noise through Gaussian smoothing.</li>
+<li><code>cv2.Sobel():</code> Computes the gradient of the image.</li>
+<li><code>cv2.Canny():</code> Applies non-maximum suppression and hysteresis thresholding to detect edges.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;Ganeshji.webp&#39;</span><span class="p">)</span>
+<span class="n">image_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">edges</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">Canny</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">700</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Original Image&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">edges</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Image Edges&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([]),</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>7. Image Blurring</strong>
+Image Blurring reduces image detail by averaging pixel values. Here:</p>
+<ul>
+<li><code>cv2.GaussianBlur():</code> Smooths using a Gaussian kernel.</li>
+<li><code>cv2.medianBlur():</code> Replaces pixels with the median value in a neighborhood.</li>
+<li><code>cv2.bilateralFilter():</code> Preserves edges while blurring.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;Ganeshji.webp&#39;</span><span class="p">)</span>
+<span class="n">image_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">blurred</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">blurred_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">blurred</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_rgb</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Original Image&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">blurred_rgb</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Blurred Image&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([]),</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>8. Morphological Image Processing</strong>
+Morphological Image Processing involves techniques that process the structure or shape of objects in an image. It focuses on operations like dilation, erosion, opening and closing which modify the image's geometric features. These operations work by examining the image’s pixels in relation to their neighbors usually with a small mask or kernel.Here:</p>
+<ul>
+<li><code>cv2.dilate():</code> Expands object boundaries.</li>
+<li><code>cv2.erode():</code> Shrinks object boundaries.</li>
+<li><code>cv2.morphologyEx()</code> with <code>cv2.MORPH_OPEN:</code> Removes small noise.</li>
+<li><code>cv2.morphologyEx()</code> with <code>cv2.MORPH_CLOSE:</code> Fills small holes.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;Ganeshji.webp&#39;</span><span class="p">)</span>
+<span class="n">image_gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+<span class="n">kernel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+
+<span class="n">dilated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">dilate</span><span class="p">(</span><span class="n">image_gray</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">eroded</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">erode</span><span class="p">(</span><span class="n">image_gray</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">opening</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">image_gray</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">MORPH_OPEN</span><span class="p">,</span> <span class="n">kernel</span><span class="p">)</span>
+<span class="n">closing</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">image_gray</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">MORPH_CLOSE</span><span class="p">,</span> <span class="n">kernel</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">dilated</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dilated Image&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">eroded</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Eroded Image&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">opening</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Opening&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">closing</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">),</span> <span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Closing&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="o">.</span><span class="kp">flatten</span><span class="p">():</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([]),</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="intensity-transformation-operations-on-images">Intensity Transformation Operations on Images<a class="headerlink" href="#intensity-transformation-operations-on-images" title="Permanent link">#</a></h2>
+<p>Intensity transformations are applied on images for contrast manipulation or image thresholding.
+These are in the spatial domain, i.e. they are performed directly on the pixels of the image at hand, as opposed to being performed on the Fourier transform of the image. The following are commonly used intensity transformations:</p>
+<ol>
+<li><strong>Image Negatives (Linear)</strong></li>
+<li><strong>Log Transformations</strong></li>
+<li><strong>Power-Law (Gamma) Transformations</strong></li>
+<li><strong>Piecewise-Linear Transformation Functions</strong></li>
+</ol>
+<p><img alt="alt text" src="images/image.png" /></p>
+<p>Spatial Domain Processes - Spatial domain processes can be described using the equation:</p>
+<p><img alt="alt text" src="images/image1.png" /></p>
+<p><strong>Log Transformations -</strong>
+Mathematically, log transformations can be expressed as s = clog(1+r). Here, s is the output intensity, r&gt;=0 is the input intensity of the pixel, and c is a scaling constant. c is given by 255/(log (1 + m)), where m is the maximum pixel value in the image. It is done to ensure that the final pixel value does not exceed (L-1), or 255. Practically, log transformation maps a narrow range of low-intensity input values to a wide range of output values. Consider the following input image.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Open the image.</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;sample.jpg&#39;</span><span class="p">)</span>
+
+<span class="c1"># Apply log transform.</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">255</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="kp">max</span><span class="p">(</span><span class="n">img</span><span class="p">)))</span>
+<span class="n">log_transformed</span> <span class="o">=</span> <span class="n">c</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="kp">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">img</span><span class="p">)</span>
+
+<span class="c1"># Specify the data type.</span>
+<span class="n">log_transformed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="n">log_transformed</span><span class="p">,</span> <span class="kp">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+
+<span class="c1"># Save the output.</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;log_transformed.jpg&#39;</span><span class="p">,</span> <span class="n">log_transformed</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Power-Law (Gamma) Transformation -</strong>
+Power-law (gamma) transformations can be mathematically expressed as s=crγ . Gamma correction is important for displaying images on a screen correctly, to prevent bleaching or darkening of images when viewed from different types of monitors with different display settings. This is done because our eyes perceive images in a gamma-shaped curve, whereas cameras capture images in a linear fashion.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Open the image.</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;sample.jpg&#39;</span><span class="p">)</span>
+
+<span class="c1"># Trying 4 gamma values.</span>
+<span class="k">for</span> <span class="n">gamma</span> <span class="ow">in</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">]:</span>
+
+    <span class="c1"># Apply gamma correction.</span>
+    <span class="n">gamma_corrected</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="mi">255</span><span class="o">*</span><span class="p">(</span><span class="n">img</span> <span class="o">/</span> <span class="mi">255</span><span class="p">)</span> <span class="o">**</span> <span class="n">gamma</span><span class="p">,</span> <span class="kp">dtype</span> <span class="o">=</span> <span class="s1">&#39;uint8&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Save edited images.</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;gamma_transformed&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">gamma</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="n">gamma_corrected</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Below are the gamma-corrected outputs for different values of gamma. </p>
+<p><strong>Gamma = 0.1:</strong></p>
+<p><img alt="alt text" src="images/image2.png" /></p>
+<p><strong>Gamma = 0.5:</strong></p>
+<p><img alt="alt text" src="images/image3.png" /></p>
+<p><strong>Gamma = 1.2:</strong></p>
+<p><img alt="alt text" src="images/image4.png" /></p>
+<p><strong>Gamma = 2.2:</strong></p>
+<p><img alt="alt text" src="images/image5.png" /></p>
+<p>As can be observed from the outputs as well as the graph, gamma&gt;1 (indicated by the curve corresponding to 'nth power' label on the graph), the intensity of pixels decreases i.e. the image becomes darker. On the other hand, gamma&lt;1 (indicated by the curve corresponding to 'nth root' label on the graph), the intensity increases i.e. the image becomes lighter.</p>
+<p><strong>Piecewise-Linear Transformation Functions -</strong></p>
+<p>These functions, as the name suggests, are not entirely linear in nature. However, they are linear between certain x-intervals. One of the most commonly used piecewise-linear transformation functions is contrast stretching. Contrast can be defined as:</p>
+<p><code>Contrast =  (I_max - I_min)/(I_max + I_min)</code></p>
+<p>This process expands the range of intensity levels in an image so that it spans the full intensity of the camera/display. The figure below shows the graph corresponding to the contrast stretching.</p>
+<p><img alt="alt text" src="images/image6.png" /></p>
+<p>With (r1, s1), (r2, s2) as parameters, the function stretches the intensity levels by essentially decreasing the intensity of the dark pixels and increasing the intensity of the light pixels. If r1 = s1 = 0 and r2 = s2 = L-1, the function becomes a straight dotted line in the graph (which gives no effect). The function is monotonically increasing so that the order of intensity levels between pixels is preserved. Below is the Python code to perform contrast stretching.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Function to map each intensity level to output intensity level.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">pixelVal</span><span class="p">(</span><span class="n">pix</span><span class="p">,</span> <span class="n">r1</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">r2</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">pix</span> <span class="ow">and</span> <span class="n">pix</span> <span class="o">&lt;=</span> <span class="n">r1</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">s1</span> <span class="o">/</span> <span class="n">r1</span><span class="p">)</span><span class="o">*</span><span class="n">pix</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">r1</span> <span class="o">&lt;</span> <span class="n">pix</span> <span class="ow">and</span> <span class="n">pix</span> <span class="o">&lt;=</span> <span class="n">r2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">((</span><span class="n">s2</span> <span class="o">-</span> <span class="n">s1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">r2</span> <span class="o">-</span> <span class="n">r1</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">pix</span> <span class="o">-</span> <span class="n">r1</span><span class="p">)</span> <span class="o">+</span> <span class="n">s1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">((</span><span class="mi">255</span> <span class="o">-</span> <span class="n">s2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">255</span> <span class="o">-</span> <span class="n">r2</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">pix</span> <span class="o">-</span> <span class="n">r2</span><span class="p">)</span> <span class="o">+</span> <span class="n">s2</span>
+
+<span class="c1"># Open the image.</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;sample.jpg&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define parameters.</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="mi">70</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="mi">140</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="mi">255</span>
+
+<span class="c1"># Vectorize the function to apply it to each value in the Numpy array.</span>
+<span class="n">pixelVal_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">vectorize</span><span class="p">(</span><span class="n">pixelVal</span><span class="p">)</span>
+
+<span class="c1"># Apply contrast stretching.</span>
+<span class="n">contrast_stretched</span> <span class="o">=</span> <span class="n">pixelVal_vec</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">r1</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">r2</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span>
+
+<span class="c1"># Save edited image.</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;contrast_stretch.jpg&#39;</span><span class="p">,</span> <span class="n">contrast_stretched</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="image-translation-using-opencv">Image Translation using OpenCV<a class="headerlink" href="#image-translation-using-opencv" title="Permanent link">#</a></h2>
+<p>Image translation is the process of shifting an image from one position to another. We simply move the entire image by a fixed number of pixels, either horizontally (along the x-axis) or vertically (along the y-axis). This technique is important in various computer vision tasks such as object tracking, image alignment and creating animations. We achieve this by using a transformation matrix which helps shift the image without distorting its content. In this article, we'll see image translation, how to perform it and other core concepts.</p>
+<p><strong>Key Concepts in Image Translation</strong>
+Let's see key concepts in Image Translation which are as follows:</p>
+<p><strong>1. Translation Matrix</strong></p>
+<p>The translation matrix is used to define how much an image should be shifted. It is a 2x3 matrix that specifies the amount of horizontal and vertical shifts. The matrix looks like this:</p>
+<p><img alt="alt text" src="images/image7.png" /></p>
+<p><strong>where:</strong></p>
+<ul>
+<li>Tx is the horizontal shift (in pixels).</li>
+<li>Ty is the vertical shift (in pixels).</li>
+</ul>
+<p>This matrix is used to move every pixel in the image by the specified amount without distorting its content.</p>
+<p><strong>2. OpenCV Function</strong>
+OpenCV provides the <code>cv2.wrapAffine()</code> function to apply affine transformations like translation. This function uses the translation matrix to shift the image by the specified values of Tx and Ty.</p>
+<p>Syntax:</p>
+<p><code>cv2.warpAffine(img, M, (w, h))</code></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>img:</code> Image to be shifted.</li>
+<li><code>M:</code> The translation matrix that defines how the image will be moved.</li>
+<li><code>(w, h):</code> Width and height of the image after translation.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="n">Note</span><span class="o">:</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="n">positive</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">tx</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">shift</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">right</span><span class="o">,</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">negative</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">tx</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">shift</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">positive</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">ty</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">shift</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="n">down</span><span class="o">,</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">negative</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">ty</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">shift</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="n">up</span><span class="o">.</span>
+</code></pre></div>
+
+<p><strong>Example 1: Translating the Image Right and Down</strong></p>
+<ul>
+<li>
+<p><code>height</code>, <code>width</code> = <code>image.shape[:2]: image.shape[:2]</code> gives the height and width of the image. These values are stored in height and width variables.</p>
+</li>
+<li>
+<p><code>quarter_height</code>, <code>quarter_width</code> = <code>height / 4, width / 4:</code> This calculates one-quarter of the image's height and width which will be used as the translation distance (in pixels).</p>
+</li>
+<li>
+<p><code>img_translation</code> = <code>cv2.warpAffine(image, T, (width, height)):</code> The image is shifted by the defined values using the matrix T. The resulting translated image is stored in img_translation.</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">google.colab.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">cv2_imshow</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;/content/retriver.webp&#39;</span><span class="p">)</span>
+
+<span class="n">height</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="kp">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">quarter_height</span><span class="p">,</span> <span class="n">quarter_width</span> <span class="o">=</span> <span class="n">height</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span> <span class="n">width</span> <span class="o">/</span> <span class="mi">4</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">quarter_width</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">quarter_height</span><span class="p">]])</span>
+
+<span class="n">img_translation</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+
+<span class="n">cv2_imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span> 
+<span class="n">cv2_imshow</span><span class="p">(</span><span class="n">img_translation</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Example 2: Performing Multiple Translations</strong>
+In this example, we perform four different translations on the same image: left, right, top and bottom.</p>
+<ul>
+<li><code>rows</code>, <code>cols</code>,<code>_</code> = <code>img.shape:</code> This extracts the number of rows (height) and columns (width) from the image's shape. The third value <code>(_)</code> represents the number of color channels.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;/content/retriver.webp&#39;</span><span class="p">)</span>
+<span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="kp">shape</span>
+
+<span class="n">M_left</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+<span class="n">M_right</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+<span class="n">M_top</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">50</span><span class="p">]])</span>
+<span class="n">M_bottom</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">]])</span>
+
+<span class="n">img_left</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">M_left</span><span class="p">,</span> <span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">rows</span><span class="p">))</span>
+<span class="n">img_right</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">M_right</span><span class="p">,</span> <span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">rows</span><span class="p">))</span>
+<span class="n">img_top</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">M_top</span><span class="p">,</span> <span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">rows</span><span class="p">))</span>
+<span class="n">img_bottom</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">M_bottom</span><span class="p">,</span> <span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">rows</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">221</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img_left</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">222</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img_right</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">223</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img_top</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img_bottom</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Bottom&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<ul>
+<li>First image shows the translation to the left by 50px.</li>
+<li>Second image shows the translation to the right by 50px.</li>
+<li>Third image shows the translation to the top by 50px.</li>
+<li>Fourth image shows the translation to the bottom by 50px.</li>
+</ul>
+<h2 id="real-world-applications-of-image-translation">Real-World Applications of Image Translation<a class="headerlink" href="#real-world-applications-of-image-translation" title="Permanent link">#</a></h2>
+<ol>
+<li>
+<p><strong>Object Tracking:</strong> It helps track moving objects in video frames by shifting the image based on the object's position, important for surveillance and motion analysis.</p>
+</li>
+<li>
+<p><strong>Image Stitching:</strong> It helps align parts of images when creating panoramic views, making sure that they blend seamlessly.</p>
+</li>
+<li>
+<p><strong>Augmented Reality (AR):</strong> It is used to move virtual objects within real-world environments in AR applications, helping them interact naturally with the surroundings.</p>
+</li>
+<li>
+<p><strong>Image Animation:</strong> It is used to create smooth animations by shifting parts of the image step by step, simulating motion or transitions.</p>
+</li>
+</ol>
+<h2 id="advantages-of-image-translation">Advantages of Image Translation<a class="headerlink" href="#advantages-of-image-translation" title="Permanent link">#</a></h2>
+<p>Let's see some common advantages of Image Translation:</p>
+<ol>
+<li>
+<p><strong>Simple Implementation:</strong> Image translation is easy to implement with basic transformation matrices, making it an accessible tool for many applications.</p>
+</li>
+<li>
+<p><strong>Preserves Image Integrity:</strong> Unlike other transformations, it shifts the image without distorting or altering its content, keeping the original data intact.</p>
+</li>
+<li>
+<p><strong>Improves Image Alignment:</strong> It helps align images or objects in tasks like stitching, ensuring smoother integration between different visual elements.</p>
+</li>
+<li>
+<p><strong>Efficient for Image Cropping:</strong> It allows precise cropping by shifting the image to focus on the desired portion, making it ideal for creating zoomed-in or focused views.</p>
+</li>
+</ol>
+<h2 id="limitations-of-image-translation">Limitations of Image Translation<a class="headerlink" href="#limitations-of-image-translation" title="Permanent link">#</a></h2>
+<ol>
+<li>
+<p><strong>Loss of Image Quality:</strong> Large translations can cause pixelation or blurriness, reducing image clarity, especially when shifting significant portions.</p>
+</li>
+<li>
+<p><strong>Handling Large Translations:</strong> Shifting an image too far may crop or distort parts, losing important content or causing visual issues.</p>
+</li>
+<li>
+<p><strong>Difficulty in Alignment:</strong> In tasks like stitching or tracking, translation may not perfectly align images or objects with different perspectives, leading to mismatches.</p>
+</li>
+<li>
+<p><strong>Limited Real-Time Application:</strong> In real-time systems like AR or object tracking, translation can be computationally demanding, causing delays or misalignment.</p>
+</li>
+</ol>
+<h2 id="cv2cvtcolor-method">cv2.cvtColor() method<a class="headerlink" href="#cv2cvtcolor-method" title="Permanent link">#</a></h2>
+<p>cv2.cvtColor() is an OpenCV function that converts an image from one color space to another.</p>
+<p>It supports over 150 color conversion methods, but in most cases, only a few (like BGR↔GRAY or BGR↔RGB) are used frequently in real-world projects.</p>
+<p><strong>Reasons for Changing Color Spaces</strong></p>
+<p>Different tasks require different representations of an image:</p>
+<ul>
+<li>
+<p><strong>Grayscale:</strong> Simplifies image analysis and reduces processing time.</p>
+</li>
+<li>
+<p><strong>HSV (Hue, Saturation, Value):</strong> Useful for color-based segmentation and object tracking.</p>
+</li>
+<li>
+<p><strong>LAB, YCrCb, RGB, etc.:</strong> Used in specialized applications like skin tone detection or advanced image enhancement.</p>
+</li>
+</ul>
+<p><strong>Syntax</strong></p>
+<p><code>cv2.cvtColor(src, code[, dst[, dstCn]])</code></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>src:</strong> input image whose color space is to be changed.</li>
+<li><strong>code:</strong> color space conversion code (e.g., cv2.COLOR_BGR2GRAY).</li>
+<li><strong>dst(Optional):</strong> Output image of the same size and depth as src.</li>
+<li><strong>dstCn(Optional):</strong> Number of channels in destination image. If 0, it’s derived automatically.</li>
+</ul>
+<p><strong>Key Points to Remember</strong></p>
+<ul>
+<li>OpenCV reads images in BGR format, not RGB.</li>
+<li>When displaying images using Matplotlib, you may need to convert BGR -&gt; RGB for correct colors.</li>
+<li>Always choose a color conversion code that matches your source image format.</li>
+</ul>
+<p><strong>Examples of cv2.cvtColor() method</strong></p>
+<p><strong>Example 1: Convert BGR to Grayscale</strong></p>
+<p>Here’s a simple Python code using OpenCV to read an image, convert it to grayscale and display it in a window.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="n">src</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;logo.png&#39;</span><span class="p">)</span>  <span class="c1"># Read the image</span>
+
+<span class="c1"># Convert to Grayscale</span>
+<span class="n">gray_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+
+<span class="c1"># Display</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;Grayscale Image&quot;</span><span class="p">,</span> <span class="n">gray_image</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>Explanation:</strong></p>
+<ul>
+<li><strong>cv2.cvtColor(src, cv2.COLOR_BGR2GRAY):</strong> Converts image to grayscale.</li>
+<li><strong>cv2.imshow("Grayscale Image", gray_image):</strong> Displays grayscale image in a window.</li>
+<li><strong>cv2.waitKey(0):</strong> Waits for a key press to keep window open.</li>
+<li><strong>cv2.destroyAllWindows():</strong> Closes all OpenCV windows.</li>
+</ul>
+<p><strong>Example 2: Convert BGR to HSV</strong>
+Here’s a simple Python code using OpenCV to read an image, convert it from BGR to HSV color space and display the result.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="n">src</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;logo.png&#39;</span><span class="p">)</span>
+
+<span class="c1"># Convert to HSV</span>
+<span class="n">hsv_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2HSV</span><span class="p">)</span>
+
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;HSV Image&quot;</span><span class="p">,</span> <span class="n">hsv_image</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>Explanation:</strong></p>
+<ul>
+<li><code>cv2.cvtColor(src, cv2.COLOR_BGR2HSV):</code> Converts BGR image to HSV color space.</li>
+<li><code>cv2.imshow("HSV Image", hsv_image):</code> Displays HSV image in a window titled "HSV Image".</li>
+</ul>
+<p><strong>Example 3: Convert BGR to RGB (For Matplotlib)</strong></p>
+<p>This Python code reads an image using OpenCV, converts it from BGR to RGB color format and then displays it using Matplotlib.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">src</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;logo.png&#39;</span><span class="p">)</span>
+
+<span class="c1"># Convert from BGR to RGB</span>
+<span class="n">rgb_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+
+<span class="c1"># Display with Matplotlib</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">rgb_image</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;RGB Image for Matplotlib&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>Explanation:</strong></p>
+<ul>
+<li><code>cv2.cvtColor(src, cv2.COLOR_BGR2RGB):</code> Converts image from BGR to RGB format for correct color display in Matplotlib.</li>
+<li><code>plt.imshow(rgb_image):</code> Displays the RGB image using Matplotlib.</li>
+<li><code>plt.axis('off'):</code> Hides the axis for a cleaner view.</li>
+</ul>
+<h2 id="common-conversion-codes">Common Conversion Codes<a class="headerlink" href="#common-conversion-codes" title="Permanent link">#</a></h2>
+<p>Let’s see some of the most commonly used OpenCV color conversion codes:</p>
+<ul>
+<li><code>cv2.COLOR_BGR2GRAY BGR:</code> Grayscale</li>
+<li><code>cv2.COLOR_BGR2RGB BGR:</code> RGB</li>
+<li><code>cv2.COLOR_BGR2HSV BGR:</code> HSV</li>
+<li><code>cv2.COLOR_BGR2LAB BGR:</code> LAB color space</li>
+<li><code>cv2.COLOR_BGR2YCrCb BGR:</code> YCrCb (used in compression &amp; skin detection)</li>
+</ul>
+<h2 id="real-world-applications">Real-World Applications<a class="headerlink" href="#real-world-applications" title="Permanent link">#</a></h2>
+<p>Different color spaces are preferred for specific computer vision tasks because they highlight certain image features better. Let’s see some real-world applications of these conversions:</p>
+<ul>
+<li><code>Grayscale:</code> Face detection, OCR (text recognition)</li>
+<li><code>HSV:</code> Object tracking (e.g., detecting a colored ball)</li>
+<li><code>LAB:</code> Color enhancement, skin tone detection</li>
+<li><code>YCrCb:</code> Video compression, human skin detection</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Computer-Vision/CNNs.html" class="btn btn-neutral float-left" title="CNNs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../RAG/rag.html" class="btn btn-neutral float-right" title="RAG">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Computer-Vision/CNNs.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../RAG/rag.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

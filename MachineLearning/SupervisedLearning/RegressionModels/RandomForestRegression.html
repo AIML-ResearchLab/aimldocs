@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Random Forest Regression - AIML documents</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Random Forest Regression";
+        var mkdocs_page_input_path = "MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Machine Learning</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../../Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Supervised Learning</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Classification.html">Classification</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../CrossValidation.html">Cross Validation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../HyperparameterTuning.html">Hyperparameter Tuning</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../TuningDecisionThreshold.html">Tuning decision threshold</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" >Regression Models</a>
+    <ul class="current">
+                <li class="toctree-l4"><a class="reference internal" href="SimpleLinearRegression.html">Simple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="MultipleLinearRegression.html">Multiple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="PolynomialRegression.html">Polynomial Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="RidgeLassoRegression.html">Ridge & Lasso Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="SupportVectorRegression.html">Support Vector Regression (SVR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="DecisionTreeRegression.html">Decision Tree Regression</a>
+                </li>
+                <li class="toctree-l4 current"><a class="reference internal current" href="#">Random Forest Regression</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../LinearClassificationModels/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../LinearClassificationModels/SupportVectorMachines.html">Support Vector Machines</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../LinearClassificationModels/SinglelayerPerceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../LinearClassificationModels/StochasticGradientDescent.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../NonlinearClassificationModels/DecisionTreeClassification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../NonlinearClassificationModels/KNearestNeighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../NonlinearClassificationModels/NaiveBayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../NonlinearClassificationModels/RandomForests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../NonlinearClassificationModels/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../NonlinearClassificationModels/BaggingClassifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../NonlinearClassificationModels/Ensemblelearningclassifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../NonlinearClassificationModels/KernelSVM.html">Kernel SVM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../UnsupervisedLearning/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Linear Algebra</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../LinearAlgebra/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../DeepLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../DeepLearning/Vanishing.html">Vanishing and Exploding Gradients Problems</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Components of Neural Networks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/LayersNeuralNetworks.html">Layers in Neural Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/WeightsBiases.html">Weights and Biases</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/ForwardPropagation.html">Forward Propagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/ActivationFunctions.html">Activation Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/LossFunctions.html">Loss Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/Backpropagation.html">Backpropagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Components/LearningRate.html">Learning Rate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Optimization Algorithm</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/GradientDescent.html">Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/SGD.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/Adam.html">Adam (Adaptive Moment Estimation)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/BatchNormalization.html">Batch Normalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/Mini-batch-GD.html">Mini-batch Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/Momentum-based-GO.html">Momentum-based Gradient Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/AdagradOptimizer.html">Adagrad Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.html">RMSProp Optimizer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Models</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/FNN.html">Feedforward Neural Network (FNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Recurrent Neural Network (RNN)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../DeepLearning/Models/RNN.html">Recurrent Neural Network (RNN)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../DeepLearning/Models/LSTM.html">LSTM (Long Short-Term Memory)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../DeepLearning/Models/GRU.html">GRU (Gated Recurrent Unit)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/CNN.html">Convolutional Neural Network (CNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/RBFN.html">Radial Basis Function Network (RBFN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/ComputerVision.html">Computer Vision</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/GANs.html">Generative Adversarial Networks (GANs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/Transformer.html">Transformer Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/Autoencoders.html">Autoencoders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../DeepLearning/Models/SOM.html">Self-Organizing Maps (SOM)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLP/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../NLP/nlpdetails.html">NLP Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Computer Vision</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Computer-Vision/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Traditional CV (Before deep learning)</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Edge-detection.md">Edge detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Feature-extraction.md">Feature extraction</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Image-filtering.md">Image filtering</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Template-matching.md">Template matching</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Optical-flow.md">Optical flow</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Histogram-analysis.md">Histogram analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Rule-based-vision-systems.md">Rule-based vision systems</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Modern CV (Deep learning–based)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Computer-Vision/CNNs.html">CNNs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/ViT.md">Vision Transformers (ViT)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/YOLO.md">YOLO</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Faster-R-CNN.md">Faster R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Mask-R-CNN.md">Mask R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Diffusion-models.md">Diffusion models (for vision generation)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Common Computer Vision tasks</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Image-classification.md">Image classification</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Object-detection.md">Object detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Face-recognition.md">Face recognition</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/OCR.md">OCR (text from images)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Medical-imaging-analysis.md">Medical imaging analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Autonomous-driving-vision.md">Autonomous driving vision</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Video-analytics.md">Video analytics</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../Computer-Vision/Industrial-inspection.md">Industrial inspection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../OpenCV/OpenCV.html">OpenCV</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/framework.html">Framework</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/design-patterns.html">Design Patterns</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >LangGraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/LangGraph.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/LangGraphDetails.html">LangGraph Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/Subgraphs.html">Subgraphs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../../AgenticAI/LangGraph/Interrupts.md">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/time-travel.html">Time travel</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/LangGraph-runtime.html">LangGraph runtime</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/Durable-execution.html">Durable execution</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/Install.html">Install</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/graph-api.html">Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/functional-api.html">Functional API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/local-server.html">Run local server</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/workflows.html">Workflows</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/persistence.html">Persistence</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/memory.html">Memory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/streaming.html">Streaming</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/interrupts.html">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/graph.html">Graph</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/node.html">Node</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/LangGraph/edge.html">Edge</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >AZURE</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/AZURE/azure.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/AZURE/azure-openai-foundry-modelsure.html">Azure OpenAI Foundry models</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Agent Development Kit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/GCP/adk.html">ADK</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/GCP/Agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/GCP/Tools.html">Tools</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../AgenticAI/GCP/a2a.html">Tools</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agent to Agent(A2A)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../A2A/a2a.html">A2A</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Temporal</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Temporal/temporal-overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Temporal/setup.html">Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Temporal/core-application.html">Core application</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Temporal/Temporal-client.html">Temporal Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >MCPModel Context Protocol(MCP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../MCP/mcp.html">MCP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../VectorDatabases/PgVector.html">PgVector</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../VectorDatabases/OpenSearch.html">OpenSearch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Graph Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../GraphDatabases/neo4j-setup.html">neo4j setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../GraphDatabases/neo4j-cypher.html">neo4j Cypher</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Models Details information</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Models/Ollama.html">Ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Note Book</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Notebook/allnotebook.html">All Notebook</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Pypi Library</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Pypi/Pypi-lib-details.html">Pypi Library Details</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Machine Learning</li>
+          <li class="breadcrumb-item">Supervised Learning</li>
+          <li class="breadcrumb-item">Regression Models</li>
+      <li class="breadcrumb-item active">Random Forest Regression</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 style="color:red;">✅ Random Forest </h2>
+
+<h3 style="color:blue;">📌 What is Random Forest Algorithm?</h3>
+
+<p>Random Forest is a machine learning algorithm that uses many decision trees to make better predictions. Each tree looks at different random parts of the data and their results are combined by voting for classification or averaging for regression. This helps in improving accuracy and reducing errors.</p>
+<p><img alt="alt text" src="../../images/DT1.png" /></p>
+<p><img alt="alt text" src="../../images/DT2.png" /></p>
+<p><img alt="alt text" src="../../images/DT3.png" /></p>
+<p><strong>Working of Random Forest Algorithm</strong></p>
+<p><strong>Create Many Decision Trees:</strong> The algorithm makes many decision trees each using a random part of the data. So every tree is a bit different.</p>
+<p><strong>Pick Random Features:</strong> When building each tree it doesn’t look at all the features (columns) at once. It picks a few at random to decide how to split the data. This helps the trees stay different from each other.</p>
+<p><strong>Combine the Predictions:</strong></p>
+<ul>
+<li>
+<p><strong>For classification</strong> we choose a category as the final answer is the one that most trees agree on i.e majority voting.</p>
+</li>
+<li>
+<p><strong>For regression</strong> we predict a number as the final answer is the average of all the trees predictions.</p>
+</li>
+</ul>
+<p><strong>Implementing Random Forest for Classification Tasks</strong></p>
+<p>Here we will predict survival rate of a person in titanic.</p>
+<ul>
+<li>
+<p>Import libraries and load the Titanic dataset.</p>
+</li>
+<li>
+<p>Remove rows with missing target values ('Survived').</p>
+</li>
+<li>
+<p>Select features like class, sex, age, etc and convert 'Sex' to numbers.</p>
+</li>
+<li>
+<p>Fill missing age values with the median.</p>
+</li>
+<li>
+<p>Split the data into training and testing sets, then train a Random Forest model.</p>
+</li>
+<li>
+<p>Predict on test data, check accuracy and print a sample prediction result.</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">classification_report</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv&quot;</span>
+<span class="n">titanic_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="n">titanic_data</span> <span class="o">=</span> <span class="n">titanic_data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">])</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">titanic_data</span><span class="p">[[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;SibSp&#39;</span><span class="p">,</span> <span class="s1">&#39;Parch&#39;</span><span class="p">,</span> <span class="s1">&#39;Fare&#39;</span><span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">titanic_data</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span>
+
+<span class="n">X</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="s1">&#39;female&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;male&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+
+<span class="n">X</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="n">rf_classifier</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="n">rf_classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="n">classification_rep</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Accuracy: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Classification Report:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">classification_rep</span><span class="p">)</span>
+
+<span class="n">sample</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">prediction</span> <span class="o">=</span> <span class="n">rf_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span>
+
+<span class="n">sample_dict</span> <span class="o">=</span> <span class="n">sample</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sample Passenger: </span><span class="si">{</span><span class="n">sample_dict</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Predicted Survival: </span><span class="si">{</span><span class="s1">&#39;Survived&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;Did Not Survive&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="alt text" src="../../images/DT4.png" /></p>
+<p>We evaluated model's performance using a classification report to see how well it predicts the outcomes and used a random sample to check model prediction.</p>
+<p><strong>Implementing Random Forest for Regression Tasks</strong></p>
+<p>We will do house price prediction here.</p>
+<ul>
+<li>
+<p>Load the California housing dataset and create a DataFrame with features and target.</p>
+</li>
+<li>
+<p>Separate the features and the target variable.</p>
+</li>
+<li>
+<p>Split the data into training and testing sets (80% train, 20% test).</p>
+</li>
+<li>
+<p>Initialize and train a Random Forest Regressor using the training data.</p>
+</li>
+<li>
+<p>Predict house values on test data and evaluate using MSE and R² score.</p>
+</li>
+<li>
+<p>Print a sample prediction and compare it with the actual value.</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_california_housing</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestRegressor</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">r2_score</span>
+
+<span class="n">california_housing</span> <span class="o">=</span> <span class="n">fetch_california_housing</span><span class="p">()</span>
+<span class="n">california_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">california_housing</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">california_housing</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="n">california_data</span><span class="p">[</span><span class="s1">&#39;MEDV&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">california_housing</span><span class="o">.</span><span class="n">target</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">california_data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;MEDV&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">california_data</span><span class="p">[</span><span class="s1">&#39;MEDV&#39;</span><span class="p">]</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="n">rf_regressor</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="n">rf_regressor</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf_regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+
+<span class="n">single_data</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">predicted_value</span> <span class="o">=</span> <span class="n">rf_regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">single_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Predicted Value: </span><span class="si">{</span><span class="n">predicted_value</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Actual Value: </span><span class="si">{</span><span class="n">y_test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean Squared Error: </span><span class="si">{</span><span class="n">mse</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R-squared Score: </span><span class="si">{</span><span class="n">r2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Example:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_breast_cancer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">GridSearchCV</span><span class="p">,</span> <span class="n">RandomizedSearchCV</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">,</span>
+    <span class="n">precision_recall_fscore_support</span><span class="p">,</span> <span class="n">roc_curve</span><span class="p">,</span> <span class="n">auc</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.tree</span><span class="w"> </span><span class="kn">import</span> <span class="n">plot_tree</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="kp">randint</span><span class="p">,</span> <span class="kp">uniform</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set random seed for reproducibility</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="kp">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># 1. Load Cancer Dataset</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Loading Breast Cancer Wisconsin Dataset...&quot;</span><span class="p">)</span>
+<span class="n">cancer_data</span> <span class="o">=</span> <span class="n">load_breast_cancer</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">cancer_data</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">cancer_data</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">cancer_data</span><span class="o">.</span><span class="n">target</span>
+<span class="n">target_names</span> <span class="o">=</span> <span class="n">cancer_data</span><span class="o">.</span><span class="n">target_names</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dataset shape: </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="kp">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of classes: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">unique</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Class names: </span><span class="si">{</span><span class="n">target_names</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Class distribution:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Malignant (0): </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="si">}</span><span class="s2"> samples&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Benign (1): </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> samples&quot;</span><span class="p">)</span>
+
+<span class="c1"># Display first few rows</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">First 5 rows of the dataset:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="c1"># Check for missing values</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Missing values: </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="kp">sum</span><span class="p">()</span><span class="o">.</span><span class="kp">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Dataset description</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Dataset Description:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;This dataset contains </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> instances of breast cancer tumors&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;with </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2"> features derived from digitized images of&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;fine needle aspirate (FNA) of breast masses.&quot;</span><span class="p">)</span>
+
+<span class="c1"># 2. Data Preprocessing</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DATA PREPROCESSING&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Split the data into training and testing sets</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Training set size: </span><span class="si">{</span><span class="n">X_train</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Testing set size: </span><span class="si">{</span><span class="n">X_test</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Training class distribution:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Malignant (0): </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">(</span><span class="n">y_train</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="si">}</span><span class="s2"> samples&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Benign (1): </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">(</span><span class="n">y_train</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> samples&quot;</span><span class="p">)</span>
+
+<span class="c1"># Feature scaling (important for cancer data due to varying scales)</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">X_train_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_test_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Convert back to DataFrame for easier handling</span>
+<span class="n">X_train_scaled</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">X_test_scaled</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="c1"># Display feature statistics</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Feature scaling completed.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Original feature ranges (first 5 features):&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="mi">5</span><span class="p">]):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">X</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="kp">min</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">X</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="kp">max</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># 3. HYPERPARAMETER OPTIMIZATION - LIMITED TO 100 MODELS TOTAL</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HYPERPARAMETER OPTIMIZATION FOR CANCER PREDICTION&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LIMITED TO MAXIMUM 100 MODELS TOTAL&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Create base Random Forest model</span>
+<span class="n">base_rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># STEP 1: RANDOM SEARCH - REDUCED TO 70 ITERATIONS</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">STEP 1: RANDOM SEARCH OPTIMIZATION&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Limited to 70 model evaluations&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Define comprehensive parameter space for Random Search</span>
+<span class="n">random_param_space</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="kp">randint</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span>                    <span class="c1"># Reduced range for efficiency</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="kp">linspace</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">8</span><span class="p">)]</span> <span class="o">+</span> <span class="p">[</span><span class="kc">None</span><span class="p">],</span>  <span class="c1"># Reduced options</span>
+    <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:</span> <span class="kp">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>                 <span class="c1"># Reduced range</span>
+    <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="kp">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span>                   <span class="c1"># Reduced range</span>
+    <span class="s1">&#39;max_features&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;sqrt&#39;</span><span class="p">,</span> <span class="s1">&#39;log2&#39;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span>              <span class="c1"># Reduced options</span>
+    <span class="s1">&#39;bootstrap&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>                          <span class="c1"># Keep both options</span>
+    <span class="s1">&#39;criterion&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span> <span class="s1">&#39;entropy&#39;</span><span class="p">],</span>                   <span class="c1"># Keep both options</span>
+    <span class="s1">&#39;max_leaf_nodes&#39;</span><span class="p">:</span> <span class="kp">randint</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">80</span><span class="p">),</span>                   <span class="c1"># Reduced range</span>
+    <span class="s1">&#39;class_weight&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;balanced&#39;</span><span class="p">],</span>                  <span class="c1"># Keep both options</span>
+<span class="p">}</span>
+
+<span class="c1"># Initialize Random Search - REDUCED TO 70 ITERATIONS</span>
+<span class="n">random_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span>
+    <span class="n">estimator</span><span class="o">=</span><span class="n">base_rf</span><span class="p">,</span>
+    <span class="n">param_distributions</span><span class="o">=</span><span class="n">random_param_space</span><span class="p">,</span>
+    <span class="n">n_iter</span><span class="o">=</span><span class="mi">70</span><span class="p">,</span>                     <span class="c1"># CHANGED: Reduced from 100 to 70</span>
+    <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>                         <span class="c1"># 5-fold cross-validation</span>
+    <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;roc_auc&#39;</span><span class="p">,</span>            <span class="c1"># Optimization metric (better for medical data)</span>
+    <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>                    <span class="c1"># Use all available cores</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                    <span class="c1"># Show progress</span>
+    <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
+<span class="p">)</span>
+
+<span class="c1"># Perform Random Search</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Performing Random Search (70 model evaluations)...&quot;</span><span class="p">)</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">random_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">random_search_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Random Search completed in </span><span class="si">{</span><span class="n">random_search_time</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Models evaluated in Random Search: 70&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best Random Search Score (CV ROC-AUC): </span><span class="si">{</span><span class="n">random_search</span><span class="o">.</span><span class="n">best_score_</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best Random Search Parameters:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">param</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">random_search</span><span class="o">.</span><span class="n">best_params_</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># STEP 2: GRID SEARCH - LIMITED TO MAXIMUM 30 COMBINATIONS</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">STEP 2: GRID SEARCH OPTIMIZATION&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Limited to maximum 30 model evaluations&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Create focused parameter grid based on Random Search results</span>
+<span class="n">best_random_params</span> <span class="o">=</span> <span class="n">random_search</span><span class="o">.</span><span class="n">best_params_</span>
+
+<span class="c1"># Build SMALLER focused grid around best random search results - MAX 30 COMBINATIONS</span>
+<span class="n">grid_param_space</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;n_estimators&#39;</span><span class="p">],</span>
+        <span class="nb">min</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;n_estimators&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">50</span><span class="p">)</span>
+    <span class="p">],</span>  <span class="c1"># Only 2 options</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">],</span>
+        <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span> <span class="k">if</span> <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="kc">None</span>
+    <span class="p">]</span> <span class="k">if</span> <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>  <span class="c1"># Only 2 options</span>
+    <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;min_samples_split&#39;</span><span class="p">],</span>
+        <span class="nb">max</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;min_samples_split&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">],</span>  <span class="c1"># Only 2 options</span>
+    <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">]],</span>  <span class="c1"># Only 1 option</span>
+    <span class="s1">&#39;max_features&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_features&#39;</span><span class="p">]],</span>  <span class="c1"># Only 1 option</span>
+    <span class="s1">&#39;bootstrap&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">]],</span>  <span class="c1"># Only 1 option</span>
+    <span class="s1">&#39;criterion&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;criterion&#39;</span><span class="p">]],</span>  <span class="c1"># Only 1 option</span>
+    <span class="s1">&#39;max_leaf_nodes&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_leaf_nodes&#39;</span><span class="p">],</span>
+        <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_leaf_nodes&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">10</span>
+    <span class="p">],</span>  <span class="c1"># Only 2 options</span>
+    <span class="s1">&#39;class_weight&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;class_weight&#39;</span><span class="p">]]</span>  <span class="c1"># Only 1 option</span>
+<span class="p">}</span>
+
+<span class="c1"># Clean up None values and duplicates</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">grid_param_space</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">grid_param_space</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">values</span> <span class="k">if</span> <span class="n">v</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]))</span> <span class="k">if</span> <span class="kc">None</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="k">else</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">values</span><span class="p">))</span>
+
+<span class="c1"># Calculate total combinations to ensure we don&#39;t exceed 30</span>
+<span class="n">total_combinations</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">grid_param_space</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">total_combinations</span> <span class="o">*=</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total Grid Search combinations: </span><span class="si">{</span><span class="n">total_combinations</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># If still too many combinations, further reduce the grid</span>
+<span class="k">if</span> <span class="n">total_combinations</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reducing grid size to ensure maximum 30 combinations...&quot;</span><span class="p">)</span>
+    <span class="n">grid_param_space</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;n_estimators&#39;</span><span class="p">]],</span>
+        <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]],</span>
+        <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;min_samples_split&#39;</span><span class="p">],</span>
+            <span class="nb">max</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;min_samples_split&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span>
+            <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;min_samples_split&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="p">],</span>
+        <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">],</span>
+            <span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="p">],</span>
+        <span class="s1">&#39;max_features&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_features&#39;</span><span class="p">]],</span>
+        <span class="s1">&#39;bootstrap&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">]],</span>
+        <span class="s1">&#39;criterion&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;criterion&#39;</span><span class="p">]],</span>
+        <span class="s1">&#39;max_leaf_nodes&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;max_leaf_nodes&#39;</span><span class="p">]],</span>
+        <span class="s1">&#39;class_weight&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">best_random_params</span><span class="p">[</span><span class="s1">&#39;class_weight&#39;</span><span class="p">]]</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Recalculate combinations</span>
+    <span class="n">total_combinations</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">grid_param_space</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">total_combinations</span> <span class="o">*=</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Reduced Grid Search combinations: </span><span class="si">{</span><span class="n">total_combinations</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Initialize Grid Search</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span>
+    <span class="n">estimator</span><span class="o">=</span><span class="n">base_rf</span><span class="p">,</span>
+    <span class="n">param_grid</span><span class="o">=</span><span class="n">grid_param_space</span><span class="p">,</span>
+    <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>                         <span class="c1"># 5-fold cross-validation</span>
+    <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;roc_auc&#39;</span><span class="p">,</span>            <span class="c1"># Optimization metric</span>
+    <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>                    <span class="c1"># Use all available cores</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span>                     <span class="c1"># Show progress</span>
+<span class="p">)</span>
+
+<span class="c1"># Perform Grid Search</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Performing Grid Search (</span><span class="si">{</span><span class="n">total_combinations</span><span class="si">}</span><span class="s2"> model evaluations)...&quot;</span><span class="p">)</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">grid_search_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Grid Search completed in </span><span class="si">{</span><span class="n">grid_search_time</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Models evaluated in Grid Search: </span><span class="si">{</span><span class="n">total_combinations</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;TOTAL MODELS EVALUATED: </span><span class="si">{</span><span class="mi">70</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">total_combinations</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best Grid Search Score (CV ROC-AUC): </span><span class="si">{</span><span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best Grid Search Parameters:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">param</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># STEP 3: COMPARISON OF MODELS</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MODEL COMPARISON FOR CANCER PREDICTION&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Train baseline model (default parameters)</span>
+<span class="n">baseline_rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">baseline_rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Get the best models from hyperparameter tuning</span>
+<span class="n">best_random_rf</span> <span class="o">=</span> <span class="n">random_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+<span class="n">best_grid_rf</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+
+<span class="c1"># Evaluate all models</span>
+<span class="n">models</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Baseline (Default)&#39;</span><span class="p">:</span> <span class="n">baseline_rf</span><span class="p">,</span>
+    <span class="s1">&#39;Random Search Optimized&#39;</span><span class="p">:</span> <span class="n">best_random_rf</span><span class="p">,</span>
+    <span class="s1">&#39;Grid Search Optimized&#39;</span><span class="p">:</span> <span class="n">best_grid_rf</span>
+<span class="p">}</span>
+
+<span class="n">results_summary</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="c1"># Predictions</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+    <span class="n">y_pred_proba</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># Probability of positive class (benign)</span>
+
+    <span class="c1"># Metrics</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">f1</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">precision_recall_fscore_support</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="kp">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">)</span>
+
+    <span class="c1"># ROC AUC</span>
+    <span class="n">fpr</span><span class="p">,</span> <span class="n">tpr</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">roc_curve</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_proba</span><span class="p">)</span>
+    <span class="n">roc_auc</span> <span class="o">=</span> <span class="n">auc</span><span class="p">(</span><span class="n">fpr</span><span class="p">,</span> <span class="n">tpr</span><span class="p">)</span>
+
+    <span class="n">results_summary</span><span class="o">.</span><span class="kp">append</span><span class="p">({</span>
+        <span class="s1">&#39;Model&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+        <span class="s1">&#39;Accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span><span class="p">,</span>
+        <span class="s1">&#39;Precision&#39;</span><span class="p">:</span> <span class="n">precision</span><span class="p">,</span>
+        <span class="s1">&#39;Recall&#39;</span><span class="p">:</span> <span class="n">recall</span><span class="p">,</span>
+        <span class="s1">&#39;F1-Score&#39;</span><span class="p">:</span> <span class="n">f1</span><span class="p">,</span>
+        <span class="s1">&#39;ROC-AUC&#39;</span><span class="p">:</span> <span class="n">roc_auc</span>
+    <span class="p">})</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> Results:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Accuracy: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Precision: </span><span class="si">{</span><span class="n">precision</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Recall: </span><span class="si">{</span><span class="n">recall</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  F1-Score: </span><span class="si">{</span><span class="n">f1</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  ROC-AUC: </span><span class="si">{</span><span class="n">roc_auc</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create results DataFrame</span>
+<span class="n">results_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results_summary</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">SUMMARY TABLE:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results_df</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">float_format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%.4f</span><span class="s1">&#39;</span><span class="p">))</span>
+
+<span class="c1"># STEP 4: DETAILED CANCER PREDICTION ANALYSIS</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CANCER PREDICTION MODEL EVALUATION&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Use the best performing model for detailed analysis</span>
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">best_grid_rf</span>
+<span class="n">y_pred_best</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+<span class="n">y_pred_proba_best</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># Extract positive class probabilities</span>
+
+<span class="c1"># Detailed classification report</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Detailed Classification Report (Best Model):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_best</span><span class="p">,</span> <span class="n">target_names</span><span class="o">=</span><span class="n">target_names</span><span class="p">))</span>
+
+<span class="c1"># Feature importance analysis for cancer prediction - ORIGINAL VARIABLES ONLY</span>
+<span class="n">feature_importance</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;feature&#39;</span><span class="p">:</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span>
+    <span class="s1">&#39;importance&#39;</span><span class="p">:</span> <span class="n">best_model</span><span class="o">.</span><span class="n">feature_importances_</span>
+<span class="p">})</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;importance&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Top 20 Most Important Features for Cancer Prediction (Original Variable Names):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">feature_importance</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">float_format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%.6f</span><span class="s1">&#39;</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">All Features Ranked by Importance (Original Variable Names):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">feature_importance</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">float_format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%.6f</span><span class="s1">&#39;</span><span class="p">))</span>
+
+<span class="c1"># STEP 5: COMPREHENSIVE VISUALIZATIONS</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;GENERATING CANCER PREDICTION VISUALIZATIONS&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Set up plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+
+<span class="c1"># 1. Model Performance Comparison</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">metrics</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">,</span> <span class="s1">&#39;Precision&#39;</span><span class="p">,</span> <span class="s1">&#39;Recall&#39;</span><span class="p">,</span> <span class="s1">&#39;F1-Score&#39;</span><span class="p">,</span> <span class="s1">&#39;ROC-AUC&#39;</span><span class="p">]</span>
+<span class="n">baseline_scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">results_summary</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">metric</span><span class="p">]</span> <span class="k">for</span> <span class="n">metric</span> <span class="ow">in</span> <span class="n">metrics</span><span class="p">]</span>
+<span class="n">random_scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">results_summary</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">metric</span><span class="p">]</span> <span class="k">for</span> <span class="n">metric</span> <span class="ow">in</span> <span class="n">metrics</span><span class="p">]</span>
+<span class="n">grid_scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">results_summary</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="n">metric</span><span class="p">]</span> <span class="k">for</span> <span class="n">metric</span> <span class="ow">in</span> <span class="n">metrics</span><span class="p">]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">))</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">0.25</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">width</span><span class="p">,</span> <span class="n">baseline_scores</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Baseline&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightcoral&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">random_scores</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Random Search&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">width</span><span class="p">,</span> <span class="n">grid_scores</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Grid Search&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightgreen&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Metrics&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Score&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Cancer Prediction Model Comparison&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+
+<span class="c1"># 2. Confusion Matrix (Best Model)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">cm_best</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_best</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm_best</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">,</span> 
+            <span class="n">xticklabels</span><span class="o">=</span><span class="n">target_names</span><span class="p">,</span> <span class="n">yticklabels</span><span class="o">=</span><span class="n">target_names</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Confusion Matrix (Best Model)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted Label&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;True Label&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add medical context</span>
+<span class="n">tn</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">fn</span><span class="p">,</span> <span class="n">tp</span> <span class="o">=</span> <span class="n">cm_best</span><span class="o">.</span><span class="kp">ravel</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Confusion Matrix Analysis:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;True Negatives (Correctly identified malignant): </span><span class="si">{</span><span class="n">tn</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;False Positives (Malignant predicted as benign): </span><span class="si">{</span><span class="n">fp</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;False Negatives (Benign predicted as malignant): </span><span class="si">{</span><span class="n">fn</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;True Positives (Correctly identified benign): </span><span class="si">{</span><span class="n">tp</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;False Positive Rate: </span><span class="si">{</span><span class="n">fp</span><span class="o">/</span><span class="p">(</span><span class="n">fp</span><span class="o">+</span><span class="n">tn</span><span class="p">)</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;False Negative Rate: </span><span class="si">{</span><span class="n">fn</span><span class="o">/</span><span class="p">(</span><span class="n">fn</span><span class="o">+</span><span class="n">tp</span><span class="p">)</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># 3. ROC Curve</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">fpr_best</span><span class="p">,</span> <span class="n">tpr_best</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">roc_curve</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_proba_best</span><span class="p">)</span>
+<span class="n">roc_auc_best</span> <span class="o">=</span> <span class="n">auc</span><span class="p">(</span><span class="n">fpr_best</span><span class="p">,</span> <span class="n">tpr_best</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fpr_best</span><span class="p">,</span> <span class="n">tpr_best</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Best Model (AUC = </span><span class="si">{</span><span class="n">roc_auc_best</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;k--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Random Classifier&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.05</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;False Positive Rate&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;True Positive Rate&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;ROC Curve - Cancer Prediction&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">&quot;lower right&quot;</span><span class="p">)</span>
+
+<span class="c1"># 4. Feature Importance (Top 15) - Original Names</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">top_15_features</span> <span class="o">=</span> <span class="n">feature_importance</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">bars</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">top_15_features</span><span class="p">)),</span> <span class="n">top_15_features</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">top_15_features</span><span class="p">)),</span> <span class="n">top_15_features</span><span class="p">[</span><span class="s1">&#39;feature&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Importance Score&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top 15 Feature Importance (Original Names)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_yaxis</span><span class="p">()</span>
+
+<span class="c1"># 5. Prediction Confidence Distribution</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y_pred_proba_best</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Prediction Confidence (Benign Class)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Cancer Prediction Confidence&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">mean</span><span class="p">(</span><span class="n">y_pred_proba_best</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> 
+            <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Mean: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="kp">mean</span><span class="p">(</span><span class="n">y_pred_proba_best</span><span class="p">)</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># 6. Class Distribution</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">class_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lightcoral&#39;</span><span class="p">,</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">class_counts</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">target_names</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span> 
+        <span class="n">colors</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Cancer Dataset Class Distribution&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+<span class="c1"># 7. Optimization Time Comparison</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Random Search</span><span class="se">\n</span><span class="s1">(70 models)&#39;</span><span class="p">,</span> <span class="s1">&#39;Grid Search</span><span class="se">\n</span><span class="s1">(</span><span class="si">{}</span><span class="s1"> models)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_combinations</span><span class="p">)]</span>
+<span class="n">times</span> <span class="o">=</span> <span class="p">[</span><span class="n">random_search_time</span><span class="p">,</span> <span class="n">grid_search_time</span><span class="p">]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">]</span>
+
+<span class="n">bars</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">methods</span><span class="p">,</span> <span class="n">times</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Time (seconds)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Optimization Time Comparison&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">bar</span><span class="p">,</span> <span class="n">time_val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">bars</span><span class="p">,</span> <span class="n">times</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">bar</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">bar</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">bar</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="n">times</span><span class="p">)</span><span class="o">*</span><span class="mf">0.01</span><span class="p">,</span> 
+             <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">time_val</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">s&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+<span class="c1"># 8. Feature Correlation Heatmap (Top 10 features)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="n">top_10_feature_names</span> <span class="o">=</span> <span class="n">feature_importance</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)[</span><span class="s1">&#39;feature&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">top_10_feature_names</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="kp">square</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">,</span> <span class="n">cbar_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;shrink&#39;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top 10 Features Correlation&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Additional Feature Importance Visualization with Original Names</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Top 15 Feature Importance with Original Names</span>
+<span class="n">top_15_features</span> <span class="o">=</span> <span class="n">feature_importance</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">bars</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">top_15_features</span><span class="p">)),</span> <span class="n">top_15_features</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">top_15_features</span><span class="p">)),</span> <span class="n">top_15_features</span><span class="p">[</span><span class="s1">&#39;feature&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Importance Score&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top 15 Feature Importance (Original Variable Names)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_yaxis</span><span class="p">()</span>
+
+<span class="c1"># Add value labels on bars</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">top_15_features</span><span class="o">.</span><span class="n">iterrows</span><span class="p">()):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.001</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;importance&quot;</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> 
+             <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Feature importance statistics</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Feature Importance Statistics:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total number of features: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">feature_importance</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Most important feature: </span><span class="si">{</span><span class="n">feature_importance</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;feature&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (importance: </span><span class="si">{</span><span class="n">feature_importance</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Least important feature: </span><span class="si">{</span><span class="n">feature_importance</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;feature&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (importance: </span><span class="si">{</span><span class="n">feature_importance</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean importance: </span><span class="si">{</span><span class="n">feature_importance</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span><span class="o">.</span><span class="kp">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard deviation: </span><span class="si">{</span><span class="n">feature_importance</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span><span class="o">.</span><span class="kp">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Top 10 features contribution percentage</span>
+<span class="n">top_10_importance</span> <span class="o">=</span> <span class="n">feature_importance</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">total_importance</span> <span class="o">=</span> <span class="n">feature_importance</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span><span class="o">.</span><span class="kp">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Top 10 Features Contribution:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">top_10_importance</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">total_importance</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;feature&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">percentage</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">% of total importance)&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Top 10 features account for </span><span class="si">{</span><span class="p">(</span><span class="n">top_10_importance</span><span class="p">[</span><span class="s1">&#39;importance&#39;</span><span class="p">]</span><span class="o">.</span><span class="kp">sum</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">total_importance</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">% of total importance&quot;</span><span class="p">)</span>
+
+<span class="c1"># STEP 6: MEDICAL INSIGHTS AND RECOMMENDATIONS</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MEDICAL INSIGHTS AND RECOMMENDATIONS&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Performance improvement analysis</span>
+<span class="n">baseline_acc</span> <span class="o">=</span> <span class="n">results_summary</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span>
+<span class="n">random_acc</span> <span class="o">=</span> <span class="n">results_summary</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span>
+<span class="n">grid_acc</span> <span class="o">=</span> <span class="n">results_summary</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span>
+
+<span class="n">random_improvement</span> <span class="o">=</span> <span class="p">((</span><span class="n">random_acc</span> <span class="o">-</span> <span class="n">baseline_acc</span><span class="p">)</span> <span class="o">/</span> <span class="n">baseline_acc</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">grid_improvement</span> <span class="o">=</span> <span class="p">((</span><span class="n">grid_acc</span> <span class="o">-</span> <span class="n">baseline_acc</span><span class="p">)</span> <span class="o">/</span> <span class="n">baseline_acc</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Performance Improvements for Cancer Prediction:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Random Search vs Baseline: </span><span class="si">{</span><span class="n">random_improvement</span><span class="si">:</span><span class="s2">+.2f</span><span class="si">}</span><span class="s2">% accuracy improvement&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Grid Search vs Baseline: </span><span class="si">{</span><span class="n">grid_improvement</span><span class="si">:</span><span class="s2">+.2f</span><span class="si">}</span><span class="s2">% accuracy improvement&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Final ROC-AUC Score: </span><span class="si">{</span><span class="n">results_summary</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;ROC-AUC&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Optimization Efficiency:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total models evaluated: </span><span class="si">{</span><span class="mi">70</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">total_combinations</span><span class="si">}</span><span class="s2"> (≤ 100)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Random Search models: 70&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Grid Search models: </span><span class="si">{</span><span class="n">total_combinations</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total optimization time: </span><span class="si">{</span><span class="p">(</span><span class="n">random_search_time</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">grid_search_time</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Clinical Significance:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- High ROC-AUC (</span><span class="si">{</span><span class="n">results_summary</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;ROC-AUC&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">) indicates excellent diagnostic capability&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- Low False Negative Rate minimizes missed cancer cases&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- Feature importance reveals key tumor characteristics for diagnosis&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Optimal Hyperparameters for Cancer Prediction:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">param</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Key Findings:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;1. Model achieves </span><span class="si">{</span><span class="n">grid_acc</span><span class="si">:</span><span class="s2">.1%</span><span class="si">}</span><span class="s2"> accuracy in cancer diagnosis&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;2. Random Forest handles the high-dimensional medical data effectively&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;3. Hyperparameter optimization significantly improves performance&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;4. Feature importance provides insights into most predictive characteristics&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;5. Efficient optimization with limited model evaluations (≤ 100)&quot;</span><span class="p">)</span>
+
+<span class="c1"># Risk assessment for individual predictions</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sample Risk Assessments (First 10 test cases):&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">))):</span>
+    <span class="c1"># Direct indexing since y_test is a NumPy array</span>
+    <span class="n">true_class</span> <span class="o">=</span> <span class="n">target_names</span><span class="p">[</span><span class="n">y_test</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+    <span class="n">pred_class</span> <span class="o">=</span> <span class="n">target_names</span><span class="p">[</span><span class="n">y_pred_best</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+    <span class="n">confidence</span> <span class="o">=</span> <span class="n">y_pred_proba_best</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">if</span> <span class="n">y_pred_best</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">y_pred_proba_best</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="n">risk_level</span> <span class="o">=</span> <span class="s2">&quot;High Confidence&quot;</span> <span class="k">if</span> <span class="n">confidence</span> <span class="o">&gt;</span> <span class="mf">0.8</span> <span class="k">else</span> <span class="s2">&quot;Medium Confidence&quot;</span> <span class="k">if</span> <span class="n">confidence</span> <span class="o">&gt;</span> <span class="mf">0.6</span> <span class="k">else</span> <span class="s2">&quot;Low Confidence&quot;</span>
+    <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;✓ Correct&quot;</span> <span class="k">if</span> <span class="n">true_class</span> <span class="o">==</span> <span class="n">pred_class</span> <span class="k">else</span> <span class="s2">&quot;✗ Incorrect&quot;</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Patient </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: True=</span><span class="si">{</span><span class="n">true_class</span><span class="si">}</span><span class="s2">, Predicted=</span><span class="si">{</span><span class="n">pred_class</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;           Confidence=</span><span class="si">{</span><span class="n">confidence</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">risk_level</span><span class="si">}</span><span class="s2">) </span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CANCER PREDICTION MODEL ANALYSIS COMPLETE&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Final model summary</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">FINAL MODEL SUMMARY:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dataset: Breast Cancer Wisconsin (Diagnostic)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Samples: </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> (Malignant: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="si">}</span><span class="s2">, Benign: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="kp">sum</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Features: </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="kp">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2"> tumor characteristics&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best Model: Random Forest with optimized hyperparameters&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Performance: </span><span class="si">{</span><span class="n">grid_acc</span><span class="si">:</span><span class="s2">.1%</span><span class="si">}</span><span class="s2"> accuracy, </span><span class="si">{</span><span class="n">results_summary</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;ROC-AUC&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> ROC-AUC&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Model Evaluations: </span><span class="si">{</span><span class="mi">70</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">total_combinations</span><span class="si">}</span><span class="s2"> total (≤ 100 limit)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Clinical Impact: Reliable tool for cancer diagnosis support&quot;</span><span class="p">)</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="DecisionTreeRegression.html" class="btn btn-neutral float-left" title="Decision Tree Regression"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../LinearClassificationModels/LogisticRegression.html" class="btn btn-neutral float-right" title="Logistic Regression">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="DecisionTreeRegression.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../LinearClassificationModels/LogisticRegression.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

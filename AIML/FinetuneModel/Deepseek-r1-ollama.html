@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Deepseek-R1 ollama - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Deepseek-R1 ollama";
+        var mkdocs_page_input_path = "AIML/FinetuneModel/Deepseek-r1-ollama.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/CrossValidation.html">Cross Validation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/HyperparameterTuning.html">Hyperparameter Tuning</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/TuningDecisionThreshold.html">Tuning decision threshold</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/SimpleLinearRegression.html">Simple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/MultipleLinearRegression.html">Multiple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/PolynomialRegression.html">Polynomial Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/RidgeLassoRegression.html">Ridge & Lasso Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/SupportVectorRegression.html">Support Vector Regression (SVR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/DecisionTreeRegression.html">Decision Tree Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.html">Random Forest Regression</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/SupportVectorMachines.html">Support Vector Machines</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/SinglelayerPerceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/StochasticGradientDescent.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/DecisionTreeClassification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KNearestNeighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/NaiveBayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/RandomForests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/BaggingClassifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/Ensemblelearningclassifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KernelSVM.html">Kernel SVM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Linear Algebra</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinearAlgebra/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Vanishing.html">Vanishing and Exploding Gradients Problems</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Components of Neural Networks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LayersNeuralNetworks.html">Layers in Neural Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/WeightsBiases.html">Weights and Biases</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/ForwardPropagation.html">Forward Propagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/ActivationFunctions.html">Activation Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LossFunctions.html">Loss Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/Backpropagation.html">Backpropagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LearningRate.html">Learning Rate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Optimization Algorithm</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/GradientDescent.html">Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/SGD.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Adam.html">Adam (Adaptive Moment Estimation)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/BatchNormalization.html">Batch Normalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Mini-batch-GD.html">Mini-batch Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Momentum-based-GO.html">Momentum-based Gradient Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/AdagradOptimizer.html">Adagrad Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.html">RMSProp Optimizer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Models</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/FNN.html">Feedforward Neural Network (FNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Recurrent Neural Network (RNN)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/RNN.html">Recurrent Neural Network (RNN)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/LSTM.html">LSTM (Long Short-Term Memory)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/GRU.html">GRU (Gated Recurrent Unit)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/CNN.html">Convolutional Neural Network (CNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/RBFN.html">Radial Basis Function Network (RBFN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/ComputerVision.html">Computer Vision</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/GANs.html">Generative Adversarial Networks (GANs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/Transformer.html">Transformer Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/Autoencoders.html">Autoencoders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/SOM.html">Self-Organizing Maps (SOM)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/nlpdetails.html">NLP Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Computer Vision</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer-Vision/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Traditional CV (Before deep learning)</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Edge-detection.md">Edge detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Feature-extraction.md">Feature extraction</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Image-filtering.md">Image filtering</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Template-matching.md">Template matching</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Optical-flow.md">Optical flow</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Histogram-analysis.md">Histogram analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Rule-based-vision-systems.md">Rule-based vision systems</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Modern CV (Deep learning–based)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Computer-Vision/CNNs.html">CNNs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/ViT.md">Vision Transformers (ViT)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/YOLO.md">YOLO</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Faster-R-CNN.md">Faster R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Mask-R-CNN.md">Mask R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Diffusion-models.md">Diffusion models (for vision generation)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Common Computer Vision tasks</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Image-classification.md">Image classification</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Object-detection.md">Object detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Face-recognition.md">Face recognition</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/OCR.md">OCR (text from images)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Medical-imaging-analysis.md">Medical imaging analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Autonomous-driving-vision.md">Autonomous driving vision</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Video-analytics.md">Video analytics</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Industrial-inspection.md">Industrial inspection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../OpenCV/OpenCV.html">OpenCV</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/framework.html">Framework</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/design-patterns.html">Design Patterns</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >LangGraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/LangGraph.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/LangGraphDetails.html">LangGraph Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/Subgraphs.html">Subgraphs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../AgenticAI/LangGraph/Interrupts.md">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/time-travel.html">Time travel</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/LangGraph-runtime.html">LangGraph runtime</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/Durable-execution.html">Durable execution</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/Install.html">Install</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/graph-api.html">Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/functional-api.html">Functional API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/local-server.html">Run local server</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/workflows.html">Workflows</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/persistence.html">Persistence</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/memory.html">Memory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/streaming.html">Streaming</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/interrupts.html">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/graph.html">Graph</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/node.html">Node</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/edge.html">Edge</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >AZURE</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/AZURE/azure.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/AZURE/azure-openai-foundry-modelsure.html">Azure OpenAI Foundry models</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Agent Development Kit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/GCP/adk.html">ADK</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/GCP/Agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/GCP/Tools.html">Tools</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/GCP/a2a.html">Tools</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agent to Agent(A2A)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../A2A/a2a.html">A2A</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Temporal</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/temporal-overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/setup.html">Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/core-application.html">Core application</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/Temporal-client.html">Temporal Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >MCPModel Context Protocol(MCP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../MCP/mcp.html">MCP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDatabases/PgVector.html">PgVector</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDatabases/OpenSearch.html">OpenSearch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Graph Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../GraphDatabases/neo4j-setup.html">neo4j setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GraphDatabases/neo4j-cypher.html">neo4j Cypher</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Models Details information</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Models/Ollama.html">Ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Note Book</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Notebook/allnotebook.html">All Notebook</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Pypi Library</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Pypi/Pypi-lib-details.html">Pypi Library Details</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Deepseek-R1 ollama</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="deepseek-r1-ollama">Deepseek-R1 ollama<a class="headerlink" href="#deepseek-r1-ollama" title="Permanent link">#</a></h1>
+<h2 id="model-dockerhub-link">Model Dockerhub link<a class="headerlink" href="#model-dockerhub-link" title="Permanent link">#</a></h2>
+<p><a href="https://hub.docker.com/r/mdelapenya/deepseek-r1">Model Dockerhub link</a></p>
+<h1 id="deploy-deepseek-r1-ollama-in-local-aws-eks-with-alb-ingress">Deploy Deepseek-R1 ollama in local AWS EKS with ALB Ingress<a class="headerlink" href="#deploy-deepseek-r1-ollama-in-local-aws-eks-with-alb-ingress" title="Permanent link">#</a></h1>
+<h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>deepseek-r1-deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deepseek-r1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deepseek-r1
+  template:
+    metadata:
+      labels:
+        app: deepseek-r1
+    spec:
+      containers:
+      - name: deepseek-r1
+        image: mdelapenya/deepseek-r1:0.5.4-7b
+        ports:
+        - containerPort: 11434
+</code></pre></div>
+
+<h2 id="service">Service<a class="headerlink" href="#service" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nx">deepseek</span><span class="o">-</span><span class="nx">r1</span><span class="o">-</span><span class="nx">service</span><span class="p">.</span><span class="nx">yaml</span>
+
+<span class="nx">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="nx">v1</span>
+<span class="nx">kind</span><span class="p">:</span><span class="w"> </span><span class="nx">Service</span>
+<span class="nx">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nx">name</span><span class="p">:</span><span class="w"> </span><span class="nx">deepseek</span><span class="o">-</span><span class="nx">r1</span><span class="o">-</span><span class="nx">service</span>
+<span class="nx">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nx">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nx">app</span><span class="p">:</span><span class="w"> </span><span class="nx">deepseek</span><span class="o">-</span><span class="nx">r1</span>
+<span class="w">  </span><span class="nx">ports</span><span class="p">:</span>
+<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="nx">protocol</span><span class="p">:</span><span class="w"> </span><span class="nx">TCP</span>
+<span class="w">    </span><span class="nx">port</span><span class="p">:</span><span class="w"> </span><span class="mi">11434</span>
+<span class="w">    </span><span class="nx">targetPort</span><span class="p">:</span><span class="w"> </span><span class="mi">11434</span>
+<span class="w">  </span><span class="k">type</span><span class="p">:</span><span class="w"> </span><span class="nx">ClusterIP</span>
+</code></pre></div>
+
+<h2 id="ingress">Ingress<a class="headerlink" href="#ingress" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">deepseek</span><span class="o">-</span><span class="n">ingress</span><span class="o">.</span><span class="n">yaml</span>
+
+<span class="n">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="n">networking</span><span class="o">.</span><span class="n">k8s</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">v1</span>
+<span class="n">kind</span><span class="p">:</span><span class="w"> </span><span class="n">Ingress</span>
+<span class="n">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="n">deepseek</span><span class="o">-</span><span class="n">r1</span><span class="o">-</span><span class="n">service</span>
+<span class="w">  </span><span class="n">annotations</span><span class="p">:</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">scheme</span><span class="p">:</span><span class="w"> </span><span class="n">internet</span><span class="o">-</span><span class="n">facing</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">target</span><span class="o">-</span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="n">ip</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">listen</span><span class="o">-</span><span class="n">ports</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;[{&quot;HTTPS&quot;:443}]&#39;</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">certificate</span><span class="o">-</span><span class="n">arn</span><span class="p">:</span><span class="w"> </span><span class="n">arn</span><span class="p">:</span><span class="n">aws</span><span class="p">:</span><span class="n">acm</span><span class="p">:</span><span class="n">ap</span><span class="o">-</span><span class="n">south</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="mi">777203855866</span><span class="p">:</span><span class="n">certificate</span><span class="o">/</span><span class="n">b7856d98</span><span class="o">-</span><span class="n">d602</span><span class="o">-</span><span class="mi">4</span><span class="n">a77</span><span class="o">-</span><span class="n">afdf</span><span class="o">-</span><span class="mi">98</span><span class="n">d0b00706ff</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">redirect</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;443&#39;</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">healthcheck</span><span class="o">-</span><span class="n">path</span><span class="p">:</span><span class="w"> </span><span class="o">/</span>
+<span class="w">    </span><span class="n">alb</span><span class="o">.</span><span class="n">ingress</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="nb">load</span><span class="o">-</span><span class="n">balancer</span><span class="o">-</span><span class="n">attributes</span><span class="p">:</span><span class="w"> </span><span class="n">idle_timeout</span><span class="o">.</span><span class="n">timeout_seconds</span><span class="o">=</span><span class="mi">900</span>
+<span class="n">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="n">ingressClassName</span><span class="p">:</span><span class="w"> </span><span class="n">alb</span>
+<span class="w">  </span><span class="n">tls</span><span class="p">:</span>
+<span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="n">hosts</span><span class="p">:</span>
+<span class="w">       </span><span class="o">-</span><span class="w"> </span><span class="n">deepseek</span><span class="o">-</span><span class="n">r1</span><span class="o">.</span><span class="n">visionaryai</span><span class="o">.</span><span class="n">aimledu</span><span class="o">.</span><span class="n">com</span>
+<span class="w">  </span><span class="n">rules</span><span class="p">:</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">host</span><span class="p">:</span><span class="w"> </span><span class="n">deepseek</span><span class="o">-</span><span class="n">r1</span><span class="o">.</span><span class="n">visionaryai</span><span class="o">.</span><span class="n">aimledu</span><span class="o">.</span><span class="n">com</span>
+<span class="w">      </span><span class="n">http</span><span class="p">:</span>
+<span class="w">        </span><span class="n">paths</span><span class="p">:</span>
+<span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">path</span><span class="p">:</span><span class="w"> </span><span class="o">/</span>
+<span class="w">            </span><span class="n">pathType</span><span class="p">:</span><span class="w"> </span><span class="n">Prefix</span>
+<span class="w">            </span><span class="n">backend</span><span class="p">:</span>
+<span class="w">              </span><span class="n">service</span><span class="p">:</span>
+<span class="w">                </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="n">deepseek</span><span class="o">-</span><span class="n">r1</span><span class="o">-</span><span class="n">service</span>
+<span class="w">                </span><span class="n">port</span><span class="p">:</span>
+<span class="w">                  </span><span class="n">number</span><span class="p">:</span><span class="w"> </span><span class="mi">11434</span>
+</code></pre></div>
+
+<h2 id="deployment_1">Deployment<a class="headerlink" href="#deployment_1" title="Permanent link">#</a></h2>
+<h2 id="create-namespace-deepseek">Create namespace deepseek<a class="headerlink" href="#create-namespace-deepseek" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>kubectl create namespace deepseek
+</code></pre></div>
+
+<h2 id="deploy-deepseek-service-ingress">Deploy deepseek, service, ingress<a class="headerlink" href="#deploy-deepseek-service-ingress" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>kubectl apply -f deepseek-r1-deployment.yaml -n deepseek
+
+kubectl apply -f deepseek-r1-service.yaml -n deepseek
+
+kubectl apply -f deepseek-ingress.yaml -n deepseek
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">kubectl</span><span class="w"> </span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="n">deepseek</span><span class="w"> </span><span class="n">logs</span><span class="w"> </span><span class="o">-</span><span class="n">f</span><span class="w"> </span><span class="n">pod</span><span class="o">/</span><span class="n">deepseek</span><span class="o">-</span><span class="n">r1</span><span class="o">-</span><span class="mi">6</span><span class="n">b58ff58bc</span><span class="o">-</span><span class="mi">7</span><span class="n">nznv</span>
+<span class="mi">2025</span><span class="o">/</span><span class="mi">05</span><span class="o">/</span><span class="mi">21</span><span class="w"> </span><span class="mi">12</span><span class="err">:</span><span class="mi">43</span><span class="err">:</span><span class="mi">58</span><span class="w"> </span><span class="n">routes</span><span class="p">.</span><span class="k">go</span><span class="err">:</span><span class="mi">1259</span><span class="err">:</span><span class="w"> </span><span class="n">INFO</span><span class="w"> </span><span class="n">server</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="n">env</span><span class="o">=</span><span class="ss">&quot;map[CUDA_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_DEBUG:false OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://0.0.0.0:11434 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:5m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/root/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:0 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES: http_proxy: https_proxy: no_proxy:]&quot;</span>
+<span class="nc">time</span><span class="o">=</span><span class="mi">2025</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">21</span><span class="nl">T12</span><span class="p">:</span><span class="mi">43</span><span class="err">:</span><span class="mf">58.101</span><span class="n">Z</span><span class="w"> </span><span class="k">level</span><span class="o">=</span><span class="n">INFO</span><span class="w"> </span><span class="n">source</span><span class="o">=</span><span class="n">images</span><span class="p">.</span><span class="k">go</span><span class="err">:</span><span class="mi">757</span><span class="w"> </span><span class="n">msg</span><span class="o">=</span><span class="ss">&quot;total blobs: 5&quot;</span>
+<span class="nc">time</span><span class="o">=</span><span class="mi">2025</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">21</span><span class="nl">T12</span><span class="p">:</span><span class="mi">43</span><span class="err">:</span><span class="mf">58.101</span><span class="n">Z</span><span class="w"> </span><span class="k">level</span><span class="o">=</span><span class="n">INFO</span><span class="w"> </span><span class="n">source</span><span class="o">=</span><span class="n">images</span><span class="p">.</span><span class="k">go</span><span class="err">:</span><span class="mi">764</span><span class="w"> </span><span class="n">msg</span><span class="o">=</span><span class="ss">&quot;total unused blobs removed: 0&quot;</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">WARNING</span><span class="o">]</span><span class="w"> </span><span class="n">Creating</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">Engine</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Logger</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Recovery</span><span class="w"> </span><span class="n">middleware</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">attached</span><span class="p">.</span>
+
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">WARNING</span><span class="o">]</span><span class="w"> </span><span class="n">Running</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="ss">&quot;debug&quot;</span><span class="w"> </span><span class="n">mode</span><span class="p">.</span><span class="w"> </span><span class="n">Switch</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="ss">&quot;release&quot;</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">production</span><span class="p">.</span>
+<span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="nl">env</span><span class="p">:</span><span class="w">   </span><span class="n">export</span><span class="w"> </span><span class="n">GIN_MODE</span><span class="o">=</span><span class="k">release</span>
+<span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="nl">code</span><span class="p">:</span><span class="w">  </span><span class="n">gin</span><span class="p">.</span><span class="n">SetMode</span><span class="p">(</span><span class="n">gin</span><span class="p">.</span><span class="n">ReleaseMode</span><span class="p">)</span>
+
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">pull</span><span class="w">                 </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).PullHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">generate</span><span class="w">             </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).GenerateHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">chat</span><span class="w">                 </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).ChatHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">embed</span><span class="w">                </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).EmbedHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">embeddings</span><span class="w">           </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).EmbeddingsHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="k">create</span><span class="w">               </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).CreateHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">push</span><span class="w">                 </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).PushHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">copy</span><span class="w">                 </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).CopyHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="k">DELETE</span><span class="w"> </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="k">delete</span><span class="w">               </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).DeleteHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">show</span><span class="w">                 </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).ShowHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">blobs</span><span class="o">/</span><span class="err">:</span><span class="n">digest</span><span class="w">        </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).CreateBlobHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">HEAD</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">blobs</span><span class="o">/</span><span class="err">:</span><span class="n">digest</span><span class="w">        </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).HeadBlobHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="k">GET</span><span class="w">    </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">ps</span><span class="w">                   </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).PsHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">chat</span><span class="o">/</span><span class="n">completions</span><span class="w">      </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).ChatHandler-fm (6 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">completions</span><span class="w">           </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).GenerateHandler-fm (6 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">POST</span><span class="w">   </span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">embeddings</span><span class="w">            </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).EmbedHandler-fm (6 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="k">GET</span><span class="w">    </span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">models</span><span class="w">                </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).ListHandler-fm (6 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="k">GET</span><span class="w">    </span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">models</span><span class="o">/</span><span class="err">:</span><span class="n">model</span><span class="w">         </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).ShowHandler-fm (6 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="k">GET</span><span class="w">    </span><span class="o">/</span><span class="w">                         </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).GenerateRoutes.func1 (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="k">GET</span><span class="w">    </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">tags</span><span class="w">                 </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).ListHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="k">GET</span><span class="w">    </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">version</span><span class="w">              </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).GenerateRoutes.func2 (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">HEAD</span><span class="w">   </span><span class="o">/</span><span class="w">                         </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).GenerateRoutes.func1 (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">HEAD</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">tags</span><span class="w">                 </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).ListHandler-fm (5 handlers)</span>
+<span class="o">[</span><span class="n">GIN-debug</span><span class="o">]</span><span class="w"> </span><span class="n">HEAD</span><span class="w">   </span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">version</span><span class="w">              </span><span class="c1">--&gt; github.com/ollama/ollama/server.(*Server).GenerateRoutes.func2 (5 handlers)</span>
+<span class="nc">time</span><span class="o">=</span><span class="mi">2025</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">21</span><span class="nl">T12</span><span class="p">:</span><span class="mi">43</span><span class="err">:</span><span class="mf">58.102</span><span class="n">Z</span><span class="w"> </span><span class="k">level</span><span class="o">=</span><span class="n">INFO</span><span class="w"> </span><span class="n">source</span><span class="o">=</span><span class="n">routes</span><span class="p">.</span><span class="k">go</span><span class="err">:</span><span class="mi">1310</span><span class="w"> </span><span class="n">msg</span><span class="o">=</span><span class="ss">&quot;Listening on [::]:11434 (version 0.5.4-0-g2ddc32d-dirty)&quot;</span>
+<span class="nc">time</span><span class="o">=</span><span class="mi">2025</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">21</span><span class="nl">T12</span><span class="p">:</span><span class="mi">43</span><span class="err">:</span><span class="mf">58.102</span><span class="n">Z</span><span class="w"> </span><span class="k">level</span><span class="o">=</span><span class="n">INFO</span><span class="w"> </span><span class="n">source</span><span class="o">=</span><span class="n">routes</span><span class="p">.</span><span class="k">go</span><span class="err">:</span><span class="mi">1339</span><span class="w"> </span><span class="n">msg</span><span class="o">=</span><span class="ss">&quot;Dynamic LLM libraries&quot;</span><span class="w"> </span><span class="n">runners</span><span class="o">=</span><span class="ss">&quot;[cuda_v12_avx cpu cpu_avx cpu_avx2 cuda_v11_avx]&quot;</span>
+<span class="nc">time</span><span class="o">=</span><span class="mi">2025</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">21</span><span class="nl">T12</span><span class="p">:</span><span class="mi">43</span><span class="err">:</span><span class="mf">58.102</span><span class="n">Z</span><span class="w"> </span><span class="k">level</span><span class="o">=</span><span class="n">INFO</span><span class="w"> </span><span class="n">source</span><span class="o">=</span><span class="n">gpu</span><span class="p">.</span><span class="k">go</span><span class="err">:</span><span class="mi">226</span><span class="w"> </span><span class="n">msg</span><span class="o">=</span><span class="ss">&quot;looking for compatible GPUs&quot;</span>
+<span class="nc">time</span><span class="o">=</span><span class="mi">2025</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">21</span><span class="nl">T12</span><span class="p">:</span><span class="mi">43</span><span class="err">:</span><span class="mf">58.501</span><span class="n">Z</span><span class="w"> </span><span class="k">level</span><span class="o">=</span><span class="n">INFO</span><span class="w"> </span><span class="n">source</span><span class="o">=</span><span class="n">types</span><span class="p">.</span><span class="k">go</span><span class="err">:</span><span class="mi">131</span><span class="w"> </span><span class="n">msg</span><span class="o">=</span><span class="ss">&quot;inference compute&quot;</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="n">GPU</span><span class="o">-</span><span class="n">ec991403</span><span class="o">-</span><span class="mi">1199</span><span class="o">-</span><span class="n">e627</span><span class="o">-</span><span class="n">c275</span><span class="o">-</span><span class="mi">11191969</span><span class="n">eefd</span><span class="w"> </span><span class="n">library</span><span class="o">=</span><span class="n">cuda</span><span class="w"> </span><span class="n">variant</span><span class="o">=</span><span class="n">v12</span><span class="w"> </span><span class="k">compute</span><span class="o">=</span><span class="mf">8.6</span><span class="w"> </span><span class="n">driver</span><span class="o">=</span><span class="mf">12.8</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="ss">&quot;NVIDIA A10G&quot;</span><span class="w"> </span><span class="n">total</span><span class="o">=</span><span class="ss">&quot;22.3 GiB&quot;</span><span class="w"> </span><span class="n">available</span><span class="o">=</span><span class="ss">&quot;8.0 GiB&quot;</span>
+</code></pre></div>
+
+<h2 id="post-successfull-deployment-how-to-test-use">Post successfull deployment how to test &amp; use<a class="headerlink" href="#post-successfull-deployment-how-to-test-use" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code>curl -X POST https://deepseek-r1.visionaryai.aimledu.com/api/pull \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;name&quot;: &quot;deepseek-coder:6.7b&quot;}&#39;
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>curl -X POST https://deepseek-r1.visionaryai.aimledu.com/api/generate \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{
+    &quot;model&quot;: &quot;deepseek-coder:6.7b&quot;,
+    &quot;prompt&quot;: &quot;Explain what a Kubernetes ingress controller does.&quot;,
+    &quot;stream&quot;: false
+  }&#39;
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">curl</span><span class="w"> </span><span class="o">-</span><span class="n">X</span><span class="w"> </span><span class="n">POST</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">deepseek</span><span class="o">-</span><span class="n">r1</span><span class="o">.</span><span class="n">visionaryai</span><span class="o">.</span><span class="n">aimledu</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">generate</span><span class="w"> </span>\
+<span class="w">  </span><span class="o">-</span><span class="n">H</span><span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>\
+<span class="w">  </span><span class="o">-</span><span class="n">d</span><span class="w"> </span><span class="s1">&#39;{</span>
+<span class="w">    </span><span class="s2">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;deepseek-coder:6.7b&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;prompt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Explain what a Kubernetes ingress controller does.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;stream&quot;</span><span class="p">:</span><span class="w"> </span><span class="bp">false</span>
+<span class="w">  </span><span class="p">}</span><span class="s1">&#39;</span>
+<span class="p">{</span><span class="s2">&quot;model&quot;</span><span class="p">:</span><span class="s2">&quot;deepseek-coder:6.7b&quot;</span><span class="p">,</span><span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2025-05-21T13:04:43.677107124Z&quot;</span><span class="p">,</span><span class="s2">&quot;response&quot;</span><span class="p">:</span><span class="s2">&quot;A Kubernetes Ingress Controller is a dedicated component that acts as an API frontend for services in your cluster, directing HTTP(S) traffic to the appropriate service based on rules defined by you or operators. </span><span class="se">\n\n</span><span class="s2">In other words, it&#39;s like a load balancer but specifically designed to work with Kubernetes and integrate with the ingress resources. Ingress Controllers are responsible for routing external traffic into services within your cluster, which means directing HTTP(S) requests based on the request host or path to specific services.</span><span class="se">\n\n</span><span class="s2">There are several types of Ingress controllers available:</span><span class="se">\n\n</span><span class="s2">1. NGINX: A popular choice, it&#39;s known for its high performance and stability, especially with heavy traffic loads.</span><span class="se">\n</span><span class="s2">2. Traefik: An open-source project that offers a dynamic reverse proxy solution. </span><span class="se">\n</span><span class="s2">3. HAProxy: Also known for its speed and robustness in handling requests, especially when dealing with SSL offloading.</span><span class="se">\n</span><span class="s2">4. Amazon ALB Ingress Controller: For AWS users, it integrates with the Application Load Balancer (ALB) to manage external access to services within an EKS cluster.</span><span class="se">\n</span><span class="s2">5. Contour: A lightweight Ingress controller using Envoy as its data plane.</span><span class="se">\n</span><span class="s2">6. GCE or GKE Ingress: These are specifically for Google Cloud Platform&#39;s products, and integrate with their load balancers.</span><span class="se">\n\n</span><span class="s2">The main responsibility of the ingress controller is to provide a layer 7 routing mechanism that can distribute traffic between different services within your Kubernetes cluster based on HTTP routes. This means you define rules about how external users should access your services, without those details being exposed to them directly.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="s2">&quot;done&quot;</span><span class="p">:</span><span class="bp">true</span><span class="p">,</span><span class="s2">&quot;done_reason&quot;</span><span class="p">:</span><span class="s2">&quot;stop&quot;</span><span class="p">,</span><span class="s2">&quot;context&quot;</span><span class="p">:[</span><span class="mi">2042</span><span class="p">,</span><span class="mi">417</span><span class="p">,</span><span class="mi">274</span><span class="p">,</span><span class="mi">20926</span><span class="p">,</span><span class="mi">14244</span><span class="p">,</span><span class="mi">20391</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">26696</span><span class="p">,</span><span class="mi">254</span><span class="p">,</span><span class="mi">20676</span><span class="p">,</span><span class="mi">30742</span><span class="p">,</span><span class="mi">339</span><span class="p">,</span><span class="mi">8589</span><span class="p">,</span><span class="mi">2008</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">6908</span><span class="p">,</span><span class="mi">457</span><span class="p">,</span><span class="mi">20676</span><span class="p">,</span><span class="mi">30742</span><span class="p">,</span><span class="mi">7958</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">285</span><span class="p">,</span><span class="mi">340</span><span class="p">,</span><span class="mi">885</span><span class="p">,</span><span class="mi">3495</span><span class="p">,</span><span class="mi">4301</span><span class="p">,</span><span class="mi">4512</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">4531</span><span class="p">,</span><span class="mi">8214</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">1487</span><span class="p">,</span><span class="mi">4636</span><span class="p">,</span><span class="mi">2223</span><span class="p">,</span><span class="mi">13143</span><span class="p">,</span><span class="mi">4301</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">5411</span><span class="p">,</span><span class="mi">285</span><span class="p">,</span><span class="mi">13936</span><span class="p">,</span><span class="mi">4447</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">285</span><span class="p">,</span><span class="mi">746</span><span class="p">,</span><span class="mi">2159</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13517</span><span class="p">,</span><span class="mi">250</span><span class="p">,</span><span class="mi">8214</span><span class="p">,</span><span class="mi">4301</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">340</span><span class="p">,</span><span class="mi">540</span><span class="p">,</span><span class="mi">20857</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">3495</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">13518</span><span class="p">,</span><span class="mi">3649</span><span class="p">,</span><span class="mi">3475</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">1488</span><span class="p">,</span><span class="mi">20667</span><span class="p">,</span><span class="mi">852</span><span class="p">,</span><span class="mi">245</span><span class="p">,</span><span class="mi">716</span><span class="p">,</span><span class="mi">31055</span><span class="p">,</span><span class="mi">9350</span><span class="p">,</span><span class="mi">6208</span><span class="p">,</span><span class="mi">698</span><span class="p">,</span><span class="mi">8888</span><span class="p">,</span><span class="mi">1214</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">13518</span><span class="p">,</span><span class="mi">21289</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">716</span><span class="p">,</span><span class="mi">31055</span><span class="p">,</span><span class="mi">9350</span><span class="p">,</span><span class="mi">680</span><span class="p">,</span><span class="mi">3524</span><span class="p">,</span><span class="mi">18173</span><span class="p">,</span><span class="mi">317</span><span class="p">,</span><span class="mi">245</span><span class="p">,</span><span class="mi">10653</span><span class="p">,</span><span class="mi">5785</span><span class="p">,</span><span class="mi">344</span><span class="p">,</span><span class="mi">11773</span><span class="p">,</span><span class="mi">372</span><span class="p">,</span><span class="mi">274</span><span class="p">,</span><span class="mi">8690</span><span class="p">,</span><span class="mi">3853</span><span class="p">,</span><span class="mi">408</span><span class="p">,</span><span class="mi">327</span><span class="p">,</span><span class="mi">3235</span><span class="p">,</span><span class="mi">279</span><span class="p">,</span><span class="mi">518</span><span class="p">,</span><span class="mi">9654</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">1706</span><span class="p">,</span><span class="mi">272</span><span class="p">,</span><span class="mi">18125</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9186</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">254</span><span class="p">,</span><span class="mi">6854</span><span class="p">,</span><span class="mi">2408</span><span class="p">,</span><span class="mi">2842</span><span class="p">,</span><span class="mi">331</span><span class="p">,</span><span class="mi">6544</span><span class="p">,</span><span class="mi">4212</span><span class="p">,</span><span class="mi">457</span><span class="p">,</span><span class="mi">340</span><span class="p">,</span><span class="mi">409</span><span class="p">,</span><span class="mi">10715</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">207</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">769</span><span class="p">,</span><span class="mi">746</span><span class="p">,</span><span class="mi">3061</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">359</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">833</span><span class="p">,</span><span class="mi">245</span><span class="p">,</span><span class="mi">3299</span><span class="p">,</span><span class="mi">4862</span><span class="p">,</span><span class="mi">12774</span><span class="p">,</span><span class="mi">545</span><span class="p">,</span><span class="mi">10184</span><span class="p">,</span><span class="mi">5392</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">826</span><span class="p">,</span><span class="mi">365</span><span class="p">,</span><span class="mi">716</span><span class="p">,</span><span class="mi">31055</span><span class="p">,</span><span class="mi">9350</span><span class="p">,</span><span class="mi">285</span><span class="p">,</span><span class="mi">24729</span><span class="p">,</span><span class="mi">365</span><span class="p">,</span><span class="mi">254</span><span class="p">,</span><span class="mi">6208</span><span class="p">,</span><span class="mi">698</span><span class="p">,</span><span class="mi">6177</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">680</span><span class="p">,</span><span class="mi">3524</span><span class="p">,</span><span class="mi">3458</span><span class="p">,</span><span class="mi">20029</span><span class="p">,</span><span class="mi">417</span><span class="p">,</span><span class="mi">8874</span><span class="p">,</span><span class="mi">327</span><span class="p">,</span><span class="mi">27462</span><span class="p">,</span><span class="mi">6659</span><span class="p">,</span><span class="mi">9186</span><span class="p">,</span><span class="mi">878</span><span class="p">,</span><span class="mi">3235</span><span class="p">,</span><span class="mi">2372</span><span class="p">,</span><span class="mi">518</span><span class="p">,</span><span class="mi">9654</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">585</span><span class="p">,</span><span class="mi">2445</span><span class="p">,</span><span class="mi">1706</span><span class="p">,</span><span class="mi">272</span><span class="p">,</span><span class="mi">18125</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">12443</span><span class="p">,</span><span class="mi">2842</span><span class="p">,</span><span class="mi">331</span><span class="p">,</span><span class="mi">254</span><span class="p">,</span><span class="mi">3092</span><span class="p">,</span><span class="mi">3686</span><span class="p">,</span><span class="mi">409</span><span class="p">,</span><span class="mi">3076</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">3041</span><span class="p">,</span><span class="mi">3235</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">2948</span><span class="p">,</span><span class="mi">417</span><span class="p">,</span><span class="mi">2961</span><span class="p">,</span><span class="mi">4997</span><span class="p">,</span><span class="mi">280</span><span class="p">,</span><span class="mi">680</span><span class="p">,</span><span class="mi">3524</span><span class="p">,</span><span class="mi">630</span><span class="p">,</span><span class="mi">20029</span><span class="p">,</span><span class="mi">2315</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">461</span><span class="p">,</span><span class="mi">16161</span><span class="p">,</span><span class="mi">55</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">338</span><span class="p">,</span><span class="mi">4493</span><span class="p">,</span><span class="mi">4850</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">359</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">3174</span><span class="p">,</span><span class="mi">327</span><span class="p">,</span><span class="mi">891</span><span class="p">,</span><span class="mi">1453</span><span class="p">,</span><span class="mi">3779</span><span class="p">,</span><span class="mi">285</span><span class="p">,</span><span class="mi">13699</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">4386</span><span class="p">,</span><span class="mi">365</span><span class="p">,</span><span class="mi">6751</span><span class="p">,</span><span class="mi">9186</span><span class="p">,</span><span class="mi">18127</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">6726</span><span class="p">,</span><span class="mi">811</span><span class="p">,</span><span class="mi">1913</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">1633</span><span class="p">,</span><span class="mi">1714</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">1905</span><span class="p">,</span><span class="mi">2299</span><span class="p">,</span><span class="mi">344</span><span class="p">,</span><span class="mi">5157</span><span class="p">,</span><span class="mi">245</span><span class="p">,</span><span class="mi">10999</span><span class="p">,</span><span class="mi">13322</span><span class="p">,</span><span class="mi">15072</span><span class="p">,</span><span class="mi">3402</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">207</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">414</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">18131</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">6067</span><span class="p">,</span><span class="mi">3174</span><span class="p">,</span><span class="mi">327</span><span class="p">,</span><span class="mi">891</span><span class="p">,</span><span class="mi">4575</span><span class="p">,</span><span class="mi">285</span><span class="p">,</span><span class="mi">13130</span><span class="p">,</span><span class="mi">1457</span><span class="p">,</span><span class="mi">279</span><span class="p">,</span><span class="mi">14326</span><span class="p">,</span><span class="mi">12443</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">4386</span><span class="p">,</span><span class="mi">750</span><span class="p">,</span><span class="mi">14029</span><span class="p">,</span><span class="mi">365</span><span class="p">,</span><span class="mi">25811</span><span class="p">,</span><span class="mi">838</span><span class="p">,</span><span class="mi">20711</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">11183</span><span class="p">,</span><span class="mi">8855</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">680</span><span class="p">,</span><span class="mi">3524</span><span class="p">,</span><span class="mi">18173</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">1487</span><span class="p">,</span><span class="mi">29182</span><span class="p">,</span><span class="mi">4728</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">359</span><span class="p">,</span><span class="mi">3834</span><span class="p">,</span><span class="mi">980</span><span class="p">,</span><span class="mi">365</span><span class="p">,</span><span class="mi">254</span><span class="p">,</span><span class="mi">15838</span><span class="p">,</span><span class="mi">15748</span><span class="p">,</span><span class="mi">9817</span><span class="p">,</span><span class="mi">12774</span><span class="p">,</span><span class="mi">207</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1743</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">8800</span><span class="p">,</span><span class="mi">6659</span><span class="p">,</span><span class="mi">2451</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">3235</span><span class="p">,</span><span class="mi">2372</span><span class="p">,</span><span class="mi">274</span><span class="p">,</span><span class="mi">426</span><span class="p">,</span><span class="mi">17607</span><span class="p">,</span><span class="mi">9654</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">3458</span><span class="p">,</span><span class="mi">415</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">338</span><span class="p">,</span><span class="mi">27395</span><span class="p">,</span><span class="mi">680</span><span class="p">,</span><span class="mi">3524</span><span class="p">,</span><span class="mi">8888</span><span class="p">,</span><span class="mi">1242</span><span class="p">,</span><span class="mi">2344</span><span class="p">,</span><span class="mi">85</span><span class="p">,</span><span class="mi">1143</span><span class="p">,</span><span class="mi">372</span><span class="p">,</span><span class="mi">891</span><span class="p">,</span><span class="mi">1189</span><span class="p">,</span><span class="mi">9633</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">452</span><span class="p">,</span><span class="mi">4402</span><span class="p">,</span><span class="mi">409</span><span class="p">,</span><span class="mi">452</span><span class="p">,</span><span class="mi">7577</span><span class="p">,</span><span class="mi">680</span><span class="p">,</span><span class="mi">3524</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">3394</span><span class="p">,</span><span class="mi">417</span><span class="p">,</span><span class="mi">10184</span><span class="p">,</span><span class="mi">327</span><span class="p">,</span><span class="mi">5594</span><span class="p">,</span><span class="mi">15948</span><span class="p">,</span><span class="mi">27782</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">3888</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">285</span><span class="p">,</span><span class="mi">24729</span><span class="p">,</span><span class="mi">365</span><span class="p">,</span><span class="mi">699</span><span class="p">,</span><span class="mi">3299</span><span class="p">,</span><span class="mi">4862</span><span class="p">,</span><span class="mi">29664</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="mi">546</span><span class="p">,</span><span class="mi">1959</span><span class="p">,</span><span class="mi">12374</span><span class="p">,</span><span class="mi">280</span><span class="p">,</span><span class="mi">254</span><span class="p">,</span><span class="mi">6208</span><span class="p">,</span><span class="mi">698</span><span class="p">,</span><span class="mi">8888</span><span class="p">,</span><span class="mi">317</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">2764</span><span class="p">,</span><span class="mi">245</span><span class="p">,</span><span class="mi">6271</span><span class="p">,</span><span class="mi">207</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">27462</span><span class="p">,</span><span class="mi">12379</span><span class="p">,</span><span class="mi">344</span><span class="p">,</span><span class="mi">482</span><span class="p">,</span><span class="mi">27898</span><span class="p">,</span><span class="mi">9186</span><span class="p">,</span><span class="mi">1433</span><span class="p">,</span><span class="mi">1442</span><span class="p">,</span><span class="mi">3235</span><span class="p">,</span><span class="mi">2372</span><span class="p">,</span><span class="mi">518</span><span class="p">,</span><span class="mi">716</span><span class="p">,</span><span class="mi">31055</span><span class="p">,</span><span class="mi">9350</span><span class="p">,</span><span class="mi">9654</span><span class="p">,</span><span class="mi">2842</span><span class="p">,</span><span class="mi">331</span><span class="p">,</span><span class="mi">18125</span><span class="p">,</span><span class="mi">22168</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">997</span><span class="p">,</span><span class="mi">2445</span><span class="p">,</span><span class="mi">340</span><span class="p">,</span><span class="mi">5928</span><span class="p">,</span><span class="mi">6544</span><span class="p">,</span><span class="mi">782</span><span class="p">,</span><span class="mi">940</span><span class="p">,</span><span class="mi">6659</span><span class="p">,</span><span class="mi">4728</span><span class="p">,</span><span class="mi">1020</span><span class="p">,</span><span class="mi">2451</span><span class="p">,</span><span class="mi">518</span><span class="p">,</span><span class="mi">3235</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">1666</span><span class="p">,</span><span class="mi">1454</span><span class="p">,</span><span class="mi">4283</span><span class="p">,</span><span class="mi">1430</span><span class="p">,</span><span class="mi">14660</span><span class="p">,</span><span class="mi">276</span><span class="p">,</span><span class="mi">763</span><span class="p">,</span><span class="mi">4712</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">185</span><span class="p">],</span><span class="s2">&quot;total_duration&quot;</span><span class="p">:</span><span class="mi">3740760469</span><span class="p">,</span><span class="s2">&quot;load_duration&quot;</span><span class="p">:</span><span class="mi">8736319</span><span class="p">,</span><span class="s2">&quot;prompt_eval_count&quot;</span><span class="p">:</span><span class="mi">81</span><span class="p">,</span><span class="s2">&quot;prompt_eval_duration&quot;</span><span class="p">:</span><span class="mi">4000000</span><span class="p">,</span><span class="s2">&quot;eval_count&quot;</span><span class="p">:</span><span class="mi">353</span><span class="p">,</span><span class="s2">&quot;eval_duration&quot;</span><span class="p">:</span><span class="mi">3726000000</span><span class="p">}</span><span class="o">%</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

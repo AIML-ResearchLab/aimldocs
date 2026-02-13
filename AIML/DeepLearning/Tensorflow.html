@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Tensorflow - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tensorflow";
+        var mkdocs_page_input_path = "AIML/DeepLearning/Tensorflow.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/CrossValidation.html">Cross Validation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/HyperparameterTuning.html">Hyperparameter Tuning</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/TuningDecisionThreshold.html">Tuning decision threshold</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/SimpleLinearRegression.html">Simple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/MultipleLinearRegression.html">Multiple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/PolynomialRegression.html">Polynomial Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/RidgeLassoRegression.html">Ridge & Lasso Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/SupportVectorRegression.html">Support Vector Regression (SVR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/DecisionTreeRegression.html">Decision Tree Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.html">Random Forest Regression</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/SupportVectorMachines.html">Support Vector Machines</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/SinglelayerPerceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/StochasticGradientDescent.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/DecisionTreeClassification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KNearestNeighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/NaiveBayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/RandomForests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/BaggingClassifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/Ensemblelearningclassifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KernelSVM.html">Kernel SVM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Linear Algebra</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinearAlgebra/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Vanishing.html">Vanishing and Exploding Gradients Problems</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Components of Neural Networks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LayersNeuralNetworks.html">Layers in Neural Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/WeightsBiases.html">Weights and Biases</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/ForwardPropagation.html">Forward Propagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/ActivationFunctions.html">Activation Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LossFunctions.html">Loss Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/Backpropagation.html">Backpropagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LearningRate.html">Learning Rate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Optimization Algorithm</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/GradientDescent.html">Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/SGD.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Adam.html">Adam (Adaptive Moment Estimation)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/BatchNormalization.html">Batch Normalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Mini-batch-GD.html">Mini-batch Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Momentum-based-GO.html">Momentum-based Gradient Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/AdagradOptimizer.html">Adagrad Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.html">RMSProp Optimizer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Models</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/FNN.html">Feedforward Neural Network (FNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Recurrent Neural Network (RNN)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/RNN.html">Recurrent Neural Network (RNN)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/LSTM.html">LSTM (Long Short-Term Memory)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/GRU.html">GRU (Gated Recurrent Unit)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/CNN.html">Convolutional Neural Network (CNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/RBFN.html">Radial Basis Function Network (RBFN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/ComputerVision.html">Computer Vision</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/GANs.html">Generative Adversarial Networks (GANs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/Transformer.html">Transformer Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/Autoencoders.html">Autoencoders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/SOM.html">Self-Organizing Maps (SOM)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/nlpdetails.html">NLP Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Computer Vision</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer-Vision/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Traditional CV (Before deep learning)</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Edge-detection.md">Edge detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Feature-extraction.md">Feature extraction</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Image-filtering.md">Image filtering</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Template-matching.md">Template matching</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Optical-flow.md">Optical flow</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Histogram-analysis.md">Histogram analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Rule-based-vision-systems.md">Rule-based vision systems</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Modern CV (Deep learning–based)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Computer-Vision/CNNs.html">CNNs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/ViT.md">Vision Transformers (ViT)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/YOLO.md">YOLO</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Faster-R-CNN.md">Faster R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Mask-R-CNN.md">Mask R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Diffusion-models.md">Diffusion models (for vision generation)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Common Computer Vision tasks</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Image-classification.md">Image classification</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Object-detection.md">Object detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Face-recognition.md">Face recognition</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/OCR.md">OCR (text from images)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Medical-imaging-analysis.md">Medical imaging analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Autonomous-driving-vision.md">Autonomous driving vision</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Video-analytics.md">Video analytics</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Industrial-inspection.md">Industrial inspection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../OpenCV/OpenCV.html">OpenCV</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agentic AI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/framework.html">Framework</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/design-patterns.html">Design Patterns</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >LangGraph</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/LangGraph.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/LangGraphDetails.html">LangGraph Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/Subgraphs.html">Subgraphs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../AgenticAI/LangGraph/Interrupts.md">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/time-travel.html">Time travel</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/LangGraph-runtime.html">LangGraph runtime</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/Durable-execution.html">Durable execution</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/Install.html">Install</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/graph-api.html">Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/functional-api.html">Functional API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/local-server.html">Run local server</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/workflows.html">Workflows</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/persistence.html">Persistence</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/memory.html">Memory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/streaming.html">Streaming</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/interrupts.html">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/graph.html">Graph</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/node.html">Node</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/LangGraph/edge.html">Edge</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AgenticAI/aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >AZURE</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/AZURE/azure.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/AZURE/azure-openai-foundry-modelsure.html">Azure OpenAI Foundry models</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Agent Development Kit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/GCP/adk.html">ADK</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/GCP/Agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/GCP/Tools.html">Tools</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../AgenticAI/GCP/a2a.html">Tools</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agent to Agent(A2A)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../A2A/a2a.html">A2A</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Temporal</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/temporal-overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/setup.html">Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/core-application.html">Core application</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/Temporal-client.html">Temporal Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >MCPModel Context Protocol(MCP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../MCP/mcp.html">MCP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDatabases/PgVector.html">PgVector</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDatabases/OpenSearch.html">OpenSearch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Graph Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../GraphDatabases/neo4j-setup.html">neo4j setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GraphDatabases/neo4j-cypher.html">neo4j Cypher</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Models Details information</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Models/Ollama.html">Ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Note Book</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Notebook/allnotebook.html">All Notebook</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Pypi Library</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Pypi/Pypi-lib-details.html">Pypi Library Details</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Tensorflow</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="tf-version-of-the-code"><strong>TF Version of the code</strong><a class="headerlink" href="#tf-version-of-the-code" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_regression</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.layers</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dense</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.optimizers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SGD</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.losses</span><span class="w"> </span><span class="kn">import</span> <span class="n">MeanSquaredError</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="p">#</span><span class="w"> </span><span class="n">Generate</span><span class="w"> </span><span class="n">synthetic</span><span class="w"> </span><span class="n">data</span>
+<span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_regression</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mh">1000</span><span class="p">,</span><span class="w"> </span><span class="n">n_features</span><span class="o">=</span><span class="mh">10</span><span class="p">,</span><span class="w"> </span><span class="n">noise</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mh">1</span><span class="p">,</span><span class="w"> </span><span class="mh">1</span><span class="p">)</span><span class="w">  </span><span class="p">#</span><span class="w"> </span><span class="n">Reshape</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">match</span><span class="w"> </span><span class="k">output</span><span class="w"> </span><span class="n">dimensions</span>
+
+<span class="p">#</span><span class="w"> </span><span class="n">Split</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">into</span><span class="w"> </span><span class="n">training</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="n">sets</span>
+<span class="n">X_train</span><span class="p">,</span><span class="w"> </span><span class="n">X_test</span><span class="p">,</span><span class="w"> </span><span class="n">y_train</span><span class="p">,</span><span class="w"> </span><span class="n">y_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span><span class="w"> </span><span class="n">random_state</span><span class="o">=</span><span class="mh">42</span><span class="p">)</span>
+
+<span class="p">#</span><span class="w"> </span><span class="n">Standardize</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">data</span>
+<span class="n">scaler_X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">scaler_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">StandardScaler</span><span class="p">()</span>
+
+<span class="n">X_train</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scaler_X</span><span class="p">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scaler_X</span><span class="p">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">y_train</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scaler_y</span><span class="p">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scaler_y</span><span class="p">.</span><span class="n">transform</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Define the model
+model = Sequential()
+model.add(Dense(units=1, input_dim=X_train.shape[1], activation=&#39;linear&#39;))
+
+<span class="gh">#</span> Compile the model
+model.compile(optimizer=SGD(learning_rate=0.01), loss=MeanSquaredError())
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Train the model
+history = model.fit(X_train, y_train, epochs=1000, batch_size=32, verbose=1)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Evaluate the model
+y_pred = model.predict(X_test)
+y_pred = scaler_y.inverse_transform(y_pred)
+y_test_inverse = scaler_y.inverse_transform(y_test)
+
+<span class="gh">#</span> Plot predictions vs actual
+plt.scatter(y_test_inverse, y_pred, color=&#39;blue&#39;)
+plt.plot([y_test_inverse.min(), y_test_inverse.max()], [y_test_inverse.min(), y_test_inverse.max()], &#39;k--&#39;, lw=2)
+plt.xlabel(&#39;Actual&#39;)
+plt.ylabel(&#39;Predicted&#39;)
+plt.title(&#39;Predicted vs Actual&#39;)
+plt.show()
+</code></pre></div>
+
+<h2 id="tensorflow-version-of-the-code"><strong>Tensorflow version of the code</strong><a class="headerlink" href="#tensorflow-version-of-the-code" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Split data into training and test sets</span>
+<span class="n">X_train</span><span class="p">,</span><span class="w"> </span><span class="n">X_test</span><span class="p">,</span><span class="w"> </span><span class="n">y_train</span><span class="p">,</span><span class="w"> </span><span class="n">y_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span><span class="w"> </span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Standardize the data</span>
+<span class="n">scaler_X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">scaler_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">StandardScaler</span><span class="p">()</span>
+
+<span class="n">X_train</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scaler_X</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scaler_X</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">y_train</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scaler_y</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scaler_y</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+
+<span class="c1"># Convert to TensorFlow tensors</span>
+<span class="n">X_train</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">X_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">y_train</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">y_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>model = tf.keras.Sequential([
+    tf.keras.layers.Dense(units=1, input_dim=X_train.shape[1], activation=&#39;linear&#39;)
+])
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>model.compile(optimizer=&#39;sgd&#39;, loss=&#39;mean_squared_error&#39;)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>history = model.fit(X_train, y_train, epochs=1000, batch_size=32, verbose=1)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>y_pred = model.predict(X_test)
+y_pred = scaler_y.inverse_transform(y_pred)
+y_test_inverse = scaler_y.inverse_transform(y_test)
+
+plt.scatter(y_test_inverse, y_pred, color=&#39;blue&#39;)
+plt.plot([y_test_inverse.min(), y_test_inverse.max()], [y_test_inverse.min(), y_test_inverse.max()], &#39;k--&#39;, lw=2)
+plt.xlabel(&#39;Actual&#39;)
+plt.ylabel(&#39;Predicted&#39;)
+plt.title(&#39;Predicted vs Actual&#39;)
+plt.show()
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> making it deep using TF
+<span class="gh">#</span> Split data into training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+<span class="gh">#</span> Standardize the data
+scaler_X = StandardScaler()
+scaler_y = StandardScaler()
+
+X_train = scaler_X.fit_transform(X_train)
+X_test = scaler_X.transform(X_test)
+y_train = scaler_y.fit_transform(y_train)
+y_test = scaler_y.transform(y_test)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># Convert to TensorFlow tensors</span>
+<span class="n">X_train</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">X_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">y_train</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">y_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Define the model
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(64, input_dim=X_train.shape[1], activation=&#39;relu&#39;),
+    tf.keras.layers.Dense(32, activation=&#39;relu&#39;),
+    tf.keras.layers.Dense(16, activation=&#39;relu&#39;),
+    tf.keras.layers.Dense(1, activation=&#39;linear&#39;)
+])
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>model.summary()
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Compile the model
+model.compile(optimizer=&#39;adam&#39;, loss=&#39;mean_squared_error&#39;)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Train the model
+history = model.fit(X_train, y_train, epochs=100, batch_size=32, verbose=1)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Evaluate the model
+y_pred = model.predict(X_test)
+y_pred = scaler_y.inverse_transform(y_pred)
+y_test_inverse = scaler_y.inverse_transform(y_test)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Plot predictions vs actual
+plt.scatter(y_test_inverse, y_pred, color=&#39;blue&#39;)
+plt.plot([y_test_inverse.min(), y_test_inverse.max()], [y_test_inverse.min(), y_test_inverse.max()], &#39;k--&#39;, lw=2)
+plt.xlabel(&#39;Actual&#39;)
+plt.ylabel(&#39;Predicted&#39;)
+plt.title(&#39;Predicted vs Actual&#39;)
+plt.show()
+</code></pre></div>
+
+<h2 id="refined-intro-to-tf"><strong>Refined Intro to TF</strong><a class="headerlink" href="#refined-intro-to-tf" title="Permanent link">#</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>string = tf.Variable(&quot;this is a string&quot;, tf.string)
+string
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>string = tf.Variable(&quot;this is a string&quot;, tf.string)
+number = tf.Variable(324, tf.int16)
+floating = tf.Variable(3.567, tf.float32)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="mf">11</span><span class="o">*</span><span class="mf">8</span><span class="o">*</span><span class="mf">8</span><span class="o">*</span><span class="mf">8</span><span class="o">*</span><span class="mf">8</span><span class="o">*</span><span class="mf">8</span><span class="o">*</span><span class="mf">8</span><span class="o">*</span><span class="mf">4</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>rank1_tensor = tf.Variable([&quot;Test&quot;], tf.string)
+rank2_tensor = tf.Variable([[&quot;test&quot;, &quot;ok&quot;], [&quot;test&quot;, &quot;yes&quot;]], tf.string)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>tf.rank(rank1_tensor)
+<span class="gh">#</span>tf.shape(rank2_tensor)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>t1 = tf.zeros([1,2,3])
+t2 = tf.reshape(t1, [2,3,1])
+t3 = tf.reshape(t2, [3,-1])
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="c1">### Refined Code for TensorFlow 2.x</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+
+<span class="c1"># Tensor Creation Examples</span>
+<span class="n">string</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="s2">&quot;this is a string&quot;</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+<span class="n">number</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mi">324</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span>
+<span class="n">floating</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">3.567</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+<span class="c1"># Tensor Rank Examples</span>
+<span class="n">rank1_tensor</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">([</span><span class="s2">&quot;Test&quot;</span><span class="p">],</span> <span class="n">tf</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+<span class="n">rank2_tensor</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">([[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;ok&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;yes&quot;</span><span class="p">]],</span> <span class="n">tf</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+
+<span class="c1"># Tensor Shape Examples</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">rank</span><span class="p">(</span><span class="n">rank2_tensor</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">rank2_tensor</span><span class="p">))</span>
+
+<span class="c1"># Reshaping Tensors</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">t3</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">t2</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># Placeholder Example (TensorFlow 2.x does not have placeholders)</span>
+<span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+
+<span class="c1"># Placeholder with feed_dict Example (Converted to TensorFlow 2.x)</span>
+<span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span>
+
+<span class="n">output_x</span><span class="p">,</span> <span class="n">output_y</span><span class="p">,</span> <span class="n">output_z</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s1">&#39;Test String&#39;</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">123</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">45.67</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output_x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output_y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output_z</span><span class="p">)</span>
+
+<span class="c1"># TensorFlow Math Functions</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Matrix Multiplication</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">z</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Softmax Function</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="c1"># Cross Entropy Example</span>
+<span class="n">softmax_data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span>
+<span class="n">one_hot_data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span>
+
+<span class="n">softmax</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">softmax_data</span><span class="p">)</span>
+<span class="n">one_hot</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">one_hot_data</span><span class="p">)</span>
+
+<span class="n">cross_entropy</span> <span class="o">=</span> <span class="o">-</span><span class="n">tf</span><span class="o">.</span><span class="n">reduce_sum</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">one_hot</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">softmax</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cross_entropy</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+
+<span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+
+<span class="c1"># Tensor Creation Examples</span>
+<span class="n">string</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="s2">&quot;this is a string&quot;</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+<span class="n">number</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mi">324</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span>
+<span class="n">floating</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">3.567</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+<span class="c1"># Tensor Rank Examples</span>
+<span class="n">rank1_tensor</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">([</span><span class="s2">&quot;Test&quot;</span><span class="p">],</span> <span class="n">tf</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+<span class="n">rank2_tensor</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">([[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;ok&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;yes&quot;</span><span class="p">]],</span> <span class="n">tf</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+
+<span class="c1"># Tensor Shape Examples</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">rank</span><span class="p">(</span><span class="n">rank2_tensor</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">rank2_tensor</span><span class="p">))</span>
+
+<span class="c1"># Reshaping Tensors</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">t3</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">t2</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># Placeholder Example (TensorFlow 2.x does not have placeholders)</span>
+<span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+
+<span class="c1"># Placeholder with feed_dict Example (Converted to TensorFlow 2.x)</span>
+<span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span>
+
+<span class="n">output_x</span><span class="p">,</span> <span class="n">output_y</span><span class="p">,</span> <span class="n">output_z</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s1">&#39;Test String&#39;</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">123</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">45.67</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output_x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output_y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output_z</span><span class="p">)</span>
+
+<span class="c1"># TensorFlow Math Functions</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Matrix Multiplication</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">z</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Softmax Function</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="c1"># Cross Entropy Example</span>
+<span class="n">softmax_data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span>
+<span class="n">one_hot_data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span>
+
+<span class="n">softmax</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">softmax_data</span><span class="p">)</span>
+<span class="n">one_hot</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">one_hot_data</span><span class="p">)</span>
+
+<span class="n">cross_entropy</span> <span class="o">=</span> <span class="o">-</span><span class="n">tf</span><span class="o">.</span><span class="n">reduce_sum</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">one_hot</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">softmax</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cross_entropy</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="tf-regression"><strong>TF regression</strong><a class="headerlink" href="#tf-regression" title="Permanent link">#</a></h2>
+<h2 id="basic-regression-predict-fuel-efficiency"><strong>Basic regression: Predict fuel efficiency</strong><a class="headerlink" href="#basic-regression-predict-fuel-efficiency" title="Permanent link">#</a></h2>
+<p>In a regression problem, the aim is to predict the output of a continuous value, like a price or a probability. Contrast this with a classification problem, where the aim is to select a class from a list of classes (for example, where a picture contains an apple or an orange, recognizing which fruit is in the picture).</p>
+<p>This tutorial uses the classic Auto MPG dataset and demonstrates how to build models to predict the fuel efficiency of the late-1970s and early 1980s automobiles. To do this, you will provide the models with a description of many automobiles from that time period. This description includes attributes like cylinders, displacement, horsepower, and weight.</p>
+<div class="codehilite"><pre><span></span><code>#<span class="w"> </span><span class="n">Use</span><span class="w"> </span><span class="n">seaborn</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">pairplot</span><span class="p">.</span>
+<span class="sx">!pip install -q seaborn</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="c1"># Make NumPy printouts easier to read.</span>
+<span class="n">np</span><span class="o">.</span><span class="kp">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">suppress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="kn">import</span> <span class="n">keras</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras</span><span class="w"> </span><span class="kn">import</span> <span class="n">layers</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="the-auto-mpg-dataset"><strong>The Auto MPG dataset</strong><a class="headerlink" href="#the-auto-mpg-dataset" title="Permanent link">#</a></h2>
+<p>The dataset is available from the UCI Machine Learning Repository.
+https://archive.ics.uci.edu/</p>
+<p><strong>Get the data</strong></p>
+<p>First download and import the dataset using pandas:</p>
+<div class="codehilite"><pre><span></span><code>url = &#39;http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data&#39;
+column_names = [&#39;MPG&#39;, &#39;Cylinders&#39;, &#39;Displacement&#39;, &#39;Horsepower&#39;, &#39;Weight&#39;,
+                &#39;Acceleration&#39;, &#39;Model Year&#39;, &#39;Origin&#39;]
+
+raw_dataset = pd.read_csv(url, names=column_names,
+                          na_values=&#39;?&#39;, comment=&#39;\t&#39;,
+                          sep=&#39; &#39;, skipinitialspace=True)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>dataset = raw_dataset.copy()
+dataset.tail()
+</code></pre></div>
+
+<p><strong>Clean the data</strong></p>
+<p>The dataset contains a few unknown values:</p>
+<div class="codehilite"><pre><span></span><code>dataset.isna().sum()
+</code></pre></div>
+
+<p>Drop those rows to keep this initial tutorial simple:</p>
+<div class="codehilite"><pre><span></span><code>dataset = dataset.dropna()
+</code></pre></div>
+
+<p>The "Origin" column is categorical, not numeric. So the next step is to one-hot encode the values in the column with pd.get_dummies.</p>
+<p>Note: You can set up the tf.keras.Model to do this kind of transformation for you but that's beyond the scope of this tutorial.</p>
+<div class="codehilite"><pre><span></span><code>dataset[&#39;Origin&#39;] = dataset[&#39;Origin&#39;].map({1: &#39;USA&#39;, 2: &#39;Europe&#39;, 3: &#39;Japan&#39;})
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>dataset = pd.get_dummies(dataset, columns=[&#39;Origin&#39;], prefix=&#39;&#39;, prefix_sep=&#39;&#39;)
+dataset.tail()
+</code></pre></div>
+
+<p><strong>Split the data into training and test sets:</strong></p>
+<p>Now, split the dataset into a training set and a test set. You will use the test set in the final evaluation of your models.</p>
+<div class="codehilite"><pre><span></span><code>train_dataset = dataset.sample(frac=0.8, random_state=0)
+test_dataset = dataset.drop(train_dataset.index)
+</code></pre></div>
+
+<p><strong>Inspect the data</strong></p>
+<p>Review the joint distribution of a few pairs of columns from the training set.</p>
+<p>The top row suggests that the fuel efficiency (MPG) is a function of all the other parameters. The other rows indicate they are functions of each other.</p>
+<div class="codehilite"><pre><span></span><code>sns.pairplot(train_dataset[[&#39;MPG&#39;, &#39;Cylinders&#39;, &#39;Displacement&#39;, &#39;Weight&#39;]], diag_kind=&#39;kde&#39;)
+</code></pre></div>
+
+<p><img alt="aiml" src="img/Picture50.png" /></p>
+<div class="codehilite"><pre><span></span><code>train_dataset.describe().transpose()
+</code></pre></div>
+
+<p><strong>Split features from labels</strong></p>
+<p>Separate the target value—the "label"—from the features. This label is the value that you will train the model to predict.</p>
+<div class="codehilite"><pre><span></span><code>train_features = train_dataset.copy()
+test_features = test_dataset.copy()
+
+train_labels = train_features.pop(&#39;MPG&#39;)
+test_labels = test_features.pop(&#39;MPG&#39;)
+</code></pre></div>
+
+<p><strong>Normalization</strong></p>
+<p>In the table of statistics it's easy to see how different the ranges of each feature are:</p>
+<div class="codehilite"><pre><span></span><code>train_dataset.describe().transpose()[[&#39;mean&#39;, &#39;std&#39;]]
+</code></pre></div>
+
+<p>It is good practice to normalize features that use different scales and ranges.</p>
+<p>One reason this is important is because the features are multiplied by the model weights. So, the scale of the outputs and the scale of the gradients are affected by the scale of the inputs.</p>
+<p>Although a model might converge without feature normalization, normalization makes training much more stable.</p>
+<p>Note: There is no advantage to normalizing the one-hot features—it is done here for simplicity. For more details on how to use the preprocessing layers, refer to the Working with preprocessing layers guide and the Classify structured data using Keras preprocessing layers tutorial.</p>
+<p><strong>The Normalization layer</strong></p>
+<p>The tf.keras.layers.Normalization is a clean and simple way to add feature normalization into your model.</p>
+<p>The first step is to create the layer:</p>
+<div class="codehilite"><pre><span></span><code>normalizer = tf.keras.layers.Normalization(axis=-1)
+</code></pre></div>
+
+<p>Then, fit the state of the preprocessing layer to the data by calling Normalization.adapt:</p>
+<div class="codehilite"><pre><span></span><code>normalizer.adapt(np.array(train_features))
+</code></pre></div>
+
+<p>Calculate the mean and variance, and store them in the layer:</p>
+<div class="codehilite"><pre><span></span><code>print(normalizer.mean.numpy())
+</code></pre></div>
+
+<p>When the layer is called, it returns the input data, with each feature independently normalized:</p>
+<div class="codehilite"><pre><span></span><code>first = np.array(train_features[:1])
+
+with np.printoptions(precision=2, suppress=True):
+  print(&#39;First example:&#39;, first)
+  print()
+  print(&#39;Normalized:&#39;, normalizer(first).numpy())
+</code></pre></div>
+
+<h2 id="linear-regression"><strong>Linear regression</strong><a class="headerlink" href="#linear-regression" title="Permanent link">#</a></h2>
+<p>Before building a deep neural network model, start with linear regression using one and several variables.</p>
+<p><strong>Linear regression with one variable</strong></p>
+<p>Begin with a single-variable linear regression to predict 'MPG' from 'Horsepower'.</p>
+<p>Training a model with tf.keras typically starts by defining the model architecture. Use a tf.keras.Sequential model, which represents a sequence of steps.</p>
+<p>There are two steps in your single-variable linear regression model:</p>
+<ul>
+<li>Normalize the 'Horsepower' input features using the tf.keras.layers.Normalization preprocessing layer.</li>
+<li>Apply a linear transformation () to produce 1 output using a linear layer (tf.keras.layers.Dense).</li>
+</ul>
+<p>The number of inputs can either be set by the input_shape argument, or automatically when the model is run for the first time.</p>
+<p>First, create a NumPy array made of the 'Horsepower' features. Then, instantiate the tf.keras.layers.Normalization and fit its state to the horsepower data:</p>
+<div class="codehilite"><pre><span></span><code>horsepower = np.array(train_features[&#39;Horsepower&#39;])
+
+horsepower_normalizer = layers.Normalization(input_shape=[1,], axis=None)
+horsepower_normalizer.adapt(horsepower)
+</code></pre></div>
+
+<p>Build the Keras Sequential model:</p>
+<div class="codehilite"><pre><span></span><code>horsepower_model = tf.keras.Sequential([
+    horsepower_normalizer,
+    layers.Dense(units=1)
+])
+
+horsepower_model.summary()
+</code></pre></div>
+
+<p>This model will predict 'MPG' from 'Horsepower'
+Run the untrained model on the first 10 'Horsepower' values. The output won't be good, but notice that it has the expected shape of (10, 1):</p>
+<p>Once the model is built, configure the training procedure using the Keras Model.compile method. The most important arguments to compile are the loss and the optimizer, since these define what will be optimized (mean_absolute_error) and how (using the tf.keras.optimizers.Adam).</p>
+<div class="codehilite"><pre><span></span><code>horsepower_model.compile(
+    optimizer=tf.keras.optimizers.Adam(learning_rate=0.1),
+    loss=&#39;mean_absolute_error&#39;)
+</code></pre></div>
+
+<p>Use Keras Model.fit to execute the training for 100 epochs:</p>
+<div class="codehilite"><pre><span></span><code><span class="c">%%time</span>
+<span class="n">history</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">horsepower_model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span>
+<span class="w">    </span><span class="n">train_features</span><span class="p">[</span><span class="s">&#39;Horsepower&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="n">train_labels</span><span class="p">,</span>
+<span class="w">    </span><span class="n">epochs</span><span class="p">=</span><span class="mi">100</span><span class="p">,</span>
+<span class="w">    </span>#<span class="w"> </span><span class="n">Suppress</span><span class="w"> </span><span class="n">logging</span><span class="p">.</span>
+<span class="w">    </span><span class="n">verbose</span><span class="p">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span>#<span class="w"> </span><span class="n">Calculate</span><span class="w"> </span><span class="n">validation</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="mi">20</span><span class="c">% of the training data.</span>
+<span class="w">    </span><span class="n">validation_split</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.2</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Visualize the model's training progress using the stats stored in the history object:</p>
+<div class="codehilite"><pre><span></span><code>hist = pd.DataFrame(history.history)
+hist[&#39;epoch&#39;] = history.epoch
+hist.tail()
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">def</span><span class="w"> </span><span class="n">plot_loss</span><span class="p">(</span><span class="n">history</span><span class="p">)</span><span class="err">:</span>
+<span class="w">  </span><span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">history</span><span class="o">[</span><span class="n">&#39;loss&#39;</span><span class="o">]</span><span class="p">,</span><span class="w"> </span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;loss&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">history</span><span class="o">[</span><span class="n">&#39;val_loss&#39;</span><span class="o">]</span><span class="p">,</span><span class="w"> </span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;val_loss&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="n">plt</span><span class="p">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">[</span><span class="n">0, 10</span><span class="o">]</span><span class="p">)</span>
+<span class="w">  </span><span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epoch&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Error [MPG]&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="w">  </span><span class="n">plt</span><span class="p">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>plot_loss(history)
+</code></pre></div>
+
+<p><img alt="aiml" src="img/Picture51.png" /></p>
+<p>Collect the results on the test set for later:</p>
+<div class="codehilite"><pre><span></span><code>test_results = {}
+
+test_results[&#39;horsepower_model&#39;] = horsepower_model.evaluate(
+    test_features[&#39;Horsepower&#39;],
+    test_labels, verbose=0)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>x = tf.linspace(0.0, 250, 251)
+y = horsepower_model.predict(x)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>def plot_horsepower(x, y):
+  plt.scatter(train_features[&#39;Horsepower&#39;], train_labels, label=&#39;Data&#39;)
+  plt.plot(x, y, color=&#39;k&#39;, label=&#39;Predictions&#39;)
+  plt.xlabel(&#39;Horsepower&#39;)
+  plt.ylabel(&#39;MPG&#39;)
+  plt.legend()
+</code></pre></div>
+
+<p>Since this is a single variable regression, it's easy to view the model's predictions as a function of the input:</p>
+<div class="codehilite"><pre><span></span><code>def plot_horsepower(x, y):
+  plt.scatter(train_features[&#39;Horsepower&#39;], train_labels, label=&#39;Data&#39;)
+  plt.plot(x, y, color=&#39;k&#39;, label=&#39;Predictions&#39;)
+  plt.xlabel(&#39;Horsepower&#39;)
+  plt.ylabel(&#39;MPG&#39;)
+  plt.legend()
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>plot_horsepower(x, y)
+</code></pre></div>
+
+<p><img alt="aiml" src="img/Picture52.png" /></p>
+<h2 id="linear-regression-with-multiple-inputs"><strong>Linear regression with multiple inputs</strong><a class="headerlink" href="#linear-regression-with-multiple-inputs" title="Permanent link">#</a></h2>
+<p>You can use an almost identical setup to make predictions based on multiple inputs. This model still does the same y = mx + b except that m is a matrix and x is a vector.</p>
+<p>Create a two-step Keras Sequential model again with the first layer being normalizer (tf.keras.layers.Normalization(axis=-1)) you defined earlier and adapted to the whole dataset:</p>
+<div class="codehilite"><pre><span></span><code>linear_model = tf.keras.Sequential([
+    normalizer,
+    layers.Dense(units=1)
+])
+</code></pre></div>
+
+<p>When you call Model.predict on a batch of inputs, it produces units=1 outputs for each example:</p>
+<div class="codehilite"><pre><span></span><code>linear_model.predict(train_features[:10])
+</code></pre></div>
+
+<p>When you call the model, its weight matrices will be built—check that the kernel weights (the m in y  = mx + b) have a shape (9, 1)</p>
+<div class="codehilite"><pre><span></span><code>linear_model.layers[1].kernel
+</code></pre></div>
+
+<p>Configure the model with Keras Model.compile and train with Model.fit for 100 epochs:</p>
+<div class="codehilite"><pre><span></span><code>linear_model.compile(
+    optimizer=tf.keras.optimizers.Adam(learning_rate=0.1),
+    loss=&#39;mean_absolute_error&#39;)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="c">%%time</span>
+<span class="n">history</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">linear_model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span>
+<span class="w">    </span><span class="n">train_features</span><span class="p">,</span>
+<span class="w">    </span><span class="n">train_labels</span><span class="p">,</span>
+<span class="w">    </span><span class="n">epochs</span><span class="p">=</span><span class="mi">100</span><span class="p">,</span>
+<span class="w">    </span>#<span class="w"> </span><span class="n">Suppress</span><span class="w"> </span><span class="n">logging</span><span class="p">.</span>
+<span class="w">    </span><span class="n">verbose</span><span class="p">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span>#<span class="w"> </span><span class="n">Calculate</span><span class="w"> </span><span class="n">validation</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="mi">20</span><span class="c">% of the training data.</span>
+<span class="w">    </span><span class="n">validation_split</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.2</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Using all the inputs in this regression model achieves a much lower training and validation error than the horsepower_model, which had one input:</p>
+<p>plot_loss(history)</p>
+<p><img alt="aiml" src="img/Picture53.png" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

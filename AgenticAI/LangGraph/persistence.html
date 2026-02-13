@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ganesh kinkar Giri" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Persistence - AIML documents</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Persistence";
+        var mkdocs_page_input_path = "AgenticAI/LangGraph/persistence.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../index.html" class="icon icon-home"> AIML documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AIML</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Programing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Programing/python.html">PYTHON</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistic</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Descriptive Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Central Tendency</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mean.html">Mean</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Median.html">Median</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Central-Tendency/Mode.html">Mode</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Position (Relative Standing)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Percentiles.html">Percentiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Quartiles.html">Quartiles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Deciles.html">Deciles</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Position-Relative-Standing/Z-Score.html">Z-Score</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Shape of the Distribution</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Skewness.html">Skewness</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Shape-of-the-Distribution/Kurtosis.html">Kurtosis</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Visualization Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/Histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/BarChart.html">Bar Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/PieChart.html">Pie Chart</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/BoxPlot.html">Box Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/LinePlot.html">Line Plot</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Visualization-Tools/DotPlot.html">Dot Plot</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Measures of Dispersion (Variability)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Range.html">Range</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/Variance.html">Variance</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/StandardDeviation.html">Standard Deviation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/InterquartileRange.html">Interquartile Range(IQR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/DescriptiveStatistics/Measures-of-Dispersion/CofficientVariation.html">Cofficient of Variation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inferential Statistics</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Population and Sample</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/Population.html">Population</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/Sample.html">Sample</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Population-and-Sample/SamplingMethods.html">Sampling Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Estimation</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/PointEstimation.html">Point Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/IntervalEstimation.html">Interval Estimation</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Estimation/MarginError.html">Margin of Error</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression and Correlation Analysis</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LinearRegression.html">Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/MultipleRegression.html">Multiple Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Regression-and-Correlation-Analysis/CorrelationCoefficients.html">Correlation Coefficients</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Hypothesis Testing</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/NullHypothesis.html">Null Hypothesis (H₀)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/AlternativeHypothesis.html">Alternative Hypothesis (H₁)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TestStatistic.html">Test Statistic</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/pvalue.html">p-value</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/SignificanceLevel.html">Significance Level (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIError.html">Type I Error (α)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/TypeIIError.html">Type II Error (β)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Hypothesis-Testing/PoweroftheTest.html">Power of the Test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/t-test.html">t-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/z-test.html">z-test</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/ANOVA.html">ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Parametric-Tests/F-test.html">F-test</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-Parametric Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Mann-WhitneyU.html">Mann-Whitney U</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Kruskal-Wallis.html">Kruskal-Wallis</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Wilcoxon.html">Wilcoxon</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Non-Parametric-Tests/Chi-square.html">Chi-square</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Resampling Methods</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Resampling-Methods/Bootstrapping.html">Bootstrapping</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Resampling-Methods/Jackknife.html">Jackknife</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Analysis of Variance (ANOVA)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/One-way-ANOVA.html">One-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/Two-way-ANOVA.html">Two-way ANOVA</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/ANOVA/Post-hoc-Tests.html">Post-hoc Tests</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Probability Theory</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/ProbabilityDistributions.html">Probability Distributions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/CentralLimitTheorem.html">Central Limit Theorem</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Statistic/InferentialStatistics/Probability-Theory/BayesianInference.html">Bayesian Inference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Time Series</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Trend.html">Trend</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Seasonality.html">Seasonality</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Cyclic.html">Cyclic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Noise.html">Irregular/Noise</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Stationarity.html">Stationarity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Non-stationary.html">Non-stationary</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Autocorrelation.html">Autocorrelation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Lag.html">Lag</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/MovingAverages.html">Moving Averages</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Holt-Winters.html">Holt-Winters Method</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Additive.html">Additive</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Multiplicative.html">Multiplicative</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AR.html">AR (Auto Regression)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/ARIMA.html">ARIMA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Arimax.html">Arimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Sarimax.html">Sarimax</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Smoothing.html">Smoothing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AutomatedForecasting.html">Automated Forecasting</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/AutomatedTimeSeries.html">Automated Time Series</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Statistic/TimeSeries/Multivariate.html">Uni, Bi and Multivariate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/metrics.html">Metrics Evaluation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/timeseries.html">Time Series Old</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Statistic/statistic-details.html">Statistic Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data manipulation and analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-manipulation-and-analysis/data-manipulation-analysis.html">PANDAS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Processing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql.html">Basic SQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/sql-datascience.html">Using SQL for Data Science</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/unstructured-data.html">Unstructured Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data-processing/exploratory-data-analysis.html">Exploratory Data Analysis(EDA)</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../Data-processing/building-ml-models-on-text-data.md">Building ML Models on Text Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/PostgreSQL.html">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MySQL.html">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Databases/MongoDB.html">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Machine Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../MachineLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Supervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Regression.html">Regression</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/Classification.html">Classification</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/CrossValidation.html">Cross Validation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/HyperparameterTuning.html">Hyperparameter Tuning</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/TuningDecisionThreshold.html">Tuning decision threshold</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Regression Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/SimpleLinearRegression.html">Simple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/MultipleLinearRegression.html">Multiple Linear Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/PolynomialRegression.html">Polynomial Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/RidgeLassoRegression.html">Ridge & Lasso Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/SupportVectorRegression.html">Support Vector Regression (SVR)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/DecisionTreeRegression.html">Decision Tree Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/RegressionModels/RandomForestRegression.html">Random Forest Regression</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/LogisticRegression.html">Logistic Regression</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/SupportVectorMachines.html">Support Vector Machines</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/SinglelayerPerceptron.html">Single-layer Perceptron</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/LinearClassificationModels/StochasticGradientDescent.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Non-linear Classification Models</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/DecisionTreeClassification.html">Decision Tree Classification</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KNearestNeighbours.html">K-Nearest Neighbours</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/NaiveBayes.html">Naive Bayes</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/RandomForests.html">Random Forests</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/AdaBoost.html">AdaBoost</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/BaggingClassifier.html">Bagging Classifier</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/Ensemblelearningclassifiers.html">Ensemble learning classifiers</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../MachineLearning/SupervisedLearning/NonlinearClassificationModels/KernelSVM.html">Kernel SVM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unsupervised Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/Clustering.html">Clustering</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/UnsupervisedLearning/Pca.html">Principal Component Analysis(PCA)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Reinforcement Learning</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../MachineLearning/ReinforcementLearning/ReinforcementLearning.html">Overview</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Linear Algebra</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinearAlgebra/Overview.html">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deep Learning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DeepLearning/Vanishing.html">Vanishing and Exploding Gradients Problems</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Components of Neural Networks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LayersNeuralNetworks.html">Layers in Neural Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/WeightsBiases.html">Weights and Biases</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/ForwardPropagation.html">Forward Propagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/ActivationFunctions.html">Activation Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LossFunctions.html">Loss Functions</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/Backpropagation.html">Backpropagation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Components/LearningRate.html">Learning Rate</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Optimization Algorithm</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/GradientDescent.html">Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/SGD.html">Stochastic Gradient Descent (SGD)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Adam.html">Adam (Adaptive Moment Estimation)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/BatchNormalization.html">Batch Normalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Mini-batch-GD.html">Mini-batch Gradient Descent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/Momentum-based-GO.html">Momentum-based Gradient Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/AdagradOptimizer.html">Adagrad Optimizer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/OptimizationAlgorithm/RMSPropOptimizer.html">RMSProp Optimizer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Models</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/FNN.html">Feedforward Neural Network (FNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Recurrent Neural Network (RNN)</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/RNN.html">Recurrent Neural Network (RNN)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/LSTM.html">LSTM (Long Short-Term Memory)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../DeepLearning/Models/GRU.html">GRU (Gated Recurrent Unit)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/CNN.html">Convolutional Neural Network (CNN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/RBFN.html">Radial Basis Function Network (RBFN)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/ComputerVision.html">Computer Vision</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/GANs.html">Generative Adversarial Networks (GANs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/Transformer.html">Transformer Networks</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/Autoencoders.html">Autoencoders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DeepLearning/Models/SOM.html">Self-Organizing Maps (SOM)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Natural Language Processing(NLP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../NLP/nlpdetails.html">NLP Details</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Computer Vision</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer-Vision/Overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Traditional CV (Before deep learning)</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Edge-detection.md">Edge detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Feature-extraction.md">Feature extraction</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Image-filtering.md">Image filtering</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Template-matching.md">Template matching</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Optical-flow.md">Optical flow</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Histogram-analysis.md">Histogram analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Rule-based-vision-systems.md">Rule-based vision systems</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Modern CV (Deep learning–based)</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Computer-Vision/CNNs.html">CNNs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/ViT.md">Vision Transformers (ViT)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/YOLO.md">YOLO</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Faster-R-CNN.md">Faster R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Mask-R-CNN.md">Mask R-CNN</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Diffusion-models.md">Diffusion models (for vision generation)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Common Computer Vision tasks</a>
+    <ul>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Image-classification.md">Image classification</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Object-detection.md">Object detection</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Face-recognition.md">Face recognition</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/OCR.md">OCR (text from images)</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Medical-imaging-analysis.md">Medical imaging analysis</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Autonomous-driving-vision.md">Autonomous driving vision</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Video-analytics.md">Video analytics</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="../../Computer-Vision/Industrial-inspection.md">Industrial inspection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../OpenCV/OpenCV.html">OpenCV</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Retrieval-Augmented Generation(RAG)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RAG/rag.html">RAG</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AI agents</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AIagents/aiagents.html">AI agents</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Agentic AI</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../framework.html">Framework</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../design-patterns.html">Design Patterns</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../general.html">general</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../crewai.html">crewai</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >LangGraph</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="LangGraph.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="LangGraphDetails.html">LangGraph Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Subgraphs.html">Subgraphs</a>
+                </li>
+                <li class="toctree-l3"><a class="" href="Interrupts.md">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="time-travel.html">Time travel</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="LangGraph-runtime.html">LangGraph runtime</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Durable-execution.html">Durable execution</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="Install.html">Install</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="graph-api.html">Graph API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="functional-api.html">Functional API</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="local-server.html">Run local server</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="workflows.html">Workflows</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Persistence</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#threads">Threads</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#checkpoints">Checkpoints</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#get-state">Get state</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#get-state-history">Get state history</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#replay">Replay</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#update-state">Update state</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#memory-store">Memory Store</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#basic-usage">Basic Usage</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#semantic-search">Semantic Search</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#using-in-langgraph">Using in LangGraph</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#checkpointer-libraries">Checkpointer libraries</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#checkpointer-interface">Checkpointer interface</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#serializer">Serializer</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#serialization-with-pickle">Serialization with pickle</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#encryption">Encryption</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#capabilities">Capabilities</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="memory.html">Memory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="streaming.html">Streaming</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="interrupts.html">Interrupts</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="graph.html">Graph</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="node.html">Node</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="edge.html">Edge</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AutoGen.html">AutoGen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../aws.html">AWS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >AZURE</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../AZURE/azure.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../AZURE/azure-openai-foundry-modelsure.html">Azure OpenAI Foundry models</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Agent Development Kit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../GCP/adk.html">ADK</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../GCP/Agents.html">Agents</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../GCP/Tools.html">Tools</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../GCP/a2a.html">Tools</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Agent to Agent(A2A)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../A2A/a2a.html">A2A</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Temporal</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/temporal-overview.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/setup.html">Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/core-application.html">Core application</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Temporal/Temporal-client.html">Temporal Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >MCPModel Context Protocol(MCP)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../MCP/mcp.html">MCP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Vector Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDatabases/PgVector.html">PgVector</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../VectorDatabases/OpenSearch.html">OpenSearch</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Graph Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../GraphDatabases/neo4j-setup.html">neo4j setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GraphDatabases/neo4j-cypher.html">neo4j Cypher</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Models Details information</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Models/Ollama.html">Ollama</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Note Book</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Notebook/allnotebook.html">All Notebook</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Pypi Library</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Pypi/Pypi-lib-details.html">Pypi Library Details</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">AIML documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AIML</li>
+          <li class="breadcrumb-item">Agentic AI</li>
+          <li class="breadcrumb-item">LangGraph</li>
+      <li class="breadcrumb-item active">Persistence</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="persistence">Persistence<a class="headerlink" href="#persistence" title="Permanent link">#</a></h1>
+<p>LangGraph has a built-in persistence layer, implemented through checkpointers. When you compile a graph with a checkpointer, the checkpointer saves a <strong>checkpoint</strong> of the graph state at every super-step. Those checkpoints are saved to a thread, which can be accessed after graph execution. Because <strong>threads</strong> allow access to graph’s state after execution, several powerful capabilities including human-in-the-loop, memory, time travel, and fault-tolerance are all possible. Below, we’ll discuss each of these concepts in more detail.</p>
+<p><img alt="alt text" src="image/langgraph2.png" /></p>
+<p><strong>Note:</strong> LangGraph API handles checkpointing automatically When using the LangGraph API, you don’t need to implement or configure checkpointers manually. The API handles all persistence infrastructure for you behind the scenes.</p>
+<h2 id="threads">Threads<a class="headerlink" href="#threads" title="Permanent link">#</a></h2>
+<ul>
+<li>A thread is a unique ID or thread identifier assigned to each checkpoint saved by a checkpointer.</li>
+<li>It contains the accumulated state of a sequence of runs. When a <strong>run</strong> is executed, the <strong>state</strong> of the underlying graph of the assistant will be persisted to the thread.</li>
+</ul>
+<p>When invoking a graph with a checkpointer, you must specify a thread_id as part of the configurable portion of the config.</p>
+<div class="codehilite"><pre><span></span><code>{&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;1&quot;}}
+</code></pre></div>
+
+<p>A thread’s current and historical state can be retrieved. To persist state, a thread must be created prior to executing a run. The LangSmith API provides several endpoints for creating and managing threads and thread state.</p>
+<h2 id="checkpoints">Checkpoints<a class="headerlink" href="#checkpoints" title="Permanent link">#</a></h2>
+<p>The state of a thread at a particular point in time is called a checkpoint. Checkpoint is a snapshot of the graph state saved at each super-step and is represented by <code>StateSnapshot</code> object with the following key properties:</p>
+<ul>
+<li><strong>config:</strong> Config associated with this checkpoint.</li>
+<li><strong>metadata:</strong> Metadata associated with this checkpoint.</li>
+<li><strong>values:</strong> Values of the state channels at this point in time.</li>
+<li><strong>next</strong> A tuple of the node names to execute next in the graph.</li>
+<li><strong>tasks:</strong> A tuple of PregelTask objects that contain information about next tasks to be executed. If the step was previously attempted, it will include error information. If a graph was interrupted dynamically from within a node, tasks will contain additional data associated with interrupts.</li>
+</ul>
+<p>Checkpoints are persisted and can be used to restore the state of a thread at a later time.</p>
+<p>Let’s see what checkpoints are saved when a simple graph is invoked as follows:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.graph</span><span class="w"> </span><span class="kn">import</span> <span class="n">StateGraph</span><span class="p">,</span> <span class="n">START</span><span class="p">,</span> <span class="n">END</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.checkpoint.memory</span><span class="w"> </span><span class="kn">import</span> <span class="n">InMemorySaver</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.runnables</span><span class="w"> </span><span class="kn">import</span> <span class="n">RunnableConfig</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing_extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">TypedDict</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">operator</span><span class="w"> </span><span class="kn">import</span> <span class="n">add</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">State</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+    <span class="n">foo</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">bar</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">add</span><span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">node_a</span><span class="p">(</span><span class="n">state</span><span class="p">:</span> <span class="n">State</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;foo&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]}</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">node_b</span><span class="p">(</span><span class="n">state</span><span class="p">:</span> <span class="n">State</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;foo&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">]}</span>
+
+
+<span class="n">workflow</span> <span class="o">=</span> <span class="n">StateGraph</span><span class="p">(</span><span class="n">State</span><span class="p">)</span>
+<span class="n">workflow</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">node_a</span><span class="p">)</span>
+<span class="n">workflow</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">node_b</span><span class="p">)</span>
+<span class="n">workflow</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">START</span><span class="p">,</span> <span class="s2">&quot;node_a&quot;</span><span class="p">)</span>
+<span class="n">workflow</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="s2">&quot;node_a&quot;</span><span class="p">,</span> <span class="s2">&quot;node_b&quot;</span><span class="p">)</span>
+<span class="n">workflow</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="s2">&quot;node_b&quot;</span><span class="p">,</span> <span class="n">END</span><span class="p">)</span>
+
+<span class="n">checkpointer</span> <span class="o">=</span> <span class="n">InMemorySaver</span><span class="p">()</span>
+<span class="n">graph</span> <span class="o">=</span> <span class="n">workflow</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">checkpointer</span><span class="o">=</span><span class="n">checkpointer</span><span class="p">)</span>
+
+<span class="n">config</span><span class="p">:</span> <span class="n">RunnableConfig</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;configurable&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;thread_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">}}</span>
+<span class="n">graph</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;foo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">},</span> <span class="n">config</span><span class="p">)</span>
+</code></pre></div>
+
+<p>After we run the graph, we expect to see exactly 4 checkpoints:</p>
+<ul>
+<li>Empty checkpoint with <strong>START</strong> as the next node to be executed</li>
+<li>Checkpoint with the user input <code>{'foo': '', 'bar': []}</code> and <code>node_a</code> as the next node to be executed</li>
+<li>Checkpoint with the outputs of <code>node_a</code> <code>{'foo': 'a', 'bar': ['a']}</code> and <code>node_b</code> as the next node to be executed</li>
+</ul>
+<p>Note that we bar channel values contain outputs from both nodes as we have a reducer for bar channel.</p>
+<h2 id="get-state">Get state<a class="headerlink" href="#get-state" title="Permanent link">#</a></h2>
+<p>When interacting with the saved graph state, you <strong>must</strong> specify a <strong>thread identifier</strong>. You can view the latest state of the graph by calling <strong>graph.get_state(config)</strong>. This will return a <strong>StateSnapshot</strong> object that corresponds to the latest checkpoint associated with the thread ID provided in the config or a checkpoint associated with a checkpoint ID for the thread, if provided.</p>
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> get the latest state snapshot
+config = {&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;1&quot;}}
+graph.get_state(config)
+
+<span class="gh">#</span> get a state snapshot for a specific checkpoint_id
+config = {&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;1&quot;, &quot;checkpoint_id&quot;: &quot;1ef663ba-28fe-6528-8002-5a559208592c&quot;}}
+graph.get_state(config)
+</code></pre></div>
+
+<p>In our example, the output of <code>get_state</code> will look like this:</p>
+<div class="codehilite"><pre><span></span><code>StateSnapshot(
+    values={&#39;foo&#39;: &#39;b&#39;, &#39;bar&#39;: [&#39;a&#39;, &#39;b&#39;]},
+    next=(),
+    config={&#39;configurable&#39;: {&#39;thread_id&#39;: &#39;1&#39;, &#39;checkpoint_ns&#39;: &#39;&#39;, &#39;checkpoint_id&#39;: &#39;1ef663ba-28fe-6528-8002-5a559208592c&#39;}},
+    metadata={&#39;source&#39;: &#39;loop&#39;, &#39;writes&#39;: {&#39;node_b&#39;: {&#39;foo&#39;: &#39;b&#39;, &#39;bar&#39;: [&#39;b&#39;]}}, &#39;step&#39;: 2},
+    created_at=&#39;2024-08-29T19:19:38.821749+00:00&#39;,
+    parent_config={&#39;configurable&#39;: {&#39;thread_id&#39;: &#39;1&#39;, &#39;checkpoint_ns&#39;: &#39;&#39;, &#39;checkpoint_id&#39;: &#39;1ef663ba-28f9-6ec4-8001-31981c2c39f8&#39;}}, tasks=()
+)
+</code></pre></div>
+
+<h2 id="get-state-history">Get state history<a class="headerlink" href="#get-state-history" title="Permanent link">#</a></h2>
+<p>You can get the full history of the graph execution for a given thread by calling <code>graph.get_state_history(config)</code>. 
+This will return a list of <code>StateSnapshot</code> objects associated with the thread ID provided in the config. Importantly, the checkpoints will be ordered chronologically with the most recent checkpoint / <code>StateSnapshot</code> being the first in the list.</p>
+<div class="codehilite"><pre><span></span><code>config = {&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;1&quot;}}
+list(graph.get_state_history(config))
+</code></pre></div>
+
+<p>In our example, the output of <code>get_state_history</code> will look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">[</span>
+<span class="w">    </span><span class="n">StateSnapshot</span><span class="p">(</span>
+<span class="w">        </span><span class="n">values</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">foo</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;b&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">bar</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="sc">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;b&#39;</span><span class="p">]},</span>
+<span class="w">        </span><span class="n">next</span><span class="o">=</span><span class="p">(),</span>
+<span class="w">        </span><span class="n">config</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">configurable</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">thread_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_ns</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="m">&#39;1</span><span class="n">ef663ba</span><span class="o">-</span><span class="mf">28f</span><span class="n">e</span><span class="o">-</span><span class="mh">6528</span><span class="o">-</span><span class="mh">8002</span><span class="o">-</span><span class="mh">5</span><span class="n">a559208592c</span><span class="p">&#39;}},</span>
+<span class="w">        </span><span class="n">metadata</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">source</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;</span><span class="n">loop</span><span class="p">&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">writes</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">node_b</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">foo</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;b&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">bar</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="sc">&#39;b&#39;</span><span class="p">]}},</span><span class="w"> </span><span class="p">&#39;</span><span class="n">step</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="mh">2</span><span class="p">},</span>
+<span class="w">        </span><span class="n">created_at</span><span class="o">=</span><span class="p">&#39;</span><span class="mh">2024</span><span class="o">-</span><span class="mh">08</span><span class="o">-</span><span class="mh">29</span><span class="nl">T19:</span><span class="mh">19</span><span class="o">:</span><span class="mf">38.821749</span><span class="o">+</span><span class="mh">00</span><span class="o">:</span><span class="mh">00</span><span class="p">&#39;,</span>
+<span class="w">        </span><span class="n">parent_config</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">configurable</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">thread_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_ns</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="m">&#39;1</span><span class="n">ef663ba</span><span class="o">-</span><span class="mf">28f</span><span class="mh">9</span><span class="o">-</span><span class="mh">6</span><span class="n">ec4</span><span class="o">-</span><span class="mh">8001</span><span class="o">-</span><span class="mh">31981</span><span class="n">c2c39f8</span><span class="p">&#39;}},</span>
+<span class="w">        </span><span class="n">tasks</span><span class="o">=</span><span class="p">(),</span>
+<span class="w">    </span><span class="p">),</span>
+<span class="w">    </span><span class="n">StateSnapshot</span><span class="p">(</span>
+<span class="w">        </span><span class="n">values</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">foo</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">bar</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="sc">&#39;a&#39;</span><span class="p">]},</span>
+<span class="w">        </span><span class="n">next</span><span class="o">=</span><span class="p">(&#39;</span><span class="n">node_b</span><span class="p">&#39;,),</span>
+<span class="w">        </span><span class="n">config</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">configurable</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">thread_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_ns</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="m">&#39;1</span><span class="n">ef663ba</span><span class="o">-</span><span class="mf">28f</span><span class="mh">9</span><span class="o">-</span><span class="mh">6</span><span class="n">ec4</span><span class="o">-</span><span class="mh">8001</span><span class="o">-</span><span class="mh">31981</span><span class="n">c2c39f8</span><span class="p">&#39;}},</span>
+<span class="w">        </span><span class="n">metadata</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">source</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;</span><span class="n">loop</span><span class="p">&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">writes</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">node_a</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">foo</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">bar</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="sc">&#39;a&#39;</span><span class="p">]}},</span><span class="w"> </span><span class="p">&#39;</span><span class="n">step</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="mh">1</span><span class="p">},</span>
+<span class="w">        </span><span class="n">created_at</span><span class="o">=</span><span class="p">&#39;</span><span class="mh">2024</span><span class="o">-</span><span class="mh">08</span><span class="o">-</span><span class="mh">29</span><span class="nl">T19:</span><span class="mh">19</span><span class="o">:</span><span class="mf">38.819946</span><span class="o">+</span><span class="mh">00</span><span class="o">:</span><span class="mh">00</span><span class="p">&#39;,</span>
+<span class="w">        </span><span class="n">parent_config</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">configurable</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">thread_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_ns</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="m">&#39;1</span><span class="n">ef663ba</span><span class="o">-</span><span class="mf">28f</span><span class="mh">4</span><span class="o">-</span><span class="mh">6</span><span class="n">b4a</span><span class="o">-</span><span class="mh">8000</span><span class="o">-</span><span class="n">ca575a13d36a</span><span class="p">&#39;}},</span>
+<span class="w">        </span><span class="n">tasks</span><span class="o">=</span><span class="p">(</span><span class="n">PregelTask</span><span class="p">(</span><span class="n">id</span><span class="o">=</span><span class="p">&#39;</span><span class="mf">6f</span><span class="n">b7314f</span><span class="o">-</span><span class="n">f114</span><span class="o">-</span><span class="mh">5413</span><span class="o">-</span><span class="n">a1f3</span><span class="o">-</span><span class="n">d37dfe98ff44</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="p">&#39;</span><span class="n">node_b</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">error</span><span class="o">=</span><span class="n">None</span><span class="p">,</span><span class="w"> </span><span class="n">interrupts</span><span class="o">=</span><span class="p">()),),</span>
+<span class="w">    </span><span class="p">),</span>
+<span class="w">    </span><span class="n">StateSnapshot</span><span class="p">(</span>
+<span class="w">        </span><span class="n">values</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">foo</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">bar</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[]},</span>
+<span class="w">        </span><span class="n">next</span><span class="o">=</span><span class="p">(&#39;</span><span class="n">node_a</span><span class="p">&#39;,),</span>
+<span class="w">        </span><span class="n">config</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">configurable</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">thread_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_ns</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="m">&#39;1</span><span class="n">ef663ba</span><span class="o">-</span><span class="mf">28f</span><span class="mh">4</span><span class="o">-</span><span class="mh">6</span><span class="n">b4a</span><span class="o">-</span><span class="mh">8000</span><span class="o">-</span><span class="n">ca575a13d36a</span><span class="p">&#39;}},</span>
+<span class="w">        </span><span class="n">metadata</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">source</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;</span><span class="n">loop</span><span class="p">&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">writes</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="n">None</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">step</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="mh">0</span><span class="p">},</span>
+<span class="w">        </span><span class="n">created_at</span><span class="o">=</span><span class="p">&#39;</span><span class="mh">2024</span><span class="o">-</span><span class="mh">08</span><span class="o">-</span><span class="mh">29</span><span class="nl">T19:</span><span class="mh">19</span><span class="o">:</span><span class="mf">38.817813</span><span class="o">+</span><span class="mh">00</span><span class="o">:</span><span class="mh">00</span><span class="p">&#39;,</span>
+<span class="w">        </span><span class="n">parent_config</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">configurable</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">thread_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_ns</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="m">&#39;1</span><span class="n">ef663ba</span><span class="o">-</span><span class="mf">28f</span><span class="mh">0</span><span class="o">-</span><span class="mh">6</span><span class="n">c66</span><span class="o">-</span><span class="n">bfff</span><span class="o">-</span><span class="mf">6723431e8481</span><span class="p">&#39;}},</span>
+<span class="w">        </span><span class="n">tasks</span><span class="o">=</span><span class="p">(</span><span class="n">PregelTask</span><span class="p">(</span><span class="n">id</span><span class="o">=</span><span class="p">&#39;</span><span class="n">f1b14528</span><span class="o">-</span><span class="mh">5</span><span class="n">ee5</span><span class="o">-</span><span class="mh">579</span><span class="n">c</span><span class="o">-</span><span class="mh">949</span><span class="n">b</span><span class="o">-</span><span class="mh">23</span><span class="n">ef9bfbed58</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="p">&#39;</span><span class="n">node_a</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">error</span><span class="o">=</span><span class="n">None</span><span class="p">,</span><span class="w"> </span><span class="n">interrupts</span><span class="o">=</span><span class="p">()),),</span>
+<span class="w">    </span><span class="p">),</span>
+<span class="w">    </span><span class="n">StateSnapshot</span><span class="p">(</span>
+<span class="w">        </span><span class="n">values</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">bar</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[]},</span>
+<span class="w">        </span><span class="n">next</span><span class="o">=</span><span class="p">(&#39;</span><span class="n">__start__</span><span class="p">&#39;,),</span>
+<span class="w">        </span><span class="n">config</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">configurable</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">thread_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="sc">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_ns</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">checkpoint_id</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="m">&#39;1</span><span class="n">ef663ba</span><span class="o">-</span><span class="mf">28f</span><span class="mh">0</span><span class="o">-</span><span class="mh">6</span><span class="n">c66</span><span class="o">-</span><span class="n">bfff</span><span class="o">-</span><span class="mf">6723431e8481</span><span class="p">&#39;}},</span>
+<span class="w">        </span><span class="n">metadata</span><span class="o">=</span><span class="p">{&#39;</span><span class="n">source</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;</span><span class="k">input</span><span class="p">&#39;,</span><span class="w"> </span><span class="p">&#39;</span><span class="n">writes</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{&#39;</span><span class="n">foo</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">&#39;&#39;},</span><span class="w"> </span><span class="p">&#39;</span><span class="n">step</span><span class="p">&#39;</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="mh">1</span><span class="p">},</span>
+<span class="w">        </span><span class="n">created_at</span><span class="o">=</span><span class="p">&#39;</span><span class="mh">2024</span><span class="o">-</span><span class="mh">08</span><span class="o">-</span><span class="mh">29</span><span class="nl">T19:</span><span class="mh">19</span><span class="o">:</span><span class="mf">38.816205</span><span class="o">+</span><span class="mh">00</span><span class="o">:</span><span class="mh">00</span><span class="p">&#39;,</span>
+<span class="w">        </span><span class="n">parent_config</span><span class="o">=</span><span class="n">None</span><span class="p">,</span>
+<span class="w">        </span><span class="n">tasks</span><span class="o">=</span><span class="p">(</span><span class="n">PregelTask</span><span class="p">(</span><span class="n">id</span><span class="o">=</span><span class="p">&#39;</span><span class="mh">6</span><span class="n">d27aa2e</span><span class="o">-</span><span class="n">d72b</span><span class="o">-</span><span class="mh">5504</span><span class="o">-</span><span class="n">a36f</span><span class="o">-</span><span class="mf">8620e54</span><span class="n">a76dd</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="p">&#39;</span><span class="n">__start__</span><span class="p">&#39;,</span><span class="w"> </span><span class="n">error</span><span class="o">=</span><span class="n">None</span><span class="p">,</span><span class="w"> </span><span class="n">interrupts</span><span class="o">=</span><span class="p">()),),</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre></div>
+
+<p><img alt="alt text" src="image/langgraph3.png" /></p>
+<h2 id="replay">Replay<a class="headerlink" href="#replay" title="Permanent link">#</a></h2>
+<p>It’s also possible to play-back a prior graph execution. If we <code>invoke</code> a graph with a <code>thread_id</code> and a <code>checkpoint_id</code>, then we will re-play the previously executed steps before a checkpoint that corresponds to the checkpoint_id, and only execute the steps after the checkpoint.</p>
+<ul>
+<li><strong>thread_id</strong> is the ID of a thread.</li>
+<li><strong>checkpoint_id</strong> is an identifier that refers to a specific checkpoint within a thread.</li>
+</ul>
+<p>You must pass these when invoking the graph as part of the configurable portion of the config:</p>
+<div class="codehilite"><pre><span></span><code>config = {&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;1&quot;, &quot;checkpoint_id&quot;: &quot;0c62ca34-ac19-445d-bbb0-5b4984975b2a&quot;}}
+graph.invoke(None, config=config)
+</code></pre></div>
+
+<p>Importantly, LangGraph knows whether a particular step has been executed previously. If it has, LangGraph simply re-plays that particular step in the graph and does not re-execute the step, but only for the steps before the provided checkpoint_id. All of the steps after checkpoint_id will be executed (i.e., a new fork), even if they have been executed previously.</p>
+<p><img alt="alt text" src="image/langgraph4.png" /></p>
+<h2 id="update-state">Update state<a class="headerlink" href="#update-state" title="Permanent link">#</a></h2>
+<p>In addition to re-playing the graph from specific checkpoints, we can also edit the graph state. We do this using <strong>update_state</strong>. This method accepts three different arguments:</p>
+<p><strong>config</strong>
+The config should contain <strong>thread_id</strong> specifying which thread to update. When only the thread_id is passed, we update (or fork) the current state. Optionally, if we include <strong>checkpoint_id</strong> field, then we fork that selected checkpoint.</p>
+<p><strong>values</strong>
+These are the values that will be used to update the state. Note that this update is treated exactly as any update from a node is treated. This means that these values will be passed to the reducer functions, if they are defined for some of the channels in the graph state. This means that update_state does NOT automatically overwrite the channel values for every channel, but only for the channels without reducers. Let’s walk through an example</p>
+<p>Let’s assume you have defined the state of your graph with the following schema (see full example above):</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing_extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">TypedDict</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">operator</span><span class="w"> </span><span class="kn">import</span> <span class="n">add</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">State</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+    <span class="n">foo</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">bar</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">add</span><span class="p">]</span>
+</code></pre></div>
+
+<p>Let’s now assume the current state of the graph is</p>
+<div class="codehilite"><pre><span></span><code>{&quot;foo&quot;: 1, &quot;bar&quot;: [&quot;a&quot;]}
+</code></pre></div>
+
+<p>If you update the state as below:</p>
+<div class="codehilite"><pre><span></span><code>graph.update_state(config, {&quot;foo&quot;: 2, &quot;bar&quot;: [&quot;b&quot;]})
+</code></pre></div>
+
+<p>Then the new state of the graph will be:</p>
+<div class="codehilite"><pre><span></span><code>{&quot;foo&quot;: 2, &quot;bar&quot;: [&quot;a&quot;, &quot;b&quot;]}
+</code></pre></div>
+
+<p>The foo key (channel) is completely changed (because there is no reducer specified for that channel, so update_state overwrites it). However, there is a reducer specified for the bar key, and so it appends "b" to the state of bar.</p>
+<p><strong>as_node</strong></p>
+<p>The final thing you can optionally specify when calling update_state is as_node. If you provided it, the update will be applied as if it came from node as_node. If as_node is not provided, it will be set to the last node that updated the state, if not ambiguous. The reason this matters is that the next steps to execute depend on the last node to have given an update, so this can be used to control which node executes next. </p>
+<p><img alt="alt text" src="image/langgraph5.png" /></p>
+<h2 id="memory-store">Memory Store<a class="headerlink" href="#memory-store" title="Permanent link">#</a></h2>
+<p><img alt="alt text" src="image/langgraph6.png" /></p>
+<p>A <strong>state schema</strong> specifies a set of keys that are populated as a graph is executed. As discussed above, state can be written by a checkpointer to a thread at each graph step, enabling state persistence.</p>
+<p>But, what if we want to retain some information across threads? Consider the case of a chatbot where we want to retain specific information about the user across all chat conversations (e.g., threads) with that user!</p>
+<p>With checkpointers alone, we cannot share information across threads. This motivates the need for the Store interface. As an illustration, we can define an <strong>InMemoryStore</strong> to store information about a user across threads. We simply compile our graph with a checkpointer, as before, and with our new <code>in_memory_store</code> variable.</p>
+<p><strong>Note:</strong> LangGraph API handles stores automatically When using the LangGraph API, you don’t need to implement or configure stores manually. The API handles all storage infrastructure for you behind the scenes.</p>
+<h2 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">#</a></h2>
+<p>First, let’s showcase this in isolation without using LangGraph.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.store.memory</span><span class="w"> </span><span class="kn">import</span> <span class="n">InMemoryStore</span>
+<span class="n">in_memory_store</span> <span class="o">=</span> <span class="n">InMemoryStore</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Memories are namespaced by a tuple, which in this specific example will be <code>(&lt;user_id&gt;, "memories")</code>. The namespace can be any length and represent anything, does not have to be user specific.</p>
+<div class="codehilite"><pre><span></span><code>user_id = &quot;1&quot;
+namespace_for_memory = (user_id, &quot;memories&quot;)
+</code></pre></div>
+
+<p>We use the <strong>store.put</strong> method to save memories to our namespace in the store. When we do this, we specify the namespace, as defined above, and a key-value pair for the memory: the key is simply a unique identifier for the memory (memory_id) and the value (a dictionary) is the memory itself.</p>
+<div class="codehilite"><pre><span></span><code>memory_id = str(uuid.uuid4())
+memory = {&quot;food_preference&quot; : &quot;I like pizza&quot;}
+in_memory_store.put(namespace_for_memory, memory_id, memory)
+</code></pre></div>
+
+<p>We can read out memories in our namespace using the <strong>store.search</strong> method, which will return all memories for a given user as a list. The most recent memory is the last in the list.</p>
+<div class="codehilite"><pre><span></span><code>memories = in_memory_store.search(namespace_for_memory)
+memories[-1].dict()
+{&#39;value&#39;: {&#39;food_preference&#39;: &#39;I like pizza&#39;},
+ &#39;key&#39;: &#39;07e0caf4-1631-47b7-b15f-65515d4c1843&#39;,
+ &#39;namespace&#39;: [&#39;1&#39;, &#39;memories&#39;],
+ &#39;created_at&#39;: &#39;2024-10-02T17:22:31.590602+00:00&#39;,
+ &#39;updated_at&#39;: &#39;2024-10-02T17:22:31.590605+00:00&#39;}
+</code></pre></div>
+
+<p>Each memory type is a Python class (Item) with certain attributes. We can access it as a dictionary by converting via .dict as above.</p>
+<p>The attributes it has are:</p>
+<ul>
+<li><strong>value:</strong> The value (itself a dictionary) of this memory</li>
+<li><strong>key:</strong> A unique key for this memory in this namespace</li>
+<li><strong>namespace:</strong> A list of strings, the namespace of this memory type</li>
+<li><strong>created_at:</strong> Timestamp for when this memory was created</li>
+<li><strong>updated_at:</strong> Timestamp for when this memory was updated</li>
+</ul>
+<h2 id="semantic-search">Semantic Search<a class="headerlink" href="#semantic-search" title="Permanent link">#</a></h2>
+<p>Beyond simple retrieval, the store also supports semantic search, allowing you to find memories based on meaning rather than exact matches. To enable this, configure the store with an embedding model:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.embeddings</span><span class="w"> </span><span class="kn">import</span> <span class="n">init_embeddings</span>
+
+<span class="n">store</span> <span class="o">=</span> <span class="n">InMemoryStore</span><span class="p">(</span>
+    <span class="n">index</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;embed&quot;</span><span class="p">:</span> <span class="n">init_embeddings</span><span class="p">(</span><span class="s2">&quot;openai:text-embedding-3-small&quot;</span><span class="p">),</span>  <span class="c1"># Embedding provider</span>
+        <span class="s2">&quot;dims&quot;</span><span class="p">:</span> <span class="mi">1536</span><span class="p">,</span>                              <span class="c1"># Embedding dimensions</span>
+        <span class="s2">&quot;fields&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;food_preference&quot;</span><span class="p">,</span> <span class="s2">&quot;$&quot;</span><span class="p">]</span>              <span class="c1"># Fields to embed</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p>Now when searching, you can use natural language queries to find relevant memories:</p>
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Find memories about food preferences
+<span class="gh">#</span> (This can be done after putting memories into the store)
+memories = store.search(
+    namespace_for_memory,
+    query=&quot;What does the user like to eat?&quot;,
+    limit=3  # Return top 3 matches
+)
+</code></pre></div>
+
+<p>You can control which parts of your memories get embedded by configuring the fields parameter or by specifying the index parameter when storing memories:</p>
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Store with specific fields to embed
+store.put(
+    namespace_for_memory,
+    str(uuid.uuid4()),
+    {
+        &quot;food_preference&quot;: &quot;I love Italian cuisine&quot;,
+        &quot;context&quot;: &quot;Discussing dinner plans&quot;
+    },
+    index=[&quot;food_preference&quot;]  # Only embed &quot;food_preferences&quot; field
+)
+
+<span class="gh">#</span> Store without embedding (still retrievable, but not searchable)
+store.put(
+    namespace_for_memory,
+    str(uuid.uuid4()),
+    {&quot;system_info&quot;: &quot;Last updated: 2024-01-01&quot;},
+    index=False
+)
+</code></pre></div>
+
+<h2 id="using-in-langgraph">Using in LangGraph<a class="headerlink" href="#using-in-langgraph" title="Permanent link">#</a></h2>
+<p>With this all in place, we use the <code>in_memory_store</code> in LangGraph. The in_memory_store works hand-in-hand with the checkpointer: the checkpointer saves state to threads, as discussed above, and the in_memory_store allows us to store arbitrary information for access across threads. We compile the graph with both the checkpointer and the in_memory_store as follows.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.checkpoint.memory</span><span class="w"> </span><span class="kn">import</span> <span class="n">InMemorySaver</span>
+
+<span class="c1"># We need this because we want to enable threads (conversations)</span>
+<span class="n">checkpointer</span> <span class="o">=</span> <span class="n">InMemorySaver</span><span class="p">()</span>
+
+<span class="c1"># ... Define the graph ...</span>
+
+<span class="c1"># Compile the graph with the checkpointer and store</span>
+<span class="n">graph</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">checkpointer</span><span class="o">=</span><span class="n">checkpointer</span><span class="p">,</span> <span class="n">store</span><span class="o">=</span><span class="n">in_memory_store</span><span class="p">)</span>
+</code></pre></div>
+
+<p>We invoke the graph with a thread_id, as before, and also with a user_id, which we’ll use to namespace our memories to this particular user as we showed above.</p>
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Invoke the graph
+user_id = &quot;1&quot;
+config = {&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;1&quot;, &quot;user_id&quot;: user_id}}
+
+<span class="gh">#</span> First let&#39;s just say hi to the AI
+for update in graph.stream(
+    {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;hi&quot;}]}, config, stream_mode=&quot;updates&quot;
+):
+    print(update)
+</code></pre></div>
+
+<p>We can access the in_memory_store and the user_id in any node by passing store: BaseStore and config: RunnableConfig as node arguments. Here’s how we might use semantic search in a node to find relevant memories:</p>
+<div class="codehilite"><pre><span></span><code>def update_memory(state: MessagesState, config: RunnableConfig, *, store: BaseStore):
+
+    # Get the user id from the config
+    user_id = config[&quot;configurable&quot;][&quot;user_id&quot;]
+
+    # Namespace the memory
+    namespace = (user_id, &quot;memories&quot;)
+
+    # ... Analyze conversation and create a new memory
+
+    # Create a new memory ID
+    memory_id = str(uuid.uuid4())
+
+    # We create a new memory
+    store.put(namespace, memory_id, {&quot;memory&quot;: memory})
+</code></pre></div>
+
+<p>As we showed above, we can also access the store in any node and use the store.search method to get memories. Recall the memories are returned as a list of objects that can be converted to a dictionary.</p>
+<div class="codehilite"><pre><span></span><code>memories[-1].dict()
+{&#39;value&#39;: {&#39;food_preference&#39;: &#39;I like pizza&#39;},
+ &#39;key&#39;: &#39;07e0caf4-1631-47b7-b15f-65515d4c1843&#39;,
+ &#39;namespace&#39;: [&#39;1&#39;, &#39;memories&#39;],
+ &#39;created_at&#39;: &#39;2024-10-02T17:22:31.590602+00:00&#39;,
+ &#39;updated_at&#39;: &#39;2024-10-02T17:22:31.590605+00:00&#39;}
+</code></pre></div>
+
+<p>We can access the memories and use them in our model call.</p>
+<div class="codehilite"><pre><span></span><code>def call_model(state: MessagesState, config: RunnableConfig, *, store: BaseStore):
+    # Get the user id from the config
+    user_id = config[&quot;configurable&quot;][&quot;user_id&quot;]
+
+    # Namespace the memory
+    namespace = (user_id, &quot;memories&quot;)
+
+    # Search based on the most recent message
+    memories = store.search(
+        namespace,
+        query=state[&quot;messages&quot;][-1].content,
+        limit=3
+    )
+    info = &quot;\n&quot;.join([d.value[&quot;memory&quot;] for d in memories])
+
+    # ... Use memories in the model call
+</code></pre></div>
+
+<p>If we create a new thread, we can still access the same memories so long as the user_id is the same.</p>
+<div class="codehilite"><pre><span></span><code><span class="gh">#</span> Invoke the graph
+config = {&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;2&quot;, &quot;user_id&quot;: &quot;1&quot;}}
+
+<span class="gh">#</span> Let&#39;s say hi again
+for update in graph.stream(
+    {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;hi, tell me about my memories&quot;}]}, config, stream_mode=&quot;updates&quot;
+):
+    print(update)
+</code></pre></div>
+
+<p>When we use the LangSmith, either locally (e.g., in Studio) or hosted with LangSmith, the base store is available to use by default and does not need to be specified during graph compilation. To enable semantic search, however, you do need to configure the indexing settings in your langgraph.json file. For example:</p>
+<div class="codehilite"><pre><span></span><code>{
+    ...
+    &quot;store&quot;: {
+        &quot;index&quot;: {
+            &quot;embed&quot;: &quot;openai:text-embeddings-3-small&quot;,
+            &quot;dims&quot;: 1536,
+            &quot;fields&quot;: [&quot;$&quot;]
+        }
+    }
+}
+</code></pre></div>
+
+<p><strong>Deployment guide:</strong> https://docs.langchain.com/langsmith/semantic-search</p>
+<h2 id="checkpointer-libraries">Checkpointer libraries<a class="headerlink" href="#checkpointer-libraries" title="Permanent link">#</a></h2>
+<p>Under the hood, checkpointing is powered by checkpointer objects that conform to <strong>BaseCheckpointSaver</strong> interface. LangGraph provides several checkpointer implementations, all implemented via standalone, installable libraries:</p>
+<ul>
+<li><strong>langgraph-checkpoint:</strong> The base interface for checkpointer savers.</li>
+<li><strong>(BaseCheckpointSaver)</strong> and serialization/deserialization interface <strong>(SerializerProtocol)</strong>.</li>
+<li>Includes in-memory checkpointer implementation <strong>(InMemorySaver)</strong> for experimentation. </li>
+<li>
+<p>LangGraph comes with <strong>langgraph-checkpoint</strong> included.</p>
+</li>
+<li>
+<p><strong>langgraph-checkpoint-sqlite:</strong> An implementation of LangGraph checkpointer that uses SQLite database <strong>(SqliteSaver / AsyncSqliteSaver)</strong>. Ideal for experimentation and local workflows. Needs to be installed separately.</p>
+</li>
+<li>
+<p><strong>langgraph-checkpoint-postgres:</strong> An advanced checkpointer that uses Postgres database <strong>(PostgresSaver / AsyncPostgresSaver)</strong>, used in LangSmith. Ideal for using in production. Needs to be installed separately.</p>
+</li>
+</ul>
+<h2 id="checkpointer-interface">Checkpointer interface<a class="headerlink" href="#checkpointer-interface" title="Permanent link">#</a></h2>
+<p>Each checkpointer conforms to <strong>BaseCheckpointSaver</strong> interface and implements the following methods:</p>
+<ul>
+<li><strong>.put</strong> - Store a checkpoint with its configuration and metadata.</li>
+<li><strong>.put_writes</strong> - Store intermediate writes linked to a checkpoint (i.e. pending writes).</li>
+<li><strong>.get_tuple</strong> - Fetch a checkpoint tuple using for a given configuration (thread_id and checkpoint_id). This is used to populate StateSnapshot in graph.get_state().</li>
+<li><strong>.list</strong> - List checkpoints that match a given configuration and filter criteria. This is used to populate state history in <strong>graph.get_state_history()</strong></li>
+</ul>
+<p>If the checkpointer is used with asynchronous graph execution (i.e. executing the graph via <code>.ainvoke</code>, <code>.astream</code>, .<code>abatch</code>), asynchronous versions of the above methods will be used (<code>.aput</code>, <code>.aput_writes</code>, <code>.aget_tuple</code>, <code>.alist</code>).</p>
+<h2 id="serializer">Serializer<a class="headerlink" href="#serializer" title="Permanent link">#</a></h2>
+<p>When checkpointers save the graph state, they need to serialize the channel values in the state. This is done using serializer objects.</p>
+<p>langgraph_checkpoint defines protocol for implementing serializers provides a default implementation <strong>(JsonPlusSerializer)</strong> that handles a wide variety of types, including LangChain and LangGraph primitives, datetimes, enums and more.</p>
+<h2 id="serialization-with-pickle">Serialization with pickle<a class="headerlink" href="#serialization-with-pickle" title="Permanent link">#</a></h2>
+<p>The default serializer, JsonPlusSerializer, uses ormsgpack and JSON under the hood, which is not suitable for all types of objects.</p>
+<p>If you want to fallback to pickle for objects not currently supported by our msgpack encoder (such as Pandas dataframes), you can use the <strong>pickle_fallback</strong> argument of the <strong>JsonPlusSerializer</strong>:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.checkpoint.memory</span><span class="w"> </span><span class="kn">import</span> <span class="n">InMemorySaver</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.checkpoint.serde.jsonplus</span><span class="w"> </span><span class="kn">import</span> <span class="n">JsonPlusSerializer</span>
+
+<span class="c1"># ... Define the graph ...</span>
+<span class="n">graph</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+    <span class="n">checkpointer</span><span class="o">=</span><span class="n">InMemorySaver</span><span class="p">(</span><span class="n">serde</span><span class="o">=</span><span class="n">JsonPlusSerializer</span><span class="p">(</span><span class="n">pickle_fallback</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="encryption">Encryption<a class="headerlink" href="#encryption" title="Permanent link">#</a></h2>
+<p>Checkpointers can optionally encrypt all persisted state. To enable this, pass an instance of <strong>EncryptedSerializer</strong> to the serde argument of any <strong>BaseCheckpointSaver</strong> implementation. </p>
+<p>The easiest way to create an encrypted serializer is via <strong>from_pycryptodome_aes</strong>, which reads the AES key from the <strong>LANGGRAPH_AES_KEY</strong> environment variable (or accepts a key argument):</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">sqlite3</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.checkpoint.serde.encrypted</span><span class="w"> </span><span class="kn">import</span> <span class="n">EncryptedSerializer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.checkpoint.sqlite</span><span class="w"> </span><span class="kn">import</span> <span class="n">SqliteSaver</span>
+
+<span class="n">serde</span> <span class="o">=</span> <span class="n">EncryptedSerializer</span><span class="o">.</span><span class="n">from_pycryptodome_aes</span><span class="p">()</span>  <span class="c1"># reads LANGGRAPH_AES_KEY</span>
+<span class="n">checkpointer</span> <span class="o">=</span> <span class="n">SqliteSaver</span><span class="p">(</span><span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;checkpoint.db&quot;</span><span class="p">),</span> <span class="n">serde</span><span class="o">=</span><span class="n">serde</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.checkpoint.serde.encrypted</span><span class="w"> </span><span class="kn">import</span> <span class="n">EncryptedSerializer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langgraph.checkpoint.postgres</span><span class="w"> </span><span class="kn">import</span> <span class="n">PostgresSaver</span>
+
+<span class="n">serde</span> <span class="o">=</span> <span class="n">EncryptedSerializer</span><span class="o">.</span><span class="n">from_pycryptodome_aes</span><span class="p">()</span>
+<span class="n">checkpointer</span> <span class="o">=</span> <span class="n">PostgresSaver</span><span class="o">.</span><span class="n">from_conn_string</span><span class="p">(</span><span class="s2">&quot;postgresql://...&quot;</span><span class="p">,</span> <span class="n">serde</span><span class="o">=</span><span class="n">serde</span><span class="p">)</span>
+<span class="n">checkpointer</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span>
+</code></pre></div>
+
+<p>When running on LangSmith, encryption is automatically enabled whenever LANGGRAPH_AES_KEY is present, so you only need to provide the environment variable. Other encryption schemes can be used by implementing <strong>CipherProtocol</strong> and supplying it to <strong>EncryptedSerializer</strong>.</p>
+<h2 id="capabilities">Capabilities<a class="headerlink" href="#capabilities" title="Permanent link">#</a></h2>
+<ul>
+<li>
+<p><strong>Human-in-the-loop</strong>
+First, checkpointers facilitate human-in-the-loop workflows workflows by allowing humans to inspect, interrupt, and approve graph steps. Checkpointers are needed for these workflows as the human has to be able to view the state of a graph at any point in time, and the graph has to be to resume execution after the human has made any updates to the state.</p>
+</li>
+<li>
+<p><strong>Memory</strong>
+Second, checkpointers allow for “memory” between interactions. In the case of repeated human interactions (like conversations) any follow up messages can be sent to that thread, which will retain its memory of previous ones. See Add memory for information on how to add and manage conversation memory using checkpointers.</p>
+</li>
+<li>
+<p><strong>Time Travel</strong>
+Third, checkpointers allow for “time travel”, allowing users to replay prior graph executions to review and / or debug specific graph steps. In addition, checkpointers make it possible to fork the graph state at arbitrary checkpoints to explore alternative trajectories.</p>
+</li>
+<li>
+<p><strong>Fault-tolerance</strong>
+Lastly, checkpointing also provides fault-tolerance and error recovery: if one or more nodes fail at a given superstep, you can restart your graph from the last successful step. Additionally, when a graph node fails mid-execution at a given superstep, LangGraph stores pending checkpoint writes from any other nodes that completed successfully at that superstep, so that whenever we resume graph execution from that superstep we don’t re-run the successful nodes.</p>
+</li>
+<li>
+<p><strong>Pending writes</strong>
+Additionally, when a graph node fails mid-execution at a given superstep, LangGraph stores pending checkpoint writes from any other nodes that completed successfully at that superstep, so that whenever we resume graph execution from that superstep we don’t re-run the successful nodes.</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="agents.html" class="btn btn-neutral float-left" title="Agents"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="memory.html" class="btn btn-neutral float-right" title="Memory">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="agents.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="memory.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
