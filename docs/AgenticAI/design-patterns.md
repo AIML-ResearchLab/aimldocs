@@ -215,3 +215,163 @@
 | 75 | Feature Flags for Autonomy  | Lifecycle            | Toggle automation level          | Gradual rollout           |
 
 
+# 🧠 Agentic AI Enterprise Patterns — Single Master Table
+| Pattern                        | 16-Layer Mapping          | LLM vs Non-LLM | Primary Agent Role        |
+| ------------------------------ | ------------------------- | -------------- | ------------------------- |
+| Chain-of-Thought (CoT)         | Agent Runtime             | LLM Mandatory  | Planner                   |
+| Tree-of-Thought (ToT)          | Agent Runtime             | LLM Mandatory  | Planner                   |
+| ReAct (Reason+Act)             | Runtime + Tools           | Hybrid         | Planner → Executor        |
+| Plan-Act                       | Orchestration (LangGraph) | Non-LLM        | Orchestrator              |
+| Plan-Act-Reflect               | Orchestrator + Reflection | Hybrid         | Orchestrator + Reflection |
+| Reflection / Self-Critique     | Reflection Layer          | LLM Mandatory  | Reflection                |
+| Critic-Planner (Maker-Checker) | Governance                | Hybrid         | Validator                 |
+| Reasoner-Planner-Executor      | Control Plane             | Hybrid         | Orchestrator              |
+| World-Model State Tracking     | State & Memory            | Non-LLM        | Orchestrator              |
+
+# Multi-Agent Collaboration
+| Pattern               | 16-Layer Mapping     | LLM vs Non-LLM | Primary Agent Role |
+| --------------------- | -------------------- | -------------- | ------------------ |
+| Hierarchical Agents   | Control Plane        | Non-LLM        | Orchestrator       |
+| Peer-to-Peer Agents   | Agent Runtime        | Hybrid         | Planner            |
+| Role-Based Agents     | Registry & Discovery | Non-LLM        | Orchestrator       |
+| Debate / Consensus    | Governance           | LLM Mandatory  | Validator          |
+| Swarm Parallel Agents | Runtime              | Non-LLM        | Executor           |
+| Agent Mesh (A2A Bus)  | Integration Layer    | Non-LLM        | Orchestrator       |
+
+# Orchestration & Control
+| Pattern                        | 16-Layer Mapping | LLM vs Non-LLM | Primary Agent Role |
+| ------------------------------ | ---------------- | -------------- | ------------------ |
+| Sequential Orchestration (DAG) | Control Plane    | Non-LLM        | Orchestrator       |
+| Parallel Orchestration         | Control Plane    | Non-LLM        | Orchestrator       |
+| Dynamic Routing                | Control Plane    | Hybrid         | Orchestrator       |
+| Handoff Pattern                | Control Plane    | Non-LLM        | Orchestrator       |
+| Group Chat Orchestration       | Runtime          | LLM Mandatory  | Planner            |
+| Event-Driven Agents            | Input Layer      | Non-LLM        | Orchestrator       |
+| Workflow Graph (LangGraph)     | Control Plane    | Non-LLM        | Orchestrator       |
+| Control-Plane-as-Tool          | Tools Layer      | Non-LLM        | Executor           |
+
+# Tooling & Action
+| Pattern             | 16-Layer Mapping    | LLM vs Non-LLM | Primary Agent Role |
+| ------------------- | ------------------- | -------------- | ------------------ |
+| Tool-Use Selection  | Tools & Integration | Hybrid         | Planner            |
+| Function Calling    | LLM Abstraction     | Hybrid         | Planner            |
+| Skill Library       | Registry            | Non-LLM        | Orchestrator       |
+| Runbook Automation  | Execution Layer     | Non-LLM        | Executor           |
+| Capability Routing  | Registry            | Non-LLM        | Orchestrator       |
+| Sandboxed Execution | Security Layer      | Non-LLM        | Executor           |
+
+# Memory & Knowledge
+| Pattern                    | 16-Layer Mapping | LLM vs Non-LLM | Primary Agent Role |
+| -------------------------- | ---------------- | -------------- | ------------------ |
+| Short-Term Memory          | State Layer      | Non-LLM        | Orchestrator       |
+| Long-Term Memory           | Memory DB        | Non-LLM        | Orchestrator       |
+| RAG Retrieval              | Knowledge Layer  | Hybrid         | Planner            |
+| Episodic Memory            | State Layer      | Non-LLM        | Reflection         |
+| Semantic Cache             | FinOps Layer     | Non-LLM        | Orchestrator       |
+| Stateful Agent Checkpoints | Orchestrator     | Non-LLM        | Orchestrator       |
+
+# Governance, Safety, HITL
+| Pattern                         | 16-Layer Mapping | LLM vs Non-LLM | Primary Agent Role |
+| ------------------------------- | ---------------- | -------------- | ------------------ |
+| Human-in-the-Loop (HITL)        | HITL Layer       | Non-LLM        | Validator          |
+| Policy Guardrails (OPA/Cedar)   | Policy Layer     | Non-LLM        | Validator          |
+| RBAC/ABAC for Agents            | Security Layer   | Non-LLM        | Validator          |
+| Risk-Based Autonomy             | Governance       | Hybrid         | Validator          |
+| Audit Trail                     | Audit Layer      | Non-LLM        | Orchestrator       |
+| Explainability (Evidence-First) | Governance       | Hybrid         | Reflection         |
+
+# Observability & Evaluation
+| Pattern                        | 16-Layer Mapping | LLM vs Non-LLM | Primary Agent Role |
+| ------------------------------ | ---------------- | -------------- | ------------------ |
+| Telemetry-Driven Agents        | Input Layer      | Non-LLM        | Orchestrator       |
+| Outcome-Based Evaluation (KPI) | Observability    | Non-LLM        | Reflection         |
+| Confidence Scoring             | Reflection       | Hybrid         | Reflection         |
+| Canary Execution               | Deployment       | Non-LLM        | Executor           |
+| Feedback Loop Learning         | Learning Layer   | Hybrid         | Reflection         |
+| Digital Twin Simulation        | Governance       | Non-LLM        | Validator          |
+
+# Cost & Performance
+| Pattern                   | 16-Layer Mapping | LLM vs Non-LLM | Primary Agent Role |
+| ------------------------- | ---------------- | -------------- | ------------------ |
+| Model Routing             | LLM Abstraction  | Non-LLM        | Orchestrator       |
+| Adaptive Autonomy         | Control Plane    | Hybrid         | Orchestrator       |
+| Batch Reasoning           | Runtime          | Non-LLM        | Executor           |
+| Caching (Semantic/Output) | State Layer      | Non-LLM        | Orchestrator       |
+| Elastic Agent Scaling     | Deployment       | Non-LLM        | Executor           |
+
+# Lifecycle & Deployment
+| Pattern                    | 16-Layer Mapping | LLM vs Non-LLM | Primary Agent Role |
+| -------------------------- | ---------------- | -------------- | ------------------ |
+| Agent Registry & Discovery | Registry Layer   | Non-LLM        | Orchestrator       |
+| Versioned Agents           | Lifecycle Layer  | Non-LLM        | Orchestrator       |
+| Blue-Green Deployment      | Deployment       | Non-LLM        | Executor           |
+| Shadow Mode Agents         | Observability    | Non-LLM        | Reflection         |
+| Policy-as-Code             | Governance       | Non-LLM        | Validator          |
+| Continuous Evaluation (CE) | MLOps            | Hybrid         | Reflection         |
+
+# Communication & Transactions
+| Pattern                        | 16-Layer Mapping  | LLM vs Non-LLM | Primary Agent Role |
+| ------------------------------ | ----------------- | -------------- | ------------------ |
+| Message Bus (Kafka/Pulsar)     | Integration Layer | Non-LLM        | Orchestrator       |
+| Contract-Based Messaging (A2A) | Integration       | Non-LLM        | Orchestrator       |
+| Event Sourcing                 | State Layer       | Non-LLM        | Orchestrator       |
+| Saga Pattern                   | Orchestrator      | Non-LLM        | Orchestrator       |
+
+
+# ✅ Single Master Table (Enterprise)
+| Pattern                         | When to Use (Use Case)                        | Example (How to use)                                                           | Planner Agent                         | Executor Agent                       | Validator Agent                              | Reflection Agent                         |
+| ------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------- | ------------------------------------ | -------------------------------------------- | ---------------------------------------- |
+| Chain-of-Thought (CoT)          | RCA, risk reasoning, policy interpretation    | Planner reasons through evidence (metrics/logs) to propose safest remediation  | **LLM Required**                      | N/A                                  | N/A                                          | **LLM Optional** (quality review)        |
+| Tree-of-Thought (ToT)           | Multiple remediation options                  | Generate 3–5 options (restart/scale/rollback), score and pick best             | **LLM Required**                      | N/A                                  | N/A                                          | **LLM Required** (branch outcome review) |
+| ReAct (Reason+Act)              | Investigation requiring tools                 | Query Prometheus → logs → CMDB → decide action                                 | **LLM Required**                      | **Non-LLM** (tool calls)             | **Non-LLM** (policy gate)                    | **LLM Required** (did it work?)          |
+| Plan-Act                        | Approved runbooks, patch workflows            | Orchestrator runs deterministic steps: drain→patch→verify                      | **LLM Optional** (plan draft)         | **Non-LLM Required**                 | **Non-LLM Required**                         | **Hybrid** (Non-LLM KPI + LLM summary)   |
+| Plan-Act-Reflect                | Continuous improvement automation             | Execute fix → reflect → update future decision policy                          | **LLM Required**                      | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Required**                         |
+| Reflection / Self-Critique      | Reduce hallucination, validate outputs        | Reflection agent checks proposed action against evidence + constraints         | **LLM Optional**                      | N/A                                  | **LLM Optional** (critique) + Non-LLM policy | **LLM Required**                         |
+| Critic-Planner (Maker-Checker)  | High-risk actions (DB restart, prod rollback) | Planner proposes → validator rejects if outside window → propose alternate     | **LLM Required**                      | **Non-LLM** (if approved)            | **Non-LLM Required** + **LLM Optional**      | **LLM Required**                         |
+| Reasoner-Planner-Executor       | Enterprise separation of duties               | Planner decides “scale to 10” → executor calls K8s → orchestrator tracks state | **LLM Required**                      | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Required**                         |
+| World-Model / State Tracking    | Long-running incidents, resumable flows       | Maintain incident state + dependencies; resume after failure                   | **LLM Optional** (interpret)          | **Non-LLM Required** (state updates) | **Non-LLM**                                  | **LLM Optional** (drift insights)        |
+| Hierarchical Multi-Agent        | SecOps/SRE/FinOps under one orchestrator      | Orchestrator routes work to domain agents                                      | **LLM Optional** (task decomposition) | **Non-LLM**                          | **Non-LLM**                                  | **LLM Optional**                         |
+| Peer-to-Peer Agents             | Cross-domain collaboration                    | SRE shares latency findings with FinOps agent                                  | **LLM Required** (reasoning exchange) | **Non-LLM**                          | **Non-LLM**                                  | **LLM Optional**                         |
+| Role-Based Agents               | Clear ownership boundaries                    | Patch agent only patches; Scaling agent only scales                            | **Non-LLM** (routing/registry)        | **Non-LLM**                          | **Non-LLM Required** (RBAC)                  | **LLM Optional**                         |
+| Debate / Consensus              | Critical decisions requiring high confidence  | 2–3 planners debate; consensus agent chooses                                   | **LLM Required**                      | N/A                                  | **LLM Required** + Non-LLM policy            | **LLM Required**                         |
+| Swarm Parallelization           | Fleet tasks at scale                          | Check 500 nodes patch status in parallel                                       | **Non-LLM**                           | **Non-LLM Required**                 | **Non-LLM**                                  | **LLM Optional**                         |
+| Agent Mesh / A2A Messaging      | Decoupled agent communication                 | Agents communicate via contracts on message bus                                | **Non-LLM**                           | **Non-LLM Required**                 | **Non-LLM Required** (schema)                | **LLM Optional**                         |
+| Sequential Orchestration (DAG)  | Runbooks, controlled flows                    | LangGraph executes step-by-step with retries/rollback                          | **Non-LLM**                           | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Parallel Orchestration          | Faster diagnosis/execution                    | Run checks for CPU/mem/disk/net concurrently                                   | **Non-LLM**                           | **Non-LLM Required**                 | **Non-LLM**                                  | **LLM Optional**                         |
+| Dynamic Routing                 | Choose best agent/tool dynamically            | Classify incident → route to Network vs App agent                              | **Hybrid** (LLM classify)             | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Handoff / Escalation            | Risk threshold exceeded                       | Auto-heal fails → escalate to human approval                                   | **LLM Optional** (explain)            | **Non-LLM**                          | **Non-LLM Required** (HITL gate)             | **LLM Required**                         |
+| Group Chat Orchestration        | Complex reasoning tasks                       | Planner+Risk+Cost agents collaborate                                           | **LLM Required**                      | N/A                                  | **LLM Optional** + policy                    | **LLM Required**                         |
+| Event-Driven Agents             | Real-time ops automation                      | Kafka event “pod crash” triggers flow                                          | **Non-LLM**                           | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Tool-Use Selection              | Many possible tools/APIs                      | Choose between SSM / Terraform / K8s / ITSM                                    | **LLM Required**                      | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Function Calling (Structured)   | Deterministic tool invocation                 | LLM outputs JSON action contract for executor                                  | **LLM Required**                      | **Non-LLM Required**                 | **Non-LLM Required** (schema)                | **LLM Optional**                         |
+| Skill Library                   | Standard reusable actions                     | “restart_service_v3”, “apply_patch_v2” skills                                  | **Non-LLM**                           | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Runbook Automation              | Approved self-heal actions                    | Restart service, clear queue, scale within blast radius                        | N/A                                   | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Short-Term Memory               | Maintain context per incident                 | Store current metrics/log pointers/session state                               | N/A                                   | **Non-LLM Required**                 | N/A                                          | **LLM Optional**                         |
+| Long-Term Memory                | Learn from past incidents                     | Store successful fixes/outcomes; retrieve later                                | **Hybrid** (LLM uses)                 | **Non-LLM Required**                 | **Non-LLM**                                  | **LLM Required**                         |
+| RAG Grounding                   | Need factual/policy grounding                 | Retrieve policy/runbook/CMDB docs → synthesize decision                        | **LLM Required**                      | **Non-LLM** (retrieval)              | **Non-LLM Required** (policy)                | **LLM Optional**                         |
+| Episodic Memory                 | Outcome-based learning                        | “Restart fixed it” stored and ranked next time                                 | **Hybrid**                            | **Non-LLM Required**                 | N/A                                          | **LLM Required**                         |
+| Semantic / Output Cache         | Reduce cost/latency                           | Cache repeated classifications and answers                                     | N/A                                   | **Non-LLM Required**                 | N/A                                          | **LLM Optional**                         |
+| Human-in-the-Loop (HITL)        | High blast radius changes                     | Require approval for DB restart / prod rollback                                | **LLM Optional** (explain)            | N/A                                  | **Non-LLM Required** (approval)              | **LLM Required**                         |
+| Policy Guardrails (OPA/Cedar)   | Enforce compliance and safety                 | Block action outside window/without ticket                                     | N/A                                   | N/A                                  | **Non-LLM Required**                         | **LLM Optional**                         |
+| RBAC/ABAC                       | Least privilege                               | Patch agent cannot modify IAM; FinOps cannot restart prod                      | N/A                                   | N/A                                  | **Non-LLM Required**                         | N/A                                      |
+| Risk-Based Autonomy             | Auto vs manual by risk score                  | Low risk auto-heal; high risk HITL                                             | **Hybrid** (LLM risk)                 | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Required**                         |
+| Audit Trail                     | SOC2/ISO evidence                             | Immutable log of decisions/actions/timestamps                                  | N/A                                   | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional** (summaries)             |
+| Explainability (Evidence-First) | Trust & governance                            | Output: evidence → policy → action → expected impact                           | **LLM Required**                      | N/A                                  | **Non-LLM** (check)                          | **LLM Required**                         |
+| Outcome-Based Evaluation (KPI)  | Measure MTTR/availability value               | Compare before/after MTTR; autonomous resolution ratio                         | N/A                                   | **Non-LLM Required**                 | **Non-LLM**                                  | **LLM Required** (insights)              |
+| Confidence Scoring              | Auto-escalation control                       | Low confidence → escalate to human                                             | **Hybrid**                            | N/A                                  | **Non-LLM Required** (threshold)             | **LLM Required** (calibrate)             |
+| Canary Execution                | Safe changes                                  | Patch 5% nodes → validate → expand rollout                                     | N/A                                   | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Digital Twin / Simulation       | Predict impact before action                  | Simulate scale-in effect on latency before doing it                            | **LLM Optional**                      | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Model Routing                   | Reduce LLM cost                               | Small model classify; large model plan only when needed                        | **Non-LLM Required**                  | N/A                                  | **Non-LLM**                                  | **LLM Optional**                         |
+| Adaptive Autonomy               | Save cost on simple cases                     | Simple alert → single-step plan; complex → ToT                                 | **Hybrid**                            | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Required**                         |
+| Batch Reasoning                 | High volume similar alerts                    | Group 100 similar alerts → one diagnosis plan                                  | **Hybrid**                            | **Non-LLM Required**                 | **Non-LLM**                                  | **LLM Optional**                         |
+| Elastic Agent Scaling           | Scale platform runtime                        | Scale executor pods based on queue depth                                       | N/A                                   | **Non-LLM Required**                 | **Non-LLM**                                  | **LLM Optional**                         |
+| Registry & Discovery            | Enterprise catalog                            | Find correct agent/skill/tool by metadata                                      | N/A                                   | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Versioned Agents                | Change control                                | Deploy v2 agent with rollback                                                  | N/A                                   | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Blue-Green Deployment           | Safe upgrades                                 | Switch traffic from v1 agent to v2                                             | N/A                                   | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Shadow Mode                     | Validate before autonomy                      | Run AI decisions in parallel; no execution                                     | **LLM Required**                      | N/A                                  | **Non-LLM Required**                         | **LLM Required**                         |
+| Policy-as-Code                  | GitOps governance                             | PR to change autonomy thresholds                                               | N/A                                   | N/A                                  | **Non-LLM Required**                         | N/A                                      |
+| Continuous Evaluation           | Regression tests for agents                   | Replay incident dataset; score accuracy                                        | **LLM Optional**                      | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Required**                         |
+| Message Bus                     | Event backbone                                | Alerts and agent messages through Kafka topics                                 | N/A                                   | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Contract Messaging              | Typed A2A communication                       | JSON schema enforced between agents                                            | N/A                                   | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
+| Event Sourcing                  | Replayability                                 | Re-run incident flow for audits                                                | N/A                                   | **Non-LLM Required**                 | **Non-LLM**                                  | **LLM Optional**                         |
+| Saga Pattern                    | Multi-step rollback safety                    | Patch fails → rollback → restore traffic                                       | **LLM Optional** (plan)               | **Non-LLM Required**                 | **Non-LLM Required**                         | **LLM Optional**                         |
