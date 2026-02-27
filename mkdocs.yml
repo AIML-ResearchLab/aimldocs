@@ -1,10 +1,56 @@
 site_name: AIML documents
 site_author: Ganesh kinkar Giri
-site_description: AIML 
-use_directory_urls: True
+site_description: AIML
+
+# IMPORTANT: Keep one value only (you had it twice with different values)
+use_directory_urls: true
+
+# (Recommended for GitHub Pages project sites; update if needed)
+# site_url: https://aiml-researchlab.github.io/aimldocs/
+# repo_url: https://github.com/AIML-ResearchLab/aimldocs
+# repo_name: AIML-ResearchLab/aimldocs
+# edit_uri: edit/master/docs/
 
 theme:
-    name: material
+  # NICE UI: Material theme (modern, responsive, searchable, clean)
+  name: material
+  language: en
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  icon:
+    repo: fontawesome/brands/github-alt
+
+# Keep your full nav EXACTLY (no content removed)
 nav:
   - Home: index.md
   - AIML:
@@ -152,7 +198,7 @@ nav:
         - Overview: MachineLearning/UnsupervisedLearning/overview.md
         - Clustering: MachineLearning/UnsupervisedLearning/Clustering.md
         - Principal Component Analysis(PCA): MachineLearning/UnsupervisedLearning/Pca.md
-      - Reinforcement Learning: 
+      - Reinforcement Learning:
         - Overview: MachineLearning/ReinforcementLearning/ReinforcementLearning.md
     - Linear Algebra:
       - Overview: LinearAlgebra/Overview.md
@@ -179,7 +225,7 @@ nav:
       - Models:
         - Feedforward Neural Network (FNN): DeepLearning/Models/FNN.md
         - Recurrent Neural Network (RNN):
-          - Recurrent Neural Network (RNN): DeepLearning/Models/RNN.md 
+          - Recurrent Neural Network (RNN): DeepLearning/Models/RNN.md
           - LSTM (Long Short-Term Memory): DeepLearning/Models/LSTM.md
           - GRU (Gated Recurrent Unit): DeepLearning/Models/GRU.md
         - Convolutional Neural Network (CNN): DeepLearning/Models/CNN.md
@@ -189,7 +235,7 @@ nav:
         - Transformer Networks: DeepLearning/Models/Transformer.md
         - Autoencoders: DeepLearning/Models/Autoencoders.md
         - Self-Organizing Maps (SOM): DeepLearning/Models/SOM.md
-    - Natural Language Processing(NLP): 
+    - Natural Language Processing(NLP):
       - Overview: NLP/overview.md
       - NLP Details: NLP/nlpdetails.md
     - Computer Vision:
@@ -229,7 +275,7 @@ nav:
       - general: AgenticAI/general.md
       - Overview: AgenticAI/overview.md
       - crewai: AgenticAI/crewai.md
-      - LangGraph: 
+      - LangGraph:
         - Overview: AgenticAI/LangGraph/LangGraph.md
         - LangGraph Graph API: AgenticAI/LangGraph/LangGraphDetails.md
         - Subgraphs: AgenticAI/LangGraph/Subgraphs.md
@@ -237,7 +283,7 @@ nav:
         - Time travel: AgenticAI/LangGraph/time-travel.md
         - LangGraph runtime: AgenticAI/LangGraph/LangGraph-runtime.md
         - Durable execution: AgenticAI/LangGraph/Durable-execution.md
-        - Install:  AgenticAI/LangGraph/Install.md
+        - Install: AgenticAI/LangGraph/Install.md
         - Graph API: AgenticAI/LangGraph/graph-api.md
         - Functional API: AgenticAI/LangGraph/functional-api.md
         - Run local server: AgenticAI/LangGraph/local-server.md
@@ -252,11 +298,11 @@ nav:
         - Edge: AgenticAI/LangGraph/edge.md
       - AutoGen: AgenticAI/AutoGen.md
       - AWS: AgenticAI/aws.md
-      - AZURE: 
+      - AZURE:
         - Overview: AgenticAI/AZURE/azure.md
         - Azure OpenAI Foundry models: AgenticAI/AZURE/azure-openai-foundry-modelsure.md
       - Agent Development Kit:
-        - ADK : AgenticAI/GCP/adk.md
+        - ADK: AgenticAI/GCP/adk.md
         - Agents: AgenticAI/GCP/Agents.md
         - Tools: AgenticAI/GCP/Tools.md
         - Tools: AgenticAI/GCP/a2a.md
@@ -282,28 +328,37 @@ nav:
     - Pypi Library:
       - Pypi Library Details: Pypi/Pypi-lib-details.md
 
-#theme: readthedocs
-theme:
-    #name: material
-    name: readthedocs
-    #features:
-    #    - toc.integrate
-    #    - navigation.indexes
-    #    - content.tabs.link
-    #icon:
-    #    repo: fontawesome/brands/github-alt
+# Keep your CSS
+extra_css:
+  - css/extra.css
 
-extra_css: [css/extra.css]
+# Better markdown + nice UI (Material-friendly)
 markdown_extensions:
-   - admonition
-   - codehilite
-   - toc:
-        toc_depth: 3
-        permalink: "#"
-   - tables        
-use_directory_urls: false
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      toc_depth: 3
+      permalink: "#"
+
+# Keep your plugins (unchanged)
 plugins:
-    - search
-    - git-revision-date-localized
-    - git-authors
-    #- mkdocs-jupyter
+  - search
+  - git-revision-date-localized
+  - git-authors
+  # - mkdocs-jupyter
+
+# --- Keeping your previous theme as fallback (NOT active) ---
+# theme:
+#   name: readthedocs
