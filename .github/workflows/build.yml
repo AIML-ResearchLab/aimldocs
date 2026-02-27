@@ -1,4 +1,5 @@
 name: Build & Deploy MkDocs
+
 on:
   push:
     branches: [ master ]
@@ -8,22 +9,40 @@ permissions:
 
 jobs:
   deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material \
+          python -m pip install --upgrade pip
+          pip install \
+            mkdocs \
+            mkdocs-material \
+            pymdown-extensions \
             mkdocs-git-revision-date-localized-plugin \
             mkdocs-git-authors-plugin \
             mkdocs-jupyter
 
-      - name: Deploy
+      # Fails early if nav has missing files or markdown extensions are missing
+      - name: Build (strict)
+        run: |
+          mkdocs build --clean --strict --verbose
+
+      - name: Deploy to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
