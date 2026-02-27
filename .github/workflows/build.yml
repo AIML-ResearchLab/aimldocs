@@ -1,53 +1,30 @@
-name: AIML-ResearchLab/aimldocs
+name: Build & Deploy MkDocs
 on:
-  repository_dispatch:
-    types: do-build
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+
 permissions:
-  contents: write  # Allows pushing to gh-pages
-  pages: write     # Allows deploying GitHub Pages
-  id-token: write  # Needed for authentication
-env:
-  GHE_TOKEN: ${{ secrets.GHE_TOKEN }}
-  WORKSPACE_PATH: ${{ github.workspace }}
-  REPO: ${{ github.repository }}
+  contents: write
 
 jobs:
-  build:
-    name: Build Docs
+  deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python_version: [3.10]
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
-          pip install jinja2==3.0.3 mkdocs mkdocs-material \
-                      mkdocs-git-revision-date-localized-plugin \
-                      mkdocs-git-authors-plugin \
-                      mkdocs mkdocs-jupyter
+          pip install mkdocs mkdocs-material \
+            mkdocs-git-revision-date-localized-plugin \
+            mkdocs-git-authors-plugin \
+            mkdocs-jupyter
 
-      - name: Build Documentation
-        run: mkdocs build --verbose --clean
-
-      - name: Publish Docs
-        if: github.ref == 'refs/heads/master'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdocs gh-deploy --force --clean --remote-branch gh-pages
