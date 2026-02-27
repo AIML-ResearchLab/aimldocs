@@ -1,106 +1,192 @@
-.wy-nav-content {
-    max-width: none;
+/* -------------------------------
+   Layout (MkDocs Material)
+-------------------------------- */
+
+/* Wider content area */
+.md-grid {
+  max-width: 98% !important;
 }
 
-.wy-side-nav-search, .wy-nav-top {
-    background: #F54029;
-  }
-
-table {
-    width: 100%;
-}
-th {
-    background-color: #5d6cc0 !important;
-    color: white !important;
+/* Optional: a bit more breathing space */
+.md-content__inner {
+  padding-top: 1rem;
 }
 
-tr:nth-child(even) {
-    background-color: #edf4f4;
-  }
+/* Avoid using zoom in Material (breaks layout on mobile & fonts) */
+/* .md-container { zoom: 110%; }  <-- removed intentionally */
 
-.tab-font{
-    font-size: medium;
+
+/* -------------------------------
+   Header / Primary color
+   (Material uses CSS variables)
+-------------------------------- */
+
+/* Make the top header + tabs use your red */
+:root {
+  --md-primary-fg-color: #F54029;
+  --md-primary-fg-color--dark: #d93622;
+  --md-accent-fg-color: #F54029;
 }
+
+/* Ensure header and nav pick it up */
+.md-header,
+.md-tabs {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Improve contrast for header icons/text */
+.md-header__button,
+.md-header__title,
+.md-tabs__link {
+  color: #fff !important;
+}
+
+/* Active tab underline */
+.md-tabs__link--active {
+  font-weight: 700;
+}
+
+
+/* -------------------------------
+   Tables (Material-friendly)
+-------------------------------- */
+
+.md-typeset table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+.md-typeset table th {
+  background-color: #5d6cc0 !important;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+/* Zebra rows */
+.md-typeset table tr:nth-child(even) {
+  background-color: #edf4f4;
+}
+
+/* Cell padding */
+.md-typeset table th,
+.md-typeset table td {
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Smaller table font helper */
+.tab-font {
+  font-size: medium;
+}
+
+/* Optional: make tables horizontally scrollable on small screens */
+.md-typeset__table {
+  overflow-x: auto;
+}
+
+
+/* -------------------------------
+   Loader (keep your original)
+-------------------------------- */
+
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    left: 40%;
-    position: relative;
-    animation: spin 2s linear infinite;
-  }
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  left: 40%;
+  position: relative;
+  animation: spin 2s linear infinite;
+}
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* -------------------------------
+   Callout blocks
+-------------------------------- */
 
 .note-block {
-    background-color: lightgrey;
-    border: 1px solid gray;
-    padding: 1em;
-    margin: 2em;
+  background-color: #f4f6f8;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1.2em 0;
 }
 
 .todo-block {
-    background-color: lightyellow;
-    border: 1px solid darkred;
-    padding: 1em;
-    margin: 2em;
-    font-style: italic;
-}
-.md-grid{
-    max-width: 98% !important;
-}
-
-.md-container {
-    zoom: 110%;
-    padding: 0;
-    margin: 0;
-
-}
-.md-typeset__scrollwrap{
-    display: grid
+  background-color: #fff9db;
+  border: 1px solid rgba(150,0,0,0.35);
+  border-left: 6px solid #c93c2a;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1.2em 0;
+  font-style: italic;
 }
 
-#roadmap-table td{
-    font-size: .7rem;
-    line-height: 1; 
-    max-width: 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
-    cursor: pointer;
-    background-color: #c93c2a !important;
-    color: white !important;
+/* Text highlight helper */
+.highlight {
+  background-color: cornsilk;
+  padding: 0 4px;
+  border-radius: 6px;
 }
-#roadmap-table th{
-    background-color: #e05638 !important;
-    color: white !important;
-} 
+
+
+/* -------------------------------
+   Roadmap table (keep your IDs)
+-------------------------------- */
+
+#roadmap-table td {
+  font-size: 0.7rem;
+  line-height: 1;
+  max-width: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  background-color: #c93c2a !important;
+  color: white !important;
+}
+
+#roadmap-table th {
+  background-color: #e05638 !important;
+  color: white !important;
+}
 
 #roadmap-table tr:nth-child(even) {
-    background-color: #e5f1f1;
-  }
-
-.table-bordered th, .table-bordered td { 
-    border: 0.1px solid #ddd!important;
-    padding: 8px;
-    font-size: .7rem;
-    line-height: 1;
-    cursor: pointer;
- } 
-
-.highlight{
-    background-color: cornsilk
+  background-color: #e5f1f1;
 }
 
-#total-table th{
-    display: none;
+
+/* -------------------------------
+   "table-bordered" support
+-------------------------------- */
+
+.table-bordered th,
+.table-bordered td {
+  border: 0.1px solid #ddd !important;
+  padding: 8px;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  cursor: pointer;
 }
-.fixed-table-toolbar{
-    width: 20%;
-    float: right;
+
+
+/* -------------------------------
+   "total-table" support
+-------------------------------- */
+
+#total-table th {
+  display: none;
+}
+
+/* Keep this if you are using Bootstrap-table toolbar */
+.fixed-table-toolbar {
+  width: 20%;
+  float: right;
 }
